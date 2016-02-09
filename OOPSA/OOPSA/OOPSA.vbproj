@@ -112,6 +112,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Oppgaven\frmConsole.Designer.vb">
+      <DependentUpon>frmConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Oppgaven\frmConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmAdmin.resx">
@@ -128,6 +134,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oppgaven\frmConsole.resx">
+      <DependentUpon>frmConsole.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
