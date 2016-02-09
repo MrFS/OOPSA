@@ -33,7 +33,7 @@
                 End If
         End Select
 
-        Me.Close()
+        Me.Hide()
 
     End Sub
 
@@ -52,6 +52,6 @@
             MsgBox("Ansatt")
         End If
 
-        Me.Close()
+        Me.Hide()
     End Sub
 End Class

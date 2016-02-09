@@ -1,11 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module config
-    Public server As String = "ServerName"
-    Public database As String = "Database Name"
-    Public user As String = "User ID"
-    Public pass As String = "Password"
-    Public port As String = "8889"
+    Public server As String = My.Settings.server
+    Public database As String = My.Settings.database
+    Public user As String = My.Settings.user
+    Public pass As String = My.Settings.pass
+    Public port As String = My.Settings.port
 
 
     Public conn As New MySqlConnection

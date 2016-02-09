@@ -1,4 +1,4 @@
-﻿Imports OOPSA.config
+﻿'Imports OOPSA.config
 Imports MySql.Data.MySqlClient
 
 Public Class DBConnect

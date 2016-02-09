@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("localhost")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property server() As String
             Get
                 Return CType(Me("server"),String)
@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("ASTurCare")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property database() As String
             Get
                 Return CType(Me("database"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("3306")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property port() As String
             Get
                 Return CType(Me("port"),String)
@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property user() As String
             Get
                 Return CType(Me("user"),String)
@@ -104,7 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("admin")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property pass() As String
             Get
                 Return CType(Me("pass"),String)
