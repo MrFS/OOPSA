@@ -22,6 +22,9 @@ Partial Class frmAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -63,6 +66,7 @@ Partial Class frmAdmin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabOvieStor = New System.Windows.Forms.TabPage()
         Me.tabResources = New System.Windows.Forms.TabPage()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tbOverview.SuspendLayout()
@@ -76,6 +80,7 @@ Partial Class frmAdmin
         Me.MenuStrip2.SuspendLayout()
         Me.tabSaleStorage.SuspendLayout()
         Me.tabRent.SuspendLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -241,6 +246,7 @@ Partial Class frmAdmin
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Chart1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.MenuStrip3)
         Me.SplitContainer1.Size = New System.Drawing.Size(1583, 577)
         Me.SplitContainer1.SplitterDistance = 358
@@ -464,6 +470,22 @@ Partial Class frmAdmin
         Me.tabResources.Text = "Resources"
         Me.tabResources.UseVisualStyleBackColor = True
         '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(63, 65)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(518, 300)
+        Me.Chart1.TabIndex = 1
+        Me.Chart1.Text = "Chart1"
+        '
         'frmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -493,6 +515,7 @@ Partial Class frmAdmin
         Me.MenuStrip2.PerformLayout()
         Me.tabSaleStorage.ResumeLayout(False)
         Me.tabRent.ResumeLayout(False)
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -539,4 +562,5 @@ Partial Class frmAdmin
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
 End Class
