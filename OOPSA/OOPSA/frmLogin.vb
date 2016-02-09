@@ -32,9 +32,26 @@
                     MsgBox("Ansatt")
                 End If
         End Select
+
+        Me.Close()
+
     End Sub
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         UsernameTextBox.Focus()
+    End Sub
+
+    Private Sub OK_Click(sender As Object, e As EventArgs) Handles OK.Click
+
+        If UsernameTextBox.Enabled = 0 Then
+            'KOde for admin inlogging
+            MsgBox("ADmin")
+            frmAdmin.Show()
+        Else
+            'KOde for ansatt
+            MsgBox("Ansatt")
+        End If
+
+        Me.Close()
     End Sub
 End Class
