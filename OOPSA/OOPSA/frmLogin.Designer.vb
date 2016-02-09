@@ -1,10 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-<Global.System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1726")> _
-Partial Class Login
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1726")>
+Partial Class frmLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -28,9 +28,9 @@ Partial Class Login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
@@ -45,7 +45,7 @@ Partial Class Login
         '
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.LogoPictureBox.Name = "LogoPictureBox"
         Me.LogoPictureBox.Size = New System.Drawing.Size(124, 157)
         Me.LogoPictureBox.TabIndex = 0
@@ -74,7 +74,7 @@ Partial Class Login
         'UsernameTextBox
         '
         Me.UsernameTextBox.Location = New System.Drawing.Point(130, 36)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(166, 20)
         Me.UsernameTextBox.TabIndex = 1
@@ -82,7 +82,7 @@ Partial Class Login
         'PasswordTextBox
         '
         Me.PasswordTextBox.Location = New System.Drawing.Point(130, 82)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(166, 20)
@@ -90,26 +90,25 @@ Partial Class Login
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(148, 131)
-        Me.OK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.OK.Location = New System.Drawing.Point(151, 123)
+        Me.OK.Margin = New System.Windows.Forms.Padding(2)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(70, 19)
+        Me.OK.Size = New System.Drawing.Size(70, 27)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&OK"
         '
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(225, 131)
-        Me.Cancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Cancel.Location = New System.Drawing.Point(225, 123)
+        Me.Cancel.Margin = New System.Windows.Forms.Padding(2)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(70, 19)
+        Me.Cancel.Size = New System.Drawing.Size(70, 27)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
         '
-        'Login
+        'frmLogin
         '
-        Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
@@ -123,10 +122,10 @@ Partial Class Login
         Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Login"
+        Me.Name = "frmLogin"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OOPSA - AS TurCare"
@@ -135,5 +134,4 @@ Partial Class Login
         Me.PerformLayout()
 
     End Sub
-
 End Class
