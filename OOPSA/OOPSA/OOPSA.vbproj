@@ -93,16 +93,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\DBConnect.vb" />
-    <Compile Include="frmAdmin.Designer.vb">
+    <Compile Include="frm\frmAdmin.Designer.vb">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmAdmin.vb">
+    <Compile Include="frm\frmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.vb">
+    <Compile Include="frm\frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.vb">
+    <Compile Include="frm\frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -137,10 +137,10 @@
     <Compile Include="Settings.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAdmin.resx">
+    <EmbeddedResource Include="frm\frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="frm\frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">

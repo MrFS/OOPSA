@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module config
+
     Public server As String = My.Settings.server
     Public database As String = My.Settings.database
     Public user As String = My.Settings.user

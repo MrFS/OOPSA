@@ -38,7 +38,22 @@
     End Sub
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         UsernameTextBox.Focus()
+
+        Dim con As New DBConnect
+
+
+
+        Try
+
+            con.ConnectDatabase()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            conn.Dispose()
+        End Try
     End Sub
 
     Private Sub OK_Click(sender As Object, e As EventArgs) Handles OK.Click

@@ -44,6 +44,15 @@
             txtPort.Enabled = 0
             txtDBUser.Enabled = 0
             txtDBpwd.Enabled = 0
+
+            My.Settings.server = txtServer.Text
+            My.Settings.database = txtDB.Text
+            My.Settings.user = txtDBUser.Text
+            My.Settings.pass = txtDBpwd.Text
+            My.Settings.port = txtPort.Text
+
+            My.Settings.Save()
+
         End If
     End Sub
 

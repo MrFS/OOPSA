@@ -26,9 +26,10 @@ Partial Class frmConsole
         '
         'frmConsole
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(995, 543)
+        Me.ClientSize = New System.Drawing.Size(783, 411)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmConsole"
         Me.Text = "frmConsole"
         Me.ResumeLayout(False)

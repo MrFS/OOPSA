@@ -3,19 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="server" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">colargol.tihlde.org</Value>
     </Setting>
     <Setting Name="database" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">drift8_2016</Value>
     </Setting>
     <Setting Name="port" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">3306</Value>
     </Setting>
     <Setting Name="user" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">drift8_2016</Value>
     </Setting>
     <Setting Name="pass" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">CdfdjA4taBDKuzpw</Value>
     </Setting>
   </Settings>
 </SettingsFile>
