@@ -1,6 +1,6 @@
 ﻿Public Class frmLogin
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Application.Exit()
+        Application.Exit() ' <-- Den der linja avslutte applikasjonen (Y) YOLO
     End Sub
 
     Private Sub frmLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
@@ -8,7 +8,8 @@
             Case Keys.F10
                 UsernameTextBox.Text = "//ADMINISTRATOR"
                 UsernameTextBox.Enabled = 0
-
+            Case Keys.F12
+                frmConsole.Show()
         End Select
     End Sub
 
@@ -41,18 +42,18 @@
 
         UsernameTextBox.Focus()
 
-        Dim con As New DBConnect
+        Dim DB As New DBConnect
 
 
 
         Try
 
-            con.ConnectDatabase()
+            DB.ConnectDatabase()
 
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
-            conn.Dispose()
+            DB.DisconnectDatabase()
         End Try
     End Sub
 
