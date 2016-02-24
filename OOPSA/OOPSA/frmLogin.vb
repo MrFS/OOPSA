@@ -1,7 +1,18 @@
 ﻿Public Class frmLogin
+
+    ''' <summary>
+    ''' Enkel knapp som avslutter applikasjonen før noe annet er kjørt
+    ''' </summary>
+
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Application.Exit() ' <-- Den der linja avslutte applikasjonen (Y) YOLO
+
+        Application.Exit()
+
     End Sub
+
+    ''' <summary>
+    ''' 
+    ''' </summary>
 
     Private Sub frmLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode

@@ -1,16 +1,19 @@
 ﻿'Imports OOPSA.config
 Imports MySql.Data.MySqlClient
-'Class for oppkobling mot database
-'Database info finnes i My.Settings
-
-'Variablene er lagret i en modul, som gjør de tilgjengelige over hele applikasjonen. ( & ikke lokalt for hver frm)
 
 Public Class DBConnect
 
-    Public Sub ConnectDatabase()
+    ''' <summary>
+    ''' Prosedyren nedenfor kobler opp mot databasen,
+    ''' først sjekker den om koblingen er lukket før den prøver å koble opp mot DB,
+    ''' slik ungår vi å prøve å koble opp mot databasen når den allerede er koblet opp mot.
+    ''' henter relevant oppkoblingsinfo fra applikasjonens My.Settings
+    ''' 
+    ''' Får den ikke opprettet en kobling utføres en 'Catch'
+    ''' Relevant informasjon vises i en msgbox.
+    ''' </summary>
 
-        'Se om koblingen mot databasen er avsluttet, hvis så koble opp mot den.
-        'Lurt slik at man ikke prøver å kjøre doble oppkoblinger / koblinger.
+    Public Sub ConnectDatabase()
 
         Try
             If con.State = ConnectionState.Closed Then
@@ -21,8 +24,6 @@ Public Class DBConnect
                 con.Open()
             End If
 
-            'Støtter vi på en feil, kjører vi en 'Catch'
-
         Catch ex As Exception
             MessageBox.Show("Error Connecting to the database : " & ex.Message, "Error Database Server",
                             MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -30,7 +31,10 @@ Public Class DBConnect
         End Try
     End Sub
 
-    'Kobler fra databasen
+    ''' <summary>
+    ''' Kobler fra databasen, får den ikke koblet fra databasen, grunnet ett eller annet kjøres
+    ''' en 'Catch' og relevant informasjon vises i en msgbox.
+    ''' </summary>
 
     Public Sub DisconnectDatabase()
         Try
@@ -40,6 +44,5 @@ Public Class DBConnect
                             MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
     End Sub
-
 
 End Class

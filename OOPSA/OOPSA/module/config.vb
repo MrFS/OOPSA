@@ -2,6 +2,14 @@
 
 Module config
 
+    ''' <summary>
+    ''' Modul, henter info fra My.Settings og lagrer i respektive variabler, public gjør de tilgjengelig 
+    ''' gjennom hele applikasjonen.
+    ''' Gjør arbeidsprosessen enklere ved å tildele korte variabler istedenfor å skrive hele My.Settings linjen.
+    ''' 
+    ''' Huser også con variablen for MySQL
+    ''' </summary>
+
     Public server As String = My.Settings.server
     Public database As String = My.Settings.database
     Public user As String = My.Settings.user
