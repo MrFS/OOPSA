@@ -30,6 +30,8 @@ Public Class DBConnect
         End Try
     End Sub
 
+    'Kobler fra databasen
+
     Public Sub DisconnectDatabase()
         Try
             con.Close()
