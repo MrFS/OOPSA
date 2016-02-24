@@ -94,6 +94,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\DB\DBConnect.vb" />
+    <Compile Include="frm\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\DB\SQL.vb" />
+    <Compile Include="classes\Functions\Class2.vb" />
+    <Compile Include="classes\Tools\Class1.vb" />
     <Compile Include="frm\frmAdmin.Designer.vb">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </Compile>
@@ -138,6 +147,9 @@
     <Compile Include="Settings.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
