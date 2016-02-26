@@ -55,8 +55,6 @@
 
         Dim DB As New DBConnect
 
-
-
         Try
 
             DB.ConnectDatabase()
@@ -66,6 +64,7 @@
         Finally
             DB.DisconnectDatabase()
         End Try
+
     End Sub
 
     Private Sub OK_Click(sender As Object, e As EventArgs) Handles OK.Click

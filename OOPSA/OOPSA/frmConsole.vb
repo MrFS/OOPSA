@@ -1,4 +1,5 @@
 ﻿Imports System.Console
+Imports MySql
 
 Public Class frmConsole
     Dim prev As String
@@ -7,11 +8,16 @@ Public Class frmConsole
 
             Case Keys.P
 
-                If Timer1.Enabled = 0 Then
-                    Timer1.Enabled = 1
-                Else
-                    Timer1.Enabled = 0
-                End If
+                Select Case Timer1.Enabled
+                    Case 1
+                        Timer1.Enabled = 0
+                        ToolStripLabel1.Text = "Console Tick : DISABLED"
+                    Case 0
+                        Timer1.Enabled = 1
+                        ToolStripLabel1.Text = "Console Tick : ENABLED"
+                    Case Else
+                        MsgBox("Unable to enable/disable tick")
+                End Select
 
             Case Keys.Enter
 
@@ -29,9 +35,17 @@ Public Class frmConsole
 
                         Me.Close()
 
+                    Case ""
+
+                    Case ""
+
+                    Case ""
+
+                    Case ""
+
                     Case Else
 
-                        MsgBox("Enter apporperiate value")
+                        MsgBox("Enter approperiate value")
 
                 End Select
 
@@ -49,6 +63,12 @@ Public Class frmConsole
             .Add(Application.OpenForms)
             .Add(Application.OpenForms.Count)
         End With
+        Try
+            con.Open()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -58,8 +78,40 @@ Public Class frmConsole
         With ListBox1.Items
             .Clear()
             .Add(Me.ProductName & " Console " & Me.ProductVersion)
-            .Add("Opprettet kobling mot server: " & My.Computer.Network.Ping(server) & " - Server: " & server)
+            .Add("Server is ONLINE: " & My.Computer.Network.Ping(server) & " - Server: " & server)
             .Add("Server Ping: " & ms & "ms")
+            .Add("")
+            .Add("Database information:")
+            DBNNFO()
         End With
+    End Sub
+
+    Private Sub DBNNFO()
+        Try
+            Select Case con.State
+
+                Case 0
+
+                    With ListBox1.Items
+                        .Add("Database connection could not be established")
+                        .Add("Server version: &&")
+                        .Add("Connection State: &&")
+                        .Add("Open port: &&")
+                    End With
+
+                Case 1
+
+                    With ListBox1.Items
+                        .Add("Server version: " & con.ServerVersion)
+                        .Add("Connection State: " & con.State & " " & con.Ping)
+                        .Add("Open port: " & port)
+                    End With
+
+                Case Else
+                    Throw New Exception("Unable to view DBNFO")
+            End Select
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
