@@ -94,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\DB\DBConnect.vb" />
+    <Compile Include="classes\Security\Base64Enc.vb" />
+    <Compile Include="classes\Security\SHA256.vb" />
     <Compile Include="frm\MDIParent1.Designer.vb">
       <DependentUpon>MDIParent1.vb</DependentUpon>
     </Compile>

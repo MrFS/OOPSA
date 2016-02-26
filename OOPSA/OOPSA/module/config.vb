@@ -19,4 +19,10 @@ Module config
 
     Public con As New MySqlConnection
 
+    Public ping As New System.Net.NetworkInformation.Ping
+    Public ms = ping.Send(server).RoundtripTime()
+
+    Public ToBase64EncString As String
+    Public FromBase64EncString As String
+
 End Module

@@ -1,5 +1,4 @@
-﻿
-Public Class frmConsole
+﻿Public Class frmConsole
     Dim prev As String
     Private Sub frmConsole_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
@@ -52,9 +51,13 @@ Public Class frmConsole
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
+        Dim ms = ping.Send(server).RoundtripTime()
+
         With ListBox1.Items
             .Clear()
             .Add(Me.ProductName & " Console " & Me.ProductVersion)
+            .Add("Opprettet kobling mot server: " & My.Computer.Network.Ping(server) & " - Server: " & server)
+            .Add("Server Ping: " & ms & "ms")
         End With
     End Sub
 End Class
