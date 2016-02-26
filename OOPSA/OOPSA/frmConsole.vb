@@ -1,4 +1,6 @@
-﻿Public Class frmConsole
+﻿Imports System.Console
+
+Public Class frmConsole
     Dim prev As String
     Private Sub frmConsole_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
