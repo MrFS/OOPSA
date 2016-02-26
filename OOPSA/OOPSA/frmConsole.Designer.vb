@@ -22,6 +22,7 @@ Partial Class frmConsole
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -29,6 +30,7 @@ Partial Class frmConsole
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
@@ -101,6 +103,9 @@ Partial Class frmConsole
         Me.TabPage2.Text = "Misc"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        '
         'frmConsole
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -127,4 +132,5 @@ Partial Class frmConsole
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Timer1 As Timer
 End Class
