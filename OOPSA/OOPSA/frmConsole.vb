@@ -78,7 +78,7 @@ Public Class frmConsole
         With ListBox1.Items
             .Clear()
             .Add(Me.ProductName & " Console " & Me.ProductVersion)
-            .Add("Server is ONLINE: " & My.Computer.Network.Ping(server) & " - Server: " & server)
+            .Add("Server is ONLINE: " & online & " - Server: " & server)
             .Add("Server Ping: " & ms & "ms")
             .Add("")
             .Add("Database information:")

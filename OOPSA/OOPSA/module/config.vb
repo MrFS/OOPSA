@@ -19,6 +19,7 @@ Module config
 
     Public con As New MySqlConnection
 
+    Public online = My.Computer.Network.Ping(server)
     Public ping As New System.Net.NetworkInformation.Ping
     Public ms = ping.Send(server).RoundtripTime()
 
