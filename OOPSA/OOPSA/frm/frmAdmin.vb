@@ -1,4 +1,7 @@
 ﻿Public Class frmAdmin
+
+    Dim SQL As New SQL
+
     Private Sub frmAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         txtServer.Enabled = 0
@@ -58,5 +61,9 @@
 
     Private Sub RefreshToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshToolStripMenuItem.Click
         My.Settings.Reload()
+    End Sub
+
+    Private Sub btnRegAns_Click(sender As Object, e As EventArgs) Handles btnRegAns.Click
+        SQL.regAnsatt("", "", "", "", "", "", "", "", "")
     End Sub
 End Class

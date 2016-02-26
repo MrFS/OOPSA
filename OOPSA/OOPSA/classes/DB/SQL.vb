@@ -31,6 +31,19 @@ Public Class SQL
 
     End Function
 
+    ''' <summary>
+    ''' Prosedyre for registrering av ny ansatt
+    ''' </summary>
+    ''' <param name="bruker">Brukernavnet</param>
+    ''' <param name="pw">Passordet</param>
+    ''' <param name="fornavn">Fornavnet til ansatt</param>
+    ''' <param name="etternavn">Etternavnet til ansatt</param>
+    ''' <param name="bursdag">Bursdagen til ansatt, DATE</param>
+    ''' <param name="epost">Epost til ansatt</param>
+    ''' <param name="tlf">Telefonnummer til ansatt, integer</param>
+    ''' <param name="adresse">Adressen til ansatt</param>
+    ''' <param name="avdeling">Avdelingen ansatt tilhører, INTEGER</param>'
+
     Public Sub regAnsatt(bruker As String,
                          pw As String,
                          fornavn As String,
@@ -41,7 +54,8 @@ Public Class SQL
                          adresse As String,
                          avdeling As Integer)
 
-
+        sporring("INSERT INTO logginn")
+        sporring("INSERT INTO Ansatt")
 
     End Sub
 End Class
