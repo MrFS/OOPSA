@@ -96,6 +96,7 @@
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
     <Compile Include="classes\Security\SHA256.vb" />
+    <Compile Include="classes\Tools\Console.vb" />
     <Compile Include="frm\MDIParent1.Designer.vb">
       <DependentUpon>MDIParent1.vb</DependentUpon>
     </Compile>
@@ -195,6 +196,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

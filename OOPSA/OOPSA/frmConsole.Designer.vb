@@ -25,13 +25,13 @@ Partial Class frmConsole
         Me.components = New System.ComponentModel.Container()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.lstConsole = New System.Windows.Forms.ListBox()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -54,6 +54,13 @@ Partial Class frmConsole
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(88, 22)
+        Me.ToolStripLabel1.Text = "ToolStripLabel1"
+        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
@@ -67,8 +74,8 @@ Partial Class frmConsole
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.lstConsole)
         Me.TabPage1.Controls.Add(Me.TextBox1)
-        Me.TabPage1.Controls.Add(Me.ListBox1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -85,18 +92,6 @@ Partial Class frmConsole
         Me.TextBox1.Size = New System.Drawing.Size(573, 20)
         Me.TextBox1.TabIndex = 1
         '
-        'ListBox1
-        '
-        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListBox1.Enabled = False
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(3, 3)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.None
-        Me.ListBox1.Size = New System.Drawing.Size(573, 255)
-        Me.ListBox1.TabIndex = 0
-        '
         'TabPage2
         '
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
@@ -110,12 +105,14 @@ Partial Class frmConsole
         'Timer1
         '
         '
-        'ToolStripLabel1
+        'lstConsole
         '
-        Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(88, 22)
-        Me.ToolStripLabel1.Text = "ToolStripLabel1"
+        Me.lstConsole.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lstConsole.FormattingEnabled = True
+        Me.lstConsole.Location = New System.Drawing.Point(3, 3)
+        Me.lstConsole.Name = "lstConsole"
+        Me.lstConsole.Size = New System.Drawing.Size(573, 235)
+        Me.lstConsole.TabIndex = 2
         '
         'frmConsole
         '
@@ -143,8 +140,8 @@ Partial Class frmConsole
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Timer1 As Timer
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents lstConsole As ListBox
 End Class
