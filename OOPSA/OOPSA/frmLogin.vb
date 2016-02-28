@@ -54,6 +54,9 @@
         UsernameTextBox.Focus()
 
         Dim DB As New DBConnect
+        Dim DBCheck As New DBCheck
+
+        DBCheck.DBCheck()
 
         Try
 

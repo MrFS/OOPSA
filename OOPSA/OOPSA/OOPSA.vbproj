@@ -95,8 +95,15 @@
   <ItemGroup>
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
+    <Compile Include="classes\Security\DBCheck.vb" />
     <Compile Include="classes\Security\SHA256.vb" />
     <Compile Include="classes\Tools\Console.vb" />
+    <Compile Include="frm\frmAnsatt.Designer.vb">
+      <DependentUpon>frmAnsatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmAnsatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\MDIParent1.Designer.vb">
       <DependentUpon>MDIParent1.vb</DependentUpon>
     </Compile>

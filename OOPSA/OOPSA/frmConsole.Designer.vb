@@ -51,6 +51,19 @@ Partial Class frmConsole
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.lstRecent = New System.Windows.Forms.ListBox()
         Me.tmConsole = New System.Windows.Forms.Timer(Me.components)
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuitEnvToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.OpenConfigToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommandsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TickToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetTickToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PauseResumeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lstDir = New System.Windows.Forms.ListBox()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -105,6 +118,7 @@ Partial Class frmConsole
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenConfigToolStripMenuItem, Me.ToolStripSeparator8, Me.CommandsToolStripMenuItem, Me.WindowToolStripMenuItem, Me.ToolStripSeparator9, Me.CloseToolStripMenuItem, Me.QuitEnvToolStripMenuItem})
         Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
@@ -122,8 +136,8 @@ Partial Class frmConsole
         '
         Me.ToolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(118, 22)
-        Me.ToolStripLabel3.Text = "Console Commands:"
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(106, 22)
+        Me.ToolStripLabel3.Text = "Quick Commands:"
         '
         'ToolStripSeparator1
         '
@@ -230,6 +244,8 @@ Partial Class frmConsole
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.lstDir)
+        Me.TabPage2.Controls.Add(Me.ListView1)
         Me.TabPage2.Controls.Add(Me.lstRecent)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
@@ -250,6 +266,92 @@ Partial Class frmConsole
         '
         'tmConsole
         '
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W), System.Windows.Forms.Keys)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.CloseToolStripMenuItem.Text = "Close"
+        '
+        'QuitEnvToolStripMenuItem
+        '
+        Me.QuitEnvToolStripMenuItem.Name = "QuitEnvToolStripMenuItem"
+        Me.QuitEnvToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Q), System.Windows.Forms.Keys)
+        Me.QuitEnvToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.QuitEnvToolStripMenuItem.Text = "Quit Env"
+        '
+        'ToolStripSeparator8
+        '
+        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(182, 6)
+        '
+        'OpenConfigToolStripMenuItem
+        '
+        Me.OpenConfigToolStripMenuItem.Name = "OpenConfigToolStripMenuItem"
+        Me.OpenConfigToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenConfigToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.OpenConfigToolStripMenuItem.Text = "Open Config"
+        '
+        'CommandsToolStripMenuItem
+        '
+        Me.CommandsToolStripMenuItem.Name = "CommandsToolStripMenuItem"
+        Me.CommandsToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.CommandsToolStripMenuItem.Text = "Commands"
+        '
+        'WindowToolStripMenuItem
+        '
+        Me.WindowToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearToolStripMenuItem, Me.TickToolStripMenuItem})
+        Me.WindowToolStripMenuItem.Name = "WindowToolStripMenuItem"
+        Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.WindowToolStripMenuItem.Text = "Window"
+        '
+        'ClearToolStripMenuItem
+        '
+        Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearToolStripMenuItem.Text = "Clear"
+        '
+        'TickToolStripMenuItem
+        '
+        Me.TickToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetTickToolStripMenuItem, Me.PauseResumeToolStripMenuItem})
+        Me.TickToolStripMenuItem.Name = "TickToolStripMenuItem"
+        Me.TickToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TickToolStripMenuItem.Text = "Tick"
+        '
+        'SetTickToolStripMenuItem
+        '
+        Me.SetTickToolStripMenuItem.Name = "SetTickToolStripMenuItem"
+        Me.SetTickToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.SetTickToolStripMenuItem.Text = "Set Tick"
+        '
+        'PauseResumeToolStripMenuItem
+        '
+        Me.PauseResumeToolStripMenuItem.Name = "PauseResumeToolStripMenuItem"
+        Me.PauseResumeToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.PauseResumeToolStripMenuItem.Text = "Pause | Resume"
+        '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(182, 6)
+        '
+        'ListView1
+        '
+        Me.ListView1.Location = New System.Drawing.Point(767, 6)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(121, 97)
+        Me.ListView1.TabIndex = 1
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        '
+        'lstDir
+        '
+        Me.lstDir.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lstDir.FormattingEnabled = True
+        Me.lstDir.Location = New System.Drawing.Point(123, 3)
+        Me.lstDir.Name = "lstDir"
+        Me.lstDir.Size = New System.Drawing.Size(473, 370)
+        Me.lstDir.TabIndex = 2
         '
         'frmConsole
         '
@@ -306,4 +408,17 @@ Partial Class frmConsole
     Friend WithEvents ToolStripProgressBar2 As ToolStripProgressBar
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
+    Friend WithEvents OpenConfigToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator8 As ToolStripSeparator
+    Friend WithEvents CommandsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WindowToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClearToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TickToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SetTickToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PauseResumeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QuitEnvToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lstDir As ListBox
+    Friend WithEvents ListView1 As ListView
 End Class

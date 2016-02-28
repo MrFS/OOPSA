@@ -1,6 +1,7 @@
 ﻿Imports System.Console
 Imports MySql
 Imports System.Diagnostics.Process
+Imports System.IO
 
 Public Class frmConsole
 
@@ -13,6 +14,10 @@ Public Class frmConsole
     Private Sub frmConsole_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Initialize()
         tmConsole.Start()
+
+        Console.GetDir()
+
+
     End Sub
 
     Private Sub frmConsole_Close(sender As Object, e As EventArgs) Handles MyBase.Closing

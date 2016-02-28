@@ -56,6 +56,23 @@ Partial Class frmAdmin
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.tbEmployees = New System.Windows.Forms.TabPage()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRegAns = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.tabSaleStorage = New System.Windows.Forms.TabPage()
@@ -66,24 +83,11 @@ Partial Class frmAdmin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabOvieStor = New System.Windows.Forms.TabPage()
         Me.tabResources = New System.Windows.Forms.TabPage()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tbOverview.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,8 +100,10 @@ Partial Class frmAdmin
         Me.MenuStrip2.SuspendLayout()
         Me.tbEmployees.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.tabSaleStorage.SuspendLayout()
         Me.tabRent.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -106,8 +112,7 @@ Partial Class frmAdmin
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ViewToolStripMenuItem, Me.WindowToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1599, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1199, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -115,107 +120,107 @@ Partial Class frmAdmin
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(105, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(89, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TabsToolStripMenuItem, Me.ToolStripSeparator2})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'TabsToolStripMenuItem
         '
         Me.TabsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OverviewToolStripMenuItem, Me.EmployeesToolStripMenuItem, Me.SalesToolStripMenuItem, Me.RentalToolStripMenuItem, Me.OverviewStorageToolStripMenuItem, Me.ResourcesToolStripMenuItem})
         Me.TabsToolStripMenuItem.Name = "TabsToolStripMenuItem"
-        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(113, 26)
+        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.TabsToolStripMenuItem.Text = "Tabs"
         '
         'OverviewToolStripMenuItem
         '
         Me.OverviewToolStripMenuItem.Name = "OverviewToolStripMenuItem"
-        Me.OverviewToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.OverviewToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.OverviewToolStripMenuItem.Text = "Overview"
         '
         'EmployeesToolStripMenuItem
         '
         Me.EmployeesToolStripMenuItem.Name = "EmployeesToolStripMenuItem"
-        Me.EmployeesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.EmployeesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.EmployeesToolStripMenuItem.Text = "Employees"
         '
         'SalesToolStripMenuItem
         '
         Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.SalesToolStripMenuItem.Text = "Sales"
         '
         'RentalToolStripMenuItem
         '
         Me.RentalToolStripMenuItem.Name = "RentalToolStripMenuItem"
-        Me.RentalToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.RentalToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.RentalToolStripMenuItem.Text = "Rental"
         '
         'OverviewStorageToolStripMenuItem
         '
         Me.OverviewStorageToolStripMenuItem.Name = "OverviewStorageToolStripMenuItem"
-        Me.OverviewStorageToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.OverviewStorageToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.OverviewStorageToolStripMenuItem.Text = "Overview Storage"
         '
         'ResourcesToolStripMenuItem
         '
         Me.ResourcesToolStripMenuItem.Name = "ResourcesToolStripMenuItem"
-        Me.ResourcesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
+        Me.ResourcesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.ResourcesToolStripMenuItem.Text = "Resources"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(110, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(95, 6)
         '
         'WindowToolStripMenuItem
         '
         Me.WindowToolStripMenuItem.Name = "WindowToolStripMenuItem"
-        Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
+        Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
         Me.WindowToolStripMenuItem.Text = "Window"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 646)
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 521)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1599, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1199, 22)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -230,21 +235,19 @@ Partial Class frmAdmin
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Segoe UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.ItemSize = New System.Drawing.Size(56, 25)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 28)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 24)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1599, 618)
+        Me.TabControl1.Size = New System.Drawing.Size(1199, 497)
         Me.TabControl1.TabIndex = 2
         '
         'tbOverview
         '
         Me.tbOverview.Controls.Add(Me.SplitContainer1)
         Me.tbOverview.Location = New System.Drawing.Point(4, 29)
-        Me.tbOverview.Margin = New System.Windows.Forms.Padding(4)
         Me.tbOverview.Name = "tbOverview"
-        Me.tbOverview.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbOverview.Size = New System.Drawing.Size(1591, 585)
+        Me.tbOverview.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbOverview.Size = New System.Drawing.Size(1191, 464)
         Me.tbOverview.TabIndex = 0
         Me.tbOverview.Text = "Overview"
         Me.tbOverview.UseVisualStyleBackColor = True
@@ -252,8 +255,7 @@ Partial Class frmAdmin
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(4, 4)
-        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4)
+        Me.SplitContainer1.Location = New System.Drawing.Point(3, 3)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -264,9 +266,8 @@ Partial Class frmAdmin
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
         Me.SplitContainer1.Panel2.Controls.Add(Me.MenuStrip3)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1583, 577)
-        Me.SplitContainer1.SplitterDistance = 358
-        Me.SplitContainer1.SplitterWidth = 5
+        Me.SplitContainer1.Size = New System.Drawing.Size(1185, 458)
+        Me.SplitContainer1.SplitterDistance = 267
         Me.SplitContainer1.TabIndex = 0
         '
         'SplitContainer2
@@ -274,7 +275,6 @@ Partial Class frmAdmin
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer2.Name = "SplitContainer2"
         Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -292,17 +292,15 @@ Partial Class frmAdmin
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.AutoScroll = True
-        Me.SplitContainer2.Size = New System.Drawing.Size(358, 577)
+        Me.SplitContainer2.Size = New System.Drawing.Size(267, 458)
         Me.SplitContainer2.SplitterDistance = 208
-        Me.SplitContainer2.SplitterWidth = 5
         Me.SplitContainer2.TabIndex = 0
         '
         'txtDBpwd
         '
-        Me.txtDBpwd.Location = New System.Drawing.Point(113, 209)
-        Me.txtDBpwd.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDBpwd.Location = New System.Drawing.Point(85, 170)
         Me.txtDBpwd.Name = "txtDBpwd"
-        Me.txtDBpwd.Size = New System.Drawing.Size(228, 32)
+        Me.txtDBpwd.Size = New System.Drawing.Size(172, 27)
         Me.txtDBpwd.TabIndex = 11
         Me.txtDBpwd.UseSystemPasswordChar = True
         '
@@ -310,19 +308,17 @@ Partial Class frmAdmin
         '
         Me.lblDBNfo.AutoSize = True
         Me.lblDBNfo.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDBNfo.Location = New System.Drawing.Point(7, 48)
-        Me.lblDBNfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDBNfo.Location = New System.Drawing.Point(5, 39)
         Me.lblDBNfo.Name = "lblDBNfo"
-        Me.lblDBNfo.Size = New System.Drawing.Size(88, 207)
+        Me.lblDBNfo.Size = New System.Drawing.Size(68, 153)
         Me.lblDBNfo.TabIndex = 10
         Me.lblDBNfo.Text = "Server:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Database:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Port:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Username:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Password:"
         '
         'txtServer
         '
-        Me.txtServer.Location = New System.Drawing.Point(113, 47)
-        Me.txtServer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtServer.Location = New System.Drawing.Point(85, 38)
         Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(228, 32)
+        Me.txtServer.Size = New System.Drawing.Size(172, 27)
         Me.txtServer.TabIndex = 6
         '
         'MenuStrip2
@@ -331,46 +327,42 @@ Partial Class frmAdmin
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem, Me.ChangeToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.MenuStrip2.Size = New System.Drawing.Size(341, 28)
+        Me.MenuStrip2.Size = New System.Drawing.Size(267, 24)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
         '
         'RefreshToolStripMenuItem
         '
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
         Me.RefreshToolStripMenuItem.Text = "Refresh"
         '
         'ChangeToolStripMenuItem
         '
         Me.ChangeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ChangeToolStripMenuItem.Name = "ChangeToolStripMenuItem"
-        Me.ChangeToolStripMenuItem.Size = New System.Drawing.Size(71, 24)
+        Me.ChangeToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ChangeToolStripMenuItem.Text = "Change"
         '
         'txtPort
         '
-        Me.txtPort.Location = New System.Drawing.Point(113, 130)
-        Me.txtPort.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPort.Location = New System.Drawing.Point(85, 106)
         Me.txtPort.Name = "txtPort"
-        Me.txtPort.Size = New System.Drawing.Size(228, 32)
+        Me.txtPort.Size = New System.Drawing.Size(172, 27)
         Me.txtPort.TabIndex = 9
         '
         'txtDBUser
         '
-        Me.txtDBUser.Location = New System.Drawing.Point(113, 171)
-        Me.txtDBUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDBUser.Location = New System.Drawing.Point(85, 139)
         Me.txtDBUser.Name = "txtDBUser"
-        Me.txtDBUser.Size = New System.Drawing.Size(228, 32)
+        Me.txtDBUser.Size = New System.Drawing.Size(172, 27)
         Me.txtDBUser.TabIndex = 8
         '
         'txtDB
         '
-        Me.txtDB.Location = New System.Drawing.Point(113, 89)
-        Me.txtDB.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDB.Location = New System.Drawing.Point(85, 72)
         Me.txtDB.Name = "txtDB"
-        Me.txtDB.Size = New System.Drawing.Size(228, 32)
+        Me.txtDB.Size = New System.Drawing.Size(172, 27)
         Me.txtDB.TabIndex = 7
         '
         'MenuStrip3
@@ -378,8 +370,7 @@ Partial Class frmAdmin
         Me.MenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip3.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip3.Name = "MenuStrip3"
-        Me.MenuStrip3.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.MenuStrip3.Size = New System.Drawing.Size(1220, 24)
+        Me.MenuStrip3.Size = New System.Drawing.Size(914, 24)
         Me.MenuStrip3.TabIndex = 0
         Me.MenuStrip3.Text = "MenuStrip3"
         '
@@ -388,16 +379,16 @@ Partial Class frmAdmin
         Me.tbEmployees.Controls.Add(Me.GroupBox6)
         Me.tbEmployees.Controls.Add(Me.GroupBox5)
         Me.tbEmployees.Location = New System.Drawing.Point(4, 29)
-        Me.tbEmployees.Margin = New System.Windows.Forms.Padding(4)
         Me.tbEmployees.Name = "tbEmployees"
-        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbEmployees.Size = New System.Drawing.Size(1591, 585)
+        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbEmployees.Size = New System.Drawing.Size(1191, 464)
         Me.tbEmployees.TabIndex = 1
         Me.tbEmployees.Text = "Employees"
         Me.tbEmployees.UseVisualStyleBackColor = True
         '
         'GroupBox6
         '
+        Me.GroupBox6.Controls.Add(Me.TextBox9)
         Me.GroupBox6.Controls.Add(Me.TextBox8)
         Me.GroupBox6.Controls.Add(Me.Label9)
         Me.GroupBox6.Controls.Add(Me.Label8)
@@ -416,27 +407,187 @@ Partial Class frmAdmin
         Me.GroupBox6.Controls.Add(Me.TextBox3)
         Me.GroupBox6.Controls.Add(Me.Label1)
         Me.GroupBox6.Controls.Add(Me.btnRegAns)
-        Me.GroupBox6.Location = New System.Drawing.Point(8, 113)
+        Me.GroupBox6.Location = New System.Drawing.Point(7, 5)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(386, 388)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox6.Size = New System.Drawing.Size(285, 338)
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Registrere ny ansatt"
         '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(131, 57)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox8.TabIndex = 17
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(4, 180)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(65, 20)
+        Me.Label9.TabIndex = 9
+        Me.Label9.Text = "Bursdag:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(4, 273)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(64, 20)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "Adresse:"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(131, 88)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox7.TabIndex = 16
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(4, 242)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 20)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "Epost:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(4, 211)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(58, 20)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Telefon:"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(131, 119)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox6.TabIndex = 15
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(4, 150)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(74, 20)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "Etternavn:"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(131, 150)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox5.TabIndex = 14
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(4, 119)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 20)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Fornavn:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(131, 26)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox1.TabIndex = 10
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(131, 211)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox2.TabIndex = 11
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(4, 88)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(109, 20)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Gjenta Passord:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(131, 180)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox4.TabIndex = 13
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(4, 57)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 20)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Passord:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(131, 242)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox3.TabIndex = 12
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(4, 26)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(84, 20)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Brukernavn:"
+        '
         'btnRegAns
         '
-        Me.btnRegAns.Location = New System.Drawing.Point(247, 336)
+        Me.btnRegAns.Location = New System.Drawing.Point(186, 304)
+        Me.btnRegAns.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRegAns.Name = "btnRegAns"
-        Me.btnRegAns.Size = New System.Drawing.Size(120, 31)
+        Me.btnRegAns.Size = New System.Drawing.Size(90, 27)
         Me.btnRegAns.TabIndex = 0
         Me.btnRegAns.Text = "Legg til"
         Me.btnRegAns.UseVisualStyleBackColor = True
         '
         'GroupBox5
         '
-        Me.GroupBox5.Location = New System.Drawing.Point(8, 7)
+        Me.GroupBox5.Controls.Add(Me.DataGridView1)
+        Me.GroupBox5.Location = New System.Drawing.Point(296, 5)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox5.Size = New System.Drawing.Size(634, 338)
         Me.GroupBox5.TabIndex = 0
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Ansatte"
@@ -446,32 +597,27 @@ Partial Class frmAdmin
         Me.tabSaleStorage.Controls.Add(Me.GroupBox4)
         Me.tabSaleStorage.Controls.Add(Me.GroupBox3)
         Me.tabSaleStorage.Location = New System.Drawing.Point(4, 29)
-        Me.tabSaleStorage.Margin = New System.Windows.Forms.Padding(4)
         Me.tabSaleStorage.Name = "tabSaleStorage"
-        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(4)
-        Me.tabSaleStorage.Size = New System.Drawing.Size(1591, 585)
+        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tabSaleStorage.Size = New System.Drawing.Size(1191, 469)
         Me.tabSaleStorage.TabIndex = 2
         Me.tabSaleStorage.Text = "Sales"
         Me.tabSaleStorage.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
-        Me.GroupBox4.Location = New System.Drawing.Point(452, 167)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox4.Location = New System.Drawing.Point(339, 136)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox4.Size = New System.Drawing.Size(267, 123)
+        Me.GroupBox4.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Sales Storage"
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(855, 169)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Location = New System.Drawing.Point(641, 137)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox3.Size = New System.Drawing.Size(267, 123)
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Sales Reports"
@@ -481,32 +627,27 @@ Partial Class frmAdmin
         Me.tabRent.Controls.Add(Me.GroupBox2)
         Me.tabRent.Controls.Add(Me.GroupBox1)
         Me.tabRent.Location = New System.Drawing.Point(4, 29)
-        Me.tabRent.Margin = New System.Windows.Forms.Padding(4)
         Me.tabRent.Name = "tabRent"
-        Me.tabRent.Padding = New System.Windows.Forms.Padding(4)
-        Me.tabRent.Size = New System.Drawing.Size(1591, 585)
+        Me.tabRent.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tabRent.Size = New System.Drawing.Size(1191, 469)
         Me.tabRent.TabIndex = 3
         Me.tabRent.Text = "Rentals"
         Me.tabRent.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(816, 374)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Location = New System.Drawing.Point(612, 304)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox2.Size = New System.Drawing.Size(267, 123)
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Rental Sales"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(892, 138)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(669, 112)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(267, 123)
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rental Storage"
@@ -514,10 +655,9 @@ Partial Class frmAdmin
         'tabOvieStor
         '
         Me.tabOvieStor.Location = New System.Drawing.Point(4, 29)
-        Me.tabOvieStor.Margin = New System.Windows.Forms.Padding(4)
         Me.tabOvieStor.Name = "tabOvieStor"
-        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(4)
-        Me.tabOvieStor.Size = New System.Drawing.Size(1591, 585)
+        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tabOvieStor.Size = New System.Drawing.Size(1191, 469)
         Me.tabOvieStor.TabIndex = 4
         Me.tabOvieStor.Text = "Overview Storage"
         Me.tabOvieStor.UseVisualStyleBackColor = True
@@ -525,165 +665,51 @@ Partial Class frmAdmin
         'tabResources
         '
         Me.tabResources.Location = New System.Drawing.Point(4, 29)
-        Me.tabResources.Margin = New System.Windows.Forms.Padding(4)
         Me.tabResources.Name = "tabResources"
-        Me.tabResources.Padding = New System.Windows.Forms.Padding(4)
-        Me.tabResources.Size = New System.Drawing.Size(1591, 585)
+        Me.tabResources.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tabResources.Size = New System.Drawing.Size(1191, 469)
         Me.tabResources.TabIndex = 5
         Me.tabResources.Text = "Resources"
         Me.tabResources.UseVisualStyleBackColor = True
         '
-        'Label1
+        'DataGridView1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Brukernavn:"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(2, 22)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(630, 314)
+        Me.DataGridView1.TabIndex = 0
         '
-        'Label2
+        'TextBox9
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 57)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 25)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Passord:"
+        Me.TextBox9.Location = New System.Drawing.Point(131, 273)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox9.TabIndex = 18
         '
-        'Label3
+        'ToolStripStatusLabel1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 82)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 25)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Gjenta Passord:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 107)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 25)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Fornavn:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 132)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(93, 25)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Etternavn:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 182)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(75, 25)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Telefon:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 207)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(62, 25)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Epost:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(19, 301)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(81, 25)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = "Adresse:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(7, 157)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 25)
-        Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Bursdag:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(175, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox1.TabIndex = 10
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(175, 260)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox2.TabIndex = 11
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(175, 298)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox3.TabIndex = 12
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(175, 222)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox4.TabIndex = 13
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(175, 184)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox5.TabIndex = 14
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(175, 146)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox6.TabIndex = 15
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(175, 108)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox7.TabIndex = 16
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(175, 70)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(192, 32)
-        Me.TextBox8.TabIndex = 17
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
+        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
         'frmAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1599, 668)
+        Me.ClientSize = New System.Drawing.Size(1199, 543)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAdmin"
         Me.Text = "frmAdmin"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
         Me.tbOverview.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
@@ -700,8 +726,10 @@ Partial Class frmAdmin
         Me.tbEmployees.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
         Me.tabSaleStorage.ResumeLayout(False)
         Me.tabRent.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -768,4 +796,7 @@ Partial Class frmAdmin
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
