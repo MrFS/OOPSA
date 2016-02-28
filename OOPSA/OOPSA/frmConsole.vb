@@ -1,12 +1,18 @@
 ﻿Imports System.Console
 Imports MySql
+Imports System.Diagnostics.Process
 
 Public Class frmConsole
+
+    Dim Console As New Console
+
+    Dim c As Process = Process.GetCurrentProcess()
 
     Dim prev As String
 
     Private Sub frmConsole_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Console.Initialize()
+        Initialize()
+        tmConsole.Start()
     End Sub
 
     Private Sub frmConsole_Close(sender As Object, e As EventArgs) Handles MyBase.Closing
@@ -20,16 +26,6 @@ Public Class frmConsole
 
                 TimerSet()
 
-            Case Keys.Enter
-
-                TextBox1.Text.ToLower()
-
-                TextBox1.Clear()
-
-                prev = TextBox1.Text
-
-                Console.Commands()
-
             Case Keys.Up
 
                 TextBox1.Text = prev
@@ -37,11 +33,49 @@ Public Class frmConsole
         End Select
     End Sub
 
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        Select Case e.KeyCode
 
+            Case Keys.Enter
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+                TextBox1.Text.ToLower()
+
+                lstRecent.Items.Add(TextBox1.Text)
+
+                Select Case TextBox1.Text
+
+                    Case "exit"
+
+                        Console.Quit()
+
+                    Case "reset"
+                        tmConsole.Enabled = 0
+                        ToolStripLabel1.Text = "Console Tick : DISABLED"
+                        With lstConsole.Items
+                            .Add("Timer enabled : " & tmConsole.Enabled)
+                        End With
+
+                        TextBox1.Clear()
+
+                End Select
+
+                prev = TextBox1.Text
+
+        End Select
+    End Sub
+
+    Private Sub Console_Tick(sender As Object, e As EventArgs) Handles tmConsole.Tick
 
         Debug()
+
+        ToolStripLabel2.Text = "Application Uptime: " & getUpTime
+
+        ToolStripProgressBar1.Value = Console.CPU()
+        ToolStripProgressBar2.Value = Console.RAM()
+
+        ToolStripStatusLabel1.Text = Console.CPU
+        ToolStripStatusLabel2.Text = Console.RAM
+
 
     End Sub
 
@@ -49,12 +83,26 @@ Public Class frmConsole
 
         With lstConsole.Items
             .Clear()
+            .Add(Application.ProductName & " - " & Application.ProductVersion)
             .Add(Me.ProductName & " Console " & Me.ProductVersion)
             .Add("Server is ONLINE: " & online & " - Server: " & server)
             .Add("Server Ping: " & Console.PingSvr(server))
             .Add("")
             .Add("Database information:")
             DBNNFO()
+            .Add("")
+            .Add("Computer & System Spesifications")
+            .Add("Directory: " & Application.ProductVersion & Application.StartupPath)
+            .Add(My.Computer.Info.OSFullName & (" ") & My.Computer.Info.OSPlatform & (" ") & My.Computer.Info.OSVersion)
+            .Add(My.Computer.Info.TotalPhysicalMemory & (" ") & My.Computer.Info.AvailablePhysicalMemory)
+            .Add(My.Computer.Info.TotalVirtualMemory & (" ") & My.Computer.Info.AvailableVirtualMemory)
+            .Add(vbNewLine)
+            .Add(My.Application.Info.AssemblyName & My.Application.Info.CompanyName)
+            .Add(My.Application.Info.Copyright & My.Application.Info.Description)
+            .Add("Mem Usage (Working Set) :   " & c.WorkingSet64 / 1024 & " K")
+            .Add("VM Size (Private Bytes) " & c.PagedMemorySize64 / 1024 & " K")
+            .Add("GC TotalMemory " & GC.GetTotalMemory(True) & " bytes" & "Current Memory Usage")
+            .Add(vbNewLine)
 
         End With
 
@@ -86,12 +134,12 @@ Public Class frmConsole
 
     Public Sub TimerSet()
 
-        Select Case Timer1.Enabled
+        Select Case tmConsole.Enabled
             Case 1
-                Timer1.Enabled = 0
+                tmConsole.Enabled = 0
                 ToolStripLabel1.Text = "Console Tick : DISABLED"
             Case 0
-                Timer1.Enabled = 1
+                tmConsole.Enabled = 1
                 ToolStripLabel1.Text = "Console Tick : ENABLED"
         End Select
 

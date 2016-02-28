@@ -65,6 +65,8 @@
             DB.DisconnectDatabase()
         End Try
 
+        UpTime()
+
     End Sub
 
     Private Sub OK_Click(sender As Object, e As EventArgs) Handles OK.Click
