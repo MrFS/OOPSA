@@ -23,7 +23,6 @@ Public Class SQL
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "SQL Spørring feilet")
             con.Close()
-            End
         Finally
             con.Dispose()
         End Try
@@ -56,6 +55,14 @@ Public Class SQL
 
         sporring("INSERT INTO logginn")
         sporring("INSERT INTO Ansatt")
+
+    End Sub
+
+    Public Sub seAnsatte()
+
+        'Dim ds As DataSet
+
+        'MsgBox(sporring("SELECT * FROM Ansatt"))
 
     End Sub
 End Class

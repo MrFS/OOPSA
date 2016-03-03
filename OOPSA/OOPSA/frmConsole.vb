@@ -1,4 +1,4 @@
-﻿Imports System.Console
+﻿
 Imports MySql
 Imports System.Diagnostics.Process
 Imports System.IO
@@ -7,16 +7,18 @@ Public Class frmConsole
 
     Dim Console As New Console
 
-    Dim c As Process = Process.GetCurrentProcess()
+    Dim DebugTick As Integer
+
+    Dim w As IO.StreamWriter
 
     Dim prev As String
 
     Private Sub frmConsole_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Initialize()
+
         tmConsole.Start()
 
-        Console.GetDir()
-
+        Console.GetDir(My.Application.Info.DirectoryPath)
 
     End Sub
 
@@ -51,14 +53,21 @@ Public Class frmConsole
 
                     Case "exit"
 
-                        Console.Quit()
+                        Console.Quit("ENV")
 
                     Case "reset"
-                        tmConsole.Enabled = 0
-                        ToolStripLabel1.Text = "Console Tick : DISABLED"
-                        With lstConsole.Items
-                            .Add("Timer enabled : " & tmConsole.Enabled)
-                        End With
+                        Console.Reset()
+
+                    Case "close"
+                        Console.Quit("WINDOW")
+
+                    Case "admin"
+                        Console.Admin()
+
+                    Case "clear"
+                        Console.Clear()
+
+
 
                         TextBox1.Clear()
 
@@ -71,70 +80,34 @@ Public Class frmConsole
 
     Private Sub Console_Tick(sender As Object, e As EventArgs) Handles tmConsole.Tick
 
-        Debug()
+        Console.Debug()
+
+        If DebugTick < 25 Then
+            DebugTick += 1
+        Else
+
+            Dim i As Integer
+            w = New IO.StreamWriter("test.txt")
+            w.WriteLine("")
+            w.WriteLine(My.Computer.Clock.GmtTime)
+            For i = 0 To lstConsoleOverview.Items.Count - 1
+                w.WriteLine(lstConsoleOverview.Items.Item(i))
+            Next
+            w.Close()
+
+
+            DebugTick = 0
+        End If
 
         ToolStripLabel2.Text = "Application Uptime: " & getUpTime
 
         ToolStripProgressBar1.Value = Console.CPU()
         ToolStripProgressBar2.Value = Console.RAM()
 
-        ToolStripStatusLabel1.Text = Console.CPU
-        ToolStripStatusLabel2.Text = Console.RAM
+        ToolStripStatusLabel1.Text = Console.CPU()
+        ToolStripStatusLabel2.Text = Console.RAM()
 
 
-    End Sub
-
-    Public Sub Debug()
-
-        With lstConsole.Items
-            .Clear()
-            .Add(Application.ProductName & " - " & Application.ProductVersion)
-            .Add(Me.ProductName & " Console " & Me.ProductVersion)
-            .Add("Server is ONLINE: " & online & " - Server: " & server)
-            .Add("Server Ping: " & Console.PingSvr(server))
-            .Add("")
-            .Add("Database information:")
-            DBNNFO()
-            .Add("")
-            .Add("Computer & System Spesifications")
-            .Add("Directory: " & Application.ProductVersion & Application.StartupPath)
-            .Add(My.Computer.Info.OSFullName & (" ") & My.Computer.Info.OSPlatform & (" ") & My.Computer.Info.OSVersion)
-            .Add(My.Computer.Info.TotalPhysicalMemory & (" ") & My.Computer.Info.AvailablePhysicalMemory)
-            .Add(My.Computer.Info.TotalVirtualMemory & (" ") & My.Computer.Info.AvailableVirtualMemory)
-            .Add(vbNewLine)
-            .Add(My.Application.Info.AssemblyName & My.Application.Info.CompanyName)
-            .Add(My.Application.Info.Copyright & My.Application.Info.Description)
-            .Add("Mem Usage (Working Set) :   " & c.WorkingSet64 / 1024 & " K")
-            .Add("VM Size (Private Bytes) " & c.PagedMemorySize64 / 1024 & " K")
-            .Add("GC TotalMemory " & GC.GetTotalMemory(True) & " bytes" & "Current Memory Usage")
-            .Add(vbNewLine)
-
-        End With
-
-    End Sub
-
-    Private Sub DBNNFO()
-
-        Try
-            Select Case con.State
-
-                Case 0
-
-                    With lstConsole.Items
-                        .Add("Database connection could not be established")
-                    End With
-
-                Case 1
-
-                    With lstConsole.Items
-                        .Add("Server version: " & con.ServerVersion)
-                        .Add("Connection State: " & con.State & " " & con.Ping)
-                        .Add("Open port: " & port)
-                    End With
-            End Select
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
     End Sub
 
     Public Sub TimerSet()
@@ -149,5 +122,4 @@ Public Class frmConsole
         End Select
 
     End Sub
-
 End Class

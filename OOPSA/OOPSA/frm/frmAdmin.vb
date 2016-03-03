@@ -16,6 +16,26 @@
         txtDBUser.Text = user
         txtDBpwd.Text = pass
 
+        'Try
+        '    con.Open()
+
+        '    SQL.sporring("SELECT * FROM ansatt")
+        '    Command = New MySqlCommand(query, tilkobling)
+        '    SDA.SelectCommand = Command()
+        '    SDA.Fill(dbdataset)
+        '    bsource.DataSource = dbdataset
+        '    DataGridView1.DataSource = bsource
+        '    SDA.Update(dbdataset)
+        '    tilkobling.close()
+        'Catch ex As Exception
+        '    MessageBox.Show(ex.Message)
+        'Finally
+        '    tilkobling.dispose()
+
+        'End Try
+
+        SQL.seAnsatte()
+
     End Sub
 
     Private Sub frmAdmin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
