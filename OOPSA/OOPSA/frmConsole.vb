@@ -1,6 +1,5 @@
-﻿
-Imports MySql
-Imports System.Diagnostics.Process
+﻿Imports MySql
+Imports System.Diagnostics
 Imports System.IO
 
 Public Class frmConsole
@@ -58,9 +57,18 @@ Public Class frmConsole
         End Select
     End Sub
 
-    Private Sub Console_Tick(sender As Object, e As EventArgs) Handles tmConsole.Tick
+    Private Sub Console_Tick(sender As Object, Now As EventArgs) Handles tmConsole.Tick
 
         Console.Debug()
+
+        lstConsole.Items.Clear()
+
+        Dim ctrl As Control = CType(sender, Control)
+
+        lstConsole.Items.Add(New Object() {ctrl.Parent.Name & ctrl.Name, ctrl.GetType})
+
+
+
 
         If DebugTick < 25 Then
             DebugTick += 1
@@ -102,4 +110,12 @@ Public Class frmConsole
         End Select
 
     End Sub
+
+    'Legg inn EVENTLOG Listener
+
+
+
+
+
+
 End Class

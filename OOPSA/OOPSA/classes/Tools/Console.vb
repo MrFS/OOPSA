@@ -1,4 +1,6 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.IO
+Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 
 
 
@@ -97,6 +99,9 @@ Public Class Console
                 My.Forms.frmConsole.ToolStripServerLoad.BackColor = Color.Red
         End Select
 
+        Dim RAMTOT As Integer = My.Computer.Info.TotalPhysicalMemory / 1024 / 1024
+        Dim RAMAV As Integer = My.Computer.Info.AvailablePhysicalMemory / 1024 / 1024
+
         With My.Forms.frmConsole.lstConsoleOverview.Items
             .Clear()
 
@@ -110,7 +115,7 @@ Public Class Console
             .Add("Computer & System Specifications")
             .Add("Directory: " & Application.ProductVersion & Application.StartupPath)
             .Add(My.Computer.Info.OSFullName & (" - ") & My.Computer.Info.OSPlatform & (" ") & My.Computer.Info.OSVersion)
-            .Add(My.Computer.Info.TotalPhysicalMemory & (" - ") & My.Computer.Info.AvailablePhysicalMemory)
+            .Add("Total RAM: " & RAMTOT & ("MB - Total Current Available RAM: ") & RAMAV & "MB")
             .Add(My.Computer.Info.TotalVirtualMemory & (" - ") & My.Computer.Info.AvailableVirtualMemory)
             .Add("")
             .Add(My.Application.Info.AssemblyName & My.Application.Info.CompanyName)
@@ -118,7 +123,7 @@ Public Class Console
             .Add("Mem Usage (Working Set) :   " & c.WorkingSet64 / 1024 & " K")
             .Add("VM Size (Private Bytes) " & c.PagedMemorySize64 / 1024 & " K")
             .Add("GC TotalMemory " & GC.GetTotalMemory(True).ToString & " bytes")
-            .Add("Current GC Mem Usage: ")
+            .Add("Current GC Mem Usage: " & GC.MaxGeneration)
 
         End With
     End Sub
@@ -147,6 +152,12 @@ Public Class Console
         End Try
     End Sub
 
+    Public Function varPointer(ByVal obj As Object) As Integer
+        Dim GC As GCHandle = GCHandle.Alloc(obj, GCHandleType.Pinned)
+        Dim GCAddr As Integer = GC.AddrOfPinnedObject.ToInt32
+        GC.Free()
+        Return GCAddr
+    End Function
 
     Public Sub Reset()
 
