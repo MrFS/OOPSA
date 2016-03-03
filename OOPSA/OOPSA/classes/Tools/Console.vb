@@ -7,8 +7,6 @@ Public Class Console
 
     Dim c As Process = Process.GetCurrentProcess
 
-
-
     Private WithEvents pc_CPU As New PerformanceCounter
     Private WithEvents pc_RAM As New PerformanceCounter
 
@@ -18,8 +16,27 @@ Public Class Console
 
     End Function
 
-    Public Sub Commands(txt As String)
+    Public Sub Commands(cmd As String)
 
+        Select Case cmd
+
+            Case "exit"
+
+                Quit("ENV")
+
+            Case "reset"
+                Reset()
+
+            Case "close"
+                Quit("WINDOW")
+
+            Case "admin"
+                Admin()
+
+            Case "clear"
+                Clear()
+
+        End Select
     End Sub
 
     Public Sub Quit(txt As String)
@@ -30,8 +47,6 @@ Public Class Console
             Case "WINDOW"
                 My.Forms.frmConsole.Close()
         End Select
-
-
 
     End Sub
 
@@ -94,16 +109,16 @@ Public Class Console
             .Add("")
             .Add("Computer & System Specifications")
             .Add("Directory: " & Application.ProductVersion & Application.StartupPath)
-            .Add(My.Computer.Info.OSFullName & (" ") & My.Computer.Info.OSPlatform & (" ") & My.Computer.Info.OSVersion)
-            .Add(My.Computer.Info.TotalPhysicalMemory & (" ") & My.Computer.Info.AvailablePhysicalMemory)
-            .Add(My.Computer.Info.TotalVirtualMemory & (" ") & My.Computer.Info.AvailableVirtualMemory)
-            .Add(vbNewLine)
+            .Add(My.Computer.Info.OSFullName & (" - ") & My.Computer.Info.OSPlatform & (" ") & My.Computer.Info.OSVersion)
+            .Add(My.Computer.Info.TotalPhysicalMemory & (" - ") & My.Computer.Info.AvailablePhysicalMemory)
+            .Add(My.Computer.Info.TotalVirtualMemory & (" - ") & My.Computer.Info.AvailableVirtualMemory)
+            .Add("")
             .Add(My.Application.Info.AssemblyName & My.Application.Info.CompanyName)
             .Add(My.Application.Info.Copyright & My.Application.Info.Description)
             .Add("Mem Usage (Working Set) :   " & c.WorkingSet64 / 1024 & " K")
             .Add("VM Size (Private Bytes) " & c.PagedMemorySize64 / 1024 & " K")
-            .Add("GC TotalMemory " & GC.GetTotalMemory(True) & " bytes" & "Current Memory Usage")
-            .Add(vbNewLine)
+            .Add("GC TotalMemory " & GC.GetTotalMemory(True).ToString & " bytes")
+            .Add("Current GC Mem Usage: ")
 
         End With
     End Sub

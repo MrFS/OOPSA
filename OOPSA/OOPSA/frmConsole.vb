@@ -49,29 +49,9 @@ Public Class frmConsole
 
                 lstRecent.Items.Add(TextBox1.Text)
 
-                Select Case TextBox1.Text
+                Console.Commands(TextBox1.Text)
 
-                    Case "exit"
-
-                        Console.Quit("ENV")
-
-                    Case "reset"
-                        Console.Reset()
-
-                    Case "close"
-                        Console.Quit("WINDOW")
-
-                    Case "admin"
-                        Console.Admin()
-
-                    Case "clear"
-                        Console.Clear()
-
-
-
-                        TextBox1.Clear()
-
-                End Select
+                TextBox1.Clear()
 
                 prev = TextBox1.Text
 
