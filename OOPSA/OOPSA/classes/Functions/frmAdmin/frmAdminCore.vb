@@ -2,7 +2,8 @@
 
 Public Class frmAdminCore
     Public Sub VisAnsatt()
-        Dim sqlstring As String = "SELECT A_id as 'ID', F_navn as 'Fornavn', E_navn as 'Etternavn', bursdag as 'Fødselsdato', e_postt as 'Epost', tlf as 'Telefon', Adresse as 'Adresse', Avdeling_id_Avdeling as 'Avdeling' FROM Ansatt"
+
+        Dim sqlstring As String = "SELECT * FROM Ansatt"
 
         Dim dataadapter As New MySqlDataAdapter()
         Dim cmd As New MySqlCommand(sqlstring, con)
@@ -20,6 +21,17 @@ Public Class frmAdminCore
         bsource.DataSource = dbdataset
 
         My.Forms.frmAdmin.GridDataBoundGrid1.DataSource = bsource
+
+        With My.Forms.frmAdmin.GridDataBoundGrid1
+            .Binder.InternalColumns(0).HeaderText = "ID"
+            .Binder.InternalColumns(1).HeaderText = "Fornavn"
+            .Binder.InternalColumns(2).HeaderText = "Etternavn"
+            .Binder.InternalColumns(3).HeaderText = "Fødselsdato"
+            .Binder.InternalColumns(4).HeaderText = "Epost"
+            .Binder.InternalColumns(5).HeaderText = "Telefon"
+            .Binder.InternalColumns(6).HeaderText = "Adresse"
+            .Binder.InternalColumns(7).HeaderText = "Avdeling"
+        End With
 
         SDA.Update(dbdataset)
     End Sub
