@@ -14,7 +14,6 @@ Partial Class frmLogin
             MyBase.Dispose(disposing)
         End Try
     End Sub
-    Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
@@ -30,30 +29,20 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
+        Dim DigitalClockRenderer1 As Syncfusion.Windows.Forms.Tools.DigitalClockRenderer = New Syncfusion.Windows.Forms.Tools.DigitalClockRenderer()
+        Dim ClockRenderer1 As Syncfusion.Windows.Forms.Tools.ClockRenderer = New Syncfusion.Windows.Forms.Tools.ClockRenderer()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Clock1 = New Syncfusion.Windows.Forms.Tools.Clock()
         Me.SuspendLayout()
-        '
-        'LogoPictureBox
-        '
-        Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
-        Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(2)
-        Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(124, 157)
-        Me.LogoPictureBox.TabIndex = 0
-        Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Location = New System.Drawing.Point(129, 20)
+        Me.UsernameLabel.Location = New System.Drawing.Point(91, 2)
         Me.UsernameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(165, 19)
@@ -63,7 +52,7 @@ Partial Class frmLogin
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(129, 66)
+        Me.PasswordLabel.Location = New System.Drawing.Point(91, 43)
         Me.PasswordLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(165, 19)
@@ -73,7 +62,7 @@ Partial Class frmLogin
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(130, 36)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(92, 21)
         Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(166, 20)
@@ -81,7 +70,7 @@ Partial Class frmLogin
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(130, 82)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(92, 62)
         Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -90,7 +79,7 @@ Partial Class frmLogin
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(151, 123)
+        Me.OK.Location = New System.Drawing.Point(114, 86)
         Me.OK.Margin = New System.Windows.Forms.Padding(2)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(70, 27)
@@ -100,26 +89,52 @@ Partial Class frmLogin
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(225, 123)
+        Me.Cancel.Location = New System.Drawing.Point(188, 86)
         Me.Cancel.Margin = New System.Windows.Forms.Padding(2)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(70, 27)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
         '
+        'Clock1
+        '
+        Me.Clock1.BackgroundColor = System.Drawing.SystemColors.Control
+        Me.Clock1.BeforeTouchSize = New System.Drawing.Size(75, 75)
+        Me.Clock1.ClockFormat = "HH:mm:ss"
+        Me.Clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame
+        Me.Clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle
+        Me.Clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Analog
+        Me.Clock1.CurrentDateTime = New Date(2016, 3, 4, 20, 28, 28, 174)
+        Me.Clock1.CustomTime = New Date(2016, 3, 4, 20, 28, 28, 174)
+        Me.Clock1.DigitalRenderer = DigitalClockRenderer1
+        Me.Clock1.DisplayDates = True
+        Me.Clock1.Location = New System.Drawing.Point(12, 12)
+        Me.Clock1.MinimumSize = New System.Drawing.Size(75, 75)
+        Me.Clock1.Name = "Clock1"
+        Me.Clock1.Now = New Date(CType(0, Long))
+        Me.Clock1.Remainder = New Date(2016, 3, 4, 20, 28, 28, 174)
+        Me.Clock1.Renderer = ClockRenderer1
+        Me.Clock1.ShowClockFrame = False
+        Me.Clock1.ShowCustomTimeClock = False
+        Me.Clock1.ShowHourDesignator = False
+        Me.Clock1.Size = New System.Drawing.Size(75, 75)
+        Me.Clock1.StopTimer = False
+        Me.Clock1.TabIndex = 6
+        Me.Clock1.Text = "Clock1"
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(301, 156)
+        Me.ClientSize = New System.Drawing.Size(262, 117)
+        Me.Controls.Add(Me.Clock1)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.UsernameTextBox)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
-        Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -129,9 +144,10 @@ Partial Class frmLogin
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OOPSA - AS TurCare"
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents Clock1 As Syncfusion.Windows.Forms.Tools.Clock
 End Class

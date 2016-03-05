@@ -40,6 +40,7 @@ Partial Class frmAdmin
         Me.WindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tbOverview = New System.Windows.Forms.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
@@ -56,6 +57,7 @@ Partial Class frmAdmin
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.tbEmployees = New System.Windows.Forms.TabPage()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -83,9 +85,7 @@ Partial Class frmAdmin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabOvieStor = New System.Windows.Forms.TabPage()
         Me.tabResources = New System.Windows.Forms.TabPage()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -103,7 +103,7 @@ Partial Class frmAdmin
         Me.GroupBox5.SuspendLayout()
         Me.tabSaleStorage.SuspendLayout()
         Me.tabRent.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -224,6 +224,12 @@ Partial Class frmAdmin
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
+        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
+        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.tbOverview)
@@ -246,7 +252,7 @@ Partial Class frmAdmin
         Me.tbOverview.Controls.Add(Me.SplitContainer1)
         Me.tbOverview.Location = New System.Drawing.Point(4, 29)
         Me.tbOverview.Name = "tbOverview"
-        Me.tbOverview.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbOverview.Padding = New System.Windows.Forms.Padding(3)
         Me.tbOverview.Size = New System.Drawing.Size(1191, 464)
         Me.tbOverview.TabIndex = 0
         Me.tbOverview.Text = "Overview"
@@ -380,7 +386,7 @@ Partial Class frmAdmin
         Me.tbEmployees.Controls.Add(Me.GroupBox5)
         Me.tbEmployees.Location = New System.Drawing.Point(4, 29)
         Me.tbEmployees.Name = "tbEmployees"
-        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(3)
         Me.tbEmployees.Size = New System.Drawing.Size(1191, 464)
         Me.tbEmployees.TabIndex = 1
         Me.tbEmployees.Text = "Employees"
@@ -408,18 +414,26 @@ Partial Class frmAdmin
         Me.GroupBox6.Controls.Add(Me.Label1)
         Me.GroupBox6.Controls.Add(Me.btnRegAns)
         Me.GroupBox6.Location = New System.Drawing.Point(7, 5)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox6.Size = New System.Drawing.Size(285, 338)
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Registrere ny ansatt"
         '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(131, 273)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(145, 27)
+        Me.TextBox9.TabIndex = 18
+        '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(131, 57)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(145, 27)
         Me.TextBox8.TabIndex = 17
@@ -447,7 +461,7 @@ Partial Class frmAdmin
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(131, 88)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(145, 27)
         Me.TextBox7.TabIndex = 16
@@ -475,7 +489,7 @@ Partial Class frmAdmin
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(131, 119)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(145, 27)
         Me.TextBox6.TabIndex = 15
@@ -493,7 +507,7 @@ Partial Class frmAdmin
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(131, 150)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(145, 27)
         Me.TextBox5.TabIndex = 14
@@ -511,7 +525,7 @@ Partial Class frmAdmin
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(131, 26)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(145, 27)
         Me.TextBox1.TabIndex = 10
@@ -519,7 +533,7 @@ Partial Class frmAdmin
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(131, 211)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(145, 27)
         Me.TextBox2.TabIndex = 11
@@ -537,7 +551,7 @@ Partial Class frmAdmin
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(131, 180)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(145, 27)
         Me.TextBox4.TabIndex = 13
@@ -555,7 +569,7 @@ Partial Class frmAdmin
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(131, 242)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(145, 27)
         Me.TextBox3.TabIndex = 12
@@ -573,7 +587,7 @@ Partial Class frmAdmin
         'btnRegAns
         '
         Me.btnRegAns.Location = New System.Drawing.Point(186, 304)
-        Me.btnRegAns.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegAns.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRegAns.Name = "btnRegAns"
         Me.btnRegAns.Size = New System.Drawing.Size(90, 27)
         Me.btnRegAns.TabIndex = 0
@@ -582,12 +596,12 @@ Partial Class frmAdmin
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.DataGridView1)
+        Me.GroupBox5.Controls.Add(Me.GridDataBoundGrid1)
         Me.GroupBox5.Location = New System.Drawing.Point(296, 5)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox5.Size = New System.Drawing.Size(634, 338)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox5.Size = New System.Drawing.Size(728, 338)
         Me.GroupBox5.TabIndex = 0
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Ansatte"
@@ -598,8 +612,8 @@ Partial Class frmAdmin
         Me.tabSaleStorage.Controls.Add(Me.GroupBox3)
         Me.tabSaleStorage.Location = New System.Drawing.Point(4, 29)
         Me.tabSaleStorage.Name = "tabSaleStorage"
-        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabSaleStorage.Size = New System.Drawing.Size(1191, 469)
+        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabSaleStorage.Size = New System.Drawing.Size(1191, 464)
         Me.tabSaleStorage.TabIndex = 2
         Me.tabSaleStorage.Text = "Sales"
         Me.tabSaleStorage.UseVisualStyleBackColor = True
@@ -628,8 +642,8 @@ Partial Class frmAdmin
         Me.tabRent.Controls.Add(Me.GroupBox1)
         Me.tabRent.Location = New System.Drawing.Point(4, 29)
         Me.tabRent.Name = "tabRent"
-        Me.tabRent.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabRent.Size = New System.Drawing.Size(1191, 469)
+        Me.tabRent.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabRent.Size = New System.Drawing.Size(1191, 464)
         Me.tabRent.TabIndex = 3
         Me.tabRent.Text = "Rentals"
         Me.tabRent.UseVisualStyleBackColor = True
@@ -656,8 +670,8 @@ Partial Class frmAdmin
         '
         Me.tabOvieStor.Location = New System.Drawing.Point(4, 29)
         Me.tabOvieStor.Name = "tabOvieStor"
-        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabOvieStor.Size = New System.Drawing.Size(1191, 469)
+        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabOvieStor.Size = New System.Drawing.Size(1191, 464)
         Me.tabOvieStor.TabIndex = 4
         Me.tabOvieStor.Text = "Overview Storage"
         Me.tabOvieStor.UseVisualStyleBackColor = True
@@ -666,34 +680,35 @@ Partial Class frmAdmin
         '
         Me.tabResources.Location = New System.Drawing.Point(4, 29)
         Me.tabResources.Name = "tabResources"
-        Me.tabResources.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabResources.Size = New System.Drawing.Size(1191, 469)
+        Me.tabResources.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabResources.Size = New System.Drawing.Size(1191, 464)
         Me.tabResources.TabIndex = 5
         Me.tabResources.Text = "Resources"
         Me.tabResources.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'GridDataBoundGrid1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(2, 22)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(630, 314)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(131, 273)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(145, 27)
-        Me.TextBox9.TabIndex = 18
-        '
-        'ToolStripStatusLabel1
-        '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
-        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
+        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid1.EnableEdit = False
+        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(2, 22)
+        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid1.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid1.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(724, 314)
+        Me.GridDataBoundGrid1.SmartSizeBox = False
+        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid1.TabIndex = 0
+        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.ThemesEnabled = True
+        Me.GridDataBoundGrid1.UseListChangedEvent = True
+        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
         '
         'frmAdmin
         '
@@ -729,7 +744,7 @@ Partial Class frmAdmin
         Me.GroupBox5.ResumeLayout(False)
         Me.tabSaleStorage.ResumeLayout(False)
         Me.tabRent.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -798,5 +813,5 @@ Partial Class frmAdmin
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
 End Class

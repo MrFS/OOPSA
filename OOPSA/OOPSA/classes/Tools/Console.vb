@@ -38,6 +38,12 @@ Public Class Console
             Case "clear"
                 Clear()
 
+            Case "frm1"
+                My.Forms.Form1.Show()
+
+            Case "frm2"
+                My.Forms.Form2.Show()
+
         End Select
     End Sub
 
@@ -167,6 +173,15 @@ Public Class Console
 
     End Sub
 
+    Public Sub Help()
+
+
+
+        With My.Forms.frmConsole.lstConsole.Items
+            .Add("")
+        End With
+    End Sub
+
     Public Sub GetDir(dir As String)
 
         Dim di As New IO.DirectoryInfo(dir)
@@ -177,7 +192,7 @@ Public Class Console
         'list the names of all files in the specified directory
         My.Forms.frmConsole.lstDir.Items.Add("Parent Directory : " & di.Name)
         For Each dra In diar1
-            My.Forms.frmConsole.lstDir.Items.Add(vbTab & dra.Name & dra.Extension)
+            My.Forms.frmConsole.lstDir.Items.Add(vbTab & dra.Name)
         Next
     End Sub
 

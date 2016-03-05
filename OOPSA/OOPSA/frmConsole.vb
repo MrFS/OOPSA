@@ -18,7 +18,6 @@ Public Class frmConsole
         tmConsole.Start()
 
         Console.GetDir(My.Application.Info.DirectoryPath)
-
     End Sub
 
     Private Sub frmConsole_Close(sender As Object, e As EventArgs) Handles MyBase.Closing
@@ -62,13 +61,6 @@ Public Class frmConsole
         Console.Debug()
 
         lstConsole.Items.Clear()
-
-        Dim ctrl As Control = CType(sender, Control)
-
-        lstConsole.Items.Add(New Object() {ctrl.Parent.Name & ctrl.Name, ctrl.GetType})
-
-
-
 
         If DebugTick < 25 Then
             DebugTick += 1

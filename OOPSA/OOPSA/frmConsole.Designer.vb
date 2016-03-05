@@ -72,12 +72,15 @@ Partial Class frmConsole
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.lstRecent = New System.Windows.Forms.ListBox()
         Me.tmConsole = New System.Windows.Forms.Timer(Me.components)
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.ctrlList = New System.Windows.Forms.TreeView()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -336,6 +339,7 @@ Partial Class frmConsole
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.ItemSize = New System.Drawing.Size(68, 30)
         Me.TabControl1.Location = New System.Drawing.Point(0, 25)
@@ -349,7 +353,7 @@ Partial Class frmConsole
         Me.TabPage1.Controls.Add(Me.lstConsoleOverview)
         Me.TabPage1.Location = New System.Drawing.Point(4, 34)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(936, 396)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Overview"
@@ -371,10 +375,10 @@ Partial Class frmConsole
         Me.TabPage3.Controls.Add(Me.TextBox1)
         Me.TabPage3.Controls.Add(Me.lstConsole)
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TabPage3.Size = New System.Drawing.Size(936, 398)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(2)
+        Me.TabPage3.Size = New System.Drawing.Size(936, 396)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Console"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -382,8 +386,8 @@ Partial Class frmConsole
         'TextBox1
         '
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.TextBox1.Location = New System.Drawing.Point(2, 376)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Location = New System.Drawing.Point(2, 374)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(932, 20)
         Me.TextBox1.TabIndex = 2
@@ -393,9 +397,9 @@ Partial Class frmConsole
         Me.lstConsole.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lstConsole.FormattingEnabled = True
         Me.lstConsole.Location = New System.Drawing.Point(2, 2)
-        Me.lstConsole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstConsole.Margin = New System.Windows.Forms.Padding(2)
         Me.lstConsole.Name = "lstConsole"
-        Me.lstConsole.Size = New System.Drawing.Size(932, 394)
+        Me.lstConsole.Size = New System.Drawing.Size(932, 392)
         Me.lstConsole.TabIndex = 0
         '
         'TabPage2
@@ -405,8 +409,8 @@ Partial Class frmConsole
         Me.TabPage2.Controls.Add(Me.lstRecent)
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.TabPage2.Size = New System.Drawing.Size(936, 398)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(936, 396)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Misc"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -417,7 +421,7 @@ Partial Class frmConsole
         Me.lstDir.FormattingEnabled = True
         Me.lstDir.Location = New System.Drawing.Point(123, 3)
         Me.lstDir.Name = "lstDir"
-        Me.lstDir.Size = New System.Drawing.Size(473, 392)
+        Me.lstDir.Size = New System.Drawing.Size(473, 390)
         Me.lstDir.TabIndex = 2
         '
         'ListView1
@@ -434,12 +438,30 @@ Partial Class frmConsole
         Me.lstRecent.FormattingEnabled = True
         Me.lstRecent.Location = New System.Drawing.Point(3, 3)
         Me.lstRecent.Name = "lstRecent"
-        Me.lstRecent.Size = New System.Drawing.Size(120, 392)
+        Me.lstRecent.Size = New System.Drawing.Size(120, 390)
         Me.lstRecent.TabIndex = 0
         '
         'tmConsole
         '
         Me.tmConsole.Interval = 500
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.ctrlList)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(936, 396)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "TabPage4"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'ctrlList
+        '
+        Me.ctrlList.Location = New System.Drawing.Point(84, 66)
+        Me.ctrlList.Name = "ctrlList"
+        Me.ctrlList.Size = New System.Drawing.Size(598, 202)
+        Me.ctrlList.TabIndex = 0
         '
         'frmConsole
         '
@@ -464,6 +486,7 @@ Partial Class frmConsole
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -517,4 +540,6 @@ Partial Class frmConsole
     Friend WithEvents ToolStripServerLoad As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripConnected As ToolStripButton
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents ctrlList As TreeView
 End Class

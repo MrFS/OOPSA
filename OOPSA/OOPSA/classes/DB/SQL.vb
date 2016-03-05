@@ -11,7 +11,7 @@ Public Class SQL
     ''' <param name="sql"></param>
     ''' <returns>DT, Informasjon fra databasen</returns>
 
-    Private Function sporring(ByVal sql As String) As DataTable
+    Public Function sporring(ByVal sql As String) As DataTable
         Dim dt As New DataTable
         Try
             con.Open()

@@ -1,6 +1,7 @@
 ﻿Public Class frmAdmin
 
     Dim SQL As New SQL
+    Dim Core As New frmAdminCore
 
     Private Sub frmAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -16,25 +17,9 @@
         txtDBUser.Text = user
         txtDBpwd.Text = pass
 
-        'Try
-        '    con.Open()
 
-        '    SQL.sporring("SELECT * FROM ansatt")
-        '    Command = New MySqlCommand(query, tilkobling)
-        '    SDA.SelectCommand = Command()
-        '    SDA.Fill(dbdataset)
-        '    bsource.DataSource = dbdataset
-        '    DataGridView1.DataSource = bsource
-        '    SDA.Update(dbdataset)
-        '    tilkobling.close()
-        'Catch ex As Exception
-        '    MessageBox.Show(ex.Message)
-        'Finally
-        '    tilkobling.dispose()
 
-        'End Try
-
-        SQL.seAnsatte()
+        Core.VisAnsatt()
 
     End Sub
 
