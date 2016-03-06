@@ -1,4 +1,5 @@
-﻿Public Class frmAdmin
+﻿Imports System.Drawing
+Public Class frmAdmin
 
     Dim SQL As New SQL
     Dim Core As New frmAdminCore
@@ -70,5 +71,15 @@
 
     Private Sub btnRegAns_Click(sender As Object, e As EventArgs) Handles btnRegAns.Click
         SQL.regAnsatt("", "", "", "", "", "", "", "", "")
+    End Sub
+
+    Private Sub TextBoxExt3_TextChanged(sender As Object, e As EventArgs) Handles TextBoxExt3.TextChanged
+
+        If TextBoxExt2.Text = TextBoxExt3.Text Then
+            Me.TextBoxExt3.BackColor = System.Drawing.Color.Green
+        Else
+            Me.TextBoxExt3.BackColor = System.Drawing.Color.Red
+        End If
+
     End Sub
 End Class

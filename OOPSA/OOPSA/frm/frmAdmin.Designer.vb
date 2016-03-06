@@ -22,6 +22,10 @@ Partial Class frmAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim GridBaseStyle1 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle2 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle3 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle4 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -57,6 +61,17 @@ Partial Class frmAdmin
         Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
         Me.tbEmployees = New System.Windows.Forms.TabPage()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.TextBoxExt8 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt7 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt6 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt5 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt4 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt2 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.DateTimePickerAdv1 = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -68,6 +83,7 @@ Partial Class frmAdmin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRegAns = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.tabSaleStorage = New System.Windows.Forms.TabPage()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -76,18 +92,6 @@ Partial Class frmAdmin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tabOvieStor = New System.Windows.Forms.TabPage()
         Me.tabResources = New System.Windows.Forms.TabPage()
-        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
-        Me.DateTimePickerAdv1 = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
-        Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt2 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt4 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt5 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt6 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt7 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt8 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -102,20 +106,20 @@ Partial Class frmAdmin
         Me.MenuStrip2.SuspendLayout()
         Me.tbEmployees.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
+        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateTimePickerAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSaleStorage.SuspendLayout()
         Me.tabRent.SuspendLayout()
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DateTimePickerAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -267,7 +271,7 @@ Partial Class frmAdmin
         Me.tbOverview.Padding = New System.Windows.Forms.Padding(3)
         Me.tbOverview.Size = New System.Drawing.Size(1191, 464)
         Me.tbOverview.TabIndex = 0
-        Me.tbOverview.Text = "Overview"
+        Me.tbOverview.Text = "Oversikt"
         Me.tbOverview.UseVisualStyleBackColor = True
         '
         'SplitContainer1
@@ -401,7 +405,7 @@ Partial Class frmAdmin
         Me.tbEmployees.Padding = New System.Windows.Forms.Padding(3)
         Me.tbEmployees.Size = New System.Drawing.Size(1191, 464)
         Me.tbEmployees.TabIndex = 1
-        Me.tbEmployees.Text = "Employees"
+        Me.tbEmployees.Text = "Ansatte"
         Me.tbEmployees.UseVisualStyleBackColor = True
         '
         'GroupBox6
@@ -435,6 +439,171 @@ Partial Class frmAdmin
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Registrere ny ansatt"
+        '
+        'TextBoxExt8
+        '
+        Me.TextBoxExt8.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt8.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt8.Location = New System.Drawing.Point(131, 266)
+        Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt8.Name = "TextBoxExt8"
+        Me.TextBoxExt8.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt8.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt8.TabIndex = 27
+        Me.TextBoxExt8.Text = "TextBoxExt8"
+        '
+        'TextBoxExt7
+        '
+        Me.TextBoxExt7.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt7.Location = New System.Drawing.Point(131, 235)
+        Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt7.Name = "TextBoxExt7"
+        Me.TextBoxExt7.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt7.TabIndex = 26
+        Me.TextBoxExt7.Text = "TextBoxExt7"
+        '
+        'TextBoxExt6
+        '
+        Me.TextBoxExt6.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt6.Location = New System.Drawing.Point(131, 204)
+        Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt6.Name = "TextBoxExt6"
+        Me.TextBoxExt6.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt6.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt6.TabIndex = 25
+        Me.TextBoxExt6.Text = "TextBoxExt6"
+        '
+        'TextBoxExt5
+        '
+        Me.TextBoxExt5.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt5.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt5.Location = New System.Drawing.Point(131, 143)
+        Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt5.Name = "TextBoxExt5"
+        Me.TextBoxExt5.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt5.TabIndex = 24
+        Me.TextBoxExt5.Text = "TextBoxExt5"
+        '
+        'TextBoxExt4
+        '
+        Me.TextBoxExt4.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt4.Location = New System.Drawing.Point(131, 112)
+        Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt4.Name = "TextBoxExt4"
+        Me.TextBoxExt4.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt4.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt4.TabIndex = 23
+        Me.TextBoxExt4.Text = "TextBoxExt4"
+        '
+        'TextBoxExt3
+        '
+        Me.TextBoxExt3.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt3.Location = New System.Drawing.Point(131, 81)
+        Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt3.Name = "TextBoxExt3"
+        Me.TextBoxExt3.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt3.TabIndex = 22
+        Me.TextBoxExt3.Text = "TextBoxExt3"
+        '
+        'TextBoxExt2
+        '
+        Me.TextBoxExt2.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt2.Location = New System.Drawing.Point(131, 50)
+        Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt2.Name = "TextBoxExt2"
+        Me.TextBoxExt2.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt2.TabIndex = 21
+        Me.TextBoxExt2.Text = "TextBoxExt2"
+        '
+        'TextBoxExt1
+        '
+        Me.TextBoxExt1.BackColor = System.Drawing.Color.White
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt1.Location = New System.Drawing.Point(131, 19)
+        Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt1.Name = "TextBoxExt1"
+        Me.TextBoxExt1.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
+        Me.TextBoxExt1.TabIndex = 2
+        Me.TextBoxExt1.Text = "TextBoxExt1"
+        '
+        'ComboDropDown1
+        '
+        Me.ComboDropDown1.BackColor = System.Drawing.Color.White
+        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(145, 28)
+        Me.ComboDropDown1.Location = New System.Drawing.Point(131, 299)
+        Me.ComboDropDown1.Name = "ComboDropDown1"
+        Me.ComboDropDown1.Size = New System.Drawing.Size(145, 28)
+        Me.ComboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.ComboDropDown1.TabIndex = 2
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(4, 299)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(69, 20)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Avdeling:"
+        '
+        'DateTimePickerAdv1
+        '
+        Me.DateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
+        Me.DateTimePickerAdv1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.DateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DateTimePickerAdv1.CalendarSize = New System.Drawing.Size(189, 176)
+        Me.DateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.DateTimePickerAdv1.CustomFormat = "yyyy-MM-dd"
+        Me.DateTimePickerAdv1.DropDownImage = Nothing
+        Me.DateTimePickerAdv1.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.DateTimePickerAdv1.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.DateTimePickerAdv1.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.DateTimePickerAdv1.Font = New System.Drawing.Font("Segoe UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerAdv1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePickerAdv1.Location = New System.Drawing.Point(131, 175)
+        Me.DateTimePickerAdv1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.DateTimePickerAdv1.MinValue = New Date(CType(0, Long))
+        Me.DateTimePickerAdv1.Name = "DateTimePickerAdv1"
+        Me.DateTimePickerAdv1.ShowCheckBox = False
+        Me.DateTimePickerAdv1.Size = New System.Drawing.Size(145, 23)
+        Me.DateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.DateTimePickerAdv1.TabIndex = 2
+        Me.DateTimePickerAdv1.ThemesEnabled = True
+        Me.DateTimePickerAdv1.Value = New Date(2016, 3, 5, 22, 24, 10, 234)
         '
         'Label9
         '
@@ -548,6 +717,60 @@ Partial Class frmAdmin
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Ansatte"
         '
+        'GridDataBoundGrid1
+        '
+        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle1.Name = "Column Header"
+        GridBaseStyle1.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle1.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle1.StyleInfo.Enabled = False
+        GridBaseStyle1.StyleInfo.Font.Bold = True
+        GridBaseStyle1.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle2.Name = "Header"
+        GridBaseStyle2.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.CellType = "Header"
+        GridBaseStyle2.StyleInfo.Font.Bold = True
+        GridBaseStyle2.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle2.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle3.Name = "Standard"
+        GridBaseStyle3.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle3.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle3.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle4.Name = "Row Header"
+        GridBaseStyle4.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle4.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle4.StyleInfo.Enabled = True
+        GridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
+        Me.GridDataBoundGrid1.DefaultRowHeight = 20
+        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid1.Enabled = False
+        Me.GridDataBoundGrid1.EnableEdit = False
+        Me.GridDataBoundGrid1.EnableRemove = False
+        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(2, 22)
+        Me.GridDataBoundGrid1.MetroScrollBars = True
+        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid1.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid1.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid1.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(669, 340)
+        Me.GridDataBoundGrid1.SmartSizeBox = False
+        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid1.TabIndex = 0
+        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.ThemesEnabled = True
+        Me.GridDataBoundGrid1.UseListChangedEvent = True
+        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
+        '
         'tabSaleStorage
         '
         Me.tabSaleStorage.Controls.Add(Me.GroupBox4)
@@ -557,7 +780,7 @@ Partial Class frmAdmin
         Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(3)
         Me.tabSaleStorage.Size = New System.Drawing.Size(1191, 464)
         Me.tabSaleStorage.TabIndex = 2
-        Me.tabSaleStorage.Text = "Sales"
+        Me.tabSaleStorage.Text = "Salg"
         Me.tabSaleStorage.UseVisualStyleBackColor = True
         '
         'GroupBox4
@@ -587,7 +810,7 @@ Partial Class frmAdmin
         Me.tabRent.Padding = New System.Windows.Forms.Padding(3)
         Me.tabRent.Size = New System.Drawing.Size(1191, 464)
         Me.tabRent.TabIndex = 3
-        Me.tabRent.Text = "Rentals"
+        Me.tabRent.Text = "Utleie"
         Me.tabRent.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -615,7 +838,7 @@ Partial Class frmAdmin
         Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(3)
         Me.tabOvieStor.Size = New System.Drawing.Size(1191, 464)
         Me.tabOvieStor.TabIndex = 4
-        Me.tabOvieStor.Text = "Overview Storage"
+        Me.tabOvieStor.Text = "Oversikt Lager"
         Me.tabOvieStor.UseVisualStyleBackColor = True
         '
         'tabResources
@@ -625,199 +848,8 @@ Partial Class frmAdmin
         Me.tabResources.Padding = New System.Windows.Forms.Padding(3)
         Me.tabResources.Size = New System.Drawing.Size(1191, 464)
         Me.tabResources.TabIndex = 5
-        Me.tabResources.Text = "Resources"
+        Me.tabResources.Text = "Ressurser"
         Me.tabResources.UseVisualStyleBackColor = True
-        '
-        'GridDataBoundGrid1
-        '
-        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid1.EnableEdit = False
-        Me.GridDataBoundGrid1.EnableRemove = False
-        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(2, 22)
-        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid1.Properties.ForceImmediateRepaint = False
-        Me.GridDataBoundGrid1.Properties.MarkColHeader = False
-        Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
-        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(669, 340)
-        Me.GridDataBoundGrid1.SmartSizeBox = False
-        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid1.TabIndex = 0
-        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.ThemesEnabled = True
-        Me.GridDataBoundGrid1.UseListChangedEvent = True
-        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
-        '
-        'DateTimePickerAdv1
-        '
-        Me.DateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
-        Me.DateTimePickerAdv1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.DateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.DateTimePickerAdv1.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerAdv1.CalendarSize = New System.Drawing.Size(189, 176)
-        Me.DateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.DateTimePickerAdv1.CustomFormat = "yyyy-MM-dd"
-        Me.DateTimePickerAdv1.DropDownImage = Nothing
-        Me.DateTimePickerAdv1.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.DateTimePickerAdv1.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.DateTimePickerAdv1.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
-        Me.DateTimePickerAdv1.Font = New System.Drawing.Font("Segoe UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerAdv1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePickerAdv1.Location = New System.Drawing.Point(131, 175)
-        Me.DateTimePickerAdv1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.DateTimePickerAdv1.MinValue = New Date(CType(0, Long))
-        Me.DateTimePickerAdv1.Name = "DateTimePickerAdv1"
-        Me.DateTimePickerAdv1.ShowCheckBox = False
-        Me.DateTimePickerAdv1.Size = New System.Drawing.Size(145, 23)
-        Me.DateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.DateTimePickerAdv1.TabIndex = 2
-        Me.DateTimePickerAdv1.ThemesEnabled = True
-        Me.DateTimePickerAdv1.Value = New Date(2016, 3, 5, 22, 24, 10, 234)
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(4, 299)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 20)
-        Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Avdeling:"
-        '
-        'ComboDropDown1
-        '
-        Me.ComboDropDown1.BackColor = System.Drawing.Color.White
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(145, 28)
-        Me.ComboDropDown1.Location = New System.Drawing.Point(131, 299)
-        Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(145, 28)
-        Me.ComboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.ComboDropDown1.TabIndex = 2
-        '
-        'TextBoxExt1
-        '
-        Me.TextBoxExt1.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt1.Location = New System.Drawing.Point(131, 19)
-        Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt1.Name = "TextBoxExt1"
-        Me.TextBoxExt1.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt1.TabIndex = 2
-        Me.TextBoxExt1.Text = "TextBoxExt1"
-        '
-        'TextBoxExt2
-        '
-        Me.TextBoxExt2.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt2.Location = New System.Drawing.Point(131, 50)
-        Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt2.Name = "TextBoxExt2"
-        Me.TextBoxExt2.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt2.TabIndex = 21
-        Me.TextBoxExt2.Text = "TextBoxExt2"
-        '
-        'TextBoxExt3
-        '
-        Me.TextBoxExt3.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(131, 81)
-        Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt3.TabIndex = 22
-        Me.TextBoxExt3.Text = "TextBoxExt3"
-        '
-        'TextBoxExt4
-        '
-        Me.TextBoxExt4.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt4.Location = New System.Drawing.Point(131, 112)
-        Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt4.Name = "TextBoxExt4"
-        Me.TextBoxExt4.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt4.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt4.TabIndex = 23
-        Me.TextBoxExt4.Text = "TextBoxExt4"
-        '
-        'TextBoxExt5
-        '
-        Me.TextBoxExt5.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt5.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(131, 143)
-        Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt5.Name = "TextBoxExt5"
-        Me.TextBoxExt5.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt5.TabIndex = 24
-        Me.TextBoxExt5.Text = "TextBoxExt5"
-        '
-        'TextBoxExt6
-        '
-        Me.TextBoxExt6.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt6.Location = New System.Drawing.Point(131, 204)
-        Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt6.Name = "TextBoxExt6"
-        Me.TextBoxExt6.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt6.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt6.TabIndex = 25
-        Me.TextBoxExt6.Text = "TextBoxExt6"
-        '
-        'TextBoxExt7
-        '
-        Me.TextBoxExt7.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(131, 235)
-        Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt7.TabIndex = 26
-        Me.TextBoxExt7.Text = "TextBoxExt7"
-        '
-        'TextBoxExt8
-        '
-        Me.TextBoxExt8.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt8.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt8.Location = New System.Drawing.Point(131, 266)
-        Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt8.Name = "TextBoxExt8"
-        Me.TextBoxExt8.Size = New System.Drawing.Size(145, 27)
-        Me.TextBoxExt8.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
-        Me.TextBoxExt8.TabIndex = 27
-        Me.TextBoxExt8.Text = "TextBoxExt8"
         '
         'frmAdmin
         '
@@ -850,20 +882,20 @@ Partial Class frmAdmin
         Me.tbEmployees.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateTimePickerAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabSaleStorage.ResumeLayout(False)
         Me.tabRent.ResumeLayout(False)
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DateTimePickerAdv1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
