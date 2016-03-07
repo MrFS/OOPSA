@@ -23,8 +23,6 @@ Public Class SHA512
 
         SHA512.Clear()
 
-
-
         Return Convert.ToBase64String(cryString)
 
     End Function
