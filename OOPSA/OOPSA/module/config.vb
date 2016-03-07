@@ -11,15 +11,13 @@ Module config
     ''' </summary>
     ''' 
 
-    Private WithEvents Timer1 As New Timer
+    Private WithEvents tmrUp As New Timer
 
     Public server As String = My.Settings.server
     Public database As String = My.Settings.database
     Public user As String = My.Settings.user
     Public pass As String = My.Settings.pass
-    Public port As String = My.Settings.port
-
-    Public currentUser As String
+    Public port As Integer = My.Settings.port
 
     Public getUpTime As Integer
 
@@ -43,10 +41,11 @@ Module config
     End Sub
 
     Public Sub UpTime()
-        Timer1.Interval = 1000
-        Timer1.Start()
+        tmrUp.Interval = 1000
+        tmrUp.Start()
     End Sub
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+
+    Private Sub tmrUp_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrUp.Tick
         getUpTime += 1
     End Sub
 

@@ -128,7 +128,8 @@ Partial Class frmAdmin
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ViewToolStripMenuItem, Me.WindowToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1199, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1599, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -136,114 +137,115 @@ Partial Class frmAdmin
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(89, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(105, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TabsToolStripMenuItem, Me.ToolStripSeparator2})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'TabsToolStripMenuItem
         '
         Me.TabsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OverviewToolStripMenuItem, Me.EmployeesToolStripMenuItem, Me.SalesToolStripMenuItem, Me.RentalToolStripMenuItem, Me.OverviewStorageToolStripMenuItem, Me.ResourcesToolStripMenuItem})
         Me.TabsToolStripMenuItem.Name = "TabsToolStripMenuItem"
-        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.TabsToolStripMenuItem.Text = "Tabs"
         '
         'OverviewToolStripMenuItem
         '
         Me.OverviewToolStripMenuItem.Name = "OverviewToolStripMenuItem"
-        Me.OverviewToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.OverviewToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.OverviewToolStripMenuItem.Text = "Overview"
         '
         'EmployeesToolStripMenuItem
         '
         Me.EmployeesToolStripMenuItem.Name = "EmployeesToolStripMenuItem"
-        Me.EmployeesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.EmployeesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.EmployeesToolStripMenuItem.Text = "Employees"
         '
         'SalesToolStripMenuItem
         '
         Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.SalesToolStripMenuItem.Text = "Sales"
         '
         'RentalToolStripMenuItem
         '
         Me.RentalToolStripMenuItem.Name = "RentalToolStripMenuItem"
-        Me.RentalToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.RentalToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.RentalToolStripMenuItem.Text = "Rental"
         '
         'OverviewStorageToolStripMenuItem
         '
         Me.OverviewStorageToolStripMenuItem.Name = "OverviewStorageToolStripMenuItem"
-        Me.OverviewStorageToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.OverviewStorageToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.OverviewStorageToolStripMenuItem.Text = "Overview Storage"
         '
         'ResourcesToolStripMenuItem
         '
         Me.ResourcesToolStripMenuItem.Name = "ResourcesToolStripMenuItem"
-        Me.ResourcesToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ResourcesToolStripMenuItem.Size = New System.Drawing.Size(201, 26)
         Me.ResourcesToolStripMenuItem.Text = "Resources"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(95, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(178, 6)
         '
         'WindowToolStripMenuItem
         '
         Me.WindowToolStripMenuItem.Name = "WindowToolStripMenuItem"
-        Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+        Me.WindowToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
         Me.WindowToolStripMenuItem.Text = "Window"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 521)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 643)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1199, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1599, 25)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(153, 20)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
         'TabControl1
@@ -257,19 +259,21 @@ Partial Class frmAdmin
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Segoe UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.ItemSize = New System.Drawing.Size(56, 25)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 24)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 28)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1199, 497)
+        Me.TabControl1.Size = New System.Drawing.Size(1599, 615)
         Me.TabControl1.TabIndex = 2
         '
         'tbOverview
         '
         Me.tbOverview.Controls.Add(Me.SplitContainer1)
         Me.tbOverview.Location = New System.Drawing.Point(4, 29)
+        Me.tbOverview.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbOverview.Name = "tbOverview"
-        Me.tbOverview.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbOverview.Size = New System.Drawing.Size(1191, 464)
+        Me.tbOverview.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbOverview.Size = New System.Drawing.Size(1591, 582)
         Me.tbOverview.TabIndex = 0
         Me.tbOverview.Text = "Oversikt"
         Me.tbOverview.UseVisualStyleBackColor = True
@@ -277,7 +281,8 @@ Partial Class frmAdmin
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(3, 3)
+        Me.SplitContainer1.Location = New System.Drawing.Point(4, 4)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -288,8 +293,9 @@ Partial Class frmAdmin
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
         Me.SplitContainer1.Panel2.Controls.Add(Me.MenuStrip3)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1185, 458)
-        Me.SplitContainer1.SplitterDistance = 267
+        Me.SplitContainer1.Size = New System.Drawing.Size(1583, 574)
+        Me.SplitContainer1.SplitterDistance = 392
+        Me.SplitContainer1.SplitterWidth = 5
         Me.SplitContainer1.TabIndex = 0
         '
         'SplitContainer2
@@ -297,6 +303,7 @@ Partial Class frmAdmin
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer2.Name = "SplitContainer2"
         Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -314,15 +321,17 @@ Partial Class frmAdmin
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.AutoScroll = True
-        Me.SplitContainer2.Size = New System.Drawing.Size(267, 458)
-        Me.SplitContainer2.SplitterDistance = 208
+        Me.SplitContainer2.Size = New System.Drawing.Size(392, 574)
+        Me.SplitContainer2.SplitterDistance = 302
+        Me.SplitContainer2.SplitterWidth = 5
         Me.SplitContainer2.TabIndex = 0
         '
         'txtDBpwd
         '
-        Me.txtDBpwd.Location = New System.Drawing.Point(85, 170)
+        Me.txtDBpwd.Location = New System.Drawing.Point(113, 223)
+        Me.txtDBpwd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDBpwd.Name = "txtDBpwd"
-        Me.txtDBpwd.Size = New System.Drawing.Size(172, 27)
+        Me.txtDBpwd.Size = New System.Drawing.Size(228, 32)
         Me.txtDBpwd.TabIndex = 11
         Me.txtDBpwd.UseSystemPasswordChar = True
         '
@@ -330,17 +339,19 @@ Partial Class frmAdmin
         '
         Me.lblDBNfo.AutoSize = True
         Me.lblDBNfo.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDBNfo.Location = New System.Drawing.Point(5, 39)
+        Me.lblDBNfo.Location = New System.Drawing.Point(7, 48)
+        Me.lblDBNfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDBNfo.Name = "lblDBNfo"
-        Me.lblDBNfo.Size = New System.Drawing.Size(68, 153)
+        Me.lblDBNfo.Size = New System.Drawing.Size(88, 207)
         Me.lblDBNfo.TabIndex = 10
         Me.lblDBNfo.Text = "Server:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Database:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Port:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Username:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Password:"
         '
         'txtServer
         '
-        Me.txtServer.Location = New System.Drawing.Point(85, 38)
+        Me.txtServer.Location = New System.Drawing.Point(113, 46)
+        Me.txtServer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(172, 27)
+        Me.txtServer.Size = New System.Drawing.Size(228, 32)
         Me.txtServer.TabIndex = 6
         '
         'MenuStrip2
@@ -349,42 +360,46 @@ Partial Class frmAdmin
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem, Me.ChangeToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(267, 24)
+        Me.MenuStrip2.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip2.Size = New System.Drawing.Size(392, 28)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
         '
         'RefreshToolStripMenuItem
         '
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
         Me.RefreshToolStripMenuItem.Text = "Refresh"
         '
         'ChangeToolStripMenuItem
         '
         Me.ChangeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ChangeToolStripMenuItem.Name = "ChangeToolStripMenuItem"
-        Me.ChangeToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ChangeToolStripMenuItem.Size = New System.Drawing.Size(71, 24)
         Me.ChangeToolStripMenuItem.Text = "Change"
         '
         'txtPort
         '
-        Me.txtPort.Location = New System.Drawing.Point(85, 106)
+        Me.txtPort.Location = New System.Drawing.Point(113, 139)
+        Me.txtPort.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPort.Name = "txtPort"
-        Me.txtPort.Size = New System.Drawing.Size(172, 27)
+        Me.txtPort.Size = New System.Drawing.Size(228, 32)
         Me.txtPort.TabIndex = 9
         '
         'txtDBUser
         '
-        Me.txtDBUser.Location = New System.Drawing.Point(85, 139)
+        Me.txtDBUser.Location = New System.Drawing.Point(113, 183)
+        Me.txtDBUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDBUser.Name = "txtDBUser"
-        Me.txtDBUser.Size = New System.Drawing.Size(172, 27)
+        Me.txtDBUser.Size = New System.Drawing.Size(228, 32)
         Me.txtDBUser.TabIndex = 8
         '
         'txtDB
         '
-        Me.txtDB.Location = New System.Drawing.Point(85, 72)
+        Me.txtDB.Location = New System.Drawing.Point(113, 89)
+        Me.txtDB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDB.Name = "txtDB"
-        Me.txtDB.Size = New System.Drawing.Size(172, 27)
+        Me.txtDB.Size = New System.Drawing.Size(228, 32)
         Me.txtDB.TabIndex = 7
         '
         'MenuStrip3
@@ -392,7 +407,8 @@ Partial Class frmAdmin
         Me.MenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip3.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip3.Name = "MenuStrip3"
-        Me.MenuStrip3.Size = New System.Drawing.Size(914, 24)
+        Me.MenuStrip3.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip3.Size = New System.Drawing.Size(1186, 24)
         Me.MenuStrip3.TabIndex = 0
         Me.MenuStrip3.Text = "MenuStrip3"
         '
@@ -401,9 +417,10 @@ Partial Class frmAdmin
         Me.tbEmployees.Controls.Add(Me.GroupBox6)
         Me.tbEmployees.Controls.Add(Me.GroupBox5)
         Me.tbEmployees.Location = New System.Drawing.Point(4, 29)
+        Me.tbEmployees.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbEmployees.Name = "tbEmployees"
-        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbEmployees.Size = New System.Drawing.Size(1191, 464)
+        Me.tbEmployees.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbEmployees.Size = New System.Drawing.Size(1591, 582)
         Me.tbEmployees.TabIndex = 1
         Me.tbEmployees.Text = "Ansatte"
         Me.tbEmployees.UseVisualStyleBackColor = True
@@ -431,11 +448,11 @@ Partial Class frmAdmin
         Me.GroupBox6.Controls.Add(Me.Label2)
         Me.GroupBox6.Controls.Add(Me.Label1)
         Me.GroupBox6.Controls.Add(Me.btnRegAns)
-        Me.GroupBox6.Location = New System.Drawing.Point(7, 5)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox6.Location = New System.Drawing.Point(9, 6)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox6.Size = New System.Drawing.Size(281, 364)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox6.Size = New System.Drawing.Size(375, 448)
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Registrere ny ansatt"
@@ -443,14 +460,15 @@ Partial Class frmAdmin
         'TextBoxExt8
         '
         Me.TextBoxExt8.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt8.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt8.Location = New System.Drawing.Point(131, 266)
+        Me.TextBoxExt8.Location = New System.Drawing.Point(175, 327)
+        Me.TextBoxExt8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt8.Name = "TextBoxExt8"
-        Me.TextBoxExt8.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt8.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt8.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt8.TabIndex = 27
         Me.TextBoxExt8.Text = "TextBoxExt8"
@@ -458,14 +476,15 @@ Partial Class frmAdmin
         'TextBoxExt7
         '
         Me.TextBoxExt7.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(131, 235)
+        Me.TextBoxExt7.Location = New System.Drawing.Point(175, 289)
+        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt7.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt7.TabIndex = 26
         Me.TextBoxExt7.Text = "TextBoxExt7"
@@ -473,14 +492,15 @@ Partial Class frmAdmin
         'TextBoxExt6
         '
         Me.TextBoxExt6.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt6.Location = New System.Drawing.Point(131, 204)
+        Me.TextBoxExt6.Location = New System.Drawing.Point(175, 251)
+        Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt6.Name = "TextBoxExt6"
-        Me.TextBoxExt6.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt6.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt6.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt6.TabIndex = 25
         Me.TextBoxExt6.Text = "TextBoxExt6"
@@ -488,14 +508,15 @@ Partial Class frmAdmin
         'TextBoxExt5
         '
         Me.TextBoxExt5.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt5.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(131, 143)
+        Me.TextBoxExt5.Location = New System.Drawing.Point(175, 176)
+        Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt5.Name = "TextBoxExt5"
-        Me.TextBoxExt5.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt5.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt5.TabIndex = 24
         Me.TextBoxExt5.Text = "TextBoxExt5"
@@ -503,14 +524,15 @@ Partial Class frmAdmin
         'TextBoxExt4
         '
         Me.TextBoxExt4.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt4.Location = New System.Drawing.Point(131, 112)
+        Me.TextBoxExt4.Location = New System.Drawing.Point(175, 138)
+        Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt4.Name = "TextBoxExt4"
-        Me.TextBoxExt4.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt4.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt4.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt4.TabIndex = 23
         Me.TextBoxExt4.Text = "TextBoxExt4"
@@ -518,14 +540,15 @@ Partial Class frmAdmin
         'TextBoxExt3
         '
         Me.TextBoxExt3.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(131, 81)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(175, 100)
+        Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt3.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt3.TabIndex = 22
         Me.TextBoxExt3.Text = "TextBoxExt3"
@@ -533,14 +556,15 @@ Partial Class frmAdmin
         'TextBoxExt2
         '
         Me.TextBoxExt2.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt2.Location = New System.Drawing.Point(131, 50)
+        Me.TextBoxExt2.Location = New System.Drawing.Point(175, 62)
+        Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt2.Name = "TextBoxExt2"
-        Me.TextBoxExt2.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt2.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt2.TabIndex = 21
         Me.TextBoxExt2.Text = "TextBoxExt2"
@@ -548,14 +572,15 @@ Partial Class frmAdmin
         'TextBoxExt1
         '
         Me.TextBoxExt1.BackColor = System.Drawing.Color.White
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(192, 32)
         Me.TextBoxExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt1.Location = New System.Drawing.Point(131, 19)
+        Me.TextBoxExt1.Location = New System.Drawing.Point(175, 23)
+        Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt1.Name = "TextBoxExt1"
-        Me.TextBoxExt1.Size = New System.Drawing.Size(145, 27)
+        Me.TextBoxExt1.Size = New System.Drawing.Size(192, 32)
         Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.TextBoxExt1.TabIndex = 2
         Me.TextBoxExt1.Text = "TextBoxExt1"
@@ -563,20 +588,20 @@ Partial Class frmAdmin
         'ComboDropDown1
         '
         Me.ComboDropDown1.BackColor = System.Drawing.Color.White
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(145, 28)
-        Me.ComboDropDown1.Location = New System.Drawing.Point(131, 299)
+        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(193, 33)
+        Me.ComboDropDown1.Location = New System.Drawing.Point(175, 368)
+        Me.ComboDropDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(145, 28)
+        Me.ComboDropDown1.Size = New System.Drawing.Size(193, 33)
         Me.ComboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboDropDown1.TabIndex = 2
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(4, 299)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(5, 368)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 20)
+        Me.Label10.Size = New System.Drawing.Size(87, 25)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Avdeling:"
         '
@@ -594,12 +619,13 @@ Partial Class frmAdmin
         Me.DateTimePickerAdv1.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.DateTimePickerAdv1.Font = New System.Drawing.Font("Segoe UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePickerAdv1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePickerAdv1.Location = New System.Drawing.Point(131, 175)
+        Me.DateTimePickerAdv1.Location = New System.Drawing.Point(175, 215)
+        Me.DateTimePickerAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateTimePickerAdv1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.DateTimePickerAdv1.MinValue = New Date(CType(0, Long))
         Me.DateTimePickerAdv1.Name = "DateTimePickerAdv1"
         Me.DateTimePickerAdv1.ShowCheckBox = False
-        Me.DateTimePickerAdv1.Size = New System.Drawing.Size(145, 23)
+        Me.DateTimePickerAdv1.Size = New System.Drawing.Size(193, 28)
         Me.DateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.DateTimePickerAdv1.TabIndex = 2
         Me.DateTimePickerAdv1.ThemesEnabled = True
@@ -608,99 +634,90 @@ Partial Class frmAdmin
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(4, 175)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(5, 215)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(65, 20)
+        Me.Label9.Size = New System.Drawing.Size(83, 25)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "Bursdag:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(4, 266)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(5, 327)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 20)
+        Me.Label8.Size = New System.Drawing.Size(81, 25)
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "Adresse:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(4, 235)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(5, 289)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 20)
+        Me.Label7.Size = New System.Drawing.Size(62, 25)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Epost:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(4, 204)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(5, 251)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 20)
+        Me.Label6.Size = New System.Drawing.Size(75, 25)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Telefon:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(4, 143)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(5, 176)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 20)
+        Me.Label5.Size = New System.Drawing.Size(93, 25)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Etternavn:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 112)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(5, 138)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 20)
+        Me.Label4.Size = New System.Drawing.Size(81, 25)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Fornavn:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(4, 81)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(5, 100)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 20)
+        Me.Label3.Size = New System.Drawing.Size(137, 25)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Gjenta Passord:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(4, 50)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(5, 62)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 20)
+        Me.Label2.Size = New System.Drawing.Size(79, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Passord:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 22)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(5, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 20)
+        Me.Label1.Size = New System.Drawing.Size(107, 25)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Brukernavn:"
         '
         'btnRegAns
         '
-        Me.btnRegAns.Location = New System.Drawing.Point(186, 332)
-        Me.btnRegAns.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRegAns.Location = New System.Drawing.Point(248, 409)
+        Me.btnRegAns.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegAns.Name = "btnRegAns"
-        Me.btnRegAns.Size = New System.Drawing.Size(90, 27)
+        Me.btnRegAns.Size = New System.Drawing.Size(120, 33)
         Me.btnRegAns.TabIndex = 0
         Me.btnRegAns.Text = "Legg til"
         Me.btnRegAns.UseVisualStyleBackColor = True
@@ -708,11 +725,11 @@ Partial Class frmAdmin
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.GridDataBoundGrid1)
-        Me.GroupBox5.Location = New System.Drawing.Point(292, 5)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox5.Location = New System.Drawing.Point(389, 6)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox5.Size = New System.Drawing.Size(673, 364)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox5.Size = New System.Drawing.Size(897, 448)
         Me.GroupBox5.TabIndex = 0
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Ansatte"
@@ -753,7 +770,8 @@ Partial Class frmAdmin
         Me.GridDataBoundGrid1.EnableRemove = False
         Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(2, 22)
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(3, 27)
+        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridDataBoundGrid1.MetroScrollBars = True
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
@@ -762,7 +780,7 @@ Partial Class frmAdmin
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(669, 340)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(891, 419)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 0
@@ -776,27 +794,32 @@ Partial Class frmAdmin
         Me.tabSaleStorage.Controls.Add(Me.GroupBox4)
         Me.tabSaleStorage.Controls.Add(Me.GroupBox3)
         Me.tabSaleStorage.Location = New System.Drawing.Point(4, 29)
+        Me.tabSaleStorage.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabSaleStorage.Name = "tabSaleStorage"
-        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSaleStorage.Size = New System.Drawing.Size(1191, 464)
+        Me.tabSaleStorage.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabSaleStorage.Size = New System.Drawing.Size(1591, 579)
         Me.tabSaleStorage.TabIndex = 2
         Me.tabSaleStorage.Text = "Salg"
         Me.tabSaleStorage.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
-        Me.GroupBox4.Location = New System.Drawing.Point(339, 136)
+        Me.GroupBox4.Location = New System.Drawing.Point(452, 167)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(267, 123)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Sales Storage"
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(641, 137)
+        Me.GroupBox3.Location = New System.Drawing.Point(855, 169)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(267, 123)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Sales Reports"
@@ -806,27 +829,32 @@ Partial Class frmAdmin
         Me.tabRent.Controls.Add(Me.GroupBox2)
         Me.tabRent.Controls.Add(Me.GroupBox1)
         Me.tabRent.Location = New System.Drawing.Point(4, 29)
+        Me.tabRent.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabRent.Name = "tabRent"
-        Me.tabRent.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabRent.Size = New System.Drawing.Size(1191, 464)
+        Me.tabRent.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabRent.Size = New System.Drawing.Size(1591, 579)
         Me.tabRent.TabIndex = 3
         Me.tabRent.Text = "Utleie"
         Me.tabRent.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(612, 304)
+        Me.GroupBox2.Location = New System.Drawing.Point(816, 374)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(267, 123)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Rental Sales"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(669, 112)
+        Me.GroupBox1.Location = New System.Drawing.Point(892, 138)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(267, 123)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rental Storage"
@@ -834,9 +862,10 @@ Partial Class frmAdmin
         'tabOvieStor
         '
         Me.tabOvieStor.Location = New System.Drawing.Point(4, 29)
+        Me.tabOvieStor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabOvieStor.Name = "tabOvieStor"
-        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabOvieStor.Size = New System.Drawing.Size(1191, 464)
+        Me.tabOvieStor.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabOvieStor.Size = New System.Drawing.Size(1591, 579)
         Me.tabOvieStor.TabIndex = 4
         Me.tabOvieStor.Text = "Oversikt Lager"
         Me.tabOvieStor.UseVisualStyleBackColor = True
@@ -844,22 +873,24 @@ Partial Class frmAdmin
         'tabResources
         '
         Me.tabResources.Location = New System.Drawing.Point(4, 29)
+        Me.tabResources.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabResources.Name = "tabResources"
-        Me.tabResources.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabResources.Size = New System.Drawing.Size(1191, 464)
+        Me.tabResources.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabResources.Size = New System.Drawing.Size(1591, 579)
         Me.tabResources.TabIndex = 5
         Me.tabResources.Text = "Ressurser"
         Me.tabResources.UseVisualStyleBackColor = True
         '
         'frmAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1199, 543)
+        Me.ClientSize = New System.Drawing.Size(1599, 668)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmAdmin"
         Me.Text = "frmAdmin"
         Me.MenuStrip1.ResumeLayout(False)

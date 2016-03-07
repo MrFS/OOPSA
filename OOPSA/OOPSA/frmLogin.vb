@@ -85,4 +85,15 @@
 
         Me.Hide()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim en As SHA512
+
+        en = New SHA512
+
+        en.ToHashSHA512 = UsernameTextBox.Text
+
+        UsernameTextBox.Text = en.ToHashSHA512
+
+    End Sub
 End Class

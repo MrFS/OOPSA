@@ -133,8 +133,10 @@
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
     <Compile Include="classes\Security\DBCheck.vb" />
-    <Compile Include="classes\Security\SHA256.vb" />
+    <Compile Include="classes\Security\SHA512.vb" />
+    <Compile Include="classes\Server\ServerCore.vb" />
     <Compile Include="classes\Tools\Console.vb" />
+    <Compile Include="classes\User\UserCore.vb" />
     <Compile Include="frm\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>

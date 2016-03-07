@@ -25,4 +25,17 @@ Public Class Form1
         SDA.Update(dbdataset)
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim Base64 As Base64Enc
+
+        Base64 = New Base64Enc()
+
+        Base64.ToBase64 = TextBox1.Text
+
+        TextBox1.Text = Base64.ToBase64
+
+
+
+    End Sub
 End Class
