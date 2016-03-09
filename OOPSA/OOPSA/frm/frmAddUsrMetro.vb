@@ -1,6 +1,6 @@
 ﻿Imports Syncfusion.Windows.Forms
 
-Public Class frmWizardMetro
+Public Class frmAddUsrMetro
     Inherits MetroForm
 
 

@@ -149,6 +149,12 @@
     <Compile Include="frm\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\frmAddUsrMetro.Designer.vb">
+      <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmAddUsrMetro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\frmAdminMetro.Designer.vb">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </Compile>
@@ -165,12 +171,6 @@
       <DependentUpon>frmTst.vb</DependentUpon>
     </Compile>
     <Compile Include="frm\frmTst.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm\frmWizardMetro.Designer.vb">
-      <DependentUpon>frmWizardMetro.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\frmWizardMetro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm\MDIParent1.Designer.vb">
@@ -238,14 +238,14 @@
     <EmbeddedResource Include="frm\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmAddUsrMetro.resx">
+      <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\frmAdminMetro.resx">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmWizardMetro.resx">
-      <DependentUpon>frmWizardMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\MDIParent1.resx">
       <DependentUpon>MDIParent1.vb</DependentUpon>
