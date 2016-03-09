@@ -49,6 +49,13 @@ Public Class MDIParent1
     End Sub
 
     Private Sub PasteToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles PasteToolStripMenuItem.Click
+
+        Dim child As New frmMain()
+
+        child.MdiParent = Me
+
+        child.Show()
+
         'Use My.Computer.Clipboard.GetText() or My.Computer.Clipboard.GetData to retrieve information from the clipboard.
     End Sub
 

@@ -47,6 +47,10 @@ Public Class Console
             Case "ribbon"
                 My.Forms.frmMetroLogin.Show()
 
+            Case "metroadmin"
+
+                My.Forms.frmAdminMetro.Show()
+
 
         End Select
     End Sub

@@ -149,6 +149,12 @@
     <Compile Include="frm\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\frmAdminMetro.Designer.vb">
+      <DependentUpon>frmAdminMetro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmAdminMetro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\frmAnsatt.Designer.vb">
       <DependentUpon>frmAnsatt.vb</DependentUpon>
     </Compile>
@@ -226,6 +232,9 @@
     <EmbeddedResource Include="frm\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmAdminMetro.resx">
+      <DependentUpon>frmAdminMetro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +293,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\userSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DagligLeder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbOverview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbAnsatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbSalg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
