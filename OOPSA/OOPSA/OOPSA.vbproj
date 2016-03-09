@@ -167,6 +167,12 @@
     <Compile Include="frm\frmTst.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\frmWizardMetro.Designer.vb">
+      <DependentUpon>frmWizardMetro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmWizardMetro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\MDIParent1.Designer.vb">
       <DependentUpon>MDIParent1.vb</DependentUpon>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmWizardMetro.resx">
+      <DependentUpon>frmWizardMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\MDIParent1.resx">
       <DependentUpon>MDIParent1.vb</DependentUpon>
@@ -311,6 +320,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tbSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usrAdd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

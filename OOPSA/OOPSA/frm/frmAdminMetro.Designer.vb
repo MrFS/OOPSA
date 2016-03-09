@@ -22,25 +22,29 @@ Partial Class frmAdminMetro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim GridBaseStyle1 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle2 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle3 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle4 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbOverview = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.tbAnsatte = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.tbSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.tbSettings = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.tabSettings = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.Splitter1 = New System.Windows.Forms.Splitter()
-        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.tbSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.tbAnsatte.SuspendLayout()
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbSettings.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSettings.SuspendLayout()
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlAdv1
@@ -52,9 +56,9 @@ Partial Class frmAdminMetro
         Me.TabControlAdv1.BorderWidth = 2
         Me.TabControlAdv1.Controls.Add(Me.tbOverview)
         Me.TabControlAdv1.Controls.Add(Me.tbAnsatte)
-        Me.TabControlAdv1.Controls.Add(Me.tbLager)
-        Me.TabControlAdv1.Controls.Add(Me.tbSalg)
         Me.TabControlAdv1.Controls.Add(Me.tbSettings)
+        Me.TabControlAdv1.Controls.Add(Me.tbSalg)
+        Me.TabControlAdv1.Controls.Add(Me.tbLager)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.FixedSingleBorderColor = System.Drawing.SystemColors.Window
         Me.TabControlAdv1.FocusOnTabClick = False
@@ -84,17 +88,6 @@ Partial Class frmAdminMetro
         Me.tbOverview.TabIndex = 1
         Me.tbOverview.ThemesEnabled = True
         '
-        'tbLager
-        '
-        Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
-        Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbLager.Location = New System.Drawing.Point(105, 2)
-        Me.tbLager.Name = "tbLager"
-        Me.tbLager.ShowCloseButton = True
-        Me.tbLager.Size = New System.Drawing.Size(820, 408)
-        Me.tbLager.TabIndex = 4
-        Me.tbLager.ThemesEnabled = True
-        '
         'tbAnsatte
         '
         Me.tbAnsatte.Controls.Add(Me.GridDataBoundGrid1)
@@ -109,17 +102,65 @@ Partial Class frmAdminMetro
         Me.tbAnsatte.TabIndex = 2
         Me.tbAnsatte.ThemesEnabled = True
         '
-        'tbSalg
+        'GridDataBoundGrid1
         '
-        Me.tbSalg.Image = Global.OOPSA.My.Resources.Resources.tbSalg1
-        Me.tbSalg.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbSalg.Location = New System.Drawing.Point(105, 2)
-        Me.tbSalg.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.tbSalg.Name = "tbSalg"
-        Me.tbSalg.ShowCloseButton = True
-        Me.tbSalg.Size = New System.Drawing.Size(820, 408)
-        Me.tbSalg.TabIndex = 3
-        Me.tbSalg.ThemesEnabled = True
+        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle1.Name = "Column Header"
+        GridBaseStyle1.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle1.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle1.StyleInfo.Enabled = False
+        GridBaseStyle1.StyleInfo.Font.Bold = True
+        GridBaseStyle1.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle2.Name = "Header"
+        GridBaseStyle2.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle2.StyleInfo.CellType = "Header"
+        GridBaseStyle2.StyleInfo.Font.Bold = True
+        GridBaseStyle2.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle2.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle3.Name = "Standard"
+        GridBaseStyle3.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle3.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle3.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle4.Name = "Row Header"
+        GridBaseStyle4.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle4.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle4.StyleInfo.Enabled = True
+        GridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
+        Me.GridDataBoundGrid1.DefaultRowHeight = 20
+        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(184, 0)
+        Me.GridDataBoundGrid1.MetroScrollBars = True
+        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid1.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid1.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid1.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(636, 408)
+        Me.GridDataBoundGrid1.SmartSizeBox = False
+        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid1.TabIndex = 1
+        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
+        Me.GridDataBoundGrid1.ThemesEnabled = True
+        Me.GridDataBoundGrid1.UseListChangedEvent = True
+        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
+        '
+        'Splitter1
+        '
+        Me.Splitter1.BackColor = System.Drawing.Color.Silver
+        Me.Splitter1.Location = New System.Drawing.Point(0, 0)
+        Me.Splitter1.Name = "Splitter1"
+        Me.Splitter1.Size = New System.Drawing.Size(184, 408)
+        Me.Splitter1.TabIndex = 0
+        Me.Splitter1.TabStop = False
         '
         'tbSettings
         '
@@ -172,34 +213,28 @@ Partial Class frmAdminMetro
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
         '
-        'Splitter1
+        'tbLager
         '
-        Me.Splitter1.BackColor = System.Drawing.Color.Silver
-        Me.Splitter1.Location = New System.Drawing.Point(0, 0)
-        Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(160, 408)
-        Me.Splitter1.TabIndex = 0
-        Me.Splitter1.TabStop = False
+        Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
+        Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
+        Me.tbLager.Location = New System.Drawing.Point(105, 2)
+        Me.tbLager.Name = "tbLager"
+        Me.tbLager.ShowCloseButton = True
+        Me.tbLager.Size = New System.Drawing.Size(820, 408)
+        Me.tbLager.TabIndex = 4
+        Me.tbLager.ThemesEnabled = True
         '
-        'GridDataBoundGrid1
+        'tbSalg
         '
-        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(160, 0)
-        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(660, 408)
-        Me.GridDataBoundGrid1.SmartSizeBox = False
-        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid1.TabIndex = 1
-        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.ThemesEnabled = True
-        Me.GridDataBoundGrid1.UseListChangedEvent = True
-        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
+        Me.tbSalg.Image = Global.OOPSA.My.Resources.Resources.tbSalg1
+        Me.tbSalg.ImageSize = New System.Drawing.Size(48, 48)
+        Me.tbSalg.Location = New System.Drawing.Point(105, 2)
+        Me.tbSalg.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbSalg.Name = "tbSalg"
+        Me.tbSalg.ShowCloseButton = True
+        Me.tbSalg.Size = New System.Drawing.Size(820, 408)
+        Me.tbSalg.TabIndex = 3
+        Me.tbSalg.ThemesEnabled = True
         '
         'frmAdminMetro
         '
@@ -222,10 +257,10 @@ Partial Class frmAdminMetro
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlAdv1.ResumeLayout(False)
         Me.tbAnsatte.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbSettings.ResumeLayout(False)
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabSettings.ResumeLayout(False)
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
