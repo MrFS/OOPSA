@@ -78,6 +78,18 @@
     <Reference Include="Syncfusion.Chart.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Diagram.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Diagram.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Syncfusion\13.4.0.53\Assemblies\4.6\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Syncfusion\13.4.0.53\Assemblies\4.6\Syncfusion.DocIO.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Syncfusion\13.4.0.53\Assemblies\4.6\Syncfusion.DocToPDFConverter.Base.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Gauge.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Grid.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -323,6 +335,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usrAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbSalgChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbTxtEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbRent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbReport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtnewDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtPrint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtPaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtInsert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -20,9 +20,9 @@ Public Class frmAdminCore
         SDA.Fill(dbdataset)
         bsource.DataSource = dbdataset
 
-        My.Forms.frmAdmin.GridDataBoundGrid1.DataSource = bsource
+        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = bsource
 
-        With My.Forms.frmAdmin.GridDataBoundGrid1
+        With My.Forms.frmAdminMetro.GridDataBoundGrid1
             .Binder.InternalColumns(0).HeaderText = "ID"
             .Binder.InternalColumns(1).HeaderText = "Fornavn"
             .Binder.InternalColumns(2).HeaderText = "Etternavn"

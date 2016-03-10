@@ -44,8 +44,8 @@ Partial Class frmAddUsrMetro
         Me.TextBoxExt7 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.TextBoxExt8 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.TextBoxExt9 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt10 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.dtpBirth = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,12 +55,12 @@ Partial Class frmAddUsrMetro
         CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblUsername
         '
-        Me.lblUsername.Location = New System.Drawing.Point(16, 233)
+        Me.lblUsername.Location = New System.Drawing.Point(15, 94)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(73, 17)
         Me.lblUsername.TabIndex = 0
@@ -70,20 +70,20 @@ Partial Class frmAddUsrMetro
         '
         Me.btnFinish.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnFinish.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnFinish.BeforeTouchSize = New System.Drawing.Size(107, 44)
+        Me.btnFinish.BeforeTouchSize = New System.Drawing.Size(116, 42)
         Me.btnFinish.ForeColor = System.Drawing.Color.White
         Me.btnFinish.IsBackStageButton = False
-        Me.btnFinish.Location = New System.Drawing.Point(324, 477)
+        Me.btnFinish.Location = New System.Drawing.Point(258, 198)
         Me.btnFinish.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnFinish.Name = "btnFinish"
-        Me.btnFinish.Size = New System.Drawing.Size(107, 44)
+        Me.btnFinish.Size = New System.Drawing.Size(116, 42)
         Me.btnFinish.TabIndex = 1
         Me.btnFinish.Text = "Legg til ansatt"
         Me.btnFinish.UseVisualStyle = True
         '
         'lblPass
         '
-        Me.lblPass.Location = New System.Drawing.Point(14, 250)
+        Me.lblPass.Location = New System.Drawing.Point(136, 94)
         Me.lblPass.Name = "lblPass"
         Me.lblPass.Size = New System.Drawing.Size(53, 17)
         Me.lblPass.TabIndex = 2
@@ -91,7 +91,7 @@ Partial Class frmAddUsrMetro
         '
         'lblPassRep
         '
-        Me.lblPassRep.Location = New System.Drawing.Point(14, 279)
+        Me.lblPassRep.Location = New System.Drawing.Point(258, 94)
         Me.lblPassRep.Name = "lblPassRep"
         Me.lblPassRep.Size = New System.Drawing.Size(94, 17)
         Me.lblPassRep.TabIndex = 3
@@ -99,7 +99,7 @@ Partial Class frmAddUsrMetro
         '
         'lblFNavn
         '
-        Me.lblFNavn.Location = New System.Drawing.Point(19, 99)
+        Me.lblFNavn.Location = New System.Drawing.Point(14, 44)
         Me.lblFNavn.Name = "lblFNavn"
         Me.lblFNavn.Size = New System.Drawing.Size(55, 17)
         Me.lblFNavn.TabIndex = 4
@@ -107,7 +107,7 @@ Partial Class frmAddUsrMetro
         '
         'lblENavn
         '
-        Me.lblENavn.Location = New System.Drawing.Point(14, 367)
+        Me.lblENavn.Location = New System.Drawing.Point(136, 44)
         Me.lblENavn.Name = "lblENavn"
         Me.lblENavn.Size = New System.Drawing.Size(64, 17)
         Me.lblENavn.TabIndex = 5
@@ -115,7 +115,7 @@ Partial Class frmAddUsrMetro
         '
         'lblBirth
         '
-        Me.lblBirth.Location = New System.Drawing.Point(14, 407)
+        Me.lblBirth.Location = New System.Drawing.Point(258, 44)
         Me.lblBirth.Name = "lblBirth"
         Me.lblBirth.Size = New System.Drawing.Size(76, 17)
         Me.lblBirth.TabIndex = 6
@@ -123,7 +123,7 @@ Partial Class frmAddUsrMetro
         '
         'lblEmail
         '
-        Me.lblEmail.Location = New System.Drawing.Point(14, 442)
+        Me.lblEmail.Location = New System.Drawing.Point(14, 144)
         Me.lblEmail.Name = "lblEmail"
         Me.lblEmail.Size = New System.Drawing.Size(41, 17)
         Me.lblEmail.TabIndex = 7
@@ -131,7 +131,7 @@ Partial Class frmAddUsrMetro
         '
         'lblTlf
         '
-        Me.lblTlf.Location = New System.Drawing.Point(14, 477)
+        Me.lblTlf.Location = New System.Drawing.Point(14, 194)
         Me.lblTlf.Name = "lblTlf"
         Me.lblTlf.Size = New System.Drawing.Size(52, 17)
         Me.lblTlf.TabIndex = 8
@@ -139,7 +139,7 @@ Partial Class frmAddUsrMetro
         '
         'lblAdress
         '
-        Me.lblAdress.Location = New System.Drawing.Point(14, 511)
+        Me.lblAdress.Location = New System.Drawing.Point(136, 144)
         Me.lblAdress.Name = "lblAdress"
         Me.lblAdress.Size = New System.Drawing.Size(54, 17)
         Me.lblAdress.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class frmAddUsrMetro
         '
         'lblDepartment
         '
-        Me.lblDepartment.Location = New System.Drawing.Point(15, 551)
+        Me.lblDepartment.Location = New System.Drawing.Point(136, 194)
         Me.lblDepartment.Name = "lblDepartment"
         Me.lblDepartment.Size = New System.Drawing.Size(59, 17)
         Me.lblDepartment.TabIndex = 10
@@ -157,7 +157,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt1.Location = New System.Drawing.Point(118, 158)
+        Me.TextBoxExt1.Location = New System.Drawing.Point(14, 65)
         Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt1.Name = "TextBoxExt1"
@@ -170,7 +170,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt2.Location = New System.Drawing.Point(315, 43)
+        Me.TextBoxExt2.Location = New System.Drawing.Point(136, 65)
         Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt2.Name = "TextBoxExt2"
@@ -183,7 +183,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(289, 244)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(14, 115)
         Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.Name = "TextBoxExt3"
@@ -196,7 +196,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt4.Location = New System.Drawing.Point(362, 331)
+        Me.TextBoxExt4.Location = New System.Drawing.Point(136, 115)
         Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt4.Name = "TextBoxExt4"
@@ -209,7 +209,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(295, 359)
+        Me.TextBoxExt5.Location = New System.Drawing.Point(258, 115)
         Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt5.Name = "TextBoxExt5"
@@ -222,7 +222,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt6.Location = New System.Drawing.Point(302, 211)
+        Me.TextBoxExt6.Location = New System.Drawing.Point(14, 165)
         Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt6.Name = "TextBoxExt6"
@@ -235,11 +235,11 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(301, 158)
+        Me.TextBoxExt7.Location = New System.Drawing.Point(136, 165)
         Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt7.Size = New System.Drawing.Size(238, 25)
         Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt7.TabIndex = 17
         Me.TextBoxExt7.Text = "TextBoxExt7"
@@ -248,7 +248,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt8.Location = New System.Drawing.Point(298, 136)
+        Me.TextBoxExt8.Location = New System.Drawing.Point(14, 215)
         Me.TextBoxExt8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt8.Name = "TextBoxExt8"
@@ -261,7 +261,7 @@ Partial Class frmAddUsrMetro
         '
         Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt9.Location = New System.Drawing.Point(192, 319)
+        Me.TextBoxExt9.Location = New System.Drawing.Point(136, 215)
         Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt9.Name = "TextBoxExt9"
@@ -270,26 +270,38 @@ Partial Class frmAddUsrMetro
         Me.TextBoxExt9.TabIndex = 19
         Me.TextBoxExt9.Text = "TextBoxExt9"
         '
-        'TextBoxExt10
-        '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt10.Location = New System.Drawing.Point(403, 406)
-        Me.TextBoxExt10.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt10.Name = "TextBoxExt10"
-        Me.TextBoxExt10.Size = New System.Drawing.Size(94, 25)
-        Me.TextBoxExt10.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt10.TabIndex = 20
-        Me.TextBoxExt10.Text = "TextBoxExt10"
-        '
         'AutoLabel1
         '
-        Me.AutoLabel1.Location = New System.Drawing.Point(14, 12)
+        Me.AutoLabel1.Location = New System.Drawing.Point(6, 9)
         Me.AutoLabel1.Name = "AutoLabel1"
-        Me.AutoLabel1.Size = New System.Drawing.Size(69, 17)
+        Me.AutoLabel1.Size = New System.Drawing.Size(377, 17)
         Me.AutoLabel1.TabIndex = 21
-        Me.AutoLabel1.Text = "AutoLabel1"
+        Me.AutoLabel1.Text = "Fyll inn områdene nedenfor for å legge til en ny ansatt i systemet."
+        '
+        'dtpBirth
+        '
+        Me.dtpBirth.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
+        Me.dtpBirth.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.dtpBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.dtpBirth.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpBirth.CalendarSize = New System.Drawing.Size(189, 176)
+        Me.dtpBirth.Checked = False
+        Me.dtpBirth.CustomFormat = "yyyy-MM-dd"
+        Me.dtpBirth.DropDownImage = Nothing
+        Me.dtpBirth.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpBirth.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpBirth.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.dtpBirth.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpBirth.Location = New System.Drawing.Point(258, 65)
+        Me.dtpBirth.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpBirth.MinValue = New Date(CType(0, Long))
+        Me.dtpBirth.Name = "dtpBirth"
+        Me.dtpBirth.ShowCheckBox = False
+        Me.dtpBirth.Size = New System.Drawing.Size(116, 25)
+        Me.dtpBirth.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.dtpBirth.TabIndex = 22
+        Me.dtpBirth.Value = New Date(2016, 3, 10, 12, 36, 8, 262)
         '
         'frmAddUsrMetro
         '
@@ -302,9 +314,9 @@ Partial Class frmAddUsrMetro
         CaptionImage1.Name = "capAddAnsatt"
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
-        Me.ClientSize = New System.Drawing.Size(595, 591)
+        Me.ClientSize = New System.Drawing.Size(384, 252)
+        Me.Controls.Add(Me.dtpBirth)
         Me.Controls.Add(Me.AutoLabel1)
-        Me.Controls.Add(Me.TextBoxExt10)
         Me.Controls.Add(Me.TextBoxExt9)
         Me.Controls.Add(Me.TextBoxExt8)
         Me.Controls.Add(Me.TextBoxExt7)
@@ -339,7 +351,7 @@ Partial Class frmAddUsrMetro
         CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -365,6 +377,6 @@ Partial Class frmAddUsrMetro
     Friend WithEvents TextBoxExt7 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents TextBoxExt8 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents TextBoxExt9 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt10 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents dtpBirth As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
 End Class
