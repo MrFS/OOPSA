@@ -46,7 +46,7 @@ Partial Class frmAdminMetro
         Me.tbAnsatte = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainerAdv1 = New Syncfusion.Windows.Forms.Tools.SplitContainerAdv()
         Me.btnAddUsr = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.dgvAnsatte = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.tbSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabControlAdv2 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbTextEdit = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -77,6 +77,8 @@ Partial Class frmAdminMetro
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.ToolStripEx6.SuspendLayout()
@@ -86,7 +88,7 @@ Partial Class frmAdminMetro
         Me.SplitContainerAdv1.Panel1.SuspendLayout()
         Me.SplitContainerAdv1.Panel2.SuspendLayout()
         Me.SplitContainerAdv1.SuspendLayout()
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvAnsatte, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbSalg.SuspendLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv2.SuspendLayout()
@@ -97,6 +99,9 @@ Partial Class frmAdminMetro
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSettings.SuspendLayout()
         Me.tbLager.SuspendLayout()
+        CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GradientPanel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControlAdv1
@@ -255,8 +260,8 @@ Partial Class frmAdminMetro
         '
         'tbAnsatte
         '
+        Me.tbAnsatte.Controls.Add(Me.GradientPanel1)
         Me.tbAnsatte.Controls.Add(Me.ToolStripEx2)
-        Me.tbAnsatte.Controls.Add(Me.SplitContainerAdv1)
         Me.tbAnsatte.Image = Global.OOPSA.My.Resources.Resources.tbAnsatte
         Me.tbAnsatte.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbAnsatte.Location = New System.Drawing.Point(105, 2)
@@ -270,8 +275,8 @@ Partial Class frmAdminMetro
         'SplitContainerAdv1
         '
         Me.SplitContainerAdv1.BeforeTouchSize = 7
-        Me.SplitContainerAdv1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.SplitContainerAdv1.Location = New System.Drawing.Point(0, 110)
+        Me.SplitContainerAdv1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainerAdv1.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainerAdv1.Name = "SplitContainerAdv1"
         '
         'SplitContainerAdv1.Panel1
@@ -280,8 +285,8 @@ Partial Class frmAdminMetro
         '
         'SplitContainerAdv1.Panel2
         '
-        Me.SplitContainerAdv1.Panel2.Controls.Add(Me.GridDataBoundGrid1)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(872, 365)
+        Me.SplitContainerAdv1.Panel2.Controls.Add(Me.dgvAnsatte)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(868, 431)
         Me.SplitContainerAdv1.SplitterDistance = 174
         Me.SplitContainerAdv1.TabIndex = 3
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
@@ -301,10 +306,10 @@ Partial Class frmAdminMetro
         Me.btnAddUsr.Text = "Legg til ansatt"
         Me.btnAddUsr.UseVisualStyle = True
         '
-        'GridDataBoundGrid1
+        'dgvAnsatte
         '
-        Me.GridDataBoundGrid1.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.dgvAnsatte.AllowDragSelectedCols = True
+        Me.dgvAnsatte.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
         GridBaseStyle1.Name = "Column Header"
         GridBaseStyle1.StyleInfo.BaseStyle = "Header"
         GridBaseStyle1.StyleInfo.CellType = "ColumnHeaderCell"
@@ -329,28 +334,28 @@ Partial Class frmAdminMetro
         GridBaseStyle4.StyleInfo.CellType = "RowHeaderCell"
         GridBaseStyle4.StyleInfo.Enabled = True
         GridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
-        Me.GridDataBoundGrid1.DefaultRowHeight = 20
-        Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid1.MetroScrollBars = True
-        Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid1.Properties.ForceImmediateRepaint = False
-        Me.GridDataBoundGrid1.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.GridDataBoundGrid1.Properties.MarkColHeader = False
-        Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
-        Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(691, 365)
-        Me.GridDataBoundGrid1.SmartSizeBox = False
-        Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid1.TabIndex = 1
-        Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
-        Me.GridDataBoundGrid1.ThemesEnabled = True
-        Me.GridDataBoundGrid1.UseListChangedEvent = True
-        Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
+        Me.dgvAnsatte.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
+        Me.dgvAnsatte.DefaultRowHeight = 20
+        Me.dgvAnsatte.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvAnsatte.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.dgvAnsatte.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.dgvAnsatte.Location = New System.Drawing.Point(0, 0)
+        Me.dgvAnsatte.MetroScrollBars = True
+        Me.dgvAnsatte.Name = "dgvAnsatte"
+        Me.dgvAnsatte.OptimizeInsertRemoveCells = True
+        Me.dgvAnsatte.Properties.ForceImmediateRepaint = False
+        Me.dgvAnsatte.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.dgvAnsatte.Properties.MarkColHeader = False
+        Me.dgvAnsatte.Properties.MarkRowHeader = False
+        Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.dgvAnsatte.Size = New System.Drawing.Size(687, 431)
+        Me.dgvAnsatte.SmartSizeBox = False
+        Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.dgvAnsatte.TabIndex = 1
+        Me.dgvAnsatte.Text = "GridDataBoundGrid1"
+        Me.dgvAnsatte.ThemesEnabled = True
+        Me.dgvAnsatte.UseListChangedEvent = True
+        Me.dgvAnsatte.UseRightToLeftCompatibleTextBox = True
         '
         'tbSalg
         '
@@ -495,8 +500,8 @@ Partial Class frmAdminMetro
         '
         'tbSettings
         '
+        Me.tbSettings.Controls.Add(Me.Panel3)
         Me.tbSettings.Controls.Add(Me.ToolStripEx5)
-        Me.tbSettings.Controls.Add(Me.tabSettings)
         Me.tbSettings.Image = Global.OOPSA.My.Resources.Resources.tbSettings
         Me.tbSettings.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbSettings.Location = New System.Drawing.Point(105, 2)
@@ -509,14 +514,14 @@ Partial Class frmAdminMetro
         'tabSettings
         '
         Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 365)
+        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 435)
         Me.tabSettings.Controls.Add(Me.TabPageAdv1)
         Me.tabSettings.Controls.Add(Me.TabPageAdv2)
-        Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.Location = New System.Drawing.Point(0, 110)
+        Me.tabSettings.Location = New System.Drawing.Point(0, 0)
         Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Size = New System.Drawing.Size(872, 365)
+        Me.tabSettings.Size = New System.Drawing.Size(872, 435)
         Me.tabSettings.TabIndex = 0
         Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tabSettings.ThemesEnabled = True
@@ -528,7 +533,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 326)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 396)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "TabPageAdv1"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -540,7 +545,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv2.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 326)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 396)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -688,6 +693,24 @@ Partial Class frmAdminMetro
         Me.ToolStripButton7.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton7.Text = "ToolStripButton7"
         '
+        'GradientPanel1
+        '
+        Me.GradientPanel1.Controls.Add(Me.SplitContainerAdv1)
+        Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GradientPanel1.Location = New System.Drawing.Point(0, 40)
+        Me.GradientPanel1.Name = "GradientPanel1"
+        Me.GradientPanel1.Size = New System.Drawing.Size(872, 435)
+        Me.GradientPanel1.TabIndex = 5
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.tabSettings)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 40)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(872, 435)
+        Me.Panel3.TabIndex = 2
+        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -718,7 +741,7 @@ Partial Class frmAdminMetro
         Me.SplitContainerAdv1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainerAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerAdv1.ResumeLayout(False)
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAnsatte, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbSalg.ResumeLayout(False)
         Me.tbSalg.PerformLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -733,6 +756,9 @@ Partial Class frmAdminMetro
         Me.tabSettings.ResumeLayout(False)
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
+        CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GradientPanel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -743,7 +769,7 @@ Partial Class frmAdminMetro
     Friend WithEvents tbSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents tbLager As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents tbSettings As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents dgvAnsatte As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents tabSettings As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents TabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
@@ -784,4 +810,6 @@ Partial Class frmAdminMetro
     Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents ToolStripButton6 As ToolStripButton
     Friend WithEvents ToolStripButton7 As ToolStripButton
+    Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
+    Friend WithEvents Panel3 As Panel
 End Class
