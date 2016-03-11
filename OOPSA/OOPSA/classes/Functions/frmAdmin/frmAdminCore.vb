@@ -35,4 +35,43 @@ Public Class frmAdminCore
 
         SDA.Update(dbdataset)
     End Sub
+
+    Public Sub visLeie()
+
+        Dim sqlstring As String = "SELECT * FROM Leie"
+        Dim dataadapter As New MySqlDataAdapter()
+        Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
+
+
+        dataadapter.SelectCommand = cmd
+
+        Dim dbdataset As New DataTable
+        Dim bsource As New BindingSource
+        Dim SDA As New MySqlDataAdapter
+
+        SDA.SelectCommand = cmd
+        SDA.Fill(dbdataset)
+        bsource.DataSource = dbdataset 'Takk takk FS
+
+
+        My.Forms.frmAdminMetro.GridDataBoundGrid2.DataSource = bsource
+
+        With My.Forms.frmAdminMetro.GridDataBoundGrid2
+            .Binder.InternalColumns(0).HeaderText = "Leie ID"
+            .Binder.InternalColumns(1).HeaderText = "Fra"
+            .Binder.InternalColumns(2).HeaderText = "Til"
+            .Binder.InternalColumns(3).HeaderText = "Utleier ID"
+            .Binder.InternalColumns(4).HeaderText = "Kunde ID"
+            .Binder.InternalColumns(5).HeaderText = "Produkt ID"
+        End With
+
+        SDA.Update(dbdataset)
+
+
+
+
+
+    End Sub
+
+
 End Class

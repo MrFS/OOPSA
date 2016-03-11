@@ -13,6 +13,8 @@ Public Class frmAdminMetro
 
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Core.VisAnsatt()
+        Core.visLeie()
+
 
         For Each var As Object In Me.FontListBox1.Items
             ToolStripComboBoxEx1.Items.Add(var)
