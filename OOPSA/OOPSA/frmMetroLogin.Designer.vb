@@ -29,20 +29,20 @@ Partial Class frmMetroLogin
         Me.btnLgInn = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.aLblUsr = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.aLblPw = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.CarouselItem1 = New Syncfusion.Windows.Forms.Tools.CarouselItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CarouselItem1 = New Syncfusion.Windows.Forms.Tools.CarouselItem()
         CType(Me.txtUsr, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtPw, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtUsr
         '
         Me.txtUsr.BackColor = System.Drawing.Color.White
-        Me.txtUsr.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.txtUsr.BeforeTouchSize = New System.Drawing.Size(218, 20)
         Me.txtUsr.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtUsr.BorderSides = System.Windows.Forms.Border3DSide.Bottom
         Me.txtUsr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -58,7 +58,7 @@ Partial Class frmMetroLogin
         'txtPw
         '
         Me.txtPw.BackColor = System.Drawing.Color.White
-        Me.txtPw.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.txtPw.BeforeTouchSize = New System.Drawing.Size(218, 20)
         Me.txtPw.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtPw.BorderSides = System.Windows.Forms.Border3DSide.Bottom
         Me.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -66,10 +66,12 @@ Partial Class frmMetroLogin
         Me.txtPw.Location = New System.Drawing.Point(12, 64)
         Me.txtPw.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtPw.Name = "txtPw"
+        Me.txtPw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtPw.Size = New System.Drawing.Size(218, 20)
         Me.txtPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.txtPw.TabIndex = 2
         Me.txtPw.Text = "aaa"
+        Me.txtPw.UseSystemPasswordChar = True
         '
         'btnLgInn
         '
@@ -101,16 +103,14 @@ Partial Class frmMetroLogin
         Me.aLblPw.TabIndex = 5
         Me.aLblPw.Text = "Passord:"
         '
-        'CarouselItem1
+        'PictureBox2
         '
-        Me.CarouselItem1.BackColor = System.Drawing.Color.Black
-        Me.CarouselItem1.Location = New System.Drawing.Point(111, -20)
-        Me.CarouselItem1.Name = "CarouselItem1"
-        Me.CarouselItem1.Size = New System.Drawing.Size(100, 50)
-        Me.CarouselItem1.TabIndex = 0
-        Me.CarouselItem1.TabStop = False
-        Me.CarouselItem1.Tag = 0R
-        Me.CarouselItem1.Visible = False
+        Me.PictureBox2.Image = Global.OOPSA.My.Resources.Resources.Kiwi
+        Me.PictureBox2.Location = New System.Drawing.Point(446, 65)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(53, 50)
+        Me.PictureBox2.TabIndex = 7
+        Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
@@ -121,14 +121,16 @@ Partial Class frmMetroLogin
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox2
+        'CarouselItem1
         '
-        Me.PictureBox2.Image = Global.OOPSA.My.Resources.Resources.Kiwi
-        Me.PictureBox2.Location = New System.Drawing.Point(446, 65)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(53, 50)
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
+        Me.CarouselItem1.BackColor = System.Drawing.Color.Black
+        Me.CarouselItem1.Location = New System.Drawing.Point(111, -20)
+        Me.CarouselItem1.Name = "CarouselItem1"
+        Me.CarouselItem1.Size = New System.Drawing.Size(100, 50)
+        Me.CarouselItem1.TabIndex = 0
+        Me.CarouselItem1.TabStop = False
+        Me.CarouselItem1.Tag = 0R
+        Me.CarouselItem1.Visible = False
         '
         'frmMetroLogin
         '
@@ -159,9 +161,9 @@ Partial Class frmMetroLogin
         Me.Text = "TurCare AS Logg Inn | OOPSA BADR08 - Bits Please"
         CType(Me.txtUsr, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtPw, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
