@@ -54,9 +54,9 @@ Public Class frmAdminCore
         bsource.DataSource = dbdataset 'Takk takk FS
 
 
-        My.Forms.frmAdminMetro.GridDataBoundGrid2.DataSource = bsource
+        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = bsource
 
-        With My.Forms.frmAdminMetro.GridDataBoundGrid2
+        With My.Forms.frmAdminMetro.GridDataBoundGrid1
             .Binder.InternalColumns(0).HeaderText = "Leie ID"
             .Binder.InternalColumns(1).HeaderText = "Fra"
             .Binder.InternalColumns(2).HeaderText = "Til"
@@ -64,6 +64,7 @@ Public Class frmAdminCore
             .Binder.InternalColumns(4).HeaderText = "Kunde ID"
             .Binder.InternalColumns(5).HeaderText = "Produkt ID"
         End With
+
 
         SDA.Update(dbdataset)
 
