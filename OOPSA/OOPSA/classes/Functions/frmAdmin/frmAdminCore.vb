@@ -38,7 +38,10 @@ Public Class frmAdminCore
 
     Public Sub visLeie()
 
-        Dim sqlstring As String = "SELECT * FROM Leie"
+        Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
+FROM Leie
+LEFT OUTER JOIN Produkt
+ON Leie.Produkt_id=Produkt.Produkt_id"
         Dim dataadapter As New MySqlDataAdapter()
         Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
 
@@ -62,6 +65,7 @@ Public Class frmAdminCore
             .Binder.InternalColumns(2).HeaderText = "Til"
             .Binder.InternalColumns(3).HeaderText = "Utleier ID"
             .Binder.InternalColumns(4).HeaderText = "Kunde ID"
+            .Binder.InternalColumns(5).HeaderText = "Produkt Navn"
             .Binder.InternalColumns(5).HeaderText = "Produkt ID"
         End With
 
