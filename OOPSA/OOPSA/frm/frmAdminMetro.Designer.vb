@@ -323,10 +323,10 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.Controls.Add(Me.ToolStripEx6)
         Me.tbTextEdit.Image = Global.OOPSA.My.Resources.Resources.tbTxtEditor
         Me.tbTextEdit.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbTextEdit.Location = New System.Drawing.Point(3, 53)
+        Me.tbTextEdit.Location = New System.Drawing.Point(3, 2)
         Me.tbTextEdit.Name = "tbTextEdit"
         Me.tbTextEdit.ShowCloseButton = True
-        Me.tbTextEdit.Size = New System.Drawing.Size(865, 378)
+        Me.tbTextEdit.Size = New System.Drawing.Size(865, 429)
         Me.tbTextEdit.TabIndex = 2
         Me.tbTextEdit.Text = "Teksteditor"
         Me.tbTextEdit.ThemesEnabled = True
@@ -339,7 +339,7 @@ Partial Class frmAdminMetro
         Me.Panel1.Location = New System.Drawing.Point(0, 42)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel1.Size = New System.Drawing.Size(865, 336)
+        Me.Panel1.Size = New System.Drawing.Size(865, 387)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -351,7 +351,7 @@ Partial Class frmAdminMetro
         Me.Panel2.Location = New System.Drawing.Point(50, 10)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(765, 326)
+        Me.Panel2.Size = New System.Drawing.Size(765, 377)
         Me.Panel2.TabIndex = 0
         '
         'FontListBox1
@@ -389,7 +389,7 @@ Partial Class frmAdminMetro
         Me.richTextBox1.Location = New System.Drawing.Point(10, 10)
         Me.richTextBox1.Margin = New System.Windows.Forms.Padding(50)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(745, 306)
+        Me.richTextBox1.Size = New System.Drawing.Size(745, 357)
         Me.richTextBox1.TabIndex = 2
         Me.richTextBox1.Text = ""
         '
@@ -574,10 +574,10 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Controls.Add(Me.GridDataBoundGrid1)
         Me.tbUtleieOversikt.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.tbUtleieOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
+        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 2)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 378)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 429)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
@@ -624,7 +624,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(865, 378)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(865, 429)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -637,10 +637,10 @@ Partial Class frmAdminMetro
         '
         Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
         Me.tbSalgOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 53)
+        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 2)
         Me.tbSalgOversikt.Name = "tbSalgOversikt"
         Me.tbSalgOversikt.ShowCloseButton = True
-        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 378)
+        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 429)
         Me.tbSalgOversikt.TabIndex = 1
         Me.tbSalgOversikt.Text = "Salg"
         Me.tbSalgOversikt.ThemesEnabled = True
@@ -649,10 +649,10 @@ Partial Class frmAdminMetro
         '
         Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
+        Me.tbReporting.Location = New System.Drawing.Point(3, 2)
         Me.tbReporting.Name = "tbReporting"
         Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 378)
+        Me.tbReporting.Size = New System.Drawing.Size(865, 429)
         Me.tbReporting.TabIndex = 3
         Me.tbReporting.Text = "Rapporter"
         Me.tbReporting.ThemesEnabled = True

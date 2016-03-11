@@ -143,6 +143,7 @@
   <ItemGroup>
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
+    <Compile Include="classes\Functions\frmLogin\Login.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
     <Compile Include="classes\Security\DBCheck.vb" />
     <Compile Include="classes\Security\SHA512.vb" />
@@ -380,6 +381,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\txtAlignRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginForgot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

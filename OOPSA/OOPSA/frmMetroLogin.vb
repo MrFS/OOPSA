@@ -3,6 +3,8 @@
 Public Class frmMetroLogin
     Inherits MetroForm
 
+    Dim Login As New Login
+
     Private Sub frmMetroLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
             Case Keys.F10
@@ -11,5 +13,28 @@ Public Class frmMetroLogin
             Case Keys.F12
                 frmConsole.Show()
         End Select
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        frmConsole.Show()
+    End Sub
+
+    Private Sub btnLgInn_Click(sender As Object, e As EventArgs) Handles btnLgInn.Click
+        Login.Login(txtUsr.Text, txtPw.Text)
+    End Sub
+
+    Private Sub frmMetroLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim DB As New DBConnect
+
+
+        Try
+
+            DB.ConnectDatabase()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            DB.DisconnectDatabase()
+        End Try
     End Sub
 End Class

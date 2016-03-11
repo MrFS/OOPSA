@@ -36,9 +36,9 @@ Public Class frmAdminMetro
     Private Sub txtFontCombo_DropDownClosed(sender As Object, e As EventArgs) Handles txtFontCombo.DropDownClosed
 
         If richTextBox1.SelectionFont IsNot Nothing Then
-
+            richTextBox1.Font = New Font(txtFontCombo.Text, CInt(txtFontSizeCombo.Text), FontStyle.Regular)
         End If
 
-        richTextBox1.Font = New Font(txtFontCombo.Text, CInt(txtFontSizeCombo.Text), FontStyle.Regular)
+
     End Sub
 End Class

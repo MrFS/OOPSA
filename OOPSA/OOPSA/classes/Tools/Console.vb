@@ -44,7 +44,7 @@ Public Class Console
             Case "frm2"
                 My.Forms.Form2.Show()
 
-            Case "ribbon"
+            Case "metrologin"
                 My.Forms.frmMetroLogin.Show()
 
             Case "metroadmin"
