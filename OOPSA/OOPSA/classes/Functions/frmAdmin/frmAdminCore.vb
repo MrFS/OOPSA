@@ -66,7 +66,7 @@ ON Leie.Produkt_id=Produkt.Produkt_id"
             .Binder.InternalColumns(3).HeaderText = "Utleier ID"
             .Binder.InternalColumns(4).HeaderText = "Kunde ID"
             .Binder.InternalColumns(5).HeaderText = "Produkt Navn"
-            .Binder.InternalColumns(5).HeaderText = "Produkt ID"
+            .Binder.InternalColumns(6).HeaderText = "Produkt ID"
         End With
 
 
