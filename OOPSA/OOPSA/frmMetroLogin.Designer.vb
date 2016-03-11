@@ -42,7 +42,7 @@ Partial Class frmMetroLogin
         'txtUsr
         '
         Me.txtUsr.BackColor = System.Drawing.Color.White
-        Me.txtUsr.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtUsr.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtUsr.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtUsr.BorderSides = System.Windows.Forms.Border3DSide.Bottom
         Me.txtUsr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -53,11 +53,12 @@ Partial Class frmMetroLogin
         Me.txtUsr.Size = New System.Drawing.Size(218, 20)
         Me.txtUsr.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.txtUsr.TabIndex = 1
+        Me.txtUsr.Text = "FS"
         '
         'txtPw
         '
         Me.txtPw.BackColor = System.Drawing.Color.White
-        Me.txtPw.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtPw.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtPw.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtPw.BorderSides = System.Windows.Forms.Border3DSide.Bottom
         Me.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -68,6 +69,7 @@ Partial Class frmMetroLogin
         Me.txtPw.Size = New System.Drawing.Size(218, 20)
         Me.txtPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.txtPw.TabIndex = 2
+        Me.txtPw.Text = "aaa"
         '
         'btnLgInn
         '
