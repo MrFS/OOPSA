@@ -59,18 +59,19 @@ Partial Class frmAdminMetro
         Me.CopyToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripComboBoxEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-        Me.ToolStripComboBoxEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+        Me.txtFontCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+        Me.txtFontSizeCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.txtInsertImg = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.txtAlignLeft = New System.Windows.Forms.ToolStripButton()
+        Me.txtAlignJust = New System.Windows.Forms.ToolStripButton()
+        Me.txtAlignRight = New System.Windows.Forms.ToolStripButton()
         Me.tbUtleieOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.tbSalgOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.tbReporting = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx3 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
@@ -82,7 +83,6 @@ Partial Class frmAdminMetro
         Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.tbOverview.SuspendLayout()
@@ -102,12 +102,12 @@ Partial Class frmAdminMetro
         Me.Panel2.SuspendLayout()
         Me.ToolStripEx6.SuspendLayout()
         Me.tbUtleieOversikt.SuspendLayout()
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbSettings.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSettings.SuspendLayout()
         Me.tbLager.SuspendLayout()
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlAdv1
@@ -161,7 +161,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(872, 40)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "Oversikt"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -184,9 +184,9 @@ Partial Class frmAdminMetro
         '
         Me.GradientPanel1.Controls.Add(Me.SplitContainerAdv1)
         Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GradientPanel1.Location = New System.Drawing.Point(0, 45)
+        Me.GradientPanel1.Location = New System.Drawing.Point(0, 40)
         Me.GradientPanel1.Name = "GradientPanel1"
-        Me.GradientPanel1.Size = New System.Drawing.Size(872, 430)
+        Me.GradientPanel1.Size = New System.Drawing.Size(872, 435)
         Me.GradientPanel1.TabIndex = 5
         '
         'SplitContainerAdv1
@@ -203,7 +203,7 @@ Partial Class frmAdminMetro
         'SplitContainerAdv1.Panel2
         '
         Me.SplitContainerAdv1.Panel2.Controls.Add(Me.dgvAnsatte)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(868, 426)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(868, 431)
         Me.SplitContainerAdv1.SplitterDistance = 174
         Me.SplitContainerAdv1.TabIndex = 3
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
@@ -265,7 +265,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.Properties.MarkColHeader = False
         Me.dgvAnsatte.Properties.MarkRowHeader = False
         Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvAnsatte.Size = New System.Drawing.Size(687, 426)
+        Me.dgvAnsatte.Size = New System.Drawing.Size(687, 431)
         Me.dgvAnsatte.SmartSizeBox = False
         Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvAnsatte.TabIndex = 1
@@ -283,7 +283,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 40)
         Me.ToolStripEx2.TabIndex = 4
         Me.ToolStripEx2.Text = "Ansatte"
         Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -304,16 +304,16 @@ Partial Class frmAdminMetro
         '
         'TabControlAdv2
         '
-        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 430)
+        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 435)
         Me.TabControlAdv2.Controls.Add(Me.tbTextEdit)
         Me.TabControlAdv2.Controls.Add(Me.tbUtleieOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbSalgOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbReporting)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.ItemSize = New System.Drawing.Size(62, 48)
-        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 45)
+        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 40)
         Me.TabControlAdv2.Name = "TabControlAdv2"
-        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 430)
+        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 435)
         Me.TabControlAdv2.TabIndex = 2
         Me.TabControlAdv2.ThemesEnabled = True
         '
@@ -326,7 +326,7 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.Location = New System.Drawing.Point(3, 53)
         Me.tbTextEdit.Name = "tbTextEdit"
         Me.tbTextEdit.ShowCloseButton = True
-        Me.tbTextEdit.Size = New System.Drawing.Size(865, 373)
+        Me.tbTextEdit.Size = New System.Drawing.Size(865, 378)
         Me.tbTextEdit.TabIndex = 2
         Me.tbTextEdit.Text = "Teksteditor"
         Me.tbTextEdit.ThemesEnabled = True
@@ -336,10 +336,10 @@ Partial Class frmAdminMetro
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 48)
+        Me.Panel1.Location = New System.Drawing.Point(0, 42)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel1.Size = New System.Drawing.Size(865, 325)
+        Me.Panel1.Size = New System.Drawing.Size(865, 336)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -351,7 +351,7 @@ Partial Class frmAdminMetro
         Me.Panel2.Location = New System.Drawing.Point(50, 10)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(765, 315)
+        Me.Panel2.Size = New System.Drawing.Size(765, 326)
         Me.Panel2.TabIndex = 0
         '
         'FontListBox1
@@ -363,14 +363,14 @@ Partial Class frmAdminMetro
         Me.FontListBox1.MetroColor = System.Drawing.SystemColors.Highlight
         Me.FontListBox1.Name = "FontListBox1"
         MetroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        'MetroColorTable1.ArrowInActive = System.Drawing.Color.White
+        MetroColorTable1.ArrowInActive = System.Drawing.Color.White
         MetroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ScrollerBackground = System.Drawing.Color.White
         MetroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        'MetroColorTable1.ThumbInActive = System.Drawing.Color.White
+        MetroColorTable1.ThumbInActive = System.Drawing.Color.White
         MetroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty
@@ -389,7 +389,7 @@ Partial Class frmAdminMetro
         Me.richTextBox1.Location = New System.Drawing.Point(10, 10)
         Me.richTextBox1.Margin = New System.Windows.Forms.Padding(50)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(745, 295)
+        Me.richTextBox1.Size = New System.Drawing.Size(745, 306)
         Me.richTextBox1.TabIndex = 2
         Me.richTextBox1.Text = ""
         '
@@ -399,11 +399,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx6.Image = Nothing
         Me.ToolStripEx6.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator1, Me.ToolStripComboBoxEx1, Me.ToolStripComboBoxEx2, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7})
+        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator1, Me.txtFontCombo, Me.txtFontSizeCombo, Me.ToolStripSeparator2, Me.txtInsertImg, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.txtAlignLeft, Me.txtAlignJust, Me.txtAlignRight})
         Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx6.Name = "ToolStripEx6"
         Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(865, 48)
+        Me.ToolStripEx6.Size = New System.Drawing.Size(865, 42)
         Me.ToolStripEx6.TabIndex = 2
         Me.ToolStripEx6.Text = "Teksteditor"
         Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -414,7 +414,7 @@ Partial Class frmAdminMetro
         Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
         Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.NewToolStripButton.Text = "&New"
         '
         'OpenToolStripButton
@@ -423,7 +423,7 @@ Partial Class frmAdminMetro
         Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
         Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.OpenToolStripButton.Text = "&Open"
         '
         'SaveToolStripButton
@@ -432,7 +432,7 @@ Partial Class frmAdminMetro
         Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.SaveToolStripButton.Text = "&Save"
         '
         'PrintToolStripButton
@@ -441,13 +441,13 @@ Partial Class frmAdminMetro
         Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
         Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripButton.Name = "PrintToolStripButton"
-        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.PrintToolStripButton.Text = "&Print"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 28)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'CutToolStripButton
         '
@@ -455,7 +455,7 @@ Partial Class frmAdminMetro
         Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
         Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.CutToolStripButton.Text = "C&ut"
         '
         'CopyToolStripButton
@@ -464,7 +464,7 @@ Partial Class frmAdminMetro
         Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
         Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.CopyToolStripButton.Text = "&Copy"
         '
         'PasteToolStripButton
@@ -473,52 +473,52 @@ Partial Class frmAdminMetro
         Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
         Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.PasteToolStripButton.Text = "&Paste"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 28)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 27)
         '
-        'ToolStripComboBoxEx1
+        'txtFontCombo
         '
-        Me.ToolStripComboBoxEx1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripComboBoxEx1.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.ToolStripComboBoxEx1.MaxLength = 32767
-        Me.ToolStripComboBoxEx1.Name = "ToolStripComboBoxEx1"
-        Me.ToolStripComboBoxEx1.Size = New System.Drawing.Size(135, 28)
-        Me.ToolStripComboBoxEx1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        Me.txtFontCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.txtFontCombo.MaxLength = 32767
+        Me.txtFontCombo.Name = "txtFontCombo"
+        Me.txtFontCombo.Size = New System.Drawing.Size(135, 27)
+        Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
-        'ToolStripComboBoxEx2
+        'txtFontSizeCombo
         '
-        Me.ToolStripComboBoxEx2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripComboBoxEx2.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
-        Me.ToolStripComboBoxEx2.MaxLength = 32767
-        Me.ToolStripComboBoxEx2.Name = "ToolStripComboBoxEx2"
-        Me.ToolStripComboBoxEx2.Size = New System.Drawing.Size(45, 28)
-        Me.ToolStripComboBoxEx2.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        Me.txtFontSizeCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
+        Me.txtFontSizeCombo.MaxLength = 32767
+        Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
+        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 27)
+        Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 28)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
         '
-        'ToolStripButton1
+        'txtInsertImg
         '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtInsert
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(24, 25)
-        Me.ToolStripButton1.Text = "txtInsert"
+        Me.txtInsertImg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
+        Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtInsertImg.Name = "txtInsertImg"
+        Me.txtInsertImg.Size = New System.Drawing.Size(24, 24)
+        Me.txtInsertImg.Text = "txtInsert"
         '
         'ToolStripButton2
         '
         Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 25)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 24)
         Me.ToolStripButton2.Text = "ToolStripButton2"
         '
         'ToolStripButton3
@@ -526,7 +526,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 25)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 24)
         Me.ToolStripButton3.Text = "ToolStripButton3"
         '
         'ToolStripButton4
@@ -534,37 +534,40 @@ Partial Class frmAdminMetro
         Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 25)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 24)
         Me.ToolStripButton4.Text = "ToolStripButton4"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 28)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
         '
-        'ToolStripButton5
+        'txtAlignLeft
         '
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(23, 25)
-        Me.ToolStripButton5.Text = "ToolStripButton5"
+        Me.txtAlignLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
+        Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignLeft.Name = "txtAlignLeft"
+        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignLeft.Text = "ToolStripButton5"
         '
-        'ToolStripButton6
+        'txtAlignJust
         '
-        Me.ToolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(23, 25)
-        Me.ToolStripButton6.Text = "ToolStripButton6"
+        Me.txtAlignJust.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
+        Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignJust.Name = "txtAlignJust"
+        Me.txtAlignJust.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignJust.Text = "ToolStripButton6"
         '
-        'ToolStripButton7
+        'txtAlignRight
         '
-        Me.ToolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(23, 25)
-        Me.ToolStripButton7.Text = "ToolStripButton7"
+        Me.txtAlignRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
+        Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignRight.Name = "txtAlignRight"
+        Me.txtAlignRight.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignRight.Text = "ToolStripButton7"
         '
         'tbUtleieOversikt
         '
@@ -574,149 +577,10 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 373)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 378)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
-        '
-        'tbSalgOversikt
-        '
-        Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
-        Me.tbSalgOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 53)
-        Me.tbSalgOversikt.Name = "tbSalgOversikt"
-        Me.tbSalgOversikt.ShowCloseButton = True
-        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 373)
-        Me.tbSalgOversikt.TabIndex = 1
-        Me.tbSalgOversikt.Text = "Salg"
-        Me.tbSalgOversikt.ThemesEnabled = True
-        '
-        'tbReporting
-        '
-        Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
-        Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
-        Me.tbReporting.Name = "tbReporting"
-        Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 373)
-        Me.tbReporting.TabIndex = 3
-        Me.tbReporting.Text = "Rapporter"
-        Me.tbReporting.ThemesEnabled = True
-        '
-        'ToolStripEx3
-        '
-        Me.ToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx3.Image = Nothing
-        Me.ToolStripEx3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx3.Name = "ToolStripEx3"
-        Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 45)
-        Me.ToolStripEx3.TabIndex = 1
-        Me.ToolStripEx3.Text = "Salg & Utleie"
-        Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'tbSettings
-        '
-        Me.tbSettings.Controls.Add(Me.Panel3)
-        Me.tbSettings.Controls.Add(Me.ToolStripEx5)
-        Me.tbSettings.Image = Global.OOPSA.My.Resources.Resources.tbSettings
-        Me.tbSettings.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbSettings.Location = New System.Drawing.Point(105, 2)
-        Me.tbSettings.Name = "tbSettings"
-        Me.tbSettings.ShowCloseButton = True
-        Me.tbSettings.Size = New System.Drawing.Size(872, 475)
-        Me.tbSettings.TabIndex = 5
-        Me.tbSettings.ThemesEnabled = True
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.tabSettings)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 45)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(872, 430)
-        Me.Panel3.TabIndex = 2
-        '
-        'tabSettings
-        '
-        Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 430)
-        Me.tabSettings.Controls.Add(Me.TabPageAdv1)
-        Me.tabSettings.Controls.Add(Me.TabPageAdv2)
-        Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.Location = New System.Drawing.Point(0, 0)
-        Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Size = New System.Drawing.Size(872, 430)
-        Me.tabSettings.TabIndex = 0
-        Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
-        Me.tabSettings.ThemesEnabled = True
-        '
-        'TabPageAdv1
-        '
-        Me.TabPageAdv1.Image = Nothing
-        Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 42)
-        Me.TabPageAdv1.Name = "TabPageAdv1"
-        Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 384)
-        Me.TabPageAdv1.TabIndex = 1
-        Me.TabPageAdv1.Text = "TabPageAdv1"
-        Me.TabPageAdv1.ThemesEnabled = True
-        '
-        'TabPageAdv2
-        '
-        Me.TabPageAdv2.Image = Nothing
-        Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 42)
-        Me.TabPageAdv2.Name = "TabPageAdv2"
-        Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 384)
-        Me.TabPageAdv2.TabIndex = 2
-        Me.TabPageAdv2.Text = "TabPageAdv2"
-        Me.TabPageAdv2.ThemesEnabled = True
-        '
-        'ToolStripEx5
-        '
-        Me.ToolStripEx5.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx5.Image = Nothing
-        Me.ToolStripEx5.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx5.Name = "ToolStripEx5"
-        Me.ToolStripEx5.Office12Mode = False
-        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 45)
-        Me.ToolStripEx5.TabIndex = 1
-        Me.ToolStripEx5.Text = "Oversikt"
-        Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'tbLager
-        '
-        Me.tbLager.Controls.Add(Me.ToolStripEx4)
-        Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
-        Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbLager.Location = New System.Drawing.Point(105, 2)
-        Me.tbLager.Name = "tbLager"
-        Me.tbLager.ShowCloseButton = True
-        Me.tbLager.Size = New System.Drawing.Size(872, 475)
-        Me.tbLager.TabIndex = 4
-        Me.tbLager.ThemesEnabled = True
-        '
-        'ToolStripEx4
-        '
-        Me.ToolStripEx4.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx4.Image = Nothing
-        Me.ToolStripEx4.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx4.Name = "ToolStripEx4"
-        Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 45)
-        Me.ToolStripEx4.TabIndex = 1
-        Me.ToolStripEx4.Text = "Lageroversikt"
-        Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'GridDataBoundGrid1
         '
@@ -760,7 +624,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(865, 373)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(865, 378)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -769,9 +633,148 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.UseListChangedEvent = True
         Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
         '
+        'tbSalgOversikt
+        '
+        Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
+        Me.tbSalgOversikt.ImageSize = New System.Drawing.Size(32, 32)
+        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 53)
+        Me.tbSalgOversikt.Name = "tbSalgOversikt"
+        Me.tbSalgOversikt.ShowCloseButton = True
+        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 378)
+        Me.tbSalgOversikt.TabIndex = 1
+        Me.tbSalgOversikt.Text = "Salg"
+        Me.tbSalgOversikt.ThemesEnabled = True
+        '
+        'tbReporting
+        '
+        Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
+        Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
+        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
+        Me.tbReporting.Name = "tbReporting"
+        Me.tbReporting.ShowCloseButton = True
+        Me.tbReporting.Size = New System.Drawing.Size(865, 378)
+        Me.tbReporting.TabIndex = 3
+        Me.tbReporting.Text = "Rapporter"
+        Me.tbReporting.ThemesEnabled = True
+        '
+        'ToolStripEx3
+        '
+        Me.ToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx3.Image = Nothing
+        Me.ToolStripEx3.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx3.Name = "ToolStripEx3"
+        Me.ToolStripEx3.Office12Mode = False
+        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx3.TabIndex = 1
+        Me.ToolStripEx3.Text = "Salg & Utleie"
+        Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'tbSettings
+        '
+        Me.tbSettings.Controls.Add(Me.Panel3)
+        Me.tbSettings.Controls.Add(Me.ToolStripEx5)
+        Me.tbSettings.Image = Global.OOPSA.My.Resources.Resources.tbSettings
+        Me.tbSettings.ImageSize = New System.Drawing.Size(48, 48)
+        Me.tbSettings.Location = New System.Drawing.Point(105, 2)
+        Me.tbSettings.Name = "tbSettings"
+        Me.tbSettings.ShowCloseButton = True
+        Me.tbSettings.Size = New System.Drawing.Size(872, 475)
+        Me.tbSettings.TabIndex = 5
+        Me.tbSettings.ThemesEnabled = True
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.tabSettings)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 40)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(872, 435)
+        Me.Panel3.TabIndex = 2
+        '
+        'tabSettings
+        '
+        Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
+        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.tabSettings.Controls.Add(Me.TabPageAdv1)
+        Me.tabSettings.Controls.Add(Me.TabPageAdv2)
+        Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
+        Me.tabSettings.Location = New System.Drawing.Point(0, 0)
+        Me.tabSettings.Name = "tabSettings"
+        Me.tabSettings.Size = New System.Drawing.Size(872, 435)
+        Me.tabSettings.TabIndex = 0
+        Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
+        Me.tabSettings.ThemesEnabled = True
+        '
+        'TabPageAdv1
+        '
+        Me.TabPageAdv1.Image = Nothing
+        Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Name = "TabPageAdv1"
+        Me.TabPageAdv1.ShowCloseButton = True
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv1.TabIndex = 1
+        Me.TabPageAdv1.Text = "TabPageAdv1"
+        Me.TabPageAdv1.ThemesEnabled = True
+        '
+        'TabPageAdv2
+        '
+        Me.TabPageAdv2.Image = Nothing
+        Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv2.Name = "TabPageAdv2"
+        Me.TabPageAdv2.ShowCloseButton = True
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv2.TabIndex = 2
+        Me.TabPageAdv2.Text = "TabPageAdv2"
+        Me.TabPageAdv2.ThemesEnabled = True
+        '
+        'ToolStripEx5
+        '
+        Me.ToolStripEx5.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx5.Image = Nothing
+        Me.ToolStripEx5.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx5.Name = "ToolStripEx5"
+        Me.ToolStripEx5.Office12Mode = False
+        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx5.TabIndex = 1
+        Me.ToolStripEx5.Text = "Oversikt"
+        Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'tbLager
+        '
+        Me.tbLager.Controls.Add(Me.ToolStripEx4)
+        Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
+        Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
+        Me.tbLager.Location = New System.Drawing.Point(105, 2)
+        Me.tbLager.Name = "tbLager"
+        Me.tbLager.ShowCloseButton = True
+        Me.tbLager.Size = New System.Drawing.Size(872, 475)
+        Me.tbLager.TabIndex = 4
+        Me.tbLager.ThemesEnabled = True
+        '
+        'ToolStripEx4
+        '
+        Me.ToolStripEx4.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx4.Image = Nothing
+        Me.ToolStripEx4.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx4.Name = "ToolStripEx4"
+        Me.ToolStripEx4.Office12Mode = False
+        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx4.TabIndex = 1
+        Me.ToolStripEx4.Text = "Lageroversikt"
+        Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
         'frmAdminMetro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
@@ -811,6 +814,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.ResumeLayout(False)
         Me.ToolStripEx6.PerformLayout()
         Me.tbUtleieOversikt.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbSettings.ResumeLayout(False)
         Me.tbSettings.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -818,7 +822,6 @@ Partial Class frmAdminMetro
         Me.tabSettings.ResumeLayout(False)
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
-        CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -858,18 +861,18 @@ Partial Class frmAdminMetro
     Friend WithEvents CopyToolStripButton As ToolStripButton
     Friend WithEvents PasteToolStripButton As ToolStripButton
     Friend WithEvents toolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripComboBoxEx1 As Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx
-    Friend WithEvents ToolStripComboBoxEx2 As Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx
+    Friend WithEvents txtFontCombo As Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx
+    Friend WithEvents txtFontSizeCombo As Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx
     Friend WithEvents FontListBox1 As Syncfusion.Windows.Forms.Tools.FontListBox
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents txtInsertImg As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents ToolStripButton3 As ToolStripButton
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents ToolStripButton5 As ToolStripButton
-    Friend WithEvents ToolStripButton6 As ToolStripButton
-    Friend WithEvents ToolStripButton7 As ToolStripButton
+    Friend WithEvents txtAlignLeft As ToolStripButton
+    Friend WithEvents txtAlignJust As ToolStripButton
+    Friend WithEvents txtAlignRight As ToolStripButton
     Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid

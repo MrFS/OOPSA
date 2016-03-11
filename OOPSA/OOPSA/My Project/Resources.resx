@@ -139,8 +139,8 @@
   <data name="usrAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usrAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtPaste" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtPaste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -150,6 +150,9 @@
   </data>
   <data name="tbSalg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSalg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtInsert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbSalgChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSalgChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,13 +172,19 @@
   <data name="txtCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtPaste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtPaste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtInsert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtAlignJust" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtAlignJust.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtAlignLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtAlignLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtAlignRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtAlignRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
