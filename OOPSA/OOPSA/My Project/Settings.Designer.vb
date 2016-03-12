@@ -113,6 +113,54 @@ Namespace My
                 Me("pass") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property major() As Integer
+            Get
+                Return CType(Me("major"),Integer)
+            End Get
+            Set
+                Me("major") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property minor() As Integer
+            Get
+                Return CType(Me("minor"),Integer)
+            End Get
+            Set
+                Me("minor") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property build() As Integer
+            Get
+                Return CType(Me("build"),Integer)
+            End Get
+            Set
+                Me("build") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property revision() As Integer
+            Get
+                Return CType(Me("revision"),Integer)
+            End Get
+            Set
+                Me("revision") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

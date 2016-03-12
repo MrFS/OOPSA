@@ -1,4 +1,5 @@
 ﻿Imports Syncfusion.Windows.Forms
+Imports OOPSA.versionController
 
 Public Class frmMetroLogin
     Inherits MetroForm
@@ -27,6 +28,8 @@ Public Class frmMetroLogin
         Dim DB As New DBConnect
 
 
+        Controller()
+
         Try
 
             DB.ConnectDatabase()
@@ -36,5 +39,8 @@ Public Class frmMetroLogin
         Finally
             DB.DisconnectDatabase()
         End Try
+
+        MsgBox(major & minor & build & revision)
+
     End Sub
 End Class

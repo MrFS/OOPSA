@@ -145,7 +145,7 @@
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
     <Compile Include="classes\Functions\frmLogin\Login.vb" />
-    <Compile Include="classes\Functions\versionControler.vb" />
+    <Compile Include="classes\Functions\versionController.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
     <Compile Include="classes\Security\DBCheck.vb" />
     <Compile Include="classes\Security\SHA512.vb" />
