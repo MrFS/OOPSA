@@ -27,9 +27,6 @@ Public Class frmMetroLogin
     Private Sub frmMetroLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim DB As New DBConnect
 
-
-        Controller()
-
         Try
 
             DB.ConnectDatabase()
@@ -41,6 +38,8 @@ Public Class frmMetroLogin
         End Try
 
         MsgBox(major & minor & build & revision)
+
+        MsgBox(Application.ProductVersion)
 
     End Sub
 End Class

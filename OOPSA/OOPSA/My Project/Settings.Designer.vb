@@ -116,49 +116,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property major() As Integer
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property version() As String
             Get
-                Return CType(Me("major"),Integer)
+                Return CType(Me("version"),String)
             End Get
             Set
-                Me("major") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property minor() As Integer
-            Get
-                Return CType(Me("minor"),Integer)
-            End Get
-            Set
-                Me("minor") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property build() As Integer
-            Get
-                Return CType(Me("build"),Integer)
-            End Get
-            Set
-                Me("build") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property revision() As Integer
-            Get
-                Return CType(Me("revision"),Integer)
-            End Get
-            Set
-                Me("revision") = value
+                Me("version") = value
             End Set
         End Property
     End Class
