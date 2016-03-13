@@ -84,6 +84,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.tbOverview.SuspendLayout()
@@ -104,6 +105,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.SuspendLayout()
         Me.tbUtleieOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tbReporting.SuspendLayout()
         Me.tbSettings.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -308,8 +310,8 @@ Partial Class frmAdminMetro
         Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 435)
         Me.TabControlAdv2.Controls.Add(Me.tbTextEdit)
         Me.TabControlAdv2.Controls.Add(Me.tbUtleieOversikt)
-        Me.TabControlAdv2.Controls.Add(Me.tbSalgOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbReporting)
+        Me.TabControlAdv2.Controls.Add(Me.tbSalgOversikt)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.ItemSize = New System.Drawing.Size(62, 48)
         Me.TabControlAdv2.Location = New System.Drawing.Point(0, 40)
@@ -657,6 +659,7 @@ Partial Class frmAdminMetro
         '
         'tbReporting
         '
+        Me.tbReporting.Controls.Add(Me.ReportViewer1)
         Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
         Me.tbReporting.Location = New System.Drawing.Point(3, 53)
@@ -782,6 +785,14 @@ Partial Class frmAdminMetro
         Me.ToolStripEx4.Text = "Lageroversikt"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Location = New System.Drawing.Point(76, 73)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote
+        Me.ReportViewer1.Size = New System.Drawing.Size(396, 246)
+        Me.ReportViewer1.TabIndex = 0
+        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -825,6 +836,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.PerformLayout()
         Me.tbUtleieOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tbReporting.ResumeLayout(False)
         Me.tbSettings.ResumeLayout(False)
         Me.tbSettings.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -887,4 +899,5 @@ Partial Class frmAdminMetro
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Private WithEvents tbOverview As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class
