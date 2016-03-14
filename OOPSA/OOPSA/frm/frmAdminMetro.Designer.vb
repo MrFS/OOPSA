@@ -33,6 +33,8 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle7 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle8 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
+        Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbOverview = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
@@ -73,8 +75,8 @@ Partial Class frmAdminMetro
         Me.txtAlignRight = New System.Windows.Forms.ToolStripButton()
         Me.tbUtleieOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
-        Me.tbSalgOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.tbReporting = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.tbSalgOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx3 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbSettings = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -84,7 +86,9 @@ Partial Class frmAdminMetro
         Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
+        CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.tbOverview.SuspendLayout()
@@ -105,13 +109,22 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.SuspendLayout()
         Me.tbUtleieOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tbReporting.SuspendLayout()
         Me.tbSettings.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSettings.SuspendLayout()
         Me.tbLager.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'KjøpBindingSource
+        '
+        Me.KjøpBindingSource.DataMember = "Kjøp"
+        Me.KjøpBindingSource.DataSource = Me.drift8_2016DataSet
+        '
+        'drift8_2016DataSet
+        '
+        Me.drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
+        Me.drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TabControlAdv1
         '
@@ -645,6 +658,18 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.UseListChangedEvent = True
         Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
         '
+        'tbReporting
+        '
+        Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
+        Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
+        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
+        Me.tbReporting.Name = "tbReporting"
+        Me.tbReporting.ShowCloseButton = True
+        Me.tbReporting.Size = New System.Drawing.Size(865, 378)
+        Me.tbReporting.TabIndex = 3
+        Me.tbReporting.Text = "Rapporter"
+        Me.tbReporting.ThemesEnabled = True
+        '
         'tbSalgOversikt
         '
         Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
@@ -656,19 +681,6 @@ Partial Class frmAdminMetro
         Me.tbSalgOversikt.TabIndex = 1
         Me.tbSalgOversikt.Text = "Salg"
         Me.tbSalgOversikt.ThemesEnabled = True
-        '
-        'tbReporting
-        '
-        Me.tbReporting.Controls.Add(Me.ReportViewer1)
-        Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
-        Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
-        Me.tbReporting.Name = "tbReporting"
-        Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 378)
-        Me.tbReporting.TabIndex = 3
-        Me.tbReporting.Text = "Rapporter"
-        Me.tbReporting.ThemesEnabled = True
         '
         'ToolStripEx3
         '
@@ -785,13 +797,9 @@ Partial Class frmAdminMetro
         Me.ToolStripEx4.Text = "Lageroversikt"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
-        'ReportViewer1
+        'KjøpTableAdapter
         '
-        Me.ReportViewer1.Location = New System.Drawing.Point(76, 73)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote
-        Me.ReportViewer1.Size = New System.Drawing.Size(396, 246)
-        Me.ReportViewer1.TabIndex = 0
+        Me.KjøpTableAdapter.ClearBeforeFill = True
         '
         'frmAdminMetro
         '
@@ -811,6 +819,8 @@ Partial Class frmAdminMetro
         Me.Name = "frmAdminMetro"
         Me.ShowIcon = False
         Me.Text = "Daglig Leder | OOPSA - BADR08"
+        CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlAdv1.ResumeLayout(False)
         Me.tbOverview.ResumeLayout(False)
@@ -836,7 +846,6 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.PerformLayout()
         Me.tbUtleieOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tbReporting.ResumeLayout(False)
         Me.tbSettings.ResumeLayout(False)
         Me.tbSettings.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -899,5 +908,7 @@ Partial Class frmAdminMetro
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Private WithEvents tbOverview As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents KjøpTableAdapter As drift8_2016DataSetTableAdapters.KjøpTableAdapter
+    Private WithEvents KjøpBindingSource As BindingSource
+    Private WithEvents drift8_2016DataSet As drift8_2016DataSet
 End Class
