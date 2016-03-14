@@ -179,22 +179,22 @@
     <Compile Include="frm\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm\frmAddUsrMetro.Designer.vb">
+    <Compile Include="frm\Admin\frmAddUsrMetro.Designer.vb">
       <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm\frmAddUsrMetro.vb">
+    <Compile Include="frm\Admin\frmAddUsrMetro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm\frmAdminMetro.Designer.vb">
+    <Compile Include="frm\Admin\frmAdminMetro.Designer.vb">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm\frmAdminMetro.vb">
+    <Compile Include="frm\Admin\frmAdminMetro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm\frmAnsatt.Designer.vb">
+    <Compile Include="frm\Ansatt\frmAnsatt.Designer.vb">
       <DependentUpon>frmAnsatt.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm\frmAnsatt.vb">
+    <Compile Include="frm\Ansatt\frmAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm\frmTst.Designer.vb">
@@ -212,10 +212,10 @@
     <Compile Include="classes\DB\SQL.vb" />
     <Compile Include="classes\Functions\Gen.vb" />
     <Compile Include="classes\Tools\Tools.vb" />
-    <Compile Include="frm\frmAdmin.Designer.vb">
+    <Compile Include="frm\Admin\frmAdmin.Designer.vb">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm\frmAdmin.vb">
+    <Compile Include="frm\Admin\frmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm\frmMain.vb">
@@ -253,10 +253,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="frmConsole.Designer.vb">
+    <Compile Include="frm\Console\frmConsole.Designer.vb">
       <DependentUpon>frmConsole.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmConsole.vb">
+    <Compile Include="frm\Console\frmConsole.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporting\crystalSalesReport.vb">
@@ -274,10 +274,10 @@
     <EmbeddedResource Include="frm\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmAddUsrMetro.resx">
+    <EmbeddedResource Include="frm\Admin\frmAddUsrMetro.resx">
       <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmAdminMetro.resx">
+    <EmbeddedResource Include="frm\Admin\frmAdminMetro.resx">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmTst.resx">
@@ -286,7 +286,7 @@
     <EmbeddedResource Include="frm\MDIParent1.resx">
       <DependentUpon>MDIParent1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmAdmin.resx">
+    <EmbeddedResource Include="frm\Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmMain.resx">
@@ -309,7 +309,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsole.resx">
+    <EmbeddedResource Include="frm\Console\frmConsole.resx">
       <DependentUpon>frmConsole.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -448,6 +448,10 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="frm\Ansatt\Lager\" />
+    <Folder Include="frm\Ansatt\Salg\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

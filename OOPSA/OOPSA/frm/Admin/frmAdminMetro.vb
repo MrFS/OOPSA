@@ -21,8 +21,6 @@ Public Class frmAdminMetro
 
         Me.richTextBox1.Font = New Font(Me.richTextBox1.Font.Name, CInt(txtFontSizeCombo.Text), Me.richTextBox1.Font.Style)
 
-
-        Me.ReportViewer1.RefreshReport
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
