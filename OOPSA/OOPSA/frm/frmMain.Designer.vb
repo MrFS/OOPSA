@@ -29,10 +29,10 @@ Partial Class frmMain
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 652)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 526)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 13, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1584, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1188, 22)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -41,21 +41,21 @@ Partial Class frmMain
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1584, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1188, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1584, 674)
+        Me.ClientSize = New System.Drawing.Size(1188, 548)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
         Me.Text = "frmMain"
         Me.ResumeLayout(False)

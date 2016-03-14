@@ -68,9 +68,11 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -124,6 +126,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -162,7 +165,7 @@
     <Compile Include="classes\Server\ServerCore.vb" />
     <Compile Include="classes\Tools\Console.vb" />
     <Compile Include="classes\User\UserCore.vb" />
-    <Compile Include="drift8_2016DataSet.Designer.vb">
+    <Compile Include="DataSets\drift8_2016DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
@@ -197,18 +200,6 @@
     <Compile Include="frm\Ansatt\frmAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm\frmTst.Designer.vb">
-      <DependentUpon>frmTst.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\frmTst.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm\MDIParent1.Designer.vb">
-      <DependentUpon>MDIParent1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\MDIParent1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="classes\DB\SQL.vb" />
     <Compile Include="classes\Functions\Gen.vb" />
     <Compile Include="classes\Tools\Tools.vb" />
@@ -223,12 +214,6 @@
     </Compile>
     <Compile Include="frm\frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.vb">
-      <DependentUpon>frmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMetroLogin.Designer.vb">
@@ -259,12 +244,6 @@
     <Compile Include="frm\Console\frmConsole.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reporting\crystalSalesReport.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crystalSalesReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Settings.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -280,27 +259,14 @@
     <EmbeddedResource Include="frm\Admin\frmAdminMetro.resx">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmTst.resx">
-      <DependentUpon>frmTst.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm\MDIParent1.resx">
-      <DependentUpon>MDIParent1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMetroLogin.resx">
       <DependentUpon>frmMetroLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reporting\crystalSalesReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crystalSalesReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporting\salesRep.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -314,15 +280,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="drift8_2016DataSet.xsc">
+    <None Include="DataSets\drift8_2016DataSet.xsc">
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </None>
-    <None Include="drift8_2016DataSet.xsd">
+    <None Include="DataSets\drift8_2016DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>drift8_2016DataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="drift8_2016DataSet.xss">
+    <None Include="DataSets\drift8_2016DataSet.xss">
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />

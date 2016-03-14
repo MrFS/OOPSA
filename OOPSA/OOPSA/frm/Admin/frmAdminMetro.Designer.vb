@@ -82,6 +82,13 @@ Partial Class frmAdminMetro
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.tabSettings = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.lblServer = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblPort = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel3 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblDB = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -113,6 +120,8 @@ Partial Class frmAdminMetro
         Me.Panel3.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabSettings.SuspendLayout()
+        Me.TabPageAdv1.SuspendLayout()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbLager.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -379,14 +388,14 @@ Partial Class frmAdminMetro
         Me.FontListBox1.MetroColor = System.Drawing.SystemColors.Highlight
         Me.FontListBox1.Name = "FontListBox1"
         MetroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        MetroColorTable1.ArrowInActive = System.Drawing.Color.White
+        'MetroColorTable1.ArrowInActive = System.Drawing.Color.White
         MetroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ScrollerBackground = System.Drawing.Color.White
         MetroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        MetroColorTable1.ThumbInActive = System.Drawing.Color.White
+        'MetroColorTable1.ThumbInActive = System.Drawing.Color.White
         MetroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty
@@ -735,24 +744,91 @@ Partial Class frmAdminMetro
         '
         'TabPageAdv1
         '
+        Me.TabPageAdv1.Controls.Add(Me.lblServer)
+        Me.TabPageAdv1.Controls.Add(Me.lblPort)
+        Me.TabPageAdv1.Controls.Add(Me.AutoLabel3)
+        Me.TabPageAdv1.Controls.Add(Me.AutoLabel2)
+        Me.TabPageAdv1.Controls.Add(Me.AutoLabel1)
+        Me.TabPageAdv1.Controls.Add(Me.lblDB)
+        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 396)
         Me.TabPageAdv1.TabIndex = 1
-        Me.TabPageAdv1.Text = "TabPageAdv1"
+        Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
+        '
+        'lblServer
+        '
+        Me.lblServer.Location = New System.Drawing.Point(3, 12)
+        Me.lblServer.Name = "lblServer"
+        Me.lblServer.Size = New System.Drawing.Size(58, 21)
+        Me.lblServer.TabIndex = 6
+        Me.lblServer.Text = "Server:"
+        '
+        'lblPort
+        '
+        Me.lblPort.Location = New System.Drawing.Point(306, 12)
+        Me.lblPort.Name = "lblPort"
+        Me.lblPort.Size = New System.Drawing.Size(41, 21)
+        Me.lblPort.TabIndex = 5
+        Me.lblPort.Text = "Port:"
+        '
+        'AutoLabel3
+        '
+        Me.AutoLabel3.Location = New System.Drawing.Point(128, 173)
+        Me.AutoLabel3.Name = "AutoLabel3"
+        Me.AutoLabel3.Size = New System.Drawing.Size(77, 21)
+        Me.AutoLabel3.TabIndex = 4
+        Me.AutoLabel3.Text = "Database:"
+        '
+        'AutoLabel2
+        '
+        Me.AutoLabel2.Location = New System.Drawing.Point(502, 237)
+        Me.AutoLabel2.Name = "AutoLabel2"
+        Me.AutoLabel2.Size = New System.Drawing.Size(77, 21)
+        Me.AutoLabel2.TabIndex = 3
+        Me.AutoLabel2.Text = "Database:"
+        '
+        'AutoLabel1
+        '
+        Me.AutoLabel1.Location = New System.Drawing.Point(394, 188)
+        Me.AutoLabel1.Name = "AutoLabel1"
+        Me.AutoLabel1.Size = New System.Drawing.Size(77, 21)
+        Me.AutoLabel1.TabIndex = 2
+        Me.AutoLabel1.Text = "Database:"
+        '
+        'lblDB
+        '
+        Me.lblDB.Location = New System.Drawing.Point(75, 63)
+        Me.lblDB.Name = "lblDB"
+        Me.lblDB.Size = New System.Drawing.Size(77, 21)
+        Me.lblDB.TabIndex = 1
+        Me.lblDB.Text = "Database:"
+        '
+        'TextBoxExt1
+        '
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(172, 29)
+        Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt1.Location = New System.Drawing.Point(530, 80)
+        Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt1.Name = "TextBoxExt1"
+        Me.TextBoxExt1.Size = New System.Drawing.Size(172, 29)
+        Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.TextBoxExt1.TabIndex = 0
+        Me.TextBoxExt1.Text = "TextBoxExt1"
         '
         'TabPageAdv2
         '
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 396)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -851,6 +927,9 @@ Partial Class frmAdminMetro
         Me.Panel3.ResumeLayout(False)
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabSettings.ResumeLayout(False)
+        Me.TabPageAdv1.ResumeLayout(False)
+        Me.TabPageAdv1.PerformLayout()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
         Me.ResumeLayout(False)
@@ -911,4 +990,11 @@ Partial Class frmAdminMetro
     Friend WithEvents KjøpTableAdapter As drift8_2016DataSetTableAdapters.KjøpTableAdapter
     Private WithEvents KjøpBindingSource As BindingSource
     Private WithEvents drift8_2016DataSet As drift8_2016DataSet
+    Friend WithEvents lblServer As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents lblPort As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel3 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents lblDB As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents TextBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
 End Class

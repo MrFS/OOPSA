@@ -25,7 +25,7 @@ Public Class frmAdmin
     End Sub
 
     Private Sub frmAdmin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        frmLogin.Show()
+        frmMetroLogin.Show()
     End Sub
 
     Private Sub ChangeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeToolStripMenuItem.Click
