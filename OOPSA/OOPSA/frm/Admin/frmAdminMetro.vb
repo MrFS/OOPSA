@@ -15,6 +15,21 @@ Public Class frmAdminMetro
         Core.VisAnsatt()
         Core.visLeie()
 
+        txtServer.Text = My.Settings.server
+        txtSvrDB.Text = My.Settings.database
+        TxtSvrUser.Text = My.Settings.user
+        txtSvrPass.Text = My.Settings.pass
+        txtSvrPassRep.Text = ""
+
+        txtServer.Enabled = 0
+        txtSvrDB.Enabled = 0
+        TxtSvrUser.Enabled = 0
+        txtSvrPass.Enabled = 0
+        txtSvrPassRep.Enabled = 0
+
+        txtSvrPassRep.Visible = 0
+
+
         For Each var As Object In Me.FontListBox1.Items
             txtFontCombo.Items.Add(var)
         Next
@@ -122,5 +137,34 @@ Public Class frmAdminMetro
 
         print.ShowDialog()
 
+    End Sub
+
+    Private Sub tsBtnDBInfo_Click(sender As Object, e As EventArgs) Handles tsBtnDBInfo.Click
+        Select Case tsBtnDBInfo.Text
+            Case "Change Database Information"
+
+                txtServer.Enabled = 1
+                txtSvrDB.Enabled = 1
+                TxtSvrUser.Enabled = 1
+                txtSvrPass.Enabled = 1
+                txtSvrPassRep.Enabled = 1
+
+                txtSvrPassRep.Visible = 1
+
+                tsBtnDBInfo.Text = "Save Database Information"
+
+            Case "Save Database Information"
+
+                txtServer.Enabled = 0
+                txtSvrDB.Enabled = 0
+                TxtSvrUser.Enabled = 0
+                txtSvrPass.Enabled = 0
+                txtSvrPassRep.Enabled = 0
+
+                txtSvrPassRep.Visible = 0
+
+                tsBtnDBInfo.Text = "Change Database Information"
+
+        End Select
     End Sub
 End Class
