@@ -84,6 +84,16 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+        Me.txtSvrPassRep = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtSvrPass = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.TxtSvrUser = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtSvrDB = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtServer = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.lblSvrPassRep = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblSvrPass = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblSvrUser = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblDB = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblServer = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.toolstripDBInfo = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tsBtnDBInfo = New System.Windows.Forms.ToolStripButton()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -91,16 +101,6 @@ Partial Class frmAdminMetro
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
-        Me.lblServer = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.lblDB = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.lblSvrUser = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.lblSvrPass = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.lblSvrPassRep = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.txtServer = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.txtSvrDB = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TxtSvrUser = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.txtSvrPass = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.txtSvrPassRep = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,13 +134,13 @@ Partial Class frmAdminMetro
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer2.Panel1.SuspendLayout()
         Me.SplitContainer2.SuspendLayout()
+        CType(Me.txtSvrPassRep, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSvrPass, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtServer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolstripDBInfo.SuspendLayout()
         Me.tbLager.SuspendLayout()
-        CType(Me.txtServer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSvrPass, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSvrPassRep, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KjøpBindingSource
@@ -810,6 +810,106 @@ Partial Class frmAdminMetro
         Me.SplitContainer2.SplitterDistance = 227
         Me.SplitContainer2.TabIndex = 0
         '
+        'txtSvrPassRep
+        '
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
+        Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtSvrPassRep.Name = "txtSvrPassRep"
+        Me.txtSvrPassRep.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPassRep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtSvrPassRep.TabIndex = 9
+        Me.txtSvrPassRep.Text = "TextBoxExt5"
+        '
+        'txtSvrPass
+        '
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
+        Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtSvrPass.Name = "txtSvrPass"
+        Me.txtSvrPass.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPass.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtSvrPass.TabIndex = 8
+        Me.txtSvrPass.Text = "TextBoxExt4"
+        '
+        'TxtSvrUser
+        '
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
+        Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TxtSvrUser.Name = "TxtSvrUser"
+        Me.TxtSvrUser.Size = New System.Drawing.Size(181, 29)
+        Me.TxtSvrUser.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.TxtSvrUser.TabIndex = 7
+        Me.TxtSvrUser.Text = "TextBoxExt3"
+        '
+        'txtSvrDB
+        '
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
+        Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtSvrDB.Name = "txtSvrDB"
+        Me.txtSvrDB.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrDB.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtSvrDB.TabIndex = 6
+        Me.txtSvrDB.Text = "TextBoxExt2"
+        '
+        'txtServer
+        '
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtServer.Location = New System.Drawing.Point(104, 43)
+        Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtServer.Name = "txtServer"
+        Me.txtServer.Size = New System.Drawing.Size(181, 29)
+        Me.txtServer.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtServer.TabIndex = 0
+        Me.txtServer.Text = "TextBoxExt1"
+        '
+        'lblSvrPassRep
+        '
+        Me.lblSvrPassRep.Location = New System.Drawing.Point(3, 187)
+        Me.lblSvrPassRep.Name = "lblSvrPassRep"
+        Me.lblSvrPassRep.Size = New System.Drawing.Size(95, 21)
+        Me.lblSvrPassRep.TabIndex = 5
+        Me.lblSvrPassRep.Text = "Repeat Pass:"
+        '
+        'lblSvrPass
+        '
+        Me.lblSvrPass.Location = New System.Drawing.Point(3, 152)
+        Me.lblSvrPass.Name = "lblSvrPass"
+        Me.lblSvrPass.Size = New System.Drawing.Size(79, 21)
+        Me.lblSvrPass.TabIndex = 4
+        Me.lblSvrPass.Text = "Password:"
+        '
+        'lblSvrUser
+        '
+        Me.lblSvrUser.Location = New System.Drawing.Point(3, 117)
+        Me.lblSvrUser.Name = "lblSvrUser"
+        Me.lblSvrUser.Size = New System.Drawing.Size(84, 21)
+        Me.lblSvrUser.TabIndex = 3
+        Me.lblSvrUser.Text = "Username:"
+        '
+        'lblDB
+        '
+        Me.lblDB.Location = New System.Drawing.Point(3, 82)
+        Me.lblDB.Name = "lblDB"
+        Me.lblDB.Size = New System.Drawing.Size(77, 21)
+        Me.lblDB.TabIndex = 2
+        Me.lblDB.Text = "Database:"
+        '
+        'lblServer
+        '
+        Me.lblServer.Location = New System.Drawing.Point(3, 46)
+        Me.lblServer.Name = "lblServer"
+        Me.lblServer.Size = New System.Drawing.Size(58, 21)
+        Me.lblServer.TabIndex = 1
+        Me.lblServer.Text = "Server:"
+        '
         'toolstripDBInfo
         '
         Me.toolstripDBInfo.ForeColor = System.Drawing.Color.MidnightBlue
@@ -836,10 +936,10 @@ Partial Class frmAdminMetro
         '
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -887,106 +987,6 @@ Partial Class frmAdminMetro
         'KjøpTableAdapter
         '
         Me.KjøpTableAdapter.ClearBeforeFill = True
-        '
-        'lblServer
-        '
-        Me.lblServer.Location = New System.Drawing.Point(3, 46)
-        Me.lblServer.Name = "lblServer"
-        Me.lblServer.Size = New System.Drawing.Size(58, 21)
-        Me.lblServer.TabIndex = 1
-        Me.lblServer.Text = "Server:"
-        '
-        'lblDB
-        '
-        Me.lblDB.Location = New System.Drawing.Point(3, 82)
-        Me.lblDB.Name = "lblDB"
-        Me.lblDB.Size = New System.Drawing.Size(77, 21)
-        Me.lblDB.TabIndex = 2
-        Me.lblDB.Text = "Database:"
-        '
-        'lblSvrUser
-        '
-        Me.lblSvrUser.Location = New System.Drawing.Point(3, 117)
-        Me.lblSvrUser.Name = "lblSvrUser"
-        Me.lblSvrUser.Size = New System.Drawing.Size(84, 21)
-        Me.lblSvrUser.TabIndex = 3
-        Me.lblSvrUser.Text = "Username:"
-        '
-        'lblSvrPass
-        '
-        Me.lblSvrPass.Location = New System.Drawing.Point(3, 152)
-        Me.lblSvrPass.Name = "lblSvrPass"
-        Me.lblSvrPass.Size = New System.Drawing.Size(79, 21)
-        Me.lblSvrPass.TabIndex = 4
-        Me.lblSvrPass.Text = "Password:"
-        '
-        'lblSvrPassRep
-        '
-        Me.lblSvrPassRep.Location = New System.Drawing.Point(3, 187)
-        Me.lblSvrPassRep.Name = "lblSvrPassRep"
-        Me.lblSvrPassRep.Size = New System.Drawing.Size(95, 21)
-        Me.lblSvrPassRep.TabIndex = 5
-        Me.lblSvrPassRep.Text = "Repeat Pass:"
-        '
-        'txtServer
-        '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
-        Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtServer.Location = New System.Drawing.Point(104, 43)
-        Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(181, 29)
-        Me.txtServer.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.txtServer.TabIndex = 0
-        Me.txtServer.Text = "TextBoxExt1"
-        '
-        'txtSvrDB
-        '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
-        Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
-        Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.txtSvrDB.Name = "txtSvrDB"
-        Me.txtSvrDB.Size = New System.Drawing.Size(181, 29)
-        Me.txtSvrDB.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.txtSvrDB.TabIndex = 6
-        Me.txtSvrDB.Text = "TextBoxExt2"
-        '
-        'TxtSvrUser
-        '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
-        Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
-        Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TxtSvrUser.Name = "TxtSvrUser"
-        Me.TxtSvrUser.Size = New System.Drawing.Size(181, 29)
-        Me.TxtSvrUser.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TxtSvrUser.TabIndex = 7
-        Me.TxtSvrUser.Text = "TextBoxExt3"
-        '
-        'txtSvrPass
-        '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
-        Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
-        Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.txtSvrPass.Name = "txtSvrPass"
-        Me.txtSvrPass.Size = New System.Drawing.Size(181, 29)
-        Me.txtSvrPass.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.txtSvrPass.TabIndex = 8
-        Me.txtSvrPass.Text = "TextBoxExt4"
-        '
-        'txtSvrPassRep
-        '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
-        Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
-        Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.txtSvrPassRep.Name = "txtSvrPassRep"
-        Me.txtSvrPassRep.Size = New System.Drawing.Size(181, 29)
-        Me.txtSvrPassRep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.txtSvrPassRep.TabIndex = 9
-        Me.txtSvrPassRep.Text = "TextBoxExt5"
         '
         'frmAdminMetro
         '
@@ -1046,15 +1046,15 @@ Partial Class frmAdminMetro
         Me.SplitContainer2.Panel1.PerformLayout()
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer2.ResumeLayout(False)
+        CType(Me.txtSvrPassRep, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtSvrPass, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtServer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolstripDBInfo.ResumeLayout(False)
         Me.toolstripDBInfo.PerformLayout()
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
-        CType(Me.txtServer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSvrPass, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSvrPassRep, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
