@@ -25,33 +25,13 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Dim Binding1 As Syncfusion.Windows.Forms.Diagram.Binding = New Syncfusion.Windows.Forms.Diagram.Binding()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Diagram1 = New Syncfusion.Windows.Forms.Diagram.Controls.Diagram(Me.components)
         Me.Model1 = New Syncfusion.Windows.Forms.Diagram.Model(Me.components)
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         CType(Me.Diagram1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Model1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 652)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 13, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1584, 22)
-        Me.StatusStrip1.TabIndex = 0
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1584, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'Diagram1
         '
@@ -64,11 +44,12 @@ Partial Class frmMain
         Me.Diagram1.Binding = Binding1
         Me.Diagram1.Controller.PasteOffset = New System.Drawing.SizeF(10.0!, 10.0!)
         Me.Diagram1.LayoutManager = Nothing
-        Me.Diagram1.Location = New System.Drawing.Point(772, 99)
+        Me.Diagram1.Location = New System.Drawing.Point(579, 80)
+        Me.Diagram1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Diagram1.Model = Me.Model1
         Me.Diagram1.Name = "Diagram1"
         Me.Diagram1.ScrollVirtualBounds = CType(resources.GetObject("Diagram1.ScrollVirtualBounds"), System.Drawing.RectangleF)
-        Me.Diagram1.Size = New System.Drawing.Size(185, 185)
+        Me.Diagram1.Size = New System.Drawing.Size(139, 150)
         Me.Diagram1.SmartSizeBox = False
         Me.Diagram1.TabIndex = 2
         Me.Diagram1.Text = "Diagram1"
@@ -96,19 +77,39 @@ Partial Class frmMain
         Me.Model1.ShadowStyle.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.Model1.ShadowStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 526)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1188, 22)
+        Me.StatusStrip1.TabIndex = 0
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1188, 24)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1584, 674)
+        Me.ClientSize = New System.Drawing.Size(1188, 548)
         Me.Controls.Add(Me.Diagram1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
-        Me.Text = "frmMain"
+        Me.Text = "u"
         CType(Me.Diagram1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Model1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
