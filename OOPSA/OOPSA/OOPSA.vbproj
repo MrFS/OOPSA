@@ -170,6 +170,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frm\Admin\frmAddLeie.Designer.vb">
+      <DependentUpon>frmAddLeie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Admin\frmAddLeie.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -247,6 +253,9 @@
     <Compile Include="Settings.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm\Admin\frmAddLeie.resx">
+      <DependentUpon>frmAddLeie.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

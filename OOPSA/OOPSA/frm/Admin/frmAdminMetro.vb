@@ -167,4 +167,8 @@ Public Class frmAdminMetro
 
         End Select
     End Sub
+
+    Private Sub ButtonLeggTilLeie_Click(sender As Object, e As EventArgs) Handles ButtonLeggTilLeie.Click
+        frmAddLeie.Show()
+    End Sub
 End Class

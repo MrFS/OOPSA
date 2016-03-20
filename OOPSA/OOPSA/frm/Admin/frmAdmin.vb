@@ -70,7 +70,7 @@ Public Class frmAdmin
     End Sub
 
     Private Sub btnRegAns_Click(sender As Object, e As EventArgs) Handles btnRegAns.Click
-        SQL.regAnsatt("", "", "", "", "", "", "", "", "")
+
     End Sub
 
     Private Sub TextBoxExt3_TextChanged(sender As Object, e As EventArgs) Handles TextBoxExt3.TextChanged

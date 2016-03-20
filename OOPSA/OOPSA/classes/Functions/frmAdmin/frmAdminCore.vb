@@ -107,4 +107,18 @@ ON Leie.Produkt_id=Produkt.Produkt_id"
     End Sub
 
 
+    Public Sub regLeie(Produkt As String,
+                       Til As Date,
+                       Fra As Date,
+                       Kunde As String)
+
+
+
+
+
+        SQL.sporring("INSERT INTO Leie")
+    End Sub
+
+
+
 End Class
