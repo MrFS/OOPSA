@@ -158,6 +158,7 @@
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
     <Compile Include="classes\Functions\frmLogin\Login.vb" />
+    <Compile Include="classes\Functions\frmLogin\Update.vb" />
     <Compile Include="classes\Functions\versionController.vb" />
     <Compile Include="classes\Security\Base64Enc.vb" />
     <Compile Include="classes\Security\DBCheck.vb" />
@@ -427,6 +428,7 @@
   <ItemGroup>
     <Folder Include="frm\Ansatt\Lager\" />
     <Folder Include="frm\Ansatt\Salg\" />
+    <Folder Include="frm\Login\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icoDatabase.png" />

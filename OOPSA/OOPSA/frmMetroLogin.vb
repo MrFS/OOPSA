@@ -5,6 +5,7 @@ Public Class frmMetroLogin
     Inherits MetroForm
 
     Dim Login As New Login
+    Shadows Update As New Update
 
     Private Sub frmMetroLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
@@ -26,7 +27,9 @@ Public Class frmMetroLogin
 
     Private Sub frmMetroLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim DB As New DBConnect
-
+        If Update.isUpdate(Update.doUpdate) = True Then
+            MsgBox("En opdatering er tilgjengelig")
+        End If
         Try
 
             DB.ConnectDatabase()

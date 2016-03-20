@@ -21,10 +21,10 @@ Module updateModule
         Dim getNewV As String
 
         getCurrentV = ""
-        getNewV = ""
+        getNewV = "https://mrfs.me/school/oopsa/version.txt"
 
         Dim client As WebClient = New WebClient
-        Dim readCurrentV As StreamReader = New StreamReader(client.OpenRead(getCurrentV))
+        Dim readCurrentV As StreamReader = New StreamReader(client.OpenRead(getNewV))
 
 
 
@@ -49,6 +49,8 @@ Module updateModule
         Console.WriteLine("Minor: {0}", minor)
         Console.WriteLine("Build: {0}", build)
         Console.WriteLine("Revision: {0}", revision)
+
+        Console.WriteLine("WEBVERSION: " & readCurrentV.ReadToEnd)
 
         Console.In.ReadLine()
 
