@@ -110,13 +110,48 @@ ON Leie.Produkt_id=Produkt.Produkt_id"
     Public Sub regLeie(Produkt As String,
                        Til As Date,
                        Fra As Date,
-                       Kunde As String)
+                       Kunde_nr As String)
+
+
+        ' pass = My.Forms.frmAddLeie.txtPw.Text.Replace("'", "\'")
+        Dim sqlstring As String = ("SELECT produkt_id FROM Produkt WHERE produkt =" & "'" & Produkt & "'")
+
+
+        Dim dataadapter As New MySqlDataAdapter()
+        Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
+
+
+        dataadapter.SelectCommand = cmd
+
+        Dim dbdataset As New DataTable
+        Dim bsource As New BindingSource
+        Dim SDA As New MySqlDataAdapter
+
+        SDA.SelectCommand = cmd
+        SDA.Fill(dbdataset)
+        bsource.DataSource = dbdataset 'Takk takk FS
+
+        Dim test(0) As Integer
+
+
+
+
+        Dim leie_id As Integer = 2
+        Dim Leie_fra As Date = Til
+        Dim Leie_til As Date = Fra
+        Dim Ansatt_id As Integer = 2
+        Dim kunde_id As Integer = Kunde_nr
+        Dim produkt_id As Integer
+        Dim lager_id As Integer
 
 
 
 
 
-        SQL.sporring("INSERT INTO Leie")
+
+
+
+        SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])")
     End Sub
 
 
