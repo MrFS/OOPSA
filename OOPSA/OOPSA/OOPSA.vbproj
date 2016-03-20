@@ -156,6 +156,7 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="classes\DB\DBConnect.vb" />
+    <Compile Include="classes\Functions\FrmAnsatt\formAnsattCore.vb" />
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
     <Compile Include="classes\Functions\frmLogin\Login.vb" />
     <Compile Include="classes\Functions\frmLogin\Update.vb" />
@@ -175,6 +176,18 @@
       <DependentUpon>frmAddLeie.vb</DependentUpon>
     </Compile>
     <Compile Include="frm\Admin\frmAddLeie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Ansatt\Lager\frmLager.Designer.vb">
+      <DependentUpon>frmLager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Ansatt\Lager\frmLager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Ansatt\Salg\frmSalg.Designer.vb">
+      <DependentUpon>frmSalg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Ansatt\Salg\frmSalg.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm\Form1.Designer.vb">
@@ -199,12 +212,6 @@
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
     </Compile>
     <Compile Include="frm\Admin\frmAdminMetro.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm\Ansatt\frmAnsatt.Designer.vb">
-      <DependentUpon>frmAnsatt.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\Ansatt\frmAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="classes\DB\SQL.vb" />
@@ -250,6 +257,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frm\Admin\frmAddLeie.resx">
       <DependentUpon>frmAddLeie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Ansatt\Lager\frmLager.resx">
+      <DependentUpon>frmLager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Ansatt\Salg\frmSalg.resx">
+      <DependentUpon>frmSalg.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -417,8 +430,6 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="frm\Ansatt\Lager\" />
-    <Folder Include="frm\Ansatt\Salg\" />
     <Folder Include="frm\Login\" />
   </ItemGroup>
   <ItemGroup>

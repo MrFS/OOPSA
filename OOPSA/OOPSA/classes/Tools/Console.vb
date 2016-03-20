@@ -67,7 +67,7 @@ Public Class Console
     End Sub
 
     Public Sub Admin()
-        My.Forms.frmAdmin.Show()
+        My.Forms.frmAdminMetro.Show()
     End Sub
 
     Public Sub Clear()
