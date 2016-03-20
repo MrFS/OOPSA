@@ -129,12 +129,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OOPSA\OOPSA.vbproj">
-      <Project>{a10524e0-9187-46f9-a4b0-768f65dac7a9}</Project>
-      <Name>OOPSA</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
