@@ -29,40 +29,4 @@ Public Class SQL
         Return dt
 
     End Function
-
-    ''' <summary>
-    ''' Prosedyre for registrering av ny ansatt
-    ''' </summary>
-    ''' <param name="bruker">Brukernavnet</param>
-    ''' <param name="pw">Passordet</param>
-    ''' <param name="fornavn">Fornavnet til ansatt</param>
-    ''' <param name="etternavn">Etternavnet til ansatt</param>
-    ''' <param name="bursdag">Bursdagen til ansatt, DATE</param>
-    ''' <param name="epost">Epost til ansatt</param>
-    ''' <param name="tlf">Telefonnummer til ansatt, integer</param>
-    ''' <param name="adresse">Adressen til ansatt</param>
-    ''' <param name="avdeling">Avdelingen ansatt tilhører, INTEGER</param>'
-
-    Public Sub regAnsatt(bruker As String,
-                         pw As String,
-                         fornavn As String,
-                         etternavn As String,
-                         bursdag As Date,
-                         epost As String,
-                         tlf As Integer,
-                         adresse As String,
-                         avdeling As Integer)
-
-        sporring("INSERT INTO logginn")
-        sporring("INSERT INTO Ansatt")
-
-    End Sub
-
-    Public Sub seAnsatte()
-
-        'Dim ds As DataSet
-
-        'MsgBox(sporring("SELECT * FROM Ansatt"))
-
-    End Sub
 End Class

@@ -765,10 +765,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -782,7 +782,7 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 396)
+        Me.SplitContainer1.Size = New System.Drawing.Size(865, 429)
         Me.SplitContainer1.SplitterDistance = 288
         Me.SplitContainer1.TabIndex = 0
         '
@@ -806,13 +806,13 @@ Partial Class frmAdminMetro
         Me.SplitContainer2.Panel1.Controls.Add(Me.lblDB)
         Me.SplitContainer2.Panel1.Controls.Add(Me.lblServer)
         Me.SplitContainer2.Panel1.Controls.Add(Me.toolstripDBInfo)
-        Me.SplitContainer2.Size = New System.Drawing.Size(288, 396)
-        Me.SplitContainer2.SplitterDistance = 227
+        Me.SplitContainer2.Size = New System.Drawing.Size(288, 429)
+        Me.SplitContainer2.SplitterDistance = 244
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -824,7 +824,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -836,7 +836,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -848,7 +848,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -860,7 +860,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(145, 27)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(116, 25)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1107,7 +1107,6 @@ Partial Class frmAdminMetro
     Friend WithEvents Panel3 As Panel
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
-    Private WithEvents tbOverview As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents KjøpTableAdapter As drift8_2016DataSetTableAdapters.KjøpTableAdapter
     Private WithEvents KjøpBindingSource As BindingSource
     Private WithEvents drift8_2016DataSet As drift8_2016DataSet
@@ -1127,4 +1126,5 @@ Partial Class frmAdminMetro
     Friend WithEvents txtServer As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents lblSvrPassRep As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents lblSvrPass As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Private WithEvents tbOverview As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class

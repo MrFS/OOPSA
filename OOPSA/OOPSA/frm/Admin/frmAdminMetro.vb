@@ -110,7 +110,7 @@ Public Class frmAdminMetro
 
             If MsgBoxResult.Ok Then
                 Dim sfd As New SaveFileDialog
-                sfd.Filter = "KUK Files (*.kuk) |*.kuk"
+                sfd.Filter = "Penis Files (*.kuk) |*.kuk"
 
                 If sfd.ShowDialog = Windows.Forms.DialogResult.OK Then
                     richTextBox1.SaveFile(sfd.FileName)

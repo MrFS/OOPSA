@@ -3,14 +3,28 @@ Imports System.Diagnostics
 Imports System.IO
 Imports System.Reflection
 
+Imports System.Net
+
 Imports EnvDTE
 
 
 Module updateModule
 
 
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
     Sub Main()
+
+
+        Dim getCurrentV As String
+        Dim getNewV As String
+
+        getCurrentV = ""
+        getNewV = ""
+
+        Dim client As WebClient = New WebClient
+        Dim readCurrentV As StreamReader = New StreamReader(client.OpenRead(getCurrentV))
 
 
 
