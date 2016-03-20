@@ -5,8 +5,6 @@ Imports System.Reflection
 
 Imports System.Net
 
-Imports EnvDTE
-
 
 Module updateModule
 
@@ -16,9 +14,20 @@ Module updateModule
     ''' </summary>
     Sub Main()
 
-        Console.WriteLine("IT WORKSZ!")
 
-        Console.In.ReadLine()
+        Dim OOPSA() As Process = Process.GetProcessesByName("OOPSA")
+
+        Console.WriteLine("OOPSA Update")
+        Console.WriteLine("Would you like to update? Y/N")
+
+        Console.In.ReadLine.ToUpper()
+
+        Select Case Console.In.ReadLine
+            Case "Y"
+                Console.WriteLine("PENIOS")
+            Case "N"
+                Environment.Exit(0)
+        End Select
 
     End Sub
 
