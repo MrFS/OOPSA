@@ -8,7 +8,7 @@ Public Class versionController
     Public Shared major = 1
     Public Shared minor = 1
     Public Shared build = 1
-    Public Shared revision = 2
+    Public Shared revision = 1
 
     Public Shared version = major & "." & minor & "." & build & "." & revision
 
