@@ -88,7 +88,8 @@ Module updateModule
                         Try
                             If dra.Name <> "chkUpdate.exe" AndAlso
                                dra.Name <> "chkUpdate.pdb" AndAlso
-                               dra.Name <> "chkUpdate.vshost.exe" Then
+                               dra.Name <> "chkUpdate.vshost.exe" AndAlso
+                               dra.Name <> "OOPSA.vshost.exe" Then
 
                                 Console.WriteLine("Adding file to archive: " & dra.Name)
                                 zipArchive.AddFile(dra.Name)
