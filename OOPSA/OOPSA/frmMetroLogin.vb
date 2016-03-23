@@ -2,6 +2,9 @@
 Imports OOPSA.versionController
 Imports OOPSA.Update
 
+Imports System.IO
+Imports System.Net
+
 
 Public Class frmMetroLogin
     Inherits MetroForm
@@ -33,11 +36,20 @@ Public Class frmMetroLogin
 
         Dim User As New UserCore
 
+        Dim dlAdress As String = "https://mrfs.me/school/oopsa/"
+        Dim WebVersion As String = "https://mrfs.me/school/oopsa/version.txt"
+        Dim client As WebClient = New WebClient()
+
+        Dim vReader As StreamReader = New StreamReader(client.OpenRead(WebVersion))
 
         Update.checkUpdate()
 
         If Update.isUpdate() = True Then
             Update.runUpdate()
+
+            lblNewVersion.Visible = True
+            lblUpdateAvailable.Visible = True
+            pxUpdate.Visible = True
         End If
 
         Try
@@ -52,9 +64,13 @@ Public Class frmMetroLogin
 
         User.crntUsr = txtUsr.Text
 
-        MsgBox(major & minor & build & revision)
+        lblVersion.Text = ("Current Version: " & version)
 
-        MsgBox(Application.ProductVersion)
+        lblNewVersion.Text = ("New version: " & vReader.ReadToEnd)
+
+        'MsgBox(major & minor & build & revision)
+
+        'MsgBox(Application.ProductVersion)
 
     End Sub
 End Class

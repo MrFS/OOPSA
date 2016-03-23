@@ -29,12 +29,16 @@ Partial Class frmMetroLogin
         Me.btnLgInn = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.aLblUsr = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.aLblPw = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblVersion = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.pxUpdate = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CarouselItem1 = New Syncfusion.Windows.Forms.Tools.CarouselItem()
-        Me.lblVersion = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblUpdateAvailable = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.lblNewVersion = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         CType(Me.txtUsr, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtPw, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pxUpdate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,6 +108,24 @@ Partial Class frmMetroLogin
         Me.aLblPw.TabIndex = 5
         Me.aLblPw.Text = "Passord:"
         '
+        'lblVersion
+        '
+        Me.lblVersion.Location = New System.Drawing.Point(274, 10)
+        Me.lblVersion.Name = "lblVersion"
+        Me.lblVersion.Size = New System.Drawing.Size(90, 15)
+        Me.lblVersion.TabIndex = 8
+        Me.lblVersion.Text = "Current version:"
+        '
+        'pxUpdate
+        '
+        Me.pxUpdate.Image = Global.OOPSA.My.Resources.Resources.updateAvailable
+        Me.pxUpdate.Location = New System.Drawing.Point(373, 75)
+        Me.pxUpdate.Name = "pxUpdate"
+        Me.pxUpdate.Size = New System.Drawing.Size(62, 58)
+        Me.pxUpdate.TabIndex = 9
+        Me.pxUpdate.TabStop = False
+        Me.pxUpdate.Visible = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.OOPSA.My.Resources.Resources.Kiwi
@@ -133,13 +155,23 @@ Partial Class frmMetroLogin
         Me.CarouselItem1.Tag = 0R
         Me.CarouselItem1.Visible = False
         '
-        'lblVersion
+        'lblUpdateAvailable
         '
-        Me.lblVersion.Location = New System.Drawing.Point(274, 10)
-        Me.lblVersion.Name = "lblVersion"
-        Me.lblVersion.Size = New System.Drawing.Size(90, 15)
-        Me.lblVersion.TabIndex = 8
-        Me.lblVersion.Text = "Current version:"
+        Me.lblUpdateAvailable.Location = New System.Drawing.Point(274, 29)
+        Me.lblUpdateAvailable.Name = "lblUpdateAvailable"
+        Me.lblUpdateAvailable.Size = New System.Drawing.Size(97, 15)
+        Me.lblUpdateAvailable.TabIndex = 10
+        Me.lblUpdateAvailable.Text = "Update available!"
+        Me.lblUpdateAvailable.Visible = False
+        '
+        'lblNewVersion
+        '
+        Me.lblNewVersion.Location = New System.Drawing.Point(274, 47)
+        Me.lblNewVersion.Name = "lblNewVersion"
+        Me.lblNewVersion.Size = New System.Drawing.Size(77, 15)
+        Me.lblNewVersion.TabIndex = 11
+        Me.lblNewVersion.Text = "New version: "
+        Me.lblNewVersion.Visible = False
         '
         'frmMetroLogin
         '
@@ -154,6 +186,9 @@ Partial Class frmMetroLogin
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
         Me.ClientSize = New System.Drawing.Size(515, 140)
+        Me.Controls.Add(Me.lblNewVersion)
+        Me.Controls.Add(Me.lblUpdateAvailable)
+        Me.Controls.Add(Me.pxUpdate)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -172,6 +207,7 @@ Partial Class frmMetroLogin
         Me.Text = "TurCare AS Logg Inn | OOPSA BADR08 - Bits Please"
         CType(Me.txtUsr, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtPw, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pxUpdate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CarouselItem1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -188,4 +224,7 @@ Partial Class frmMetroLogin
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents lblVersion As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents pxUpdate As PictureBox
+    Friend WithEvents lblUpdateAvailable As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents lblNewVersion As Syncfusion.Windows.Forms.Tools.AutoLabel
 End Class
