@@ -18,13 +18,40 @@ Module updateModule
 
         'Dim OOPSA As Process = Process.GetProcessesByName("OOPSA").
 
+        Dim dlVersion As String = "https://mrfs.me/school/oopsa/version.txt"
+        Dim client As WebClient = New WebClient()
 
+        Dim vReader As StreamReader = New StreamReader(client.OpenRead(dlVersion))
 
         Dim ans As Char
 
         Dim chkProcess As Integer = 0
 
         Console.WriteLine("OOPSA Update")
+
+        FileVersionInfo.GetVersionInfo(Path.Combine(Environment.CurrentDirectory, "OOPSA.exe"))
+        Dim vOOPSA As FileVersionInfo = FileVersionInfo.GetVersionInfo(Environment.CurrentDirectory + "\OOPSA.exe")
+
+
+        ' Print the file name and version number.
+
+        Console.WriteLine("Current version " & vOOPSA.FileVersion)
+        Console.WriteLine("New version " & vReader.ReadToEnd)
+
+        Console.WriteLine("This is new in version " & vReader.ReadToEnd)
+
+        Dim vString As String = vReader.ReadToEnd
+
+        Console.WriteLine("https://mrfs.me/school/oopsa/" + vString + ".txt")
+
+        'Using sr As New StreamReader("https://mrfs.me/school/oopsa/" + vReader.ReadToEnd + ".txt")
+        '    Dim news As String
+
+        '    news = sr.ReadToEnd
+
+        '    Console.WriteLine(news)
+
+        'End Using
 
         Console.WriteLine("Would you like to update? Y/N")
 
@@ -140,11 +167,9 @@ Module updateModule
                 Console.WriteLine("Preparing to download new files")
                 Threading.Thread.Sleep(1000)
 
-                Dim dlAdress As String = "https://mrfs.me/school/oopsa/"
-                Dim dlVersion As String = "https://mrfs.me/school/oopsa/version.txt"
-                Dim client As WebClient = New WebClient()
+                Console.Clear()
 
-                Dim vReader As StreamReader = New StreamReader(client.OpenRead(dlVersion))
+                Dim dlAdress As String = "https://mrfs.me/school/oopsa/"
 
                 dlAdress += vReader.ReadToEnd.ToString & ".zip"
 
