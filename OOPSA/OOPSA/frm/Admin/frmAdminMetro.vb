@@ -15,6 +15,13 @@ Public Class frmAdminMetro
         Core.VisAnsatt()
         Core.visLeie()
 
+
+        'Legg dt her i en class
+
+
+
+
+        '-------------------------------------
         txtServer.Text = My.Settings.server
         txtSvrDB.Text = My.Settings.database
         TxtSvrUser.Text = My.Settings.user
@@ -172,13 +179,17 @@ Public Class frmAdminMetro
         frmAddLeie.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub FrmLagerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FrmLagerToolStripMenuItem.Click
         Me.Hide()
         frmLager.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub FrmSalgToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FrmSalgToolStripMenuItem.Click
         Me.Hide()
         frmSalg.Show()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        SparkLine1.Source = New Double() {ping.Send(server).RoundtripTime}
     End Sub
 End Class
