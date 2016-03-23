@@ -93,7 +93,7 @@ Module updateModule
 
                                 Console.WriteLine("Adding file to archive: " & dra.Name)
                                 zipArchive.AddFile(dra.Name)
-                                Threading.Thread.Sleep(1000)
+                                Threading.Thread.Sleep(500)
 
                             End If
                         Catch ex As Exception
@@ -119,9 +119,9 @@ Module updateModule
 
                 Dim diDel As New IO.DirectoryInfo(Environment.CurrentDirectory)
                 Dim fileDel As IO.FileInfo() = diDel.GetFiles()
-
+                Console.WriteLine("Deleting files")
                 For Each dra In fileDel
-                    Console.WriteLine("Deleting files")
+
                     Try
 
                         If dra.Name <> "chkUpdate.exe" Then
@@ -151,6 +151,7 @@ Module updateModule
                 Console.WriteLine(dlAdress)
 
                 Console.WriteLine("Downloading File ""{0}"" from ""{1}"" ......." + ControlChars.Cr + ControlChars.Cr, vReader.ReadToEnd & ".zip", dlAdress)
+                Console.WriteLine("Please Wait!")
 
                 Try
                     client.DownloadFile(dlAdress, vReader.ReadToEnd & "update.zip")
@@ -158,12 +159,76 @@ Module updateModule
                     Console.WriteLine(ex.Message)
                 End Try
 
+                Console.WriteLine("Finished downloading archive")
+                Console.WriteLine("BREAKING")
+                Threading.Thread.Sleep(1000)
+                Console.WriteLine("Preparing to extract archive")
+                Threading.Thread.Sleep(1000)
+
+                Console.Clear()
+
+                Console.WriteLine("Extracting downloaded archive")
+                Console.WriteLine(vbTab & "Please Wait!")
+
+
                 Try
                     ZipFile.ExtractToDirectory("update.zip", Environment.CurrentDirectory)
                 Catch ex As Exception
                     Console.WriteLine(ex.Message)
                 End Try
 
+                Console.WriteLine("Finished extracting archive")
+
+                Console.WriteLine("BREAKING")
+                Threading.Thread.Sleep(1000)
+                Console.WriteLine("Preparing final steps")
+                Threading.Thread.Sleep(1000)
+
+                Console.Clear()
+
+                Dim final As Char
+
+                Console.WriteLine("Do you wish to delete old files? Y/N")
+
+                final = Console.ReadLine()
+
+                Select Case final
+                    Case "Y"
+                        Console.WriteLine("Deleting files")
+
+                        Try
+                            IO.Directory.Delete(Environment.CurrentDirectory & "\old", True)
+                            IO.File.Delete(Environment.CurrentDirectory & "\update.zip")
+                        Catch ex As Exception
+                            Console.WriteLine(ex.Message)
+                            Threading.Thread.Sleep(2500)
+                        End Try
+
+                        Console.WriteLine("Directory deleted - '\old\'")
+
+                        Console.WriteLine("OOPSA Updated to version " & vReader.ReadToEnd)
+
+                        Console.WriteLine("EXITING Update - Starting OOPSA")
+
+                        Process.Start("OOPSA.exe")
+
+                        Threading.Thread.Sleep(3500)
+
+                        Environment.Exit(0)
+
+                    Case "N"
+
+                        Console.WriteLine("OOPSA Updated to version " & vReader.ReadToEnd)
+
+                        Console.WriteLine("EXITING Update - Starting OOPSA")
+
+                        Process.Start("OOPSA.exe")
+
+                        Threading.Thread.Sleep(3500)
+
+                        Environment.Exit(0)
+
+                End Select
 
                 Console.ReadLine()
 

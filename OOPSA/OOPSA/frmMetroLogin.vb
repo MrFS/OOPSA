@@ -31,6 +31,8 @@ Public Class frmMetroLogin
 
         Dim Update As New Update
 
+        Dim User As New UserCore
+
 
         Update.checkUpdate()
 
@@ -47,6 +49,8 @@ Public Class frmMetroLogin
         Finally
             DB.DisconnectDatabase()
         End Try
+
+        User.crntUsr = txtUsr.Text
 
         MsgBox(major & minor & build & revision)
 
