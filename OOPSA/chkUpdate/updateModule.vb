@@ -23,6 +23,8 @@ Module updateModule
 
         Dim vReader As StreamReader = New StreamReader(client.OpenRead(dlVersion))
 
+        Dim vString As String = vReader.ReadToEnd()
+
         Dim ans As Char
 
         Dim chkProcess As Integer = 0
@@ -36,22 +38,23 @@ Module updateModule
         ' Print the file name and version number.
 
         Console.WriteLine("Current version " & vOOPSA.FileVersion)
-        Console.WriteLine("New version " & vReader.ReadToEnd)
+        Console.WriteLine("New version " & vString & vbNewLine)
 
-        Console.WriteLine("This is new in version " & vReader.ReadToEnd)
+        Console.WriteLine("This is new in version " & vString)
 
-        Dim vString As String = vReader.ReadToEnd
+        Dim srString As String = "https://mrfs.me/school/oopsa/" & vString & ".txt"
 
-        Console.WriteLine("https://mrfs.me/school/oopsa/" + vString + ".txt")
+        Dim srClient As WebClient = New WebClient()
 
-        'Using sr As New StreamReader("https://mrfs.me/school/oopsa/" + vReader.ReadToEnd + ".txt")
-        '    Dim news As String
+        Dim srReader As StreamReader = New StreamReader(srClient.OpenRead(srString))
 
-        '    news = sr.ReadToEnd
+        Console.WriteLine(srString)
 
-        '    Console.WriteLine(news)
+        Dim News As String = srReader.ReadToEnd()
 
-        'End Using
+        Console.WriteLine(News)
+
+        Console.WriteLine(vbNewLine)
 
         Console.WriteLine("Would you like to update? Y/N")
 
@@ -171,11 +174,11 @@ Module updateModule
 
                 Dim dlAdress As String = "https://mrfs.me/school/oopsa/"
 
-                dlAdress += vReader.ReadToEnd.ToString & ".zip"
+                dlAdress += vString & ".zip"
 
                 Console.WriteLine(dlAdress)
 
-                Console.WriteLine("Downloading File ""{0}"" from ""{1}"" ......." + ControlChars.Cr + ControlChars.Cr, vReader.ReadToEnd & ".zip", dlAdress)
+                Console.WriteLine("Downloading File ""{0}"" from ""{1}"" ......." + ControlChars.Cr + ControlChars.Cr, vString & ".zip", dlAdress)
                 Console.WriteLine("Please Wait!")
 
                 Try
@@ -231,7 +234,7 @@ Module updateModule
 
                         Console.WriteLine("Directory deleted - '\old\'")
 
-                        Console.WriteLine("OOPSA Updated to version " & vReader.ReadToEnd)
+                        Console.WriteLine("OOPSA Updated to version " & vString)
 
                         Console.WriteLine("EXITING Update - Starting OOPSA")
 
@@ -243,7 +246,7 @@ Module updateModule
 
                     Case "N"
 
-                        Console.WriteLine("OOPSA Updated to version " & vReader.ReadToEnd)
+                        Console.WriteLine("OOPSA Updated to version " & vString)
 
                         Console.WriteLine("EXITING Update - Starting OOPSA")
 
