@@ -39,15 +39,6 @@ Public Class frmLager
     End Sub
 
     Private Sub TabPageAdv3_Click(sender As Object, e As EventArgs) Handles TabPageAdv3.Click
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            ComboBox2.Items.Add(dr("Produkt_navn"))
-        Next
     End Sub
 
     Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
@@ -55,6 +46,9 @@ Public Class frmLager
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+    End Sub
+
+    Private Sub frmLager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
         Dim ds = New DataSet
         Dim dr As DataRow
@@ -62,6 +56,7 @@ Public Class frmLager
         adapter.Fill(ds, "Produkt")
         dt = ds.Tables(0)
         For Each dr In dt.Rows
+            ComboBox3.Items.Add(dr("Produkt_navn"))
             ComboBox2.Items.Add(dr("Produkt_navn"))
         Next
     End Sub

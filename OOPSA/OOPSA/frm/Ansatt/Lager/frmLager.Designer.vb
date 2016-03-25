@@ -36,6 +36,7 @@ Partial Class frmLager
         Me.TextBoxExt9 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboDropDown3 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBoxExt5 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
@@ -49,6 +50,7 @@ Partial Class frmLager
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -57,8 +59,6 @@ Partial Class frmLager
         Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabPageAdv1.SuspendLayout()
@@ -153,7 +153,7 @@ Partial Class frmLager
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(173, 182)
         Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(4)
@@ -176,7 +176,7 @@ Partial Class frmLager
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(173, 138)
         Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4)
@@ -199,7 +199,7 @@ Partial Class frmLager
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(173, 94)
         Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4)
@@ -246,6 +246,14 @@ Partial Class frmLager
         Me.TabPageAdv2.Text = "Endre vare beholdning"
         Me.TabPageAdv2.ThemesEnabled = False
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(251, 17)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox3.TabIndex = 13
+        '
         'ComboDropDown3
         '
         Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(160, 24)
@@ -267,7 +275,7 @@ Partial Class frmLager
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(251, 220)
         Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(4)
@@ -290,7 +298,7 @@ Partial Class frmLager
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(251, 161)
         Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(4)
@@ -313,7 +321,7 @@ Partial Class frmLager
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(251, 110)
         Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4)
@@ -347,7 +355,7 @@ Partial Class frmLager
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(251, 62)
         Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(4)
@@ -393,6 +401,14 @@ Partial Class frmLager
         Me.TabPageAdv3.TabIndex = 3
         Me.TabPageAdv3.Text = "Fjerne varer"
         Me.TabPageAdv3.ThemesEnabled = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(569, 114)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox2.TabIndex = 3
         '
         'ButtonAdv2
         '
@@ -478,22 +494,6 @@ Partial Class frmLager
         Me.ToolStripEx1.Size = New System.Drawing.Size(1587, 45)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "ToolStripEx1"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(569, 114)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox2.TabIndex = 3
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(251, 17)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox3.TabIndex = 13
         '
         'frmLager
         '
