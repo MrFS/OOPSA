@@ -22,16 +22,16 @@ Public Class Login
 
         If (ds.Tables("Login").Rows.Count > 0) Then
 
-            Dim avd As Integer = ds.Tables("Login").Rows(0).Item(2).ToString
+            Dim avd As String = ds.Tables("Login").Rows(0).Item(2).ToString
 
             Select Case avd
-                Case 1
+                Case = "dl"
                     frmAdminMetro.Show()
                     MsgBox("Du er logget inn som: " & user)
-                Case 2
+                Case = "salg"
                     frmSalg.Show()
                     MsgBox("Du er logget inn som: " & user)
-                Case 3
+                Case = "lager"
                     frmLager.Show()
                     MsgBox("Du er logget inn som: " & user)
                 Case Else

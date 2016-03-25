@@ -57,6 +57,8 @@ Partial Public Class drift8_2016DataSet
     
     Private tableLoggin As LogginDataTable
     
+    Private tablePost As PostDataTable
+    
     Private tableProdukt As ProduktDataTable
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
@@ -135,6 +137,9 @@ Partial Public Class drift8_2016DataSet
             End If
             If (Not (ds.Tables("Loggin")) Is Nothing) Then
                 MyBase.Tables.Add(New LogginDataTable(ds.Tables("Loggin")))
+            End If
+            If (Not (ds.Tables("Post")) Is Nothing) Then
+                MyBase.Tables.Add(New PostDataTable(ds.Tables("Post")))
             End If
             If (Not (ds.Tables("Produkt")) Is Nothing) Then
                 MyBase.Tables.Add(New ProduktDataTable(ds.Tables("Produkt")))
@@ -320,6 +325,16 @@ Partial Public Class drift8_2016DataSet
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property Post() As PostDataTable
+        Get
+            Return Me.tablePost
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
     Public ReadOnly Property Produkt() As ProduktDataTable
         Get
             Return Me.tableProdukt
@@ -440,6 +455,9 @@ Partial Public Class drift8_2016DataSet
             End If
             If (Not (ds.Tables("Loggin")) Is Nothing) Then
                 MyBase.Tables.Add(New LogginDataTable(ds.Tables("Loggin")))
+            End If
+            If (Not (ds.Tables("Post")) Is Nothing) Then
+                MyBase.Tables.Add(New PostDataTable(ds.Tables("Post")))
             End If
             If (Not (ds.Tables("Produkt")) Is Nothing) Then
                 MyBase.Tables.Add(New ProduktDataTable(ds.Tables("Produkt")))
@@ -572,6 +590,12 @@ Partial Public Class drift8_2016DataSet
                 Me.tableLoggin.InitVars
             End If
         End If
+        Me.tablePost = CType(MyBase.Tables("Post"),PostDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tablePost) Is Nothing) Then
+                Me.tablePost.InitVars
+            End If
+        End If
         Me.tableProdukt = CType(MyBase.Tables("Produkt"),ProduktDataTable)
         If (initTable = true) Then
             If (Not (Me.tableProdukt) Is Nothing) Then
@@ -620,6 +644,8 @@ Partial Public Class drift8_2016DataSet
         MyBase.Tables.Add(Me.tableLeie)
         Me.tableLoggin = New LogginDataTable()
         MyBase.Tables.Add(Me.tableLoggin)
+        Me.tablePost = New PostDataTable()
+        MyBase.Tables.Add(Me.tablePost)
         Me.tableProdukt = New ProduktDataTable()
         MyBase.Tables.Add(Me.tableProdukt)
     End Sub
@@ -717,6 +743,12 @@ Partial Public Class drift8_2016DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializeLoggin() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializePost() As Boolean
         Return false
     End Function
     
@@ -831,6 +863,9 @@ Partial Public Class drift8_2016DataSet
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub LogginRowChangeEventHandler(ByVal sender As Object, ByVal e As LogginRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub PostRowChangeEventHandler(ByVal sender As Object, ByVal e As PostRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub ProduktRowChangeEventHandler(ByVal sender As Object, ByVal e As ProduktRowChangeEvent)
@@ -1407,6 +1442,8 @@ Partial Public Class drift8_2016DataSet
         
         Private columnAdresse As Global.System.Data.DataColumn
         
+        Private columnPost As Global.System.Data.DataColumn
+        
         Private columnAvdeling_id_Avdeling As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1502,6 +1539,14 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PostColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPost
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Avdeling_id_AvdelingColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnAvdeling_id_Avdeling
@@ -1545,9 +1590,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddAnsattRow(ByVal F_navn As String, ByVal E_navn As String, ByVal bursdag As Date, ByVal e_postt As String, ByVal tlf As Integer, ByVal Adresse As String, ByVal Avdeling_id_Avdeling As Integer) As AnsattRow
+        Public Overloads Function AddAnsattRow(ByVal F_navn As String, ByVal E_navn As String, ByVal bursdag As Date, ByVal e_postt As String, ByVal tlf As Integer, ByVal Adresse As String, ByVal Post As Integer, ByVal Avdeling_id_Avdeling As Integer) As AnsattRow
             Dim rowAnsattRow As AnsattRow = CType(Me.NewRow,AnsattRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, F_navn, E_navn, bursdag, e_postt, tlf, Adresse, Avdeling_id_Avdeling}
+            Dim columnValuesArray() As Object = New Object() {Nothing, F_navn, E_navn, bursdag, e_postt, tlf, Adresse, Post, Avdeling_id_Avdeling}
             rowAnsattRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowAnsattRow)
             Return rowAnsattRow
@@ -1583,6 +1628,7 @@ Partial Public Class drift8_2016DataSet
             Me.columne_postt = MyBase.Columns("e_postt")
             Me.columntlf = MyBase.Columns("tlf")
             Me.columnAdresse = MyBase.Columns("Adresse")
+            Me.columnPost = MyBase.Columns("Post")
             Me.columnAvdeling_id_Avdeling = MyBase.Columns("Avdeling_id_Avdeling")
         End Sub
         
@@ -1603,6 +1649,8 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columntlf)
             Me.columnAdresse = New Global.System.Data.DataColumn("Adresse", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAdresse)
+            Me.columnPost = New Global.System.Data.DataColumn("Post", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPost)
             Me.columnAvdeling_id_Avdeling = New Global.System.Data.DataColumn("Avdeling_id_Avdeling", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAvdeling_id_Avdeling)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnA_id, Me.columnAvdeling_id_Avdeling}, true))
@@ -1614,6 +1662,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnE_navn.MaxLength = 50
             Me.columne_postt.MaxLength = 50
             Me.columnAdresse.MaxLength = 50
+            Me.columnPost.AllowDBNull = false
             Me.columnAvdeling_id_Avdeling.AllowDBNull = false
         End Sub
         
@@ -2720,6 +2769,8 @@ Partial Public Class drift8_2016DataSet
         
         Private columnB_addresse As Global.System.Data.DataColumn
         
+        Private columnPost As Global.System.Data.DataColumn
+        
         Private columne_post As Global.System.Data.DataColumn
         
         Private columnBedrift As Global.System.Data.DataColumn
@@ -2777,6 +2828,14 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PostColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPost
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property e_postColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columne_post
@@ -2828,9 +2887,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddK_bedrifttRow(ByVal Kunde_Kid As Integer, ByVal B_addresse As String, ByVal e_post As String, ByVal Bedrift As String) As K_bedrifttRow
+        Public Overloads Function AddK_bedrifttRow(ByVal Kunde_Kid As Integer, ByVal B_addresse As String, ByVal Post As Integer, ByVal e_post As String, ByVal Bedrift As String) As K_bedrifttRow
             Dim rowK_bedrifttRow As K_bedrifttRow = CType(Me.NewRow,K_bedrifttRow)
-            Dim columnValuesArray() As Object = New Object() {Kunde_Kid, B_addresse, e_post, Bedrift}
+            Dim columnValuesArray() As Object = New Object() {Kunde_Kid, B_addresse, Post, e_post, Bedrift}
             rowK_bedrifttRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowK_bedrifttRow)
             Return rowK_bedrifttRow
@@ -2861,6 +2920,7 @@ Partial Public Class drift8_2016DataSet
         Friend Sub InitVars()
             Me.columnKunde_Kid = MyBase.Columns("Kunde_Kid")
             Me.columnB_addresse = MyBase.Columns("B_addresse")
+            Me.columnPost = MyBase.Columns("Post")
             Me.columne_post = MyBase.Columns("e_post")
             Me.columnBedrift = MyBase.Columns("Bedrift")
         End Sub
@@ -2872,6 +2932,8 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columnKunde_Kid)
             Me.columnB_addresse = New Global.System.Data.DataColumn("B_addresse", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnB_addresse)
+            Me.columnPost = New Global.System.Data.DataColumn("Post", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPost)
             Me.columne_post = New Global.System.Data.DataColumn("e_post", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columne_post)
             Me.columnBedrift = New Global.System.Data.DataColumn("Bedrift", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -2880,6 +2942,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnKunde_Kid.AllowDBNull = false
             Me.columnKunde_Kid.Unique = true
             Me.columnB_addresse.MaxLength = 50
+            Me.columnPost.AllowDBNull = false
             Me.columne_post.MaxLength = 50
             Me.columnBedrift.MaxLength = 50
         End Sub
@@ -3023,6 +3086,8 @@ Partial Public Class drift8_2016DataSet
         
         Private columnP_addresse As Global.System.Data.DataColumn
         
+        Private columnPost As Global.System.Data.DataColumn
+        
         Private columne_post As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3078,6 +3143,14 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PostColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPost
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property e_postColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columne_post
@@ -3121,9 +3194,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddK_privatRow(ByVal Kunde_Kid As Integer, ByVal P_addresse As String, ByVal e_post As String) As K_privatRow
+        Public Overloads Function AddK_privatRow(ByVal Kunde_Kid As Integer, ByVal P_addresse As String, ByVal Post As Integer, ByVal e_post As String) As K_privatRow
             Dim rowK_privatRow As K_privatRow = CType(Me.NewRow,K_privatRow)
-            Dim columnValuesArray() As Object = New Object() {Kunde_Kid, P_addresse, e_post}
+            Dim columnValuesArray() As Object = New Object() {Kunde_Kid, P_addresse, Post, e_post}
             rowK_privatRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowK_privatRow)
             Return rowK_privatRow
@@ -3154,6 +3227,7 @@ Partial Public Class drift8_2016DataSet
         Friend Sub InitVars()
             Me.columnKunde_Kid = MyBase.Columns("Kunde_Kid")
             Me.columnP_addresse = MyBase.Columns("P_addresse")
+            Me.columnPost = MyBase.Columns("Post")
             Me.columne_post = MyBase.Columns("e_post")
         End Sub
         
@@ -3164,12 +3238,15 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columnKunde_Kid)
             Me.columnP_addresse = New Global.System.Data.DataColumn("P_addresse", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnP_addresse)
+            Me.columnPost = New Global.System.Data.DataColumn("Post", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPost)
             Me.columne_post = New Global.System.Data.DataColumn("e_post", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columne_post)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnKunde_Kid}, true))
             Me.columnKunde_Kid.AllowDBNull = false
             Me.columnKunde_Kid.Unique = true
             Me.columnP_addresse.MaxLength = 50
+            Me.columnPost.AllowDBNull = false
             Me.columne_post.MaxLength = 50
         End Sub
         
@@ -4899,7 +4976,7 @@ Partial Public Class drift8_2016DataSet
         
         Private columnLager_id As Global.System.Data.DataColumn
         
-        Private columnCity As Global.System.Data.DataColumn
+        Private columnPost As Global.System.Data.DataColumn
         
         Private columnAddresse As Global.System.Data.DataColumn
         
@@ -4950,9 +5027,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property CityColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property PostColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnCity
+                Return Me.columnPost
             End Get
         End Property
         
@@ -5009,9 +5086,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddLagerRow(ByVal Lager_id As Integer, ByVal City As String, ByVal Addresse As String, ByVal Avdeling_id As Integer) As LagerRow
+        Public Overloads Function AddLagerRow(ByVal Lager_id As Integer, ByVal Post As Integer, ByVal Addresse As String, ByVal Avdeling_id As Integer) As LagerRow
             Dim rowLagerRow As LagerRow = CType(Me.NewRow,LagerRow)
-            Dim columnValuesArray() As Object = New Object() {Lager_id, City, Addresse, Avdeling_id}
+            Dim columnValuesArray() As Object = New Object() {Lager_id, Post, Addresse, Avdeling_id}
             rowLagerRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowLagerRow)
             Return rowLagerRow
@@ -5035,7 +5112,7 @@ Partial Public Class drift8_2016DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
             Me.columnLager_id = MyBase.Columns("Lager_id")
-            Me.columnCity = MyBase.Columns("City")
+            Me.columnPost = MyBase.Columns("Post")
             Me.columnAddresse = MyBase.Columns("Addresse")
             Me.columnAvdeling_id = MyBase.Columns("Avdeling_id")
         End Sub
@@ -5045,15 +5122,14 @@ Partial Public Class drift8_2016DataSet
         Private Sub InitClass()
             Me.columnLager_id = New Global.System.Data.DataColumn("Lager_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnLager_id)
-            Me.columnCity = New Global.System.Data.DataColumn("City", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCity)
+            Me.columnPost = New Global.System.Data.DataColumn("Post", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPost)
             Me.columnAddresse = New Global.System.Data.DataColumn("Addresse", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAddresse)
             Me.columnAvdeling_id = New Global.System.Data.DataColumn("Avdeling_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAvdeling_id)
             Me.columnLager_id.AllowDBNull = false
-            Me.columnCity.AllowDBNull = false
-            Me.columnCity.MaxLength = 30
+            Me.columnPost.AllowDBNull = false
             Me.columnAddresse.MaxLength = 45
             Me.columnAvdeling_id.AllowDBNull = false
         End Sub
@@ -5544,6 +5620,8 @@ Partial Public Class drift8_2016DataSet
         
         Private columnPassord As Global.System.Data.DataColumn
         
+        Private columnavd As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -5604,6 +5682,14 @@ Partial Public Class drift8_2016DataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property avdColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnavd
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -5640,9 +5726,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddLogginRow(ByVal Brukernavn As String, ByVal Passord As String) As LogginRow
+        Public Overloads Function AddLogginRow(ByVal Brukernavn As String, ByVal Passord As String, ByVal avd As Integer) As LogginRow
             Dim rowLogginRow As LogginRow = CType(Me.NewRow,LogginRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Brukernavn, Passord}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Brukernavn, Passord, avd}
             rowLogginRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowLogginRow)
             Return rowLogginRow
@@ -5674,6 +5760,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnidLoggin = MyBase.Columns("idLoggin")
             Me.columnBrukernavn = MyBase.Columns("Brukernavn")
             Me.columnPassord = MyBase.Columns("Passord")
+            Me.columnavd = MyBase.Columns("avd")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5685,6 +5772,8 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columnBrukernavn)
             Me.columnPassord = New Global.System.Data.DataColumn("Passord", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPassord)
+            Me.columnavd = New Global.System.Data.DataColumn("avd", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnavd)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidLoggin}, true))
             Me.columnidLoggin.AutoIncrement = true
             Me.columnidLoggin.AutoIncrementSeed = -1
@@ -5695,6 +5784,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnBrukernavn.MaxLength = 45
             Me.columnPassord.AllowDBNull = false
             Me.columnPassord.MaxLength = 255
+            Me.columnavd.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5829,6 +5919,273 @@ Partial Public Class drift8_2016DataSet
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class PostDataTable
+        Inherits Global.System.Data.TypedTableBase(Of PostRow)
+        
+        Private columnPostnummer As Global.System.Data.DataColumn
+        
+        Private columnPoststed As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "Post"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PostnummerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPostnummer
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PoststedColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPoststed
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As PostRow
+            Get
+                Return CType(Me.Rows(index),PostRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event PostRowChanging As PostRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event PostRowChanged As PostRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event PostRowDeleting As PostRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event PostRowDeleted As PostRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub AddPostRow(ByVal row As PostRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddPostRow(ByVal Postnummer As Integer, ByVal Poststed As String) As PostRow
+            Dim rowPostRow As PostRow = CType(Me.NewRow,PostRow)
+            Dim columnValuesArray() As Object = New Object() {Postnummer, Poststed}
+            rowPostRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowPostRow)
+            Return rowPostRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As PostDataTable = CType(MyBase.Clone,PostDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New PostDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnPostnummer = MyBase.Columns("Postnummer")
+            Me.columnPoststed = MyBase.Columns("Poststed")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnPostnummer = New Global.System.Data.DataColumn("Postnummer", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPostnummer)
+            Me.columnPoststed = New Global.System.Data.DataColumn("Poststed", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPoststed)
+            Me.columnPoststed.AllowDBNull = false
+            Me.columnPoststed.MaxLength = 50
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewPostRow() As PostRow
+            Return CType(Me.NewRow,PostRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New PostRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(PostRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.PostRowChangedEvent) Is Nothing) Then
+                RaiseEvent PostRowChanged(Me, New PostRowChangeEvent(CType(e.Row,PostRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.PostRowChangingEvent) Is Nothing) Then
+                RaiseEvent PostRowChanging(Me, New PostRowChangeEvent(CType(e.Row,PostRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.PostRowDeletedEvent) Is Nothing) Then
+                RaiseEvent PostRowDeleted(Me, New PostRowChangeEvent(CType(e.Row,PostRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.PostRowDeletingEvent) Is Nothing) Then
+                RaiseEvent PostRowDeleting(Me, New PostRowChangeEvent(CType(e.Row,PostRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub RemovePostRow(ByVal row As PostRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As drift8_2016DataSet = New drift8_2016DataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "PostDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
     Partial Public Class ProduktDataTable
         Inherits Global.System.Data.TypedTableBase(Of ProduktRow)
         
@@ -5837,6 +6194,8 @@ Partial Public Class drift8_2016DataSet
         Private columnProdukt_navn As Global.System.Data.DataColumn
         
         Private columnPris As Global.System.Data.DataColumn
+        
+        Private columnp_antall As Global.System.Data.DataColumn
         
         Private columnLager_id As Global.System.Data.DataColumn
         
@@ -5901,6 +6260,14 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property p_antallColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnp_antall
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Lager_idColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnLager_id
@@ -5944,9 +6311,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddProduktRow(ByVal Produkt_navn As String, ByVal Pris As Integer, ByVal Lager_id As Integer) As ProduktRow
+        Public Overloads Function AddProduktRow(ByVal Produkt_navn As String, ByVal Pris As Integer, ByVal p_antall As Integer, ByVal Lager_id As Integer) As ProduktRow
             Dim rowProduktRow As ProduktRow = CType(Me.NewRow,ProduktRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Produkt_navn, Pris, Lager_id}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Produkt_navn, Pris, p_antall, Lager_id}
             rowProduktRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowProduktRow)
             Return rowProduktRow
@@ -5978,6 +6345,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnProdukt_id = MyBase.Columns("Produkt_id")
             Me.columnProdukt_navn = MyBase.Columns("Produkt_navn")
             Me.columnPris = MyBase.Columns("Pris")
+            Me.columnp_antall = MyBase.Columns("p_antall")
             Me.columnLager_id = MyBase.Columns("Lager_id")
         End Sub
         
@@ -5990,6 +6358,8 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columnProdukt_navn)
             Me.columnPris = New Global.System.Data.DataColumn("Pris", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPris)
+            Me.columnp_antall = New Global.System.Data.DataColumn("p_antall", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnp_antall)
             Me.columnLager_id = New Global.System.Data.DataColumn("Lager_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnLager_id)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnProdukt_id}, true))
@@ -6001,6 +6371,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnProdukt_navn.AllowDBNull = false
             Me.columnProdukt_navn.MaxLength = 45
             Me.columnPris.AllowDBNull = false
+            Me.columnp_antall.AllowDBNull = false
             Me.columnLager_id.AllowDBNull = false
         End Sub
         
@@ -6352,6 +6723,17 @@ Partial Public Class drift8_2016DataSet
             End Get
             Set
                 Me(Me.tableAnsatt.AdresseColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Post() As Integer
+            Get
+                Return CType(Me(Me.tableAnsatt.PostColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableAnsatt.PostColumn) = value
             End Set
         End Property
         
@@ -6834,6 +7216,17 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Post() As Integer
+            Get
+                Return CType(Me(Me.tableK_bedriftt.PostColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableK_bedriftt.PostColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property e_post() As String
             Get
                 Try 
@@ -6937,6 +7330,17 @@ Partial Public Class drift8_2016DataSet
             End Get
             Set
                 Me(Me.tableK_privat.P_addresseColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Post() As Integer
+            Get
+                Return CType(Me(Me.tableK_privat.PostColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableK_privat.PostColumn) = value
             End Set
         End Property
         
@@ -7539,12 +7943,12 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property City() As String
+        Public Property Post() As Integer
             Get
-                Return CType(Me(Me.tableLager.CityColumn),String)
+                Return CType(Me(Me.tableLager.PostColumn),Integer)
             End Get
             Set
-                Me(Me.tableLager.CityColumn) = value
+                Me(Me.tableLager.PostColumn) = value
             End Set
         End Property
         
@@ -7759,6 +8163,71 @@ Partial Public Class drift8_2016DataSet
                 Me(Me.tableLoggin.PassordColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property avd() As Integer
+            Get
+                Return CType(Me(Me.tableLoggin.avdColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableLoggin.avdColumn) = value
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class PostRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tablePost As PostDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tablePost = CType(Me.Table,PostDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Postnummer() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tablePost.PostnummerColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Postnummer' in table 'Post' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablePost.PostnummerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Poststed() As String
+            Get
+                Return CType(Me(Me.tablePost.PoststedColumn),String)
+            End Get
+            Set
+                Me(Me.tablePost.PoststedColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsPostnummerNull() As Boolean
+            Return Me.IsNull(Me.tablePost.PostnummerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetPostnummerNull()
+            Me(Me.tablePost.PostnummerColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -7806,6 +8275,17 @@ Partial Public Class drift8_2016DataSet
             End Get
             Set
                 Me(Me.tableProdukt.PrisColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property p_antall() As Integer
+            Get
+                Return CType(Me(Me.tableProdukt.p_antallColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableProdukt.p_antallColumn) = value
             End Set
         End Property
         
@@ -8401,6 +8881,42 @@ Partial Public Class drift8_2016DataSet
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class PostRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As PostRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As PostRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As PostRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Class ProduktRowChangeEvent
         Inherits Global.System.EventArgs
         
@@ -8664,8 +9180,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -9055,8 +9570,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -9352,6 +9866,7 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.ColumnMappings.Add("e_postt", "e_postt")
             tableMapping.ColumnMappings.Add("tlf", "tlf")
             tableMapping.ColumnMappings.Add("Adresse", "Adresse")
+            tableMapping.ColumnMappings.Add("Post", "Post")
             tableMapping.ColumnMappings.Add("Avdeling_id_Avdeling", "Avdeling_id_Avdeling")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
@@ -9360,8 +9875,8 @@ Namespace drift8_2016DataSetTableAdapters
                 " (`F_navn` = @p3)) AND ((@p4 = 1 AND `E_navn` IS NULL) OR (`E_navn` = @p5)) AND "& _ 
                 "((@p6 = 1 AND `bursdag` IS NULL) OR (`bursdag` = @p7)) AND ((@p8 = 1 AND `e_post"& _ 
                 "t` IS NULL) OR (`e_postt` = @p9)) AND ((@p10 = 1 AND `tlf` IS NULL) OR (`tlf` = "& _ 
-                "@p11)) AND ((@p12 = 1 AND `Adresse` IS NULL) OR (`Adresse` = @p13)) AND (`Avdeli"& _ 
-                "ng_id_Avdeling` = @p14))"
+                "@p11)) AND ((@p12 = 1 AND `Adresse` IS NULL) OR (`Adresse` = @p13)) AND (`Post` "& _ 
+                "= @p14) AND (`Avdeling_id_Avdeling` = @p15))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -9478,13 +9993,22 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "Post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p15"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "Avdeling_id_Avdeling"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO `Ansatt` (`F_navn`, `E_navn`, `bursdag`, `e_postt`, `tlf`, `Adresse`,"& _ 
-                " `Avdeling_id_Avdeling`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7)"
+                " `Post`, `Avdeling_id_Avdeling`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)"& _ 
+                ""
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -9533,17 +10057,25 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "Post"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "Avdeling_id_Avdeling"
             Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE `Ansatt` SET `F_navn` = @p1, `E_navn` = @p2, `bursdag` = @p3, `e_postt` = "& _ 
-                "@p4, `tlf` = @p5, `Adresse` = @p6, `Avdeling_id_Avdeling` = @p7 WHERE ((`A_id` ="& _ 
-                " @p8) AND ((@p9 = 1 AND `F_navn` IS NULL) OR (`F_navn` = @p10)) AND ((@p11 = 1 A"& _ 
-                "ND `E_navn` IS NULL) OR (`E_navn` = @p12)) AND ((@p13 = 1 AND `bursdag` IS NULL)"& _ 
-                " OR (`bursdag` = @p14)) AND ((@p15 = 1 AND `e_postt` IS NULL) OR (`e_postt` = @p"& _ 
-                "16)) AND ((@p17 = 1 AND `tlf` IS NULL) OR (`tlf` = @p18)) AND ((@p19 = 1 AND `Ad"& _ 
-                "resse` IS NULL) OR (`Adresse` = @p20)) AND (`Avdeling_id_Avdeling` = @p21))"
+                "@p4, `tlf` = @p5, `Adresse` = @p6, `Post` = @p7, `Avdeling_id_Avdeling` = @p8 WH"& _ 
+                "ERE ((`A_id` = @p9) AND ((@p10 = 1 AND `F_navn` IS NULL) OR (`F_navn` = @p11)) A"& _ 
+                "ND ((@p12 = 1 AND `E_navn` IS NULL) OR (`E_navn` = @p13)) AND ((@p14 = 1 AND `bu"& _ 
+                "rsdag` IS NULL) OR (`bursdag` = @p15)) AND ((@p16 = 1 AND `e_postt` IS NULL) OR "& _ 
+                "(`e_postt` = @p17)) AND ((@p18 = 1 AND `tlf` IS NULL) OR (`tlf` = @p19)) AND ((@"& _ 
+                "p20 = 1 AND `Adresse` IS NULL) OR (`Adresse` = @p21)) AND (`Post` = @p22) AND (`"& _ 
+                "Avdeling_id_Avdeling` = @p23))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -9592,10 +10124,17 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "Avdeling_id_Avdeling"
+            param.SourceColumn = "Post"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Avdeling_id_Avdeling"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9603,24 +10142,24 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p9"
+            param.ParameterName = "@p10"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
             param.SourceColumn = "F_navn"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p10"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
-            param.SourceColumn = "F_navn"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p11"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "F_navn"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p12"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9629,7 +10168,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p12"
+            param.ParameterName = "@p13"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -9637,7 +10176,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p13"
+            param.ParameterName = "@p14"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9646,7 +10185,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p14"
+            param.ParameterName = "@p15"
             param.DbType = Global.System.Data.DbType.[Date]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Date]
             param.IsNullable = true
@@ -9654,7 +10193,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p15"
+            param.ParameterName = "@p16"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9663,21 +10202,12 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p16"
+            param.ParameterName = "@p17"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "e_postt"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p17"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "tlf"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p18"
@@ -9686,9 +10216,18 @@ Namespace drift8_2016DataSetTableAdapters
             param.IsNullable = true
             param.SourceColumn = "tlf"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p19"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "tlf"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p20"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9697,7 +10236,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p20"
+            param.ParameterName = "@p21"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -9705,7 +10244,15 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p21"
+            param.ParameterName = "@p22"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p23"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -9718,8 +10265,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -9728,8 +10274,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `A_id`, `F_navn`, `E_navn`, `bursdag`, `e_postt`, `tlf`, `Adresse`, `Avdel"& _ 
-                "ing_id_Avdeling` FROM `Ansatt`"
+            Me._commandCollection(0).CommandText = "SELECT `A_id`, `F_navn`, `E_navn`, `bursdag`, `e_postt`, `tlf`, `Adresse`, `Post`"& _ 
+                ", `Avdeling_id_Avdeling` FROM `Ansatt`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -9789,7 +10335,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p5 As String, ByVal p7 As Global.System.Nullable(Of Date), ByVal p9 As String, ByVal p11 As Global.System.Nullable(Of Integer), ByVal p13 As String, ByVal p14 As Integer) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p5 As String, ByVal p7 As Global.System.Nullable(Of Date), ByVal p9 As String, ByVal p11 As Global.System.Nullable(Of Integer), ByVal p13 As String, ByVal p14 As Integer, ByVal p15 As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p3 Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -9834,6 +10380,7 @@ Namespace drift8_2016DataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(12).Value = CType(p13,String)
             End If
             Me.Adapter.DeleteCommand.Parameters(13).Value = CType(p14,Integer)
+            Me.Adapter.DeleteCommand.Parameters(14).Value = CType(p15,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -9853,7 +10400,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Integer), ByVal p6 As String, ByVal p7 As Integer) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Integer), ByVal p6 As String, ByVal p7 As Integer, ByVal p8 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -9885,6 +10432,7 @@ Namespace drift8_2016DataSetTableAdapters
                 Me.Adapter.InsertCommand.Parameters(5).Value = CType(p6,String)
             End If
             Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7,Integer)
+            Me.Adapter.InsertCommand.Parameters(7).Value = CType(p8,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -9904,7 +10452,24 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Integer), ByVal p6 As String, ByVal p7 As Integer, ByVal p8 As Integer, ByVal p10 As String, ByVal p12 As String, ByVal p14 As Global.System.Nullable(Of Date), ByVal p16 As String, ByVal p18 As Global.System.Nullable(Of Integer), ByVal p20 As String, ByVal p21 As Integer) As Integer
+        Public Overloads Overridable Function Update( _
+                    ByVal p1 As String,  _
+                    ByVal p2 As String,  _
+                    ByVal p3 As Global.System.Nullable(Of Date),  _
+                    ByVal p4 As String,  _
+                    ByVal p5 As Global.System.Nullable(Of Integer),  _
+                    ByVal p6 As String,  _
+                    ByVal p7 As Integer,  _
+                    ByVal p8 As Integer,  _
+                    ByVal p9 As Integer,  _
+                    ByVal p11 As String,  _
+                    ByVal p13 As String,  _
+                    ByVal p15 As Global.System.Nullable(Of Date),  _
+                    ByVal p17 As String,  _
+                    ByVal p19 As Global.System.Nullable(Of Integer),  _
+                    ByVal p21 As String,  _
+                    ByVal p22 As Integer,  _
+                    ByVal p23 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -9937,49 +10502,51 @@ Namespace drift8_2016DataSetTableAdapters
             End If
             Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
             Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
-            If (p10 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,Integer)
+            If (p11 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(p10,String)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(p11,String)
             End If
-            If (p12 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+            If (p13 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(p12,String)
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(p13,String)
             End If
-            If (p14.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(p14.Value,Date)
+            If (p15.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(p15.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
             End If
-            If (p16 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
+            If (p17 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(p16,String)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(p17,String)
             End If
-            If (p18.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(p18.Value,Integer)
+            If (p19.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(p19.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
             End If
-            If (p20 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
+            If (p21 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(p20,String)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(p21,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(20).Value = CType(p21,Integer)
+            Me.Adapter.UpdateCommand.Parameters(21).Value = CType(p22,Integer)
+            Me.Adapter.UpdateCommand.Parameters(22).Value = CType(p23,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -9999,8 +10566,24 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Integer), ByVal p6 As String, ByVal p8 As Integer, ByVal p10 As String, ByVal p12 As String, ByVal p14 As Global.System.Nullable(Of Date), ByVal p16 As String, ByVal p18 As Global.System.Nullable(Of Integer), ByVal p20 As String, ByVal p21 As Integer) As Integer
-            Return Me.Update(p1, p2, p3, p4, p5, p6, p21, p8, p10, p12, p14, p16, p18, p20, p21)
+        Public Overloads Overridable Function Update( _
+                    ByVal p1 As String,  _
+                    ByVal p2 As String,  _
+                    ByVal p3 As Global.System.Nullable(Of Date),  _
+                    ByVal p4 As String,  _
+                    ByVal p5 As Global.System.Nullable(Of Integer),  _
+                    ByVal p6 As String,  _
+                    ByVal p7 As Integer,  _
+                    ByVal p9 As Integer,  _
+                    ByVal p11 As String,  _
+                    ByVal p13 As String,  _
+                    ByVal p15 As Global.System.Nullable(Of Date),  _
+                    ByVal p17 As String,  _
+                    ByVal p19 As Global.System.Nullable(Of Integer),  _
+                    ByVal p21 As String,  _
+                    ByVal p22 As Integer,  _
+                    ByVal p23 As Integer) As Integer
+            Return Me.Update(p1, p2, p3, p4, p5, p6, p7, p23, p9, p11, p13, p15, p17, p19, p21, p22, p23)
         End Function
     End Class
     
@@ -10382,8 +10965,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -10911,8 +11493,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -11478,8 +12059,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -11842,14 +12422,16 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.DataSetTable = "K_bedriftt"
             tableMapping.ColumnMappings.Add("Kunde_Kid", "Kunde_Kid")
             tableMapping.ColumnMappings.Add("B_addresse", "B_addresse")
+            tableMapping.ColumnMappings.Add("Post", "Post")
             tableMapping.ColumnMappings.Add("e_post", "e_post")
             tableMapping.ColumnMappings.Add("Bedrift", "Bedrift")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `K_bedriftt` WHERE ((`Kunde_Kid` = @p1) AND ((@p2 = 1 AND `B_addresse"& _ 
-                "` IS NULL) OR (`B_addresse` = @p3)) AND ((@p4 = 1 AND `e_post` IS NULL) OR (`e_p"& _ 
-                "ost` = @p5)) AND ((@p6 = 1 AND `Bedrift` IS NULL) OR (`Bedrift` = @p7)))"
+                "` IS NULL) OR (`B_addresse` = @p3)) AND (`Post` = @p4) AND ((@p5 = 1 AND `e_post"& _ 
+                "` IS NULL) OR (`e_post` = @p6)) AND ((@p7 = 1 AND `Bedrift` IS NULL) OR (`Bedrif"& _ 
+                "t` = @p8)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -11881,12 +12463,20 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "Post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p5"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "e_post"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p5"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -11894,7 +12484,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -11903,7 +12493,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
+            param.ParameterName = "@p8"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -11912,8 +12502,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `K_bedriftt` (`Kunde_Kid`, `B_addresse`, `e_post`, `Bedrift`) VALUES "& _ 
-                "(@p1, @p2, @p3, @p4)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `K_bedriftt` (`Kunde_Kid`, `B_addresse`, `Post`, `e_post`, `Bedrift`)"& _ 
+                " VALUES (@p1, @p2, @p3, @p4, @p5)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -11931,13 +12521,20 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "e_post"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p4"
+            param.ParameterName = "@p5"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -11945,10 +12542,11 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `K_bedriftt` SET `Kunde_Kid` = @p1, `B_addresse` = @p2, `e_post` = @p3, `B"& _ 
-                "edrift` = @p4 WHERE ((`Kunde_Kid` = @p5) AND ((@p6 = 1 AND `B_addresse` IS NULL)"& _ 
-                " OR (`B_addresse` = @p7)) AND ((@p8 = 1 AND `e_post` IS NULL) OR (`e_post` = @p9"& _ 
-                ")) AND ((@p10 = 1 AND `Bedrift` IS NULL) OR (`Bedrift` = @p11)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `K_bedriftt` SET `Kunde_Kid` = @p1, `B_addresse` = @p2, `Post` = @p3, `e_p"& _ 
+                "ost` = @p4, `Bedrift` = @p5 WHERE ((`Kunde_Kid` = @p6) AND ((@p7 = 1 AND `B_addr"& _ 
+                "esse` IS NULL) OR (`B_addresse` = @p8)) AND (`Post` = @p9) AND ((@p10 = 1 AND `e"& _ 
+                "_post` IS NULL) OR (`e_post` = @p11)) AND ((@p12 = 1 AND `Bedrift` IS NULL) OR ("& _ 
+                "`Bedrift` = @p13)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -11966,20 +12564,27 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "e_post"
+            param.SourceColumn = "Post"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "Bedrift"
+            param.SourceColumn = "e_post"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p5"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "Bedrift"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -11987,41 +12592,49 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
             param.SourceColumn = "B_addresse"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
-            param.IsNullable = true
-            param.SourceColumn = "B_addresse"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p8"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
-            param.IsNullable = true
-            param.SourceColumn = "e_post"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
-            Me._adapter.UpdateCommand.Parameters.Add(param)
-            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "e_post"
+            param.SourceColumn = "B_addresse"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p9"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p10"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "e_post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p11"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "e_post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p12"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -12030,7 +12643,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p11"
+            param.ParameterName = "@p13"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -12043,8 +12656,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -12053,7 +12665,7 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `Kunde_Kid`, `B_addresse`, `e_post`, `Bedrift` FROM `K_bedriftt`"
+            Me._commandCollection(0).CommandText = "SELECT `Kunde_Kid`, `B_addresse`, `Post`, `e_post`, `Bedrift` FROM `K_bedriftt`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -12113,7 +12725,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p5 As String, ByVal p7 As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p4 As Integer, ByVal p6 As String, ByVal p8 As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p3 Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -12122,19 +12734,20 @@ Namespace drift8_2016DataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,String)
             End If
-            If (p5 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,Integer)
+            If (p6 Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(p5,String)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(p6,String)
             End If
-            If (p7 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
+            If (p8 Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(p7,String)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(p8,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12155,22 +12768,23 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As String) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
-            If (p3 Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
-            End If
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
             If (p4 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,String)
+            End If
+            If (p5 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(p5,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12191,44 +12805,46 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As Integer, ByVal p7 As String, ByVal p9 As String, ByVal p11 As String) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As String, ByVal p6 As Integer, ByVal p8 As String, ByVal p9 As Integer, ByVal p11 As String, ByVal p13 As String) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
-            If (p3 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
-            End If
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
             If (p4 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
-            If (p7 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            If (p5 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
             End If
-            If (p9 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
+            If (p8 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,String)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,String)
             End If
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,Integer)
             If (p11 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(9).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(9).Value = CType(0,Object)
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(p11,String)
+            End If
+            If (p13 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(p13,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12249,8 +12865,8 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As Integer, ByVal p7 As String, ByVal p9 As String, ByVal p11 As String) As Integer
-            Return Me.Update(p5, p2, p3, p4, p5, p7, p9, p11)
+        Public Overloads Overridable Function Update(ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As String, ByVal p6 As Integer, ByVal p8 As String, ByVal p9 As Integer, ByVal p11 As String, ByVal p13 As String) As Integer
+            Return Me.Update(p6, p2, p3, p4, p5, p6, p8, p9, p11, p13)
         End Function
     End Class
     
@@ -12383,13 +12999,14 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.DataSetTable = "K_privat"
             tableMapping.ColumnMappings.Add("Kunde_Kid", "Kunde_Kid")
             tableMapping.ColumnMappings.Add("P_addresse", "P_addresse")
+            tableMapping.ColumnMappings.Add("Post", "Post")
             tableMapping.ColumnMappings.Add("e_post", "e_post")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `K_privat` WHERE ((`Kunde_Kid` = @p1) AND ((@p2 = 1 AND `P_addresse` "& _ 
-                "IS NULL) OR (`P_addresse` = @p3)) AND ((@p4 = 1 AND `e_post` IS NULL) OR (`e_pos"& _ 
-                "t` = @p5)))"
+                "IS NULL) OR (`P_addresse` = @p3)) AND (`Post` = @p4) AND ((@p5 = 1 AND `e_post` "& _ 
+                "IS NULL) OR (`e_post` = @p6)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -12421,12 +13038,20 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "Post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p5"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "e_post"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             param.SourceColumnNullMapping = true
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p5"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -12435,8 +13060,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `K_privat` (`Kunde_Kid`, `P_addresse`, `e_post`) VALUES (@p1, @p2, @p"& _ 
-                "3)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `K_privat` (`Kunde_Kid`, `P_addresse`, `Post`, `e_post`) VALUES (@p1,"& _ 
+                " @p2, @p3, @p4)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -12454,6 +13079,13 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -12461,9 +13093,10 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `K_privat` SET `Kunde_Kid` = @p1, `P_addresse` = @p2, `e_post` = @p3 WHERE"& _ 
-                " ((`Kunde_Kid` = @p4) AND ((@p5 = 1 AND `P_addresse` IS NULL) OR (`P_addresse` ="& _ 
-                " @p6)) AND ((@p7 = 1 AND `e_post` IS NULL) OR (`e_post` = @p8)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `K_privat` SET `Kunde_Kid` = @p1, `P_addresse` = @p2, `Post` = @p3, `e_pos"& _ 
+                "t` = @p4 WHERE ((`Kunde_Kid` = @p5) AND ((@p6 = 1 AND `P_addresse` IS NULL) OR ("& _ 
+                "`P_addresse` = @p7)) AND (`Post` = @p8) AND ((@p9 = 1 AND `e_post` IS NULL) OR ("& _ 
+                "`e_post` = @p10)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -12481,13 +13114,20 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "e_post"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p4"
+            param.ParameterName = "@p5"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -12495,7 +13135,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p5"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -12504,7 +13144,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -12512,7 +13152,15 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Post"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -12521,7 +13169,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumnNullMapping = true
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p8"
+            param.ParameterName = "@p10"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -12534,8 +13182,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -12544,7 +13191,7 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `Kunde_Kid`, `P_addresse`, `e_post` FROM `K_privat`"
+            Me._commandCollection(0).CommandText = "SELECT `Kunde_Kid`, `P_addresse`, `Post`, `e_post` FROM `K_privat`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -12604,7 +13251,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p5 As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p3 As String, ByVal p4 As Integer, ByVal p6 As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p3 Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -12613,12 +13260,13 @@ Namespace drift8_2016DataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,String)
             End If
-            If (p5 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,Integer)
+            If (p6 Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(p5,String)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(p6,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12639,17 +13287,18 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
-            If (p3 Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p4 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12670,32 +13319,34 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer, ByVal p6 As String, ByVal p8 As String) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As Integer, ByVal p7 As String, ByVal p8 As Integer, ByVal p10 As String) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
-            If (p3 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p4 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
-            If (p6 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
+            If (p7 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,String)
             End If
-            If (p8 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
+            If (p10 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,String)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(p10,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -12716,8 +13367,8 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer, ByVal p6 As String, ByVal p8 As String) As Integer
-            Return Me.Update(p4, p2, p3, p4, p6, p8)
+        Public Overloads Overridable Function Update(ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As Integer, ByVal p7 As String, ByVal p8 As Integer, ByVal p10 As String) As Integer
+            Return Me.Update(p5, p2, p3, p4, p5, p7, p8, p10)
         End Function
     End Class
     
@@ -13114,8 +13765,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -13631,8 +14281,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -14157,8 +14806,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -14726,8 +15374,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15205,8 +15852,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15500,13 +16146,13 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "Lager"
             tableMapping.ColumnMappings.Add("Lager_id", "Lager_id")
-            tableMapping.ColumnMappings.Add("City", "City")
+            tableMapping.ColumnMappings.Add("Post", "Post")
             tableMapping.ColumnMappings.Add("Addresse", "Addresse")
             tableMapping.ColumnMappings.Add("Avdeling_id", "Avdeling_id")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Lager` (`Lager_id`, `City`, `Addresse`, `Avdeling_id`) VALUES (@p1, "& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Lager` (`Lager_id`, `Post`, `Addresse`, `Avdeling_id`) VALUES (@p1, "& _ 
                 "@p2, @p3, @p4)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
@@ -15518,10 +16164,10 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p2"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "City"
+            param.SourceColumn = "Post"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
@@ -15543,8 +16189,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15553,7 +16198,7 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `Lager_id`, `City`, `Addresse`, `Avdeling_id` FROM `Lager`"
+            Me._commandCollection(0).CommandText = "SELECT `Lager_id`, `Post`, `Addresse`, `Avdeling_id` FROM `Lager`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -15613,13 +16258,9 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As String, ByVal p4 As Integer) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
-            If (p2 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("p2")
-            Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
-            End If
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
             If (p3 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
@@ -16035,8 +16676,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16367,11 +17007,12 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.ColumnMappings.Add("idLoggin", "idLoggin")
             tableMapping.ColumnMappings.Add("Brukernavn", "Brukernavn")
             tableMapping.ColumnMappings.Add("Passord", "Passord")
+            tableMapping.ColumnMappings.Add("avd", "avd")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Loggin` WHERE ((`idLoggin` = @p1) AND (`Brukernavn` = @p2) AND (`Pas"& _ 
-                "sord` = @p3))"
+                "sord` = @p3) AND (`avd` = @p4))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16397,9 +17038,17 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceColumn = "Passord"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "avd"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Loggin` (`Brukernavn`, `Passord`) VALUES (@p1, @p2)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Loggin` (`Brukernavn`, `Passord`, `avd`) VALUES (@p1, @p2, @p3)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16415,10 +17064,17 @@ Namespace drift8_2016DataSetTableAdapters
             param.IsNullable = true
             param.SourceColumn = "Passord"
             Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "avd"
+            Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `Loggin` SET `Brukernavn` = @p1, `Passord` = @p2 WHERE ((`idLoggin` = @p3)"& _ 
-                " AND (`Brukernavn` = @p4) AND (`Passord` = @p5))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Loggin` SET `Brukernavn` = @p1, `Passord` = @p2, `avd` = @p3 WHERE ((`idL"& _ 
+                "oggin` = @p4) AND (`Brukernavn` = @p5) AND (`Passord` = @p6) AND (`avd` = @p7))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16439,15 +17095,14 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "idLoggin"
-            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumn = "avd"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
-            param.DbType = Global.System.Data.DbType.[String]
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "Brukernavn"
+            param.SourceColumn = "idLoggin"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
@@ -16455,7 +17110,23 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
+            param.SourceColumn = "Brukernavn"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p6"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
             param.SourceColumn = "Passord"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p7"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "avd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
         End Sub
@@ -16464,8 +17135,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16474,7 +17144,7 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `idLoggin`, `Brukernavn`, `Passord` FROM `Loggin`"
+            Me._commandCollection(0).CommandText = "SELECT `idLoggin`, `Brukernavn`, `Passord`, `avd` FROM `Loggin`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -16534,7 +17204,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p2")
@@ -16546,6 +17216,7 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,String)
             End If
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -16565,7 +17236,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -16576,6 +17247,7 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -16595,7 +17267,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As String, ByVal p5 As String) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer, ByVal p5 As String, ByVal p6 As String, ByVal p7 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -16607,16 +17279,18 @@ Namespace drift8_2016DataSetTableAdapters
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
             Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
-            If (p4 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("p4")
-            Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,String)
-            End If
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
             If (p5 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p5")
             Else
                 Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
             End If
+            If (p6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p6")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -16628,6 +17302,256 @@ Namespace drift8_2016DataSetTableAdapters
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
                     Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class PostTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.MySql.Data.MySqlClient.MySqlDataAdapter
+        
+        Private _connection As Global.MySql.Data.MySqlClient.MySqlConnection
+        
+        Private _transaction As Global.MySql.Data.MySqlClient.MySqlTransaction
+        
+        Private _commandCollection() As Global.MySql.Data.MySqlClient.MySqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.MySql.Data.MySqlClient.MySqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.MySql.Data.MySqlClient.MySqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.MySql.Data.MySqlClient.MySqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.MySql.Data.MySqlClient.MySqlTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.MySql.Data.MySqlClient.MySqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.MySql.Data.MySqlClient.MySqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "Post"
+            tableMapping.ColumnMappings.Add("Postnummer", "Postnummer")
+            tableMapping.ColumnMappings.Add("Poststed", "Poststed")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Post` (`Postnummer`, `Poststed`) VALUES (@p1, @p2)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p1"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Postnummer"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p2"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "Poststed"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
+            Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT `Postnummer`, `Poststed` FROM `Post`"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As drift8_2016DataSet.PostDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As drift8_2016DataSet.PostDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As drift8_2016DataSet.PostDataTable = New drift8_2016DataSet.PostDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As drift8_2016DataSet.PostDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As drift8_2016DataSet) As Integer
+            Return Me.Adapter.Update(dataSet, "Post")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String) As Integer
+            If (p1.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (p2 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p2")
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
                 End If
             End Try
         End Function
@@ -16763,12 +17687,13 @@ Namespace drift8_2016DataSetTableAdapters
             tableMapping.ColumnMappings.Add("Produkt_id", "Produkt_id")
             tableMapping.ColumnMappings.Add("Produkt_navn", "Produkt_navn")
             tableMapping.ColumnMappings.Add("Pris", "Pris")
+            tableMapping.ColumnMappings.Add("p_antall", "p_antall")
             tableMapping.ColumnMappings.Add("Lager_id", "Lager_id")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Produkt` WHERE ((`Produkt_id` = @p1) AND (`Produkt_navn` = @p2) AND "& _ 
-                "(`Pris` = @p3) AND (`Lager_id` = @p4))"
+                "(`Pris` = @p3) AND (`p_antall` = @p4) AND (`Lager_id` = @p5))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16799,13 +17724,21 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "p_antall"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p5"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "Lager_id"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Produkt` (`Produkt_navn`, `Pris`, `Lager_id`) VALUES (@p1, @p2, @p3)"& _ 
-                ""
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Produkt` (`Produkt_navn`, `Pris`, `p_antall`, `Lager_id`) VALUES (@p"& _ 
+                "1, @p2, @p3, @p4)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16826,13 +17759,20 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
+            param.SourceColumn = "p_antall"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
             param.SourceColumn = "Lager_id"
             Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `Produkt` SET `Produkt_navn` = @p1, `Pris` = @p2, `Lager_id` = @p3 WHERE ("& _ 
-                "(`Produkt_id` = @p4) AND (`Produkt_navn` = @p5) AND (`Pris` = @p6) AND (`Lager_i"& _ 
-                "d` = @p7))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Produkt` SET `Produkt_navn` = @p1, `Pris` = @p2, `p_antall` = @p3, `Lager"& _ 
+                "_id` = @p4 WHERE ((`Produkt_id` = @p5) AND (`Produkt_navn` = @p6) AND (`Pris` = "& _ 
+                "@p7) AND (`p_antall` = @p8) AND (`Lager_id` = @p9))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
@@ -16853,10 +17793,17 @@ Namespace drift8_2016DataSetTableAdapters
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "Lager_id"
+            param.SourceColumn = "p_antall"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "Lager_id"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p5"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -16864,7 +17811,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p5"
+            param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
@@ -16872,7 +17819,7 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p6"
+            param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -16880,7 +17827,15 @@ Namespace drift8_2016DataSetTableAdapters
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
-            param.ParameterName = "@p7"
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "p_antall"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
@@ -16893,8 +17848,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = "server=colargol.tihlde.org;user id=drift8_2016;database=drift8_2016;persistsecuri"& _ 
-                "tyinfo=True"
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16903,7 +17857,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `Produkt_id`, `Produkt_navn`, `Pris`, `Lager_id` FROM `Produkt`"
+            Me._commandCollection(0).CommandText = "SELECT `Produkt_id`, `Produkt_navn`, `Pris`, `p_antall`, `Lager_id` FROM `Produkt"& _ 
+                "`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -16963,7 +17918,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer, ByVal p5 As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p2")
@@ -16972,6 +17927,7 @@ Namespace drift8_2016DataSetTableAdapters
             End If
             Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,Integer)
             Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,Integer)
+            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(p5,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -16991,7 +17947,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As Integer) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -16999,6 +17955,7 @@ Namespace drift8_2016DataSetTableAdapters
             End If
             Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
             Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -17018,7 +17975,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Integer, ByVal p5 As String, ByVal p6 As Integer, ByVal p7 As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As Integer, ByVal p3 As Integer, ByVal p4 As Integer, ByVal p5 As Integer, ByVal p6 As String, ByVal p7 As Integer, ByVal p8 As Integer, ByVal p9 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -17027,13 +17984,15 @@ Namespace drift8_2016DataSetTableAdapters
             Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
             Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
             Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
-            If (p5 Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("p5")
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,Integer)
+            If (p6 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p6")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(p5,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,Integer)
             Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(p8,Integer)
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(p9,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -17094,6 +18053,8 @@ Namespace drift8_2016DataSetTableAdapters
         Private _leieTableAdapter As LeieTableAdapter
         
         Private _logginTableAdapter As LogginTableAdapter
+        
+        Private _postTableAdapter As PostTableAdapter
         
         Private _produktTableAdapter As ProduktTableAdapter
         
@@ -17341,6 +18302,20 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
             "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property PostTableAdapter() As PostTableAdapter
+            Get
+                Return Me._postTableAdapter
+            End Get
+            Set
+                Me._postTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
         Public Property ProduktTableAdapter() As ProduktTableAdapter
             Get
                 Return Me._produktTableAdapter
@@ -17433,6 +18408,10 @@ Namespace drift8_2016DataSetTableAdapters
                             AndAlso (Not (Me._logginTableAdapter.Connection) Is Nothing)) Then
                     Return Me._logginTableAdapter.Connection
                 End If
+                If ((Not (Me._postTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._postTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._postTableAdapter.Connection
+                End If
                 If ((Not (Me._produktTableAdapter) Is Nothing)  _
                             AndAlso (Not (Me._produktTableAdapter.Connection) Is Nothing)) Then
                     Return Me._produktTableAdapter.Connection
@@ -17498,6 +18477,9 @@ Namespace drift8_2016DataSetTableAdapters
                 If (Not (Me._logginTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
+                If (Not (Me._postTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
                 If (Not (Me._produktTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
@@ -17518,6 +18500,15 @@ Namespace drift8_2016DataSetTableAdapters
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._a_LagerTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._logginTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._logginTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -17575,21 +18566,21 @@ Namespace drift8_2016DataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._logginTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._logginTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
             If (Not (Me._kjøpTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.Kjøp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._kjøpTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._k_privatTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -17647,12 +18638,12 @@ Namespace drift8_2016DataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._postTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Post.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._k_privatTableAdapter.Update(updatedRows))
+                    result = (result + Me._postTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -17680,6 +18671,14 @@ Namespace drift8_2016DataSetTableAdapters
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._a_LagerTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._logginTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._logginTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -17731,19 +18730,19 @@ Namespace drift8_2016DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._logginTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._logginTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
             If (Not (Me._kjøpTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Kjøp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._kjøpTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._k_privatTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -17795,11 +18794,11 @@ Namespace drift8_2016DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._postTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Post.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._k_privatTableAdapter.Update(addedRows))
+                    result = (result + Me._postTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -17829,11 +18828,11 @@ Namespace drift8_2016DataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._postTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Post.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._k_privatTableAdapter.Update(deletedRows))
+                    result = (result + Me._postTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -17885,19 +18884,19 @@ Namespace drift8_2016DataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
+            If (Not (Me._k_privatTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.K_privat.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._k_privatTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
             If (Not (Me._kjøpTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.Kjøp.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._kjøpTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
-            If (Not (Me._logginTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._logginTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -17946,6 +18945,14 @@ Namespace drift8_2016DataSetTableAdapters
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._leieTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._logginTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Loggin.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._logginTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -18075,6 +19082,11 @@ Namespace drift8_2016DataSetTableAdapters
             End If
             If ((Not (Me._logginTableAdapter) Is Nothing)  _
                         AndAlso (Me.MatchTableAdapterConnection(Me._logginTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
+            End If
+            If ((Not (Me._postTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._postTableAdapter.Connection) = false)) Then
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
                         "tring.")
             End If
@@ -18259,6 +19271,15 @@ Namespace drift8_2016DataSetTableAdapters
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._logginTableAdapter.Adapter)
                     End If
                 End If
+                If (Not (Me._postTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._postTableAdapter, Me._postTableAdapter.Connection)
+                    Me._postTableAdapter.Connection = CType(workConnection,Global.MySql.Data.MySqlClient.MySqlConnection)
+                    Me._postTableAdapter.Transaction = CType(workTransaction,Global.MySql.Data.MySqlClient.MySqlTransaction)
+                    If Me._postTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._postTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._postTableAdapter.Adapter)
+                    End If
+                End If
                 If (Not (Me._produktTableAdapter) Is Nothing) Then
                     revertConnections.Add(Me._produktTableAdapter, Me._produktTableAdapter.Connection)
                     Me._produktTableAdapter.Connection = CType(workConnection,Global.MySql.Data.MySqlClient.MySqlConnection)
@@ -18391,6 +19412,10 @@ Namespace drift8_2016DataSetTableAdapters
                 If (Not (Me._logginTableAdapter) Is Nothing) Then
                     Me._logginTableAdapter.Connection = CType(revertConnections(Me._logginTableAdapter),Global.MySql.Data.MySqlClient.MySqlConnection)
                     Me._logginTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._postTableAdapter) Is Nothing) Then
+                    Me._postTableAdapter.Connection = CType(revertConnections(Me._postTableAdapter),Global.MySql.Data.MySqlClient.MySqlConnection)
+                    Me._postTableAdapter.Transaction = Nothing
                 End If
                 If (Not (Me._produktTableAdapter) Is Nothing) Then
                     Me._produktTableAdapter.Connection = CType(revertConnections(Me._produktTableAdapter),Global.MySql.Data.MySqlClient.MySqlConnection)
