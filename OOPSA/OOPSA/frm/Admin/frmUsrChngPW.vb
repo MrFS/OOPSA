@@ -7,7 +7,8 @@ Public Class frmUsrChngPW
 
 
 
-
+    Dim fNavn As String
+    Dim eNavn As String
 
     Private Sub frmUsrChngPW_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -49,7 +50,7 @@ Public Class frmUsrChngPW
 
     Private Sub btnChangePW_Click(sender As Object, e As EventArgs) Handles btnChangePW.Click
 
-        Dim dadapter As New MySqlDataAdapter("SELECT e_postt FROM Ansatt WHERE ", con)
+        Dim dadapter As New MySqlDataAdapter("SELECT e_postt FROM Ansatt WHERE  ", con)
 
 
 
