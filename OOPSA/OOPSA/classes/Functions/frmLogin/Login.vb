@@ -13,15 +13,30 @@ Public Class Login
 
         pass = SHA.ToHashSHA512
 
-        Dim da = New MySqlDataAdapter("SELECT Brukernavn, Passord FROM Loggin WHERE Brukernavn='" & user & "' AND Passord='" & pass & "'", con)
+        Dim da = New MySqlDataAdapter("SELECT Brukernavn, Passord, avd FROM Loggin WHERE Brukernavn='" & user & "' AND Passord='" & pass & "'", con)
+        'Dim daAvd = New MySqlDataAdapter("SELECT ")
 
         Dim ds = New DataSet
 
         da.Fill(ds, "Login")
 
         If (ds.Tables("Login").Rows.Count > 0) Then
-            frmAdminMetro.Show()
-            MsgBox("Du er logget inn som: " & user)
+
+            Dim avd As Integer = ds.Tables("Login").Rows(0).Item(2).ToString
+
+            Select Case avd
+                Case 1
+                    frmAdminMetro.Show()
+                    MsgBox("Du er logget inn som: " & user)
+                Case 2
+                    frmSalg.Show()
+                    MsgBox("Du er logget inn som: " & user)
+                Case 3
+                    frmLager.Show()
+                    MsgBox("Du er logget inn som: " & user)
+                Case Else
+                    Exit Select
+            End Select
         Else
             MsgBox("Feil bruker/pass")
         End If
