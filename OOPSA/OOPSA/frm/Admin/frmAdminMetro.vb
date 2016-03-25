@@ -12,6 +12,8 @@ Public Class frmAdminMetro
     End Sub
 
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'drift8_2016DataSet.Ansatt' table. You can move, or remove it, as needed.
+        Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)
         Core.VisAnsatt()
         Core.visLeie()
 
@@ -191,5 +193,9 @@ Public Class frmAdminMetro
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         SparkLine1.Source = New Double() {ping.Send(server).RoundtripTime}
+    End Sub
+
+    Private Sub btnChngPW_Click(sender As Object, e As EventArgs) Handles btnChngPW.Click
+        frmUsrChngPW.Show()
     End Sub
 End Class
