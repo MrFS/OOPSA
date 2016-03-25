@@ -179,6 +179,12 @@
     <Compile Include="frm\Admin\frmAddLeie.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\Admin\frmUsrChngPW.Designer.vb">
+      <DependentUpon>frmUsrChngPW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Admin\frmUsrChngPW.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm\Ansatt\Lager\frmLager.Designer.vb">
       <DependentUpon>frmLager.vb</DependentUpon>
     </Compile>
@@ -264,6 +270,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frm\Admin\frmAddLeie.resx">
       <DependentUpon>frmAddLeie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
+      <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Ansatt\Lager\frmLager.resx">
       <DependentUpon>frmLager.vb</DependentUpon>
