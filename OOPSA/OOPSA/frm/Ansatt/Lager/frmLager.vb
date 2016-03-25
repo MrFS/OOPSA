@@ -27,10 +27,42 @@ Public Class frmLager
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim da = New MySqlCommand("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & TextBoxExt7.Text & "', '" & TextBoxExt6.Text & "', '" & TextBoxExt9.Text & "', '" & lager & "' )")
+        ' Dim da = New MySqlCommand()
+        Dim sql As New SQL
+        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & TextBoxExt7.Text & "', '" & TextBoxExt6.Text & "', '" & TextBoxExt9.Text & "', '" & lager & "' )")
 
-        Dim da As New DataTable
 
+    End Sub
 
+    Private Sub ComboDropDown1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TabPageAdv3_Click(sender As Object, e As EventArgs) Handles TabPageAdv3.Click
+        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
+        Dim ds = New DataSet
+        Dim dr As DataRow
+        Dim dt As DataTable
+        adapter.Fill(ds, "Produkt")
+        dt = ds.Tables(0)
+        For Each dr In dt.Rows
+            ComboBox2.Items.Add(dr("Produkt_navn"))
+        Next
+    End Sub
+
+    Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
+
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
+        Dim ds = New DataSet
+        Dim dr As DataRow
+        Dim dt As DataTable
+        adapter.Fill(ds, "Produkt")
+        dt = ds.Tables(0)
+        For Each dr In dt.Rows
+            ComboBox2.Items.Add(dr("Produkt_navn"))
+        Next
     End Sub
 End Class

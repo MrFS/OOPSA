@@ -26,6 +26,7 @@ Partial Class frmLager
         Me.MiniToolBar1 = New Syncfusion.Windows.Forms.Tools.MiniToolBar()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBoxExt6 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
@@ -47,10 +48,8 @@ Partial Class frmLager
         Me.TextBoxExt2 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboDropDown2 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
@@ -58,7 +57,8 @@ Partial Class frmLager
         Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabPageAdv1.SuspendLayout()
@@ -71,9 +71,7 @@ Partial Class frmLager
         CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboDropDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv3.SuspendLayout()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv4.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,6 +98,7 @@ Partial Class frmLager
         Me.TabControlAdv1.Name = "TabControlAdv1"
         Me.TabControlAdv1.Size = New System.Drawing.Size(1587, 702)
         Me.TabControlAdv1.TabIndex = 2
+        Me.TabControlAdv1.ThemesEnabled = True
         '
         'TabPageAdv1
         '
@@ -115,14 +114,23 @@ Partial Class frmLager
         Me.TabPageAdv1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(1, 51)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(1584, 649)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(1580, 645)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Legge til varer"
         Me.TabPageAdv1.ThemesEnabled = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Trondheim"})
+        Me.ComboBox1.Location = New System.Drawing.Point(184, 223)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
+        Me.ComboBox1.TabIndex = 26
         '
         'Button1
         '
@@ -214,6 +222,7 @@ Partial Class frmLager
         '
         'TabPageAdv2
         '
+        Me.TabPageAdv2.Controls.Add(Me.ComboBox3)
         Me.TabPageAdv2.Controls.Add(Me.ComboDropDown3)
         Me.TabPageAdv2.Controls.Add(Me.Label9)
         Me.TabPageAdv2.Controls.Add(Me.TextBoxExt5)
@@ -226,25 +235,24 @@ Partial Class frmLager
         Me.TabPageAdv2.Controls.Add(Me.TextBoxExt2)
         Me.TabPageAdv2.Controls.Add(Me.Label4)
         Me.TabPageAdv2.Controls.Add(Me.Label3)
-        Me.TabPageAdv2.Controls.Add(Me.ComboDropDown2)
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(1, 51)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(1584, 649)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(1580, 645)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "Endre vare beholdning"
         Me.TabPageAdv2.ThemesEnabled = False
         '
         'ComboDropDown3
         '
-        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(160, 21)
+        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(160, 24)
         Me.ComboDropDown3.Location = New System.Drawing.Point(265, 268)
         Me.ComboDropDown3.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboDropDown3.Name = "ComboDropDown3"
-        Me.ComboDropDown3.Size = New System.Drawing.Size(160, 21)
+        Me.ComboDropDown3.Size = New System.Drawing.Size(160, 24)
         Me.ComboDropDown3.TabIndex = 12
         '
         'Label9
@@ -307,7 +315,7 @@ Partial Class frmLager
         '
         Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(251, 111)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(251, 110)
         Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.Name = "TextBoxExt3"
@@ -370,27 +378,18 @@ Partial Class frmLager
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Velg vare"
         '
-        'ComboDropDown2
-        '
-        Me.ComboDropDown2.BeforeTouchSize = New System.Drawing.Size(160, 21)
-        Me.ComboDropDown2.Location = New System.Drawing.Point(251, 17)
-        Me.ComboDropDown2.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboDropDown2.Name = "ComboDropDown2"
-        Me.ComboDropDown2.Size = New System.Drawing.Size(160, 21)
-        Me.ComboDropDown2.TabIndex = 0
-        '
         'TabPageAdv3
         '
+        Me.TabPageAdv3.Controls.Add(Me.ComboBox2)
         Me.TabPageAdv3.Controls.Add(Me.ButtonAdv2)
-        Me.TabPageAdv3.Controls.Add(Me.ComboDropDown1)
         Me.TabPageAdv3.Controls.Add(Me.Label2)
         Me.TabPageAdv3.Image = Nothing
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv3.Location = New System.Drawing.Point(1, 51)
+        Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(1584, 649)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(1580, 645)
         Me.TabPageAdv3.TabIndex = 3
         Me.TabPageAdv3.Text = "Fjerne varer"
         Me.TabPageAdv3.ThemesEnabled = False
@@ -405,15 +404,6 @@ Partial Class frmLager
         Me.ButtonAdv2.Size = New System.Drawing.Size(100, 28)
         Me.ButtonAdv2.TabIndex = 2
         Me.ButtonAdv2.Text = "Slett"
-        '
-        'ComboDropDown1
-        '
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(160, 21)
-        Me.ComboDropDown1.Location = New System.Drawing.Point(551, 121)
-        Me.ComboDropDown1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(160, 21)
-        Me.ComboDropDown1.TabIndex = 1
         '
         'Label2
         '
@@ -431,11 +421,11 @@ Partial Class frmLager
         Me.TabPageAdv4.Controls.Add(Me.Label5)
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(1, 51)
+        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(1584, 649)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(1580, 645)
         Me.TabPageAdv4.TabIndex = 4
         Me.TabPageAdv4.Text = "Oversikt"
         Me.TabPageAdv4.ThemesEnabled = False
@@ -489,13 +479,21 @@ Partial Class frmLager
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "ToolStripEx1"
         '
-        'ComboBox1
+        'ComboBox2
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(184, 223)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
-        Me.ComboBox1.TabIndex = 26
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(569, 114)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox2.TabIndex = 3
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(251, 17)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox3.TabIndex = 13
         '
         'frmLager
         '
@@ -523,10 +521,8 @@ Partial Class frmLager
         CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboDropDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv3.ResumeLayout(False)
         Me.TabPageAdv3.PerformLayout()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv4.ResumeLayout(False)
         Me.TabPageAdv4.PerformLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -547,8 +543,6 @@ Partial Class frmLager
     Friend WithEvents TextBoxExt2 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboDropDown2 As Syncfusion.Windows.Forms.Tools.ComboDropDown
-    Friend WithEvents ComboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents Label5 As Label
@@ -572,4 +566,6 @@ Partial Class frmLager
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox3 As ComboBox
 End Class
