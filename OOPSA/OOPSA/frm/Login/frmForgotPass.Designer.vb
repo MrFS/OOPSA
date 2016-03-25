@@ -54,7 +54,7 @@ Partial Class frmForgotPass
         Me.Panel1.Location = New System.Drawing.Point(0, 40)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(195, 170)
+        Me.Panel1.Size = New System.Drawing.Size(195, 119)
         Me.Panel1.TabIndex = 1
         '
         'lblEpost
@@ -71,14 +71,14 @@ Partial Class frmForgotPass
         '
         Me.btnRequest.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnRequest.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnRequest.BeforeTouchSize = New System.Drawing.Size(195, 84)
+        Me.btnRequest.BeforeTouchSize = New System.Drawing.Size(195, 48)
         Me.btnRequest.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnRequest.ForeColor = System.Drawing.Color.White
         Me.btnRequest.IsBackStageButton = False
-        Me.btnRequest.Location = New System.Drawing.Point(0, 86)
+        Me.btnRequest.Location = New System.Drawing.Point(0, 71)
         Me.btnRequest.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRequest.Name = "btnRequest"
-        Me.btnRequest.Size = New System.Drawing.Size(195, 84)
+        Me.btnRequest.Size = New System.Drawing.Size(195, 48)
         Me.btnRequest.TabIndex = 3
         Me.btnRequest.Text = "Få tilsendt nytt passord"
         Me.btnRequest.UseVisualStyle = True
@@ -107,7 +107,7 @@ Partial Class frmForgotPass
         CaptionImage1.Name = "CaptionImage1"
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
-        Me.ClientSize = New System.Drawing.Size(195, 210)
+        Me.ClientSize = New System.Drawing.Size(195, 159)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ToolStripEx1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
