@@ -5726,7 +5726,7 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddLogginRow(ByVal Brukernavn As String, ByVal Passord As String, ByVal avd As Integer) As LogginRow
+        Public Overloads Function AddLogginRow(ByVal Brukernavn As String, ByVal Passord As String, ByVal avd As String) As LogginRow
             Dim rowLogginRow As LogginRow = CType(Me.NewRow,LogginRow)
             Dim columnValuesArray() As Object = New Object() {Nothing, Brukernavn, Passord, avd}
             rowLogginRow.ItemArray = columnValuesArray
@@ -5772,7 +5772,7 @@ Partial Public Class drift8_2016DataSet
             MyBase.Columns.Add(Me.columnBrukernavn)
             Me.columnPassord = New Global.System.Data.DataColumn("Passord", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPassord)
-            Me.columnavd = New Global.System.Data.DataColumn("avd", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnavd = New Global.System.Data.DataColumn("avd", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnavd)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidLoggin}, true))
             Me.columnidLoggin.AutoIncrement = true
@@ -5785,6 +5785,7 @@ Partial Public Class drift8_2016DataSet
             Me.columnPassord.AllowDBNull = false
             Me.columnPassord.MaxLength = 255
             Me.columnavd.AllowDBNull = false
+            Me.columnavd.MaxLength = 10
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -8166,9 +8167,9 @@ Partial Public Class drift8_2016DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property avd() As Integer
+        Public Property avd() As String
             Get
-                Return CType(Me(Me.tableLoggin.avdColumn),Integer)
+                Return CType(Me(Me.tableLoggin.avdColumn),String)
             End Get
             Set
                 Me(Me.tableLoggin.avdColumn) = value
@@ -17040,8 +17041,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "avd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
@@ -17066,8 +17067,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "avd"
             Me._adapter.InsertCommand.Parameters.Add(param)
@@ -17092,8 +17093,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "avd"
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -17123,8 +17124,8 @@ Namespace drift8_2016DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p7"
-            param.DbType = Global.System.Data.DbType.Int32
-            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
             param.SourceColumn = "avd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
@@ -17204,7 +17205,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer) As Integer
+        Public Overloads Overridable Function Delete(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p2")
@@ -17216,7 +17217,11 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.DeleteCommand.Parameters(2).Value = CType(p3,String)
             End If
-            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,Integer)
+            If (p4 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p4")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(p4,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -17236,7 +17241,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -17247,7 +17252,11 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
-            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -17267,7 +17276,7 @@ Namespace drift8_2016DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer, ByVal p5 As String, ByVal p6 As String, ByVal p7 As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Integer, ByVal p5 As String, ByVal p6 As String, ByVal p7 As String) As Integer
             If (p1 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p1")
             Else
@@ -17278,7 +17287,11 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,Integer)
+            If (p3 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p3")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(p3,String)
+            End If
             Me.Adapter.UpdateCommand.Parameters(3).Value = CType(p4,Integer)
             If (p5 Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("p5")
@@ -17290,7 +17303,11 @@ Namespace drift8_2016DataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(5).Value = CType(p6,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,Integer)
+            If (p7 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p7")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(p7,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
