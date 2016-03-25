@@ -73,4 +73,8 @@ Public Class frmMetroLogin
         'MsgBox(Application.ProductVersion)
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        frmForgotPass.Show()
+    End Sub
 End Class
