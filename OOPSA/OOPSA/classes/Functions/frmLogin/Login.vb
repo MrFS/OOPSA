@@ -37,6 +37,7 @@ Public Class Login
                 Case Else
                     Exit Select
             End Select
+
         Else
             MsgBox("Feil bruker/pass")
         End If
