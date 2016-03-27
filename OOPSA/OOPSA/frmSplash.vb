@@ -41,7 +41,7 @@ Public Class frmSplash
                 AutoLabel3.Refresh()
                 Me.Refresh()
 
-                Thread.Sleep(50)
+                Thread.Sleep(25)
 
             Next
 
@@ -61,28 +61,6 @@ Public Class frmSplash
     End Sub
 
     Public Sub Initialize()
-
-        '' make a reference to a directory
-        'Dim di As New DirectoryInfo(Environment.CurrentDirectory)
-        'Dim diar1 As FileInfo() = di.GetFiles()
-        'Dim dra As FileInfo
-
-        ''list the names of all files in the specified directory
-
-        'For Each dra In diar1
-        '    AutoLabel3.Text = dra.Name
-
-        '    AutoLabel3.Refresh()
-
-        '    chkSplash += 1
-        '    'ListBox1.Items.Add(chkSplash)
-
-        '    'ListBox1.SelectedIndex = -1
-
-
-
-        'Next
-        'Thread.Sleep(250)
 
         tmrSplash.Start()
 
@@ -143,7 +121,7 @@ Public Class frmSplash
             Me.Refresh()
             Thread.Sleep(500)
             Me.Refresh()
-            AutoLabel2.Text = "Checking GUI"
+            AutoLabel2.Text = "Finalizing"
 
             Dim Forms As New List(Of Form)()
             Dim formType As Type = Type.GetType("System.Windows.Forms.Form")
@@ -154,7 +132,7 @@ Public Class frmSplash
                 AutoLabel3.Refresh()
                 Me.Refresh()
 
-                Thread.Sleep(100)
+                Thread.Sleep(25)
 
             Next
 

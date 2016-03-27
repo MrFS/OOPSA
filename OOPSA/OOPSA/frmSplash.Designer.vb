@@ -28,6 +28,7 @@ Partial Class frmSplash
         Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.AutoLabel3 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.tmrSplash = New System.Windows.Forms.Timer(Me.components)
+        Me.AutoLabel4 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,6 +72,14 @@ Partial Class frmSplash
         Me.tmrSplash.Enabled = True
         Me.tmrSplash.Interval = 500
         '
+        'AutoLabel4
+        '
+        Me.AutoLabel4.Location = New System.Drawing.Point(132, 36)
+        Me.AutoLabel4.Name = "AutoLabel4"
+        Me.AutoLabel4.Size = New System.Drawing.Size(242, 21)
+        Me.AutoLabel4.TabIndex = 4
+        Me.AutoLabel4.Text = "MLG SPLASSCREEN 8/8 IZ g8 m9"
+        '
         'frmSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -80,6 +89,7 @@ Partial Class frmSplash
         Me.CaptionFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientSize = New System.Drawing.Size(501, 116)
         Me.ControlBox = False
+        Me.Controls.Add(Me.AutoLabel4)
         Me.Controls.Add(Me.AutoLabel3)
         Me.Controls.Add(Me.AutoLabel2)
         Me.Controls.Add(Me.AutoLabel1)
@@ -104,4 +114,5 @@ Partial Class frmSplash
     Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents AutoLabel3 As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents tmrSplash As Timer
+    Friend WithEvents AutoLabel4 As Syncfusion.Windows.Forms.Tools.AutoLabel
 End Class
