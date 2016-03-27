@@ -24,6 +24,7 @@ Partial Class frmMetroLogin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMetroLogin))
         Me.txtUsr = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.txtPw = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.btnLgInn = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -198,6 +199,7 @@ Partial Class frmMetroLogin
         Me.Controls.Add(Me.txtPw)
         Me.Controls.Add(Me.txtUsr)
         Me.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "frmMetroLogin"
         Me.ShowIcon = False

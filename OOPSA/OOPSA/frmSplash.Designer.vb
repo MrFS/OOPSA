@@ -23,6 +23,7 @@ Partial Class frmSplash
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSplash))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
@@ -95,6 +96,7 @@ Partial Class frmSplash
         Me.Controls.Add(Me.AutoLabel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmSplash"
         Me.ShowIcon = False
