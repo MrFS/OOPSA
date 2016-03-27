@@ -51,6 +51,9 @@ Public Class Console
 
                 My.Forms.frmAdminMetro.Show()
 
+            Case "splash"
+
+                My.Forms.frmSplash.Show()
 
         End Select
     End Sub
@@ -182,8 +185,6 @@ Public Class Console
     End Sub
 
     Public Sub Help()
-
-
 
         With My.Forms.frmConsole.lstConsole.Items
             .Add("")

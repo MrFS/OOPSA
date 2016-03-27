@@ -12,4 +12,10 @@ Public Class versionController
 
     Public Shared version = major & "." & minor & "." & build & "." & revision
 
+
+    Public ReadOnly Property getVersion() As String
+        Get
+            Return version
+        End Get
+    End Property
 End Class

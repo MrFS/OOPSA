@@ -121,6 +121,9 @@
   <data name="loginTent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginTent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="splashLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splashLoading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txtInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtInsert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,8 +148,8 @@
   <data name="Kiwi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kiwi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="userSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbLager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbLager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +172,9 @@
   <data name="txtCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="txtRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icoDatabase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icoDatabase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,14 +190,14 @@
   <data name="txtCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="userSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\userSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="loginForgot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginForgot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbOverview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbOverview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updateAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +220,7 @@
   <data name="tbSalg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSalg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="updateAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updateAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="splashLoadingSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splashLoadingSmall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
