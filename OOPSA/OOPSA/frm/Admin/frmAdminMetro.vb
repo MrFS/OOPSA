@@ -1,5 +1,13 @@
 ﻿Imports Syncfusion.Windows.Forms
 
+Imports System
+Imports System.Windows
+
+
+Imports Syncfusion
+Imports Syncfusion.PivotAnalysis
+Imports Syncfusion.PivotAnalysis.Base
+
 Imports Syncfusion.DocIO
 Imports Syncfusion.DocIO.DLS
 
@@ -16,6 +24,11 @@ Public Class frmAdminMetro
         Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)
         Core.VisAnsatt()
         Core.visLeie()
+        Try
+            Me.dtSalgReportingTableAdapter.Fill(Me.dsSalg.dtSalgReporting)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
 
         'Legg dt her i en class
@@ -45,18 +58,20 @@ Public Class frmAdminMetro
 
         Me.richTextBox1.Font = New Font(Me.richTextBox1.Font.Name, CInt(txtFontSizeCombo.Text), Me.richTextBox1.Font.Style)
 
+
+        Me.ReportViewer1.RefreshReport()
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
-        richTextBox1.SelectionAlignment = Windows.Forms.HorizontalAlignment.Left
+        richTextBox1.SelectionAlignment = Forms.HorizontalAlignment.Left
     End Sub
 
     Private Sub txtAlignJust_Click(sender As Object, e As EventArgs) Handles txtAlignJust.Click
-        richTextBox1.SelectionAlignment = Windows.Forms.HorizontalAlignment.Center
+        richTextBox1.SelectionAlignment = Forms.HorizontalAlignment.Center
     End Sub
 
     Private Sub txtAlignRight_Click(sender As Object, e As EventArgs) Handles txtAlignRight.Click
-        richTextBox1.SelectionAlignment = Windows.Forms.HorizontalAlignment.Right
+        richTextBox1.SelectionAlignment = Forms.HorizontalAlignment.Right
     End Sub
 
     Private Sub txtFontCombo_DropDownClosed(sender As Object, e As EventArgs) Handles txtFontCombo.DropDownClosed
@@ -99,9 +114,9 @@ Public Class frmAdminMetro
 
         Dim img As New Bitmap(lstrFile)
 
-        Clipboard.SetDataObject(img)
+        System.Windows.Clipboard.SetDataObject(img)
 
-        Dim imgformat As DataFormats.Format = DataFormats.GetFormat(DataFormats.Bitmap)
+        Dim imgformat As Forms.DataFormats.Format = Forms.DataFormats.GetFormat(Forms.DataFormats.Bitmap)
 
 
 
