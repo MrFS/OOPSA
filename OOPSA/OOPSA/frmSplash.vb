@@ -86,17 +86,14 @@ Public Class frmSplash
                 Thread.Sleep(750)
             End If
 
-
-            chkFrmClasses()
-
         Catch ex As Exception
 
             AutoLabel3.Text = "Failed to connect to DB @" & server
 
             MsgBox(ex.Message)
 
-
-
+        Finally
+            chkFrmClasses()
         End Try
 
     End Sub

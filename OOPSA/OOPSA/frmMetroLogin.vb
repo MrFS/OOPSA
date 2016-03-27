@@ -36,6 +36,10 @@ Public Class frmMetroLogin
 
         Dim User As New UserCore
 
+        Dim chk As New DBCheck
+
+        chk.DBCheck()
+
         Dim dlAdress As String = "https://mrfs.me/school/oopsa/"
         Dim WebVersion As String = "https://mrfs.me/school/oopsa/version.txt"
         Dim client As WebClient = New WebClient()
