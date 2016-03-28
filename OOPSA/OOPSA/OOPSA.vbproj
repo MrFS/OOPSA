@@ -294,7 +294,8 @@
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\Admin\Report1.rdlc" />
+    <EmbeddedResource Include="Reporting\salesReportChart.rdlc" />
+    <EmbeddedResource Include="Reporting\salesReport.rdlc" />
     <EmbeddedResource Include="frm\Ansatt\Lager\frmLager.resx">
       <DependentUpon>frmLager.vb</DependentUpon>
     </EmbeddedResource>

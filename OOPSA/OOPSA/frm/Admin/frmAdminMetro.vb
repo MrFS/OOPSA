@@ -213,4 +213,17 @@ Public Class frmAdminMetro
     Private Sub btnChngPW_Click(sender As Object, e As EventArgs) Handles btnChngPW.Click
         frmUsrChngPW.Show()
     End Sub
+
+    Private Sub SalgsrapportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalgsrapportToolStripMenuItem.Click
+        ReportViewer1.Reset()
+        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.salesReport.rdlc"
+        ReportViewer1.RefreshReport()
+    End Sub
+
+    Private Sub DagligeSalgToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DagligeSalgToolStripMenuItem.Click
+        ReportViewer1.Reset()
+        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.salesReportChart.rdlc"
+
+        ReportViewer1.RefreshReport()
+    End Sub
 End Class
