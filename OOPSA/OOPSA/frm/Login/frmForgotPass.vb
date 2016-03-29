@@ -35,7 +35,7 @@ Public Class frmForgotPass
 
             msg = New MailMessage()
 
-            msg.From = New MailAddress("drift82016@gmail.com")
+            msg.From = New MailAddress("drift82016@gmail.com", "OOPSA TurCare AS")
             msg.To.Add(TextBoxExt1.Text)
             msg.Subject = "OOPSA TurCare AS Password Request"
             msg.IsBodyHtml = 0

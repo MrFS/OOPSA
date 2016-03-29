@@ -76,7 +76,7 @@ Partial Class frmMetroLogin
         Me.txtPw.Size = New System.Drawing.Size(254, 23)
         Me.txtPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro
         Me.txtPw.TabIndex = 2
-        Me.txtPw.Text = "]iYZKoA/"
+        Me.txtPw.Text = "9%e%9F{0"
         Me.txtPw.UseSystemPasswordChar = True
         '
         'btnLgInn
