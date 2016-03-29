@@ -226,4 +226,11 @@ Public Class frmAdminMetro
 
         ReportViewer1.RefreshReport()
     End Sub
+
+    Private Sub btnSendEpostKunde_Click(sender As Object, e As EventArgs) Handles btnSendEpostKunde.Click
+        Dim Send As New email
+
+        Send.massEmail()
+
+    End Sub
 End Class

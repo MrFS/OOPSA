@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="dtSalgReportingBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 95</value>
-  </metadata>
-  <metadata name="dsSalg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
   <metadata name="ToolStripEx7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>151, 56</value>
   </metadata>
@@ -154,7 +148,7 @@
   <metadata name="ToolStripEx11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>536, 95</value>
   </metadata>
-  <data name="ToolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSendEpostKunde.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
@@ -167,6 +161,24 @@
         mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
         kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
         TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ToolStripSplitButtonEx1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAASCwAAEgsAAAAAAAAAAAAA////////
+        ////////////////////////////////////////////////////////////smM5gEcpfUUoe0QnekQn
+        d0ImckAlbz4kbDwjaTsiZjkhYzcgYTYfYDUf////////uGY72KCD2KCD0I5rx3hPuGY7nlcyhkoreEIm
+        d0ImeEImd0ImWzIdYTYf////////v2o96Mm44rmk26mO05V0yX1Vvmo9nlcyg0kqeEImbDwjjE4te0Qn
+        Yzcg////////xHFF4beh8NvQ4rmk2aOH0I9sx3hOtmU6klEvYzcgwmw+u2g8AAAAZjkh////////x3hP
+        zINd4rmk8NvQ4rmk2KCDzolkw29CklEv2aOH0pJxAAAAzohjaTsi////////y4Fa8+HYyn9X4rmj8NrP
+        4beh1Jd3oFkz4bag47ynAAAA4rmj0I5rbDwj////////zopm/v388+HYxXNI4rmj5cCth0sr26mOfUUo
+        fUUo3a2U58a105V0bz4k////////0ZFv/v38/v388NvQxXNIxXNI7tbJ8+Pa8NvQ7dTH68/B6cq61px9
+        ckAl////////1Jh4/v38/v38/v38/fr4+vPw+O/q58SysmM5rWA34bag68/B2aOGd0Im////////15+B
+        /v38/v38/v38/v38/fr4+vPww29C26mPxXRJrWA37dTH3KuRekQn////////2aOG/v38/v38/v38/v38
+        /v38/fr4xHFF7tbK26mPsmM58NvQ37Kae0Qn////////2aOG/v38/v38/v38/v38/v38/v388NvQxHFF
+        w29C58Sy8+Pa4bagfUUo////////2aOG/v38/v38/v38/v38/v38/v38/v38/fr4+vPw+O/q9ejh8+Pa
+        gEcp////////2aOG2aOG2aOG2aOG15+B1Jh40ZFvzopmy4Fax3hPxHFFv2o9uGY7smM5////////////
+        ////////////////////////////////////////////////////////
 </value>
   </data>
   <metadata name="ToolStripEx2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
