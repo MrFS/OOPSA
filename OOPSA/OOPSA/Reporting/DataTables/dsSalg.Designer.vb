@@ -3242,7 +3242,7 @@ Namespace dsSalgTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString1
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3796,7 +3796,7 @@ Namespace dsSalgTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString1
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4530,7 +4530,7 @@ Namespace dsSalgTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString1
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5080,7 +5080,7 @@ Namespace dsSalgTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.MySql.Data.MySqlClient.MySqlConnection()
-            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString1
+            Me._connection.ConnectionString = Global.OOPSA.My.MySettings.Default.drift8_2016ConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

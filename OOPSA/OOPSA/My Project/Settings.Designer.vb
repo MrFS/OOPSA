@@ -136,17 +136,6 @@ Namespace My
                 Return CType(Me("drift8_2016ConnectionString"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("persistsecurityinfo=True;server=colargol.tihlde.org;user id=drift8_2016;database="& _ 
-            "drift8_2016;sslmode=None")>  _
-        Public ReadOnly Property drift8_2016ConnectionString1() As String
-            Get
-                Return CType(Me("drift8_2016ConnectionString1"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 

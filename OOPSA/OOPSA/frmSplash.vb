@@ -17,6 +17,8 @@ Public Class frmSplash
 
     Private Sub frmSplash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        AutoLabel4.Text = versionController.version
+
         Me.Refresh()
 
         Initialize()

@@ -40,7 +40,8 @@ Partial Class frmSplash
         Me.PictureBox1.Image = Global.OOPSA.My.Resources.Resources.splashLoadingSmall
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(126, 116)
+        Me.PictureBox1.Size = New System.Drawing.Size(126, 79)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -54,7 +55,7 @@ Partial Class frmSplash
         '
         'AutoLabel2
         '
-        Me.AutoLabel2.Location = New System.Drawing.Point(132, 69)
+        Me.AutoLabel2.Location = New System.Drawing.Point(132, 37)
         Me.AutoLabel2.Name = "AutoLabel2"
         Me.AutoLabel2.Size = New System.Drawing.Size(101, 21)
         Me.AutoLabel2.TabIndex = 2
@@ -62,7 +63,7 @@ Partial Class frmSplash
         '
         'AutoLabel3
         '
-        Me.AutoLabel3.Location = New System.Drawing.Point(132, 90)
+        Me.AutoLabel3.Location = New System.Drawing.Point(132, 58)
         Me.AutoLabel3.Name = "AutoLabel3"
         Me.AutoLabel3.Size = New System.Drawing.Size(57, 21)
         Me.AutoLabel3.TabIndex = 3
@@ -75,11 +76,11 @@ Partial Class frmSplash
         '
         'AutoLabel4
         '
-        Me.AutoLabel4.Location = New System.Drawing.Point(132, 36)
+        Me.AutoLabel4.Location = New System.Drawing.Point(316, 0)
         Me.AutoLabel4.Name = "AutoLabel4"
-        Me.AutoLabel4.Size = New System.Drawing.Size(242, 21)
+        Me.AutoLabel4.Size = New System.Drawing.Size(61, 21)
         Me.AutoLabel4.TabIndex = 4
-        Me.AutoLabel4.Text = "MLG SPLASSCREEN 8/8 IZ g8 m9"
+        Me.AutoLabel4.Text = "version"
         '
         'frmSplash
         '
@@ -88,7 +89,7 @@ Partial Class frmSplash
         Me.BackColor = System.Drawing.Color.White
         Me.CaptionBarHeight = 48
         Me.CaptionFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClientSize = New System.Drawing.Size(501, 116)
+        Me.ClientSize = New System.Drawing.Size(494, 79)
         Me.ControlBox = False
         Me.Controls.Add(Me.AutoLabel4)
         Me.Controls.Add(Me.AutoLabel3)

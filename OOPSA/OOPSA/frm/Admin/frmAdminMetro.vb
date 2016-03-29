@@ -207,7 +207,7 @@ Public Class frmAdminMetro
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        SparkLine1.Source = New Double() {ping.Send(server).RoundtripTime}
+
     End Sub
 
     Private Sub btnChngPW_Click(sender As Object, e As EventArgs) Handles btnChngPW.Click

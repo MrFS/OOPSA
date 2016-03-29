@@ -252,6 +252,12 @@
     <Compile Include="frm\Login\frmForgotPass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\tstFolder\frmTst.Designer.vb">
+      <DependentUpon>frmTst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\tstFolder\frmTst.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="module\config.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -293,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tstFolder\frmTst.resx">
+      <DependentUpon>frmTst.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporting\salesReportChart.rdlc" />
     <EmbeddedResource Include="Reporting\salesReport.rdlc" />
