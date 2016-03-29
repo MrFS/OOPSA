@@ -668,14 +668,14 @@ Partial Class frmAdminMetro
         Me.FontListBox1.MetroColor = System.Drawing.SystemColors.Highlight
         Me.FontListBox1.Name = "FontListBox1"
         MetroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        MetroColorTable1.ArrowInActive = System.Drawing.Color.White
+        'MetroColorTable1.ArrowInActive = System.Drawing.Color.White
         MetroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty
         MetroColorTable1.ScrollerBackground = System.Drawing.Color.White
         MetroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
-        MetroColorTable1.ThumbInActive = System.Drawing.Color.White
+        'MetroColorTable1.ThumbInActive = System.Drawing.Color.White
         MetroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(198, Byte), Integer))
         MetroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty
