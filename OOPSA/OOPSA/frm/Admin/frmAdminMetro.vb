@@ -15,7 +15,7 @@ Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
 
-    Private Sub btnAddUsr_Click(sender As Object, e As EventArgs) Handles btnAddUsr.Click
+    Private Sub btnAddUsr_Click(sender As Object, e As EventArgs)
         frmAddUsrMetro.Show()
     End Sub
 
@@ -149,7 +149,7 @@ Public Class frmAdminMetro
 
         Else
 
-                richTextBox1.Clear()
+            richTextBox1.Clear()
 
 
 
@@ -210,7 +210,7 @@ Public Class frmAdminMetro
 
     End Sub
 
-    Private Sub btnChngPW_Click(sender As Object, e As EventArgs) Handles btnChngPW.Click
+    Private Sub btnChngPW_Click(sender As Object, e As EventArgs)
         frmUsrChngPW.Show()
     End Sub
 
