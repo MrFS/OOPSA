@@ -74,6 +74,9 @@ Partial Class frmAdminMetro
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.rtbKundeEpost = New System.Windows.Forms.RichTextBox()
         Me.StatusStripEx1 = New Syncfusion.Windows.Forms.Tools.StatusStripEx()
+        Me.StatusStripLabel1 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
+        Me.StatusStripProgressBar1 = New Syncfusion.Windows.Forms.Tools.StatusStripProgressBar()
+        Me.StatusStripLabel2 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
         Me.ToolStripEx11 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.NewToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -90,6 +93,9 @@ Partial Class frmAdminMetro
         Me.ToolStripTxtSubject = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSplitButtonEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx()
+        Me.FakturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NyhetsbrevToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VareoversiktToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabControlAdv2 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
@@ -159,9 +165,6 @@ Partial Class frmAdminMetro
         Me.AnsattTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.AnsattTableAdapter()
         Me.dtSalgReportingTableAdapter = New OOPSA.dsSalgTableAdapters.dtSalgReportingTableAdapter()
         Me.SpellChecker1 = New Syncfusion.Text.SpellChecker(Me.components)
-        Me.StatusStripProgressBar1 = New Syncfusion.Windows.Forms.Tools.StatusStripProgressBar()
-        Me.StatusStripLabel1 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
-        Me.StatusStripLabel2 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dsSalg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbAnsKund, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -745,6 +748,29 @@ Partial Class frmAdminMetro
         Me.StatusStripEx1.Text = "StatusStripEx1"
         Me.StatusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
         '
+        'StatusStripLabel1
+        '
+        Me.StatusStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.StatusStripLabel1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
+        Me.StatusStripLabel1.Name = "StatusStripLabel1"
+        Me.StatusStripLabel1.Size = New System.Drawing.Size(87, 15)
+        Me.StatusStripLabel1.Text = "Email Progress:"
+        '
+        'StatusStripProgressBar1
+        '
+        Me.StatusStripProgressBar1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.StatusStripProgressBar1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
+        Me.StatusStripProgressBar1.Name = "StatusStripProgressBar1"
+        Me.StatusStripProgressBar1.Size = New System.Drawing.Size(100, 15)
+        Me.StatusStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        '
+        'StatusStripLabel2
+        '
+        Me.StatusStripLabel2.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
+        Me.StatusStripLabel2.Name = "StatusStripLabel2"
+        Me.StatusStripLabel2.Size = New System.Drawing.Size(97, 15)
+        Me.StatusStripLabel2.Text = "StatusStripLabel2"
+        '
         'ToolStripEx11
         '
         Me.ToolStripEx11.ForeColor = System.Drawing.Color.MidnightBlue
@@ -871,10 +897,29 @@ Partial Class frmAdminMetro
         '
         'ToolStripSplitButtonEx1
         '
+        Me.ToolStripSplitButtonEx1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FakturaToolStripMenuItem, Me.NyhetsbrevToolStripMenuItem, Me.VareoversiktToolStripMenuItem})
         Me.ToolStripSplitButtonEx1.Image = CType(resources.GetObject("ToolStripSplitButtonEx1.Image"), System.Drawing.Image)
         Me.ToolStripSplitButtonEx1.Name = "ToolStripSplitButtonEx1"
         Me.ToolStripSplitButtonEx1.Size = New System.Drawing.Size(102, 22)
         Me.ToolStripSplitButtonEx1.Text = "Epost maler"
+        '
+        'FakturaToolStripMenuItem
+        '
+        Me.FakturaToolStripMenuItem.Name = "FakturaToolStripMenuItem"
+        Me.FakturaToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.FakturaToolStripMenuItem.Text = "Faktura"
+        '
+        'NyhetsbrevToolStripMenuItem
+        '
+        Me.NyhetsbrevToolStripMenuItem.Name = "NyhetsbrevToolStripMenuItem"
+        Me.NyhetsbrevToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.NyhetsbrevToolStripMenuItem.Text = "Nyhetsbrev"
+        '
+        'VareoversiktToolStripMenuItem
+        '
+        Me.VareoversiktToolStripMenuItem.Name = "VareoversiktToolStripMenuItem"
+        Me.VareoversiktToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.VareoversiktToolStripMenuItem.Text = "Vareoversikt"
         '
         'ToolStripEx2
         '
@@ -1392,7 +1437,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1404,7 +1449,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1416,7 +1461,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1428,7 +1473,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1440,7 +1485,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1636,29 +1681,6 @@ Partial Class frmAdminMetro
         Me.SpellChecker1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.SpellChecker1.VisualStyle = Syncfusion.Text.SpellCheckerStyle.[Default]
         '
-        'StatusStripProgressBar1
-        '
-        Me.StatusStripProgressBar1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.StatusStripProgressBar1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
-        Me.StatusStripProgressBar1.Name = "StatusStripProgressBar1"
-        Me.StatusStripProgressBar1.Size = New System.Drawing.Size(100, 15)
-        Me.StatusStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        '
-        'StatusStripLabel1
-        '
-        Me.StatusStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.StatusStripLabel1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
-        Me.StatusStripLabel1.Name = "StatusStripLabel1"
-        Me.StatusStripLabel1.Size = New System.Drawing.Size(87, 15)
-        Me.StatusStripLabel1.Text = "Email Progress:"
-        '
-        'StatusStripLabel2
-        '
-        Me.StatusStripLabel2.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
-        Me.StatusStripLabel2.Name = "StatusStripLabel2"
-        Me.StatusStripLabel2.Size = New System.Drawing.Size(97, 15)
-        Me.StatusStripLabel2.Text = "StatusStripLabel2"
-        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -1852,8 +1874,6 @@ Partial Class frmAdminMetro
     Friend WithEvents ToolStripDropDownButton2 As ToolStripDropDownButton
     Friend WithEvents SalgsrapportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DagligeSalgToolStripMenuItem As ToolStripMenuItem
-    Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents TabControlAdv5 As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents tbAnsatte As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents SplitContainerAdv1 As Syncfusion.Windows.Forms.Tools.SplitContainerAdv
@@ -1893,4 +1913,9 @@ Partial Class frmAdminMetro
     Friend WithEvents StatusStripProgressBar1 As Syncfusion.Windows.Forms.Tools.StatusStripProgressBar
     Friend WithEvents StatusStripLabel2 As Syncfusion.Windows.Forms.Tools.StatusStripLabel
     Private WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents FakturaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NyhetsbrevToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VareoversiktToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
