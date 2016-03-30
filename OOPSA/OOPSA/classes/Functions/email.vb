@@ -52,11 +52,11 @@ Public Class email
 
             'Legg bildet på mrfs.me iosteden
 
-            Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=cid:HDIImage/></header>< /br>" & sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf), Nothing, "text/html")
+            Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=mrfs.me/school/oopsa/OOPSA.logoTurCareAS.png /></header>< /br>" & sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf), Nothing, "text/html")
             'Add image to HTML version
-            Dim imageResource As New LinkedResource("OOPSA.logoTurCareAS.png", "image/png")
-            imageResource.ContentId = "HDIImage"
-            htmlView.LinkedResources.Add(imageResource)
+            'Dim imageResource As New LinkedResource("OOPSA.logoTurCareAS.png", "image/png")
+            'imageResource.ContentId = "HDIImage"
+            'htmlView.LinkedResources.Add(imageResource)
 
             msg.AlternateViews.Add(htmlView)
             'msg.Body = sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf)
