@@ -11,9 +11,15 @@ Public Class email
         Dim dr_kunde As DataRow
         Dim dt_kunde As DataTable
 
+        Dim BASE64 As New Base64Enc
+        Dim emailPW As String = "YmFkcjA4MTIzNDU2Nzg5"
+
         da_kunde.Fill(ds_kunde, "Kunder")
 
         dt_kunde = ds_kunde.Tables(0)
+
+        BASE64.FrmBase64 = emailPW
+        emailPW = BASE64.FrmBase64
 
         Dim sendt As Integer = 0
 
@@ -21,62 +27,49 @@ Public Class email
 
         My.Forms.frmAdminMetro.StatusStripProgressBar1.Maximum = 100
 
-        'For Each dr_kunde In dt_kunde.Rows
+        For Each dr_kunde In dt_kunde.Rows
 
-        sendt += 1
+            sendt += 1
 
-        My.Forms.frmAdminMetro.StatusStripProgressBar1.Value += value
+            My.Forms.frmAdminMetro.StatusStripProgressBar1.Value += value
 
-        My.Forms.frmAdminMetro.StatusStripLabel2.Text = "Antall eposter sendt: " & sendt & "/" & dt_kunde.Rows.Count.ToString
+            My.Forms.frmAdminMetro.StatusStripLabel2.Text = "Antall eposter sendt: " & sendt & "/" & dt_kunde.Rows.Count.ToString
 
-        My.Forms.frmAdminMetro.Refresh()
+            My.Forms.frmAdminMetro.Refresh()
 
-        Try
-            Dim SMTP As New SmtpClient
-            Dim msg As New MailMessage()
+            Try
+                Dim SMTP As New SmtpClient
+                Dim msg As New MailMessage()
 
-            SMTP.UseDefaultCredentials = 0
-            SMTP.Credentials = New Net.NetworkCredential("drift82016@gmail.com", "badr08123456789")
-            SMTP.Port = 587
-            SMTP.EnableSsl = 1
-            SMTP.Host = "smtp.gmail.com"
+                SMTP.UseDefaultCredentials = 0
+                SMTP.Credentials = New Net.NetworkCredential("drift82016@gmail.com", emailPW)
+                SMTP.Port = 587
+                SMTP.EnableSsl = 1
+                SMTP.Host = "smtp.gmail.com"
 
-            msg = New MailMessage()
+                msg = New MailMessage()
 
-            msg.From = New MailAddress("drift82016@gmail.com", "OOPSA TurCare AS")
-            'msg.To.Add(dr_kunde("e_postt"))
-            msg.To.Add("mrfs94@gmail.com")
+                msg.From = New MailAddress("drift82016@gmail.com", "OOPSA TurCare AS")
+                msg.To.Add(dr_kunde("e_postt"))
+                'msg.To.Add("mrfs94@gmail.com")
 
-            msg.Subject = My.Forms.frmAdminMetro.ToolStripTxtSubject.Text
-            msg.IsBodyHtml = 1
+                msg.Subject = My.Forms.frmAdminMetro.ToolStripTxtSubject.Text
+                msg.IsBodyHtml = 1
 
-            'Legg bildet på mrfs.me iosteden
+                Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=mrfs.me/school/oopsa/OOPSA.logoTurCareAS.png /></header>" & HTMLConvert(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf), Nothing, "text/html")
 
-            Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=mrfs.me/school/oopsa/OOPSA.logoTurCareAS.png /></header>< /br>" & sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf), Nothing, "text/html")
-            'Add image to HTML version
-            'Dim imageResource As New LinkedResource("OOPSA.logoTurCareAS.png", "image/png")
-            'imageResource.ContentId = "HDIImage"
-            'htmlView.LinkedResources.Add(imageResource)
+                msg.AlternateViews.Add(htmlView)
 
-            msg.AlternateViews.Add(htmlView)
-            'msg.Body = sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf)
+                SMTP.Send(msg)
 
-            'msg.Body = My.Forms.frmAdminMetro.rtbKundeEpost.Text
-            'msg.Body = sRTF_To_HTML(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf)
-            'msg.Body = My.Forms.frmAdminMetro.rtbKundeEpost.Rtf
-
-            'msg.BodyEncoding = System.Text.Encoding.Unicode
-            SMTP.Send(msg)
-
-            MsgBox("finito")
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-        'Next
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        Next
 
     End Sub
 
-    Public Function sRTF_To_HTML(ByVal sRTF As String) As String
+    Public Function HTMLConvert(ByVal sRTF As String) As String
         'Declare a Word Application Object and a Word WdSaveOptions object
         Dim MyWord As Microsoft.Office.Interop.Word.Application
         Dim oDoNotSaveChanges As Object =
@@ -123,7 +116,7 @@ Public Class email
                 MyWord.Quit(oDoNotSaveChanges)
                 MyWord = Nothing
             End If
-            MsgBox("Error converting Rich Text to HTML")
+            MsgBox("Error converting Email to HTML")
         End Try
         Return sReturnString
     End Function

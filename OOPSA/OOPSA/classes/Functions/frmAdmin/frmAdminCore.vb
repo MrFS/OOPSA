@@ -9,22 +9,7 @@ Public Class frmAdminCore
 
         Dim sqlstring As String = "SELECT * FROM Ansatt"
 
-        Dim dataadapter As New MySqlDataAdapter()
-        Dim cmd As New MySqlCommand(sqlstring, con)
-
-
-
-        dataadapter.SelectCommand = cmd
-
-        Dim dbdataset As New DataTable
-        Dim bsource As New BindingSource
-        Dim SDA As New MySqlDataAdapter
-
-        SDA.SelectCommand = cmd
-        SDA.Fill(dbdataset)
-        bsource.DataSource = dbdataset
-
-        My.Forms.frmAdminMetro.dgvAnsatte.DataSource = bsource
+        My.Forms.frmAdminMetro.dgvAnsatte.DataSource = SQL.dataset(sqlstring)
 
         With My.Forms.frmAdminMetro.dgvAnsatte
             .Binder.InternalColumns(0).HeaderText = "ID"
@@ -37,31 +22,16 @@ Public Class frmAdminCore
             .Binder.InternalColumns(7).HeaderText = "Avdeling"
         End With
 
-        SDA.Update(dbdataset)
     End Sub
 
     Public Sub visLeie()
 
         Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
-FROM Leie
-LEFT OUTER JOIN Produkt
-ON Leie.Produkt_id=Produkt.Produkt_id"
-        Dim dataadapter As New MySqlDataAdapter()
-        Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
+                                   FROM Leie
+                                   LEFT OUTER JOIN Produkt
+                                   ON Leie.Produkt_id=Produkt.Produkt_id"
 
-
-        dataadapter.SelectCommand = cmd
-
-        Dim dbdataset As New DataTable
-        Dim bsource As New BindingSource
-        Dim SDA As New MySqlDataAdapter
-
-        SDA.SelectCommand = cmd
-        SDA.Fill(dbdataset)
-        bsource.DataSource = dbdataset 'Takk takk FS
-
-
-        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = bsource
+        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.dataset(sqlstring)
 
         With My.Forms.frmAdminMetro.GridDataBoundGrid1
             .Binder.InternalColumns(0).HeaderText = "Leie ID"
@@ -72,9 +42,6 @@ ON Leie.Produkt_id=Produkt.Produkt_id"
             .Binder.InternalColumns(5).HeaderText = "Produkt Navn"
             .Binder.InternalColumns(6).HeaderText = "Produkt ID"
         End With
-
-
-        SDA.Update(dbdataset)
 
     End Sub
 

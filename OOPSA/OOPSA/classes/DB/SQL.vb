@@ -29,4 +29,26 @@ Public Class SQL
         Return dt
 
     End Function
+
+    Public Function dataset(query As String)
+
+        Dim dataadapter As New MySqlDataAdapter()
+        Dim cmd As New MySqlCommand(query, con)
+
+
+
+        dataadapter.SelectCommand = cmd
+
+        Dim dbdataset As New DataTable
+        Dim bsource As New BindingSource
+        Dim SDA As New MySqlDataAdapter
+
+        SDA.SelectCommand = cmd
+        SDA.Fill(dbdataset)
+        bsource.DataSource = dbdataset
+
+        SDA.Update(dbdataset)
+
+        Return bsource
+    End Function
 End Class

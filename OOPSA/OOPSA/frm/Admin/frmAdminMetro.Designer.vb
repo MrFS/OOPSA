@@ -1061,7 +1061,7 @@ Partial Class frmAdminMetro
         Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
         Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.NewToolStripButton.Text = "&New"
         '
         'OpenToolStripButton
@@ -1070,7 +1070,7 @@ Partial Class frmAdminMetro
         Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
         Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.OpenToolStripButton.Text = "&Open"
         '
         'SaveToolStripButton
@@ -1079,7 +1079,7 @@ Partial Class frmAdminMetro
         Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.SaveToolStripButton.Text = "&Save"
         '
         'PrintToolStripButton
@@ -1088,13 +1088,13 @@ Partial Class frmAdminMetro
         Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
         Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripButton.Name = "PrintToolStripButton"
-        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.PrintToolStripButton.Text = "&Print"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 42)
         '
         'CutToolStripButton
         '
@@ -1102,7 +1102,7 @@ Partial Class frmAdminMetro
         Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
         Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.CutToolStripButton.Text = "C&ut"
         '
         'CopyToolStripButton
@@ -1111,7 +1111,7 @@ Partial Class frmAdminMetro
         Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
         Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.CopyToolStripButton.Text = "&Copy"
         '
         'PasteToolStripButton
@@ -1120,13 +1120,13 @@ Partial Class frmAdminMetro
         Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
         Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 39)
         Me.PasteToolStripButton.Text = "&Paste"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 42)
         '
         'txtUndo
         '
@@ -1134,7 +1134,7 @@ Partial Class frmAdminMetro
         Me.txtUndo.Image = Global.OOPSA.My.Resources.Resources.txtUndo
         Me.txtUndo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtUndo.Name = "txtUndo"
-        Me.txtUndo.Size = New System.Drawing.Size(24, 24)
+        Me.txtUndo.Size = New System.Drawing.Size(24, 39)
         Me.txtUndo.Text = "ToolStripButton2"
         '
         'txtRedo
@@ -1143,13 +1143,13 @@ Partial Class frmAdminMetro
         Me.txtRedo.Image = Global.OOPSA.My.Resources.Resources.txtRedo
         Me.txtRedo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtRedo.Name = "txtRedo"
-        Me.txtRedo.Size = New System.Drawing.Size(24, 24)
+        Me.txtRedo.Size = New System.Drawing.Size(24, 39)
         Me.txtRedo.Text = "ToolStripButton3"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 42)
         '
         'txtFontCombo
         '
@@ -1157,7 +1157,7 @@ Partial Class frmAdminMetro
         Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
         Me.txtFontCombo.MaxLength = 32767
         Me.txtFontCombo.Name = "txtFontCombo"
-        Me.txtFontCombo.Size = New System.Drawing.Size(135, 27)
+        Me.txtFontCombo.Size = New System.Drawing.Size(135, 42)
         Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontCombo.Text = "Arial"
         '
@@ -1167,14 +1167,14 @@ Partial Class frmAdminMetro
         Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
         Me.txtFontSizeCombo.MaxLength = 32767
         Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
-        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 27)
+        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 42)
         Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontSizeCombo.Text = "8"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 42)
         '
         'txtInsertImg
         '
@@ -1182,7 +1182,7 @@ Partial Class frmAdminMetro
         Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
         Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtInsertImg.Name = "txtInsertImg"
-        Me.txtInsertImg.Size = New System.Drawing.Size(24, 24)
+        Me.txtInsertImg.Size = New System.Drawing.Size(24, 39)
         Me.txtInsertImg.Text = "txtInsert"
         '
         'ToolStripButton4
@@ -1190,13 +1190,13 @@ Partial Class frmAdminMetro
         Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 24)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 39)
         Me.ToolStripButton4.Text = "ToolStripButton4"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 42)
         '
         'txtAlignLeft
         '
@@ -1204,7 +1204,7 @@ Partial Class frmAdminMetro
         Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
         Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignLeft.Name = "txtAlignLeft"
-        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 39)
         Me.txtAlignLeft.Text = "ToolStripButton5"
         '
         'txtAlignJust
@@ -1213,7 +1213,7 @@ Partial Class frmAdminMetro
         Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
         Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignJust.Name = "txtAlignJust"
-        Me.txtAlignJust.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignJust.Size = New System.Drawing.Size(24, 39)
         Me.txtAlignJust.Text = "ToolStripButton6"
         '
         'txtAlignRight
@@ -1222,7 +1222,7 @@ Partial Class frmAdminMetro
         Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
         Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignRight.Name = "txtAlignRight"
-        Me.txtAlignRight.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignRight.Size = New System.Drawing.Size(24, 39)
         Me.txtAlignRight.Text = "ToolStripButton7"
         '
         'tbUtleieOversikt
@@ -1916,6 +1916,6 @@ Partial Class frmAdminMetro
     Friend WithEvents FakturaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NyhetsbrevToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VareoversiktToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
