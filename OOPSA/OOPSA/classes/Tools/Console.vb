@@ -3,7 +3,10 @@ Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 
 
-
+''' <summary>
+''' Console class har ingenting relevant med selve oppgaven å gjøre
+''' Ble kun brukt for debugginspurposes.
+''' </summary>
 
 Public Class Console
 

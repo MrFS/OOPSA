@@ -1,5 +1,17 @@
-﻿Public Class UserCore
+﻿
+Public Class UserCore
+
+    ''' <summary>
+    ''' Husker brukernavnet til personen som har logget inn
+    ''' </summary>
+
     Public currentUsr As String
+
+    ''' <summary>
+    ''' Mottar brukernavnet fra frmMetroLogin (Refererer til referanser)
+    ''' Returnerer brukernavnet når aktuelt
+    ''' </summary>
+    ''' <returns>brukernavn</returns>
 
     Public Property crntUsr As String
         Get
