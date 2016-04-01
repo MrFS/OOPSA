@@ -4,6 +4,21 @@ Imports MySql.Data.MySqlClient
 
 Public Class email
 
+    ''' <summary>
+    ''' Gir daglig leder mulighet til å sende ut epost til alle som er registrert som kunde i databasen
+    ''' 
+    ''' Henter alle epostene som finnes i table "Kunde" fra DB
+    ''' Legger de inn i DS_Kunde
+    ''' 
+    ''' DS_Kunde overføres til DT_Kunde
+    ''' 
+    ''' emailPW er en enkode string, må dekodes av class Base64Enc
+    ''' 
+    ''' value regnes ut som 100 / antall rader funnet i database table "Kunde"
+    ''' Dette brukes for å inkrementere en progress bar i frmAdminMetro
+    ''' 
+    ''' Skriv om epostfunskjonaliteten her
+    ''' </summary>
     Public Sub massEmail()
         Dim da_kunde = New MySqlDataAdapter("SELECT e_postt FROM Kunde", con)
 
@@ -27,17 +42,18 @@ Public Class email
 
         My.Forms.frmAdminMetro.StatusStripProgressBar1.Maximum = 100
 
-        For Each dr_kunde In dt_kunde.Rows
+        Try
+            For Each dr_kunde In dt_kunde.Rows
 
-            sendt += 1
+                sendt += 1
 
-            My.Forms.frmAdminMetro.StatusStripProgressBar1.Value += value
+                My.Forms.frmAdminMetro.StatusStripProgressBar1.Value += value
 
-            My.Forms.frmAdminMetro.StatusStripLabel2.Text = "Antall eposter sendt: " & sendt & "/" & dt_kunde.Rows.Count.ToString
+                My.Forms.frmAdminMetro.StatusStripLabel2.Text = "Antall eposter sendt: " & sendt & "/" & dt_kunde.Rows.Count.ToString
 
-            My.Forms.frmAdminMetro.Refresh()
+                My.Forms.frmAdminMetro.Refresh()
 
-            Try
+
                 Dim SMTP As New SmtpClient
                 Dim msg As New MailMessage()
 
@@ -62,14 +78,23 @@ Public Class email
 
                 SMTP.Send(msg)
 
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        Next
 
+            Next
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Throw New Exception("Epost kunne ikke sendes.")
+        End Try
     End Sub
 
-    Public Function HTMLConvert(ByVal sRTF As String) As String
+    ''' <summary>
+    ''' Implementerer WordFunskjonalitet, gjennom assembly Microsoft.Office.Core, brukes som en del av "massEmail"
+    ''' Konverterer RTF-format(Som brukes i en RichTextBox control) ovber til HTML format, som endes som epost.
+    ''' </summary>
+    ''' <param name="RTF">Henter tekst i RTF format</param>
+    ''' <returns>HTML formatert dokument</returns>
+    ''' 
+    Public Function HTMLConvert(ByVal RTF As String) As String
         'Declare a Word Application Object and a Word WdSaveOptions object
         Dim MyWord As Microsoft.Office.Interop.Word.Application
         Dim oDoNotSaveChanges As Object =
@@ -86,7 +111,7 @@ Public Class email
             'Create a DataObject to hold the Rich Text
             'and copy it to the clipboard
             Dim doRTF As New System.Windows.Forms.DataObject
-            doRTF.SetData("Rich Text Format", sRTF)
+            doRTF.SetData("Rich Text Format", RTF)
             Clipboard.SetDataObject(doRTF)
             'Paste the contents of the clipboard to the empty,
             'hidden Word Document

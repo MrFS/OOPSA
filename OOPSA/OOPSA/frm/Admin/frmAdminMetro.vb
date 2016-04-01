@@ -11,14 +11,29 @@ Imports Syncfusion.PivotAnalysis.Base
 Imports Syncfusion.DocIO
 Imports Syncfusion.DocIO.DLS
 
+''' <summary>
+''' Dim variabel Core as New frmAdminCore (Classes/Functions/frmAdmin)
+''' Gir tilgang til kjernefunksjonalitet
+''' </summary>
 Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
 
+    ''' <summary>
+    ''' Viser frmAddUsr
+    ''' Gir daglig leder mulighet til å legge til flere ansatte
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub btnAddUsr_Click(sender As Object, e As EventArgs)
         frmAddUsrMetro.Show()
     End Sub
 
+    ''' <summary>
+    ''' RYDDDDDDDD
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Ansatt' table. You can move, or remove it, as needed.
         Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)

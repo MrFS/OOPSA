@@ -5,31 +5,64 @@ Imports OOPSA.Update
 Imports System.IO
 Imports System.Net
 
-
+''' <summary>
+''' frmMetroLogin
+''' Dim variabelen Login as new Login (Class : Classes/Functions/frmLogin)
+''' Gir muligheten for inlogging ved å sammenligne tastet informasjon med informasjonen i databasen.
+''' </summary>
 Public Class frmMetroLogin
     Inherits MetroForm
 
     Dim Login As New Login
 
+    ''' <summary>
+    ''' KeyPreview = True
+    ''' Når brukeren trykker F12, vises frmConsole
+    ''' hvor brukeren for tilgang til diverse informasjon.
+    ''' Samme kan også oppnås ved å trykke på Kiwi i frm under runtime
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub frmMetroLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyCode
-            Case Keys.F10
-                txtUsr.Text = "//ADMINISTRATOR"
-                txtUsr.Enabled = 0
             Case Keys.F12
                 frmConsole.Show()
         End Select
     End Sub
 
+    ''' <summary>
+    ''' Når brukeren trykker på Kiwi, vises frmConsole
+    ''' hvor brukeren får tilgang til diverse informasjon.
+    ''' Samme kan også oppnås ved å trykke F12 under runtime
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         frmConsole.Show()
     End Sub
 
+    ''' <summary>
+    ''' Refererer til class Login når bruker trykker btnLogin
+    ''' Sender relevant informasjon over til referert class(Login)
+    ''' txtUsr as "user" & txtPw as "pass"
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub btnLgInn_Click(sender As Object, e As EventArgs) Handles btnLgInn.Click
         Login.Login(txtUsr.Text, txtPw.Text)
     End Sub
 
+    ''' <summary>
+    ''' Nedenfor er koden som kjøres når frmMetroLogin blir lastet
+    ''' Variablene DB, Update, User, chk refererer til respektive classer
+    ''' 
+    ''' DEN KODEN HER MÅ RYDDES FØR MER SKRIVES I COMMENTS
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub frmMetroLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim DB As New DBConnect
 
         Dim Update As New Update
@@ -78,6 +111,12 @@ Public Class frmMetroLogin
 
     End Sub
 
+    ''' <summary>
+    ''' Viser frmForgotPass når brukeren trykker på nøkkelen i frmMetroLogin
+    ''' Gir brukeren mulighet til å endre passord på sin bruker ved hjelp av registrert epostadresse
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         frmForgotPass.Show()
     End Sub
