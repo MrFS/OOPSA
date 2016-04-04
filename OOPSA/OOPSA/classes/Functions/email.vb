@@ -141,7 +141,7 @@ Public Class email
                 MyWord.Quit(oDoNotSaveChanges)
                 MyWord = Nothing
             End If
-            MsgBox("Error converting Email to HTML")
+            MsgBox("Error converting Email to HTML" & ex.Message)
         End Try
         Return sReturnString
     End Function

@@ -38,9 +38,19 @@ Public Class SHA512
     ''' <returns>Base64 enkodet SHA512 hash</returns>
     Private Function SHA512Encrypt(txt As String)
 
+        'Dim pwsalt As String = txt
+
         Dim SHA512 = New SHA512Managed
 
-        Dim SHA512B() As Byte = Text.Encoding.UTF8.GetBytes(txt)
+        Dim SHA512BSalt() As Byte = Text.Encoding.UTF8.GetBytes(txt)
+
+        Dim SaltString As Byte() = SHA512.ComputeHash(SHA512BSalt)
+
+        Convert.ToBase64String(SaltString)
+
+        'Dim saltetPW As String = SaltString.ToString
+
+        Dim SHA512B() As Byte = Text.Encoding.UTF8.GetBytes(SaltString.ToString)
 
         Dim cryString As Byte() = SHA512.ComputeHash(SHA512B)
 

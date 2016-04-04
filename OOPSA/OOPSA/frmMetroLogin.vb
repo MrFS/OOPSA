@@ -44,7 +44,7 @@ Public Class frmMetroLogin
     ''' <summary>
     ''' Refererer til class Login når bruker trykker btnLogin
     ''' Sender relevant informasjon over til referert class(Login)
-    ''' txtUsr as "user" & txtPw as "pass"
+    ''' txtUsr as "user" og txtPw as "pass"
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
@@ -70,6 +70,8 @@ Public Class frmMetroLogin
         Dim User As New UserCore
 
         Dim chk As New DBCheck
+
+        Dim SHA As New SHA512
 
         chk.DBCheck()
 
@@ -108,6 +110,15 @@ Public Class frmMetroLogin
         'MsgBox(major & minor & build & revision)
 
         'MsgBox(Application.ProductVersion)
+
+        Dim test As String = "aaa"
+
+        SHA.ToHashSHA512 = test
+
+        test = SHA.ToHashSHA512
+
+        txtUsr.Text = test
+
 
     End Sub
 
