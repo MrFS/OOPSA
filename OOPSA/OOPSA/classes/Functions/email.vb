@@ -73,6 +73,7 @@ Public Class email
                 msg.IsBodyHtml = 1
 
                 Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=mrfs.me/school/oopsa/OOPSA.logoTurCareAS.png /></header>" & HTMLConvert(My.Forms.frmAdminMetro.rtbKundeEpost.Rtf), Nothing, "text/html")
+                'Dim htmlView As AlternateView = AlternateView.CreateAlternateViewFromString("<html><header><img src=mrfs.me/school/oopsa/OOPSA.logoTurCareAS.png /></header>" & txt, Nothing, "text/html")
 
                 msg.AlternateViews.Add(htmlView)
 
@@ -96,7 +97,7 @@ Public Class email
     ''' 
     Public Function HTMLConvert(ByVal RTF As String) As String
         'Declare a Word Application Object and a Word WdSaveOptions object
-        Dim MyWord As Microsoft.Office.Interop.Word.Application
+        Dim MyWord As New Microsoft.Office.Interop.Word.Application
         Dim oDoNotSaveChanges As Object =
              Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges
         'Declare two strings to handle the data

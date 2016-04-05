@@ -35,6 +35,7 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Ansatt' table. You can move, or remove it, as needed.
         Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)
         Core.VisAnsatt()
@@ -75,6 +76,8 @@ Public Class frmAdminMetro
 
 
         Me.ReportViewer1.RefreshReport()
+        Me.ReportViewer1.RefreshReport()
+        Me.ReportViewer2.RefreshReport()
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
@@ -243,7 +246,17 @@ Public Class frmAdminMetro
     End Sub
 
     Private Sub btnSendEpostKunde_Click(sender As Object, e As EventArgs) Handles btnSendEpostKunde.Click
+
         Dim Send As New email
+
+
+
+        'Dim t As New Threading.Thread(AddressOf MySub)
+        't.IsBackground = True
+        't.SetApartmentState(0)
+        't.Start()
+
+        'Dim Send As New email
 
         Send.massEmail()
 
@@ -265,4 +278,17 @@ Public Class frmAdminMetro
             rtbKundeEpost.LoadFile(openFile1.FileName)
         End If
     End Sub
+
+    '<STAThread>
+    'Public Sub MySub()
+
+    '    Dim Send As New email
+
+    '    Dim converted As String
+
+    '    converted = Send.HTMLConvert(rtbKundeEpost.Text)
+
+    '    Send.massEmail(converted)
+    'End Sub
+
 End Class

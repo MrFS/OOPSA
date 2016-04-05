@@ -163,6 +163,7 @@ Partial Class frmAdminMetro
         Me.AnsattTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.AnsattTableAdapter()
         Me.dtSalgReportingTableAdapter = New OOPSA.dsSalgTableAdapters.dtSalgReportingTableAdapter()
         Me.SpellChecker1 = New Syncfusion.Text.SpellChecker(Me.components)
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dsSalg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbAnsKund, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -174,6 +175,7 @@ Partial Class frmAdminMetro
         CType(Me.TabControlAdv4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv4.SuspendLayout()
         Me.reportSalg.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.ToolStripEx7.SuspendLayout()
         Me.reportLager.SuspendLayout()
         Me.reportLeie.SuspendLayout()
@@ -346,6 +348,7 @@ Partial Class frmAdminMetro
         '
         'Panel5
         '
+        Me.Panel5.Controls.Add(Me.ReportViewer1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 40)
         Me.Panel5.Name = "Panel5"
@@ -664,10 +667,10 @@ Partial Class frmAdminMetro
         '
         Me.tbKunderOversikt.Image = Nothing
         Me.tbKunderOversikt.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunderOversikt.Location = New System.Drawing.Point(38, 3)
+        Me.tbKunderOversikt.Location = New System.Drawing.Point(2, 3)
         Me.tbKunderOversikt.Name = "tbKunderOversikt"
         Me.tbKunderOversikt.ShowCloseButton = True
-        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 422)
+        Me.tbKunderOversikt.Size = New System.Drawing.Size(859, 422)
         Me.tbKunderOversikt.TabIndex = 1
         Me.tbKunderOversikt.Text = "Kunder"
         Me.tbKunderOversikt.ThemesEnabled = True
@@ -679,10 +682,10 @@ Partial Class frmAdminMetro
         Me.tbKundeEpost.Controls.Add(Me.ToolStripEx11)
         Me.tbKundeEpost.Image = Nothing
         Me.tbKundeEpost.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKundeEpost.Location = New System.Drawing.Point(38, 3)
+        Me.tbKundeEpost.Location = New System.Drawing.Point(2, 3)
         Me.tbKundeEpost.Name = "tbKundeEpost"
         Me.tbKundeEpost.ShowCloseButton = True
-        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 422)
+        Me.tbKundeEpost.Size = New System.Drawing.Size(859, 422)
         Me.tbKundeEpost.TabIndex = 2
         Me.tbKundeEpost.Text = "Epost"
         Me.tbKundeEpost.ThemesEnabled = True
@@ -695,7 +698,7 @@ Partial Class frmAdminMetro
         Me.Panel6.Location = New System.Drawing.Point(0, 40)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel6.Size = New System.Drawing.Size(823, 360)
+        Me.Panel6.Size = New System.Drawing.Size(859, 360)
         Me.Panel6.TabIndex = 3
         '
         'Panel7
@@ -706,7 +709,7 @@ Partial Class frmAdminMetro
         Me.Panel7.Location = New System.Drawing.Point(50, 10)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel7.Size = New System.Drawing.Size(723, 350)
+        Me.Panel7.Size = New System.Drawing.Size(759, 350)
         Me.Panel7.TabIndex = 0
         '
         'rtbKundeEpost
@@ -715,19 +718,19 @@ Partial Class frmAdminMetro
         Me.rtbKundeEpost.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbKundeEpost.Location = New System.Drawing.Point(10, 10)
         Me.rtbKundeEpost.Name = "rtbKundeEpost"
-        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 340)
+        Me.rtbKundeEpost.Size = New System.Drawing.Size(739, 340)
         Me.rtbKundeEpost.TabIndex = 0
         Me.rtbKundeEpost.Text = ""
         '
         'StatusStripEx1
         '
-        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(859, 22)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StatusStripLabel1, Me.StatusStripProgressBar1, Me.StatusStripLabel2})
         Me.StatusStripEx1.Location = New System.Drawing.Point(0, 400)
         Me.StatusStripEx1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.Name = "StatusStripEx1"
-        Me.StatusStripEx1.Size = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.Size = New System.Drawing.Size(859, 22)
         Me.StatusStripEx1.TabIndex = 2
         Me.StatusStripEx1.Text = "StatusStripEx1"
         Me.StatusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
@@ -763,7 +766,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx11.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx11.Name = "ToolStripEx11"
         Me.ToolStripEx11.Office12Mode = False
-        Me.ToolStripEx11.Size = New System.Drawing.Size(823, 40)
+        Me.ToolStripEx11.Size = New System.Drawing.Size(859, 40)
         Me.ToolStripEx11.TabIndex = 0
         Me.ToolStripEx11.Text = "Epost"
         Me.ToolStripEx11.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1665,6 +1668,14 @@ Partial Class frmAdminMetro
         Me.SpellChecker1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.SpellChecker1.VisualStyle = Syncfusion.Text.SpellCheckerStyle.[Default]
         '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(813, 329)
+        Me.ReportViewer1.TabIndex = 0
+        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -1696,6 +1707,7 @@ Partial Class frmAdminMetro
         Me.TabControlAdv4.ResumeLayout(False)
         Me.reportSalg.ResumeLayout(False)
         Me.reportSalg.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
         Me.ToolStripEx7.ResumeLayout(False)
         Me.ToolStripEx7.PerformLayout()
         Me.reportLager.ResumeLayout(False)
@@ -1900,4 +1912,5 @@ Partial Class frmAdminMetro
     Friend WithEvents VareoversiktToolStripMenuItem As ToolStripMenuItem
     Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class
