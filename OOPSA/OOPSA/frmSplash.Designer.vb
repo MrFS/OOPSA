@@ -49,9 +49,9 @@ Partial Class frmSplash
         '
         Me.AutoLabel1.Location = New System.Drawing.Point(132, 0)
         Me.AutoLabel1.Name = "AutoLabel1"
-        Me.AutoLabel1.Size = New System.Drawing.Size(187, 21)
+        Me.AutoLabel1.Size = New System.Drawing.Size(188, 21)
         Me.AutoLabel1.TabIndex = 1
-        Me.AutoLabel1.Text = "OOPSA Inventory System"
+        Me.AutoLabel1.Text = "OOPSA Butikkdatasystem"
         '
         'AutoLabel2
         '
