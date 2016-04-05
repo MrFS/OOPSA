@@ -76,8 +76,6 @@ Public Class frmAdminMetro
 
 
         Me.ReportViewer1.RefreshReport()
-        Me.ReportViewer1.RefreshReport()
-        Me.ReportViewer2.RefreshReport()
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
