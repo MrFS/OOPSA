@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports OOPSA.SQL
 
+
 Public Class frmAdminCore
 
     Dim SQL As New SQL
@@ -74,51 +75,22 @@ Public Class frmAdminCore
     End Sub
 
 
-    Public Sub regLeie(Produkt As String,
-                       Til As Date,
-                       Fra As Date,
-                       Kunde_nr As String)
+    Public Sub regLeie(Produkt As Integer, Til As Date, Fra As Date, Kunde_nr As Integer, Lager As Integer)
 
 
-        ' pass = My.Forms.frmAddLeie.txtPw.Text.Replace("'", "\'")
-        Dim sqlstring As String = ("SELECT produkt_id FROM Produkt WHERE produkt =" & "'" & Produkt & "'")
+        Dim core As New UserCore
 
-
-        Dim dataadapter As New MySqlDataAdapter()
-        Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
-
-
-        dataadapter.SelectCommand = cmd
-
-        Dim dbdataset As New DataTable
-        Dim bsource As New BindingSource
-        Dim SDA As New MySqlDataAdapter
-
-        SDA.SelectCommand = cmd
-        SDA.Fill(dbdataset)
-        bsource.DataSource = dbdataset 'Takk takk FS
-
-        Dim test(0) As Integer
-
-
-
-
-        Dim leie_id As Integer = 2
-        Dim Leie_fra As Date = Til
-        Dim Leie_til As Date = Fra
-        Dim Ansatt_id As Integer = 2
+        Dim Leie_fra As Date = Fra
+        Dim Leie_til As Date = Til
+        Dim brukernavn As String = core.currentUsr
+        Dim Ansatt_id As Integer = core.Getuserid(brukernavn)
         Dim kunde_id As Integer = Kunde_nr
-        Dim produkt_id As Integer
-        Dim lager_id As Integer
+        Dim produkt_id As Integer = Produkt
+        Dim lager_id As Integer = Lager
 
 
 
-
-
-
-
-
-        SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])")
+        SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL," & Leie_fra & "," & Leie_til & "," & Ansatt_id & "," & kunde_id & "," & produkt_id & "," & lager_id & ")")
     End Sub
 
 
