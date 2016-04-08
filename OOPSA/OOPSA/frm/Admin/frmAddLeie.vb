@@ -8,13 +8,14 @@ Public Class frmAddLeie
 
     Private Sub frmAddLeie_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
-
     End Sub
 
 
     Private Sub btnFerdigLeie_Click(sender As Object, e As EventArgs) Handles btnFerdigLeie.Click
+
+
+
+
 
 
 
