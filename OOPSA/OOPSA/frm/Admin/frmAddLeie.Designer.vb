@@ -27,15 +27,15 @@ Partial Class frmAddLeie
         Me.dtpFra = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         Me.lblfra = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblTil = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.ComboProdukt = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblVelgKunde = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.btnFerdigLeie = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.ComboProdukt = New System.Windows.Forms.ComboBox()
+        Me.ComboKunde = New System.Windows.Forms.ComboBox()
+        Me.ComboLager = New System.Windows.Forms.ComboBox()
         CType(Me.dtpTil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpFra, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboProdukt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dtpTil
@@ -102,17 +102,6 @@ Partial Class frmAddLeie
         Me.lblTil.TabIndex = 26
         Me.lblTil.Text = "Fra:"
         '
-        'ComboProdukt
-        '
-        Me.ComboProdukt.BackColor = System.Drawing.Color.White
-        Me.ComboProdukt.BeforeTouchSize = New System.Drawing.Size(121, 24)
-        Me.ComboProdukt.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised
-        Me.ComboProdukt.Location = New System.Drawing.Point(54, 63)
-        Me.ComboProdukt.Name = "ComboProdukt"
-        Me.ComboProdukt.Size = New System.Drawing.Size(121, 24)
-        Me.ComboProdukt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.ComboProdukt.TabIndex = 27
-        '
         'AutoLabel1
         '
         Me.AutoLabel1.Location = New System.Drawing.Point(54, 43)
@@ -129,17 +118,6 @@ Partial Class frmAddLeie
         Me.lblVelgKunde.TabIndex = 30
         Me.lblVelgKunde.Text = "Velg Kunde"
         '
-        'ComboDropDown1
-        '
-        Me.ComboDropDown1.BackColor = System.Drawing.Color.White
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(121, 24)
-        Me.ComboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised
-        Me.ComboDropDown1.Location = New System.Drawing.Point(54, 128)
-        Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(121, 24)
-        Me.ComboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.ComboDropDown1.TabIndex = 29
-        '
         'btnFerdigLeie
         '
         Me.btnFerdigLeie.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
@@ -155,30 +133,62 @@ Partial Class frmAddLeie
         Me.btnFerdigLeie.Text = "Legg til leie"
         Me.btnFerdigLeie.UseVisualStyle = True
         '
+        'AutoLabel2
+        '
+        Me.AutoLabel2.Location = New System.Drawing.Point(380, 43)
+        Me.AutoLabel2.Name = "AutoLabel2"
+        Me.AutoLabel2.Size = New System.Drawing.Size(76, 17)
+        Me.AutoLabel2.TabIndex = 34
+        Me.AutoLabel2.Text = "Velg lager:"
+        '
+        'ComboProdukt
+        '
+        Me.ComboProdukt.FormattingEnabled = True
+        Me.ComboProdukt.Location = New System.Drawing.Point(54, 64)
+        Me.ComboProdukt.Name = "ComboProdukt"
+        Me.ComboProdukt.Size = New System.Drawing.Size(121, 24)
+        Me.ComboProdukt.TabIndex = 35
+        '
+        'ComboKunde
+        '
+        Me.ComboKunde.FormattingEnabled = True
+        Me.ComboKunde.Location = New System.Drawing.Point(54, 129)
+        Me.ComboKunde.Name = "ComboKunde"
+        Me.ComboKunde.Size = New System.Drawing.Size(121, 24)
+        Me.ComboKunde.TabIndex = 36
+        '
+        'ComboLager
+        '
+        Me.ComboLager.FormattingEnabled = True
+        Me.ComboLager.Location = New System.Drawing.Point(380, 64)
+        Me.ComboLager.Name = "ComboLager"
+        Me.ComboLager.Size = New System.Drawing.Size(121, 24)
+        Me.ComboLager.TabIndex = 37
+        '
         'frmAddLeie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
-        Me.ClientSize = New System.Drawing.Size(422, 266)
+        Me.ClientSize = New System.Drawing.Size(558, 266)
+        Me.Controls.Add(Me.ComboLager)
+        Me.Controls.Add(Me.ComboKunde)
+        Me.Controls.Add(Me.ComboProdukt)
+        Me.Controls.Add(Me.AutoLabel2)
         Me.Controls.Add(Me.btnFerdigLeie)
         Me.Controls.Add(Me.lblVelgKunde)
-        Me.Controls.Add(Me.ComboDropDown1)
         Me.Controls.Add(Me.AutoLabel1)
-        Me.Controls.Add(Me.ComboProdukt)
         Me.Controls.Add(Me.lblTil)
         Me.Controls.Add(Me.lblfra)
         Me.Controls.Add(Me.dtpFra)
         Me.Controls.Add(Me.dtpTil)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAddLeie"
         Me.ShowIcon = False
         Me.Text = "Legg til Leie"
         CType(Me.dtpTil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtpFra, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboProdukt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,9 +198,11 @@ Partial Class frmAddLeie
     Friend WithEvents dtpFra As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
     Friend WithEvents lblfra As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents lblTil As Syncfusion.Windows.Forms.Tools.AutoLabel
-    Friend WithEvents ComboProdukt As Syncfusion.Windows.Forms.Tools.ComboDropDown
     Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents lblVelgKunde As Syncfusion.Windows.Forms.Tools.AutoLabel
-    Friend WithEvents ComboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
     Friend WithEvents btnFerdigLeie As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents ComboProdukt As ComboBox
+    Friend WithEvents ComboKunde As ComboBox
+    Friend WithEvents ComboLager As ComboBox
 End Class
