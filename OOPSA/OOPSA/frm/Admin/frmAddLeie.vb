@@ -12,30 +12,48 @@ Public Class frmAddLeie
 
 
         Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            ComboProdukt.Items.Add(dr("Produkt_navn"))
+        Dim ds_produkt = New DataSet
+        Dim dr_produkt As DataRow
+        Dim dt_produkt As DataTable
+        adapter.Fill(ds_produkt, "Produkt")
+        dt_produkt = ds_produkt.Tables(0)
+        For Each dr_produkt In dt_produkt.Rows
+            ComboProdukt.Items.Add(dr_produkt("Produkt_navn"))
         Next
+
 
 
         Dim adapter1 As New MySqlDataAdapter("SELECT * FROM Lager", con)
-        adapter.Fill(ds, "Lager")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            ComboLager.Items.Add(dr("Addresse"))
+
+        Dim ds_lager = New DataSet
+        Dim dr_lager As DataRow
+        Dim dt_lager As DataTable
+
+        adapter1.Fill(ds_lager, "Lager")
+        dt_lager = ds_lager.Tables(0)
+        For Each dr_lager In dt_lager.Rows
+            ComboLager.Items.Add(dr_lager("Addresse"))
         Next
 
 
-        'Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
-        'adapter.Fill(ds, "Kunde")
-        'dt = ds.Tables(0)
-        'For Each dr In dt.Rows
-        '    ComboKunde.Items.Add(dr("Produkt_navn"))
-        'Next
+
+        Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
+
+        Dim ds_kunde = New DataSet
+        Dim dr_kunde As DataRow
+        Dim dt_kunde As DataTable
+
+        adapter2.Fill(ds_kunde, "Kunde")
+        dt_kunde = ds_kunde.Tables(0)
+        For Each dr_kunde In dt_kunde.Rows
+            Dim navn As String
+
+            navn = dr_kunde("F_navn").ToString
+            navn += " " & dr_kunde("E_navn").ToString
+
+
+            ComboKunde.Items.Add(navn)
+        Next
 
 
 
