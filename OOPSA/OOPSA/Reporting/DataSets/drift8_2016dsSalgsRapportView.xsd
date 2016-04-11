@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="drift8_2016dsSalgsRapportView" targetNamespace="http://tempuri.org/drift8_2016dsSalgsRapportView.xsd" xmlns:mstns="http://tempuri.org/drift8_2016dsSalgsRapportView.xsd" xmlns="http://tempuri.org/drift8_2016dsSalgsRapportView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="drift8_2016ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="drift8_2016ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OOPSA.My.MySettings.GlobalReference.Default.drift8_2016ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalgsRaportTableAdapter" GeneratorDataComponentClassName="SalgsRaportTableAdapter" Name="SalgsRaport" UserDataComponentName="SalgsRaportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="drift8_2016ConnectionString (MySettings)" DbObjectName="drift8_2016.SalgsRaport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `A_id`, `F_navn`, `E_navn`, `Kid`, `F_kunde`, `E_kunde`, `Produkt_id`, `Produkt_navn`, `Antall`, `S_id`, `Pris`, `PrisMedAvanse`, `TotallPris` FROM `drift8_2016`.`SalgsRaport`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="A_id" DataSetColumn="A_id" />
+              <Mapping SourceColumn="F_navn" DataSetColumn="F_navn" />
+              <Mapping SourceColumn="E_navn" DataSetColumn="E_navn" />
+              <Mapping SourceColumn="Kid" DataSetColumn="Kid" />
+              <Mapping SourceColumn="F_kunde" DataSetColumn="F_kunde" />
+              <Mapping SourceColumn="E_kunde" DataSetColumn="E_kunde" />
+              <Mapping SourceColumn="Produkt_id" DataSetColumn="Produkt_id" />
+              <Mapping SourceColumn="Produkt_navn" DataSetColumn="Produkt_navn" />
+              <Mapping SourceColumn="Antall" DataSetColumn="Antall" />
+              <Mapping SourceColumn="S_id" DataSetColumn="S_id" />
+              <Mapping SourceColumn="Pris" DataSetColumn="Pris" />
+              <Mapping SourceColumn="PrisMedAvanse" DataSetColumn="PrisMedAvanse" />
+              <Mapping SourceColumn="TotallPris" DataSetColumn="TotallPris" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="drift8_2016dsSalgsRapportView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="drift8_2016dsSalgsRapportView" msprop:Generator_UserDSName="drift8_2016dsSalgsRapportView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalgsRaport" msprop:Generator_TableClassName="SalgsRaportDataTable" msprop:Generator_TableVarName="tableSalgsRaport" msprop:Generator_TablePropName="SalgsRaport" msprop:Generator_RowDeletingName="SalgsRaportRowDeleting" msprop:Generator_RowChangingName="SalgsRaportRowChanging" msprop:Generator_RowEvHandlerName="SalgsRaportRowChangeEventHandler" msprop:Generator_RowDeletedName="SalgsRaportRowDeleted" msprop:Generator_UserTableName="SalgsRaport" msprop:Generator_RowChangedName="SalgsRaportRowChanged" msprop:Generator_RowEvArgName="SalgsRaportRowChangeEvent" msprop:Generator_RowClassName="SalgsRaportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="A_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnA_id" msprop:Generator_ColumnPropNameInRow="A_id" msprop:Generator_ColumnPropNameInTable="A_idColumn" msprop:Generator_UserColumnName="A_id" type="xs:int" />
+              <xs:element name="F_navn" msprop:Generator_ColumnVarNameInTable="columnF_navn" msprop:Generator_ColumnPropNameInRow="F_navn" msprop:Generator_ColumnPropNameInTable="F_navnColumn" msprop:Generator_UserColumnName="F_navn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="E_navn" msprop:Generator_ColumnVarNameInTable="columnE_navn" msprop:Generator_ColumnPropNameInRow="E_navn" msprop:Generator_ColumnPropNameInTable="E_navnColumn" msprop:Generator_UserColumnName="E_navn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kid" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnKid" msprop:Generator_ColumnPropNameInRow="Kid" msprop:Generator_ColumnPropNameInTable="KidColumn" msprop:Generator_UserColumnName="Kid" type="xs:int" />
+              <xs:element name="F_kunde" msprop:Generator_ColumnVarNameInTable="columnF_kunde" msprop:Generator_ColumnPropNameInRow="F_kunde" msprop:Generator_ColumnPropNameInTable="F_kundeColumn" msprop:Generator_UserColumnName="F_kunde" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="E_kunde" msprop:Generator_ColumnVarNameInTable="columnE_kunde" msprop:Generator_ColumnPropNameInRow="E_kunde" msprop:Generator_ColumnPropNameInTable="E_kundeColumn" msprop:Generator_UserColumnName="E_kunde" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Produkt_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnProdukt_id" msprop:Generator_ColumnPropNameInRow="Produkt_id" msprop:Generator_ColumnPropNameInTable="Produkt_idColumn" msprop:Generator_UserColumnName="Produkt_id" type="xs:int" />
+              <xs:element name="Produkt_navn" msprop:Generator_ColumnVarNameInTable="columnProdukt_navn" msprop:Generator_ColumnPropNameInRow="Produkt_navn" msprop:Generator_ColumnPropNameInTable="Produkt_navnColumn" msprop:Generator_UserColumnName="Produkt_navn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Antall" msprop:Generator_ColumnVarNameInTable="columnAntall" msprop:Generator_ColumnPropNameInRow="Antall" msprop:Generator_ColumnPropNameInTable="AntallColumn" msprop:Generator_UserColumnName="Antall" type="xs:int" minOccurs="0" />
+              <xs:element name="S_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnS_id" msprop:Generator_ColumnPropNameInRow="S_id" msprop:Generator_ColumnPropNameInTable="S_idColumn" msprop:Generator_UserColumnName="S_id" type="xs:int" />
+              <xs:element name="Pris" msprop:Generator_ColumnVarNameInTable="columnPris" msprop:Generator_ColumnPropNameInRow="Pris" msprop:Generator_ColumnPropNameInTable="PrisColumn" msprop:Generator_UserColumnName="Pris" type="xs:int" />
+              <xs:element name="PrisMedAvanse" msprop:Generator_ColumnVarNameInTable="columnPrisMedAvanse" msprop:Generator_ColumnPropNameInRow="PrisMedAvanse" msprop:Generator_ColumnPropNameInTable="PrisMedAvanseColumn" msprop:Generator_UserColumnName="PrisMedAvanse" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotallPris" msprop:Generator_ColumnVarNameInTable="columnTotallPris" msprop:Generator_ColumnPropNameInRow="TotallPris" msprop:Generator_ColumnPropNameInTable="TotallPrisColumn" msprop:Generator_UserColumnName="TotallPris" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SalgsRaport" />
+      <xs:field xpath="mstns:A_id" />
+      <xs:field xpath="mstns:Kid" />
+      <xs:field xpath="mstns:Produkt_id" />
+      <xs:field xpath="mstns:S_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

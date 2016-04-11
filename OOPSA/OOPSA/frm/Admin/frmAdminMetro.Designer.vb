@@ -35,6 +35,9 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle7 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle8 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
+        Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
+        Me.SalgsRaportBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
@@ -164,12 +167,12 @@ Partial Class frmAdminMetro
         Me.AnsattBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AnsattTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.AnsattTableAdapter()
         Me.SpellChecker1 = New Syncfusion.Text.SpellChecker(Me.components)
-        Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
-        Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SalgsRaportTableAdapter = New OOPSA.drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter()
         Me.Drift82016dsSalgsRapportViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SalgsRaportBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SalgsRaportBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -237,12 +240,24 @@ Partial Class frmAdminMetro
         Me.ToolStripEx10.SuspendLayout()
         Me.tbLager.SuspendLayout()
         CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'SalgsRaportBindingSource
+        '
+        Me.SalgsRaportBindingSource.DataMember = "SalgsRaport"
+        Me.SalgsRaportBindingSource.DataSource = Me.drift8_2016dsSalgsRapportView
+        '
+        'drift8_2016dsSalgsRapportView
+        '
+        Me.drift8_2016dsSalgsRapportView.DataSetName = "drift8_2016dsSalgsRapportView"
+        Me.drift8_2016dsSalgsRapportView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SalgsRaportBindingSource2
+        '
+        Me.SalgsRaportBindingSource2.DataMember = "SalgsRaport"
+        Me.SalgsRaportBindingSource2.DataSource = Me.drift8_2016dsSalgsRapportView
         '
         'VisAnsattesSalgBindingSource
         '
@@ -374,9 +389,9 @@ Partial Class frmAdminMetro
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         ReportDataSource1.Name = "dsSalgsRapport"
-        ReportDataSource1.Value = Me.SalgsRaportBindingSource2
+        ReportDataSource1.Value = Me.SalgsRaportBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.Report1.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(813, 327)
@@ -1686,16 +1701,6 @@ Partial Class frmAdminMetro
         Me.SpellChecker1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.SpellChecker1.VisualStyle = Syncfusion.Text.SpellCheckerStyle.[Default]
         '
-        'drift8_2016dsSalgsRapportView
-        '
-        Me.drift8_2016dsSalgsRapportView.DataSetName = "drift8_2016dsSalgsRapportView"
-        Me.drift8_2016dsSalgsRapportView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SalgsRaportBindingSource
-        '
-        Me.SalgsRaportBindingSource.DataMember = "SalgsRaport"
-        Me.SalgsRaportBindingSource.DataSource = Me.drift8_2016dsSalgsRapportView
-        '
         'SalgsRaportTableAdapter
         '
         Me.SalgsRaportTableAdapter.ClearBeforeFill = True
@@ -1709,11 +1714,6 @@ Partial Class frmAdminMetro
         '
         Me.SalgsRaportBindingSource1.DataMember = "SalgsRaport"
         Me.SalgsRaportBindingSource1.DataSource = Me.Drift82016dsSalgsRapportViewBindingSource
-        '
-        'SalgsRaportBindingSource2
-        '
-        Me.SalgsRaportBindingSource2.DataMember = "SalgsRaport"
-        Me.SalgsRaportBindingSource2.DataSource = Me.drift8_2016dsSalgsRapportView
         '
         'frmAdminMetro
         '
@@ -1733,6 +1733,9 @@ Partial Class frmAdminMetro
         Me.Name = "frmAdminMetro"
         Me.ShowIcon = False
         Me.Text = "Daglig Leder | OOPSA - BADR08"
+        CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1818,11 +1821,8 @@ Partial Class frmAdminMetro
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
         CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1955,11 +1955,11 @@ Partial Class frmAdminMetro
     Private WithEvents KjøpBindingSource As BindingSource
     Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents VisAnsattesSalgBindingSource As BindingSource
     Friend WithEvents SalgsRaportBindingSource As BindingSource
-    Friend WithEvents drift8_2016dsSalgsRapportView As drift8_2016dsSalgsRapportView
     Friend WithEvents SalgsRaportTableAdapter As drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter
     Friend WithEvents SalgsRaportBindingSource1 As BindingSource
     Friend WithEvents Drift82016dsSalgsRapportViewBindingSource As BindingSource
-    Friend WithEvents SalgsRaportBindingSource2 As BindingSource
+    Private WithEvents VisAnsattesSalgBindingSource As BindingSource
+    Private WithEvents drift8_2016dsSalgsRapportView As drift8_2016dsSalgsRapportView
+    Private WithEvents SalgsRaportBindingSource2 As BindingSource
 End Class

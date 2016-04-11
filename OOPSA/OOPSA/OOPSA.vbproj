@@ -186,7 +186,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="drift8_2016dsSalgsRapportView.Designer.vb">
+    <Compile Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>
@@ -307,7 +307,6 @@
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\Admin\Report1.rdlc" />
     <EmbeddedResource Include="frm\tstFolder\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
     </EmbeddedResource>
@@ -347,6 +346,7 @@
     <EmbeddedResource Include="frm\Console\frmConsole.resx">
       <DependentUpon>frmConsole.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\SalgsRapport.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSets\drift8_2016DataSet.xsc">
@@ -360,15 +360,15 @@
     <None Include="DataSets\drift8_2016DataSet.xss">
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </None>
-    <None Include="drift8_2016dsSalgsRapportView.xsc">
+    <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xsc">
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>
     </None>
-    <None Include="drift8_2016dsSalgsRapportView.xsd">
+    <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>drift8_2016dsSalgsRapportView.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="drift8_2016dsSalgsRapportView.xss">
+    <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xss">
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
@@ -518,7 +518,6 @@
     <None Include="Resources\logoTurCareAS.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reporting\DataTables\" />
     <Folder Include="Reporting\SQL Statements\" />
   </ItemGroup>
   <ItemGroup>
