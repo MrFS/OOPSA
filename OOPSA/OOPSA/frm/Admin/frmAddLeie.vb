@@ -1,4 +1,5 @@
 ﻿Imports Syncfusion.Windows.Forms
+Imports MySql.Data.MySqlClient
 
 Public Class frmAddLeie
     Inherits MetroForm
@@ -7,6 +8,37 @@ Public Class frmAddLeie
 
 
     Private Sub frmAddLeie_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+
+        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
+        Dim ds = New DataSet
+        Dim dr As DataRow
+        Dim dt As DataTable
+        adapter.Fill(ds, "Produkt")
+        dt = ds.Tables(0)
+        For Each dr In dt.Rows
+            ComboProdukt.Items.Add(dr("Produkt_navn"))
+        Next
+
+
+        Dim adapter1 As New MySqlDataAdapter("SELECT * FROM Lager", con)
+        adapter.Fill(ds, "Lager")
+        dt = ds.Tables(0)
+        For Each dr In dt.Rows
+            ComboLager.Items.Add(dr("Addresse"))
+        Next
+
+
+        'Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
+        'adapter.Fill(ds, "Kunde")
+        'dt = ds.Tables(0)
+        'For Each dr In dt.Rows
+        '    ComboKunde.Items.Add(dr("Produkt_navn"))
+        'Next
+
+
+
 
     End Sub
 
