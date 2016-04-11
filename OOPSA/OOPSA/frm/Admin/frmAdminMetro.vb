@@ -36,15 +36,12 @@ Public Class frmAdminMetro
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
+
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Ansatt' table. You can move, or remove it, as needed.
         Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)
         Core.VisAnsatt()
         Core.visLeie()
-        Try
-            Me.dtSalgReportingTableAdapter.Fill(Me.dsSalg.dtSalgReporting)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
 
 
         'Legg dt her i en class

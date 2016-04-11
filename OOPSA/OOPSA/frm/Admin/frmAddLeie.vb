@@ -35,8 +35,6 @@ Public Class frmAddLeie
             ComboLager.Items.Add(dr_lager("Addresse"))
         Next
 
-
-
         Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
 
         Dim ds_kunde = New DataSet
