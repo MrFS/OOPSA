@@ -73,6 +73,8 @@ Public Class frmAdminMetro
 
 
         Me.ReportViewer1.RefreshReport()
+        Me.ReportViewer2.RefreshReport()
+        Me.ReportViewer3.RefreshReport()
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
@@ -229,13 +231,14 @@ Public Class frmAdminMetro
 
     Private Sub SalgsrapportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalgsrapportToolStripMenuItem.Click
         ReportViewer1.Reset()
-        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.salesReport.rdlc"
+        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         ReportViewer1.RefreshReport()
     End Sub
 
     Private Sub DagligeSalgToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DagligeSalgToolStripMenuItem.Click
         ReportViewer1.Reset()
-        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.salesReportChart.rdlc"
+        ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapportChart.rdlc"
+
 
         ReportViewer1.RefreshReport()
     End Sub

@@ -170,6 +170,12 @@ Partial Class frmAdminMetro
         Me.SalgsRaportTableAdapter = New OOPSA.drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter()
         Me.Drift82016dsSalgsRapportViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SalgsRaportBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ToolStripDropDownButton4 = New System.Windows.Forms.ToolStripDropDownButton()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -189,7 +195,9 @@ Partial Class frmAdminMetro
         Me.Panel5.SuspendLayout()
         Me.ToolStripEx7.SuspendLayout()
         Me.reportLager.SuspendLayout()
+        Me.ToolStripEx8.SuspendLayout()
         Me.reportLeie.SuspendLayout()
+        Me.ToolStripEx9.SuspendLayout()
         Me.ToolStripEx1.SuspendLayout()
         Me.tbPersoner.SuspendLayout()
         CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -242,6 +250,8 @@ Partial Class frmAdminMetro
         CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
+        Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -423,17 +433,18 @@ Partial Class frmAdminMetro
         'SalgsrapportToolStripMenuItem
         '
         Me.SalgsrapportToolStripMenuItem.Name = "SalgsrapportToolStripMenuItem"
-        Me.SalgsrapportToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.SalgsrapportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SalgsrapportToolStripMenuItem.Text = "Salgsrapport"
         '
         'DagligeSalgToolStripMenuItem
         '
         Me.DagligeSalgToolStripMenuItem.Name = "DagligeSalgToolStripMenuItem"
-        Me.DagligeSalgToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.DagligeSalgToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DagligeSalgToolStripMenuItem.Text = "Daglige Salg"
         '
         'reportLager
         '
+        Me.reportLager.Controls.Add(Me.Panel8)
         Me.reportLager.Controls.Add(Me.ToolStripEx8)
         Me.reportLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
         Me.reportLager.ImageSize = New System.Drawing.Size(32, 32)
@@ -449,16 +460,18 @@ Partial Class frmAdminMetro
         Me.ToolStripEx8.ForeColor = System.Drawing.Color.MidnightBlue
         Me.ToolStripEx8.Image = Nothing
         Me.ToolStripEx8.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton3})
         Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx8.Name = "ToolStripEx8"
         Me.ToolStripEx8.Office12Mode = False
-        Me.ToolStripEx8.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx8.Size = New System.Drawing.Size(813, 42)
         Me.ToolStripEx8.TabIndex = 1
         Me.ToolStripEx8.Text = "Lagerrapporter"
         Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'reportLeie
         '
+        Me.reportLeie.Controls.Add(Me.Panel9)
         Me.reportLeie.Controls.Add(Me.ToolStripEx9)
         Me.reportLeie.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.reportLeie.ImageSize = New System.Drawing.Size(32, 32)
@@ -474,10 +487,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx9.ForeColor = System.Drawing.Color.MidnightBlue
         Me.ToolStripEx9.Image = Nothing
         Me.ToolStripEx9.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton4})
         Me.ToolStripEx9.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx9.Name = "ToolStripEx9"
         Me.ToolStripEx9.Office12Mode = False
-        Me.ToolStripEx9.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx9.Size = New System.Drawing.Size(813, 42)
         Me.ToolStripEx9.TabIndex = 1
         Me.ToolStripEx9.Text = "Utleierapporter"
         Me.ToolStripEx9.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1715,6 +1729,58 @@ Partial Class frmAdminMetro
         Me.SalgsRaportBindingSource1.DataMember = "SalgsRaport"
         Me.SalgsRaportBindingSource1.DataSource = Me.Drift82016dsSalgsRapportViewBindingSource
         '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.ReportViewer2)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel8.Location = New System.Drawing.Point(0, 42)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(813, 327)
+        Me.Panel8.TabIndex = 2
+        '
+        'ReportViewer2
+        '
+        Me.ReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer2.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer2.Name = "ReportViewer2"
+        Me.ReportViewer2.Size = New System.Drawing.Size(813, 327)
+        Me.ReportViewer2.TabIndex = 0
+        '
+        'ToolStripDropDownButton3
+        '
+        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
+        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(33, 24)
+        Me.ToolStripDropDownButton3.Text = "ToolStripDropDownButton3"
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.ReportViewer3)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel9.Location = New System.Drawing.Point(0, 42)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(813, 327)
+        Me.Panel9.TabIndex = 2
+        '
+        'ReportViewer3
+        '
+        Me.ReportViewer3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer3.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer3.Name = "ReportViewer3"
+        Me.ReportViewer3.Size = New System.Drawing.Size(813, 327)
+        Me.ReportViewer3.TabIndex = 0
+        '
+        'ToolStripDropDownButton4
+        '
+        Me.ToolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton4.Image = CType(resources.GetObject("ToolStripDropDownButton4.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton4.Name = "ToolStripDropDownButton4"
+        Me.ToolStripDropDownButton4.Size = New System.Drawing.Size(33, 24)
+        Me.ToolStripDropDownButton4.Text = "ToolStripDropDownButton4"
+        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -1756,8 +1822,12 @@ Partial Class frmAdminMetro
         Me.ToolStripEx7.PerformLayout()
         Me.reportLager.ResumeLayout(False)
         Me.reportLager.PerformLayout()
+        Me.ToolStripEx8.ResumeLayout(False)
+        Me.ToolStripEx8.PerformLayout()
         Me.reportLeie.ResumeLayout(False)
         Me.reportLeie.PerformLayout()
+        Me.ToolStripEx9.ResumeLayout(False)
+        Me.ToolStripEx9.PerformLayout()
         Me.ToolStripEx1.ResumeLayout(False)
         Me.ToolStripEx1.PerformLayout()
         Me.tbPersoner.ResumeLayout(False)
@@ -1823,6 +1893,8 @@ Partial Class frmAdminMetro
         CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1954,7 +2026,6 @@ Partial Class frmAdminMetro
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Private WithEvents KjøpBindingSource As BindingSource
     Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents SalgsRaportBindingSource As BindingSource
     Friend WithEvents SalgsRaportTableAdapter As drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter
     Friend WithEvents SalgsRaportBindingSource1 As BindingSource
@@ -1962,4 +2033,11 @@ Partial Class frmAdminMetro
     Private WithEvents VisAnsattesSalgBindingSource As BindingSource
     Private WithEvents drift8_2016dsSalgsRapportView As drift8_2016dsSalgsRapportView
     Private WithEvents SalgsRaportBindingSource2 As BindingSource
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents ReportViewer2 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents ToolStripDropDownButton3 As ToolStripDropDownButton
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents ReportViewer3 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents ToolStripDropDownButton4 As ToolStripDropDownButton
 End Class

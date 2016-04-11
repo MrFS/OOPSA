@@ -307,6 +307,7 @@
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\SalgsRapportChart.rdlc" />
     <EmbeddedResource Include="frm\tstFolder\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
     </EmbeddedResource>
