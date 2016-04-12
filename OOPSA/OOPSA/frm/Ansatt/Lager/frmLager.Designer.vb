@@ -55,10 +55,11 @@ Partial Class frmLager
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
-        Me.Drift82016DataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
+        Me.ProduktBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProduktTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.ProduktTableAdapter()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabPageAdv1.SuspendLayout()
@@ -74,8 +75,8 @@ Partial Class frmLager
         Me.TabPageAdv3.SuspendLayout()
         Me.TabPageAdv4.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MiniToolBar1
@@ -126,7 +127,6 @@ Partial Class frmLager
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Trondheim"})
         Me.ComboBox1.Location = New System.Drawing.Point(184, 223)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox1.Name = "ComboBox1"
@@ -155,7 +155,7 @@ Partial Class frmLager
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(173, 182)
         Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(4)
@@ -178,7 +178,7 @@ Partial Class frmLager
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(173, 138)
         Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4)
@@ -201,7 +201,7 @@ Partial Class frmLager
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(173, 94)
         Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4)
@@ -260,7 +260,7 @@ Partial Class frmLager
         'ComboDropDown3
         '
         Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(160, 24)
-        Me.ComboDropDown3.Location = New System.Drawing.Point(251, 268)
+        Me.ComboDropDown3.Location = New System.Drawing.Point(265, 268)
         Me.ComboDropDown3.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboDropDown3.Name = "ComboDropDown3"
         Me.ComboDropDown3.Size = New System.Drawing.Size(160, 24)
@@ -269,7 +269,7 @@ Partial Class frmLager
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(142, 268)
+        Me.Label9.Location = New System.Drawing.Point(168, 268)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(90, 17)
@@ -278,7 +278,7 @@ Partial Class frmLager
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(251, 220)
         Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(4)
@@ -301,7 +301,7 @@ Partial Class frmLager
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(251, 161)
         Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(4)
@@ -324,7 +324,7 @@ Partial Class frmLager
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(251, 110)
         Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4)
@@ -358,7 +358,7 @@ Partial Class frmLager
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(132, 22)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(251, 62)
         Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(4)
@@ -453,8 +453,8 @@ Partial Class frmLager
         'GridDataBoundGrid1
         '
         Me.GridDataBoundGrid1.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid1.DataMember = "Produkt"
-        Me.GridDataBoundGrid1.DataSource = Me.Drift82016DataSetBindingSource
+        Me.GridDataBoundGrid1.DataMember = ""
+        Me.GridDataBoundGrid1.DataSource = Me.ProduktBindingSource
         Me.GridDataBoundGrid1.Location = New System.Drawing.Point(432, 4)
         Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
@@ -467,16 +467,6 @@ Partial Class frmLager
         Me.GridDataBoundGrid1.Text = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.UseListChangedEvent = True
         Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
-        '
-        'Drift82016DataSetBindingSource
-        '
-        Me.Drift82016DataSetBindingSource.DataSource = Me.Drift8_2016DataSet
-        Me.Drift82016DataSetBindingSource.Position = 0
-        '
-        'Drift8_2016DataSet
-        '
-        Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
-        Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label5
         '
@@ -500,6 +490,20 @@ Partial Class frmLager
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "ToolStripEx1"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'Drift8_2016DataSet
+        '
+        Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
+        Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProduktBindingSource
+        '
+        Me.ProduktBindingSource.DataMember = "Produkt"
+        Me.ProduktBindingSource.DataSource = Me.Drift8_2016DataSet
+        '
+        'ProduktTableAdapter
+        '
+        Me.ProduktTableAdapter.ClearBeforeFill = True
         '
         'frmLager
         '
@@ -532,8 +536,8 @@ Partial Class frmLager
         Me.TabPageAdv4.ResumeLayout(False)
         Me.TabPageAdv4.PerformLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -555,8 +559,6 @@ Partial Class frmLager
     Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label6 As Label
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
-    Friend WithEvents Drift82016DataSetBindingSource As BindingSource
-    Friend WithEvents Drift8_2016DataSet As drift8_2016DataSet
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBoxExt6 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label11 As Label
@@ -574,4 +576,7 @@ Partial Class frmLager
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Drift8_2016DataSet As drift8_2016DataSet
+    Friend WithEvents ProduktBindingSource As BindingSource
+    Friend WithEvents ProduktTableAdapter As drift8_2016DataSetTableAdapters.ProduktTableAdapter
 End Class
