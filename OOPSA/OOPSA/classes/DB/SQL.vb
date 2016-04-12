@@ -14,8 +14,14 @@ Public Class SQL
 
     Public Function sporring(ByVal sql As String) As DataTable
         Dim dt As New DataTable
-        Try
+
+        If con.State = ConnectionState.Closed Then
+
             con.Open()
+
+        End If
+
+        Try
             Dim cmd As New MySqlCommand(sql, con)
             Dim da As New MySqlDataAdapter
             da.SelectCommand = cmd

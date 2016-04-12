@@ -92,4 +92,16 @@ Public Class frmLager
     Private Sub GridDataBoundGrid1_CellClick(sender As Object, e As Grid.GridCellClickEventArgs) Handles GridDataBoundGrid1.CellClick
 
     End Sub
+
+    Private Sub ComboDropDown3_Click(sender As Object, e As EventArgs) Handles ComboDropDown3.Click
+
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub TextBoxExt2_TextChanged(sender As Object, e As EventArgs) Handles TextBoxExt2.TextChanged
+
+    End Sub
 End Class

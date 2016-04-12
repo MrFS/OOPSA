@@ -186,6 +186,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="drift8_2016DataSetLageroversiktALLE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drift8_2016DataSetLageroversiktALLE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drift8_2016DataSetLagerRapportStavnager.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drift8_2016DataSetLagerRapportStavnager.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drift8_2016DataSetTrondheimLager.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -360,6 +375,39 @@
     </None>
     <None Include="DataSets\drift8_2016DataSet.xss">
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetLageroversiktALLE.xsc">
+      <DependentUpon>drift8_2016DataSetLageroversiktALLE.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetLageroversiktALLE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drift8_2016DataSetLageroversiktALLE.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drift8_2016DataSetLageroversiktALLE.xss">
+      <DependentUpon>drift8_2016DataSetLageroversiktALLE.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetLagerRapportStavnager.xsc">
+      <DependentUpon>drift8_2016DataSetLagerRapportStavnager.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetLagerRapportStavnager.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drift8_2016DataSetLagerRapportStavnager.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drift8_2016DataSetLagerRapportStavnager.xss">
+      <DependentUpon>drift8_2016DataSetLagerRapportStavnager.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetTrondheimLager.xsc">
+      <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSetTrondheimLager.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drift8_2016DataSetTrondheimLager.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drift8_2016DataSetTrondheimLager.xss">
+      <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </None>
     <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xsc">
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>
