@@ -8,9 +8,9 @@ Public Class frmAdminCore
 
     Public Sub VisAnsatt()
 
-        Dim sqlstring As String = "SELECT * FROM Ansatt"
+        'Dim sqlstring As String = "SELECT * FROM Ansatt"
 
-        My.Forms.frmAdminMetro.dgvAnsatte.DataSource = SQL.dataset(sqlstring)
+        'My.Forms.frmAdminMetro.dgvAnsatte.DataSource = SQL.dataset(sqlstring)
 
         With My.Forms.frmAdminMetro.dgvAnsatte
             .Binder.InternalColumns(0).HeaderText = "ID"

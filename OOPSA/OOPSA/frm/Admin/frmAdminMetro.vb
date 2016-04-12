@@ -35,6 +35,8 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'drift8_2016DataSet.Kunde' table. You can move, or remove it, as needed.
+        Me.KundeTableAdapter.Fill(Me.drift8_2016DataSet.Kunde)
 
         Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
 
@@ -275,6 +277,10 @@ Public Class frmAdminMetro
             ' Load the contents of the file into the RichTextBox.
             rtbKundeEpost.LoadFile(openFile1.FileName)
         End If
+    End Sub
+
+    Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click
+        Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
     End Sub
 
     '<STAThread>
