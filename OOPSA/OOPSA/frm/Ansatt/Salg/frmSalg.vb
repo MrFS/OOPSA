@@ -17,7 +17,7 @@ Public Class frmSalg
 
     Private Sub frmSalg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Drift8_2016DataSet.Kjøp' table. You can move, or remove it, as needed.
-        Me.KjøpTableAdapter.Fill(Me.Drift8_2016DataSet.Kjøp)
+
         'TODO: This line of code loads data into the 'Drift8_2016DataSet.Kunde' table. You can move, or remove it, as needed.
         Me.KundeTableAdapter.Fill(Me.Drift8_2016DataSet.Kunde)
 

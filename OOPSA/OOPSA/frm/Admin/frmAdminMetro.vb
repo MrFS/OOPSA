@@ -18,6 +18,7 @@ Imports Syncfusion.DocIO.DLS
 Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
+    Dim sql As New SQL
 
     ''' <summary>
     ''' Viser frmAddUsr
@@ -281,6 +282,15 @@ Public Class frmAdminMetro
 
     Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click
         Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
+    End Sub
+
+    Private Sub btnAddUsr_Click_1(sender As Object, e As EventArgs) Handles btnAddUsr.Click
+
+    End Sub
+
+    Private Sub btnKundeAdd_Click(sender As Object, e As EventArgs) Handles btnKundeAdd.Click
+        frmAddKunde.Show()
+
     End Sub
 
     '<STAThread>
