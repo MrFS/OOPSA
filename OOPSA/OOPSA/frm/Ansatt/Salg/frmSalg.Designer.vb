@@ -25,7 +25,7 @@ Partial Class frmSalg
         Me.components = New System.ComponentModel.Container()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
-        Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabRagSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TextBoxExt8 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.ComboDropDown2 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
@@ -40,12 +40,17 @@ Partial Class frmSalg
         Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.TextBoxExt2 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabBooking = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.ComboBoxAdv2 = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.ComboKurs = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.TabFjernBestilling = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBoxExt6 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabEndreBestilling = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBoxExt15 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -69,17 +74,17 @@ Partial Class frmSalg
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBoxExt7 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
-        Me.TabPageAdv5 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabRegKunde = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
-        Me.TabPageAdv1.SuspendLayout()
+        Me.TabRagSalg.SuspendLayout()
         CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboDropDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,10 +92,13 @@ Partial Class frmSalg
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageAdv2.SuspendLayout()
+        Me.TabBooking.SuspendLayout()
+        CType(Me.ComboBoxAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabFjernBestilling.SuspendLayout()
         CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageAdv3.SuspendLayout()
+        Me.TabEndreBestilling.SuspendLayout()
         CType(Me.TextBoxExt15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,7 +110,7 @@ Partial Class frmSalg
         CType(Me.ComboDropDown3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageAdv4.SuspendLayout()
+        Me.TabOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,11 +131,12 @@ Partial Class frmSalg
         'TabControlAdv1
         '
         Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(1264, 586)
-        Me.TabControlAdv1.Controls.Add(Me.TabPageAdv1)
-        Me.TabControlAdv1.Controls.Add(Me.TabPageAdv2)
-        Me.TabControlAdv1.Controls.Add(Me.TabPageAdv3)
-        Me.TabControlAdv1.Controls.Add(Me.TabPageAdv4)
-        Me.TabControlAdv1.Controls.Add(Me.TabPageAdv5)
+        Me.TabControlAdv1.Controls.Add(Me.TabRagSalg)
+        Me.TabControlAdv1.Controls.Add(Me.TabBooking)
+        Me.TabControlAdv1.Controls.Add(Me.TabFjernBestilling)
+        Me.TabControlAdv1.Controls.Add(Me.TabEndreBestilling)
+        Me.TabControlAdv1.Controls.Add(Me.TabOversikt)
+        Me.TabControlAdv1.Controls.Add(Me.TabRegKunde)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.ItemSize = New System.Drawing.Size(53, 48)
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 45)
@@ -136,36 +145,36 @@ Partial Class frmSalg
         Me.TabControlAdv1.TabIndex = 1
         Me.TabControlAdv1.ThemesEnabled = True
         '
-        'TabPageAdv1
+        'TabRagSalg
         '
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt8)
-        Me.TabPageAdv1.Controls.Add(Me.Label10)
-        Me.TabPageAdv1.Controls.Add(Me.ComboDropDown2)
-        Me.TabPageAdv1.Controls.Add(Me.Label9)
-        Me.TabPageAdv1.Controls.Add(Me.Label5)
-        Me.TabPageAdv1.Controls.Add(Me.Label4)
-        Me.TabPageAdv1.Controls.Add(Me.Label3)
-        Me.TabPageAdv1.Controls.Add(Me.Label2)
-        Me.TabPageAdv1.Controls.Add(Me.Label1)
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt5)
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt4)
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt3)
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt2)
-        Me.TabPageAdv1.Controls.Add(Me.TextBoxExt1)
-        Me.TabPageAdv1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPageAdv1.Image = Nothing
-        Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv1.Name = "TabPageAdv1"
-        Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(1257, 529)
-        Me.TabPageAdv1.TabIndex = 1
-        Me.TabPageAdv1.Text = "Registrer salg"
-        Me.TabPageAdv1.ThemesEnabled = False
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt8)
+        Me.TabRagSalg.Controls.Add(Me.Label10)
+        Me.TabRagSalg.Controls.Add(Me.ComboDropDown2)
+        Me.TabRagSalg.Controls.Add(Me.Label9)
+        Me.TabRagSalg.Controls.Add(Me.Label5)
+        Me.TabRagSalg.Controls.Add(Me.Label4)
+        Me.TabRagSalg.Controls.Add(Me.Label3)
+        Me.TabRagSalg.Controls.Add(Me.Label2)
+        Me.TabRagSalg.Controls.Add(Me.Label1)
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt5)
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt4)
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt3)
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt2)
+        Me.TabRagSalg.Controls.Add(Me.TextBoxExt1)
+        Me.TabRagSalg.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabRagSalg.Image = Nothing
+        Me.TabRagSalg.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabRagSalg.Location = New System.Drawing.Point(3, 53)
+        Me.TabRagSalg.Name = "TabRagSalg"
+        Me.TabRagSalg.ShowCloseButton = True
+        Me.TabRagSalg.Size = New System.Drawing.Size(1257, 529)
+        Me.TabRagSalg.TabIndex = 1
+        Me.TabRagSalg.Text = "Registrer salg"
+        Me.TabRagSalg.ThemesEnabled = False
         '
         'TextBoxExt8
         '
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt8.Location = New System.Drawing.Point(502, 111)
         Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -248,7 +257,7 @@ Partial Class frmSalg
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(154, 198)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -261,7 +270,7 @@ Partial Class frmSalg
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(154, 243)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -274,7 +283,7 @@ Partial Class frmSalg
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(161, 123)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -286,7 +295,7 @@ Partial Class frmSalg
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(161, 87)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -298,7 +307,7 @@ Partial Class frmSalg
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt1.Location = New System.Drawing.Point(161, 57)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -308,28 +317,80 @@ Partial Class frmSalg
         Me.TextBoxExt1.TabIndex = 1
         Me.TextBoxExt1.Text = "TextBoxExt1"
         '
-        'TabPageAdv2
+        'TabBooking
         '
-        Me.TabPageAdv2.Controls.Add(Me.ComboDropDown1)
-        Me.TabPageAdv2.Controls.Add(Me.Label8)
-        Me.TabPageAdv2.Controls.Add(Me.Label6)
-        Me.TabPageAdv2.Controls.Add(Me.TextBoxExt6)
-        Me.TabPageAdv2.Image = Nothing
-        Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv2.Name = "TabPageAdv2"
-        Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(1257, 529)
-        Me.TabPageAdv2.TabIndex = 2
-        Me.TabPageAdv2.Text = "Fjern Bestilling"
-        Me.TabPageAdv2.ThemesEnabled = False
+        Me.TabBooking.Controls.Add(Me.AutoLabel2)
+        Me.TabBooking.Controls.Add(Me.AutoLabel1)
+        Me.TabBooking.Controls.Add(Me.ComboBoxAdv2)
+        Me.TabBooking.Controls.Add(Me.ComboKurs)
+        Me.TabBooking.Image = Nothing
+        Me.TabBooking.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabBooking.Location = New System.Drawing.Point(3, 53)
+        Me.TabBooking.Name = "TabBooking"
+        Me.TabBooking.ShowCloseButton = True
+        Me.TabBooking.Size = New System.Drawing.Size(1257, 529)
+        Me.TabBooking.TabIndex = 6
+        Me.TabBooking.Text = "Book time"
+        Me.TabBooking.ThemesEnabled = True
+        '
+        'AutoLabel2
+        '
+        Me.AutoLabel2.Location = New System.Drawing.Point(27, 133)
+        Me.AutoLabel2.Name = "AutoLabel2"
+        Me.AutoLabel2.Size = New System.Drawing.Size(84, 20)
+        Me.AutoLabel2.TabIndex = 3
+        Me.AutoLabel2.Text = "AutoLabel2"
+        '
+        'AutoLabel1
+        '
+        Me.AutoLabel1.Location = New System.Drawing.Point(29, 73)
+        Me.AutoLabel1.Name = "AutoLabel1"
+        Me.AutoLabel1.Size = New System.Drawing.Size(71, 20)
+        Me.AutoLabel1.TabIndex = 2
+        Me.AutoLabel1.Text = "Velg Kurs:"
+        '
+        'ComboBoxAdv2
+        '
+        Me.ComboBoxAdv2.BeforeTouchSize = New System.Drawing.Size(156, 28)
+        Me.ComboBoxAdv2.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxAdv2.Location = New System.Drawing.Point(129, 133)
+        Me.ComboBoxAdv2.Name = "ComboBoxAdv2"
+        Me.ComboBoxAdv2.Size = New System.Drawing.Size(156, 28)
+        Me.ComboBoxAdv2.TabIndex = 1
+        Me.ComboBoxAdv2.Text = "ComboBoxAdv2"
+        '
+        'ComboKurs
+        '
+        Me.ComboKurs.BeforeTouchSize = New System.Drawing.Size(156, 28)
+        Me.ComboKurs.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboKurs.Location = New System.Drawing.Point(129, 73)
+        Me.ComboKurs.Name = "ComboKurs"
+        Me.ComboKurs.Size = New System.Drawing.Size(156, 28)
+        Me.ComboKurs.TabIndex = 0
+        Me.ComboKurs.Text = "ComboBoxAdv1"
+        '
+        'TabFjernBestilling
+        '
+        Me.TabFjernBestilling.Controls.Add(Me.ComboDropDown1)
+        Me.TabFjernBestilling.Controls.Add(Me.Label8)
+        Me.TabFjernBestilling.Controls.Add(Me.Label6)
+        Me.TabFjernBestilling.Controls.Add(Me.TextBoxExt6)
+        Me.TabFjernBestilling.Image = Nothing
+        Me.TabFjernBestilling.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabFjernBestilling.Location = New System.Drawing.Point(3, 53)
+        Me.TabFjernBestilling.Name = "TabFjernBestilling"
+        Me.TabFjernBestilling.ShowCloseButton = True
+        Me.TabFjernBestilling.Size = New System.Drawing.Size(1257, 529)
+        Me.TabFjernBestilling.TabIndex = 2
+        Me.TabFjernBestilling.Text = "Fjern Bestilling"
+        Me.TabFjernBestilling.ThemesEnabled = False
         '
         'ComboDropDown1
         '
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(140, 21)
         Me.ComboDropDown1.Location = New System.Drawing.Point(174, 112)
         Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown1.Size = New System.Drawing.Size(140, 21)
         Me.ComboDropDown1.TabIndex = 10
         '
         'Label8
@@ -352,7 +413,7 @@ Partial Class frmSalg
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(174, 67)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -362,40 +423,40 @@ Partial Class frmSalg
         Me.TextBoxExt6.TabIndex = 7
         Me.TextBoxExt6.Text = "TextBoxExt6"
         '
-        'TabPageAdv3
+        'TabEndreBestilling
         '
-        Me.TabPageAdv3.Controls.Add(Me.Label21)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt15)
-        Me.TabPageAdv3.Controls.Add(Me.Label20)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt14)
-        Me.TabPageAdv3.Controls.Add(Me.Label19)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt13)
-        Me.TabPageAdv3.Controls.Add(Me.Label18)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt12)
-        Me.TabPageAdv3.Controls.Add(Me.Label17)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt11)
-        Me.TabPageAdv3.Controls.Add(Me.Label16)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt9)
-        Me.TabPageAdv3.Controls.Add(Me.ComboDropDown5)
-        Me.TabPageAdv3.Controls.Add(Me.Label15)
-        Me.TabPageAdv3.Controls.Add(Me.Label14)
-        Me.TabPageAdv3.Controls.Add(Me.ComboDropDown4)
-        Me.TabPageAdv3.Controls.Add(Me.ComboDropDown3)
-        Me.TabPageAdv3.Controls.Add(Me.Label13)
-        Me.TabPageAdv3.Controls.Add(Me.Label12)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt10)
-        Me.TabPageAdv3.Controls.Add(Me.Label11)
-        Me.TabPageAdv3.Controls.Add(Me.Label7)
-        Me.TabPageAdv3.Controls.Add(Me.TextBoxExt7)
-        Me.TabPageAdv3.Image = Nothing
-        Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv3.Name = "TabPageAdv3"
-        Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(1257, 529)
-        Me.TabPageAdv3.TabIndex = 3
-        Me.TabPageAdv3.Text = "Endre Bestilling"
-        Me.TabPageAdv3.ThemesEnabled = False
+        Me.TabEndreBestilling.Controls.Add(Me.Label21)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt15)
+        Me.TabEndreBestilling.Controls.Add(Me.Label20)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt14)
+        Me.TabEndreBestilling.Controls.Add(Me.Label19)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt13)
+        Me.TabEndreBestilling.Controls.Add(Me.Label18)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt12)
+        Me.TabEndreBestilling.Controls.Add(Me.Label17)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt11)
+        Me.TabEndreBestilling.Controls.Add(Me.Label16)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt9)
+        Me.TabEndreBestilling.Controls.Add(Me.ComboDropDown5)
+        Me.TabEndreBestilling.Controls.Add(Me.Label15)
+        Me.TabEndreBestilling.Controls.Add(Me.Label14)
+        Me.TabEndreBestilling.Controls.Add(Me.ComboDropDown4)
+        Me.TabEndreBestilling.Controls.Add(Me.ComboDropDown3)
+        Me.TabEndreBestilling.Controls.Add(Me.Label13)
+        Me.TabEndreBestilling.Controls.Add(Me.Label12)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt10)
+        Me.TabEndreBestilling.Controls.Add(Me.Label11)
+        Me.TabEndreBestilling.Controls.Add(Me.Label7)
+        Me.TabEndreBestilling.Controls.Add(Me.TextBoxExt7)
+        Me.TabEndreBestilling.Image = Nothing
+        Me.TabEndreBestilling.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabEndreBestilling.Location = New System.Drawing.Point(3, 53)
+        Me.TabEndreBestilling.Name = "TabEndreBestilling"
+        Me.TabEndreBestilling.ShowCloseButton = True
+        Me.TabEndreBestilling.Size = New System.Drawing.Size(1257, 529)
+        Me.TabEndreBestilling.TabIndex = 3
+        Me.TabEndreBestilling.Text = "Endre Bestilling"
+        Me.TabEndreBestilling.ThemesEnabled = False
         '
         'Label21
         '
@@ -409,7 +470,7 @@ Partial Class frmSalg
         '
         'TextBoxExt15
         '
-        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt15.Location = New System.Drawing.Point(900, 211)
         Me.TextBoxExt15.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -432,7 +493,7 @@ Partial Class frmSalg
         '
         'TextBoxExt14
         '
-        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt14.Location = New System.Drawing.Point(900, 177)
         Me.TextBoxExt14.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -455,7 +516,7 @@ Partial Class frmSalg
         '
         'TextBoxExt13
         '
-        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt13.Location = New System.Drawing.Point(900, 104)
         Me.TextBoxExt13.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -478,7 +539,7 @@ Partial Class frmSalg
         '
         'TextBoxExt12
         '
-        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt12.Location = New System.Drawing.Point(900, 137)
         Me.TextBoxExt12.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -501,7 +562,7 @@ Partial Class frmSalg
         '
         'TextBoxExt11
         '
-        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt11.Location = New System.Drawing.Point(900, 75)
         Me.TextBoxExt11.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -524,7 +585,7 @@ Partial Class frmSalg
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(194, 255)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -536,10 +597,10 @@ Partial Class frmSalg
         '
         'ComboDropDown5
         '
-        Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 21)
         Me.ComboDropDown5.Location = New System.Drawing.Point(194, 85)
         Me.ComboDropDown5.Name = "ComboDropDown5"
-        Me.ComboDropDown5.Size = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown5.Size = New System.Drawing.Size(140, 21)
         Me.ComboDropDown5.TabIndex = 19
         '
         'Label15
@@ -563,18 +624,18 @@ Partial Class frmSalg
         '
         'ComboDropDown4
         '
-        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 21)
         Me.ComboDropDown4.Location = New System.Drawing.Point(194, 125)
         Me.ComboDropDown4.Name = "ComboDropDown4"
-        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 21)
         Me.ComboDropDown4.TabIndex = 16
         '
         'ComboDropDown3
         '
-        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 21)
         Me.ComboDropDown3.Location = New System.Drawing.Point(194, 210)
         Me.ComboDropDown3.Name = "ComboDropDown3"
-        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 21)
         Me.ComboDropDown3.TabIndex = 15
         '
         'Label13
@@ -599,7 +660,7 @@ Partial Class frmSalg
         '
         'TextBoxExt10
         '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt10.Location = New System.Drawing.Point(194, 170)
         Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -630,7 +691,7 @@ Partial Class frmSalg
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(181, 34)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 27)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(194, 42)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -640,18 +701,18 @@ Partial Class frmSalg
         Me.TextBoxExt7.TabIndex = 7
         Me.TextBoxExt7.Text = "TextBoxExt7"
         '
-        'TabPageAdv4
+        'TabOversikt
         '
-        Me.TabPageAdv4.Controls.Add(Me.GridDataBoundGrid1)
-        Me.TabPageAdv4.Image = Nothing
-        Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv4.Name = "TabPageAdv4"
-        Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(1257, 529)
-        Me.TabPageAdv4.TabIndex = 4
-        Me.TabPageAdv4.Text = "Oversikt"
-        Me.TabPageAdv4.ThemesEnabled = False
+        Me.TabOversikt.Controls.Add(Me.GridDataBoundGrid1)
+        Me.TabOversikt.Image = Nothing
+        Me.TabOversikt.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabOversikt.Location = New System.Drawing.Point(3, 53)
+        Me.TabOversikt.Name = "TabOversikt"
+        Me.TabOversikt.ShowCloseButton = True
+        Me.TabOversikt.Size = New System.Drawing.Size(1257, 529)
+        Me.TabOversikt.TabIndex = 4
+        Me.TabOversikt.Text = "Oversikt"
+        Me.TabOversikt.ThemesEnabled = False
         '
         'GridDataBoundGrid1
         '
@@ -679,17 +740,17 @@ Partial Class frmSalg
         Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
         Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TabPageAdv5
+        'TabRegKunde
         '
-        Me.TabPageAdv5.Image = Nothing
-        Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv5.Name = "TabPageAdv5"
-        Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(1257, 529)
-        Me.TabPageAdv5.TabIndex = 5
-        Me.TabPageAdv5.Text = "Register ny kunde"
-        Me.TabPageAdv5.ThemesEnabled = False
+        Me.TabRegKunde.Image = Nothing
+        Me.TabRegKunde.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabRegKunde.Location = New System.Drawing.Point(3, 53)
+        Me.TabRegKunde.Name = "TabRegKunde"
+        Me.TabRegKunde.ShowCloseButton = True
+        Me.TabRegKunde.Size = New System.Drawing.Size(1257, 529)
+        Me.TabRegKunde.TabIndex = 5
+        Me.TabRegKunde.Text = "Register ny kunde"
+        Me.TabRegKunde.ThemesEnabled = False
         '
         'KundeBindingSource
         '
@@ -719,8 +780,8 @@ Partial Class frmSalg
         Me.Text = "Form1"
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlAdv1.ResumeLayout(False)
-        Me.TabPageAdv1.ResumeLayout(False)
-        Me.TabPageAdv1.PerformLayout()
+        Me.TabRagSalg.ResumeLayout(False)
+        Me.TabRagSalg.PerformLayout()
         CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboDropDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -728,12 +789,16 @@ Partial Class frmSalg
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageAdv2.ResumeLayout(False)
-        Me.TabPageAdv2.PerformLayout()
+        Me.TabBooking.ResumeLayout(False)
+        Me.TabBooking.PerformLayout()
+        CType(Me.ComboBoxAdv2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabFjernBestilling.ResumeLayout(False)
+        Me.TabFjernBestilling.PerformLayout()
         CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageAdv3.ResumeLayout(False)
-        Me.TabPageAdv3.PerformLayout()
+        Me.TabEndreBestilling.ResumeLayout(False)
+        Me.TabEndreBestilling.PerformLayout()
         CType(Me.TextBoxExt15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).EndInit()
@@ -745,7 +810,7 @@ Partial Class frmSalg
         CType(Me.ComboDropDown3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageAdv4.ResumeLayout(False)
+        Me.TabOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -757,10 +822,10 @@ Partial Class frmSalg
 
     Friend WithEvents ToolStripEx1 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents TabControlAdv1 As Syncfusion.Windows.Forms.Tools.TabControlAdv
-    Friend WithEvents TabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents TabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents TabPageAdv4 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabRagSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabFjernBestilling As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabEndreBestilling As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -770,7 +835,7 @@ Partial Class frmSalg
     Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents TextBoxExt2 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents TextBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TabPageAdv5 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabRegKunde As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBoxExt6 As Syncfusion.Windows.Forms.Tools.TextBoxExt
@@ -809,4 +874,9 @@ Partial Class frmSalg
     Friend WithEvents KundeTableAdapter As drift8_2016DataSetTableAdapters.KundeTableAdapter
     Friend WithEvents KjøpBindingSource As BindingSource
     Friend WithEvents KjøpTableAdapter As drift8_2016DataSetTableAdapters.KjøpTableAdapter
+    Friend WithEvents TabBooking As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents ComboBoxAdv2 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents ComboKurs As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
 End Class
