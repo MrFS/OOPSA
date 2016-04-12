@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmSalg
     Inherits Syncfusion.Windows.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmSalg
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
@@ -43,7 +43,7 @@ Partial Class frmSalg
         Me.TabBooking = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.ComboBoxAdv2 = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.ComboKunde = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.ComboKurs = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.TabFjernBestilling = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
@@ -82,6 +82,12 @@ Partial Class frmSalg
         Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
+        Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel()
+        Me.GridDataBoundGrid2 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.Drift8_2016DataSet1 = New OOPSA.drift8_2016DataSet1()
+        Me.KursBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KursTableAdapter = New OOPSA.drift8_2016DataSet1TableAdapters.KursTableAdapter()
+        Me.ButtonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabRagSalg.SuspendLayout()
@@ -93,7 +99,7 @@ Partial Class frmSalg
         CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabBooking.SuspendLayout()
-        CType(Me.ComboBoxAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboKunde, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabFjernBestilling.SuspendLayout()
         CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,6 +121,11 @@ Partial Class frmSalg
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GradientPanel1.SuspendLayout()
+        CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KursBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStripEx1
@@ -174,7 +185,7 @@ Partial Class frmSalg
         '
         'TextBoxExt8
         '
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt8.Location = New System.Drawing.Point(502, 111)
         Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -257,7 +268,7 @@ Partial Class frmSalg
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(154, 198)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -270,7 +281,7 @@ Partial Class frmSalg
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(154, 243)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -283,7 +294,7 @@ Partial Class frmSalg
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(161, 123)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -295,7 +306,7 @@ Partial Class frmSalg
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(161, 87)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -307,7 +318,7 @@ Partial Class frmSalg
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt1.Location = New System.Drawing.Point(161, 57)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -319,9 +330,11 @@ Partial Class frmSalg
         '
         'TabBooking
         '
+        Me.TabBooking.Controls.Add(Me.ButtonAdv1)
+        Me.TabBooking.Controls.Add(Me.GradientPanel1)
         Me.TabBooking.Controls.Add(Me.AutoLabel2)
         Me.TabBooking.Controls.Add(Me.AutoLabel1)
-        Me.TabBooking.Controls.Add(Me.ComboBoxAdv2)
+        Me.TabBooking.Controls.Add(Me.ComboKunde)
         Me.TabBooking.Controls.Add(Me.ComboKurs)
         Me.TabBooking.Image = Nothing
         Me.TabBooking.ImageSize = New System.Drawing.Size(16, 16)
@@ -337,9 +350,9 @@ Partial Class frmSalg
         '
         Me.AutoLabel2.Location = New System.Drawing.Point(27, 133)
         Me.AutoLabel2.Name = "AutoLabel2"
-        Me.AutoLabel2.Size = New System.Drawing.Size(84, 20)
+        Me.AutoLabel2.Size = New System.Drawing.Size(50, 20)
         Me.AutoLabel2.TabIndex = 3
-        Me.AutoLabel2.Text = "AutoLabel2"
+        Me.AutoLabel2.Text = "Kunde"
         '
         'AutoLabel1
         '
@@ -349,25 +362,23 @@ Partial Class frmSalg
         Me.AutoLabel1.TabIndex = 2
         Me.AutoLabel1.Text = "Velg Kurs:"
         '
-        'ComboBoxAdv2
+        'ComboKunde
         '
-        Me.ComboBoxAdv2.BeforeTouchSize = New System.Drawing.Size(156, 28)
-        Me.ComboBoxAdv2.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBoxAdv2.Location = New System.Drawing.Point(129, 133)
-        Me.ComboBoxAdv2.Name = "ComboBoxAdv2"
-        Me.ComboBoxAdv2.Size = New System.Drawing.Size(156, 28)
-        Me.ComboBoxAdv2.TabIndex = 1
-        Me.ComboBoxAdv2.Text = "ComboBoxAdv2"
+        Me.ComboKunde.BeforeTouchSize = New System.Drawing.Size(202, 28)
+        Me.ComboKunde.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboKunde.Location = New System.Drawing.Point(129, 133)
+        Me.ComboKunde.Name = "ComboKunde"
+        Me.ComboKunde.Size = New System.Drawing.Size(202, 28)
+        Me.ComboKunde.TabIndex = 1
         '
         'ComboKurs
         '
-        Me.ComboKurs.BeforeTouchSize = New System.Drawing.Size(156, 28)
+        Me.ComboKurs.BeforeTouchSize = New System.Drawing.Size(202, 28)
         Me.ComboKurs.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboKurs.Location = New System.Drawing.Point(129, 73)
         Me.ComboKurs.Name = "ComboKurs"
-        Me.ComboKurs.Size = New System.Drawing.Size(156, 28)
+        Me.ComboKurs.Size = New System.Drawing.Size(202, 28)
         Me.ComboKurs.TabIndex = 0
-        Me.ComboKurs.Text = "ComboBoxAdv1"
         '
         'TabFjernBestilling
         '
@@ -413,7 +424,7 @@ Partial Class frmSalg
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(174, 67)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -470,7 +481,7 @@ Partial Class frmSalg
         '
         'TextBoxExt15
         '
-        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt15.Location = New System.Drawing.Point(900, 211)
         Me.TextBoxExt15.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -493,7 +504,7 @@ Partial Class frmSalg
         '
         'TextBoxExt14
         '
-        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt14.Location = New System.Drawing.Point(900, 177)
         Me.TextBoxExt14.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -516,7 +527,7 @@ Partial Class frmSalg
         '
         'TextBoxExt13
         '
-        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt13.Location = New System.Drawing.Point(900, 104)
         Me.TextBoxExt13.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -539,7 +550,7 @@ Partial Class frmSalg
         '
         'TextBoxExt12
         '
-        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt12.Location = New System.Drawing.Point(900, 137)
         Me.TextBoxExt12.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -562,7 +573,7 @@ Partial Class frmSalg
         '
         'TextBoxExt11
         '
-        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt11.Location = New System.Drawing.Point(900, 75)
         Me.TextBoxExt11.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -585,7 +596,7 @@ Partial Class frmSalg
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(194, 255)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -660,7 +671,7 @@ Partial Class frmSalg
         '
         'TextBoxExt10
         '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt10.Location = New System.Drawing.Point(194, 170)
         Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -691,7 +702,7 @@ Partial Class frmSalg
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 27)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(149, 27)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(194, 42)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -765,6 +776,66 @@ Partial Class frmSalg
         '
         Me.KjøpTableAdapter.ClearBeforeFill = True
         '
+        'GradientPanel1
+        '
+        Me.GradientPanel1.Controls.Add(Me.GridDataBoundGrid2)
+        Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GradientPanel1.Location = New System.Drawing.Point(742, 0)
+        Me.GradientPanel1.Name = "GradientPanel1"
+        Me.GradientPanel1.Size = New System.Drawing.Size(515, 529)
+        Me.GradientPanel1.TabIndex = 4
+        '
+        'GridDataBoundGrid2
+        '
+        Me.GridDataBoundGrid2.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.GridDataBoundGrid2.DataSource = Me.KursBindingSource
+        Me.GridDataBoundGrid2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid2.EnableAddNew = False
+        Me.GridDataBoundGrid2.EnableEdit = False
+        Me.GridDataBoundGrid2.EnableRemove = False
+        Me.GridDataBoundGrid2.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid2.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid2.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid2.Name = "GridDataBoundGrid2"
+        Me.GridDataBoundGrid2.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(511, 525)
+        Me.GridDataBoundGrid2.SmartSizeBox = False
+        Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid2.TabIndex = 0
+        Me.GridDataBoundGrid2.Text = "GridDataBoundGrid2"
+        Me.GridDataBoundGrid2.ThemesEnabled = True
+        Me.GridDataBoundGrid2.UseListChangedEvent = True
+        Me.GridDataBoundGrid2.UseRightToLeftCompatibleTextBox = True
+        '
+        'Drift8_2016DataSet1
+        '
+        Me.Drift8_2016DataSet1.DataSetName = "drift8_2016DataSet1"
+        Me.Drift8_2016DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'KursBindingSource
+        '
+        Me.KursBindingSource.DataMember = "Kurs"
+        Me.KursBindingSource.DataSource = Me.Drift8_2016DataSet1
+        '
+        'KursTableAdapter
+        '
+        Me.KursTableAdapter.ClearBeforeFill = True
+        '
+        'ButtonAdv1
+        '
+        Me.ButtonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
+        Me.ButtonAdv1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(107, 36)
+        Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
+        Me.ButtonAdv1.IsBackStageButton = False
+        Me.ButtonAdv1.Location = New System.Drawing.Point(129, 195)
+        Me.ButtonAdv1.Name = "ButtonAdv1"
+        Me.ButtonAdv1.Size = New System.Drawing.Size(107, 36)
+        Me.ButtonAdv1.TabIndex = 5
+        Me.ButtonAdv1.Text = "Bestill "
+        '
         'frmSalg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -791,7 +862,7 @@ Partial Class frmSalg
         CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabBooking.ResumeLayout(False)
         Me.TabBooking.PerformLayout()
-        CType(Me.ComboBoxAdv2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboKunde, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabFjernBestilling.ResumeLayout(False)
         Me.TabFjernBestilling.PerformLayout()
@@ -815,6 +886,11 @@ Partial Class frmSalg
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GradientPanel1.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KursBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -877,6 +953,12 @@ Partial Class frmSalg
     Friend WithEvents TabBooking As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
-    Friend WithEvents ComboBoxAdv2 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents ComboKunde As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
     Friend WithEvents ComboKurs As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
+    Friend WithEvents GridDataBoundGrid2 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents Drift8_2016DataSet1 As drift8_2016DataSet1
+    Friend WithEvents KursBindingSource As BindingSource
+    Friend WithEvents KursTableAdapter As drift8_2016DataSet1TableAdapters.KursTableAdapter
+    Friend WithEvents ButtonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
 End Class
