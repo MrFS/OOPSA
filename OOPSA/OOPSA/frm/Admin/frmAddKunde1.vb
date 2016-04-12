@@ -14,7 +14,7 @@ Public Class frmAddKunde1
                 Dim cmd1 As New MySqlCommand("INSERT INTO K_privat (P_addresse, Post) VALUES (@P_addresse, @Post)", con)
 
                 cmd1.Parameters.AddWithValue("@P_addresse", txtPrivAdresse.Text)
-                cmd1.Parameters.AddWithValue("@Post", txtPrivPnr)
+                cmd1.Parameters.AddWithValue("@Post", CInt(txtPrivPnr.Text))
 
                 cmd1.ExecuteNonQuery()
             Else
@@ -22,7 +22,7 @@ Public Class frmAddKunde1
                 Dim cmd2 As New MySqlCommand("INSERT INTO K_bedriftt (B_addresse, Post, Bedrift) VALUES (@B_addresse, @Post, @Bedrift)", con)
 
                 cmd2.Parameters.AddWithValue("@B_addresse", txtBedAdresse.Text)
-                cmd2.Parameters.AddWithValue("@Post", txtKundeEpost.Text)
+                cmd2.Parameters.AddWithValue("@Post", CInt(txtBedPnr.Text))
                 cmd2.Parameters.AddWithValue("@Bedrift", txtBedriftNavn.Text)
 
                 cmd2.ExecuteNonQuery()
@@ -47,6 +47,9 @@ Public Class frmAddKunde1
     End Sub
 
     Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles btnPrivatKunde.Click
+
+        Me.Height = 375
+
         txtKundeEnavn.Visible = True
         txtKundeEpost.Visible = True
         txtKundeFnavn.Visible = True
@@ -60,13 +63,19 @@ Public Class frmAddKunde1
         lblEtternavn.Visible = True
         lblPostnr.Visible = True
 
-        btnBedriftKunde.Visible = False
+        'btnBedriftKunde.Visible = False
         kundetype = True
 
     End Sub
     'viser elementer tilhørende privatkunde registrering
 
     Private Sub frmAddKunde1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Initialize()
+
+        Me.Height = 150
+        Me.Refresh()
+
         'privatkunde + bedriftkunde
         txtKundeEnavn.Visible = False
         txtKundeEpost.Visible = False
@@ -93,6 +102,9 @@ Public Class frmAddKunde1
     'Sjuler alle elementer før man har valgt hva som skal registreres
     Private Sub btnBedriftKunde_Click(sender As Object, e As EventArgs) Handles btnBedriftKunde.Click
 
+        Me.Height = 375
+        Me.Refresh()
+
         txtBedriftNavn.Visible = True
         txtBedPnr.Visible = True
         txtBedAdresse.Visible = True
@@ -107,7 +119,7 @@ Public Class frmAddKunde1
         lblFornavn.Visible = True
         lblEtternavn.Visible = True
 
-        btnPrivatKunde.Hide()
+        'btnPrivatKunde.Hide()
 
     End Sub
     'viser elementer tilhørende bedriftsregistrering

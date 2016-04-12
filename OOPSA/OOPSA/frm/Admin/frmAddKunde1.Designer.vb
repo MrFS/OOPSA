@@ -214,7 +214,7 @@ Partial Class frmAddKunde1
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
         Me.CaptionButtonColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(257, 322)
+        Me.ClientSize = New System.Drawing.Size(258, 322)
         Me.Controls.Add(Me.txtBedPnr)
         Me.Controls.Add(Me.txtBedAdresse)
         Me.Controls.Add(Me.btnBedriftKunde)
