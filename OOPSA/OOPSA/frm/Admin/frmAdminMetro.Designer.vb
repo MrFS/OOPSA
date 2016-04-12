@@ -24,6 +24,7 @@ Partial Class frmAdminMetro
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdminMetro))
         Dim GridBaseStyle1 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle2 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle3 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
@@ -37,50 +38,27 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle10 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle11 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle12 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdminMetro))
+        Dim GridBaseStyle13 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle14 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle15 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle16 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle17 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle18 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle19 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle20 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle21 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle22 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle23 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle24 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
         Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
         Me.SalgsRaportBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
+        Me.dtSalgReportingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.tbAnsKund = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
-        Me.ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx8 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx9 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.AnsattBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStripEx11 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.toolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.toolstripCMBxKunder = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripTxtSubject = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.txtFontCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-        Me.txtFontSizeCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripEx3 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.toolstripDBInfo = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
-        Me.AnsattTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.AnsattTableAdapter()
-        Me.SpellChecker1 = New Syncfusion.Text.SpellChecker(Me.components)
-        Me.SalgsRaportTableAdapter = New OOPSA.drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter()
-        Me.Drift82016dsSalgsRapportViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SalgsRaportBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.tbOverview = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabControlAdv3 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -88,13 +66,25 @@ Partial Class frmAdminMetro
         Me.reportSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.SalgsrapportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DagligeSalgToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.reportLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ToolStripEx8 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.reportLeie = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ToolStripEx9 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ToolStripDropDownButton4 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.FrmLagerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FrmSalgToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tbPersoner = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel()
         Me.TabControlAdv5 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
@@ -104,13 +94,13 @@ Partial Class frmAdminMetro
         Me.btnChngPW = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.btnAddUsr = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.dgvAnsatte = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.AnsattBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.tbKunder = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbKunderOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
-        Me.btnUpdKunde = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.btnKundeAdd = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.dgvKunde = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.tbKundeEpost = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -119,6 +109,26 @@ Partial Class frmAdminMetro
         Me.StatusStripLabel1 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
         Me.StatusStripProgressBar1 = New Syncfusion.Windows.Forms.Tools.StatusStripProgressBar()
         Me.StatusStripLabel2 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
+        Me.ToolStripEx11 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.NewToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.OpenToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.SaveToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.PrintToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CutToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.CopyToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.PasteToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.toolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.btnSendEpostKunde = New System.Windows.Forms.ToolStripButton()
+        Me.toolstripCMBxKunder = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripTxtSubject = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSplitButtonEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx()
+        Me.FakturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NyhetsbrevToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VareoversiktToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabControlAdv2 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbTextEdit = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -126,11 +136,34 @@ Partial Class frmAdminMetro
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.FontListBox1 = New Syncfusion.Windows.Forms.Tools.FontListBox()
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.PrintToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.CutToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.CopyToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.txtUndo = New System.Windows.Forms.ToolStripButton()
+        Me.txtRedo = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.txtFontCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+        Me.txtFontSizeCombo = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.txtInsertImg = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.txtAlignLeft = New System.Windows.Forms.ToolStripButton()
+        Me.txtAlignJust = New System.Windows.Forms.ToolStripButton()
+        Me.txtAlignRight = New System.Windows.Forms.ToolStripButton()
         Me.tbUtleieOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ButtonLeggTilLeie = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.tbReporting = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.tbSalgOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ToolStripEx3 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbSettings = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.tabSettings = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
@@ -147,65 +180,50 @@ Partial Class frmAdminMetro
         Me.lblSvrUser = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblDB = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblServer = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.dtSalgReportingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.SalgsrapportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DagligeSalgToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.ToolStripDropDownButton4 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.FrmLagerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FrmSalgToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.OpenToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.SaveToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.PrintToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.CutToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.CopyToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.PasteToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.btnSendEpostKunde = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSplitButtonEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx()
-        Me.FakturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NyhetsbrevToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VareoversiktToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.PrintToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.CutToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.CopyToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.txtUndo = New System.Windows.Forms.ToolStripButton()
-        Me.txtRedo = New System.Windows.Forms.ToolStripButton()
-        Me.txtInsertImg = New System.Windows.Forms.ToolStripButton()
-        Me.txtAlignLeft = New System.Windows.Forms.ToolStripButton()
-        Me.txtAlignJust = New System.Windows.Forms.ToolStripButton()
-        Me.txtAlignRight = New System.Windows.Forms.ToolStripButton()
+        Me.toolstripDBInfo = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tsBtnDBInfo = New System.Windows.Forms.ToolStripButton()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.TabLager = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
+        Me.TabPageAdv5 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid4 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
+        Me.TabPageAdv6 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid3 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.LagerRapportTrondheimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSetTrondheimLager = New OOPSA.drift8_2016DataSetTrondheimLager()
+        Me.TabPageAdv7 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid2 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.LagerRapportStavangerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSetLagerRapportStavnager = New OOPSA.drift8_2016DataSetLagerRapportStavnager()
+        Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
+        Me.AnsattTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.AnsattTableAdapter()
+        Me.SpellChecker1 = New Syncfusion.Text.SpellChecker(Me.components)
+        Me.SalgsRaportTableAdapter = New OOPSA.drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter()
+        Me.Drift82016dsSalgsRapportViewBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SalgsRaportBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
+        Me.A_LagerTableAdapter1 = New OOPSA.drift8_2016DataSetTableAdapters.A_LagerTableAdapter()
+        Me.SalgsRaportBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
+        Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
+        Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbAnsKund, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbAnsKund.SuspendLayout()
-        Me.ToolStripEx7.SuspendLayout()
-        Me.ToolStripEx8.SuspendLayout()
-        Me.ToolStripEx9.SuspendLayout()
-        Me.ToolStripEx1.SuspendLayout()
-        CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStripEx11.SuspendLayout()
-        Me.ToolStripEx6.SuspendLayout()
-        Me.toolstripDBInfo.SuspendLayout()
-        Me.ToolStripEx10.SuspendLayout()
-        CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbOverview.SuspendLayout()
         CType(Me.TabControlAdv3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv3.SuspendLayout()
@@ -214,10 +232,14 @@ Partial Class frmAdminMetro
         Me.TabControlAdv4.SuspendLayout()
         Me.reportSalg.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.ToolStripEx7.SuspendLayout()
         Me.reportLager.SuspendLayout()
         Me.Panel8.SuspendLayout()
+        Me.ToolStripEx8.SuspendLayout()
         Me.reportLeie.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.ToolStripEx9.SuspendLayout()
+        Me.ToolStripEx1.SuspendLayout()
         Me.tbPersoner.SuspendLayout()
         CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GradientPanel1.SuspendLayout()
@@ -229,25 +251,28 @@ Partial Class frmAdminMetro
         Me.SplitContainerAdv1.Panel2.SuspendLayout()
         Me.SplitContainerAdv1.SuspendLayout()
         CType(Me.dgvAnsatte, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbKunder.SuspendLayout()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.tbKunderOversikt.SuspendLayout()
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
         CType(Me.dgvKunde, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbKundeEpost.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.StatusStripEx1.SuspendLayout()
+        Me.ToolStripEx11.SuspendLayout()
         Me.tbSalg.SuspendLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv2.SuspendLayout()
         Me.tbTextEdit.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.ToolStripEx6.SuspendLayout()
         Me.tbUtleieOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbSettings.SuspendLayout()
@@ -267,9 +292,26 @@ Partial Class frmAdminMetro
         CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtServer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.toolstripDBInfo.SuspendLayout()
+        Me.ToolStripEx10.SuspendLayout()
         Me.tbLager.SuspendLayout()
-        CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabLager, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabLager.SuspendLayout()
+        Me.TabPageAdv5.SuspendLayout()
+        CType(Me.GridDataBoundGrid4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageAdv6.SuspendLayout()
+        CType(Me.GridDataBoundGrid3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LagerRapportTrondheimBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSetTrondheimLager, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageAdv7.SuspendLayout()
+        CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SalgsRaportBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -286,6 +328,10 @@ Partial Class frmAdminMetro
         '
         Me.SalgsRaportBindingSource2.DataMember = "SalgsRaport"
         Me.SalgsRaportBindingSource2.DataSource = Me.drift8_2016dsSalgsRapportView
+        '
+        'VisAnsattesSalgBindingSource
+        '
+        Me.VisAnsattesSalgBindingSource.DataMember = "VisAnsattesSalg"
         '
         'KjøpBindingSource
         '
@@ -325,317 +371,6 @@ Partial Class frmAdminMetro
         Me.tbAnsKund.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
         Me.tbAnsKund.ThemesEnabled = True
         '
-        'ToolStripEx7
-        '
-        Me.ToolStripEx7.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx7.Image = Nothing
-        Me.ToolStripEx7.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2})
-        Me.ToolStripEx7.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx7.Name = "ToolStripEx7"
-        Me.ToolStripEx7.Office12Mode = False
-        Me.ToolStripEx7.Size = New System.Drawing.Size(813, 42)
-        Me.ToolStripEx7.TabIndex = 0
-        Me.ToolStripEx7.Text = "Salgsrapporter"
-        Me.ToolStripEx7.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx8
-        '
-        Me.ToolStripEx8.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx8.Image = Nothing
-        Me.ToolStripEx8.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton3})
-        Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx8.Name = "ToolStripEx8"
-        Me.ToolStripEx8.Office12Mode = False
-        Me.ToolStripEx8.Size = New System.Drawing.Size(813, 42)
-        Me.ToolStripEx8.TabIndex = 1
-        Me.ToolStripEx8.Text = "Lagerrapporter"
-        Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx9
-        '
-        Me.ToolStripEx9.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx9.Image = Nothing
-        Me.ToolStripEx9.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton4})
-        Me.ToolStripEx9.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx9.Name = "ToolStripEx9"
-        Me.ToolStripEx9.Office12Mode = False
-        Me.ToolStripEx9.Size = New System.Drawing.Size(813, 42)
-        Me.ToolStripEx9.TabIndex = 1
-        Me.ToolStripEx9.Text = "Utleierapporter"
-        Me.ToolStripEx9.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx1
-        '
-        Me.ToolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx1.Image = Nothing
-        Me.ToolStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1})
-        Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx1.Name = "ToolStripEx1"
-        Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(872, 42)
-        Me.ToolStripEx1.TabIndex = 0
-        Me.ToolStripEx1.Text = "Oversikt"
-        Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'AnsattBindingSource
-        '
-        Me.AnsattBindingSource.DataMember = "Ansatt"
-        Me.AnsattBindingSource.DataSource = Me.drift8_2016DataSet
-        '
-        'KundeBindingSource
-        '
-        Me.KundeBindingSource.DataMember = "Kunde"
-        Me.KundeBindingSource.DataSource = Me.drift8_2016DataSet
-        '
-        'ToolStripEx11
-        '
-        Me.ToolStripEx11.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx11.Image = Nothing
-        Me.ToolStripEx11.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx11.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton1, Me.OpenToolStripButton1, Me.SaveToolStripButton1, Me.PrintToolStripButton1, Me.toolStripSeparator5, Me.CutToolStripButton1, Me.CopyToolStripButton1, Me.PasteToolStripButton1, Me.toolStripSeparator6, Me.btnSendEpostKunde, Me.toolstripCMBxKunder, Me.ToolStripLabel1, Me.ToolStripTxtSubject, Me.ToolStripLabel2, Me.ToolStripSplitButtonEx1})
-        Me.ToolStripEx11.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx11.Name = "ToolStripEx11"
-        Me.ToolStripEx11.Office12Mode = False
-        Me.ToolStripEx11.Size = New System.Drawing.Size(823, 42)
-        Me.ToolStripEx11.TabIndex = 0
-        Me.ToolStripEx11.Text = "Epost"
-        Me.ToolStripEx11.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'toolStripSeparator5
-        '
-        Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(6, 27)
-        '
-        'toolStripSeparator6
-        '
-        Me.toolStripSeparator6.Name = "toolStripSeparator6"
-        Me.toolStripSeparator6.Size = New System.Drawing.Size(6, 27)
-        '
-        'toolstripCMBxKunder
-        '
-        Me.toolstripCMBxKunder.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.toolstripCMBxKunder.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.toolstripCMBxKunder.MaxLength = 32767
-        Me.toolstripCMBxKunder.Name = "toolstripCMBxKunder"
-        Me.toolstripCMBxKunder.Size = New System.Drawing.Size(121, 27)
-        Me.toolstripCMBxKunder.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripLabel1
-        '
-        Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(49, 24)
-        Me.ToolStripLabel1.Text = "Send til:"
-        '
-        'ToolStripTxtSubject
-        '
-        Me.ToolStripTxtSubject.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripTxtSubject.Name = "ToolStripTxtSubject"
-        Me.ToolStripTxtSubject.Size = New System.Drawing.Size(200, 27)
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(49, 24)
-        Me.ToolStripLabel2.Text = "Subject:"
-        '
-        'ToolStripEx2
-        '
-        Me.ToolStripEx2.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx2.Image = Nothing
-        Me.ToolStripEx2.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx2.Name = "ToolStripEx2"
-        Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 40)
-        Me.ToolStripEx2.TabIndex = 4
-        Me.ToolStripEx2.Text = "Personaliaoversikt"
-        Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx6
-        '
-        Me.ToolStripEx6.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx6.Image = Nothing
-        Me.ToolStripEx6.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator1, Me.txtUndo, Me.txtRedo, Me.ToolStripSeparator4, Me.txtFontCombo, Me.txtFontSizeCombo, Me.ToolStripSeparator2, Me.txtInsertImg, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.txtAlignLeft, Me.txtAlignJust, Me.txtAlignRight})
-        Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx6.Name = "ToolStripEx6"
-        Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(865, 42)
-        Me.ToolStripEx6.TabIndex = 2
-        Me.ToolStripEx6.Text = "Teksteditor"
-        Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'toolStripSeparator
-        '
-        Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 27)
-        '
-        'toolStripSeparator1
-        '
-        Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 27)
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 27)
-        '
-        'txtFontCombo
-        '
-        Me.txtFontCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        Me.txtFontCombo.MaxLength = 32767
-        Me.txtFontCombo.Name = "txtFontCombo"
-        Me.txtFontCombo.Size = New System.Drawing.Size(135, 27)
-        Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        Me.txtFontCombo.Text = "Arial"
-        '
-        'txtFontSizeCombo
-        '
-        Me.txtFontSizeCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
-        Me.txtFontSizeCombo.MaxLength = 32767
-        Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
-        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 27)
-        Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        Me.txtFontSizeCombo.Text = "8"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
-        '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 24)
-        Me.ToolStripButton4.Text = "ToolStripButton4"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
-        '
-        'ToolStripEx3
-        '
-        Me.ToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx3.Image = Nothing
-        Me.ToolStripEx3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx3.Name = "ToolStripEx3"
-        Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 40)
-        Me.ToolStripEx3.TabIndex = 1
-        Me.ToolStripEx3.Text = "Salg & Utleie"
-        Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'toolstripDBInfo
-        '
-        Me.toolstripDBInfo.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.toolstripDBInfo.Image = Nothing
-        Me.toolstripDBInfo.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.toolstripDBInfo.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsBtnDBInfo})
-        Me.toolstripDBInfo.Location = New System.Drawing.Point(0, 0)
-        Me.toolstripDBInfo.Name = "toolstripDBInfo"
-        Me.toolstripDBInfo.Office12Mode = False
-        Me.toolstripDBInfo.Size = New System.Drawing.Size(288, 42)
-        Me.toolstripDBInfo.TabIndex = 0
-        Me.toolstripDBInfo.Text = "Database Information"
-        Me.toolstripDBInfo.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx10
-        '
-        Me.ToolStripEx10.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx10.Image = Nothing
-        Me.ToolStripEx10.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
-        Me.ToolStripEx10.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx10.Name = "ToolStripEx10"
-        Me.ToolStripEx10.Office12Mode = False
-        Me.ToolStripEx10.Size = New System.Drawing.Size(288, 42)
-        Me.ToolStripEx10.TabIndex = 1
-        Me.ToolStripEx10.Text = "Database Information"
-        Me.ToolStripEx10.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx5
-        '
-        Me.ToolStripEx5.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx5.Image = Nothing
-        Me.ToolStripEx5.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx5.Name = "ToolStripEx5"
-        Me.ToolStripEx5.Office12Mode = False
-        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 40)
-        Me.ToolStripEx5.TabIndex = 1
-        Me.ToolStripEx5.Text = "Oversikt"
-        Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'ToolStripEx4
-        '
-        Me.ToolStripEx4.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx4.Image = Nothing
-        Me.ToolStripEx4.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStripEx4.Name = "ToolStripEx4"
-        Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 40)
-        Me.ToolStripEx4.TabIndex = 1
-        Me.ToolStripEx4.Text = "Lageroversikt"
-        Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'KjøpTableAdapter
-        '
-        Me.KjøpTableAdapter.ClearBeforeFill = True
-        '
-        'AnsattTableAdapter
-        '
-        Me.AnsattTableAdapter.ClearBeforeFill = True
-        '
-        'SpellChecker1
-        '
-        Me.SpellChecker1.CustomDictionaryPath = "C:\ProgramData\Microsoft Corporation\Microsoft® Visual Studio® 2015\14.0.24720.0\" &
-    "Custom_Dictionay.dic"
-        Me.SpellChecker1.DictionaryPath = "Syncfusion_en_us.dic"
-        Me.SpellChecker1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.SpellChecker1.VisualStyle = Syncfusion.Text.SpellCheckerStyle.[Default]
-        '
-        'SalgsRaportTableAdapter
-        '
-        Me.SalgsRaportTableAdapter.ClearBeforeFill = True
-        '
-        'Drift82016dsSalgsRapportViewBindingSource
-        '
-        Me.Drift82016dsSalgsRapportViewBindingSource.DataSource = Me.drift8_2016dsSalgsRapportView
-        Me.Drift82016dsSalgsRapportViewBindingSource.Position = 0
-        '
-        'SalgsRaportBindingSource1
-        '
-        Me.SalgsRaportBindingSource1.DataMember = "SalgsRaport"
-        Me.SalgsRaportBindingSource1.DataSource = Me.Drift82016dsSalgsRapportViewBindingSource
-        '
-        'KundeTableAdapter
-        '
-        Me.KundeTableAdapter.ClearBeforeFill = True
-        '
         'tbOverview
         '
         Me.tbOverview.BackColor = System.Drawing.Color.Transparent
@@ -654,15 +389,15 @@ Partial Class frmAdminMetro
         'TabControlAdv3
         '
         Me.TabControlAdv3.ActiveTabColor = System.Drawing.Color.White
-        Me.TabControlAdv3.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv3.BeforeTouchSize = New System.Drawing.Size(872, 428)
         Me.TabControlAdv3.Controls.Add(Me.TabPageAdv3)
         Me.TabControlAdv3.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv3.InactiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv3.ItemSize = New System.Drawing.Size(102, 48)
-        Me.TabControlAdv3.Location = New System.Drawing.Point(0, 42)
+        Me.TabControlAdv3.Location = New System.Drawing.Point(0, 47)
         Me.TabControlAdv3.Name = "TabControlAdv3"
-        Me.TabControlAdv3.Size = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv3.Size = New System.Drawing.Size(872, 428)
         Me.TabControlAdv3.TabIndex = 1
         Me.TabControlAdv3.TabPanelBackColor = System.Drawing.Color.White
         Me.TabControlAdv3.ThemesEnabled = True
@@ -675,7 +410,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(865, 376)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(865, 371)
         Me.TabPageAdv3.TabIndex = 1
         Me.TabPageAdv3.Text = "Rapporter"
         Me.TabPageAdv3.ThemesEnabled = True
@@ -684,7 +419,7 @@ Partial Class frmAdminMetro
         '
         Me.TabControlAdv4.ActiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv4.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv4.BeforeTouchSize = New System.Drawing.Size(865, 376)
+        Me.TabControlAdv4.BeforeTouchSize = New System.Drawing.Size(865, 371)
         Me.TabControlAdv4.Controls.Add(Me.reportSalg)
         Me.TabControlAdv4.Controls.Add(Me.reportLager)
         Me.TabControlAdv4.Controls.Add(Me.reportLeie)
@@ -693,7 +428,7 @@ Partial Class frmAdminMetro
         Me.TabControlAdv4.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv4.Name = "TabControlAdv4"
         Me.TabControlAdv4.RotateTextWhenVertical = True
-        Me.TabControlAdv4.Size = New System.Drawing.Size(865, 376)
+        Me.TabControlAdv4.Size = New System.Drawing.Size(865, 371)
         Me.TabControlAdv4.TabIndex = 0
         Me.TabControlAdv4.TabPanelBackColor = System.Drawing.Color.White
         Me.TabControlAdv4.ThemesEnabled = True
@@ -707,7 +442,7 @@ Partial Class frmAdminMetro
         Me.reportSalg.Location = New System.Drawing.Point(48, 3)
         Me.reportSalg.Name = "reportSalg"
         Me.reportSalg.ShowCloseButton = True
-        Me.reportSalg.Size = New System.Drawing.Size(813, 369)
+        Me.reportSalg.Size = New System.Drawing.Size(813, 364)
         Me.reportSalg.TabIndex = 1
         Me.reportSalg.ThemesEnabled = True
         '
@@ -715,9 +450,9 @@ Partial Class frmAdminMetro
         '
         Me.Panel5.Controls.Add(Me.ReportViewer1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 42)
+        Me.Panel5.Location = New System.Drawing.Point(0, 47)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(813, 327)
+        Me.Panel5.Size = New System.Drawing.Size(813, 317)
         Me.Panel5.TabIndex = 1
         '
         'ReportViewer1
@@ -729,8 +464,43 @@ Partial Class frmAdminMetro
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(813, 327)
+        Me.ReportViewer1.Size = New System.Drawing.Size(813, 317)
         Me.ReportViewer1.TabIndex = 0
+        '
+        'ToolStripEx7
+        '
+        Me.ToolStripEx7.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx7.Image = Nothing
+        Me.ToolStripEx7.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2})
+        Me.ToolStripEx7.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx7.Name = "ToolStripEx7"
+        Me.ToolStripEx7.Office12Mode = False
+        Me.ToolStripEx7.Size = New System.Drawing.Size(813, 47)
+        Me.ToolStripEx7.TabIndex = 0
+        Me.ToolStripEx7.Text = "Salgsrapporter"
+        Me.ToolStripEx7.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripDropDownButton2
+        '
+        Me.ToolStripDropDownButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalgsrapportToolStripMenuItem, Me.DagligeSalgToolStripMenuItem})
+        Me.ToolStripDropDownButton2.Image = CType(resources.GetObject("ToolStripDropDownButton2.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton2.Name = "ToolStripDropDownButton2"
+        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(110, 24)
+        Me.ToolStripDropDownButton2.Text = "Rapporter"
+        '
+        'SalgsrapportToolStripMenuItem
+        '
+        Me.SalgsrapportToolStripMenuItem.Name = "SalgsrapportToolStripMenuItem"
+        Me.SalgsrapportToolStripMenuItem.Size = New System.Drawing.Size(170, 26)
+        Me.SalgsrapportToolStripMenuItem.Text = "Salgsrapport"
+        '
+        'DagligeSalgToolStripMenuItem
+        '
+        Me.DagligeSalgToolStripMenuItem.Name = "DagligeSalgToolStripMenuItem"
+        Me.DagligeSalgToolStripMenuItem.Size = New System.Drawing.Size(170, 26)
+        Me.DagligeSalgToolStripMenuItem.Text = "Daglige Salg"
         '
         'reportLager
         '
@@ -741,7 +511,7 @@ Partial Class frmAdminMetro
         Me.reportLager.Location = New System.Drawing.Point(48, 3)
         Me.reportLager.Name = "reportLager"
         Me.reportLager.ShowCloseButton = True
-        Me.reportLager.Size = New System.Drawing.Size(813, 369)
+        Me.reportLager.Size = New System.Drawing.Size(813, 364)
         Me.reportLager.TabIndex = 2
         Me.reportLager.ThemesEnabled = True
         '
@@ -749,9 +519,9 @@ Partial Class frmAdminMetro
         '
         Me.Panel8.Controls.Add(Me.ReportViewer2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(0, 42)
+        Me.Panel8.Location = New System.Drawing.Point(0, 47)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(813, 327)
+        Me.Panel8.Size = New System.Drawing.Size(813, 317)
         Me.Panel8.TabIndex = 2
         '
         'ReportViewer2
@@ -759,8 +529,31 @@ Partial Class frmAdminMetro
         Me.ReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ReportViewer2.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer2.Name = "ReportViewer2"
-        Me.ReportViewer2.Size = New System.Drawing.Size(813, 327)
+        Me.ReportViewer2.Size = New System.Drawing.Size(813, 317)
         Me.ReportViewer2.TabIndex = 0
+        '
+        'ToolStripEx8
+        '
+        Me.ToolStripEx8.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx8.Image = Nothing
+        Me.ToolStripEx8.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton3})
+        Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx8.Name = "ToolStripEx8"
+        Me.ToolStripEx8.Office12Mode = False
+        Me.ToolStripEx8.Size = New System.Drawing.Size(813, 47)
+        Me.ToolStripEx8.TabIndex = 1
+        Me.ToolStripEx8.Text = "Lagerrapporter"
+        Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripDropDownButton3
+        '
+        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
+        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(34, 44)
+        Me.ToolStripDropDownButton3.Text = "ToolStripDropDownButton3"
         '
         'reportLeie
         '
@@ -771,7 +564,7 @@ Partial Class frmAdminMetro
         Me.reportLeie.Location = New System.Drawing.Point(48, 3)
         Me.reportLeie.Name = "reportLeie"
         Me.reportLeie.ShowCloseButton = True
-        Me.reportLeie.Size = New System.Drawing.Size(813, 369)
+        Me.reportLeie.Size = New System.Drawing.Size(813, 364)
         Me.reportLeie.TabIndex = 3
         Me.reportLeie.ThemesEnabled = True
         '
@@ -779,9 +572,9 @@ Partial Class frmAdminMetro
         '
         Me.Panel9.Controls.Add(Me.ReportViewer3)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(0, 42)
+        Me.Panel9.Location = New System.Drawing.Point(0, 47)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(813, 327)
+        Me.Panel9.Size = New System.Drawing.Size(813, 317)
         Me.Panel9.TabIndex = 2
         '
         'ReportViewer3
@@ -789,8 +582,31 @@ Partial Class frmAdminMetro
         Me.ReportViewer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ReportViewer3.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer3.Name = "ReportViewer3"
-        Me.ReportViewer3.Size = New System.Drawing.Size(813, 327)
+        Me.ReportViewer3.Size = New System.Drawing.Size(813, 317)
         Me.ReportViewer3.TabIndex = 0
+        '
+        'ToolStripEx9
+        '
+        Me.ToolStripEx9.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx9.Image = Nothing
+        Me.ToolStripEx9.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton4})
+        Me.ToolStripEx9.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx9.Name = "ToolStripEx9"
+        Me.ToolStripEx9.Office12Mode = False
+        Me.ToolStripEx9.Size = New System.Drawing.Size(813, 47)
+        Me.ToolStripEx9.TabIndex = 1
+        Me.ToolStripEx9.Text = "Utleierapporter"
+        Me.ToolStripEx9.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripDropDownButton4
+        '
+        Me.ToolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton4.Image = CType(resources.GetObject("ToolStripDropDownButton4.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton4.Name = "ToolStripDropDownButton4"
+        Me.ToolStripDropDownButton4.Size = New System.Drawing.Size(34, 44)
+        Me.ToolStripDropDownButton4.Text = "ToolStripDropDownButton4"
         '
         'TabPageAdv4
         '
@@ -799,10 +615,46 @@ Partial Class frmAdminMetro
         Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(865, 376)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(865, 371)
         Me.TabPageAdv4.TabIndex = 2
         Me.TabPageAdv4.Text = "TabPageAdv4"
         Me.TabPageAdv4.ThemesEnabled = True
+        '
+        'ToolStripEx1
+        '
+        Me.ToolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx1.Image = Nothing
+        Me.ToolStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1})
+        Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx1.Name = "ToolStripEx1"
+        Me.ToolStripEx1.Office12Mode = False
+        Me.ToolStripEx1.Size = New System.Drawing.Size(872, 47)
+        Me.ToolStripEx1.TabIndex = 0
+        Me.ToolStripEx1.Text = "Oversikt"
+        Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripDropDownButton1
+        '
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FrmLagerToolStripMenuItem, Me.FrmSalgToolStripMenuItem})
+        Me.ToolStripDropDownButton1.Image = Global.OOPSA.My.Resources.Resources.loginLeaf
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(83, 24)
+        Me.ToolStripDropDownButton1.Text = "Forms"
+        '
+        'FrmLagerToolStripMenuItem
+        '
+        Me.FrmLagerToolStripMenuItem.Name = "FrmLagerToolStripMenuItem"
+        Me.FrmLagerToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
+        Me.FrmLagerToolStripMenuItem.Text = "frmLager"
+        '
+        'FrmSalgToolStripMenuItem
+        '
+        Me.FrmSalgToolStripMenuItem.Name = "FrmSalgToolStripMenuItem"
+        Me.FrmSalgToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
+        Me.FrmSalgToolStripMenuItem.Text = "frmSalg"
         '
         'tbPersoner
         '
@@ -823,20 +675,20 @@ Partial Class frmAdminMetro
         Me.GradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GradientPanel1.Controls.Add(Me.TabControlAdv5)
         Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GradientPanel1.Location = New System.Drawing.Point(0, 40)
+        Me.GradientPanel1.Location = New System.Drawing.Point(0, 45)
         Me.GradientPanel1.Name = "GradientPanel1"
-        Me.GradientPanel1.Size = New System.Drawing.Size(872, 435)
+        Me.GradientPanel1.Size = New System.Drawing.Size(872, 430)
         Me.GradientPanel1.TabIndex = 5
         '
         'TabControlAdv5
         '
-        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(872, 430)
         Me.TabControlAdv5.Controls.Add(Me.tbAnsatte)
         Me.TabControlAdv5.Controls.Add(Me.tbKunder)
         Me.TabControlAdv5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv5.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv5.Name = "TabControlAdv5"
-        Me.TabControlAdv5.Size = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv5.Size = New System.Drawing.Size(872, 430)
         Me.TabControlAdv5.TabIndex = 0
         Me.TabControlAdv5.ThemesEnabled = True
         '
@@ -845,10 +697,10 @@ Partial Class frmAdminMetro
         Me.tbAnsatte.Controls.Add(Me.SplitContainerAdv1)
         Me.tbAnsatte.Image = Nothing
         Me.tbAnsatte.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbAnsatte.Location = New System.Drawing.Point(3, 2)
+        Me.tbAnsatte.Location = New System.Drawing.Point(3, 42)
         Me.tbAnsatte.Name = "tbAnsatte"
         Me.tbAnsatte.ShowCloseButton = True
-        Me.tbAnsatte.Size = New System.Drawing.Size(865, 429)
+        Me.tbAnsatte.Size = New System.Drawing.Size(865, 384)
         Me.tbAnsatte.TabIndex = 1
         Me.tbAnsatte.Text = "Ansatte"
         Me.tbAnsatte.ThemesEnabled = True
@@ -869,7 +721,7 @@ Partial Class frmAdminMetro
         'SplitContainerAdv1.Panel2
         '
         Me.SplitContainerAdv1.Panel2.Controls.Add(Me.dgvAnsatte)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 384)
         Me.SplitContainerAdv1.SplitterDistance = 173
         Me.SplitContainerAdv1.TabIndex = 4
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
@@ -963,7 +815,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.Properties.MarkColHeader = False
         Me.dgvAnsatte.Properties.MarkRowHeader = False
         Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvAnsatte.Size = New System.Drawing.Size(685, 429)
+        Me.dgvAnsatte.Size = New System.Drawing.Size(685, 384)
         Me.dgvAnsatte.SmartSizeBox = False
         Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvAnsatte.TabIndex = 1
@@ -972,15 +824,20 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.UseListChangedEvent = True
         Me.dgvAnsatte.UseRightToLeftCompatibleTextBox = True
         '
+        'AnsattBindingSource
+        '
+        Me.AnsattBindingSource.DataMember = "Ansatt"
+        Me.AnsattBindingSource.DataSource = Me.drift8_2016DataSet
+        '
         'tbKunder
         '
         Me.tbKunder.Controls.Add(Me.TabControlAdv1)
         Me.tbKunder.Image = Nothing
         Me.tbKunder.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunder.Location = New System.Drawing.Point(3, 2)
+        Me.tbKunder.Location = New System.Drawing.Point(3, 42)
         Me.tbKunder.Name = "tbKunder"
         Me.tbKunder.ShowCloseButton = True
-        Me.tbKunder.Size = New System.Drawing.Size(865, 429)
+        Me.tbKunder.Size = New System.Drawing.Size(865, 384)
         Me.tbKunder.TabIndex = 2
         Me.tbKunder.Text = "Kunder"
         Me.tbKunder.ThemesEnabled = True
@@ -988,14 +845,14 @@ Partial Class frmAdminMetro
         'TabControlAdv1
         '
         Me.TabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 429)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 384)
         Me.TabControlAdv1.Controls.Add(Me.tbKunderOversikt)
         Me.TabControlAdv1.Controls.Add(Me.tbKundeEpost)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.FocusOnTabClick = False
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 384)
         Me.TabControlAdv1.TabIndex = 0
         Me.TabControlAdv1.ThemesEnabled = True
         '
@@ -1004,10 +861,10 @@ Partial Class frmAdminMetro
         Me.tbKunderOversikt.Controls.Add(Me.SplitContainer3)
         Me.tbKunderOversikt.Image = Nothing
         Me.tbKunderOversikt.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunderOversikt.Location = New System.Drawing.Point(38, 3)
+        Me.tbKunderOversikt.Location = New System.Drawing.Point(44, 3)
         Me.tbKunderOversikt.Name = "tbKunderOversikt"
         Me.tbKunderOversikt.ShowCloseButton = True
-        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 422)
+        Me.tbKunderOversikt.Size = New System.Drawing.Size(817, 377)
         Me.tbKunderOversikt.TabIndex = 1
         Me.tbKunderOversikt.Text = "Kunder"
         Me.tbKunderOversikt.ThemesEnabled = True
@@ -1018,47 +875,12 @@ Partial Class frmAdminMetro
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
-        'SplitContainer3.Panel1
-        '
-        Me.SplitContainer3.Panel1.Controls.Add(Me.btnUpdKunde)
-        Me.SplitContainer3.Panel1.Controls.Add(Me.btnKundeAdd)
-        '
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.dgvKunde)
-        Me.SplitContainer3.Size = New System.Drawing.Size(823, 422)
-        Me.SplitContainer3.SplitterDistance = 274
+        Me.SplitContainer3.Size = New System.Drawing.Size(817, 377)
+        Me.SplitContainer3.SplitterDistance = 272
         Me.SplitContainer3.TabIndex = 0
-        '
-        'btnUpdKunde
-        '
-        Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(274, 60)
-        Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
-        Me.btnUpdKunde.IsBackStageButton = False
-        Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
-        Me.btnUpdKunde.Name = "btnUpdKunde"
-        Me.btnUpdKunde.Size = New System.Drawing.Size(274, 60)
-        Me.btnUpdKunde.TabIndex = 4
-        Me.btnUpdKunde.Text = "Oppdater kunde"
-        Me.btnUpdKunde.UseVisualStyle = True
-        '
-        'btnKundeAdd
-        '
-        Me.btnKundeAdd.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.btnKundeAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnKundeAdd.BeforeTouchSize = New System.Drawing.Size(274, 60)
-        Me.btnKundeAdd.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnKundeAdd.ForeColor = System.Drawing.Color.White
-        Me.btnKundeAdd.IsBackStageButton = False
-        Me.btnKundeAdd.Location = New System.Drawing.Point(0, 0)
-        Me.btnKundeAdd.Name = "btnKundeAdd"
-        Me.btnKundeAdd.Size = New System.Drawing.Size(274, 60)
-        Me.btnKundeAdd.TabIndex = 3
-        Me.btnKundeAdd.Text = "Legg til kunde"
-        Me.btnKundeAdd.UseVisualStyle = True
         '
         'dgvKunde
         '
@@ -1103,7 +925,7 @@ Partial Class frmAdminMetro
         Me.dgvKunde.Properties.MarkColHeader = False
         Me.dgvKunde.Properties.MarkRowHeader = False
         Me.dgvKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvKunde.Size = New System.Drawing.Size(545, 422)
+        Me.dgvKunde.Size = New System.Drawing.Size(541, 377)
         Me.dgvKunde.SmartSizeBox = False
         Me.dgvKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvKunde.TabIndex = 0
@@ -1112,6 +934,11 @@ Partial Class frmAdminMetro
         Me.dgvKunde.UseListChangedEvent = True
         Me.dgvKunde.UseRightToLeftCompatibleTextBox = True
         '
+        'KundeBindingSource
+        '
+        Me.KundeBindingSource.DataMember = "Kunde"
+        Me.KundeBindingSource.DataSource = Me.drift8_2016DataSet
+        '
         'tbKundeEpost
         '
         Me.tbKundeEpost.Controls.Add(Me.Panel6)
@@ -1119,10 +946,10 @@ Partial Class frmAdminMetro
         Me.tbKundeEpost.Controls.Add(Me.ToolStripEx11)
         Me.tbKundeEpost.Image = Nothing
         Me.tbKundeEpost.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKundeEpost.Location = New System.Drawing.Point(38, 3)
+        Me.tbKundeEpost.Location = New System.Drawing.Point(44, 3)
         Me.tbKundeEpost.Name = "tbKundeEpost"
         Me.tbKundeEpost.ShowCloseButton = True
-        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 422)
+        Me.tbKundeEpost.Size = New System.Drawing.Size(817, 377)
         Me.tbKundeEpost.TabIndex = 2
         Me.tbKundeEpost.Text = "Epost"
         Me.tbKundeEpost.ThemesEnabled = True
@@ -1132,10 +959,10 @@ Partial Class frmAdminMetro
         Me.Panel6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 42)
+        Me.Panel6.Location = New System.Drawing.Point(0, 47)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel6.Size = New System.Drawing.Size(823, 358)
+        Me.Panel6.Size = New System.Drawing.Size(817, 304)
         Me.Panel6.TabIndex = 3
         '
         'Panel7
@@ -1146,7 +973,7 @@ Partial Class frmAdminMetro
         Me.Panel7.Location = New System.Drawing.Point(50, 10)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel7.Size = New System.Drawing.Size(723, 348)
+        Me.Panel7.Size = New System.Drawing.Size(717, 294)
         Me.Panel7.TabIndex = 0
         '
         'rtbKundeEpost
@@ -1155,20 +982,20 @@ Partial Class frmAdminMetro
         Me.rtbKundeEpost.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbKundeEpost.Location = New System.Drawing.Point(10, 10)
         Me.rtbKundeEpost.Name = "rtbKundeEpost"
-        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 338)
+        Me.rtbKundeEpost.Size = New System.Drawing.Size(697, 284)
         Me.rtbKundeEpost.TabIndex = 0
         Me.rtbKundeEpost.Text = ""
         '
         'StatusStripEx1
         '
-        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(817, 26)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StatusStripLabel1, Me.StatusStripProgressBar1, Me.StatusStripLabel2})
-        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 400)
+        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 351)
         Me.StatusStripEx1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.Name = "StatusStripEx1"
-        Me.StatusStripEx1.Size = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.Size = New System.Drawing.Size(817, 26)
         Me.StatusStripEx1.TabIndex = 2
         Me.StatusStripEx1.Text = "StatusStripEx1"
         Me.StatusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
@@ -1178,7 +1005,7 @@ Partial Class frmAdminMetro
         Me.StatusStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.StatusStripLabel1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
         Me.StatusStripLabel1.Name = "StatusStripLabel1"
-        Me.StatusStripLabel1.Size = New System.Drawing.Size(87, 15)
+        Me.StatusStripLabel1.Size = New System.Drawing.Size(109, 20)
         Me.StatusStripLabel1.Text = "Email Progress:"
         '
         'StatusStripProgressBar1
@@ -1193,8 +1020,173 @@ Partial Class frmAdminMetro
         '
         Me.StatusStripLabel2.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
         Me.StatusStripLabel2.Name = "StatusStripLabel2"
-        Me.StatusStripLabel2.Size = New System.Drawing.Size(97, 15)
+        Me.StatusStripLabel2.Size = New System.Drawing.Size(124, 20)
         Me.StatusStripLabel2.Text = "StatusStripLabel2"
+        '
+        'ToolStripEx11
+        '
+        Me.ToolStripEx11.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx11.Image = Nothing
+        Me.ToolStripEx11.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx11.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton1, Me.OpenToolStripButton1, Me.SaveToolStripButton1, Me.PrintToolStripButton1, Me.toolStripSeparator5, Me.CutToolStripButton1, Me.CopyToolStripButton1, Me.PasteToolStripButton1, Me.toolStripSeparator6, Me.btnSendEpostKunde, Me.toolstripCMBxKunder, Me.ToolStripLabel1, Me.ToolStripTxtSubject, Me.ToolStripLabel2, Me.ToolStripSplitButtonEx1})
+        Me.ToolStripEx11.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx11.Name = "ToolStripEx11"
+        Me.ToolStripEx11.Office12Mode = False
+        Me.ToolStripEx11.Size = New System.Drawing.Size(817, 47)
+        Me.ToolStripEx11.TabIndex = 0
+        Me.ToolStripEx11.Text = "Epost"
+        Me.ToolStripEx11.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'NewToolStripButton1
+        '
+        Me.NewToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.NewToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
+        Me.NewToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.NewToolStripButton1.Name = "NewToolStripButton1"
+        Me.NewToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.NewToolStripButton1.Text = "&New"
+        '
+        'OpenToolStripButton1
+        '
+        Me.OpenToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.OpenToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtOpen
+        Me.OpenToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.OpenToolStripButton1.Name = "OpenToolStripButton1"
+        Me.OpenToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.OpenToolStripButton1.Text = "&Open"
+        '
+        'SaveToolStripButton1
+        '
+        Me.SaveToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.SaveToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtSave
+        Me.SaveToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.SaveToolStripButton1.Name = "SaveToolStripButton1"
+        Me.SaveToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.SaveToolStripButton1.Text = "&Save"
+        '
+        'PrintToolStripButton1
+        '
+        Me.PrintToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.PrintToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtPrint
+        Me.PrintToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.PrintToolStripButton1.Name = "PrintToolStripButton1"
+        Me.PrintToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.PrintToolStripButton1.Text = "&Print"
+        '
+        'toolStripSeparator5
+        '
+        Me.toolStripSeparator5.Name = "toolStripSeparator5"
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(6, 27)
+        '
+        'CutToolStripButton1
+        '
+        Me.CutToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.CutToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtCut
+        Me.CutToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.CutToolStripButton1.Name = "CutToolStripButton1"
+        Me.CutToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.CutToolStripButton1.Text = "C&ut"
+        '
+        'CopyToolStripButton1
+        '
+        Me.CopyToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.CopyToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtCopy
+        Me.CopyToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.CopyToolStripButton1.Name = "CopyToolStripButton1"
+        Me.CopyToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.CopyToolStripButton1.Text = "&Copy"
+        '
+        'PasteToolStripButton1
+        '
+        Me.PasteToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.PasteToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtPaste
+        Me.PasteToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.PasteToolStripButton1.Name = "PasteToolStripButton1"
+        Me.PasteToolStripButton1.Size = New System.Drawing.Size(24, 24)
+        Me.PasteToolStripButton1.Text = "&Paste"
+        '
+        'toolStripSeparator6
+        '
+        Me.toolStripSeparator6.Name = "toolStripSeparator6"
+        Me.toolStripSeparator6.Size = New System.Drawing.Size(6, 27)
+        '
+        'btnSendEpostKunde
+        '
+        Me.btnSendEpostKunde.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.btnSendEpostKunde.Image = CType(resources.GetObject("btnSendEpostKunde.Image"), System.Drawing.Image)
+        Me.btnSendEpostKunde.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnSendEpostKunde.Name = "btnSendEpostKunde"
+        Me.btnSendEpostKunde.Size = New System.Drawing.Size(107, 24)
+        Me.btnSendEpostKunde.Text = "Send Epost"
+        '
+        'toolstripCMBxKunder
+        '
+        Me.toolstripCMBxKunder.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.toolstripCMBxKunder.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.toolstripCMBxKunder.MaxLength = 32767
+        Me.toolstripCMBxKunder.Name = "toolstripCMBxKunder"
+        Me.toolstripCMBxKunder.Size = New System.Drawing.Size(121, 27)
+        Me.toolstripCMBxKunder.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(62, 24)
+        Me.ToolStripLabel1.Text = "Send til:"
+        '
+        'ToolStripTxtSubject
+        '
+        Me.ToolStripTxtSubject.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripTxtSubject.Name = "ToolStripTxtSubject"
+        Me.ToolStripTxtSubject.Size = New System.Drawing.Size(200, 27)
+        '
+        'ToolStripLabel2
+        '
+        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel2.Name = "ToolStripLabel2"
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(61, 24)
+        Me.ToolStripLabel2.Text = "Subject:"
+        '
+        'ToolStripSplitButtonEx1
+        '
+        Me.ToolStripSplitButtonEx1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FakturaToolStripMenuItem, Me.NyhetsbrevToolStripMenuItem, Me.VareoversiktToolStripMenuItem})
+        Me.ToolStripSplitButtonEx1.Image = CType(resources.GetObject("ToolStripSplitButtonEx1.Image"), System.Drawing.Image)
+        Me.ToolStripSplitButtonEx1.Name = "ToolStripSplitButtonEx1"
+        Me.ToolStripSplitButtonEx1.Size = New System.Drawing.Size(130, 24)
+        Me.ToolStripSplitButtonEx1.Text = "Epost maler"
+        '
+        'FakturaToolStripMenuItem
+        '
+        Me.FakturaToolStripMenuItem.Name = "FakturaToolStripMenuItem"
+        Me.FakturaToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
+        Me.FakturaToolStripMenuItem.Text = "Faktura"
+        '
+        'NyhetsbrevToolStripMenuItem
+        '
+        Me.NyhetsbrevToolStripMenuItem.Name = "NyhetsbrevToolStripMenuItem"
+        Me.NyhetsbrevToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
+        Me.NyhetsbrevToolStripMenuItem.Text = "Nyhetsbrev"
+        '
+        'VareoversiktToolStripMenuItem
+        '
+        Me.VareoversiktToolStripMenuItem.Name = "VareoversiktToolStripMenuItem"
+        Me.VareoversiktToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
+        Me.VareoversiktToolStripMenuItem.Text = "Vareoversikt"
+        '
+        'ToolStripEx2
+        '
+        Me.ToolStripEx2.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx2.Image = Nothing
+        Me.ToolStripEx2.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx2.Name = "ToolStripEx2"
+        Me.ToolStripEx2.Office12Mode = False
+        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx2.TabIndex = 4
+        Me.ToolStripEx2.Text = "Personaliaoversikt"
+        Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'tbSalg
         '
@@ -1212,16 +1204,16 @@ Partial Class frmAdminMetro
         '
         'TabControlAdv2
         '
-        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 430)
         Me.TabControlAdv2.Controls.Add(Me.tbTextEdit)
         Me.TabControlAdv2.Controls.Add(Me.tbUtleieOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbReporting)
         Me.TabControlAdv2.Controls.Add(Me.tbSalgOversikt)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.ItemSize = New System.Drawing.Size(62, 48)
-        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 40)
+        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 45)
         Me.TabControlAdv2.Name = "TabControlAdv2"
-        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 430)
         Me.TabControlAdv2.TabIndex = 2
         Me.TabControlAdv2.ThemesEnabled = True
         '
@@ -1234,7 +1226,7 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.Location = New System.Drawing.Point(3, 53)
         Me.tbTextEdit.Name = "tbTextEdit"
         Me.tbTextEdit.ShowCloseButton = True
-        Me.tbTextEdit.Size = New System.Drawing.Size(865, 378)
+        Me.tbTextEdit.Size = New System.Drawing.Size(865, 373)
         Me.tbTextEdit.TabIndex = 2
         Me.tbTextEdit.Text = "Teksteditor"
         Me.tbTextEdit.ThemesEnabled = True
@@ -1244,10 +1236,10 @@ Partial Class frmAdminMetro
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 42)
+        Me.Panel1.Location = New System.Drawing.Point(0, 47)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel1.Size = New System.Drawing.Size(865, 336)
+        Me.Panel1.Size = New System.Drawing.Size(865, 326)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -1259,7 +1251,7 @@ Partial Class frmAdminMetro
         Me.Panel2.Location = New System.Drawing.Point(50, 10)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(765, 326)
+        Me.Panel2.Size = New System.Drawing.Size(765, 316)
         Me.Panel2.TabIndex = 0
         '
         'FontListBox1
@@ -1297,9 +1289,194 @@ Partial Class frmAdminMetro
         Me.richTextBox1.Location = New System.Drawing.Point(10, 10)
         Me.richTextBox1.Margin = New System.Windows.Forms.Padding(50)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(745, 306)
+        Me.richTextBox1.Size = New System.Drawing.Size(745, 296)
         Me.richTextBox1.TabIndex = 2
         Me.richTextBox1.Text = ""
+        '
+        'ToolStripEx6
+        '
+        Me.ToolStripEx6.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx6.Image = Nothing
+        Me.ToolStripEx6.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator1, Me.txtUndo, Me.txtRedo, Me.ToolStripSeparator4, Me.txtFontCombo, Me.txtFontSizeCombo, Me.ToolStripSeparator2, Me.txtInsertImg, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.txtAlignLeft, Me.txtAlignJust, Me.txtAlignRight})
+        Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx6.Name = "ToolStripEx6"
+        Me.ToolStripEx6.Office12Mode = False
+        Me.ToolStripEx6.Size = New System.Drawing.Size(865, 47)
+        Me.ToolStripEx6.TabIndex = 2
+        Me.ToolStripEx6.Text = "Teksteditor"
+        Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'NewToolStripButton
+        '
+        Me.NewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
+        Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.NewToolStripButton.Name = "NewToolStripButton"
+        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.NewToolStripButton.Text = "&New"
+        '
+        'OpenToolStripButton
+        '
+        Me.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
+        Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.OpenToolStripButton.Name = "OpenToolStripButton"
+        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.OpenToolStripButton.Text = "&Open"
+        '
+        'SaveToolStripButton
+        '
+        Me.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
+        Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.SaveToolStripButton.Name = "SaveToolStripButton"
+        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.SaveToolStripButton.Text = "&Save"
+        '
+        'PrintToolStripButton
+        '
+        Me.PrintToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
+        Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.PrintToolStripButton.Name = "PrintToolStripButton"
+        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.PrintToolStripButton.Text = "&Print"
+        '
+        'toolStripSeparator
+        '
+        Me.toolStripSeparator.Name = "toolStripSeparator"
+        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 47)
+        '
+        'CutToolStripButton
+        '
+        Me.CutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
+        Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.CutToolStripButton.Name = "CutToolStripButton"
+        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.CutToolStripButton.Text = "C&ut"
+        '
+        'CopyToolStripButton
+        '
+        Me.CopyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
+        Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.CopyToolStripButton.Name = "CopyToolStripButton"
+        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.CopyToolStripButton.Text = "&Copy"
+        '
+        'PasteToolStripButton
+        '
+        Me.PasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
+        Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.PasteToolStripButton.Name = "PasteToolStripButton"
+        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 44)
+        Me.PasteToolStripButton.Text = "&Paste"
+        '
+        'toolStripSeparator1
+        '
+        Me.toolStripSeparator1.Name = "toolStripSeparator1"
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 47)
+        '
+        'txtUndo
+        '
+        Me.txtUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtUndo.Image = Global.OOPSA.My.Resources.Resources.txtUndo
+        Me.txtUndo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtUndo.Name = "txtUndo"
+        Me.txtUndo.Size = New System.Drawing.Size(24, 44)
+        Me.txtUndo.Text = "ToolStripButton2"
+        '
+        'txtRedo
+        '
+        Me.txtRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtRedo.Image = Global.OOPSA.My.Resources.Resources.txtRedo
+        Me.txtRedo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtRedo.Name = "txtRedo"
+        Me.txtRedo.Size = New System.Drawing.Size(24, 44)
+        Me.txtRedo.Text = "ToolStripButton3"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 47)
+        '
+        'txtFontCombo
+        '
+        Me.txtFontCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.txtFontCombo.MaxLength = 32767
+        Me.txtFontCombo.Name = "txtFontCombo"
+        Me.txtFontCombo.Size = New System.Drawing.Size(135, 47)
+        Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        Me.txtFontCombo.Text = "Arial"
+        '
+        'txtFontSizeCombo
+        '
+        Me.txtFontSizeCombo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
+        Me.txtFontSizeCombo.MaxLength = 32767
+        Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
+        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 47)
+        Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        Me.txtFontSizeCombo.Text = "8"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 47)
+        '
+        'txtInsertImg
+        '
+        Me.txtInsertImg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
+        Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtInsertImg.Name = "txtInsertImg"
+        Me.txtInsertImg.Size = New System.Drawing.Size(24, 44)
+        Me.txtInsertImg.Text = "txtInsert"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 44)
+        Me.ToolStripButton4.Text = "ToolStripButton4"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 47)
+        '
+        'txtAlignLeft
+        '
+        Me.txtAlignLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
+        Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignLeft.Name = "txtAlignLeft"
+        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 44)
+        Me.txtAlignLeft.Text = "ToolStripButton5"
+        '
+        'txtAlignJust
+        '
+        Me.txtAlignJust.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
+        Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignJust.Name = "txtAlignJust"
+        Me.txtAlignJust.Size = New System.Drawing.Size(24, 44)
+        Me.txtAlignJust.Text = "ToolStripButton6"
+        '
+        'txtAlignRight
+        '
+        Me.txtAlignRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
+        Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.txtAlignRight.Name = "txtAlignRight"
+        Me.txtAlignRight.Size = New System.Drawing.Size(24, 44)
+        Me.txtAlignRight.Text = "ToolStripButton7"
         '
         'tbUtleieOversikt
         '
@@ -1307,10 +1484,10 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Controls.Add(Me.GridDataBoundGrid1)
         Me.tbUtleieOversikt.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.tbUtleieOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 2)
+        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 429)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 373)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
@@ -1372,7 +1549,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 429)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 373)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -1385,10 +1562,10 @@ Partial Class frmAdminMetro
         '
         Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 2)
+        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
         Me.tbReporting.Name = "tbReporting"
         Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 429)
+        Me.tbReporting.Size = New System.Drawing.Size(865, 373)
         Me.tbReporting.TabIndex = 3
         Me.tbReporting.Text = "Rapporter"
         Me.tbReporting.ThemesEnabled = True
@@ -1397,13 +1574,27 @@ Partial Class frmAdminMetro
         '
         Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
         Me.tbSalgOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 2)
+        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbSalgOversikt.Name = "tbSalgOversikt"
         Me.tbSalgOversikt.ShowCloseButton = True
-        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 429)
+        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 373)
         Me.tbSalgOversikt.TabIndex = 1
         Me.tbSalgOversikt.Text = "Salg"
         Me.tbSalgOversikt.ThemesEnabled = True
+        '
+        'ToolStripEx3
+        '
+        Me.ToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx3.Image = Nothing
+        Me.ToolStripEx3.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx3.Name = "ToolStripEx3"
+        Me.ToolStripEx3.Office12Mode = False
+        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx3.TabIndex = 1
+        Me.ToolStripEx3.Text = "Salg & Utleie"
+        Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'tbSettings
         '
@@ -1422,22 +1613,22 @@ Partial Class frmAdminMetro
         '
         Me.Panel3.Controls.Add(Me.tabSettings)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 40)
+        Me.Panel3.Location = New System.Drawing.Point(0, 45)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(872, 435)
+        Me.Panel3.Size = New System.Drawing.Size(872, 430)
         Me.Panel3.TabIndex = 2
         '
         'tabSettings
         '
         Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 430)
         Me.tabSettings.Controls.Add(Me.TabPageAdv1)
         Me.tabSettings.Controls.Add(Me.TabPageAdv2)
         Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
         Me.tabSettings.Location = New System.Drawing.Point(0, 0)
         Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Size = New System.Drawing.Size(872, 435)
+        Me.tabSettings.Size = New System.Drawing.Size(872, 430)
         Me.tabSettings.TabIndex = 0
         Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tabSettings.ThemesEnabled = True
@@ -1447,10 +1638,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 42)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 384)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -1464,7 +1655,7 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 429)
+        Me.SplitContainer1.Size = New System.Drawing.Size(865, 384)
         Me.SplitContainer1.SplitterDistance = 288
         Me.SplitContainer1.TabIndex = 0
         '
@@ -1493,66 +1684,66 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripEx10)
-        Me.SplitContainer2.Size = New System.Drawing.Size(288, 429)
-        Me.SplitContainer2.SplitterDistance = 237
+        Me.SplitContainer2.Size = New System.Drawing.Size(288, 384)
+        Me.SplitContainer2.SplitterDistance = 211
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 34)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrPassRep.Name = "txtSvrPassRep"
-        Me.txtSvrPassRep.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPassRep.Size = New System.Drawing.Size(181, 34)
         Me.txtSvrPassRep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrPassRep.TabIndex = 9
         Me.txtSvrPassRep.Text = "TextBoxExt5"
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 34)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrPass.Name = "txtSvrPass"
-        Me.txtSvrPass.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPass.Size = New System.Drawing.Size(181, 34)
         Me.txtSvrPass.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrPass.TabIndex = 8
         Me.txtSvrPass.Text = "TextBoxExt4"
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 34)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TxtSvrUser.Name = "TxtSvrUser"
-        Me.TxtSvrUser.Size = New System.Drawing.Size(181, 29)
+        Me.TxtSvrUser.Size = New System.Drawing.Size(181, 34)
         Me.TxtSvrUser.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TxtSvrUser.TabIndex = 7
         Me.TxtSvrUser.Text = "TextBoxExt3"
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 34)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrDB.Name = "txtSvrDB"
-        Me.txtSvrDB.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrDB.Size = New System.Drawing.Size(181, 34)
         Me.txtSvrDB.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrDB.TabIndex = 6
         Me.txtSvrDB.Text = "TextBoxExt2"
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 34)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(181, 29)
+        Me.txtServer.Size = New System.Drawing.Size(181, 34)
         Me.txtServer.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtServer.TabIndex = 0
         Me.txtServer.Text = "TextBoxExt1"
@@ -1561,7 +1752,7 @@ Partial Class frmAdminMetro
         '
         Me.lblSvrPassRep.Location = New System.Drawing.Point(3, 187)
         Me.lblSvrPassRep.Name = "lblSvrPassRep"
-        Me.lblSvrPassRep.Size = New System.Drawing.Size(95, 21)
+        Me.lblSvrPassRep.Size = New System.Drawing.Size(117, 28)
         Me.lblSvrPassRep.TabIndex = 5
         Me.lblSvrPassRep.Text = "Repeat Pass:"
         '
@@ -1569,7 +1760,7 @@ Partial Class frmAdminMetro
         '
         Me.lblSvrPass.Location = New System.Drawing.Point(3, 152)
         Me.lblSvrPass.Name = "lblSvrPass"
-        Me.lblSvrPass.Size = New System.Drawing.Size(79, 21)
+        Me.lblSvrPass.Size = New System.Drawing.Size(97, 28)
         Me.lblSvrPass.TabIndex = 4
         Me.lblSvrPass.Text = "Password:"
         '
@@ -1577,7 +1768,7 @@ Partial Class frmAdminMetro
         '
         Me.lblSvrUser.Location = New System.Drawing.Point(3, 117)
         Me.lblSvrUser.Name = "lblSvrUser"
-        Me.lblSvrUser.Size = New System.Drawing.Size(84, 21)
+        Me.lblSvrUser.Size = New System.Drawing.Size(103, 28)
         Me.lblSvrUser.TabIndex = 3
         Me.lblSvrUser.Text = "Username:"
         '
@@ -1585,7 +1776,7 @@ Partial Class frmAdminMetro
         '
         Me.lblDB.Location = New System.Drawing.Point(3, 82)
         Me.lblDB.Name = "lblDB"
-        Me.lblDB.Size = New System.Drawing.Size(77, 21)
+        Me.lblDB.Size = New System.Drawing.Size(97, 28)
         Me.lblDB.TabIndex = 2
         Me.lblDB.Text = "Database:"
         '
@@ -1593,32 +1784,93 @@ Partial Class frmAdminMetro
         '
         Me.lblServer.Location = New System.Drawing.Point(3, 46)
         Me.lblServer.Name = "lblServer"
-        Me.lblServer.Size = New System.Drawing.Size(58, 21)
+        Me.lblServer.Size = New System.Drawing.Size(71, 28)
         Me.lblServer.TabIndex = 1
         Me.lblServer.Text = "Server:"
+        '
+        'toolstripDBInfo
+        '
+        Me.toolstripDBInfo.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.toolstripDBInfo.Image = Nothing
+        Me.toolstripDBInfo.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.toolstripDBInfo.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsBtnDBInfo})
+        Me.toolstripDBInfo.Location = New System.Drawing.Point(0, 0)
+        Me.toolstripDBInfo.Name = "toolstripDBInfo"
+        Me.toolstripDBInfo.Office12Mode = False
+        Me.toolstripDBInfo.Size = New System.Drawing.Size(288, 47)
+        Me.toolstripDBInfo.TabIndex = 0
+        Me.toolstripDBInfo.Text = "Database Information"
+        Me.toolstripDBInfo.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'tsBtnDBInfo
+        '
+        Me.tsBtnDBInfo.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.tsBtnDBInfo.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
+        Me.tsBtnDBInfo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsBtnDBInfo.Name = "tsBtnDBInfo"
+        Me.tsBtnDBInfo.Size = New System.Drawing.Size(232, 24)
+        Me.tsBtnDBInfo.Text = "Change Database Information"
         '
         'Panel4
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 42)
+        Me.Panel4.Location = New System.Drawing.Point(0, 47)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(288, 146)
+        Me.Panel4.Size = New System.Drawing.Size(288, 122)
         Me.Panel4.TabIndex = 2
+        '
+        'ToolStripEx10
+        '
+        Me.ToolStripEx10.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx10.Image = Nothing
+        Me.ToolStripEx10.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
+        Me.ToolStripEx10.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx10.Name = "ToolStripEx10"
+        Me.ToolStripEx10.Office12Mode = False
+        Me.ToolStripEx10.Size = New System.Drawing.Size(288, 47)
+        Me.ToolStripEx10.TabIndex = 1
+        Me.ToolStripEx10.Text = "Database Information"
+        Me.ToolStripEx10.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(232, 24)
+        Me.ToolStripButton1.Text = "Change Database Information"
         '
         'TabPageAdv2
         '
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 42)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 384)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
         '
+        'ToolStripEx5
+        '
+        Me.ToolStripEx5.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx5.Image = Nothing
+        Me.ToolStripEx5.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx5.Name = "ToolStripEx5"
+        Me.ToolStripEx5.Office12Mode = False
+        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx5.TabIndex = 1
+        Me.ToolStripEx5.Text = "Oversikt"
+        Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
         'tbLager
         '
+        Me.tbLager.Controls.Add(Me.TabLager)
         Me.tbLager.Controls.Add(Me.ToolStripEx4)
         Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
         Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
@@ -1629,306 +1881,318 @@ Partial Class frmAdminMetro
         Me.tbLager.TabIndex = 4
         Me.tbLager.ThemesEnabled = True
         '
-        'VisAnsattesSalgBindingSource
-        '
-        Me.VisAnsattesSalgBindingSource.DataMember = "VisAnsattesSalg"
-        '
-        'ToolStripDropDownButton2
-        '
-        Me.ToolStripDropDownButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalgsrapportToolStripMenuItem, Me.DagligeSalgToolStripMenuItem})
-        Me.ToolStripDropDownButton2.Image = CType(resources.GetObject("ToolStripDropDownButton2.Image"), System.Drawing.Image)
-        Me.ToolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton2.Name = "ToolStripDropDownButton2"
-        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(92, 24)
-        Me.ToolStripDropDownButton2.Text = "Rapporter"
-        '
-        'SalgsrapportToolStripMenuItem
-        '
-        Me.SalgsrapportToolStripMenuItem.Name = "SalgsrapportToolStripMenuItem"
-        Me.SalgsrapportToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.SalgsrapportToolStripMenuItem.Text = "Salgsrapport"
-        '
-        'DagligeSalgToolStripMenuItem
-        '
-        Me.DagligeSalgToolStripMenuItem.Name = "DagligeSalgToolStripMenuItem"
-        Me.DagligeSalgToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.DagligeSalgToolStripMenuItem.Text = "Daglige Salg"
-        '
-        'ToolStripDropDownButton3
-        '
-        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
-        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
-        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(33, 39)
-        Me.ToolStripDropDownButton3.Text = "ToolStripDropDownButton3"
-        '
-        'ToolStripDropDownButton4
-        '
-        Me.ToolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripDropDownButton4.Image = CType(resources.GetObject("ToolStripDropDownButton4.Image"), System.Drawing.Image)
-        Me.ToolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton4.Name = "ToolStripDropDownButton4"
-        Me.ToolStripDropDownButton4.Size = New System.Drawing.Size(33, 39)
-        Me.ToolStripDropDownButton4.Text = "ToolStripDropDownButton4"
-        '
-        'ToolStripDropDownButton1
-        '
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FrmLagerToolStripMenuItem, Me.FrmSalgToolStripMenuItem})
-        Me.ToolStripDropDownButton1.Image = Global.OOPSA.My.Resources.Resources.loginLeaf
-        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(73, 24)
-        Me.ToolStripDropDownButton1.Text = "Forms"
-        '
-        'FrmLagerToolStripMenuItem
-        '
-        Me.FrmLagerToolStripMenuItem.Name = "FrmLagerToolStripMenuItem"
-        Me.FrmLagerToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
-        Me.FrmLagerToolStripMenuItem.Text = "frmLager"
-        '
-        'FrmSalgToolStripMenuItem
-        '
-        Me.FrmSalgToolStripMenuItem.Name = "FrmSalgToolStripMenuItem"
-        Me.FrmSalgToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
-        Me.FrmSalgToolStripMenuItem.Text = "frmSalg"
-        '
-        'NewToolStripButton1
-        '
-        Me.NewToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NewToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
-        Me.NewToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.NewToolStripButton1.Name = "NewToolStripButton1"
-        Me.NewToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.NewToolStripButton1.Text = "&New"
-        '
-        'OpenToolStripButton1
-        '
-        Me.OpenToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.OpenToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtOpen
-        Me.OpenToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.OpenToolStripButton1.Name = "OpenToolStripButton1"
-        Me.OpenToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.OpenToolStripButton1.Text = "&Open"
-        '
-        'SaveToolStripButton1
-        '
-        Me.SaveToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.SaveToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtSave
-        Me.SaveToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.SaveToolStripButton1.Name = "SaveToolStripButton1"
-        Me.SaveToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.SaveToolStripButton1.Text = "&Save"
-        '
-        'PrintToolStripButton1
-        '
-        Me.PrintToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PrintToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtPrint
-        Me.PrintToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.PrintToolStripButton1.Name = "PrintToolStripButton1"
-        Me.PrintToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.PrintToolStripButton1.Text = "&Print"
-        '
-        'CutToolStripButton1
-        '
-        Me.CutToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CutToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtCut
-        Me.CutToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CutToolStripButton1.Name = "CutToolStripButton1"
-        Me.CutToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.CutToolStripButton1.Text = "C&ut"
-        '
-        'CopyToolStripButton1
-        '
-        Me.CopyToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CopyToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtCopy
-        Me.CopyToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CopyToolStripButton1.Name = "CopyToolStripButton1"
-        Me.CopyToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.CopyToolStripButton1.Text = "&Copy"
-        '
-        'PasteToolStripButton1
-        '
-        Me.PasteToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PasteToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.txtPaste
-        Me.PasteToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.PasteToolStripButton1.Name = "PasteToolStripButton1"
-        Me.PasteToolStripButton1.Size = New System.Drawing.Size(24, 24)
-        Me.PasteToolStripButton1.Text = "&Paste"
-        '
-        'btnSendEpostKunde
-        '
-        Me.btnSendEpostKunde.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnSendEpostKunde.Image = CType(resources.GetObject("btnSendEpostKunde.Image"), System.Drawing.Image)
-        Me.btnSendEpostKunde.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnSendEpostKunde.Name = "btnSendEpostKunde"
-        Me.btnSendEpostKunde.Size = New System.Drawing.Size(89, 24)
-        Me.btnSendEpostKunde.Text = "Send Epost"
-        '
-        'ToolStripSplitButtonEx1
-        '
-        Me.ToolStripSplitButtonEx1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FakturaToolStripMenuItem, Me.NyhetsbrevToolStripMenuItem, Me.VareoversiktToolStripMenuItem})
-        Me.ToolStripSplitButtonEx1.Image = CType(resources.GetObject("ToolStripSplitButtonEx1.Image"), System.Drawing.Image)
-        Me.ToolStripSplitButtonEx1.Name = "ToolStripSplitButtonEx1"
-        Me.ToolStripSplitButtonEx1.Size = New System.Drawing.Size(106, 24)
-        Me.ToolStripSplitButtonEx1.Text = "Epost maler"
-        '
-        'FakturaToolStripMenuItem
-        '
-        Me.FakturaToolStripMenuItem.Name = "FakturaToolStripMenuItem"
-        Me.FakturaToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.FakturaToolStripMenuItem.Text = "Faktura"
-        '
-        'NyhetsbrevToolStripMenuItem
-        '
-        Me.NyhetsbrevToolStripMenuItem.Name = "NyhetsbrevToolStripMenuItem"
-        Me.NyhetsbrevToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.NyhetsbrevToolStripMenuItem.Text = "Nyhetsbrev"
-        '
-        'VareoversiktToolStripMenuItem
-        '
-        Me.VareoversiktToolStripMenuItem.Name = "VareoversiktToolStripMenuItem"
-        Me.VareoversiktToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.VareoversiktToolStripMenuItem.Text = "Vareoversikt"
-        '
-        'NewToolStripButton
-        '
-        Me.NewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
-        Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.NewToolStripButton.Text = "&New"
-        '
-        'OpenToolStripButton
-        '
-        Me.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
-        Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.OpenToolStripButton.Text = "&Open"
-        '
-        'SaveToolStripButton
-        '
-        Me.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
-        Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.SaveToolStripButton.Text = "&Save"
-        '
-        'PrintToolStripButton
-        '
-        Me.PrintToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
-        Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.PrintToolStripButton.Name = "PrintToolStripButton"
-        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.PrintToolStripButton.Text = "&Print"
-        '
-        'CutToolStripButton
-        '
-        Me.CutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
-        Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.CutToolStripButton.Text = "C&ut"
-        '
-        'CopyToolStripButton
-        '
-        Me.CopyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
-        Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.CopyToolStripButton.Text = "&Copy"
-        '
-        'PasteToolStripButton
-        '
-        Me.PasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
-        Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 24)
-        Me.PasteToolStripButton.Text = "&Paste"
-        '
-        'txtUndo
-        '
-        Me.txtUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtUndo.Image = Global.OOPSA.My.Resources.Resources.txtUndo
-        Me.txtUndo.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtUndo.Name = "txtUndo"
-        Me.txtUndo.Size = New System.Drawing.Size(24, 24)
-        Me.txtUndo.Text = "ToolStripButton2"
-        '
-        'txtRedo
-        '
-        Me.txtRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtRedo.Image = Global.OOPSA.My.Resources.Resources.txtRedo
-        Me.txtRedo.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtRedo.Name = "txtRedo"
-        Me.txtRedo.Size = New System.Drawing.Size(24, 24)
-        Me.txtRedo.Text = "ToolStripButton3"
-        '
-        'txtInsertImg
-        '
-        Me.txtInsertImg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
-        Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtInsertImg.Name = "txtInsertImg"
-        Me.txtInsertImg.Size = New System.Drawing.Size(24, 24)
-        Me.txtInsertImg.Text = "txtInsert"
-        '
-        'txtAlignLeft
-        '
-        Me.txtAlignLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
-        Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtAlignLeft.Name = "txtAlignLeft"
-        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 24)
-        Me.txtAlignLeft.Text = "ToolStripButton5"
-        '
-        'txtAlignJust
-        '
-        Me.txtAlignJust.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
-        Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtAlignJust.Name = "txtAlignJust"
-        Me.txtAlignJust.Size = New System.Drawing.Size(24, 24)
-        Me.txtAlignJust.Text = "ToolStripButton6"
-        '
-        'txtAlignRight
-        '
-        Me.txtAlignRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
-        Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.txtAlignRight.Name = "txtAlignRight"
-        Me.txtAlignRight.Size = New System.Drawing.Size(24, 24)
-        Me.txtAlignRight.Text = "ToolStripButton7"
-        '
-        'tsBtnDBInfo
-        '
-        Me.tsBtnDBInfo.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.tsBtnDBInfo.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
-        Me.tsBtnDBInfo.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsBtnDBInfo.Name = "tsBtnDBInfo"
-        Me.tsBtnDBInfo.Size = New System.Drawing.Size(189, 24)
-        Me.tsBtnDBInfo.Text = "Change Database Information"
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(189, 24)
-        Me.ToolStripButton1.Text = "Change Database Information"
+        'TabLager
+        '
+        Me.TabLager.BeforeTouchSize = New System.Drawing.Size(872, 430)
+        Me.TabLager.Controls.Add(Me.TabPageAdv5)
+        Me.TabLager.Controls.Add(Me.TabPageAdv6)
+        Me.TabLager.Controls.Add(Me.TabPageAdv7)
+        Me.TabLager.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabLager.Location = New System.Drawing.Point(0, 45)
+        Me.TabLager.Name = "TabLager"
+        Me.TabLager.Size = New System.Drawing.Size(872, 430)
+        Me.TabLager.TabIndex = 2
+        Me.TabLager.ThemesEnabled = True
+        '
+        'TabPageAdv5
+        '
+        Me.TabPageAdv5.Controls.Add(Me.GridDataBoundGrid4)
+        Me.TabPageAdv5.Image = Nothing
+        Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 42)
+        Me.TabPageAdv5.Name = "TabPageAdv5"
+        Me.TabPageAdv5.ShowCloseButton = True
+        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 384)
+        Me.TabPageAdv5.TabIndex = 1
+        Me.TabPageAdv5.Text = "Totall ovesikt"
+        Me.TabPageAdv5.ThemesEnabled = True
+        '
+        'GridDataBoundGrid4
+        '
+        Me.GridDataBoundGrid4.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid4.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle13.Name = "Column Header"
+        GridBaseStyle13.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle13.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle13.StyleInfo.Enabled = False
+        GridBaseStyle13.StyleInfo.Font.Bold = True
+        GridBaseStyle13.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle14.Name = "Header"
+        GridBaseStyle14.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.CellType = "Header"
+        GridBaseStyle14.StyleInfo.Font.Bold = True
+        GridBaseStyle14.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle14.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle15.Name = "Standard"
+        GridBaseStyle15.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle15.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle15.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle16.Name = "Row Header"
+        GridBaseStyle16.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle16.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle16.StyleInfo.Enabled = True
+        GridBaseStyle16.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid4.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle13, GridBaseStyle14, GridBaseStyle15, GridBaseStyle16})
+        Me.GridDataBoundGrid4.DataSource = Me.LagerRapportALLEBindingSource
+        Me.GridDataBoundGrid4.DefaultRowHeight = 20
+        Me.GridDataBoundGrid4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid4.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid4.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid4.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid4.MetroScrollBars = True
+        Me.GridDataBoundGrid4.Name = "GridDataBoundGrid4"
+        Me.GridDataBoundGrid4.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid4.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid4.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid4.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid4.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid4.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 384)
+        Me.GridDataBoundGrid4.SmartSizeBox = False
+        Me.GridDataBoundGrid4.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid4.TabIndex = 0
+        Me.GridDataBoundGrid4.Text = "GridDataBoundGrid4"
+        Me.GridDataBoundGrid4.UseListChangedEvent = True
+        Me.GridDataBoundGrid4.UseRightToLeftCompatibleTextBox = True
+        '
+        'LagerRapportALLEBindingSource
+        '
+        Me.LagerRapportALLEBindingSource.DataMember = "LagerRapportALLE"
+        Me.LagerRapportALLEBindingSource.DataSource = Me.Drift8_2016DataSetLageroversiktALLE
+        '
+        'Drift8_2016DataSetLageroversiktALLE
+        '
+        Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
+        Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TabPageAdv6
+        '
+        Me.TabPageAdv6.Controls.Add(Me.GridDataBoundGrid3)
+        Me.TabPageAdv6.Image = Nothing
+        Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 42)
+        Me.TabPageAdv6.Name = "TabPageAdv6"
+        Me.TabPageAdv6.ShowCloseButton = True
+        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 384)
+        Me.TabPageAdv6.TabIndex = 2
+        Me.TabPageAdv6.Text = "Trondheim" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TabPageAdv6.ThemesEnabled = True
+        '
+        'GridDataBoundGrid3
+        '
+        Me.GridDataBoundGrid3.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid3.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle17.Name = "Column Header"
+        GridBaseStyle17.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle17.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle17.StyleInfo.Enabled = False
+        GridBaseStyle17.StyleInfo.Font.Bold = True
+        GridBaseStyle17.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle18.Name = "Header"
+        GridBaseStyle18.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.CellType = "Header"
+        GridBaseStyle18.StyleInfo.Font.Bold = True
+        GridBaseStyle18.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle18.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle19.Name = "Standard"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle19.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle20.Name = "Row Header"
+        GridBaseStyle20.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle20.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle20.StyleInfo.Enabled = True
+        GridBaseStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid3.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle17, GridBaseStyle18, GridBaseStyle19, GridBaseStyle20})
+        Me.GridDataBoundGrid3.DataSource = Me.LagerRapportTrondheimBindingSource
+        Me.GridDataBoundGrid3.DefaultRowHeight = 20
+        Me.GridDataBoundGrid3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid3.MetroScrollBars = True
+        Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
+        Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid3.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid3.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid3.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 384)
+        Me.GridDataBoundGrid3.SmartSizeBox = False
+        Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid3.TabIndex = 0
+        Me.GridDataBoundGrid3.Text = "GridDataBoundGrid3"
+        Me.GridDataBoundGrid3.UseListChangedEvent = True
+        Me.GridDataBoundGrid3.UseRightToLeftCompatibleTextBox = True
+        '
+        'LagerRapportTrondheimBindingSource
+        '
+        Me.LagerRapportTrondheimBindingSource.DataMember = "LagerRapportTrondheim"
+        Me.LagerRapportTrondheimBindingSource.DataSource = Me.Drift8_2016DataSetTrondheimLager
+        '
+        'Drift8_2016DataSetTrondheimLager
+        '
+        Me.Drift8_2016DataSetTrondheimLager.DataSetName = "drift8_2016DataSetTrondheimLager"
+        Me.Drift8_2016DataSetTrondheimLager.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TabPageAdv7
+        '
+        Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid2)
+        Me.TabPageAdv7.Image = Nothing
+        Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 42)
+        Me.TabPageAdv7.Name = "TabPageAdv7"
+        Me.TabPageAdv7.ShowCloseButton = True
+        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 384)
+        Me.TabPageAdv7.TabIndex = 3
+        Me.TabPageAdv7.Text = "Stavanger"
+        Me.TabPageAdv7.ThemesEnabled = True
+        '
+        'GridDataBoundGrid2
+        '
+        Me.GridDataBoundGrid2.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle21.Name = "Column Header"
+        GridBaseStyle21.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle21.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle21.StyleInfo.Enabled = False
+        GridBaseStyle21.StyleInfo.Font.Bold = True
+        GridBaseStyle21.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle22.Name = "Header"
+        GridBaseStyle22.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.CellType = "Header"
+        GridBaseStyle22.StyleInfo.Font.Bold = True
+        GridBaseStyle22.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle22.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle23.Name = "Standard"
+        GridBaseStyle23.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle23.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle23.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle24.Name = "Row Header"
+        GridBaseStyle24.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle24.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle24.StyleInfo.Enabled = True
+        GridBaseStyle24.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle21, GridBaseStyle22, GridBaseStyle23, GridBaseStyle24})
+        Me.GridDataBoundGrid2.DataSource = Me.LagerRapportStavangerBindingSource
+        Me.GridDataBoundGrid2.DefaultRowHeight = 20
+        Me.GridDataBoundGrid2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid2.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid2.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid2.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid2.MetroScrollBars = True
+        Me.GridDataBoundGrid2.Name = "GridDataBoundGrid2"
+        Me.GridDataBoundGrid2.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid2.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid2.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid2.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 384)
+        Me.GridDataBoundGrid2.SmartSizeBox = False
+        Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid2.TabIndex = 0
+        Me.GridDataBoundGrid2.Text = "GridDataBoundGrid2"
+        Me.GridDataBoundGrid2.UseListChangedEvent = True
+        Me.GridDataBoundGrid2.UseRightToLeftCompatibleTextBox = True
+        '
+        'LagerRapportStavangerBindingSource
+        '
+        Me.LagerRapportStavangerBindingSource.DataMember = "LagerRapportStavanger"
+        Me.LagerRapportStavangerBindingSource.DataSource = Me.Drift8_2016DataSetLagerRapportStavnager
+        '
+        'Drift8_2016DataSetLagerRapportStavnager
+        '
+        Me.Drift8_2016DataSetLagerRapportStavnager.DataSetName = "drift8_2016DataSetLagerRapportStavnager"
+        Me.Drift8_2016DataSetLagerRapportStavnager.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ToolStripEx4
+        '
+        Me.ToolStripEx4.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx4.Image = Nothing
+        Me.ToolStripEx4.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx4.Name = "ToolStripEx4"
+        Me.ToolStripEx4.Office12Mode = False
+        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 45)
+        Me.ToolStripEx4.TabIndex = 1
+        Me.ToolStripEx4.Text = "Lageroversikt"
+        Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 1000
+        '
+        'KjøpTableAdapter
+        '
+        Me.KjøpTableAdapter.ClearBeforeFill = True
+        '
+        'AnsattTableAdapter
+        '
+        Me.AnsattTableAdapter.ClearBeforeFill = True
+        '
+        'SpellChecker1
+        '
+        Me.SpellChecker1.CustomDictionaryPath = "C:\ProgramData\Microsoft Corporation\Microsoft® Visual Studio® 2015\14.0.24720.0\" &
+    "Custom_Dictionay.dic"
+        Me.SpellChecker1.DictionaryPath = "Syncfusion_en_us.dic"
+        Me.SpellChecker1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.SpellChecker1.VisualStyle = Syncfusion.Text.SpellCheckerStyle.[Default]
+        '
+        'SalgsRaportTableAdapter
+        '
+        Me.SalgsRaportTableAdapter.ClearBeforeFill = True
+        '
+        'Drift82016dsSalgsRapportViewBindingSource
+        '
+        Me.Drift82016dsSalgsRapportViewBindingSource.DataSource = Me.drift8_2016dsSalgsRapportView
+        Me.Drift82016dsSalgsRapportViewBindingSource.Position = 0
+        '
+        'SalgsRaportBindingSource1
+        '
+        Me.SalgsRaportBindingSource1.DataMember = "SalgsRaport"
+        Me.SalgsRaportBindingSource1.DataSource = Me.Drift82016dsSalgsRapportViewBindingSource
+        '
+        'KundeTableAdapter
+        '
+        Me.KundeTableAdapter.ClearBeforeFill = True
+        '
+        'A_LagerTableAdapter1
+        '
+        Me.A_LagerTableAdapter1.ClearBeforeFill = True
+        '
+        'SalgsRaportBindingSource3
+        '
+        Me.SalgsRaportBindingSource3.DataMember = "SalgsRaport"
+        Me.SalgsRaportBindingSource3.DataSource = Me.drift8_2016dsSalgsRapportView
+        '
+        'LagerRapportTrondheimTableAdapter
+        '
+        Me.LagerRapportTrondheimTableAdapter.ClearBeforeFill = True
+        '
+        'LagerRapportALLETableAdapter
+        '
+        Me.LagerRapportALLETableAdapter.ClearBeforeFill = True
+        '
+        'LagerRapportStavangerTableAdapter
+        '
+        Me.LagerRapportStavangerTableAdapter.ClearBeforeFill = True
         '
         'frmAdminMetro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
@@ -1947,30 +2211,12 @@ Partial Class frmAdminMetro
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tbAnsKund, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbAnsKund.ResumeLayout(False)
-        Me.ToolStripEx7.ResumeLayout(False)
-        Me.ToolStripEx7.PerformLayout()
-        Me.ToolStripEx8.ResumeLayout(False)
-        Me.ToolStripEx8.PerformLayout()
-        Me.ToolStripEx9.ResumeLayout(False)
-        Me.ToolStripEx9.PerformLayout()
-        Me.ToolStripEx1.ResumeLayout(False)
-        Me.ToolStripEx1.PerformLayout()
-        CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStripEx11.ResumeLayout(False)
-        Me.ToolStripEx11.PerformLayout()
-        Me.ToolStripEx6.ResumeLayout(False)
-        Me.ToolStripEx6.PerformLayout()
-        Me.toolstripDBInfo.ResumeLayout(False)
-        Me.toolstripDBInfo.PerformLayout()
-        Me.ToolStripEx10.ResumeLayout(False)
-        Me.ToolStripEx10.PerformLayout()
-        CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbOverview.ResumeLayout(False)
         Me.tbOverview.PerformLayout()
         CType(Me.TabControlAdv3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1981,12 +2227,20 @@ Partial Class frmAdminMetro
         Me.reportSalg.ResumeLayout(False)
         Me.reportSalg.PerformLayout()
         Me.Panel5.ResumeLayout(False)
+        Me.ToolStripEx7.ResumeLayout(False)
+        Me.ToolStripEx7.PerformLayout()
         Me.reportLager.ResumeLayout(False)
         Me.reportLager.PerformLayout()
         Me.Panel8.ResumeLayout(False)
+        Me.ToolStripEx8.ResumeLayout(False)
+        Me.ToolStripEx8.PerformLayout()
         Me.reportLeie.ResumeLayout(False)
         Me.reportLeie.PerformLayout()
         Me.Panel9.ResumeLayout(False)
+        Me.ToolStripEx9.ResumeLayout(False)
+        Me.ToolStripEx9.PerformLayout()
+        Me.ToolStripEx1.ResumeLayout(False)
+        Me.ToolStripEx1.PerformLayout()
         Me.tbPersoner.ResumeLayout(False)
         Me.tbPersoner.PerformLayout()
         CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1999,20 +2253,23 @@ Partial Class frmAdminMetro
         CType(Me.SplitContainerAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerAdv1.ResumeLayout(False)
         CType(Me.dgvAnsatte, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AnsattBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbKunder.ResumeLayout(False)
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlAdv1.ResumeLayout(False)
         Me.tbKunderOversikt.ResumeLayout(False)
-        Me.SplitContainer3.Panel1.ResumeLayout(False)
         Me.SplitContainer3.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer3.ResumeLayout(False)
         CType(Me.dgvKunde, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbKundeEpost.ResumeLayout(False)
         Me.tbKundeEpost.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.StatusStripEx1.ResumeLayout(False)
+        Me.ToolStripEx11.ResumeLayout(False)
+        Me.ToolStripEx11.PerformLayout()
         Me.tbSalg.ResumeLayout(False)
         Me.tbSalg.PerformLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2021,6 +2278,8 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.ToolStripEx6.ResumeLayout(False)
+        Me.ToolStripEx6.PerformLayout()
         Me.tbUtleieOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbSettings.ResumeLayout(False)
@@ -2043,10 +2302,29 @@ Partial Class frmAdminMetro
         CType(Me.TxtSvrUser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtServer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.toolstripDBInfo.ResumeLayout(False)
+        Me.toolstripDBInfo.PerformLayout()
+        Me.ToolStripEx10.ResumeLayout(False)
+        Me.ToolStripEx10.PerformLayout()
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
-        CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabLager, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabLager.ResumeLayout(False)
+        Me.TabPageAdv5.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPageAdv6.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LagerRapportTrondheimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSetTrondheimLager, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPageAdv7.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SalgsRaportBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2162,12 +2440,11 @@ Partial Class frmAdminMetro
     Friend WithEvents btnSendEpostKunde As ToolStripButton
     Friend WithEvents toolstripCMBxKunder As Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents SpellChecker1 As Syncfusion.Text.SpellChecker
     Friend WithEvents ToolStripTxtSubject As ToolStripTextBox
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
     Friend WithEvents ToolStripSplitButtonEx1 As Syncfusion.Windows.Forms.Tools.ToolStripSplitButtonEx
+    Private WithEvents dtSalgReportingBindingSource As BindingSource
     Friend WithEvents StatusStripLabel1 As Syncfusion.Windows.Forms.Tools.StatusStripLabel
     Friend WithEvents StatusStripProgressBar1 As Syncfusion.Windows.Forms.Tools.StatusStripProgressBar
     Friend WithEvents StatusStripLabel2 As Syncfusion.Windows.Forms.Tools.StatusStripLabel
@@ -2179,6 +2456,7 @@ Partial Class frmAdminMetro
     Friend WithEvents SalgsRaportTableAdapter As drift8_2016dsSalgsRapportViewTableAdapters.SalgsRaportTableAdapter
     Friend WithEvents SalgsRaportBindingSource1 As BindingSource
     Friend WithEvents Drift82016dsSalgsRapportViewBindingSource As BindingSource
+    Private WithEvents VisAnsattesSalgBindingSource As BindingSource
     Private WithEvents drift8_2016dsSalgsRapportView As drift8_2016dsSalgsRapportView
     Private WithEvents SalgsRaportBindingSource2 As BindingSource
     Friend WithEvents Panel8 As Panel
@@ -2192,11 +2470,27 @@ Partial Class frmAdminMetro
     Friend WithEvents KundeBindingSource As BindingSource
     Friend WithEvents KundeTableAdapter As drift8_2016DataSetTableAdapters.KundeTableAdapter
     Friend WithEvents btnAnsattUpdate As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents btnKundeAdd As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents btnUpdKunde As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents dtSalgReportingBindingSource As BindingSource
-    Friend WithEvents VisAnsattesSalgBindingSource As BindingSource
-    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents SalgsRaportBindingSource As BindingSource
-    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents TabLager As Syncfusion.Windows.Forms.Tools.TabControlAdv
+    Friend WithEvents TabPageAdv5 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents A_LagerTableAdapter1 As drift8_2016DataSetTableAdapters.A_LagerTableAdapter
+    Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents SalgsRaportBindingSource As BindingSource
+    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents GridDataBoundGrid4 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents TabPageAdv6 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents GridDataBoundGrid3 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents TabPageAdv7 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents GridDataBoundGrid2 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents SalgsRaportBindingSource3 As BindingSource
+    Friend WithEvents Drift8_2016DataSetTrondheimLager As drift8_2016DataSetTrondheimLager
+    Friend WithEvents LagerRapportTrondheimBindingSource As BindingSource
+    Friend WithEvents LagerRapportTrondheimTableAdapter As drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter
+    Friend WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
+    Friend WithEvents LagerRapportALLEBindingSource As BindingSource
+    Friend WithEvents LagerRapportALLETableAdapter As drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter
+    Friend WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
+    Friend WithEvents LagerRapportStavangerBindingSource As BindingSource
+    Friend WithEvents LagerRapportStavangerTableAdapter As drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter
 End Class

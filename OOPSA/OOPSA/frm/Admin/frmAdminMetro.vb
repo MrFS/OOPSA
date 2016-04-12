@@ -18,7 +18,6 @@ Imports Syncfusion.DocIO.DLS
 Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
-    Dim sql As New SQL
 
     ''' <summary>
     ''' Viser frmAddUsr
@@ -36,6 +35,15 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
+        Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
+        Try
+            Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
+        Catch ex As Exception
+        End Try
+
+        'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
+        Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Kunde' table. You can move, or remove it, as needed.
         Me.KundeTableAdapter.Fill(Me.drift8_2016DataSet.Kunde)
 
@@ -284,12 +292,7 @@ Public Class frmAdminMetro
         Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
     End Sub
 
-    Private Sub btnAddUsr_Click_1(sender As Object, e As EventArgs) Handles btnAddUsr.Click
-
-    End Sub
-
-    Private Sub btnKundeAdd_Click(sender As Object, e As EventArgs) Handles btnKundeAdd.Click
-        frmAddKunde.Show()
+    Private Sub TabLager_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabLager.SelectedIndexChanged
 
     End Sub
 
