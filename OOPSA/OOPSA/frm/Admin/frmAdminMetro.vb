@@ -296,6 +296,10 @@ Public Class frmAdminMetro
 
     End Sub
 
+    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click
+        frmAddKunde1.Show()
+    End Sub
+
     '<STAThread>
     'Public Sub MySub()
 
