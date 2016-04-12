@@ -206,6 +206,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frm\Admin\frmAddKunde1.Designer.vb">
+      <DependentUpon>frmAddKunde1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Admin\frmAddKunde1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -320,6 +326,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Admin\frmAddKunde1.resx">
+      <DependentUpon>frmAddKunde1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmAddLeie.resx">
       <DependentUpon>frmAddLeie.vb</DependentUpon>
