@@ -4,21 +4,7 @@ Imports MySql.Data.MySqlClient
 Public Class frmLager
     Inherits MetroForm
     'Public lager As Integer = 0
-    Private Sub TabPageAdv1_Click(sender As Object, e As EventArgs) Handles TabPageAdv1.Click
 
-    End Sub
-
-    Private Sub TabControlAdv1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControlAdv1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' Dim da = New MySqlCommand()
@@ -32,20 +18,15 @@ Public Class frmLager
                 lager = 1
         End Select
 
-        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & TextBoxExt7.Text & "', '" & TextBoxExt6.Text & "', '" & TextBoxExt9.Text & "', '" & lager & "' )")
+        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & TextBoxExt7.Text & "', '" & TextBoxExt6.Text & "', '" & TextBoxExt9.Text & "', '" & lager & "')")
 
 
-    End Sub
 
-    Private Sub ComboDropDown1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TabPageAdv3_Click(sender As Object, e As EventArgs) Handles TabPageAdv3.Click
     End Sub
 
     Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
-
+        Dim sql As New MySqlCommand("DELETE FROM Produkt WHERE Produkt_navn ='" & ComboBox2.SelectedItem & "'", con)
+        sql.ExecuteNonQuery()
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
@@ -79,29 +60,15 @@ Public Class frmLager
         'ElseIf ComboBox1.Text = "Trondheim" Then
         '    lager = 2
         'End If
+        Try
+
+            Initialize()
+
+        Catch ex As Exception
+        End Try
     End Sub
 
-    Private Sub TextBoxExt9_TextChanged(sender As Object, e As EventArgs) Handles TextBoxExt9.TextChanged
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub GridDataBoundGrid1_CellClick(sender As Object, e As Grid.GridCellClickEventArgs) Handles GridDataBoundGrid1.CellClick
-
-    End Sub
-
-    Private Sub ComboDropDown3_Click(sender As Object, e As EventArgs) Handles ComboDropDown3.Click
-
-    End Sub
-
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub TextBoxExt2_TextChanged(sender As Object, e As EventArgs) Handles TextBoxExt2.TextChanged
+    Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles ButtonAdv1.Click
 
     End Sub
 End Class
