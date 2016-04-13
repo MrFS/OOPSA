@@ -67,7 +67,7 @@ Public Class frmLager
         sql.sporring("SELECT Lager_id FROM Lager WHERE by = '" & lagerEndre.Text & "'")
 
 
-        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & BtnNavnEndre.Text & "', '" & BtnPrisEndre.Text & "', '" & btnAntEndre.Text & "', '" & NEIN FIX THIS & "')")
+        '  sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & BtnNavnEndre.Text & "', '" & BtnPrisEndre.Text & "', '" & btnAntEndre.Text & "', '" & NEIN FIX THIS & "')")
     End Sub
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
 

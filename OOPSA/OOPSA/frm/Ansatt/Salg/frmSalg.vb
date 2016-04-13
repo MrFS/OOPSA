@@ -54,38 +54,33 @@ Public Class frmSalg
 
     Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles ButtonAdv1.Click
 
-
-
+        'Noe galt med spørringen ellers bør alt virke
 
         Dim sql As New SQL
         Dim sqlstring As String
-        Dim dt As DataTable
-        Dim dr As DataRow
 
         Dim Kundenavn As String = ComboKunde.Text
         Dim KursNavn As String = ComboKurs.Text
+
         Dim kundeF() As String
-
-
         kundeF = Kundenavn.Split(" ")
 
-
-
         sqlstring = "SELECT Kid FROM Kunde WHERE F_navn = '" & kundeF(0) & "' AND  E_navn = '" & kundeF(1) & "' "
-        dt = sql.sporring(sqlstring)
-        Dim kid As String
-        dr = dt.Rows(0)
-        kid = dr("Kid")
+        Dim Kid As Integer = sql.Return1Row(sqlstring, "Kid")
 
+        MsgBox(Kid)
 
+        sqlstring = "SELECT Kurs_id FROM Kurs WHERE Navn = " & KursNavn & " AND NOW() < Tid_avholdt"
+        Dim Kurs_id As Integer = sql.Return1Row(sqlstring, "Kurs_id")
 
-        'Dim Kurs_id As Integer
-        'Dim Kid As Integer
-        'Dim Tid As String
+        MsgBox(Kurs_id)
 
+        sqlstring = "SELECT Tid_avholdt FROM Kurs WHERE Kurs_id=" & Kurs_id & ""
+        Dim Tid As String = sql.Return1Row(sqlstring, "Tid_avholdt")
 
+        MsgBox(Tid)
 
-        'sql.sporring("INSERT INTO Kurs_deltagelse (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`) VALUES (" & Kurs_id & ", " & Kid & ", " & Tid & ");")
+        sql.sporring("INSERT INTO Kurs_deltagelse (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`) VALUES (" & Kurs_id & ", " & Kid & ", " & Tid & ");")
 
 
 
