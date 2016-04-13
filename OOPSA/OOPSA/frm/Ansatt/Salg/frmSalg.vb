@@ -54,43 +54,52 @@ Public Class frmSalg
 
     Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles ButtonAdv1.Click
 
-        'FEIL MED SPØRRING........
-        'MEN RESTEN BURDE VÆR GUDD......
-        'HUSK Å SPØR FS OM HILFE
+
 
 
         Dim sql As New SQL
-        Dim sqlstring1 As String
         Dim sqlstring As String
-
+        Dim dt As DataTable
+        Dim dr As DataRow
 
         Dim Kundenavn As String = ComboKunde.Text
         Dim KursNavn As String = ComboKurs.Text
+        Dim kundeF() As String
 
-        sqlstring1 = ("SELECT Kid FROM Kunde WHERE CONCAT( F_navn, ' ', E_navn) = " & Kundenavn & " ")
 
-        Dim Kid As Integer = sql.dataset(sqlstring1)
-
-        sqlstring = ("SELECT Kurs_id, Dato FROM Kurs WHERE Navn = " & KursNavn & " AND NOW() <  Tid_avholdt")
-
-        Dim Kurs_id As Integer
-        Dim Tid As String
-
-        Dim adapter As New MySqlDataAdapter(sqlstring, con)
-        Dim ds_produkt = New DataSet
-        Dim dr_produkt As DataRow
-        Dim dt_produkt As DataTable
-        adapter.Fill(ds_produkt, "Kurs")
-        dt_produkt = ds_produkt.Tables(0)
-        For Each dr_produkt In dt_produkt.Rows
-            Kurs_id = dr_produkt("Kurs_id")
-            Tid = dr_produkt("Dato")
-        Next
+        kundeF = Kundenavn.Split(" ")
 
 
 
+        sqlstring = "SELECT Kid FROM Kunde WHERE F_navn = '" & kundeF(0) & "' AND  E_navn = '" & kundeF(1) & "' "
+        dt = sql.sporring(sqlstring)
+        Dim kid As String
+        dr = dt.Rows(0)
+        kid = dr("Kid")
 
-        sql.sporring("INSERT INTO Kurs_deltagelse (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`) VALUES (" & Kurs_id & ", " & Kid & ", " & Tid & ");")
+
+
+        'Dim Kurs_id As Integer
+        'Dim Kid As Integer
+        'Dim Tid As String
+
+
+
+        'sql.sporring("INSERT INTO Kurs_deltagelse (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`) VALUES (" & Kurs_id & ", " & Kid & ", " & Tid & ");")
+
+
+
+    End Sub
+
+    Private Sub btnVelg_Click(sender As Object, e As EventArgs) Handles btnVelg.Click
+
+        Dim kunde As String = CInt(txtKundid.Text)
+
+
+
+
+
+
 
 
 
