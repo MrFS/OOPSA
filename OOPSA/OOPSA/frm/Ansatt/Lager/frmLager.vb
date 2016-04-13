@@ -5,13 +5,7 @@ Public Class frmLager
     Inherits MetroForm
     Public lager As Integer = 0
     Private Sub TabPageAdv1_Click(sender As Object, e As EventArgs) Handles TabPageAdv1.Click
-        ComboBox1.Items.Add("Trondheim")
 
-        If ComboBox1.Text = "Trondheim" Then
-            lager = 2
-        ElseIf ComboBox1.Text = "Oslo" Then
-            lager = 3
-        End If
     End Sub
 
     Private Sub TabControlAdv1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControlAdv1.SelectedIndexChanged
@@ -42,7 +36,7 @@ Public Class frmLager
     End Sub
 
     Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
-
+        Dim adapter As New MySqlCommand("DELETE FROM Produkt WHERE Produkt_navn='" & ComboBox2.Text & "'", con)
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
@@ -59,5 +53,17 @@ Public Class frmLager
             ComboBox3.Items.Add(dr("Produkt_navn"))
             ComboBox2.Items.Add(dr("Produkt_navn"))
         Next
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+
     End Sub
 End Class
