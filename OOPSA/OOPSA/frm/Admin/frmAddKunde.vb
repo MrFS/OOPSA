@@ -9,12 +9,33 @@ Public Class frmAddKunde
 
     Private Sub btnnyKunde_Click(sender As Object, e As EventArgs) Handles btnNyKunde.Click
         Try
+            Dim kundeId As String
+            Dim dt As DataTable
+            Dim cmd As New MySqlCommand("INSERT INTO Kunde (F_navn, E_navn, e_postt) VALUES (@F_navn, @E_navn, @epostt)", con)
+
+            cmd.Parameters.AddWithValue("@F_navn", txtKundeFnavn.Text)
+            cmd.Parameters.AddWithValue("@E_navn", txtKundeEnavn.Text)
+            cmd.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
+
+            cmd.ExecuteNonQuery()
+
+            'Dim cmd3 As String = ("SELECT Kid from Kunde WHERE e_epostt = @epostt ")
+            'sql.dataset(cmd3)
+
+
+            'cmd3.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
+
+            'dt = cmd3
+            'kundeId = dt.Rows(0).Table("Kid").ToString
+
+
             If kundetype = True Then
                 'legger inn i PersonKunde tabellen
-                Dim cmd1 As New MySqlCommand("INSERT INTO K_privat (P_addresse, Post) VALUES (@P_addresse, @Post)", con)
+                Dim cmd1 As New MySqlCommand("INSERT INTO K_privat (Kunde_Kid, P_addresse, Post) VALUES (@Kunde_Kid, @P_addresse, @Post)", con)
 
                 cmd1.Parameters.AddWithValue("@P_addresse", txtPrivAdresse.Text)
                 cmd1.Parameters.AddWithValue("@Post", CInt(txtPrivPnr.Text))
+                cmd1.Parameters.AddWithValue("@Kunde_Kid", kundeId)
 
                 cmd1.ExecuteNonQuery()
             Else
@@ -30,13 +51,7 @@ Public Class frmAddKunde
             End If
 
             'legger info inn i Kunde tabellen
-            Dim cmd As New MySqlCommand("INSERT INTO Kunde (F_navn, E_navn, e_postt) VALUES (@F_navn, @E_navn, @epostt)", con)
 
-            cmd.Parameters.AddWithValue("@F_navn", txtKundeFnavn.Text)
-            cmd.Parameters.AddWithValue("@E_navn", txtKundeEnavn.Text)
-            cmd.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
-
-            cmd.ExecuteNonQuery()
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -62,6 +77,8 @@ Public Class frmAddKunde
         lblFornavn.Visible = True
         lblEtternavn.Visible = True
         lblPostnr.Visible = True
+        lblBedriftNavn.Visible = False
+        txtBedriftNavn.Visible = False
 
         'btnBedriftKunde.Visible = False
         kundetype = True
@@ -71,7 +88,7 @@ Public Class frmAddKunde
 
     Private Sub frmAddKunde1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Initialize()
+        'Initialize()
 
         Me.Height = 150
         Me.Refresh()
