@@ -35,6 +35,10 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Drift8_2016DataSet2.BedriftKunde' table. You can move, or remove it, as needed.
+        Me.BedriftKundeTableAdapter.Fill(Me.Drift8_2016DataSet2.BedriftKunde)
+        'TODO: This line of code loads data into the 'Drift8_2016DataSet1.PrivatKunde' table. You can move, or remove it, as needed.
+        Me.PrivatKundeTableAdapter.Fill(Me.Drift8_2016DataSet1.PrivatKunde)
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
         Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
         Try
@@ -288,11 +292,11 @@ Public Class frmAdminMetro
         End If
     End Sub
 
-    Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click
+    Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click, ButtonAdv1.Click
         Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
     End Sub
 
-    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click
+    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click, ButtonAdv5.Click
         frmAddKunde.Show()
     End Sub
 

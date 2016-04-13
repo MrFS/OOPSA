@@ -19,11 +19,10 @@ Public Class frmAddKunde
 
             cmd.ExecuteNonQuery()
 
-            'Dim cmd3 As String = ("SELECT Kid from Kunde WHERE e_epostt = @epostt ")
-            'sql.dataset(cmd3)
+            Dim cmd3 As String = ("SELECT Kid from Kunde WHERE e_epostt = @epostt ")
+            sql.dataset(cmd3)
 
-
-            'cmd3.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
+            cmd3.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
 
             'dt = cmd3
             'kundeId = dt.Rows(0).Table("Kid").ToString
