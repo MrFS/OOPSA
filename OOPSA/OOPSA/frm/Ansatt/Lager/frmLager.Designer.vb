@@ -55,10 +55,10 @@ Partial Class frmLager
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.ProduktBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
-        Me.ProduktBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProduktTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.ProduktTableAdapter()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
@@ -75,8 +75,8 @@ Partial Class frmLager
         Me.TabPageAdv3.SuspendLayout()
         Me.TabPageAdv4.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MiniToolBar1
@@ -87,17 +87,16 @@ Partial Class frmLager
         '
         'TabControlAdv1
         '
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(1586, 700)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(1190, 563)
         Me.TabControlAdv1.Controls.Add(Me.TabPageAdv1)
         Me.TabControlAdv1.Controls.Add(Me.TabPageAdv2)
         Me.TabControlAdv1.Controls.Add(Me.TabPageAdv3)
         Me.TabControlAdv1.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.ItemSize = New System.Drawing.Size(83, 48)
-        Me.TabControlAdv1.Location = New System.Drawing.Point(0, 45)
-        Me.TabControlAdv1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControlAdv1.Location = New System.Drawing.Point(0, 40)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(1586, 700)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(1190, 563)
         Me.TabControlAdv1.TabIndex = 2
         Me.TabControlAdv1.ThemesEnabled = True
         '
@@ -116,10 +115,9 @@ Partial Class frmLager
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv1.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(1579, 643)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(1183, 506)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Legge til varer"
         Me.TabPageAdv1.ThemesEnabled = False
@@ -127,18 +125,18 @@ Partial Class frmLager
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(184, 223)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBox1.Location = New System.Drawing.Point(138, 181)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(92, 23)
         Me.ComboBox1.TabIndex = 26
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(173, 279)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(130, 227)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 30)
+        Me.Button1.Size = New System.Drawing.Size(106, 24)
         Me.Button1.TabIndex = 25
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -146,22 +144,20 @@ Partial Class frmLager
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(76, 226)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(57, 184)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(91, 20)
+        Me.Label10.Size = New System.Drawing.Size(72, 15)
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "Endre lager :"
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt6.Location = New System.Drawing.Point(173, 182)
-        Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt6.Location = New System.Drawing.Point(130, 148)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt6.Name = "TextBoxExt6"
-        Me.TextBoxExt6.Size = New System.Drawing.Size(132, 27)
+        Me.TextBoxExt6.Size = New System.Drawing.Size(100, 23)
         Me.TextBoxExt6.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt6.TabIndex = 22
         Me.TextBoxExt6.Text = "TextBoxExt6"
@@ -169,22 +165,20 @@ Partial Class frmLager
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(76, 182)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(57, 148)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(38, 20)
+        Me.Label11.Size = New System.Drawing.Size(32, 15)
         Me.Label11.TabIndex = 21
         Me.Label11.Text = "Pris :"
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(173, 138)
-        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt7.Location = New System.Drawing.Point(130, 112)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(132, 27)
+        Me.TextBoxExt7.Size = New System.Drawing.Size(100, 23)
         Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt7.TabIndex = 20
         Me.TextBoxExt7.Text = "TextBoxExt7"
@@ -192,22 +186,20 @@ Partial Class frmLager
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(69, 138)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(52, 112)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(50, 20)
+        Me.Label12.Size = New System.Drawing.Size(41, 15)
         Me.Label12.TabIndex = 19
         Me.Label12.Text = "Navn :"
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt9.Location = New System.Drawing.Point(173, 94)
-        Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt9.Location = New System.Drawing.Point(130, 76)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt9.Name = "TextBoxExt9"
-        Me.TextBoxExt9.Size = New System.Drawing.Size(132, 27)
+        Me.TextBoxExt9.Size = New System.Drawing.Size(100, 23)
         Me.TextBoxExt9.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt9.TabIndex = 16
         Me.TextBoxExt9.Text = "TextBoxExt9"
@@ -215,10 +207,9 @@ Partial Class frmLager
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(75, 94)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(56, 76)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(53, 20)
+        Me.Label14.Size = New System.Drawing.Size(44, 15)
         Me.Label14.TabIndex = 15
         Me.Label14.Text = "Antall :"
         '
@@ -240,10 +231,9 @@ Partial Class frmLager
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv2.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(1579, 643)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(1183, 506)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "Endre vare beholdning"
         Me.TabPageAdv2.ThemesEnabled = False
@@ -251,40 +241,37 @@ Partial Class frmLager
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(251, 17)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBox3.Location = New System.Drawing.Point(188, 14)
+        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox3.Size = New System.Drawing.Size(92, 21)
         Me.ComboBox3.TabIndex = 13
         '
         'ComboDropDown3
         '
-        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(160, 24)
-        Me.ComboDropDown3.Location = New System.Drawing.Point(265, 268)
-        Me.ComboDropDown3.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(121, 21)
+        Me.ComboDropDown3.Location = New System.Drawing.Point(188, 218)
         Me.ComboDropDown3.Name = "ComboDropDown3"
-        Me.ComboDropDown3.Size = New System.Drawing.Size(160, 24)
+        Me.ComboDropDown3.Size = New System.Drawing.Size(121, 21)
         Me.ComboDropDown3.TabIndex = 12
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(168, 268)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(121, 218)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(90, 17)
+        Me.Label9.Size = New System.Drawing.Size(67, 13)
         Me.Label9.TabIndex = 11
         Me.Label9.Text = "Endre lager :"
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(251, 220)
-        Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt5.Location = New System.Drawing.Point(188, 179)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt5.Name = "TextBoxExt5"
-        Me.TextBoxExt5.Size = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt5.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt5.TabIndex = 10
         Me.TextBoxExt5.Text = "TextBoxExt5"
@@ -292,22 +279,20 @@ Partial Class frmLager
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(168, 220)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(126, 179)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 17)
+        Me.Label8.Size = New System.Drawing.Size(48, 13)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Ny  pris :"
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt4.Location = New System.Drawing.Point(251, 161)
-        Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt4.Location = New System.Drawing.Point(188, 131)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt4.Name = "TextBoxExt4"
-        Me.TextBoxExt4.Size = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt4.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxExt4.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt4.TabIndex = 8
         Me.TextBoxExt4.Text = "TextBoxExt4"
@@ -315,22 +300,20 @@ Partial Class frmLager
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(161, 161)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(121, 131)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 17)
+        Me.Label7.Size = New System.Drawing.Size(59, 13)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Nytt navn :"
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(251, 110)
-        Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(188, 89)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt3.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt3.TabIndex = 6
         Me.TextBoxExt3.Text = "TextBoxExt3"
@@ -338,33 +321,30 @@ Partial Class frmLager
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(115, 111)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(86, 90)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(124, 17)
+        Me.Label6.Size = New System.Drawing.Size(93, 13)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Nytt varenummer :"
         '
         'ButtonAdv1
         '
-        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(100, 28)
+        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(75, 23)
         Me.ButtonAdv1.IsBackStageButton = False
-        Me.ButtonAdv1.Location = New System.Drawing.Point(251, 391)
-        Me.ButtonAdv1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv1.Location = New System.Drawing.Point(188, 318)
         Me.ButtonAdv1.Name = "ButtonAdv1"
-        Me.ButtonAdv1.Size = New System.Drawing.Size(100, 28)
+        Me.ButtonAdv1.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdv1.TabIndex = 4
         Me.ButtonAdv1.Text = "ButtonAdv1"
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt2.Location = New System.Drawing.Point(251, 62)
-        Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt2.Location = New System.Drawing.Point(188, 50)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt2.Name = "TextBoxExt2"
-        Me.TextBoxExt2.Size = New System.Drawing.Size(132, 22)
+        Me.TextBoxExt2.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt2.TabIndex = 3
         Me.TextBoxExt2.Text = "TextBoxExt2"
@@ -372,20 +352,18 @@ Partial Class frmLager
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(167, 62)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(125, 50)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 17)
+        Me.Label4.Size = New System.Drawing.Size(60, 13)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Nytt antall :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(163, 17)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(122, 14)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 17)
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Velg vare"
         '
@@ -397,10 +375,9 @@ Partial Class frmLager
         Me.TabPageAdv3.Image = Nothing
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(1579, 643)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(1183, 506)
         Me.TabPageAdv3.TabIndex = 3
         Me.TabPageAdv3.Text = "Fjerne varer"
         Me.TabPageAdv3.ThemesEnabled = False
@@ -408,30 +385,28 @@ Partial Class frmLager
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(569, 114)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBox2.Location = New System.Drawing.Point(427, 93)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox2.Size = New System.Drawing.Size(92, 21)
         Me.ComboBox2.TabIndex = 3
         '
         'ButtonAdv2
         '
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(100, 28)
+        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(75, 23)
         Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(569, 171)
-        Me.ButtonAdv2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv2.Location = New System.Drawing.Point(427, 139)
         Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(100, 28)
+        Me.ButtonAdv2.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdv2.TabIndex = 2
         Me.ButtonAdv2.Text = "Slett"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(465, 121)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(349, 98)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 17)
+        Me.Label2.Size = New System.Drawing.Size(58, 13)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Velg vare :"
         '
@@ -442,10 +417,9 @@ Partial Class frmLager
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(1579, 643)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(1183, 506)
         Me.TabPageAdv4.TabIndex = 4
         Me.TabPageAdv4.Text = "Oversikt"
         Me.TabPageAdv4.ThemesEnabled = False
@@ -455,12 +429,11 @@ Partial Class frmLager
         Me.GridDataBoundGrid1.AllowDragSelectedCols = True
         Me.GridDataBoundGrid1.DataMember = ""
         Me.GridDataBoundGrid1.DataSource = Me.ProduktBindingSource
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(432, 4)
-        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(324, 3)
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(1140, 615)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(855, 500)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 3
@@ -468,13 +441,22 @@ Partial Class frmLager
         Me.GridDataBoundGrid1.UseListChangedEvent = True
         Me.GridDataBoundGrid1.UseRightToLeftCompatibleTextBox = True
         '
+        'ProduktBindingSource
+        '
+        Me.ProduktBindingSource.DataMember = "Produkt"
+        Me.ProduktBindingSource.DataSource = Me.Drift8_2016DataSet
+        '
+        'Drift8_2016DataSet
+        '
+        Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
+        Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(141, 239)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(106, 194)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 17)
+        Me.Label5.Size = New System.Drawing.Size(96, 13)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Legge til stats her?"
         '
@@ -486,20 +468,10 @@ Partial Class frmLager
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(1586, 45)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(1190, 40)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "ToolStripEx1"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
-        '
-        'Drift8_2016DataSet
-        '
-        Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
-        Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProduktBindingSource
-        '
-        Me.ProduktBindingSource.DataMember = "Produkt"
-        Me.ProduktBindingSource.DataSource = Me.Drift8_2016DataSet
         '
         'ProduktTableAdapter
         '
@@ -507,14 +479,13 @@ Partial Class frmLager
         '
         'frmLager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
-        Me.ClientSize = New System.Drawing.Size(1586, 745)
+        Me.ClientSize = New System.Drawing.Size(1190, 603)
         Me.Controls.Add(Me.TabControlAdv1)
         Me.Controls.Add(Me.ToolStripEx1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmLager"
         Me.Text = "Form1"
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -536,8 +507,8 @@ Partial Class frmLager
         Me.TabPageAdv4.ResumeLayout(False)
         Me.TabPageAdv4.PerformLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
