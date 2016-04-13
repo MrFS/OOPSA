@@ -80,7 +80,6 @@ Partial Class frmAdminMetro
         Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.ToolStripEx9 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripDropDownButton4 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.FrmLagerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -99,6 +98,8 @@ Partial Class frmAdminMetro
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tbKunderOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
+        Me.btnUpdKunde = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.btnAddKunde = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.dgvKunde = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.tbKundeEpost = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -215,8 +216,6 @@ Partial Class frmAdminMetro
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
-        Me.btnAddKunde = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.btnUpdKunde = New Syncfusion.Windows.Forms.ButtonAdv()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -394,7 +393,6 @@ Partial Class frmAdminMetro
         Me.TabControlAdv3.ActiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv3.BeforeTouchSize = New System.Drawing.Size(872, 433)
         Me.TabControlAdv3.Controls.Add(Me.TabPageAdv3)
-        Me.TabControlAdv3.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv3.InactiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv3.ItemSize = New System.Drawing.Size(102, 48)
@@ -610,18 +608,6 @@ Partial Class frmAdminMetro
         Me.ToolStripDropDownButton4.Name = "ToolStripDropDownButton4"
         Me.ToolStripDropDownButton4.Size = New System.Drawing.Size(33, 39)
         Me.ToolStripDropDownButton4.Text = "ToolStripDropDownButton4"
-        '
-        'TabPageAdv4
-        '
-        Me.TabPageAdv4.Image = Nothing
-        Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
-        Me.TabPageAdv4.Name = "TabPageAdv4"
-        Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(865, 376)
-        Me.TabPageAdv4.TabIndex = 2
-        Me.TabPageAdv4.Text = "TabPageAdv4"
-        Me.TabPageAdv4.ThemesEnabled = True
         '
         'ToolStripEx1
         '
@@ -889,6 +875,36 @@ Partial Class frmAdminMetro
         Me.SplitContainer3.Size = New System.Drawing.Size(823, 389)
         Me.SplitContainer3.SplitterDistance = 273
         Me.SplitContainer3.TabIndex = 0
+        '
+        'btnUpdKunde
+        '
+        Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
+        Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(273, 60)
+        Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
+        Me.btnUpdKunde.IsBackStageButton = False
+        Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
+        Me.btnUpdKunde.Name = "btnUpdKunde"
+        Me.btnUpdKunde.Size = New System.Drawing.Size(273, 60)
+        Me.btnUpdKunde.TabIndex = 4
+        Me.btnUpdKunde.Text = "Oppdater Kunde"
+        Me.btnUpdKunde.UseVisualStyle = True
+        '
+        'btnAddKunde
+        '
+        Me.btnAddKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
+        Me.btnAddKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(273, 60)
+        Me.btnAddKunde.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAddKunde.ForeColor = System.Drawing.Color.White
+        Me.btnAddKunde.IsBackStageButton = False
+        Me.btnAddKunde.Location = New System.Drawing.Point(0, 0)
+        Me.btnAddKunde.Name = "btnAddKunde"
+        Me.btnAddKunde.Size = New System.Drawing.Size(273, 60)
+        Me.btnAddKunde.TabIndex = 3
+        Me.btnAddKunde.Text = "Legg til ny kunde"
+        Me.btnAddKunde.UseVisualStyle = True
         '
         'dgvKunde
         '
@@ -1698,7 +1714,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1710,7 +1726,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1722,7 +1738,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1734,7 +1750,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -1746,7 +1762,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(100, 20)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2198,36 +2214,6 @@ Partial Class frmAdminMetro
         '
         Me.LagerRapportStavangerTableAdapter.ClearBeforeFill = True
         '
-        'btnAddKunde
-        '
-        Me.btnAddKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.btnAddKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(273, 60)
-        Me.btnAddKunde.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAddKunde.ForeColor = System.Drawing.Color.White
-        Me.btnAddKunde.IsBackStageButton = False
-        Me.btnAddKunde.Location = New System.Drawing.Point(0, 0)
-        Me.btnAddKunde.Name = "btnAddKunde"
-        Me.btnAddKunde.Size = New System.Drawing.Size(273, 60)
-        Me.btnAddKunde.TabIndex = 3
-        Me.btnAddKunde.Text = "Legg til ny kunde"
-        Me.btnAddKunde.UseVisualStyle = True
-        '
-        'btnUpdKunde
-        '
-        Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(273, 60)
-        Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
-        Me.btnUpdKunde.IsBackStageButton = False
-        Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
-        Me.btnUpdKunde.Name = "btnUpdKunde"
-        Me.btnUpdKunde.Size = New System.Drawing.Size(273, 60)
-        Me.btnUpdKunde.TabIndex = 4
-        Me.btnUpdKunde.Text = "Oppdater Kunde"
-        Me.btnUpdKunde.UseVisualStyle = True
-        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -2441,7 +2427,6 @@ Partial Class frmAdminMetro
     Friend WithEvents ToolStripEx8 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents reportLeie As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ToolStripEx9 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents TabPageAdv4 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents Panel4 As Panel
     Friend WithEvents ToolStripEx10 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ToolStripButton1 As ToolStripButton
