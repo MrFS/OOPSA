@@ -126,7 +126,7 @@ Partial Class frmLager
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(138, 181)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(92, 23)
         Me.ComboBox1.TabIndex = 26
@@ -134,11 +134,11 @@ Partial Class frmLager
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(130, 227)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 24)
         Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Legg til"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label10
@@ -152,7 +152,7 @@ Partial Class frmLager
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(130, 148)
         Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -173,7 +173,7 @@ Partial Class frmLager
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(130, 112)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -194,7 +194,7 @@ Partial Class frmLager
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(130, 76)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -242,7 +242,7 @@ Partial Class frmLager
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Location = New System.Drawing.Point(188, 14)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(92, 21)
         Me.ComboBox3.TabIndex = 13
@@ -266,7 +266,7 @@ Partial Class frmLager
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(188, 179)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -287,7 +287,7 @@ Partial Class frmLager
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(188, 131)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -308,7 +308,7 @@ Partial Class frmLager
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(188, 89)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -331,7 +331,7 @@ Partial Class frmLager
         '
         Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(75, 23)
         Me.ButtonAdv1.IsBackStageButton = False
-        Me.ButtonAdv1.Location = New System.Drawing.Point(188, 318)
+        Me.ButtonAdv1.Location = New System.Drawing.Point(344, 90)
         Me.ButtonAdv1.Name = "ButtonAdv1"
         Me.ButtonAdv1.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdv1.TabIndex = 4
@@ -339,7 +339,7 @@ Partial Class frmLager
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(100, 20)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 23)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(188, 50)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -386,7 +386,7 @@ Partial Class frmLager
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(427, 93)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(92, 21)
         Me.ComboBox2.TabIndex = 3
