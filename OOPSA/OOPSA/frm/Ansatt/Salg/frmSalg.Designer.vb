@@ -86,7 +86,6 @@ Partial Class frmSalg
         Me.TabOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
         Me.TabRegKunde = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
