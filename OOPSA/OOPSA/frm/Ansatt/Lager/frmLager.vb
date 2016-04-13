@@ -6,19 +6,12 @@ Public Class frmLager
 
     Dim lager As Integer
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
         ' Dim da = New MySqlCommand()
         Dim sql As New SQL
 
 
-        Select Case VareEndre.Text Or lagerEndre.Text
-            Case "Trondheim"
-                lager = 2
-            Case "Bryne"
-                lager = 1
-            Case Else
-                MsgBox("FEIL")
-        End Select
+
 
         sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & NavnLeggTil.Text & "', '" & PrisLeggTil.Text & "', '" & AntLeggTil.Text & "', '" & lager & "')")
 
@@ -37,7 +30,16 @@ Public Class frmLager
         'TODO: This line of code loads data into the 'Drift8_2016DataSet.Produkt' table. You can move, or remove it, as needed.
         Me.ProduktTableAdapter.Fill(Me.Drift8_2016DataSet.Produkt)
 
-
+        Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Lager", con)
+        Dim ds2 = New DataSet
+        Dim dr2 As DataRow
+        Dim dt2 As DataTable
+        adapter2.Fill(ds2, "Lager")
+        dt2 = ds2.Tables(0)
+        For Each dr2 In dt2.Rows
+            LagerLeggTil.Items.Add(dr2("by"))
+            lagerEndre.Items.Add(dr2("by"))
+        Next
 
         Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
         Dim ds = New DataSet
@@ -50,16 +52,6 @@ Public Class frmLager
             ComboBox2.Items.Add(dr("Produkt_navn"))
         Next
 
-
-        LagerLeggTil.Items.Add("Trondheim")
-        LagerLeggTil.Items.Add("Bryne")
-        lagerEndre.Items.Add("Trondheim")
-        lagerEndre.Items.Add("Bryne")
-        'If ComboBox1.Text = "Bryne" Then
-        '    lager = 1
-        'ElseIf ComboBox1.Text = "Trondheim" Then
-        '    lager = 2
-        'End If
         Try
 
             Initialize()
@@ -70,11 +62,15 @@ Public Class frmLager
     End Sub
 
     Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles EndreKnapp.Click
+        Dim sql As New SQL
+
+        sql.sporring("SELECT Lager_id FROM Lager WHERE by = '" & lagerEndre.Text & "'")
 
 
+        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & BtnNavnEndre.Text & "', '" & BtnPrisEndre.Text & "', '" & btnAntEndre.Text & "', '" & NEIN FIX THIS & "')")
     End Sub
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
-        Dim sql As New SQL
+
 
 
         Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
@@ -92,8 +88,9 @@ Public Class frmLager
 
 
 
+    End Sub
 
-        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & BtnNavnEndre.Text & "', '" & BtnPrisEndre.Text & "', '" & btnAntEndre.Text & "', '" & lager & "')")
+    Private Sub LagerLeggTil_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LagerLeggTil.SelectedIndexChanged
 
     End Sub
 End Class

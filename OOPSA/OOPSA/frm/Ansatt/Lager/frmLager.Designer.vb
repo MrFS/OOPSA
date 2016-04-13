@@ -27,7 +27,7 @@ Partial Class frmLager
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.LagerLeggTil = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLeggTil = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PrisLeggTil = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -99,7 +99,7 @@ Partial Class frmLager
         'TabPageAdv1
         '
         Me.TabPageAdv1.Controls.Add(Me.LagerLeggTil)
-        Me.TabPageAdv1.Controls.Add(Me.Button1)
+        Me.TabPageAdv1.Controls.Add(Me.btnLeggTil)
         Me.TabPageAdv1.Controls.Add(Me.Label10)
         Me.TabPageAdv1.Controls.Add(Me.PrisLeggTil)
         Me.TabPageAdv1.Controls.Add(Me.Label11)
@@ -127,24 +127,24 @@ Partial Class frmLager
         Me.LagerLeggTil.Size = New System.Drawing.Size(92, 23)
         Me.LagerLeggTil.TabIndex = 26
         '
-        'Button1
+        'btnLeggTil
         '
-        Me.Button1.Location = New System.Drawing.Point(130, 227)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 24)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Legg til"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnLeggTil.Location = New System.Drawing.Point(130, 227)
+        Me.btnLeggTil.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnLeggTil.Name = "btnLeggTil"
+        Me.btnLeggTil.Size = New System.Drawing.Size(106, 24)
+        Me.btnLeggTil.TabIndex = 25
+        Me.btnLeggTil.Text = "Legg til"
+        Me.btnLeggTil.UseVisualStyleBackColor = True
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(57, 184)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(72, 15)
+        Me.Label10.Size = New System.Drawing.Size(39, 15)
         Me.Label10.TabIndex = 23
-        Me.Label10.Text = "Endre lager :"
+        Me.Label10.Text = "lager :"
         '
         'PrisLeggTil
         '
@@ -506,7 +506,7 @@ Partial Class frmLager
     Friend WithEvents Label8 As Label
     Friend WithEvents BtnNavnEndre As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnLeggTil As Button
     Friend WithEvents LagerLeggTil As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents VareEndre As ComboBox
