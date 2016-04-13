@@ -292,8 +292,8 @@ Public Class frmAdminMetro
         Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
     End Sub
 
-    Private Sub TabLager_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabLager.SelectedIndexChanged
-
+    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click
+        frmAddKunde.Show()
     End Sub
 
     '<STAThread>

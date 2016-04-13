@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAddUsrMetro
     Inherits Syncfusion.Windows.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmAddUsrMetro
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
@@ -155,7 +155,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt1.Location = New System.Drawing.Point(14, 65)
         Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -168,7 +168,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(136, 65)
         Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -181,7 +181,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(14, 115)
         Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -194,7 +194,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(136, 115)
         Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -207,7 +207,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(258, 115)
         Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -220,7 +220,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt6
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt6.Location = New System.Drawing.Point(14, 165)
         Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -233,7 +233,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(136, 165)
         Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -246,7 +246,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt8
         '
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt8.Location = New System.Drawing.Point(14, 215)
         Me.TextBoxExt8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -259,7 +259,7 @@ Partial Class frmAddUsrMetro
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(136, 215)
         Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -283,7 +283,6 @@ Partial Class frmAddUsrMetro
         Me.dtpBirth.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
         Me.dtpBirth.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.dtpBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.dtpBirth.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpBirth.CalendarSize = New System.Drawing.Size(189, 176)
         Me.dtpBirth.Checked = False
         Me.dtpBirth.CustomFormat = "yyyy-MM-dd"

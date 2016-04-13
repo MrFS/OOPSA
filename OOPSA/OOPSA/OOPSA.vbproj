@@ -186,6 +186,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="drift8_2016DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="drift8_2016DataSetLageroversiktALLE.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +205,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Admin\frmAddKunde.Designer.vb">
+      <DependentUpon>frmAddKunde.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Admin\frmAddKunde.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -316,6 +327,9 @@
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm\Admin\frmAddKunde.resx">
+      <DependentUpon>frmAddKunde.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmAddLeie.resx">
       <DependentUpon>frmAddLeie.vb</DependentUpon>
     </EmbeddedResource>
@@ -375,6 +389,17 @@
     </None>
     <None Include="DataSets\drift8_2016DataSet.xss">
       <DependentUpon>drift8_2016DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSet1.xsc">
+      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="drift8_2016DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drift8_2016DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="drift8_2016DataSet1.xss">
+      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
     </None>
     <None Include="drift8_2016DataSetLageroversiktALLE.xsc">
       <DependentUpon>drift8_2016DataSetLageroversiktALLE.xsd</DependentUpon>
