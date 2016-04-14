@@ -93,6 +93,7 @@ Partial Class frmSalg
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
         Me.KursTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KursTableAdapter()
+        Me.btnLeggTilKunde = New Syncfusion.Windows.Forms.ButtonAdv()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabRagSalg.SuspendLayout()
@@ -129,6 +130,7 @@ Partial Class frmSalg
         Me.TabOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabRegKunde.SuspendLayout()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -189,7 +191,7 @@ Partial Class frmSalg
         '
         'TextBoxExt8
         '
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt8.Location = New System.Drawing.Point(502, 111)
         Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -272,7 +274,7 @@ Partial Class frmSalg
         '
         'TextBoxExt5
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt5.Location = New System.Drawing.Point(154, 198)
         Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -285,7 +287,7 @@ Partial Class frmSalg
         '
         'TextBoxExt4
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt4.Location = New System.Drawing.Point(154, 243)
         Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -298,7 +300,7 @@ Partial Class frmSalg
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt3.Location = New System.Drawing.Point(161, 123)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -310,7 +312,7 @@ Partial Class frmSalg
         '
         'TextBoxExt2
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt2.Location = New System.Drawing.Point(161, 87)
         Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -322,7 +324,7 @@ Partial Class frmSalg
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt1.Location = New System.Drawing.Point(161, 57)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -537,7 +539,7 @@ Partial Class frmSalg
         '
         'txtKundid
         '
-        Me.txtKundid.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtKundid.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.txtKundid.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtKundid.Location = New System.Drawing.Point(174, 67)
         Me.txtKundid.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -594,7 +596,7 @@ Partial Class frmSalg
         '
         'TextBoxExt15
         '
-        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt15.Location = New System.Drawing.Point(900, 211)
         Me.TextBoxExt15.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -617,7 +619,7 @@ Partial Class frmSalg
         '
         'TextBoxExt14
         '
-        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt14.Location = New System.Drawing.Point(900, 177)
         Me.TextBoxExt14.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -640,7 +642,7 @@ Partial Class frmSalg
         '
         'TextBoxExt13
         '
-        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt13.Location = New System.Drawing.Point(900, 104)
         Me.TextBoxExt13.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -663,7 +665,7 @@ Partial Class frmSalg
         '
         'TextBoxExt12
         '
-        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt12.Location = New System.Drawing.Point(900, 137)
         Me.TextBoxExt12.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -686,7 +688,7 @@ Partial Class frmSalg
         '
         'TextBoxExt11
         '
-        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt11.Location = New System.Drawing.Point(900, 75)
         Me.TextBoxExt11.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -709,7 +711,7 @@ Partial Class frmSalg
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(194, 255)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -784,7 +786,7 @@ Partial Class frmSalg
         '
         'TextBoxExt10
         '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt10.Location = New System.Drawing.Point(194, 170)
         Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -815,7 +817,7 @@ Partial Class frmSalg
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(194, 42)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -861,6 +863,7 @@ Partial Class frmSalg
         '
         'TabRegKunde
         '
+        Me.TabRegKunde.Controls.Add(Me.btnLeggTilKunde)
         Me.TabRegKunde.Image = Nothing
         Me.TabRegKunde.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabRegKunde.Location = New System.Drawing.Point(3, 53)
@@ -887,6 +890,20 @@ Partial Class frmSalg
         'KursTableAdapter
         '
         Me.KursTableAdapter.ClearBeforeFill = True
+        '
+        'btnLeggTilKunde
+        '
+        Me.btnLeggTilKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
+        Me.btnLeggTilKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.btnLeggTilKunde.BeforeTouchSize = New System.Drawing.Size(241, 58)
+        Me.btnLeggTilKunde.ForeColor = System.Drawing.Color.White
+        Me.btnLeggTilKunde.IsBackStageButton = False
+        Me.btnLeggTilKunde.Location = New System.Drawing.Point(3, 3)
+        Me.btnLeggTilKunde.Name = "btnLeggTilKunde"
+        Me.btnLeggTilKunde.Size = New System.Drawing.Size(241, 58)
+        Me.btnLeggTilKunde.TabIndex = 3
+        Me.btnLeggTilKunde.Text = "Legg til kunde"
+        Me.btnLeggTilKunde.UseVisualStyle = True
         '
         'frmSalg
         '
@@ -941,6 +958,7 @@ Partial Class frmSalg
         Me.TabOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabRegKunde.ResumeLayout(False)
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1013,4 +1031,5 @@ Partial Class frmSalg
     Friend WithEvents ButtonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btbFjern As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btnVelg As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents btnLeggTilKunde As Syncfusion.Windows.Forms.ButtonAdv
 End Class
