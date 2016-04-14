@@ -57,6 +57,7 @@ Partial Class frmSalg
         Me.TabFjernBestilling = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.btbFjern = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.btnVelg = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.ComboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtKundid = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
@@ -92,7 +93,8 @@ Partial Class frmSalg
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
         Me.KursTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KursTableAdapter()
-        Me.ComboVelgKunde = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.btnVelg = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.btbFjern = New Syncfusion.Windows.Forms.ButtonAdv()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabRagSalg.SuspendLayout()
@@ -510,6 +512,16 @@ Partial Class frmSalg
         Me.btnVelg.TabIndex = 11
         Me.btnVelg.Text = "Velg kunde"
         '
+        'ComboDropDown1
+        '
+        Me.btnVelg.BeforeTouchSize = New System.Drawing.Size(89, 31)
+        Me.btnVelg.IsBackStageButton = False
+        Me.btnVelg.Location = New System.Drawing.Point(174, 158)
+        Me.btnVelg.Name = "btnVelg"
+        Me.btnVelg.Size = New System.Drawing.Size(89, 31)
+        Me.btnVelg.TabIndex = 11
+        Me.btnVelg.Text = "Velg kunde"
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -714,9 +726,11 @@ Partial Class frmSalg
         'ComboDropDown5
         '
         Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 23)
         Me.ComboDropDown5.Location = New System.Drawing.Point(194, 85)
         Me.ComboDropDown5.Name = "ComboDropDown5"
         Me.ComboDropDown5.Size = New System.Drawing.Size(140, 28)
+        Me.ComboDropDown5.Size = New System.Drawing.Size(140, 23)
         Me.ComboDropDown5.TabIndex = 19
         '
         'Label15
@@ -740,18 +754,18 @@ Partial Class frmSalg
         '
         'ComboDropDown4
         '
-        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 28)
         Me.ComboDropDown4.Location = New System.Drawing.Point(194, 125)
         Me.ComboDropDown4.Name = "ComboDropDown4"
-        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 28)
         Me.ComboDropDown4.TabIndex = 16
         '
         'ComboDropDown3
         '
-        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 28)
         Me.ComboDropDown3.Location = New System.Drawing.Point(194, 210)
         Me.ComboDropDown3.Name = "ComboDropDown3"
-        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 28)
         Me.ComboDropDown3.TabIndex = 15
         '
         'Label13
