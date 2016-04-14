@@ -88,14 +88,58 @@ Public Class frmSalg
 
     Private Sub btnVelg_Click(sender As Object, e As EventArgs) Handles btnVelg.Click
 
-        Dim kunde As String = CInt(txtKundid.Text)
+        Dim kundeid As String = txtKundid.Text
+
+
+        ComboVelgKunde.Items.Clear()
+
+        Dim adapter As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
+        Dim ds_produkt = New DataSet
+        Dim dr_produkt As DataRow
+        Dim dt_produkt As DataTable
+        adapter.Fill(ds_produkt, "Kjøp")
+        dt_produkt = ds_produkt.Tables(0)
+        For Each dr_produkt In dt_produkt.Rows
+            Dim stuff As String
+
+            stuff = dr_produkt("Dato")
+            stuff += " " & dr_produkt("Produkt_Produkt_id")
+            stuff += " " & dr_produkt("Produkt_navn")
+
+            ComboVelgKunde.Items.Add(stuff)
+
+        Next
 
 
 
+    End Sub
+
+    Private Sub btbFjern_Click(sender As Object, e As EventArgs) Handles btbFjern.Click
+
+        Dim sql As New SQL
+        Dim Salgsinfo() As String = ComboVelgKunde.Text.Split(" ")
+        Dim dato As String = Salgsinfo(0)
+        Dim PID As String = Salgsinfo(1)
+        Dim kundeID As String = txtKundid.Text
 
 
 
+        MsgBox(dato)
+        MsgBox(PID)
+        MsgBox(kundeID)
 
+        ' Dim sqlstreng As String = "SELECT Antall FROM Kjøp WHERE Kunde_Kid = " & kundeID & " AND Produkt_Produkt_id = " & PID & " AND dato = '" & dato & "'  "
+        'Dim antall As Integer = sql.Return1Row(sqlstreng, "Antall")
+
+        '  MsgBox(antall)
+
+        'Noe galt med spørring???
+
+        Try
+            sql.sporring("DELETE FROM Kjøp WHERE Produkt_Produkt_id = " & PID & " AND Kunde_Kid = " & kundeID & " AND  dato = '" & dato & "'")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
 
     End Sub

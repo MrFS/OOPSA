@@ -23,10 +23,10 @@ Partial Class frmSalg
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim GridBaseStyle1 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle2 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle3 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle4 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle9 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle10 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle11 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle12 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabRagSalg = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -93,7 +93,8 @@ Partial Class frmSalg
         Me.KundeTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KundeTableAdapter()
         Me.KjøpTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KjøpTableAdapter()
         Me.KursTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.KursTableAdapter()
-        Me.btnLeggTilKunde = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.btnVelg = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.btbFjern = New Syncfusion.Windows.Forms.ButtonAdv()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabRagSalg.SuspendLayout()
@@ -113,7 +114,6 @@ Partial Class frmSalg
         CType(Me.ComboKunde, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabFjernBestilling.SuspendLayout()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtKundid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabEndreBestilling.SuspendLayout()
         CType(Me.TextBoxExt15, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,6 +132,7 @@ Partial Class frmSalg
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabRegKunde.SuspendLayout()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboVelgKunde, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStripEx1
@@ -378,31 +379,31 @@ Partial Class frmSalg
         '
         Me.GridDataBoundGrid2.AllowDragSelectedCols = True
         Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle1.Name = "Column Header"
-        GridBaseStyle1.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle1.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle1.StyleInfo.Enabled = False
-        GridBaseStyle1.StyleInfo.Font.Bold = True
-        GridBaseStyle1.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle2.Name = "Header"
-        GridBaseStyle2.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.CellType = "Header"
-        GridBaseStyle2.StyleInfo.Font.Bold = True
-        GridBaseStyle2.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle2.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle3.Name = "Standard"
-        GridBaseStyle3.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle3.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle3.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle4.Name = "Row Header"
-        GridBaseStyle4.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle4.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle4.StyleInfo.Enabled = True
-        GridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
+        GridBaseStyle9.Name = "Column Header"
+        GridBaseStyle9.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle9.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle9.StyleInfo.Enabled = False
+        GridBaseStyle9.StyleInfo.Font.Bold = True
+        GridBaseStyle9.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle10.Name = "Header"
+        GridBaseStyle10.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle10.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle10.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle10.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle10.StyleInfo.CellType = "Header"
+        GridBaseStyle10.StyleInfo.Font.Bold = True
+        GridBaseStyle10.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle10.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle11.Name = "Standard"
+        GridBaseStyle11.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle11.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle11.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle12.Name = "Row Header"
+        GridBaseStyle12.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle12.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle12.StyleInfo.Enabled = True
+        GridBaseStyle12.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle9, GridBaseStyle10, GridBaseStyle11, GridBaseStyle12})
         Me.GridDataBoundGrid2.DataSource = Me.KursBindingSource
         Me.GridDataBoundGrid2.DefaultRowHeight = 20
         Me.GridDataBoundGrid2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -475,9 +476,9 @@ Partial Class frmSalg
         '
         'TabFjernBestilling
         '
+        Me.TabFjernBestilling.Controls.Add(Me.ComboVelgKunde)
         Me.TabFjernBestilling.Controls.Add(Me.btbFjern)
         Me.TabFjernBestilling.Controls.Add(Me.btnVelg)
-        Me.TabFjernBestilling.Controls.Add(Me.ComboDropDown1)
         Me.TabFjernBestilling.Controls.Add(Me.Label8)
         Me.TabFjernBestilling.Controls.Add(Me.Label6)
         Me.TabFjernBestilling.Controls.Add(Me.txtKundid)
@@ -513,11 +514,13 @@ Partial Class frmSalg
         '
         'ComboDropDown1
         '
-        Me.ComboDropDown1.BeforeTouchSize = New System.Drawing.Size(140, 23)
-        Me.ComboDropDown1.Location = New System.Drawing.Point(174, 112)
-        Me.ComboDropDown1.Name = "ComboDropDown1"
-        Me.ComboDropDown1.Size = New System.Drawing.Size(140, 23)
-        Me.ComboDropDown1.TabIndex = 10
+        Me.btnVelg.BeforeTouchSize = New System.Drawing.Size(89, 31)
+        Me.btnVelg.IsBackStageButton = False
+        Me.btnVelg.Location = New System.Drawing.Point(174, 158)
+        Me.btnVelg.Name = "btnVelg"
+        Me.btnVelg.Size = New System.Drawing.Size(89, 31)
+        Me.btnVelg.TabIndex = 11
+        Me.btnVelg.Text = "Velg kunde"
         '
         'Label8
         '
@@ -547,7 +550,6 @@ Partial Class frmSalg
         Me.txtKundid.Size = New System.Drawing.Size(116, 23)
         Me.txtKundid.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtKundid.TabIndex = 7
-        Me.txtKundid.Text = "TextBoxExt6"
         '
         'TabEndreBestilling
         '
@@ -723,9 +725,11 @@ Partial Class frmSalg
         '
         'ComboDropDown5
         '
+        Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 28)
         Me.ComboDropDown5.BeforeTouchSize = New System.Drawing.Size(140, 23)
         Me.ComboDropDown5.Location = New System.Drawing.Point(194, 85)
         Me.ComboDropDown5.Name = "ComboDropDown5"
+        Me.ComboDropDown5.Size = New System.Drawing.Size(140, 28)
         Me.ComboDropDown5.Size = New System.Drawing.Size(140, 23)
         Me.ComboDropDown5.TabIndex = 19
         '
@@ -750,18 +754,18 @@ Partial Class frmSalg
         '
         'ComboDropDown4
         '
-        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown4.BeforeTouchSize = New System.Drawing.Size(140, 28)
         Me.ComboDropDown4.Location = New System.Drawing.Point(194, 125)
         Me.ComboDropDown4.Name = "ComboDropDown4"
-        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown4.Size = New System.Drawing.Size(140, 28)
         Me.ComboDropDown4.TabIndex = 16
         '
         'ComboDropDown3
         '
-        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown3.BeforeTouchSize = New System.Drawing.Size(140, 28)
         Me.ComboDropDown3.Location = New System.Drawing.Point(194, 210)
         Me.ComboDropDown3.Name = "ComboDropDown3"
-        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 23)
+        Me.ComboDropDown3.Size = New System.Drawing.Size(140, 28)
         Me.ComboDropDown3.TabIndex = 15
         '
         'Label13
@@ -891,19 +895,14 @@ Partial Class frmSalg
         '
         Me.KursTableAdapter.ClearBeforeFill = True
         '
-        'btnLeggTilKunde
+        'ComboVelgKunde
         '
-        Me.btnLeggTilKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.btnLeggTilKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnLeggTilKunde.BeforeTouchSize = New System.Drawing.Size(241, 58)
-        Me.btnLeggTilKunde.ForeColor = System.Drawing.Color.White
-        Me.btnLeggTilKunde.IsBackStageButton = False
-        Me.btnLeggTilKunde.Location = New System.Drawing.Point(3, 3)
-        Me.btnLeggTilKunde.Name = "btnLeggTilKunde"
-        Me.btnLeggTilKunde.Size = New System.Drawing.Size(241, 58)
-        Me.btnLeggTilKunde.TabIndex = 3
-        Me.btnLeggTilKunde.Text = "Legg til kunde"
-        Me.btnLeggTilKunde.UseVisualStyle = True
+        Me.ComboVelgKunde.BeforeTouchSize = New System.Drawing.Size(161, 28)
+        Me.ComboVelgKunde.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboVelgKunde.Location = New System.Drawing.Point(174, 112)
+        Me.ComboVelgKunde.Name = "ComboVelgKunde"
+        Me.ComboVelgKunde.Size = New System.Drawing.Size(161, 28)
+        Me.ComboVelgKunde.TabIndex = 13
         '
         'frmSalg
         '
@@ -940,7 +939,6 @@ Partial Class frmSalg
         CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabFjernBestilling.ResumeLayout(False)
         Me.TabFjernBestilling.PerformLayout()
-        CType(Me.ComboDropDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtKundid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabEndreBestilling.ResumeLayout(False)
         Me.TabEndreBestilling.PerformLayout()
@@ -960,6 +958,7 @@ Partial Class frmSalg
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabRegKunde.ResumeLayout(False)
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboVelgKunde, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -986,7 +985,6 @@ Partial Class frmSalg
     Friend WithEvents txtKundid As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBoxExt7 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents ComboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
     Friend WithEvents Label8 As Label
     Friend WithEvents ComboDropDown2 As Syncfusion.Windows.Forms.Tools.ComboDropDown
     Friend WithEvents Label9 As Label
@@ -1031,5 +1029,5 @@ Partial Class frmSalg
     Friend WithEvents ButtonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btbFjern As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btnVelg As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents btnLeggTilKunde As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents ComboVelgKunde As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
 End Class
