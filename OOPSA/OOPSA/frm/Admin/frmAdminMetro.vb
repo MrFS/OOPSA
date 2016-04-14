@@ -18,6 +18,7 @@ Imports Syncfusion.DocIO.DLS
 Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
+    Dim SQL As New SQL
 
     ''' <summary>
     ''' Viser frmAddUsr
@@ -35,16 +36,15 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Drift8_2016DataSet2.BedriftKunde' table. You can move, or remove it, as needed.
-        Me.BedriftKundeTableAdapter.Fill(Me.Drift8_2016DataSet2.BedriftKunde)
-        'TODO: This line of code loads data into the 'Drift8_2016DataSet1.PrivatKunde' table. You can move, or remove it, as needed.
-        Me.PrivatKundeTableAdapter.Fill(Me.Drift8_2016DataSet1.PrivatKunde)
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
         Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
         Try
             Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
         Catch ex As Exception
         End Try
+
+        dgvBedriftKunde.DataSource = SQL.dataset("SELECT * FROM `BedriftKunde`")
+        dgvPrivatKunde.DataSource = SQL.dataset("SELECT * FROM `PrivatKunde`")
 
         'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
@@ -298,6 +298,13 @@ Public Class frmAdminMetro
 
     Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click, ButtonAdv5.Click
         frmAddKunde.Show()
+    End Sub
+
+    Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click
+        'Kunde delen oppdateres
+        Me.KundeTableAdapter.Update(drift8_2016DataSet.Kunde)
+        'Prvatkunder
+
     End Sub
 
     '<STAThread>

@@ -201,16 +201,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </Compile>
-    <Compile Include="drift8_2016DataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="drift8_2016DataSet2.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>drift8_2016DataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="frm\Admin\frmAddKunde.Designer.vb">
       <DependentUpon>frmAddKunde.vb</DependentUpon>
     </Compile>
@@ -428,28 +418,6 @@
     <None Include="DataSets\drift8_2016DataSetTrondheimLager.xss">
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </None>
-    <None Include="drift8_2016DataSet1.xsc">
-      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="drift8_2016DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>drift8_2016DataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="drift8_2016DataSet1.xss">
-      <DependentUpon>drift8_2016DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="drift8_2016DataSet2.xsc">
-      <DependentUpon>drift8_2016DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="drift8_2016DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>drift8_2016DataSet2.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="drift8_2016DataSet2.xss">
-      <DependentUpon>drift8_2016DataSet2.xsd</DependentUpon>
-    </None>
     <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xsc">
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>
     </None>
@@ -605,6 +573,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OOPSA.ico" />
+    <None Include="Resources\tbKundePrivat.png" />
+    <None Include="Resources\tbKundeBedrift.png" />
     <None Include="Resources\logoTurCareAS.png" />
   </ItemGroup>
   <ItemGroup>
