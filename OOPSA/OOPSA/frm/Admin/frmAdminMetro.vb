@@ -304,7 +304,7 @@ Public Class frmAdminMetro
         'Kunde delen oppdateres
         Me.KundeTableAdapter.Update(drift8_2016DataSet.Kunde)
         'Prvatkunder
-        Me.PrivatKundeTableAdapter.(drift8_2016DataSet.K_privat)
+        'Me.PrivatKundeTableAdapter.(drift8_2016DataSet.K_privat)
 
     End Sub
 

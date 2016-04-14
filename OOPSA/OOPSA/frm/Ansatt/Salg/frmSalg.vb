@@ -99,4 +99,8 @@ Public Class frmSalg
 
 
     End Sub
+
+    Private Sub btnAddUsr_Click(sender As Object, e As EventArgs) Handles btnLeggTilKunde.Click
+        frmAddKunde.Show()
+    End Sub
 End Class
