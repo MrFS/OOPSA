@@ -300,6 +300,14 @@ Public Class frmAdminMetro
         frmAddKunde.Show()
     End Sub
 
+    Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click
+        'Kunde delen oppdateres
+        Me.KundeTableAdapter.Update(drift8_2016DataSet.Kunde)
+        'Prvatkunder
+        Me.PrivatKundeTableAdapter.(drift8_2016DataSet.K_privat)
+
+    End Sub
+
     '<STAThread>
     'Public Sub MySub()
 

@@ -110,8 +110,12 @@ Partial Class frmAdminMetro
         Me.tabRapportKunde = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.tabPrivKundeOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid7 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
-        Me.Drift82016DataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PrivatKundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSet1 = New OOPSA.drift8_2016DataSet1()
         Me.tabBedKundeOversikt = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.GridDataBoundGrid8 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.BedriftKundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSet2 = New OOPSA.drift8_2016DataSet2()
         Me.tbKundeEpost = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -210,6 +214,7 @@ Partial Class frmAdminMetro
         Me.LagerRapportStavangerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetLagerRapportStavnager = New OOPSA.drift8_2016DataSetLagerRapportStavnager()
         Me.ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.Drift82016DataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.StatusStripLabel1 = New Syncfusion.Windows.Forms.Tools.StatusStripLabel()
         Me.StatusStripProgressBar1 = New Syncfusion.Windows.Forms.Tools.StatusStripProgressBar()
@@ -249,12 +254,7 @@ Partial Class frmAdminMetro
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.StatusStripEx2 = New Syncfusion.Windows.Forms.Tools.StatusStripEx()
         Me.TabControlAdv7 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
-        Me.Drift8_2016DataSet1 = New OOPSA.drift8_2016DataSet1()
-        Me.PrivatKundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PrivatKundeTableAdapter = New OOPSA.drift8_2016DataSet1TableAdapters.PrivatKundeTableAdapter()
-        Me.GridDataBoundGrid8 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
-        Me.Drift8_2016DataSet2 = New OOPSA.drift8_2016DataSet2()
-        Me.BedriftKundeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BedriftKundeTableAdapter = New OOPSA.drift8_2016DataSet2TableAdapters.BedriftKundeTableAdapter()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -308,12 +308,15 @@ Partial Class frmAdminMetro
         Me.tabRapportKunde.SuspendLayout()
         Me.tabPrivKundeOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PrivatKundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabBedKundeOversikt.SuspendLayout()
+        CType(Me.GridDataBoundGrid8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BedriftKundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbKundeEpost.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        Me.StatusStripEx1.SuspendLayout()
         Me.ToolStripEx11.SuspendLayout()
         Me.tbSalg.SuspendLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -358,6 +361,7 @@ Partial Class frmAdminMetro
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -385,11 +389,6 @@ Partial Class frmAdminMetro
         Me.StatusStripEx2.SuspendLayout()
         CType(Me.TabControlAdv7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv7.SuspendLayout()
-        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PrivatKundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridDataBoundGrid8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Drift8_2016DataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BedriftKundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -1022,13 +1021,13 @@ Partial Class frmAdminMetro
         'tabRapportKunde
         '
         Me.tabRapportKunde.ActiveTabColor = System.Drawing.Color.Plum
-        Me.tabRapportKunde.BeforeTouchSize = New System.Drawing.Size(546, 389)
+        Me.tabRapportKunde.BeforeTouchSize = New System.Drawing.Size(591, 389)
         Me.tabRapportKunde.Controls.Add(Me.tabPrivKundeOversikt)
         Me.tabRapportKunde.Controls.Add(Me.tabBedKundeOversikt)
         Me.tabRapportKunde.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabRapportKunde.Location = New System.Drawing.Point(0, 0)
         Me.tabRapportKunde.Name = "tabRapportKunde"
-        Me.tabRapportKunde.Size = New System.Drawing.Size(546, 389)
+        Me.tabRapportKunde.Size = New System.Drawing.Size(591, 389)
         Me.tabRapportKunde.TabIndex = 1
         '
         'tabPrivKundeOversikt
@@ -1039,7 +1038,7 @@ Partial Class frmAdminMetro
         Me.tabPrivKundeOversikt.Location = New System.Drawing.Point(1, 33)
         Me.tabPrivKundeOversikt.Name = "tabPrivKundeOversikt"
         Me.tabPrivKundeOversikt.ShowCloseButton = True
-        Me.tabPrivKundeOversikt.Size = New System.Drawing.Size(543, 354)
+        Me.tabPrivKundeOversikt.Size = New System.Drawing.Size(588, 354)
         Me.tabPrivKundeOversikt.TabIndex = 1
         Me.tabPrivKundeOversikt.Text = "Privat kunder"
         Me.tabPrivKundeOversikt.ThemesEnabled = False
@@ -1053,7 +1052,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid7.Name = "GridDataBoundGrid7"
         Me.GridDataBoundGrid7.OptimizeInsertRemoveCells = True
         Me.GridDataBoundGrid7.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid7.Size = New System.Drawing.Size(543, 354)
+        Me.GridDataBoundGrid7.Size = New System.Drawing.Size(588, 354)
         Me.GridDataBoundGrid7.SmartSizeBox = False
         Me.GridDataBoundGrid7.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid7.TabIndex = 0
@@ -1061,10 +1060,15 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid7.UseListChangedEvent = True
         Me.GridDataBoundGrid7.UseRightToLeftCompatibleTextBox = True
         '
-        'Drift82016DataSetBindingSource
+        'PrivatKundeBindingSource
         '
-        Me.Drift82016DataSetBindingSource.DataSource = Me.drift8_2016DataSet
-        Me.Drift82016DataSetBindingSource.Position = 0
+        Me.PrivatKundeBindingSource.DataMember = "PrivatKunde"
+        Me.PrivatKundeBindingSource.DataSource = Me.Drift8_2016DataSet1
+        '
+        'Drift8_2016DataSet1
+        '
+        Me.Drift8_2016DataSet1.DataSetName = "drift8_2016DataSet1"
+        Me.Drift8_2016DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'tabBedKundeOversikt
         '
@@ -1075,10 +1079,37 @@ Partial Class frmAdminMetro
         Me.tabBedKundeOversikt.Location = New System.Drawing.Point(1, 33)
         Me.tabBedKundeOversikt.Name = "tabBedKundeOversikt"
         Me.tabBedKundeOversikt.ShowCloseButton = True
-        Me.tabBedKundeOversikt.Size = New System.Drawing.Size(543, 354)
+        Me.tabBedKundeOversikt.Size = New System.Drawing.Size(588, 354)
         Me.tabBedKundeOversikt.TabIndex = 2
         Me.tabBedKundeOversikt.Text = "Bedrifts kunder"
         Me.tabBedKundeOversikt.ThemesEnabled = False
+        '
+        'GridDataBoundGrid8
+        '
+        Me.GridDataBoundGrid8.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid8.DataSource = Me.BedriftKundeBindingSource
+        Me.GridDataBoundGrid8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid8.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid8.Name = "GridDataBoundGrid8"
+        Me.GridDataBoundGrid8.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid8.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid8.Size = New System.Drawing.Size(588, 354)
+        Me.GridDataBoundGrid8.SmartSizeBox = False
+        Me.GridDataBoundGrid8.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid8.TabIndex = 0
+        Me.GridDataBoundGrid8.Text = "GridDataBoundGrid8"
+        Me.GridDataBoundGrid8.UseListChangedEvent = True
+        Me.GridDataBoundGrid8.UseRightToLeftCompatibleTextBox = True
+        '
+        'BedriftKundeBindingSource
+        '
+        Me.BedriftKundeBindingSource.DataMember = "BedriftKunde"
+        Me.BedriftKundeBindingSource.DataSource = Me.Drift8_2016DataSet2
+        '
+        'Drift8_2016DataSet2
+        '
+        Me.Drift8_2016DataSet2.DataSetName = "drift8_2016DataSet2"
+        Me.Drift8_2016DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'tbKundeEpost
         '
@@ -1755,10 +1786,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -1772,7 +1803,7 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 396)
+        Me.SplitContainer1.Size = New System.Drawing.Size(865, 429)
         Me.SplitContainer1.SplitterDistance = 288
         Me.SplitContainer1.TabIndex = 0
         '
@@ -1963,10 +1994,10 @@ Partial Class frmAdminMetro
         '
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "TabPageAdv2"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -2016,10 +2047,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv5.Controls.Add(Me.GridDataBoundGrid4)
         Me.TabPageAdv5.Image = Nothing
         Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv5.Name = "TabPageAdv5"
         Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv5.TabIndex = 1
         Me.TabPageAdv5.Text = "Totall ovesikt"
         Me.TabPageAdv5.ThemesEnabled = True
@@ -2067,7 +2098,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid4.Properties.MarkColHeader = False
         Me.GridDataBoundGrid4.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid4.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 396)
+        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 429)
         Me.GridDataBoundGrid4.SmartSizeBox = False
         Me.GridDataBoundGrid4.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid4.TabIndex = 0
@@ -2090,10 +2121,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv6.Controls.Add(Me.GridDataBoundGrid3)
         Me.TabPageAdv6.Image = Nothing
         Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv6.Name = "TabPageAdv6"
         Me.TabPageAdv6.ShowCloseButton = True
-        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv6.TabIndex = 2
         Me.TabPageAdv6.Text = "Trondheim" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TabPageAdv6.ThemesEnabled = True
@@ -2141,7 +2172,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid3.Properties.MarkColHeader = False
         Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 396)
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 429)
         Me.GridDataBoundGrid3.SmartSizeBox = False
         Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid3.TabIndex = 0
@@ -2164,10 +2195,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid2)
         Me.TabPageAdv7.Image = Nothing
         Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv7.Name = "TabPageAdv7"
         Me.TabPageAdv7.ShowCloseButton = True
-        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 396)
+        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 429)
         Me.TabPageAdv7.TabIndex = 3
         Me.TabPageAdv7.Text = "Stavanger"
         Me.TabPageAdv7.ThemesEnabled = True
@@ -2215,7 +2246,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 396)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 429)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 0
@@ -2246,6 +2277,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx4.TabIndex = 1
         Me.ToolStripEx4.Text = "Lageroversikt"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'Drift82016DataSetBindingSource
+        '
+        Me.Drift82016DataSetBindingSource.DataSource = Me.drift8_2016DataSet
+        Me.Drift82016DataSetBindingSource.Position = 0
         '
         'KundeBindingSource
         '
@@ -2708,46 +2744,9 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7.Size = New System.Drawing.Size(200, 100)
         Me.TabControlAdv7.TabIndex = 0
         '
-        'Drift8_2016DataSet1
-        '
-        Me.Drift8_2016DataSet1.DataSetName = "drift8_2016DataSet1"
-        Me.Drift8_2016DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PrivatKundeBindingSource
-        '
-        Me.PrivatKundeBindingSource.DataMember = "PrivatKunde"
-        Me.PrivatKundeBindingSource.DataSource = Me.Drift8_2016DataSet1
-        '
         'PrivatKundeTableAdapter
         '
         Me.PrivatKundeTableAdapter.ClearBeforeFill = True
-        '
-        'GridDataBoundGrid8
-        '
-        Me.GridDataBoundGrid8.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid8.DataSource = Me.BedriftKundeBindingSource
-        Me.GridDataBoundGrid8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid8.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid8.Name = "GridDataBoundGrid8"
-        Me.GridDataBoundGrid8.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid8.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid8.Size = New System.Drawing.Size(543, 354)
-        Me.GridDataBoundGrid8.SmartSizeBox = False
-        Me.GridDataBoundGrid8.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid8.TabIndex = 0
-        Me.GridDataBoundGrid8.Text = "GridDataBoundGrid8"
-        Me.GridDataBoundGrid8.UseListChangedEvent = True
-        Me.GridDataBoundGrid8.UseRightToLeftCompatibleTextBox = True
-        '
-        'Drift8_2016DataSet2
-        '
-        Me.Drift8_2016DataSet2.DataSetName = "drift8_2016DataSet2"
-        Me.Drift8_2016DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BedriftKundeBindingSource
-        '
-        Me.BedriftKundeBindingSource.DataMember = "BedriftKunde"
-        Me.BedriftKundeBindingSource.DataSource = Me.Drift8_2016DataSet2
         '
         'BedriftKundeTableAdapter
         '
@@ -2832,8 +2831,12 @@ Partial Class frmAdminMetro
         Me.tabRapportKunde.ResumeLayout(False)
         Me.tabPrivKundeOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PrivatKundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabBedKundeOversikt.ResumeLayout(False)
+        CType(Me.GridDataBoundGrid8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BedriftKundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbKundeEpost.ResumeLayout(False)
         Me.tbKundeEpost.PerformLayout()
         Me.Panel6.ResumeLayout(False)
@@ -2892,6 +2895,7 @@ Partial Class frmAdminMetro
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalgsRaportBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2920,11 +2924,6 @@ Partial Class frmAdminMetro
         Me.StatusStripEx2.ResumeLayout(False)
         CType(Me.TabControlAdv7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlAdv7.ResumeLayout(False)
-        CType(Me.Drift8_2016DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PrivatKundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridDataBoundGrid8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Drift8_2016DataSet2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BedriftKundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
