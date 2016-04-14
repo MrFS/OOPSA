@@ -18,7 +18,12 @@ Public Class frmAddLeie
         adapter.Fill(ds_produkt, "Produkt")
         dt_produkt = ds_produkt.Tables(0)
         For Each dr_produkt In dt_produkt.Rows
-            ComboProdukt.Items.Add(dr_produkt("Produkt_navn"))
+            Dim produkt As String
+
+            produkt = dr_produkt("Produkt_id")
+            produkt += " " & dr_produkt("Produkt_navn")
+
+            ComboProdukt.Items.Add(produkt)
         Next
 
 
@@ -32,7 +37,12 @@ Public Class frmAddLeie
         adapter1.Fill(ds_lager, "Lager")
         dt_lager = ds_lager.Tables(0)
         For Each dr_lager In dt_lager.Rows
-            ComboLager.Items.Add(dr_lager("Addresse"))
+            Dim lager As String
+
+            lager = dr_lager("Lager_id")
+            lager += " " & dr_lager("Addresse")
+
+            ComboLager.Items.Add(lager)
         Next
 
         Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
@@ -46,7 +56,8 @@ Public Class frmAddLeie
         For Each dr_kunde In dt_kunde.Rows
             Dim navn As String
 
-            navn = dr_kunde("F_navn").ToString
+            navn = dr_kunde("Kid").ToString
+            navn += " " & dr_kunde("F_navn").ToString
             navn += " " & dr_kunde("E_navn").ToString
 
 
@@ -61,17 +72,14 @@ Public Class frmAddLeie
 
     Private Sub btnFerdigLeie_Click(sender As Object, e As EventArgs) Handles btnFerdigLeie.Click
 
-
-
-
-
-
+        Dim navn() As String = ComboKunde.Text.Split(" ")
+        Dim Lager() As String = ComboLager.Text.Split(" ")
 
         Dim Produkt1 As Integer = CInt(ComboProdukt.Text)
-        Dim kunde1 As Integer = ComboKunde.Text  'EVT endre til int
+        Dim kunde1 As Integer = navn(0)
         Dim fra1 As Date = dtpFra.Value
         Dim til1 As Date = dtpTil.Value
-        Dim lager1 As Integer = CInt(ComboLager.Text)
+        Dim lager1 As Integer = Lager(0)
 
 
         Core.regLeie(Produkt1, til1, fra1, kunde1, lager1)

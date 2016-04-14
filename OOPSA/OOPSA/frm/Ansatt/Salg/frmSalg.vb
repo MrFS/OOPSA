@@ -6,9 +6,10 @@ Imports MySql.Data.MySqlClient
 Public Class frmSalg
     Inherits MetroForm
 
-    Private Sub TextBoxExt11_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
+    Public sql As New SQL
+
+
 
     Private Sub frmSalg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Drift8_2016DataSet.Kurs' table. You can move, or remove it, as needed.
@@ -20,34 +21,27 @@ Public Class frmSalg
 
 
 
-
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Kurs", con)
-        Dim ds_produkt = New DataSet
-        Dim dr_produkt As DataRow
-        Dim dt_produkt As DataTable
-        adapter.Fill(ds_produkt, "Kurs")
-        dt_produkt = ds_produkt.Tables(0)
-        For Each dr_produkt In dt_produkt.Rows
-            ComboKurs.Items.Add(dr_produkt("Navn"))
-        Next
-
-
-        Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Kunde", con)
+        Dim adapter As New MySqlDataAdapter("SELECT * FROM Kunde", con)
 
         Dim ds_kunde = New DataSet
         Dim dr_kunde As DataRow
         Dim dt_kunde As DataTable
 
-        adapter2.Fill(ds_kunde, "Kunde")
+        adapter.Fill(ds_kunde, "Kunde")
         dt_kunde = ds_kunde.Tables(0)
         For Each dr_kunde In dt_kunde.Rows
             Dim navn As String
 
-            navn = dr_kunde("F_navn").ToString
+            navn = dr_kunde("Kid").ToString
+            navn += " " & dr_kunde("F_navn").ToString
             navn += " " & dr_kunde("E_navn").ToString
 
             ComboKunde.Items.Add(navn)
         Next
+
+        LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs)
+        LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboRegSalg)
+        LeggTildataCOMBOBOX("SELECT * FROM Lager", "Lager", "Lager_id", "by", ComboSalgLager)
 
 
     End Sub
@@ -56,7 +50,7 @@ Public Class frmSalg
 
         'Noe galt med spørringen ellers bør alt virke
 
-        Dim sql As New SQL
+
         Dim sqlstring As String
 
         Dim Kundenavn As String = ComboKunde.Text
@@ -91,7 +85,7 @@ Public Class frmSalg
         Dim kundeid As String = txtKundid.Text
 
 
-        ComboVelgKunde.Items.Clear()
+        ComboKUNDEVALG.Items.Clear()
 
         Dim adapter As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
         Dim ds_produkt = New DataSet
@@ -106,7 +100,7 @@ Public Class frmSalg
             stuff += " " & dr_produkt("Produkt_Produkt_id")
             stuff += " " & dr_produkt("Produkt_navn")
 
-            ComboVelgKunde.Items.Add(stuff)
+            ComboKUNDEVALG.Items.Add(stuff)
 
         Next
 
@@ -116,8 +110,8 @@ Public Class frmSalg
 
     Private Sub btbFjern_Click(sender As Object, e As EventArgs) Handles btbFjern.Click
 
-        Dim sql As New SQL
-        Dim Salgsinfo() As String = ComboVelgKunde.Text.Split(" ")
+
+        Dim Salgsinfo() As String = ComboKUNDEVALG.Text.Split(" ")
         Dim dato As String = Salgsinfo(0)
         Dim PID As String = Salgsinfo(1)
         Dim kundeID As String = txtKundid.Text
@@ -146,5 +140,45 @@ Public Class frmSalg
 
     Private Sub btnAddUsr_Click(sender As Object, e As EventArgs) Handles btnLeggTilKunde.Click
         frmAddKunde.Show()
+    End Sub
+
+    Private Sub btnRegSalg_Click(sender As Object, e As EventArgs) Handles btnRegSalg.Click
+
+        Dim UCore As New UserCore
+
+        Dim produkt() As String = ComboRegSalg.Text.Split(" ")
+        Dim lager() As String = ComboSalgLager.Text.Split(" ")
+        Dim avanse As Integer = txtavanse.Text
+        Dim ansatt_id As Integer = UCore.Getuserid(UCore.currentUsr)
+        Dim kunde_id As Integer = TextBoxExt1.Text
+        Dim antall As Integer = Produktantall.Text
+
+
+        sql.sporring("INSERT INTO `Kjøp`(`S_id`, `dato`, `Avanse`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_Produkt_id`, `Antall`, `Lager_id`) VALUES (NULL,CURDATE()," & avanse & "," & ansatt_id & "," & kunde_id & "," & produkt(0) & "," & antall & "," & lager(0) & ")")
+        MsgBox("Salget er registert", MsgBoxStyle.Information, "Salg Registrering")
+
+    End Sub
+
+
+
+
+    Public Sub LeggTildataCOMBOBOX(SQLstring As String, Tabell As String, ID_rad As String, Rad As String, Combo As ComboBox)
+
+        Dim adapter As New MySqlDataAdapter(SQLstring, con)
+        Dim ds_produkt = New DataSet
+        Dim dr_produkt As DataRow
+        Dim dt_produkt As DataTable
+        adapter.Fill(ds_produkt, Tabell)
+        dt_produkt = ds_produkt.Tables(0)
+        For Each dr_produkt In dt_produkt.Rows
+            Dim stuff As String = dr_produkt(ID_rad) & " " & dr_produkt(Rad)
+
+            Combo.Items.Add(stuff)
+        Next
+
+    End Sub
+
+    Private Sub btbAddleie_Click(sender As Object, e As EventArgs) Handles btbAddleie.Click
+        frmAddLeie.Show()
     End Sub
 End Class
