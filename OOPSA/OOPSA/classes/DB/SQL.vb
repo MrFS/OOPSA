@@ -44,7 +44,7 @@ Public Class SQL
     ''' </summary>
     ''' <param name="query">SQLsetning som string</param>
     ''' <returns>bsource as New Bindingsource</returns>
-    Public Function dataset(query As String)
+    Public Function bindingsource(query As String)
 
         Dim dataadapter As New MySqlDataAdapter()
         Dim cmd As New MySqlCommand(query, con)
@@ -64,7 +64,7 @@ Public Class SQL
 
             SDA.Update(dbdataset)
         Catch ex As Exception
-            Throw New Exception("Feil ved spørring. " & ex.Message)
+            MsgBox("Feil ved spørring. " & ex.Message)
         End Try
 
         Return bsource

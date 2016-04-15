@@ -45,7 +45,7 @@ Public Class UserCore
         'SDA.Fill(dbdataset)
         'bsource.DataSource = dbdataset 'Takk takk FS
 
-        Brukerid = sql.dataset(sqlstring)
+        Brukerid = sql.bindingsource(sqlstring)
 
         Return Brukerid
 

@@ -8,10 +8,6 @@ Public Class frmAdminCore
 
     Public Sub VisAnsatt()
 
-        'Dim sqlstring As String = "SELECT * FROM Ansatt"
-
-        'My.Forms.frmAdminMetro.dgvAnsatte.DataSource = SQL.dataset(sqlstring)
-
         With My.Forms.frmAdminMetro.dgvAnsatte
             .Binder.InternalColumns(0).HeaderText = "ID"
             .Binder.InternalColumns(1).HeaderText = "Fornavn"
@@ -20,6 +16,7 @@ Public Class frmAdminCore
             .Binder.InternalColumns(4).HeaderText = "Epost"
             .Binder.InternalColumns(5).HeaderText = "Telefon"
             .Binder.InternalColumns(6).HeaderText = "Adresse"
+            .Binder.InternalColumns(7).HeaderText = "Postnummer"
             .Binder.InternalColumns(7).HeaderText = "Avdeling"
         End With
 
@@ -32,7 +29,7 @@ Public Class frmAdminCore
                                    LEFT OUTER JOIN Produkt
                                    ON Leie.Produkt_id=Produkt.Produkt_id"
 
-        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.dataset(sqlstring)
+        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.bindingsource(sqlstring)
 
         With My.Forms.frmAdminMetro.GridDataBoundGrid1
             .Binder.InternalColumns(0).HeaderText = "Leie ID"
@@ -92,8 +89,5 @@ Public Class frmAdminCore
 
         SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL," & Leie_fra & "," & Leie_til & "," & Ansatt_id & "," & kunde_id & "," & produkt_id & "," & lager_id & ")")
     End Sub
-
-
-
 
 End Class

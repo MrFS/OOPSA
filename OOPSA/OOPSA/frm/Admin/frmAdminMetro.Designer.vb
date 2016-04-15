@@ -37,11 +37,11 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle10 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle11 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle12 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim MetroColorTable1 As Syncfusion.Windows.Forms.MetroColorTable = New Syncfusion.Windows.Forms.MetroColorTable()
         Dim GridBaseStyle13 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle14 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle15 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle16 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim MetroColorTable1 As Syncfusion.Windows.Forms.MetroColorTable = New Syncfusion.Windows.Forms.MetroColorTable()
         Dim GridBaseStyle17 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle18 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle19 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
@@ -62,10 +62,6 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle34 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle35 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle36 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle37 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle38 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle39 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle40 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
         Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
@@ -142,7 +138,6 @@ Partial Class frmAdminMetro
         Me.lblKID = New System.Windows.Forms.Label()
         Me.btnOppdaterBedKunde = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.btnOppdaterPrivKunde = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.GridDataBoundGrid7 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.tbKundeEpost = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -224,7 +219,6 @@ Partial Class frmAdminMetro
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.tbLager = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.TabLager = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
@@ -283,6 +277,14 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dtSalgReportingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
+        Me.rtbSQLQuery = New System.Windows.Forms.RichTextBox()
+        Me.dgvSQLQuery = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -336,11 +338,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv16.SuspendLayout()
         CType(Me.dgvBedriftKunde, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TbOppdaterKunde.SuspendLayout()
-        CType(Me.GridDataBoundGrid7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbKundeEpost.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.ToolStripEx11.SuspendLayout()
+        Me.ToolStripEx2.SuspendLayout()
         Me.tbSalg.SuspendLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv2.SuspendLayout()
@@ -350,6 +352,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.SuspendLayout()
         Me.tbUtleieOversikt.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStripEx3.SuspendLayout()
         Me.tbSettings.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.tabSettings, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -357,6 +360,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer2.Panel1.SuspendLayout()
@@ -368,7 +372,9 @@ Partial Class frmAdminMetro
         CType(Me.txtSvrDB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtServer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolstripDBInfo.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.ToolStripEx10.SuspendLayout()
+        Me.ToolStripEx5.SuspendLayout()
         Me.tbLager.SuspendLayout()
         CType(Me.TabLager, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabLager.SuspendLayout()
@@ -384,6 +390,7 @@ Partial Class frmAdminMetro
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStripEx4.SuspendLayout()
         CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -414,6 +421,7 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7.SuspendLayout()
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvSQLQuery, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -711,7 +719,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx1.Image = Nothing
         Me.ToolStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1})
+        Me.ToolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1, Me.ToolStripButton2})
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
@@ -760,20 +768,20 @@ Partial Class frmAdminMetro
         Me.GradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GradientPanel1.Controls.Add(Me.TabControlAdv5)
         Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GradientPanel1.Location = New System.Drawing.Point(0, 40)
+        Me.GradientPanel1.Location = New System.Drawing.Point(0, 42)
         Me.GradientPanel1.Name = "GradientPanel1"
-        Me.GradientPanel1.Size = New System.Drawing.Size(872, 435)
+        Me.GradientPanel1.Size = New System.Drawing.Size(872, 433)
         Me.GradientPanel1.TabIndex = 5
         '
         'TabControlAdv5
         '
-        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(872, 433)
         Me.TabControlAdv5.Controls.Add(Me.tbAnsatte)
         Me.TabControlAdv5.Controls.Add(Me.tbKunder)
         Me.TabControlAdv5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv5.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv5.Name = "TabControlAdv5"
-        Me.TabControlAdv5.Size = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv5.Size = New System.Drawing.Size(872, 433)
         Me.TabControlAdv5.TabIndex = 0
         Me.TabControlAdv5.ThemesEnabled = True
         '
@@ -785,7 +793,7 @@ Partial Class frmAdminMetro
         Me.tbAnsatte.Location = New System.Drawing.Point(3, 35)
         Me.tbAnsatte.Name = "tbAnsatte"
         Me.tbAnsatte.ShowCloseButton = True
-        Me.tbAnsatte.Size = New System.Drawing.Size(865, 396)
+        Me.tbAnsatte.Size = New System.Drawing.Size(865, 394)
         Me.tbAnsatte.TabIndex = 1
         Me.tbAnsatte.Text = "Ansatte"
         Me.tbAnsatte.ThemesEnabled = True
@@ -806,7 +814,7 @@ Partial Class frmAdminMetro
         'SplitContainerAdv1.Panel2
         '
         Me.SplitContainerAdv1.Panel2.Controls.Add(Me.TabControlAdv6)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 396)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 394)
         Me.SplitContainerAdv1.SplitterDistance = 173
         Me.SplitContainerAdv1.TabIndex = 4
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
@@ -858,13 +866,13 @@ Partial Class frmAdminMetro
         '
         'TabControlAdv6
         '
-        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(685, 396)
+        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(685, 394)
         Me.TabControlAdv6.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv6.Controls.Add(Me.TabPageAdv8)
         Me.TabControlAdv6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv6.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv6.Name = "TabControlAdv6"
-        Me.TabControlAdv6.Size = New System.Drawing.Size(685, 396)
+        Me.TabControlAdv6.Size = New System.Drawing.Size(685, 394)
         Me.TabControlAdv6.TabIndex = 2
         Me.TabControlAdv6.ThemesEnabled = True
         '
@@ -876,7 +884,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv4.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(678, 357)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(678, 355)
         Me.TabPageAdv4.TabIndex = 1
         Me.TabPageAdv4.Text = "TabPageAdv4"
         Me.TabPageAdv4.ThemesEnabled = True
@@ -925,7 +933,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.Properties.MarkColHeader = False
         Me.dgvAnsatte.Properties.MarkRowHeader = False
         Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvAnsatte.Size = New System.Drawing.Size(678, 357)
+        Me.dgvAnsatte.Size = New System.Drawing.Size(678, 355)
         Me.dgvAnsatte.SmartSizeBox = False
         Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvAnsatte.TabIndex = 1
@@ -946,7 +954,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv8.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv8.Name = "TabPageAdv8"
         Me.TabPageAdv8.ShowCloseButton = True
-        Me.TabPageAdv8.Size = New System.Drawing.Size(678, 357)
+        Me.TabPageAdv8.Size = New System.Drawing.Size(678, 355)
         Me.TabPageAdv8.TabIndex = 2
         Me.TabPageAdv8.Text = "TabPageAdv8"
         Me.TabPageAdv8.ThemesEnabled = True
@@ -959,7 +967,7 @@ Partial Class frmAdminMetro
         Me.tbKunder.Location = New System.Drawing.Point(3, 35)
         Me.tbKunder.Name = "tbKunder"
         Me.tbKunder.ShowCloseButton = True
-        Me.tbKunder.Size = New System.Drawing.Size(865, 396)
+        Me.tbKunder.Size = New System.Drawing.Size(865, 394)
         Me.tbKunder.TabIndex = 2
         Me.tbKunder.Text = "Kunder"
         Me.tbKunder.ThemesEnabled = True
@@ -967,14 +975,14 @@ Partial Class frmAdminMetro
         'TabControlAdv1
         '
         Me.TabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 396)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 394)
         Me.TabControlAdv1.Controls.Add(Me.tbKunderOversikt)
         Me.TabControlAdv1.Controls.Add(Me.tbKundeEpost)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.FocusOnTabClick = False
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 396)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 394)
         Me.TabControlAdv1.TabIndex = 0
         Me.TabControlAdv1.ThemesEnabled = True
         '
@@ -986,7 +994,7 @@ Partial Class frmAdminMetro
         Me.tbKunderOversikt.Location = New System.Drawing.Point(38, 3)
         Me.tbKunderOversikt.Name = "tbKunderOversikt"
         Me.tbKunderOversikt.ShowCloseButton = True
-        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 389)
+        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 387)
         Me.tbKunderOversikt.TabIndex = 1
         Me.tbKunderOversikt.Text = "Kunder"
         Me.tbKunderOversikt.ThemesEnabled = True
@@ -1005,21 +1013,21 @@ Partial Class frmAdminMetro
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.tbKundeOversikt)
-        Me.SplitContainer3.Size = New System.Drawing.Size(823, 389)
-        Me.SplitContainer3.SplitterDistance = 228
+        Me.SplitContainer3.Size = New System.Drawing.Size(823, 387)
+        Me.SplitContainer3.SplitterDistance = 227
         Me.SplitContainer3.TabIndex = 0
         '
         'btnUpdKunde
         '
         Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(228, 60)
+        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(227, 60)
         Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
         Me.btnUpdKunde.IsBackStageButton = False
         Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
         Me.btnUpdKunde.Name = "btnUpdKunde"
-        Me.btnUpdKunde.Size = New System.Drawing.Size(228, 60)
+        Me.btnUpdKunde.Size = New System.Drawing.Size(227, 60)
         Me.btnUpdKunde.TabIndex = 4
         Me.btnUpdKunde.Text = "Oppdater Kunde"
         Me.btnUpdKunde.UseVisualStyle = True
@@ -1028,13 +1036,13 @@ Partial Class frmAdminMetro
         '
         Me.btnAddKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnAddKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(228, 60)
+        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(227, 60)
         Me.btnAddKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAddKunde.ForeColor = System.Drawing.Color.White
         Me.btnAddKunde.IsBackStageButton = False
         Me.btnAddKunde.Location = New System.Drawing.Point(0, 0)
         Me.btnAddKunde.Name = "btnAddKunde"
-        Me.btnAddKunde.Size = New System.Drawing.Size(228, 60)
+        Me.btnAddKunde.Size = New System.Drawing.Size(227, 60)
         Me.btnAddKunde.TabIndex = 3
         Me.btnAddKunde.Text = "Legg til ny kunde"
         Me.btnAddKunde.UseVisualStyle = True
@@ -1042,14 +1050,14 @@ Partial Class frmAdminMetro
         'tbKundeOversikt
         '
         Me.tbKundeOversikt.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(591, 389)
+        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(592, 387)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv15)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv16)
         Me.tbKundeOversikt.Controls.Add(Me.TbOppdaterKunde)
         Me.tbKundeOversikt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbKundeOversikt.Location = New System.Drawing.Point(0, 0)
         Me.tbKundeOversikt.Name = "tbKundeOversikt"
-        Me.tbKundeOversikt.Size = New System.Drawing.Size(591, 389)
+        Me.tbKundeOversikt.Size = New System.Drawing.Size(592, 387)
         Me.tbKundeOversikt.TabIndex = 0
         Me.tbKundeOversikt.ThemesEnabled = True
         '
@@ -1061,7 +1069,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv15.Location = New System.Drawing.Point(46, 3)
         Me.TabPageAdv15.Name = "TabPageAdv15"
         Me.TabPageAdv15.ShowCloseButton = True
-        Me.TabPageAdv15.Size = New System.Drawing.Size(541, 382)
+        Me.TabPageAdv15.Size = New System.Drawing.Size(542, 380)
         Me.TabPageAdv15.TabIndex = 1
         Me.TabPageAdv15.ThemesEnabled = True
         '
@@ -1107,7 +1115,7 @@ Partial Class frmAdminMetro
         Me.dgvPrivatKunde.Properties.MarkColHeader = False
         Me.dgvPrivatKunde.Properties.MarkRowHeader = False
         Me.dgvPrivatKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvPrivatKunde.Size = New System.Drawing.Size(541, 382)
+        Me.dgvPrivatKunde.Size = New System.Drawing.Size(542, 380)
         Me.dgvPrivatKunde.SmartSizeBox = False
         Me.dgvPrivatKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvPrivatKunde.TabIndex = 0
@@ -1124,7 +1132,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv16.Location = New System.Drawing.Point(46, 3)
         Me.TabPageAdv16.Name = "TabPageAdv16"
         Me.TabPageAdv16.ShowCloseButton = True
-        Me.TabPageAdv16.Size = New System.Drawing.Size(541, 382)
+        Me.TabPageAdv16.Size = New System.Drawing.Size(542, 380)
         Me.TabPageAdv16.TabIndex = 2
         Me.TabPageAdv16.ThemesEnabled = True
         '
@@ -1170,7 +1178,7 @@ Partial Class frmAdminMetro
         Me.dgvBedriftKunde.Properties.MarkColHeader = False
         Me.dgvBedriftKunde.Properties.MarkRowHeader = False
         Me.dgvBedriftKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvBedriftKunde.Size = New System.Drawing.Size(541, 382)
+        Me.dgvBedriftKunde.Size = New System.Drawing.Size(542, 380)
         Me.dgvBedriftKunde.SmartSizeBox = False
         Me.dgvBedriftKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvBedriftKunde.TabIndex = 0
@@ -1200,14 +1208,14 @@ Partial Class frmAdminMetro
         Me.TbOppdaterKunde.Controls.Add(Me.lblKID)
         Me.TbOppdaterKunde.Controls.Add(Me.btnOppdaterBedKunde)
         Me.TbOppdaterKunde.Controls.Add(Me.btnOppdaterPrivKunde)
-        Me.TbOppdaterKunde.Controls.Add(Me.GridDataBoundGrid7)
         Me.TbOppdaterKunde.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.TbOppdaterKunde.ImageSize = New System.Drawing.Size(32, 32)
         Me.TbOppdaterKunde.Location = New System.Drawing.Point(46, 3)
         Me.TbOppdaterKunde.Name = "TbOppdaterKunde"
         Me.TbOppdaterKunde.ShowCloseButton = True
-        Me.TbOppdaterKunde.Size = New System.Drawing.Size(541, 382)
+        Me.TbOppdaterKunde.Size = New System.Drawing.Size(542, 380)
         Me.TbOppdaterKunde.TabIndex = 3
+        Me.TbOppdaterKunde.TabVisible = False
         Me.TbOppdaterKunde.ThemesEnabled = True
         '
         'txtBedNavn
@@ -1400,57 +1408,6 @@ Partial Class frmAdminMetro
         Me.btnOppdaterPrivKunde.Text = "Oppdater Privatkunde"
         Me.btnOppdaterPrivKunde.UseVisualStyle = True
         '
-        'GridDataBoundGrid7
-        '
-        Me.GridDataBoundGrid7.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid7.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle13.Name = "Column Header"
-        GridBaseStyle13.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle13.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle13.StyleInfo.Enabled = False
-        GridBaseStyle13.StyleInfo.Font.Bold = True
-        GridBaseStyle13.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle14.Name = "Header"
-        GridBaseStyle14.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.CellType = "Header"
-        GridBaseStyle14.StyleInfo.Font.Bold = True
-        GridBaseStyle14.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle14.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle15.Name = "Standard"
-        GridBaseStyle15.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle15.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle15.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle16.Name = "Row Header"
-        GridBaseStyle16.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle16.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle16.StyleInfo.Enabled = True
-        GridBaseStyle16.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid7.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle13, GridBaseStyle14, GridBaseStyle15, GridBaseStyle16})
-        Me.GridDataBoundGrid7.DefaultRowHeight = 20
-        Me.GridDataBoundGrid7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid7.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid7.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid7.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid7.MetroScrollBars = True
-        Me.GridDataBoundGrid7.Name = "GridDataBoundGrid7"
-        Me.GridDataBoundGrid7.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid7.Properties.ForceImmediateRepaint = False
-        Me.GridDataBoundGrid7.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.GridDataBoundGrid7.Properties.MarkColHeader = False
-        Me.GridDataBoundGrid7.Properties.MarkRowHeader = False
-        Me.GridDataBoundGrid7.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid7.Size = New System.Drawing.Size(541, 382)
-        Me.GridDataBoundGrid7.SmartSizeBox = False
-        Me.GridDataBoundGrid7.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid7.TabIndex = 0
-        Me.GridDataBoundGrid7.Text = "GridDataBoundGrid8"
-        Me.GridDataBoundGrid7.ThemesEnabled = True
-        Me.GridDataBoundGrid7.UseListChangedEvent = True
-        Me.GridDataBoundGrid7.UseRightToLeftCompatibleTextBox = True
-        '
         'tbKundeEpost
         '
         Me.tbKundeEpost.Controls.Add(Me.Panel6)
@@ -1461,7 +1418,7 @@ Partial Class frmAdminMetro
         Me.tbKundeEpost.Location = New System.Drawing.Point(38, 3)
         Me.tbKundeEpost.Name = "tbKundeEpost"
         Me.tbKundeEpost.ShowCloseButton = True
-        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 389)
+        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 387)
         Me.tbKundeEpost.TabIndex = 2
         Me.tbKundeEpost.Text = "Epost"
         Me.tbKundeEpost.ThemesEnabled = True
@@ -1474,7 +1431,7 @@ Partial Class frmAdminMetro
         Me.Panel6.Location = New System.Drawing.Point(0, 42)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel6.Size = New System.Drawing.Size(823, 325)
+        Me.Panel6.Size = New System.Drawing.Size(823, 323)
         Me.Panel6.TabIndex = 3
         '
         'Panel7
@@ -1485,7 +1442,7 @@ Partial Class frmAdminMetro
         Me.Panel7.Location = New System.Drawing.Point(50, 10)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel7.Size = New System.Drawing.Size(723, 315)
+        Me.Panel7.Size = New System.Drawing.Size(723, 313)
         Me.Panel7.TabIndex = 0
         '
         'rtbKundeEpost
@@ -1494,7 +1451,7 @@ Partial Class frmAdminMetro
         Me.rtbKundeEpost.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbKundeEpost.Location = New System.Drawing.Point(10, 10)
         Me.rtbKundeEpost.Name = "rtbKundeEpost"
-        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 305)
+        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 303)
         Me.rtbKundeEpost.TabIndex = 0
         Me.rtbKundeEpost.Text = ""
         '
@@ -1503,7 +1460,7 @@ Partial Class frmAdminMetro
         Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 367)
+        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 365)
         Me.StatusStripEx1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.Name = "StatusStripEx1"
         Me.StatusStripEx1.Size = New System.Drawing.Size(823, 22)
@@ -1668,10 +1625,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx2.Image = Nothing
         Me.ToolStripEx2.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton3})
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 42)
         Me.ToolStripEx2.TabIndex = 4
         Me.ToolStripEx2.Text = "Personaliaoversikt"
         Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1692,16 +1650,16 @@ Partial Class frmAdminMetro
         '
         'TabControlAdv2
         '
-        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 433)
         Me.TabControlAdv2.Controls.Add(Me.tbTextEdit)
         Me.TabControlAdv2.Controls.Add(Me.tbUtleieOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbReporting)
         Me.TabControlAdv2.Controls.Add(Me.tbSalgOversikt)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.ItemSize = New System.Drawing.Size(62, 48)
-        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 40)
+        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 42)
         Me.TabControlAdv2.Name = "TabControlAdv2"
-        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 435)
+        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 433)
         Me.TabControlAdv2.TabIndex = 2
         Me.TabControlAdv2.ThemesEnabled = True
         '
@@ -1711,10 +1669,10 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.Controls.Add(Me.ToolStripEx6)
         Me.tbTextEdit.Image = Global.OOPSA.My.Resources.Resources.tbTxtEditor
         Me.tbTextEdit.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbTextEdit.Location = New System.Drawing.Point(3, 2)
+        Me.tbTextEdit.Location = New System.Drawing.Point(3, 53)
         Me.tbTextEdit.Name = "tbTextEdit"
         Me.tbTextEdit.ShowCloseButton = True
-        Me.tbTextEdit.Size = New System.Drawing.Size(865, 429)
+        Me.tbTextEdit.Size = New System.Drawing.Size(865, 376)
         Me.tbTextEdit.TabIndex = 2
         Me.tbTextEdit.Text = "Teksteditor"
         Me.tbTextEdit.ThemesEnabled = True
@@ -1727,7 +1685,7 @@ Partial Class frmAdminMetro
         Me.Panel1.Location = New System.Drawing.Point(0, 42)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel1.Size = New System.Drawing.Size(865, 387)
+        Me.Panel1.Size = New System.Drawing.Size(865, 334)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -1739,7 +1697,7 @@ Partial Class frmAdminMetro
         Me.Panel2.Location = New System.Drawing.Point(50, 10)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(765, 377)
+        Me.Panel2.Size = New System.Drawing.Size(765, 324)
         Me.Panel2.TabIndex = 0
         '
         'FontListBox1
@@ -1777,7 +1735,7 @@ Partial Class frmAdminMetro
         Me.richTextBox1.Location = New System.Drawing.Point(10, 10)
         Me.richTextBox1.Margin = New System.Windows.Forms.Padding(50)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(745, 357)
+        Me.richTextBox1.Size = New System.Drawing.Size(745, 304)
         Me.richTextBox1.TabIndex = 2
         Me.richTextBox1.Text = ""
         '
@@ -1802,7 +1760,7 @@ Partial Class frmAdminMetro
         Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
         Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.NewToolStripButton.Text = "&New"
         '
         'OpenToolStripButton
@@ -1811,7 +1769,7 @@ Partial Class frmAdminMetro
         Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
         Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.OpenToolStripButton.Text = "&Open"
         '
         'SaveToolStripButton
@@ -1820,7 +1778,7 @@ Partial Class frmAdminMetro
         Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.SaveToolStripButton.Text = "&Save"
         '
         'PrintToolStripButton
@@ -1829,13 +1787,13 @@ Partial Class frmAdminMetro
         Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
         Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripButton.Name = "PrintToolStripButton"
-        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.PrintToolStripButton.Text = "&Print"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 42)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'CutToolStripButton
         '
@@ -1843,7 +1801,7 @@ Partial Class frmAdminMetro
         Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
         Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.CutToolStripButton.Text = "C&ut"
         '
         'CopyToolStripButton
@@ -1852,7 +1810,7 @@ Partial Class frmAdminMetro
         Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
         Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.CopyToolStripButton.Text = "&Copy"
         '
         'PasteToolStripButton
@@ -1861,13 +1819,13 @@ Partial Class frmAdminMetro
         Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
         Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 39)
+        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 24)
         Me.PasteToolStripButton.Text = "&Paste"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 42)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'txtUndo
         '
@@ -1875,7 +1833,7 @@ Partial Class frmAdminMetro
         Me.txtUndo.Image = Global.OOPSA.My.Resources.Resources.txtUndo
         Me.txtUndo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtUndo.Name = "txtUndo"
-        Me.txtUndo.Size = New System.Drawing.Size(24, 39)
+        Me.txtUndo.Size = New System.Drawing.Size(24, 24)
         Me.txtUndo.Text = "ToolStripButton2"
         '
         'txtRedo
@@ -1884,13 +1842,13 @@ Partial Class frmAdminMetro
         Me.txtRedo.Image = Global.OOPSA.My.Resources.Resources.txtRedo
         Me.txtRedo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtRedo.Name = "txtRedo"
-        Me.txtRedo.Size = New System.Drawing.Size(24, 39)
+        Me.txtRedo.Size = New System.Drawing.Size(24, 24)
         Me.txtRedo.Text = "ToolStripButton3"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 42)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 27)
         '
         'txtFontCombo
         '
@@ -1898,7 +1856,7 @@ Partial Class frmAdminMetro
         Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
         Me.txtFontCombo.MaxLength = 32767
         Me.txtFontCombo.Name = "txtFontCombo"
-        Me.txtFontCombo.Size = New System.Drawing.Size(135, 42)
+        Me.txtFontCombo.Size = New System.Drawing.Size(135, 27)
         Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontCombo.Text = "Arial"
         '
@@ -1908,14 +1866,14 @@ Partial Class frmAdminMetro
         Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
         Me.txtFontSizeCombo.MaxLength = 32767
         Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
-        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 42)
+        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 27)
         Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontSizeCombo.Text = "8"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 42)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'txtInsertImg
         '
@@ -1923,7 +1881,7 @@ Partial Class frmAdminMetro
         Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
         Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtInsertImg.Name = "txtInsertImg"
-        Me.txtInsertImg.Size = New System.Drawing.Size(24, 39)
+        Me.txtInsertImg.Size = New System.Drawing.Size(24, 24)
         Me.txtInsertImg.Text = "txtInsert"
         '
         'ToolStripButton4
@@ -1931,13 +1889,13 @@ Partial Class frmAdminMetro
         Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 39)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 24)
         Me.ToolStripButton4.Text = "ToolStripButton4"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 42)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
         '
         'txtAlignLeft
         '
@@ -1945,7 +1903,7 @@ Partial Class frmAdminMetro
         Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
         Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignLeft.Name = "txtAlignLeft"
-        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 39)
+        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 24)
         Me.txtAlignLeft.Text = "ToolStripButton5"
         '
         'txtAlignJust
@@ -1954,7 +1912,7 @@ Partial Class frmAdminMetro
         Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
         Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignJust.Name = "txtAlignJust"
-        Me.txtAlignJust.Size = New System.Drawing.Size(24, 39)
+        Me.txtAlignJust.Size = New System.Drawing.Size(24, 24)
         Me.txtAlignJust.Text = "ToolStripButton6"
         '
         'txtAlignRight
@@ -1963,7 +1921,7 @@ Partial Class frmAdminMetro
         Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
         Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignRight.Name = "txtAlignRight"
-        Me.txtAlignRight.Size = New System.Drawing.Size(24, 39)
+        Me.txtAlignRight.Size = New System.Drawing.Size(24, 24)
         Me.txtAlignRight.Text = "ToolStripButton7"
         '
         'tbUtleieOversikt
@@ -1972,10 +1930,10 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Controls.Add(Me.GridDataBoundGrid1)
         Me.tbUtleieOversikt.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.tbUtleieOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 2)
+        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 429)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 376)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
@@ -1999,31 +1957,31 @@ Partial Class frmAdminMetro
         '
         Me.GridDataBoundGrid1.AllowDragSelectedCols = True
         Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle17.Name = "Column Header"
-        GridBaseStyle17.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle17.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle17.StyleInfo.Enabled = False
-        GridBaseStyle17.StyleInfo.Font.Bold = True
-        GridBaseStyle17.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle18.Name = "Header"
-        GridBaseStyle18.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle18.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle18.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle18.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle18.StyleInfo.CellType = "Header"
-        GridBaseStyle18.StyleInfo.Font.Bold = True
-        GridBaseStyle18.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle18.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle19.Name = "Standard"
-        GridBaseStyle19.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle19.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle19.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle20.Name = "Row Header"
-        GridBaseStyle20.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle20.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle20.StyleInfo.Enabled = True
-        GridBaseStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle17, GridBaseStyle18, GridBaseStyle19, GridBaseStyle20})
+        GridBaseStyle13.Name = "Column Header"
+        GridBaseStyle13.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle13.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle13.StyleInfo.Enabled = False
+        GridBaseStyle13.StyleInfo.Font.Bold = True
+        GridBaseStyle13.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle14.Name = "Header"
+        GridBaseStyle14.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle14.StyleInfo.CellType = "Header"
+        GridBaseStyle14.StyleInfo.Font.Bold = True
+        GridBaseStyle14.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle14.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle15.Name = "Standard"
+        GridBaseStyle15.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle15.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle15.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle16.Name = "Row Header"
+        GridBaseStyle16.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle16.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle16.StyleInfo.Enabled = True
+        GridBaseStyle16.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle13, GridBaseStyle14, GridBaseStyle15, GridBaseStyle16})
         Me.GridDataBoundGrid1.DefaultRowHeight = 20
         Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Right
         Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
@@ -2037,7 +1995,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 429)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 376)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -2050,10 +2008,10 @@ Partial Class frmAdminMetro
         '
         Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 2)
+        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
         Me.tbReporting.Name = "tbReporting"
         Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 429)
+        Me.tbReporting.Size = New System.Drawing.Size(865, 376)
         Me.tbReporting.TabIndex = 3
         Me.tbReporting.Text = "Rapporter"
         Me.tbReporting.ThemesEnabled = True
@@ -2062,10 +2020,10 @@ Partial Class frmAdminMetro
         '
         Me.tbSalgOversikt.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
         Me.tbSalgOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 2)
+        Me.tbSalgOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbSalgOversikt.Name = "tbSalgOversikt"
         Me.tbSalgOversikt.ShowCloseButton = True
-        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 429)
+        Me.tbSalgOversikt.Size = New System.Drawing.Size(865, 376)
         Me.tbSalgOversikt.TabIndex = 1
         Me.tbSalgOversikt.Text = "Salg"
         Me.tbSalgOversikt.ThemesEnabled = True
@@ -2076,10 +2034,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx3.Image = Nothing
         Me.ToolStripEx3.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5})
         Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx3.Name = "ToolStripEx3"
         Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 42)
         Me.ToolStripEx3.TabIndex = 1
         Me.ToolStripEx3.Text = "Salg & Utleie"
         Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2101,22 +2060,21 @@ Partial Class frmAdminMetro
         '
         Me.Panel3.Controls.Add(Me.tabSettings)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 40)
+        Me.Panel3.Location = New System.Drawing.Point(0, 42)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(872, 435)
+        Me.Panel3.Size = New System.Drawing.Size(872, 433)
         Me.Panel3.TabIndex = 2
         '
         'tabSettings
         '
         Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 433)
         Me.tabSettings.Controls.Add(Me.TabPageAdv1)
-        Me.tabSettings.Controls.Add(Me.TabPageAdv2)
         Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
         Me.tabSettings.Location = New System.Drawing.Point(0, 0)
         Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Size = New System.Drawing.Size(872, 435)
+        Me.tabSettings.Size = New System.Drawing.Size(872, 433)
         Me.tabSettings.TabIndex = 0
         Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tabSettings.ThemesEnabled = True
@@ -2126,10 +2084,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 394)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -2143,7 +2101,11 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 429)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.dgvSQLQuery)
+        Me.SplitContainer1.Size = New System.Drawing.Size(865, 394)
         Me.SplitContainer1.SplitterDistance = 288
         Me.SplitContainer1.TabIndex = 0
         '
@@ -2172,13 +2134,13 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripEx10)
-        Me.SplitContainer2.Size = New System.Drawing.Size(288, 429)
-        Me.SplitContainer2.SplitterDistance = 234
+        Me.SplitContainer2.Size = New System.Drawing.Size(288, 394)
+        Me.SplitContainer2.SplitterDistance = 214
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2190,7 +2152,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2202,7 +2164,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2214,7 +2176,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2226,7 +2188,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(254, 23)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2301,10 +2263,11 @@ Partial Class frmAdminMetro
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.rtbSQLQuery)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 42)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(288, 149)
+        Me.Panel4.Size = New System.Drawing.Size(288, 134)
         Me.Panel4.TabIndex = 2
         '
         'ToolStripEx10
@@ -2312,35 +2275,22 @@ Partial Class frmAdminMetro
         Me.ToolStripEx10.ForeColor = System.Drawing.Color.MidnightBlue
         Me.ToolStripEx10.Image = Nothing
         Me.ToolStripEx10.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStripEx10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
+        Me.ToolStripEx10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripLabel3})
         Me.ToolStripEx10.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx10.Name = "ToolStripEx10"
         Me.ToolStripEx10.Office12Mode = False
         Me.ToolStripEx10.Size = New System.Drawing.Size(288, 42)
         Me.ToolStripEx10.TabIndex = 1
-        Me.ToolStripEx10.Text = "Database Information"
+        Me.ToolStripEx10.Text = "SQL Query Builder"
         Me.ToolStripEx10.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'ToolStripButton1
         '
-        Me.ToolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(189, 24)
-        Me.ToolStripButton1.Text = "Change Database Information"
-        '
-        'TabPageAdv2
-        '
-        Me.TabPageAdv2.Image = Nothing
-        Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 2)
-        Me.TabPageAdv2.Name = "TabPageAdv2"
-        Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 429)
-        Me.TabPageAdv2.TabIndex = 2
-        Me.TabPageAdv2.Text = "TabPageAdv2"
-        Me.TabPageAdv2.ThemesEnabled = True
+        Me.ToolStripButton1.Size = New System.Drawing.Size(71, 24)
+        Me.ToolStripButton1.Text = "Execute"
         '
         'ToolStripEx5
         '
@@ -2348,10 +2298,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx5.Image = Nothing
         Me.ToolStripEx5.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6})
         Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx5.Name = "ToolStripEx5"
         Me.ToolStripEx5.Office12Mode = False
-        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 42)
         Me.ToolStripEx5.TabIndex = 1
         Me.ToolStripEx5.Text = "Oversikt"
         Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2371,14 +2322,14 @@ Partial Class frmAdminMetro
         '
         'TabLager
         '
-        Me.TabLager.BeforeTouchSize = New System.Drawing.Size(872, 435)
+        Me.TabLager.BeforeTouchSize = New System.Drawing.Size(872, 433)
         Me.TabLager.Controls.Add(Me.TabPageAdv5)
         Me.TabLager.Controls.Add(Me.TabPageAdv6)
         Me.TabLager.Controls.Add(Me.TabPageAdv7)
         Me.TabLager.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabLager.Location = New System.Drawing.Point(0, 40)
+        Me.TabLager.Location = New System.Drawing.Point(0, 42)
         Me.TabLager.Name = "TabLager"
-        Me.TabLager.Size = New System.Drawing.Size(872, 435)
+        Me.TabLager.Size = New System.Drawing.Size(872, 433)
         Me.TabLager.TabIndex = 2
         Me.TabLager.ThemesEnabled = True
         '
@@ -2387,18 +2338,92 @@ Partial Class frmAdminMetro
         Me.TabPageAdv5.Controls.Add(Me.GridDataBoundGrid4)
         Me.TabPageAdv5.Image = Nothing
         Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv5.Name = "TabPageAdv5"
         Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 429)
+        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 394)
         Me.TabPageAdv5.TabIndex = 1
-        Me.TabPageAdv5.Text = "Totall ovesikt"
+        Me.TabPageAdv5.Text = "Alle Lager"
         Me.TabPageAdv5.ThemesEnabled = True
         '
         'GridDataBoundGrid4
         '
         Me.GridDataBoundGrid4.AllowDragSelectedCols = True
         Me.GridDataBoundGrid4.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        GridBaseStyle17.Name = "Column Header"
+        GridBaseStyle17.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle17.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle17.StyleInfo.Enabled = False
+        GridBaseStyle17.StyleInfo.Font.Bold = True
+        GridBaseStyle17.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle18.Name = "Header"
+        GridBaseStyle18.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.CellType = "Header"
+        GridBaseStyle18.StyleInfo.Font.Bold = True
+        GridBaseStyle18.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle18.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle19.Name = "Standard"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle19.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle20.Name = "Row Header"
+        GridBaseStyle20.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle20.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle20.StyleInfo.Enabled = True
+        GridBaseStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid4.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle17, GridBaseStyle18, GridBaseStyle19, GridBaseStyle20})
+        Me.GridDataBoundGrid4.DataSource = Me.LagerRapportALLEBindingSource
+        Me.GridDataBoundGrid4.DefaultRowHeight = 20
+        Me.GridDataBoundGrid4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid4.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid4.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid4.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid4.MetroScrollBars = True
+        Me.GridDataBoundGrid4.Name = "GridDataBoundGrid4"
+        Me.GridDataBoundGrid4.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid4.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid4.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid4.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid4.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid4.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid4.SmartSizeBox = False
+        Me.GridDataBoundGrid4.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid4.TabIndex = 0
+        Me.GridDataBoundGrid4.Text = "GridDataBoundGrid4"
+        Me.GridDataBoundGrid4.UseListChangedEvent = True
+        Me.GridDataBoundGrid4.UseRightToLeftCompatibleTextBox = True
+        '
+        'LagerRapportALLEBindingSource
+        '
+        Me.LagerRapportALLEBindingSource.DataMember = "LagerRapportALLE"
+        Me.LagerRapportALLEBindingSource.DataSource = Me.Drift8_2016DataSetLageroversiktALLE
+        '
+        'Drift8_2016DataSetLageroversiktALLE
+        '
+        Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
+        Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TabPageAdv6
+        '
+        Me.TabPageAdv6.Controls.Add(Me.GridDataBoundGrid3)
+        Me.TabPageAdv6.Image = Nothing
+        Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv6.Name = "TabPageAdv6"
+        Me.TabPageAdv6.ShowCloseButton = True
+        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv6.TabIndex = 2
+        Me.TabPageAdv6.Text = "Trondheim" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TabPageAdv6.ThemesEnabled = True
+        '
+        'GridDataBoundGrid3
+        '
+        Me.GridDataBoundGrid3.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid3.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
         GridBaseStyle21.Name = "Column Header"
         GridBaseStyle21.StyleInfo.BaseStyle = "Header"
         GridBaseStyle21.StyleInfo.CellType = "ColumnHeaderCell"
@@ -2423,56 +2448,56 @@ Partial Class frmAdminMetro
         GridBaseStyle24.StyleInfo.CellType = "RowHeaderCell"
         GridBaseStyle24.StyleInfo.Enabled = True
         GridBaseStyle24.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid4.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle21, GridBaseStyle22, GridBaseStyle23, GridBaseStyle24})
-        Me.GridDataBoundGrid4.DataSource = Me.LagerRapportALLEBindingSource
-        Me.GridDataBoundGrid4.DefaultRowHeight = 20
-        Me.GridDataBoundGrid4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid4.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid4.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid4.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid4.MetroScrollBars = True
-        Me.GridDataBoundGrid4.Name = "GridDataBoundGrid4"
-        Me.GridDataBoundGrid4.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid4.Properties.ForceImmediateRepaint = False
-        Me.GridDataBoundGrid4.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.GridDataBoundGrid4.Properties.MarkColHeader = False
-        Me.GridDataBoundGrid4.Properties.MarkRowHeader = False
-        Me.GridDataBoundGrid4.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 429)
-        Me.GridDataBoundGrid4.SmartSizeBox = False
-        Me.GridDataBoundGrid4.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid4.TabIndex = 0
-        Me.GridDataBoundGrid4.Text = "GridDataBoundGrid4"
-        Me.GridDataBoundGrid4.UseListChangedEvent = True
-        Me.GridDataBoundGrid4.UseRightToLeftCompatibleTextBox = True
+        Me.GridDataBoundGrid3.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle21, GridBaseStyle22, GridBaseStyle23, GridBaseStyle24})
+        Me.GridDataBoundGrid3.DataSource = Me.LagerRapportTrondheimBindingSource
+        Me.GridDataBoundGrid3.DefaultRowHeight = 20
+        Me.GridDataBoundGrid3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid3.MetroScrollBars = True
+        Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
+        Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
+        Me.GridDataBoundGrid3.Properties.ForceImmediateRepaint = False
+        Me.GridDataBoundGrid3.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.GridDataBoundGrid3.Properties.MarkColHeader = False
+        Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
+        Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid3.SmartSizeBox = False
+        Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.GridDataBoundGrid3.TabIndex = 0
+        Me.GridDataBoundGrid3.Text = "GridDataBoundGrid3"
+        Me.GridDataBoundGrid3.UseListChangedEvent = True
+        Me.GridDataBoundGrid3.UseRightToLeftCompatibleTextBox = True
         '
-        'LagerRapportALLEBindingSource
+        'LagerRapportTrondheimBindingSource
         '
-        Me.LagerRapportALLEBindingSource.DataMember = "LagerRapportALLE"
-        Me.LagerRapportALLEBindingSource.DataSource = Me.Drift8_2016DataSetLageroversiktALLE
+        Me.LagerRapportTrondheimBindingSource.DataMember = "LagerRapportTrondheim"
+        Me.LagerRapportTrondheimBindingSource.DataSource = Me.Drift8_2016DataSetTrondheimLager
         '
-        'Drift8_2016DataSetLageroversiktALLE
+        'Drift8_2016DataSetTrondheimLager
         '
-        Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
-        Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.Drift8_2016DataSetTrondheimLager.DataSetName = "drift8_2016DataSetTrondheimLager"
+        Me.Drift8_2016DataSetTrondheimLager.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TabPageAdv6
+        'TabPageAdv7
         '
-        Me.TabPageAdv6.Controls.Add(Me.GridDataBoundGrid3)
-        Me.TabPageAdv6.Image = Nothing
-        Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 2)
-        Me.TabPageAdv6.Name = "TabPageAdv6"
-        Me.TabPageAdv6.ShowCloseButton = True
-        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 429)
-        Me.TabPageAdv6.TabIndex = 2
-        Me.TabPageAdv6.Text = "Trondheim" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.TabPageAdv6.ThemesEnabled = True
+        Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid2)
+        Me.TabPageAdv7.Image = Nothing
+        Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
+        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv7.Name = "TabPageAdv7"
+        Me.TabPageAdv7.ShowCloseButton = True
+        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv7.TabIndex = 3
+        Me.TabPageAdv7.Text = "Stavanger"
+        Me.TabPageAdv7.ThemesEnabled = True
         '
-        'GridDataBoundGrid3
+        'GridDataBoundGrid2
         '
-        Me.GridDataBoundGrid3.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid3.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.GridDataBoundGrid2.AllowDragSelectedCols = True
+        Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
         GridBaseStyle25.Name = "Column Header"
         GridBaseStyle25.StyleInfo.BaseStyle = "Header"
         GridBaseStyle25.StyleInfo.CellType = "ColumnHeaderCell"
@@ -2497,81 +2522,7 @@ Partial Class frmAdminMetro
         GridBaseStyle28.StyleInfo.CellType = "RowHeaderCell"
         GridBaseStyle28.StyleInfo.Enabled = True
         GridBaseStyle28.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid3.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle25, GridBaseStyle26, GridBaseStyle27, GridBaseStyle28})
-        Me.GridDataBoundGrid3.DataSource = Me.LagerRapportTrondheimBindingSource
-        Me.GridDataBoundGrid3.DefaultRowHeight = 20
-        Me.GridDataBoundGrid3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
-        Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid3.MetroScrollBars = True
-        Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
-        Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
-        Me.GridDataBoundGrid3.Properties.ForceImmediateRepaint = False
-        Me.GridDataBoundGrid3.Properties.GridLineColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.GridDataBoundGrid3.Properties.MarkColHeader = False
-        Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
-        Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 429)
-        Me.GridDataBoundGrid3.SmartSizeBox = False
-        Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
-        Me.GridDataBoundGrid3.TabIndex = 0
-        Me.GridDataBoundGrid3.Text = "GridDataBoundGrid3"
-        Me.GridDataBoundGrid3.UseListChangedEvent = True
-        Me.GridDataBoundGrid3.UseRightToLeftCompatibleTextBox = True
-        '
-        'LagerRapportTrondheimBindingSource
-        '
-        Me.LagerRapportTrondheimBindingSource.DataMember = "LagerRapportTrondheim"
-        Me.LagerRapportTrondheimBindingSource.DataSource = Me.Drift8_2016DataSetTrondheimLager
-        '
-        'Drift8_2016DataSetTrondheimLager
-        '
-        Me.Drift8_2016DataSetTrondheimLager.DataSetName = "drift8_2016DataSetTrondheimLager"
-        Me.Drift8_2016DataSetTrondheimLager.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TabPageAdv7
-        '
-        Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid2)
-        Me.TabPageAdv7.Image = Nothing
-        Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 2)
-        Me.TabPageAdv7.Name = "TabPageAdv7"
-        Me.TabPageAdv7.ShowCloseButton = True
-        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 429)
-        Me.TabPageAdv7.TabIndex = 3
-        Me.TabPageAdv7.Text = "Stavanger"
-        Me.TabPageAdv7.ThemesEnabled = True
-        '
-        'GridDataBoundGrid2
-        '
-        Me.GridDataBoundGrid2.AllowDragSelectedCols = True
-        Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle29.Name = "Column Header"
-        GridBaseStyle29.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle29.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle29.StyleInfo.Enabled = False
-        GridBaseStyle29.StyleInfo.Font.Bold = True
-        GridBaseStyle29.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle30.Name = "Header"
-        GridBaseStyle30.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle30.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle30.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle30.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle30.StyleInfo.CellType = "Header"
-        GridBaseStyle30.StyleInfo.Font.Bold = True
-        GridBaseStyle30.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle30.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle31.Name = "Standard"
-        GridBaseStyle31.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle31.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle31.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle32.Name = "Row Header"
-        GridBaseStyle32.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle32.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle32.StyleInfo.Enabled = True
-        GridBaseStyle32.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle29, GridBaseStyle30, GridBaseStyle31, GridBaseStyle32})
+        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle25, GridBaseStyle26, GridBaseStyle27, GridBaseStyle28})
         Me.GridDataBoundGrid2.DataSource = Me.LagerRapportStavangerBindingSource
         Me.GridDataBoundGrid2.DefaultRowHeight = 20
         Me.GridDataBoundGrid2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2586,7 +2537,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 429)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 394)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 0
@@ -2610,10 +2561,11 @@ Partial Class frmAdminMetro
         Me.ToolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx4.Image = Nothing
         Me.ToolStripEx4.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStripEx4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7})
         Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx4.Name = "ToolStripEx4"
         Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 40)
+        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 42)
         Me.ToolStripEx4.TabIndex = 1
         Me.ToolStripEx4.Text = "Lageroversikt"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2819,31 +2771,31 @@ Partial Class frmAdminMetro
         '
         Me.GridDataBoundGrid5.AllowDragSelectedCols = True
         Me.GridDataBoundGrid5.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle33.Name = "Column Header"
-        GridBaseStyle33.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle33.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle33.StyleInfo.Enabled = False
-        GridBaseStyle33.StyleInfo.Font.Bold = True
-        GridBaseStyle33.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle34.Name = "Header"
-        GridBaseStyle34.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle34.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle34.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle34.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle34.StyleInfo.CellType = "Header"
-        GridBaseStyle34.StyleInfo.Font.Bold = True
-        GridBaseStyle34.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle34.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle35.Name = "Standard"
-        GridBaseStyle35.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle35.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle35.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle36.Name = "Row Header"
-        GridBaseStyle36.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle36.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle36.StyleInfo.Enabled = True
-        GridBaseStyle36.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid5.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle33, GridBaseStyle34, GridBaseStyle35, GridBaseStyle36})
+        GridBaseStyle29.Name = "Column Header"
+        GridBaseStyle29.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle29.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle29.StyleInfo.Enabled = False
+        GridBaseStyle29.StyleInfo.Font.Bold = True
+        GridBaseStyle29.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle30.Name = "Header"
+        GridBaseStyle30.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.CellType = "Header"
+        GridBaseStyle30.StyleInfo.Font.Bold = True
+        GridBaseStyle30.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle30.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle31.Name = "Standard"
+        GridBaseStyle31.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle31.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle31.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle32.Name = "Row Header"
+        GridBaseStyle32.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle32.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle32.StyleInfo.Enabled = True
+        GridBaseStyle32.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid5.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle29, GridBaseStyle30, GridBaseStyle31, GridBaseStyle32})
         Me.GridDataBoundGrid5.DataMember = ""
         Me.GridDataBoundGrid5.DataSource = Me.AnsattBindingSource
         Me.GridDataBoundGrid5.DefaultRowHeight = 20
@@ -2967,31 +2919,31 @@ Partial Class frmAdminMetro
         '
         Me.GridDataBoundGrid6.AllowDragSelectedCols = True
         Me.GridDataBoundGrid6.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle37.Name = "Column Header"
-        GridBaseStyle37.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle37.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle37.StyleInfo.Enabled = False
-        GridBaseStyle37.StyleInfo.Font.Bold = True
-        GridBaseStyle37.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle38.Name = "Header"
-        GridBaseStyle38.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle38.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle38.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle38.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle38.StyleInfo.CellType = "Header"
-        GridBaseStyle38.StyleInfo.Font.Bold = True
-        GridBaseStyle38.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle38.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle39.Name = "Standard"
-        GridBaseStyle39.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle39.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle39.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle40.Name = "Row Header"
-        GridBaseStyle40.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle40.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle40.StyleInfo.Enabled = True
-        GridBaseStyle40.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid6.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle37, GridBaseStyle38, GridBaseStyle39, GridBaseStyle40})
+        GridBaseStyle33.Name = "Column Header"
+        GridBaseStyle33.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle33.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle33.StyleInfo.Enabled = False
+        GridBaseStyle33.StyleInfo.Font.Bold = True
+        GridBaseStyle33.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle34.Name = "Header"
+        GridBaseStyle34.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle34.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle34.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle34.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle34.StyleInfo.CellType = "Header"
+        GridBaseStyle34.StyleInfo.Font.Bold = True
+        GridBaseStyle34.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle34.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle35.Name = "Standard"
+        GridBaseStyle35.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle35.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle35.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle36.Name = "Row Header"
+        GridBaseStyle36.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle36.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle36.StyleInfo.Enabled = True
+        GridBaseStyle36.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid6.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle33, GridBaseStyle34, GridBaseStyle35, GridBaseStyle36})
         Me.GridDataBoundGrid6.DataSource = Me.KundeBindingSource
         Me.GridDataBoundGrid6.DefaultRowHeight = 20
         Me.GridDataBoundGrid6.Dock = System.Windows.Forms.DockStyle.Fill
@@ -3089,6 +3041,93 @@ Partial Class frmAdminMetro
         '
         Me.VisAnsattesSalgBindingSource.DataMember = "VisAnsattesSalg"
         '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton2.Image = Global.OOPSA.My.Resources.Resources.tbLogout
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton2.Text = "Logg ut"
+        '
+        'ToolStripButton3
+        '
+        Me.ToolStripButton3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton3.Image = Global.OOPSA.My.Resources.Resources.tbLogout
+        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton3.Name = "ToolStripButton3"
+        Me.ToolStripButton3.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton3.Text = "Logg ut"
+        '
+        'ToolStripButton5
+        '
+        Me.ToolStripButton5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton5.Image = Global.OOPSA.My.Resources.Resources.tbLogout
+        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton5.Name = "ToolStripButton5"
+        Me.ToolStripButton5.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton5.Text = "Logg ut"
+        '
+        'ToolStripButton6
+        '
+        Me.ToolStripButton6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton6.Image = Global.OOPSA.My.Resources.Resources.tbLogout
+        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton6.Name = "ToolStripButton6"
+        Me.ToolStripButton6.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton6.Text = "Logg ut"
+        '
+        'ToolStripButton7
+        '
+        Me.ToolStripButton7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton7.Image = Global.OOPSA.My.Resources.Resources.tbLogout
+        Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton7.Name = "ToolStripButton7"
+        Me.ToolStripButton7.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton7.Text = "Logg ut"
+        '
+        'ToolStripLabel3
+        '
+        Me.ToolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel3.Name = "ToolStripLabel3"
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(88, 24)
+        Me.ToolStripLabel3.Text = "ToolStripLabel3"
+        '
+        'rtbSQLQuery
+        '
+        Me.rtbSQLQuery.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtbSQLQuery.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rtbSQLQuery.Location = New System.Drawing.Point(0, 0)
+        Me.rtbSQLQuery.Name = "rtbSQLQuery"
+        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 134)
+        Me.rtbSQLQuery.TabIndex = 0
+        Me.rtbSQLQuery.Text = "SELECT {column_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "FROM {table_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE {condition}"
+        '
+        'dgvSQLQuery
+        '
+        Me.dgvSQLQuery.AllowDragSelectedCols = True
+        Me.dgvSQLQuery.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.dgvSQLQuery.DefaultColWidth = 100
+        Me.dgvSQLQuery.DefaultRowHeight = 25
+        Me.dgvSQLQuery.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvSQLQuery.EnableAddNew = False
+        Me.dgvSQLQuery.EnableEdit = False
+        Me.dgvSQLQuery.EnableRemove = False
+        Me.dgvSQLQuery.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+        Me.dgvSQLQuery.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
+        Me.dgvSQLQuery.Location = New System.Drawing.Point(0, 0)
+        Me.dgvSQLQuery.Name = "dgvSQLQuery"
+        Me.dgvSQLQuery.OptimizeInsertRemoveCells = True
+        Me.dgvSQLQuery.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
+        Me.dgvSQLQuery.Size = New System.Drawing.Size(573, 394)
+        Me.dgvSQLQuery.SmartSizeBox = False
+        Me.dgvSQLQuery.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
+        Me.dgvSQLQuery.TabIndex = 0
+        Me.dgvSQLQuery.Text = "GridDataBoundGrid7"
+        Me.dgvSQLQuery.ThemesEnabled = True
+        Me.dgvSQLQuery.UseListChangedEvent = True
+        Me.dgvSQLQuery.UseRightToLeftCompatibleTextBox = True
+        '
         'frmAdminMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -3170,13 +3209,14 @@ Partial Class frmAdminMetro
         CType(Me.dgvBedriftKunde, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TbOppdaterKunde.ResumeLayout(False)
         Me.TbOppdaterKunde.PerformLayout()
-        CType(Me.GridDataBoundGrid7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbKundeEpost.ResumeLayout(False)
         Me.tbKundeEpost.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.ToolStripEx11.ResumeLayout(False)
         Me.ToolStripEx11.PerformLayout()
+        Me.ToolStripEx2.ResumeLayout(False)
+        Me.ToolStripEx2.PerformLayout()
         Me.tbSalg.ResumeLayout(False)
         Me.tbSalg.PerformLayout()
         CType(Me.TabControlAdv2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3189,6 +3229,8 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.PerformLayout()
         Me.tbUtleieOversikt.ResumeLayout(False)
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStripEx3.ResumeLayout(False)
+        Me.ToolStripEx3.PerformLayout()
         Me.tbSettings.ResumeLayout(False)
         Me.tbSettings.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -3196,6 +3238,7 @@ Partial Class frmAdminMetro
         Me.tabSettings.ResumeLayout(False)
         Me.TabPageAdv1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.SplitContainer2.Panel1.ResumeLayout(False)
@@ -3211,8 +3254,11 @@ Partial Class frmAdminMetro
         CType(Me.txtServer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolstripDBInfo.ResumeLayout(False)
         Me.toolstripDBInfo.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
         Me.ToolStripEx10.ResumeLayout(False)
         Me.ToolStripEx10.PerformLayout()
+        Me.ToolStripEx5.ResumeLayout(False)
+        Me.ToolStripEx5.PerformLayout()
         Me.tbLager.ResumeLayout(False)
         Me.tbLager.PerformLayout()
         CType(Me.TabLager, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3229,6 +3275,8 @@ Partial Class frmAdminMetro
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LagerRapportStavangerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetLagerRapportStavnager, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStripEx4.ResumeLayout(False)
+        Me.ToolStripEx4.PerformLayout()
         CType(Me.Drift82016DataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KundeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift82016dsSalgsRapportViewBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3260,6 +3308,7 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7.ResumeLayout(False)
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvSQLQuery, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3271,7 +3320,6 @@ Partial Class frmAdminMetro
     Friend WithEvents tbSettings As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents tabSettings As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents TabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ToolStripEx1 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ToolStripEx2 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents TabControlAdv2 As Syncfusion.Windows.Forms.Tools.TabControlAdv
@@ -3407,9 +3455,7 @@ Partial Class frmAdminMetro
     Friend WithEvents TabLager As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabPageAdv5 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents A_LagerTableAdapter1 As drift8_2016DataSetTableAdapters.A_LagerTableAdapter
-    Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Private WithEvents SalgsRaportBindingSource As BindingSource
-    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents GridDataBoundGrid4 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents TabPageAdv6 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents GridDataBoundGrid3 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
@@ -3427,7 +3473,6 @@ Partial Class frmAdminMetro
     Friend WithEvents LagerRapportStavangerTableAdapter As drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter
     Friend WithEvents btnUpdKunde As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btnAddKunde As Syncfusion.Windows.Forms.ButtonAdv
-    Private WithEvents TabControlAdv3 As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabControlAdv6 As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabPageAdv4 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents TabPageAdv8 As Syncfusion.Windows.Forms.Tools.TabPageAdv
@@ -3460,7 +3505,6 @@ Partial Class frmAdminMetro
     Friend WithEvents TabPageAdv16 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents dgvBedriftKunde As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents TbOppdaterKunde As Syncfusion.Windows.Forms.Tools.TabPageAdv
-    Friend WithEvents GridDataBoundGrid7 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents btnOppdater As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents chkEpost As CheckBox
     Friend WithEvents chkEtternavn As CheckBox
@@ -3480,4 +3524,15 @@ Partial Class frmAdminMetro
     Friend WithEvents txtPostBed As TextBox
     Friend WithEvents txtPostPriv As TextBox
     Friend WithEvents chkPostNummer As CheckBox
+    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabControlAdv3 As Syncfusion.Windows.Forms.Tools.TabControlAdv
+    Friend WithEvents ToolStripButton2 As ToolStripButton
+    Friend WithEvents ToolStripButton3 As ToolStripButton
+    Friend WithEvents ToolStripButton5 As ToolStripButton
+    Friend WithEvents rtbSQLQuery As RichTextBox
+    Friend WithEvents ToolStripLabel3 As ToolStripLabel
+    Friend WithEvents dgvSQLQuery As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
+    Friend WithEvents ToolStripButton6 As ToolStripButton
+    Friend WithEvents ToolStripButton7 As ToolStripButton
 End Class

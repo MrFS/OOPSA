@@ -23,6 +23,10 @@ Public Class frmAdminMetro
     'usikker på om jeg kan dette, men holder på å klikke av å ikke kunne bruke de i prosedyren jeg vill lenger nede! 
     Dim OppdaterBed, OppdaterPriv As Boolean
 
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
     ''' <summary>
     ''' Viser frmAddUsr
     ''' Gir daglig leder mulighet til å legge til flere ansatte
@@ -42,7 +46,7 @@ Public Class frmAdminMetro
         'Åpne db for update kundeinfo
         Initialize()
 
-        OppdaterBed = False
+        'OppdaterBed = False
         OppdaterPriv = False
 
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
@@ -52,8 +56,8 @@ Public Class frmAdminMetro
         Catch ex As Exception
         End Try
 
-        dgvBedriftKunde.DataSource = SQL.dataset("SELECT * FROM `BedriftKunde`")
-        dgvPrivatKunde.DataSource = SQL.dataset("SELECT * FROM `PrivatKunde`")
+        dgvBedriftKunde.DataSource = SQL.bindingsource("SELECT * FROM `BedriftKunde`")
+        dgvPrivatKunde.DataSource = SQL.bindingsource("SELECT * FROM `PrivatKunde`")
 
         'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
@@ -426,22 +430,15 @@ Public Class frmAdminMetro
 
     End Sub
 
-    Private Function bed() As Boolean
-        Throw New NotImplementedException()
-    End Function
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        dgvSQLQuery.DataSource = SQL.bindingsource(rtbSQLQuery.Text)
+        dgvSQLQuery.Refresh()
+    End Sub
 
+    Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click
+        tbKundeOversikt.SelectedTab = TbOppdaterKunde
+        TbOppdaterKunde.Show()
+    End Sub
 
-
-    '<STAThread>
-    'Public Sub MySub()
-
-    '    Dim Send As New email
-
-    '    Dim converted As String
-
-    '    converted = Send.HTMLConvert(rtbKundeEpost.Text)
-
-    '    Send.massEmail(converted)
-    'End Sub
 
 End Class
