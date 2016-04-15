@@ -36,28 +36,27 @@ Partial Class frmLager
         Me.AntLeggTil = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.vareSlett = New System.Windows.Forms.ComboBox()
+        Me.btnSlett = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lagerEndre = New System.Windows.Forms.ComboBox()
         Me.VareEndre = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.BtnPrisEndre = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.prisEndreText = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.BtnNavnEndre = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.navnEndreText = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.EndreKnapp = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.btnAntEndre = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.antEndreText = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv4 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.ProduktBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSet = New OOPSA.drift8_2016DataSet()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ProduktTableAdapter = New OOPSA.drift8_2016DataSetTableAdapters.ProduktTableAdapter()
-        Me.lagerEndre = New System.Windows.Forms.ComboBox()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlAdv1.SuspendLayout()
         Me.TabPageAdv1.SuspendLayout()
@@ -65,10 +64,9 @@ Partial Class frmLager
         CType(Me.NavnLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AntLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv2.SuspendLayout()
-        CType(Me.BtnPrisEndre, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BtnNavnEndre, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAntEndre, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageAdv3.SuspendLayout()
+        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv4.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,7 +154,6 @@ Partial Class frmLager
         Me.PrisLeggTil.Size = New System.Drawing.Size(100, 23)
         Me.PrisLeggTil.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.PrisLeggTil.TabIndex = 22
-        Me.PrisLeggTil.Text = "TextBoxExt6"
         '
         'Label11
         '
@@ -209,15 +206,18 @@ Partial Class frmLager
         '
         'TabPageAdv2
         '
+        Me.TabPageAdv2.Controls.Add(Me.vareSlett)
+        Me.TabPageAdv2.Controls.Add(Me.btnSlett)
+        Me.TabPageAdv2.Controls.Add(Me.Label1)
         Me.TabPageAdv2.Controls.Add(Me.lagerEndre)
         Me.TabPageAdv2.Controls.Add(Me.VareEndre)
         Me.TabPageAdv2.Controls.Add(Me.Label9)
-        Me.TabPageAdv2.Controls.Add(Me.BtnPrisEndre)
+        Me.TabPageAdv2.Controls.Add(Me.prisEndreText)
         Me.TabPageAdv2.Controls.Add(Me.Label8)
-        Me.TabPageAdv2.Controls.Add(Me.BtnNavnEndre)
+        Me.TabPageAdv2.Controls.Add(Me.navnEndreText)
         Me.TabPageAdv2.Controls.Add(Me.Label7)
         Me.TabPageAdv2.Controls.Add(Me.EndreKnapp)
-        Me.TabPageAdv2.Controls.Add(Me.btnAntEndre)
+        Me.TabPageAdv2.Controls.Add(Me.antEndreText)
         Me.TabPageAdv2.Controls.Add(Me.Label4)
         Me.TabPageAdv2.Controls.Add(Me.Label3)
         Me.TabPageAdv2.Image = Nothing
@@ -229,6 +229,42 @@ Partial Class frmLager
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "Endre vare beholdning"
         Me.TabPageAdv2.ThemesEnabled = False
+        '
+        'vareSlett
+        '
+        Me.vareSlett.FormattingEnabled = True
+        Me.vareSlett.Location = New System.Drawing.Point(475, 20)
+        Me.vareSlett.Margin = New System.Windows.Forms.Padding(2)
+        Me.vareSlett.Name = "vareSlett"
+        Me.vareSlett.Size = New System.Drawing.Size(92, 21)
+        Me.vareSlett.TabIndex = 17
+        '
+        'btnSlett
+        '
+        Me.btnSlett.BeforeTouchSize = New System.Drawing.Size(75, 23)
+        Me.btnSlett.IsBackStageButton = False
+        Me.btnSlett.Location = New System.Drawing.Point(475, 66)
+        Me.btnSlett.Name = "btnSlett"
+        Me.btnSlett.Size = New System.Drawing.Size(75, 23)
+        Me.btnSlett.TabIndex = 16
+        Me.btnSlett.Text = "Slett"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(397, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Velg vare :"
+        '
+        'lagerEndre
+        '
+        Me.lagerEndre.FormattingEnabled = True
+        Me.lagerEndre.Location = New System.Drawing.Point(188, 136)
+        Me.lagerEndre.Name = "lagerEndre"
+        Me.lagerEndre.Size = New System.Drawing.Size(121, 21)
+        Me.lagerEndre.TabIndex = 14
         '
         'VareEndre
         '
@@ -248,16 +284,16 @@ Partial Class frmLager
         Me.Label9.TabIndex = 11
         Me.Label9.Text = "Endre lager :"
         '
-        'BtnPrisEndre
+        'prisEndreText
         '
-        Me.BtnPrisEndre.BeforeTouchSize = New System.Drawing.Size(116, 23)
-        Me.BtnPrisEndre.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BtnPrisEndre.Location = New System.Drawing.Point(188, 100)
-        Me.BtnPrisEndre.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BtnPrisEndre.Name = "BtnPrisEndre"
-        Me.BtnPrisEndre.Size = New System.Drawing.Size(100, 20)
-        Me.BtnPrisEndre.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.BtnPrisEndre.TabIndex = 10
+        Me.prisEndreText.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.prisEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.prisEndreText.Location = New System.Drawing.Point(188, 100)
+        Me.prisEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.prisEndreText.Name = "prisEndreText"
+        Me.prisEndreText.Size = New System.Drawing.Size(100, 20)
+        Me.prisEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.prisEndreText.TabIndex = 10
         '
         'Label8
         '
@@ -268,16 +304,16 @@ Partial Class frmLager
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Ny  pris :"
         '
-        'BtnNavnEndre
+        'navnEndreText
         '
-        Me.BtnNavnEndre.BeforeTouchSize = New System.Drawing.Size(116, 23)
-        Me.BtnNavnEndre.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BtnNavnEndre.Location = New System.Drawing.Point(188, 76)
-        Me.BtnNavnEndre.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.BtnNavnEndre.Name = "BtnNavnEndre"
-        Me.BtnNavnEndre.Size = New System.Drawing.Size(100, 20)
-        Me.BtnNavnEndre.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.BtnNavnEndre.TabIndex = 8
+        Me.navnEndreText.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.navnEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.navnEndreText.Location = New System.Drawing.Point(188, 76)
+        Me.navnEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.navnEndreText.Name = "navnEndreText"
+        Me.navnEndreText.Size = New System.Drawing.Size(100, 20)
+        Me.navnEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.navnEndreText.TabIndex = 8
         '
         'Label7
         '
@@ -298,16 +334,16 @@ Partial Class frmLager
         Me.EndreKnapp.TabIndex = 4
         Me.EndreKnapp.Text = "Endre vare"
         '
-        'btnAntEndre
+        'antEndreText
         '
-        Me.btnAntEndre.BeforeTouchSize = New System.Drawing.Size(116, 23)
-        Me.btnAntEndre.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.btnAntEndre.Location = New System.Drawing.Point(188, 50)
-        Me.btnAntEndre.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.btnAntEndre.Name = "btnAntEndre"
-        Me.btnAntEndre.Size = New System.Drawing.Size(100, 20)
-        Me.btnAntEndre.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.btnAntEndre.TabIndex = 3
+        Me.antEndreText.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.antEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.antEndreText.Location = New System.Drawing.Point(188, 50)
+        Me.antEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.antEndreText.Name = "antEndreText"
+        Me.antEndreText.Size = New System.Drawing.Size(100, 20)
+        Me.antEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.antEndreText.TabIndex = 3
         '
         'Label4
         '
@@ -329,9 +365,6 @@ Partial Class frmLager
         '
         'TabPageAdv3
         '
-        Me.TabPageAdv3.Controls.Add(Me.ComboBox2)
-        Me.TabPageAdv3.Controls.Add(Me.ButtonAdv2)
-        Me.TabPageAdv3.Controls.Add(Me.Label2)
         Me.TabPageAdv3.Image = Nothing
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
@@ -342,38 +375,9 @@ Partial Class frmLager
         Me.TabPageAdv3.Text = "Fjerne varer"
         Me.TabPageAdv3.ThemesEnabled = False
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(427, 93)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(92, 21)
-        Me.ComboBox2.TabIndex = 3
-        '
-        'ButtonAdv2
-        '
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(75, 23)
-        Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(427, 139)
-        Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonAdv2.TabIndex = 2
-        Me.ButtonAdv2.Text = "Slett"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(349, 98)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Velg vare :"
-        '
         'TabPageAdv4
         '
         Me.TabPageAdv4.Controls.Add(Me.GridDataBoundGrid1)
-        Me.TabPageAdv4.Controls.Add(Me.Label5)
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv4.Location = New System.Drawing.Point(3, 53)
@@ -389,11 +393,11 @@ Partial Class frmLager
         Me.GridDataBoundGrid1.AllowDragSelectedCols = True
         Me.GridDataBoundGrid1.DataMember = ""
         Me.GridDataBoundGrid1.DataSource = Me.ProduktBindingSource
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(324, 3)
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(9, 3)
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(855, 500)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(1170, 500)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 3
@@ -411,15 +415,6 @@ Partial Class frmLager
         Me.Drift8_2016DataSet.DataSetName = "drift8_2016DataSet"
         Me.Drift8_2016DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(106, 194)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(96, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Legge til stats her?"
-        '
         'ToolStripEx1
         '
         Me.ToolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue
@@ -436,14 +431,6 @@ Partial Class frmLager
         'ProduktTableAdapter
         '
         Me.ProduktTableAdapter.ClearBeforeFill = True
-        '
-        'lagerEndre
-        '
-        Me.lagerEndre.FormattingEnabled = True
-        Me.lagerEndre.Location = New System.Drawing.Point(188, 136)
-        Me.lagerEndre.Name = "lagerEndre"
-        Me.lagerEndre.Size = New System.Drawing.Size(121, 21)
-        Me.lagerEndre.TabIndex = 14
         '
         'frmLager
         '
@@ -465,13 +452,10 @@ Partial Class frmLager
         CType(Me.AntLeggTil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv2.ResumeLayout(False)
         Me.TabPageAdv2.PerformLayout()
-        CType(Me.BtnPrisEndre, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BtnNavnEndre, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAntEndre, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageAdv3.ResumeLayout(False)
-        Me.TabPageAdv3.PerformLayout()
+        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv4.ResumeLayout(False)
-        Me.TabPageAdv4.PerformLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProduktBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -487,12 +471,9 @@ Partial Class frmLager
     Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents TabPageAdv4 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents EndreKnapp As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents btnAntEndre As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents antEndreText As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents Label5 As Label
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents Label10 As Label
     Friend WithEvents PrisLeggTil As Syncfusion.Windows.Forms.Tools.TextBoxExt
@@ -502,16 +483,18 @@ Partial Class frmLager
     Friend WithEvents AntLeggTil As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label14 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents BtnPrisEndre As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents prisEndreText As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label8 As Label
-    Friend WithEvents BtnNavnEndre As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents navnEndreText As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label7 As Label
     Friend WithEvents btnLeggTil As Button
     Friend WithEvents LagerLeggTil As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents VareEndre As ComboBox
     Friend WithEvents Drift8_2016DataSet As drift8_2016DataSet
     Friend WithEvents ProduktBindingSource As BindingSource
     Friend WithEvents ProduktTableAdapter As drift8_2016DataSetTableAdapters.ProduktTableAdapter
     Friend WithEvents lagerEndre As ComboBox
+    Friend WithEvents vareSlett As ComboBox
+    Friend WithEvents btnSlett As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents Label1 As Label
 End Class
