@@ -69,4 +69,24 @@ Public Class SQL
 
         Return bsource
     End Function
+
+
+
+    Public Function Return1Row(SQLstring As String, NavnPåKollone As String)
+
+        Dim dt As DataTable
+        Dim dr As DataRow
+        Dim sql As New SQL
+
+        dt = sql.sporring(SQLstring)
+        Dim variabel As String
+        dr = dt.Rows(0)
+        variabel = dr(NavnPåKollone)
+
+        Return variabel
+    End Function
+
+
+
+
 End Class

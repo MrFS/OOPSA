@@ -573,6 +573,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OOPSA.ico" />
+    <None Include="Resources\tbKundePrivat.png" />
+    <None Include="Resources\tbKundeBedrift.png" />
     <None Include="Resources\logoTurCareAS.png" />
   </ItemGroup>
   <ItemGroup>

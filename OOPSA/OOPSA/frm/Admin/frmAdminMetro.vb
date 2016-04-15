@@ -10,6 +10,7 @@ Imports Syncfusion.PivotAnalysis.Base
 
 Imports Syncfusion.DocIO
 Imports Syncfusion.DocIO.DLS
+Imports MySql.Data.MySqlClient
 
 ''' <summary>
 ''' Dim variabel Core as New frmAdminCore (Classes/Functions/frmAdmin)
@@ -18,6 +19,9 @@ Imports Syncfusion.DocIO.DLS
 Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
+    Dim SQL As New SQL
+    'usikker på om jeg kan dette, men holder på å klikke av å ikke kunne bruke de i prosedyren jeg vill lenger nede! 
+    Dim OppdaterBed, OppdaterPriv As Boolean
 
     ''' <summary>
     ''' Viser frmAddUsr
@@ -35,12 +39,21 @@ Public Class frmAdminMetro
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub frmAdminMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Åpne db for update kundeinfo
+        Initialize()
+
+        OppdaterBed = False
+        OppdaterPriv = False
+
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
         Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
         Try
             Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
         Catch ex As Exception
         End Try
+
+        dgvBedriftKunde.DataSource = SQL.dataset("SELECT * FROM `BedriftKunde`")
+        dgvPrivatKunde.DataSource = SQL.dataset("SELECT * FROM `PrivatKunde`")
 
         'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
@@ -288,13 +301,136 @@ Public Class frmAdminMetro
         End If
     End Sub
 
-    Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click
+    Private Sub btnAnsattUpdate_Click(sender As Object, e As EventArgs) Handles btnAnsattUpdate.Click, ButtonAdv1.Click
         Me.AnsattTableAdapter.Update(drift8_2016DataSet.Ansatt)
     End Sub
 
-    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click
+    Private Sub btnAddKunde_Click(sender As Object, e As EventArgs) Handles btnAddKunde.Click, ButtonAdv5.Click
         frmAddKunde.Show()
     End Sub
+
+    'Gjort om til prosedyre
+    'Dim etternavn As String = txtEtternavn.Text
+    'Dim dt As New MySqlDataAdapter
+
+    'Dim cmd As New MySqlCommand("UPDATE Kunde SET E_navn=@E_navn WHERE Kid=@KID", con)
+    'cmd.Parameters.AddWithValue("@E_navn", txtEtternavn.Text)
+    'cmd.Parameters.AddWithValue("@KID", CInt(txtKID.Text))
+
+    'cmd.ExecuteNonQuery()
+
+    Private Sub OppdaterKunde(DbKid As String, KID As String, TabellNavn As String, TuppelNavn As String, tuppelNyverdi As String)
+
+        Dim cmd As New MySqlCommand("UPDATE " & TabellNavn & " SET " & TuppelNavn & "=@" & tuppelNyverdi & " WHERE " & DbKid & "=@" & KID, con)
+        cmd.Parameters.AddWithValue("@" & tuppelNyverdi, tuppelNyverdi)
+        cmd.Parameters.AddWithValue("@" & KID, CInt(KID))
+
+        cmd.ExecuteNonQuery()
+    End Sub
+
+
+    Private Sub btnOppdater_Click(sender As Object, e As EventArgs) Handles btnOppdater.Click
+
+        Dim onsketKid As String = txtKID.Text
+        'Kun kunde tabellen
+        If chkFornavn.Checked = True Then
+            OppdaterKunde("Kid", onsketKid, "Kunde", "F_navn", txtFornavn.Text)
+        End If
+
+        If chkEpost.Checked = True Then
+            OppdaterKunde("Kid", onsketKid, "Kunde", "e_postt", txtEpost.Text)
+        End If
+
+        If chkEtternavn.Checked = True Then
+            OppdaterKunde("Kid", onsketKid, "Kunde", "E_navn", txtEtternavn.Text)
+        End If
+
+        'Mot privat eller Bedrifttabell
+        If chkPostNummer.Checked = True Then
+            If OppdaterPriv = True Then
+                OppdaterKunde("Kunde_Kid", onsketKid, "K_privat", "Post", txtPostPriv.Text)
+            ElseIf OppdaterBed = True Then
+                OppdaterKunde("Kunde_Kid", onsketKid, "K_bedriftt", "Post", txtPostBed.Text)
+            End If
+        End If
+
+        If chkAdresse.Checked = True Then
+            If OppdaterPriv = True Then
+                OppdaterKunde("Kunde_Kid", onsketKid, "K_privat", "P_addresse", txtPrivAdresse.Text)
+            ElseIf OppdaterBed = True Then
+                OppdaterKunde("Kunde_Kid", onsketKid, "K_bedriftt", "B_addresse", txtBedAdresse.Text)
+            End If
+
+        End If
+
+        If chkBedNavn.Checked = True Then
+            OppdaterKunde("Kunde_Kid", onsketKid, "K_bedriftt", "Bedrift", txtBedNavn.Text)
+        End If
+
+    End Sub
+
+    Private Sub btnOppdaterPrivKunde_Click(sender As Object, e As EventArgs) Handles btnOppdaterPrivKunde.Click
+        OppdaterPriv = True
+        OppdaterBed = False
+        lblKID.Visible = True
+        txtKID.Visible = True
+
+
+        txtPrivAdresse.Visible = True
+        txtPostPriv.Visible = True
+
+        chkAdresse.Visible = True
+        chkEpost.Visible = True
+        chkEtternavn.Visible = True
+        chkFornavn.Visible = True
+        chkPostNummer.Visible = True
+
+        txtPostPriv.Visible = True
+        txtPrivAdresse.Visible = True
+        txtFornavn.Visible = True
+        txtEpost.Visible = True
+        txtEtternavn.Visible = True
+
+
+        txtBedAdresse.Visible = False
+        txtBedNavn.Visible = False
+        txtPostBed.Visible = False
+
+        chkBedNavn.Visible = False
+    End Sub
+
+    Private Sub btnOppdaterBedKunde_Click(sender As Object, e As EventArgs) Handles btnOppdaterBedKunde.Click
+        OppdaterBed = True
+        OppdaterPriv = False
+        lblKID.Visible = True
+        txtKID.Visible = True
+
+        txtBedAdresse.Visible = True
+        txtBedAdresse.Visible = True
+        txtPostBed.Visible = True
+        txtBedNavn.Visible = True
+        txtEpost.Visible = True
+        txtEtternavn.Visible = True
+        txtFornavn.Visible = True
+
+
+        chkBedNavn.Visible = True
+        chkAdresse.Visible = True
+        chkEpost.Visible = True
+        chkEtternavn.Visible = True
+        chkFornavn.Visible = True
+        chkPostNummer.Visible = True
+
+        txtPostPriv.Visible = False
+        txtPrivAdresse.Visible = False
+
+    End Sub
+
+    Private Function bed() As Boolean
+        Throw New NotImplementedException()
+    End Function
+
+
 
     '<STAThread>
     'Public Sub MySub()

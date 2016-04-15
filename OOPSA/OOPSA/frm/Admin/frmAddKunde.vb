@@ -9,6 +9,7 @@ Public Class frmAddKunde
 
     Private Sub btnnyKunde_Click(sender As Object, e As EventArgs) Handles btnNyKunde.Click
         Try
+            'Legger inn info i Kundetabellen
             Dim kundeId As String
             Dim KID As String
             Dim dt As MySqlDataReader
@@ -32,28 +33,6 @@ Public Class frmAddKunde
 
             dt.Close()
 
-            'KID = dt.Item(0).ToString
-
-            'Dim dr As MySqlDataReader = cmdKID.ExecuteReader()
-
-
-
-
-            'dt.Load(dr)
-
-            'Dim cmd3 As String = ("Select Kid from Kunde WHERE e_postt = " & txtKundeEpost.Text & "")
-
-            'dt = sql.sporring(cmd3)
-
-
-            'cmd3.Parameters.AddWithValue("@epostt", txtKundeEpost.Text)
-
-            'dt = cmd3
-            'kundeId = dt.Rows(0).Table("Kid").ToString
-
-            'MsgBox(KID)
-
-
             If kundetype = True Then
                 'legger inn i PersonKunde tabellen
                 Dim cmd1 As New MySqlCommand("INSERT INTO K_privat (Kunde_Kid, P_addresse, Post) VALUES (@Kunde_Kid, @P_addresse, @Post)", con)
@@ -65,17 +44,16 @@ Public Class frmAddKunde
                 cmd1.ExecuteNonQuery()
             Else
                 'legger inn i bedriftskunde tabellen
-                Dim cmd2 As New MySqlCommand("INSERT INTO K_bedriftt (B_addresse, Post, Bedrift) VALUES (@B_addresse, @Post, @Bedrift)", con)
+                Dim cmd2 As New MySqlCommand("INSERT INTO K_bedriftt (Kunde_Kid, B_addresse, Post, Bedrift) VALUES (@Kunde_Kid, @B_addresse, @Post, @Bedrift)", con)
 
                 cmd2.Parameters.AddWithValue("@B_addresse", txtBedAdresse.Text)
                 cmd2.Parameters.AddWithValue("@Post", CInt(txtBedPnr.Text))
                 cmd2.Parameters.AddWithValue("@Bedrift", txtBedriftNavn.Text)
+                cmd2.Parameters.AddWithValue("@Kunde_Kid", CInt(KID))
 
                 cmd2.ExecuteNonQuery()
 
             End If
-
-            'legger info inn i Kunde tabellen
 
 
         Catch ex As Exception
