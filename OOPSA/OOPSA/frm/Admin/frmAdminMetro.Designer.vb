@@ -123,6 +123,14 @@ Partial Class frmAdminMetro
         Me.TabPageAdv16 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.dgvBedriftKunde = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.TbOppdaterKunde = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.txtBedNavn = New System.Windows.Forms.TextBox()
+        Me.txtBedAdresse = New System.Windows.Forms.TextBox()
+        Me.chkBedNavn = New System.Windows.Forms.CheckBox()
+        Me.chkAdresse = New System.Windows.Forms.CheckBox()
+        Me.txtPrivAdresse = New System.Windows.Forms.TextBox()
+        Me.txtPostBed = New System.Windows.Forms.TextBox()
+        Me.txtPostPriv = New System.Windows.Forms.TextBox()
+        Me.chkPostNummer = New System.Windows.Forms.CheckBox()
         Me.btnOppdater = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.chkEpost = New System.Windows.Forms.CheckBox()
         Me.chkEtternavn = New System.Windows.Forms.CheckBox()
@@ -275,14 +283,6 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dtSalgReportingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.chkPostNummer = New System.Windows.Forms.CheckBox()
-        Me.txtPostPriv = New System.Windows.Forms.TextBox()
-        Me.txtPostBed = New System.Windows.Forms.TextBox()
-        Me.txtPrivAdresse = New System.Windows.Forms.TextBox()
-        Me.chkAdresse = New System.Windows.Forms.CheckBox()
-        Me.chkBedNavn = New System.Windows.Forms.CheckBox()
-        Me.txtBedAdresse = New System.Windows.Forms.TextBox()
-        Me.txtBedNavn = New System.Windows.Forms.TextBox()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1210,6 +1210,79 @@ Partial Class frmAdminMetro
         Me.TbOppdaterKunde.TabIndex = 3
         Me.TbOppdaterKunde.ThemesEnabled = True
         '
+        'txtBedNavn
+        '
+        Me.txtBedNavn.Location = New System.Drawing.Point(421, 185)
+        Me.txtBedNavn.Name = "txtBedNavn"
+        Me.txtBedNavn.Size = New System.Drawing.Size(100, 29)
+        Me.txtBedNavn.TabIndex = 23
+        Me.txtBedNavn.Visible = False
+        '
+        'txtBedAdresse
+        '
+        Me.txtBedAdresse.Location = New System.Drawing.Point(421, 137)
+        Me.txtBedAdresse.Name = "txtBedAdresse"
+        Me.txtBedAdresse.Size = New System.Drawing.Size(100, 29)
+        Me.txtBedAdresse.TabIndex = 22
+        Me.txtBedAdresse.Visible = False
+        '
+        'chkBedNavn
+        '
+        Me.chkBedNavn.AutoSize = True
+        Me.chkBedNavn.Location = New System.Drawing.Point(280, 189)
+        Me.chkBedNavn.Name = "chkBedNavn"
+        Me.chkBedNavn.Size = New System.Drawing.Size(116, 25)
+        Me.chkBedNavn.TabIndex = 21
+        Me.chkBedNavn.Text = "Bedriftsnavn"
+        Me.chkBedNavn.UseVisualStyleBackColor = True
+        Me.chkBedNavn.Visible = False
+        '
+        'chkAdresse
+        '
+        Me.chkAdresse.AutoSize = True
+        Me.chkAdresse.Location = New System.Drawing.Point(280, 139)
+        Me.chkAdresse.Name = "chkAdresse"
+        Me.chkAdresse.Size = New System.Drawing.Size(84, 25)
+        Me.chkAdresse.TabIndex = 19
+        Me.chkAdresse.Text = "Adresse"
+        Me.chkAdresse.UseVisualStyleBackColor = True
+        Me.chkAdresse.Visible = False
+        '
+        'txtPrivAdresse
+        '
+        Me.txtPrivAdresse.Location = New System.Drawing.Point(421, 137)
+        Me.txtPrivAdresse.Name = "txtPrivAdresse"
+        Me.txtPrivAdresse.Size = New System.Drawing.Size(100, 29)
+        Me.txtPrivAdresse.TabIndex = 18
+        Me.txtPrivAdresse.Visible = False
+        '
+        'txtPostBed
+        '
+        Me.txtPostBed.Location = New System.Drawing.Point(144, 283)
+        Me.txtPostBed.Name = "txtPostBed"
+        Me.txtPostBed.Size = New System.Drawing.Size(116, 29)
+        Me.txtPostBed.TabIndex = 17
+        Me.txtPostBed.Visible = False
+        '
+        'txtPostPriv
+        '
+        Me.txtPostPriv.Location = New System.Drawing.Point(144, 283)
+        Me.txtPostPriv.Name = "txtPostPriv"
+        Me.txtPostPriv.Size = New System.Drawing.Size(116, 29)
+        Me.txtPostPriv.TabIndex = 16
+        Me.txtPostPriv.Visible = False
+        '
+        'chkPostNummer
+        '
+        Me.chkPostNummer.AutoSize = True
+        Me.chkPostNummer.Location = New System.Drawing.Point(16, 285)
+        Me.chkPostNummer.Name = "chkPostNummer"
+        Me.chkPostNummer.Size = New System.Drawing.Size(122, 25)
+        Me.chkPostNummer.TabIndex = 15
+        Me.chkPostNummer.Text = "Post nummer"
+        Me.chkPostNummer.UseVisualStyleBackColor = True
+        Me.chkPostNummer.Visible = False
+        '
         'btnOppdater
         '
         Me.btnOppdater.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
@@ -1233,6 +1306,7 @@ Partial Class frmAdminMetro
         Me.chkEpost.TabIndex = 13
         Me.chkEpost.Text = "Epost"
         Me.chkEpost.UseVisualStyleBackColor = True
+        Me.chkEpost.Visible = False
         '
         'chkEtternavn
         '
@@ -1243,6 +1317,7 @@ Partial Class frmAdminMetro
         Me.chkEtternavn.TabIndex = 12
         Me.chkEtternavn.Text = "Etternavn"
         Me.chkEtternavn.UseVisualStyleBackColor = True
+        Me.chkEtternavn.Visible = False
         '
         'chkFornavn
         '
@@ -1253,6 +1328,7 @@ Partial Class frmAdminMetro
         Me.chkFornavn.TabIndex = 11
         Me.chkFornavn.Text = "Fornavn"
         Me.chkFornavn.UseVisualStyleBackColor = True
+        Me.chkFornavn.Visible = False
         '
         'txtEpost
         '
@@ -1260,6 +1336,7 @@ Partial Class frmAdminMetro
         Me.txtEpost.Name = "txtEpost"
         Me.txtEpost.Size = New System.Drawing.Size(116, 29)
         Me.txtEpost.TabIndex = 10
+        Me.txtEpost.Visible = False
         '
         'txtEtternavn
         '
@@ -1267,6 +1344,7 @@ Partial Class frmAdminMetro
         Me.txtEtternavn.Name = "txtEtternavn"
         Me.txtEtternavn.Size = New System.Drawing.Size(116, 29)
         Me.txtEtternavn.TabIndex = 9
+        Me.txtEtternavn.Visible = False
         '
         'txtFornavn
         '
@@ -1274,6 +1352,7 @@ Partial Class frmAdminMetro
         Me.txtFornavn.Name = "txtFornavn"
         Me.txtFornavn.Size = New System.Drawing.Size(116, 29)
         Me.txtFornavn.TabIndex = 8
+        Me.txtFornavn.Visible = False
         '
         'txtKID
         '
@@ -1281,6 +1360,7 @@ Partial Class frmAdminMetro
         Me.txtKID.Name = "txtKID"
         Me.txtKID.Size = New System.Drawing.Size(116, 29)
         Me.txtKID.TabIndex = 7
+        Me.txtKID.Visible = False
         '
         'lblKID
         '
@@ -1290,6 +1370,7 @@ Partial Class frmAdminMetro
         Me.lblKID.Size = New System.Drawing.Size(217, 21)
         Me.lblKID.TabIndex = 6
         Me.lblKID.Text = "Skriv inn KID på aktuell kunde"
+        Me.lblKID.Visible = False
         '
         'btnOppdaterBedKunde
         '
@@ -2097,7 +2178,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2109,7 +2190,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2121,7 +2202,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2133,7 +2214,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2145,7 +2226,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(254, 23)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -3007,77 +3088,6 @@ Partial Class frmAdminMetro
         'VisAnsattesSalgBindingSource
         '
         Me.VisAnsattesSalgBindingSource.DataMember = "VisAnsattesSalg"
-        '
-        'chkPostNummer
-        '
-        Me.chkPostNummer.AutoSize = True
-        Me.chkPostNummer.Location = New System.Drawing.Point(16, 285)
-        Me.chkPostNummer.Name = "chkPostNummer"
-        Me.chkPostNummer.Size = New System.Drawing.Size(122, 25)
-        Me.chkPostNummer.TabIndex = 15
-        Me.chkPostNummer.Text = "Post nummer"
-        Me.chkPostNummer.UseVisualStyleBackColor = True
-        '
-        'txtPostPriv
-        '
-        Me.txtPostPriv.Location = New System.Drawing.Point(144, 283)
-        Me.txtPostPriv.Name = "txtPostPriv"
-        Me.txtPostPriv.Size = New System.Drawing.Size(116, 29)
-        Me.txtPostPriv.TabIndex = 16
-        Me.txtPostPriv.Visible = False
-        '
-        'txtPostBed
-        '
-        Me.txtPostBed.Location = New System.Drawing.Point(144, 283)
-        Me.txtPostBed.Name = "txtPostBed"
-        Me.txtPostBed.Size = New System.Drawing.Size(116, 29)
-        Me.txtPostBed.TabIndex = 17
-        Me.txtPostBed.Visible = False
-        '
-        'txtPrivAdresse
-        '
-        Me.txtPrivAdresse.Location = New System.Drawing.Point(421, 137)
-        Me.txtPrivAdresse.Name = "txtPrivAdresse"
-        Me.txtPrivAdresse.Size = New System.Drawing.Size(100, 29)
-        Me.txtPrivAdresse.TabIndex = 18
-        Me.txtPrivAdresse.Visible = False
-        '
-        'chkAdresse
-        '
-        Me.chkAdresse.AutoSize = True
-        Me.chkAdresse.Location = New System.Drawing.Point(280, 139)
-        Me.chkAdresse.Name = "chkAdresse"
-        Me.chkAdresse.Size = New System.Drawing.Size(84, 25)
-        Me.chkAdresse.TabIndex = 19
-        Me.chkAdresse.Text = "Adresse"
-        Me.chkAdresse.UseVisualStyleBackColor = True
-        '
-        'chkBedNavn
-        '
-        Me.chkBedNavn.AutoSize = True
-        Me.chkBedNavn.Location = New System.Drawing.Point(280, 189)
-        Me.chkBedNavn.Name = "chkBedNavn"
-        Me.chkBedNavn.Size = New System.Drawing.Size(116, 25)
-        Me.chkBedNavn.TabIndex = 21
-        Me.chkBedNavn.Text = "Bedriftsnavn"
-        Me.chkBedNavn.UseVisualStyleBackColor = True
-        Me.chkBedNavn.Visible = False
-        '
-        'txtBedAdresse
-        '
-        Me.txtBedAdresse.Location = New System.Drawing.Point(421, 137)
-        Me.txtBedAdresse.Name = "txtBedAdresse"
-        Me.txtBedAdresse.Size = New System.Drawing.Size(100, 29)
-        Me.txtBedAdresse.TabIndex = 22
-        Me.txtBedAdresse.Visible = False
-        '
-        'txtBedNavn
-        '
-        Me.txtBedNavn.Location = New System.Drawing.Point(421, 185)
-        Me.txtBedNavn.Name = "txtBedNavn"
-        Me.txtBedNavn.Size = New System.Drawing.Size(100, 29)
-        Me.txtBedNavn.TabIndex = 23
-        Me.txtBedNavn.Visible = False
         '
         'frmAdminMetro
         '

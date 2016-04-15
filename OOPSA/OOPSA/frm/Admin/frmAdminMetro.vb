@@ -372,24 +372,54 @@ Public Class frmAdminMetro
     Private Sub btnOppdaterPrivKunde_Click(sender As Object, e As EventArgs) Handles btnOppdaterPrivKunde.Click
         OppdaterPriv = True
         OppdaterBed = False
+        lblKID.Visible = True
+        txtKID.Visible = True
+
 
         txtPrivAdresse.Visible = True
         txtPostPriv.Visible = True
 
+        chkAdresse.Visible = True
+        chkEpost.Visible = True
+        chkEtternavn.Visible = True
+        chkFornavn.Visible = True
+        chkPostNummer.Visible = True
+
+        txtPostPriv.Visible = True
+        txtPrivAdresse.Visible = True
+        txtFornavn.Visible = True
+        txtEpost.Visible = True
+        txtEtternavn.Visible = True
+
+
         txtBedAdresse.Visible = False
         txtBedNavn.Visible = False
         txtPostBed.Visible = False
+
         chkBedNavn.Visible = False
     End Sub
 
     Private Sub btnOppdaterBedKunde_Click(sender As Object, e As EventArgs) Handles btnOppdaterBedKunde.Click
         OppdaterBed = True
         OppdaterPriv = False
+        lblKID.Visible = True
+        txtKID.Visible = True
 
+        txtBedAdresse.Visible = True
         txtBedAdresse.Visible = True
         txtPostBed.Visible = True
         txtBedNavn.Visible = True
+        txtEpost.Visible = True
+        txtEtternavn.Visible = True
+        txtFornavn.Visible = True
+
+
         chkBedNavn.Visible = True
+        chkAdresse.Visible = True
+        chkEpost.Visible = True
+        chkEtternavn.Visible = True
+        chkFornavn.Visible = True
+        chkPostNummer.Visible = True
 
         txtPostPriv.Visible = False
         txtPrivAdresse.Visible = False
