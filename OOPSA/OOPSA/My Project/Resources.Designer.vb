@@ -173,9 +173,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property tbAddVare() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbAddVare", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property tbAnsatte() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tbAnsatte", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tbEdit() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbEdit", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

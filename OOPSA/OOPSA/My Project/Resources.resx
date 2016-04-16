@@ -127,6 +127,9 @@
   <data name="txtInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtInsert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tbLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txtAlignLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtAlignLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,11 +151,8 @@
   <data name="Kiwi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kiwi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="userSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\userSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="txtAlignJust" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtAlignJust.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbLager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbLager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,6 +190,9 @@
   <data name="txtCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="userSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="loginForgot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginForgot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -201,6 +204,9 @@
   </data>
   <data name="updateAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\updateAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbAddVare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbAddVare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +220,8 @@
   <data name="tbKundePrivat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbKundePrivat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="txtAlignJust" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtAlignJust.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="splashLoadingSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashLoadingSmall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,7 +238,7 @@
   <data name="tbSalg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSalg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tbLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tbLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tbEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

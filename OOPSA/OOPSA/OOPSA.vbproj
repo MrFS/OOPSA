@@ -207,6 +207,12 @@
     <Compile Include="frm\Admin\frmAddKunde.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm\Ansatt\Lager\frmLagerMetro.Designer.vb">
+      <DependentUpon>frmLagerMetro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Ansatt\Lager\frmLagerMetro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -330,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Ansatt\Lager\frmLagerMetro.resx">
+      <DependentUpon>frmLagerMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporting\SalgsRapportChart.rdlc" />
     <EmbeddedResource Include="frm\tstFolder\frmTst.resx">
@@ -573,6 +582,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OOPSA.ico" />
+    <None Include="Resources\tbEdit.png" />
+    <None Include="Resources\tbAddVare.png" />
     <None Include="Resources\tbLogout.png" />
     <None Include="Resources\tbKundePrivat.png" />
     <None Include="Resources\tbKundeBedrift.png" />

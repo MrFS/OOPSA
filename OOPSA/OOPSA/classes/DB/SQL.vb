@@ -74,16 +74,53 @@ Public Class SQL
 
     Public Function Return1Row(SQLstring As String, NavnPåKollone As String)
 
+        Dim variabel As String
+
         Dim dt As DataTable
         Dim dr As DataRow
-        Dim sql As New SQL
 
-        dt = sql.sporring(SQLstring)
-        Dim variabel As String
-        dr = dt.Rows(0)
-        variabel = dr(NavnPåKollone)
+        Try
+
+            dt = sporring(SQLstring)
+
+            dr = dt.Rows(0)
+
+            variabel = dr(NavnPåKollone)
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
 
         Return variabel
+
+    End Function
+
+    Public Function dataset(ByVal sql As String) As DataSet
+        Dim ds As New DataSet
+
+        If con.State = ConnectionState.Closed Then
+
+            con.Open()
+
+        End If
+
+        Try
+            Dim cmd As New MySqlCommand(sql, con)
+            Dim da As New MySqlDataAdapter
+            da.SelectCommand = cmd
+            da.Fill(ds)
+
+            con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "SQL Spørring feilet")
+            con.Close()
+        Finally
+            con.Dispose()
+        End Try
+        Return ds
+
     End Function
 
 
