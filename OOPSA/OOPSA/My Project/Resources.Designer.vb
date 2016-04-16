@@ -193,9 +193,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property tbBookTime() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbBookTime", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property tbEdit() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tbEdit", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tbEndreBestilling() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbEndreBestilling", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tbFjernBestil() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbFjernBestil", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -246,6 +276,16 @@ Namespace My.Resources
         Friend ReadOnly Property tbOverview() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tbOverview", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tbRegistrerSalg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tbRegistrerSalg", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

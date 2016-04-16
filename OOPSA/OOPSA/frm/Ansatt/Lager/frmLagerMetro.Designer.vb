@@ -1181,7 +1181,6 @@ Partial Class frmLagerMetro
     End Sub
 
     Friend WithEvents tbLager As Syncfusion.Windows.Forms.Tools.TabControlAdv
-    Friend WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents tbAdd As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents tbEdit As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ToolStripEx1 As Syncfusion.Windows.Forms.Tools.ToolStripEx
@@ -1213,14 +1212,8 @@ Partial Class frmLagerMetro
     Friend WithEvents GridDataBoundGrid3 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
-    Friend WithEvents LagerRapportALLEBindingSource As BindingSource
     Friend WithEvents LagerRapportALLETableAdapter As drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter
-    Friend WithEvents Drift8_2016DataSetTrondheimLager As drift8_2016DataSetTrondheimLager
-    Friend WithEvents LagerRapportTrondheimBindingSource As BindingSource
     Friend WithEvents LagerRapportTrondheimTableAdapter As drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter
-    Friend WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
-    Friend WithEvents LagerRapportStavangerBindingSource As BindingSource
     Friend WithEvents LagerRapportStavangerTableAdapter As drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter
     Friend WithEvents SplitContainer4 As SplitContainer
     Friend WithEvents btnLeggTil As Syncfusion.Windows.Forms.ButtonAdv
@@ -1251,4 +1244,11 @@ Partial Class frmLagerMetro
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lstVareEndret As ListBox
+    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
+    Private WithEvents LagerRapportALLEBindingSource As BindingSource
+    Private WithEvents Drift8_2016DataSetTrondheimLager As drift8_2016DataSetTrondheimLager
+    Private WithEvents LagerRapportTrondheimBindingSource As BindingSource
+    Private WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
+    Private WithEvents LagerRapportStavangerBindingSource As BindingSource
 End Class

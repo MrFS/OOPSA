@@ -40,6 +40,19 @@ Module config
         End Try
     End Sub
 
+    Public Sub Logout()
+        Try
+            Dim current As Form = Form.ActiveForm
+            con.Close()
+            con.Dispose()
+            frmMetroLogin.Show()
+            current.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
     Public Sub UpTime()
         tmrUp.Interval = 1000
         tmrUp.Start()

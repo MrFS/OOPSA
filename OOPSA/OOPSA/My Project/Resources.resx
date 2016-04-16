@@ -154,14 +154,23 @@
   <data name="txtRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tbEndreBestilling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbEndreBestilling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tbLager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbLager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tbAnsatte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbAnsatte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtAlignRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtAlignRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbBookTime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbBookTime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +189,9 @@
   </data>
   <data name="icoDatabase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icoDatabase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbRegistrerSalg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbRegistrerSalg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loginRose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginRose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +250,7 @@
   <data name="tbSalg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tbSalg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tbEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tbEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tbFjernBestil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbFjernBestil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
