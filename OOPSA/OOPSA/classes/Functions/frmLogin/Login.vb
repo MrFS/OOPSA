@@ -29,10 +29,10 @@ Public Class Login
                     frmAdminMetro.Show()
                     MsgBox("Du er logget inn som: " & user)
                 Case = "salg"
-                    frmSalg.Show()
+                    frmSalgMetro.Show()
                     MsgBox("Du er logget inn som: " & user)
                 Case = "lager"
-                    frmLager.Show()
+                    frmLagerMetro.Show()
                     MsgBox("Du er logget inn som: " & user)
                 Case Else
                     Exit Select

@@ -23,31 +23,56 @@ Public Class frmSplash
 
         Initialize()
 
-
     End Sub
 
     Private Sub tmrSplash_Tick(sender As Object, e As EventArgs) Handles tmrSplash.Tick
 
         Try
 
-            'make a reference to a directory
-            Dim di As New DirectoryInfo(Environment.CurrentDirectory)
-            Dim diar1 As FileInfo() = di.GetFiles()
-            Dim dra As FileInfo
+            ''make a reference to a directory
+            'Dim di As New DirectoryInfo(Environment.CurrentDirectory)
+            'Dim diar1 As FileInfo() = di.GetFiles()
+            'Dim dra As FileInfo
 
-            'List the names of all files in the specified directory
+            ''List the names of all files in the specified directory
 
-            For Each dra In diar1
-                AutoLabel3.Text = dra.Name
+            Dim fileList As String
+            Dim fileName As String
+            fileList = My.Computer.FileSystem.ReadAllText(Environment.CurrentDirectory & "\required.txt")
+            For X = 0 To fileList.Split(vbCrLf).Count - 1
+                fileName = fileList.Split(vbCrLf).ElementAt(X).ToString.Replace(vbCr, "").Replace(vbLf, "")
+                If My.Computer.FileSystem.FileExists(Environment.CurrentDirectory & "\" & fileName) Then
+                    AutoLabel3.Text = fileName
 
-                AutoLabel3.Refresh()
-                Me.Refresh()
+                    AutoLabel3.Refresh()
+                    Me.Refresh()
 
-                Thread.Sleep(25)
+                    Thread.Sleep(25)
+                Else
+                    tmrSplash.Enabled = 0
+                    MsgBox(fileName & " is not found!" & vbCrLf & "Exiting application and running update!")
+                    Process.Start("chkUpdate.exe")
+                    Environment.Exit(0)
+                End If
 
             Next
 
+            'For Each dra In diar1
 
+            '    If Not File.Exists(Environment.CurrentDirectory & "\" & dra.Name) Then
+            '        MsgBox(dra.Name & " is not found!" & vbCrLf & "Exiting application and running update!")
+            '        Process.Start("chkUpdate.exe")
+            '        Environment.Exit(0)
+            '    End If
+
+            '    AutoLabel3.Text = dra.Name
+
+            '    AutoLabel3.Refresh()
+            '    Me.Refresh()
+
+            '    Thread.Sleep(25)
+
+            'Next
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -55,8 +80,6 @@ Public Class frmSplash
         Finally
             chkDBCon()
         End Try
-
-
 
         tmrSplash.Stop()
 

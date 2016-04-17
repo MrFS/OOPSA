@@ -49,33 +49,30 @@ Public Class frmAdminMetro
         'OppdaterBed = False
         OppdaterPriv = False
 
-        'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
-        Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
-        Try
-            Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
-        Catch ex As Exception
-        End Try
 
-        dgvBedriftKunde.DataSource = SQL.bindingsource("SELECT * FROM `BedriftKunde`")
-        dgvPrivatKunde.DataSource = SQL.bindingsource("SELECT * FROM `PrivatKunde`")
-
+        Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
+        Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
         'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Kunde' table. You can move, or remove it, as needed.
         Me.KundeTableAdapter.Fill(Me.drift8_2016DataSet.Kunde)
 
-        Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
-
         'TODO: This line of code loads data into the 'drift8_2016DataSet.Ansatt' table. You can move, or remove it, as needed.
         Me.AnsattTableAdapter.Fill(Me.drift8_2016DataSet.Ansatt)
+        'TODO: This line of code loads data into the 'Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger' table. You can move, or remove it, as needed.
+        Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
+        Me.drift8_2016dsVisLeieRapportView.AcceptChanges()
+        Me.VisAktiveLeieTableAdapter.Fill(Me.drift8_2016dsVisLeieRapportView.VisAktiveLeie)
+
+        dgvBedriftKunde.DataSource = SQL.bindingsource("SELECT * FROM `BedriftKunde`")
+        dgvPrivatKunde.DataSource = SQL.bindingsource("SELECT * FROM `PrivatKunde`")
+
+
         Core.VisAnsatt()
         Core.visLeie()
 
 
         'Legg dt her i en class
-
-
-
 
         '-------------------------------------
         txtServer.Text = My.Settings.server
@@ -98,8 +95,6 @@ Public Class frmAdminMetro
         Next
 
         Me.richTextBox1.Font = New Font(Me.richTextBox1.Font.Name, CInt(txtFontSizeCombo.Text), Me.richTextBox1.Font.Style)
-
-
         Me.ReportViewer1.RefreshReport()
         Me.ReportViewer2.RefreshReport()
         Me.ReportViewer3.RefreshReport()
@@ -241,12 +236,12 @@ Public Class frmAdminMetro
 
     Private Sub FrmLagerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FrmLagerToolStripMenuItem.Click
         Me.Hide()
-        frmLager.Show()
+        frmLagerMetro.Show()
     End Sub
 
     Private Sub FrmSalgToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FrmSalgToolStripMenuItem.Click
         Me.Hide()
-        frmSalg.Show()
+        frmSalgMetro.Show()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -257,13 +252,13 @@ Public Class frmAdminMetro
         frmUsrChngPW.Show()
     End Sub
 
-    Private Sub SalgsrapportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalgsrapportToolStripMenuItem.Click
+    Private Sub SalgsrapportToolStripMenuItem_Click(sender As Object, e As EventArgs)
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         ReportViewer1.RefreshReport()
     End Sub
 
-    Private Sub DagligeSalgToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DagligeSalgToolStripMenuItem.Click
+    Private Sub DagligeSalgToolStripMenuItem_Click(sender As Object, e As EventArgs)
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapportChart.rdlc"
 
@@ -436,6 +431,14 @@ Public Class frmAdminMetro
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+        Logout()
+    End Sub
+
+    Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        Logout()
+    End Sub
+
+    Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
         Logout()
     End Sub
 

@@ -34,7 +34,7 @@
   <xs:element name="drift8_2016DataSetLageroversiktALLE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="drift8_2016DataSetLageroversiktALLE" msprop:Generator_UserDSName="drift8_2016DataSetLageroversiktALLE">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="LagerRapportALLE" msprop:Generator_TableClassName="LagerRapportALLEDataTable" msprop:Generator_TableVarName="tableLagerRapportALLE" msprop:Generator_TablePropName="LagerRapportALLE" msprop:Generator_RowDeletingName="LagerRapportALLERowDeleting" msprop:Generator_RowChangingName="LagerRapportALLERowChanging" msprop:Generator_RowEvHandlerName="LagerRapportALLERowChangeEventHandler" msprop:Generator_RowDeletedName="LagerRapportALLERowDeleted" msprop:Generator_UserTableName="LagerRapportALLE" msprop:Generator_RowChangedName="LagerRapportALLERowChanged" msprop:Generator_RowEvArgName="LagerRapportALLERowChangeEvent" msprop:Generator_RowClassName="LagerRapportALLERow">
+        <xs:element name="LagerRapportALLE" msprop:Generator_TableClassName="LagerRapportALLEDataTable" msprop:Generator_TableVarName="tableLagerRapportALLE" msprop:Generator_RowChangedName="LagerRapportALLERowChanged" msprop:Generator_TablePropName="LagerRapportALLE" msprop:Generator_RowDeletingName="LagerRapportALLERowDeleting" msprop:Generator_RowChangingName="LagerRapportALLERowChanging" msprop:Generator_RowEvHandlerName="LagerRapportALLERowChangeEventHandler" msprop:Generator_RowDeletedName="LagerRapportALLERowDeleted" msprop:Generator_RowClassName="LagerRapportALLERow" msprop:Generator_UserTableName="LagerRapportALLE" msprop:Generator_RowEvArgName="LagerRapportALLERowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Addresse" msprop:Generator_ColumnVarNameInTable="columnAddresse" msprop:Generator_ColumnPropNameInRow="Addresse" msprop:Generator_ColumnPropNameInTable="AddresseColumn" msprop:Generator_UserColumnName="Addresse" minOccurs="0">
@@ -44,8 +44,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Produkt_id" msprop:Generator_ColumnVarNameInTable="columnProdukt_id" msprop:Generator_ColumnPropNameInRow="Produkt_id" msprop:Generator_ColumnPropNameInTable="Produkt_idColumn" msprop:Generator_UserColumnName="Produkt_id" type="xs:int" />
-              <xs:element name="Produkt_navn" msprop:Generator_ColumnVarNameInTable="columnProdukt_navn" msprop:Generator_ColumnPropNameInRow="Produkt_navn" msprop:Generator_ColumnPropNameInTable="Produkt_navnColumn" msprop:Generator_UserColumnName="Produkt_navn">
+              <xs:element name="Produkt_id" msprop:Generator_ColumnVarNameInTable="columnProdukt_id" msprop:Generator_ColumnPropNameInRow="Produkt_id" msprop:Generator_ColumnPropNameInTable="Produkt_idColumn" msprop:Generator_UserColumnName="Produkt_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Produkt_navn" msprop:Generator_ColumnVarNameInTable="columnProdukt_navn" msprop:Generator_ColumnPropNameInRow="Produkt_navn" msprop:Generator_ColumnPropNameInTable="Produkt_navnColumn" msprop:Generator_UserColumnName="Produkt_navn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="45" />

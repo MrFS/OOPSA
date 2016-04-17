@@ -20,12 +20,12 @@ Option Explicit On
  Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
  Global.System.ComponentModel.ToolboxItem(true),  _
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
- Global.System.Xml.Serialization.XmlRootAttribute("drift8_2016DataSetLagerRapportStavnager"),  _
+ Global.System.Xml.Serialization.XmlRootAttribute("drift8_2016dsVisLeieRapportView"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class drift8_2016DataSetLagerRapportStavnager
+Partial Public Class drift8_2016dsVisLeieRapportView
     Inherits Global.System.Data.DataSet
     
-    Private tableLagerRapportStavanger As LagerRapportStavangerDataTable
+    Private tableVisAktiveLeie As VisAktiveLeieDataTable
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -56,8 +56,8 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         If (Me.DetermineSchemaSerializationMode(info, context) = Global.System.Data.SchemaSerializationMode.IncludeSchema) Then
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXmlSchema(New Global.System.Xml.XmlTextReader(New Global.System.IO.StringReader(strSchema)))
-            If (Not (ds.Tables("LagerRapportStavanger")) Is Nothing) Then
-                MyBase.Tables.Add(New LagerRapportStavangerDataTable(ds.Tables("LagerRapportStavanger")))
+            If (Not (ds.Tables("VisAktiveLeie")) Is Nothing) Then
+                MyBase.Tables.Add(New VisAktiveLeieDataTable(ds.Tables("VisAktiveLeie")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -80,9 +80,9 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property LagerRapportStavanger() As LagerRapportStavangerDataTable
+    Public ReadOnly Property VisAktiveLeie() As VisAktiveLeieDataTable
         Get
-            Return Me.tableLagerRapportStavanger
+            Return Me.tableVisAktiveLeie
         End Get
     End Property
     
@@ -128,7 +128,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As drift8_2016DataSetLagerRapportStavnager = CType(MyBase.Clone,drift8_2016DataSetLagerRapportStavnager)
+        Dim cln As drift8_2016dsVisLeieRapportView = CType(MyBase.Clone,drift8_2016dsVisLeieRapportView)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -153,8 +153,8 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
             Me.Reset
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXml(reader)
-            If (Not (ds.Tables("LagerRapportStavanger")) Is Nothing) Then
-                MyBase.Tables.Add(New LagerRapportStavangerDataTable(ds.Tables("LagerRapportStavanger")))
+            If (Not (ds.Tables("VisAktiveLeie")) Is Nothing) Then
+                MyBase.Tables.Add(New VisAktiveLeieDataTable(ds.Tables("VisAktiveLeie")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -188,10 +188,10 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Friend Overloads Sub InitVars(ByVal initTable As Boolean)
-        Me.tableLagerRapportStavanger = CType(MyBase.Tables("LagerRapportStavanger"),LagerRapportStavangerDataTable)
+        Me.tableVisAktiveLeie = CType(MyBase.Tables("VisAktiveLeie"),VisAktiveLeieDataTable)
         If (initTable = true) Then
-            If (Not (Me.tableLagerRapportStavanger) Is Nothing) Then
-                Me.tableLagerRapportStavanger.InitVars
+            If (Not (Me.tableVisAktiveLeie) Is Nothing) Then
+                Me.tableVisAktiveLeie.InitVars
             End If
         End If
     End Sub
@@ -199,18 +199,18 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Sub InitClass()
-        Me.DataSetName = "drift8_2016DataSetLagerRapportStavnager"
+        Me.DataSetName = "drift8_2016dsVisLeieRapportView"
         Me.Prefix = ""
-        Me.Namespace = "http://tempuri.org/drift8_2016DataSetLagerRapportStavnager.xsd"
+        Me.Namespace = "http://tempuri.org/drift8_2016dsVisLeieRapportView.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
-        Me.tableLagerRapportStavanger = New LagerRapportStavangerDataTable()
-        MyBase.Tables.Add(Me.tableLagerRapportStavanger)
+        Me.tableVisAktiveLeie = New VisAktiveLeieDataTable()
+        MyBase.Tables.Add(Me.tableVisAktiveLeie)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Private Function ShouldSerializeLagerRapportStavanger() As Boolean
+    Private Function ShouldSerializeVisAktiveLeie() As Boolean
         Return false
     End Function
     
@@ -225,7 +225,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As drift8_2016DataSetLagerRapportStavnager = New drift8_2016DataSetLagerRapportStavnager()
+        Dim ds As drift8_2016dsVisLeieRapportView = New drift8_2016dsVisLeieRapportView()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -273,29 +273,37 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     End Function
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Delegate Sub LagerRapportStavangerRowChangeEventHandler(ByVal sender As Object, ByVal e As LagerRapportStavangerRowChangeEvent)
+    Public Delegate Sub VisAktiveLeieRowChangeEventHandler(ByVal sender As Object, ByVal e As VisAktiveLeieRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class LagerRapportStavangerDataTable
-        Inherits Global.System.Data.TypedTableBase(Of LagerRapportStavangerRow)
+    Partial Public Class VisAktiveLeieDataTable
+        Inherits Global.System.Data.TypedTableBase(Of VisAktiveLeieRow)
         
-        Private columnLager_id As Global.System.Data.DataColumn
+        Private columnA_id As Global.System.Data.DataColumn
+        
+        Private columnF_navn As Global.System.Data.DataColumn
+        
+        Private columnE_navn As Global.System.Data.DataColumn
+        
+        Private columnKid As Global.System.Data.DataColumn
+        
+        Private columnF_Kunde As Global.System.Data.DataColumn
+        
+        Private columnE_Kunde As Global.System.Data.DataColumn
         
         Private columnProdukt_id As Global.System.Data.DataColumn
         
         Private columnProdukt_navn As Global.System.Data.DataColumn
         
-        Private columnAntall As Global.System.Data.DataColumn
-        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
             MyBase.New
-            Me.TableName = "LagerRapportStavanger"
+            Me.TableName = "VisAktiveLeie"
             Me.BeginInit
             Me.InitClass
             Me.EndInit
@@ -328,9 +336,49 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Lager_idColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property A_idColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnLager_id
+                Return Me.columnA_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property F_navnColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnF_navn
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property E_navnColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnE_navn
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property KidColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnKid
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property F_KundeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnF_Kunde
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property E_KundeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnE_Kunde
             End Get
         End Property
         
@@ -351,14 +399,6 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property AntallColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnAntall
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -369,50 +409,50 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As LagerRapportStavangerRow
+        Public Default ReadOnly Property Item(ByVal index As Integer) As VisAktiveLeieRow
             Get
-                Return CType(Me.Rows(index),LagerRapportStavangerRow)
+                Return CType(Me.Rows(index),VisAktiveLeieRow)
             End Get
         End Property
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event LagerRapportStavangerRowChanging As LagerRapportStavangerRowChangeEventHandler
+        Public Event VisAktiveLeieRowChanging As VisAktiveLeieRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event LagerRapportStavangerRowChanged As LagerRapportStavangerRowChangeEventHandler
+        Public Event VisAktiveLeieRowChanged As VisAktiveLeieRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event LagerRapportStavangerRowDeleting As LagerRapportStavangerRowChangeEventHandler
+        Public Event VisAktiveLeieRowDeleting As VisAktiveLeieRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event LagerRapportStavangerRowDeleted As LagerRapportStavangerRowChangeEventHandler
+        Public Event VisAktiveLeieRowDeleted As VisAktiveLeieRowChangeEventHandler
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Sub AddLagerRapportStavangerRow(ByVal row As LagerRapportStavangerRow)
+        Public Overloads Sub AddVisAktiveLeieRow(ByVal row As VisAktiveLeieRow)
             Me.Rows.Add(row)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddLagerRapportStavangerRow(ByVal Lager_id As Integer, ByVal Produkt_id As Integer, ByVal Produkt_navn As String, ByVal Antall As Integer) As LagerRapportStavangerRow
-            Dim rowLagerRapportStavangerRow As LagerRapportStavangerRow = CType(Me.NewRow,LagerRapportStavangerRow)
-            Dim columnValuesArray() As Object = New Object() {Lager_id, Produkt_id, Produkt_navn, Antall}
-            rowLagerRapportStavangerRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowLagerRapportStavangerRow)
-            Return rowLagerRapportStavangerRow
+        Public Overloads Function AddVisAktiveLeieRow(ByVal F_navn As String, ByVal E_navn As String, ByVal F_Kunde As String, ByVal E_Kunde As String, ByVal Produkt_navn As String) As VisAktiveLeieRow
+            Dim rowVisAktiveLeieRow As VisAktiveLeieRow = CType(Me.NewRow,VisAktiveLeieRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, F_navn, E_navn, Nothing, F_Kunde, E_Kunde, Nothing, Produkt_navn}
+            rowVisAktiveLeieRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowVisAktiveLeieRow)
+            Return rowVisAktiveLeieRow
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByLager_idProdukt_id(ByVal Lager_id As Integer, ByVal Produkt_id As Integer) As LagerRapportStavangerRow
-            Return CType(Me.Rows.Find(New Object() {Lager_id, Produkt_id}),LagerRapportStavangerRow)
+        Public Function FindByA_idKidProdukt_id(ByVal A_id As Integer, ByVal Kid As Integer, ByVal Produkt_id As Integer) As VisAktiveLeieRow
+            Return CType(Me.Rows.Find(New Object() {A_id, Kid, Produkt_id}),VisAktiveLeieRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As LagerRapportStavangerDataTable = CType(MyBase.Clone,LagerRapportStavangerDataTable)
+            Dim cln As VisAktiveLeieDataTable = CType(MyBase.Clone,VisAktiveLeieDataTable)
             cln.InitVars
             Return cln
         End Function
@@ -420,59 +460,93 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New LagerRapportStavangerDataTable()
+            Return New VisAktiveLeieDataTable()
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnLager_id = MyBase.Columns("Lager_id")
+            Me.columnA_id = MyBase.Columns("A_id")
+            Me.columnF_navn = MyBase.Columns("F_navn")
+            Me.columnE_navn = MyBase.Columns("E_navn")
+            Me.columnKid = MyBase.Columns("Kid")
+            Me.columnF_Kunde = MyBase.Columns("F_Kunde")
+            Me.columnE_Kunde = MyBase.Columns("E_Kunde")
             Me.columnProdukt_id = MyBase.Columns("Produkt_id")
             Me.columnProdukt_navn = MyBase.Columns("Produkt_navn")
-            Me.columnAntall = MyBase.Columns("Antall")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnLager_id = New Global.System.Data.DataColumn("Lager_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnLager_id)
+            Me.columnA_id = New Global.System.Data.DataColumn("A_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnA_id)
+            Me.columnF_navn = New Global.System.Data.DataColumn("F_navn", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnF_navn)
+            Me.columnE_navn = New Global.System.Data.DataColumn("E_navn", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnE_navn)
+            Me.columnKid = New Global.System.Data.DataColumn("Kid", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnKid)
+            Me.columnF_Kunde = New Global.System.Data.DataColumn("F_Kunde", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnF_Kunde)
+            Me.columnE_Kunde = New Global.System.Data.DataColumn("E_Kunde", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnE_Kunde)
             Me.columnProdukt_id = New Global.System.Data.DataColumn("Produkt_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnProdukt_id)
             Me.columnProdukt_navn = New Global.System.Data.DataColumn("Produkt_navn", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnProdukt_navn)
-            Me.columnAntall = New Global.System.Data.DataColumn("Antall", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnAntall)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnLager_id, Me.columnProdukt_id}, true))
-            Me.columnLager_id.AllowDBNull = false
-            Me.columnProdukt_id.AllowDBNull = false
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnA_id, Me.columnKid, Me.columnProdukt_id}, true))
+            Me.columnA_id.AutoIncrement = true
+            Me.columnA_id.AutoIncrementSeed = -1
+            Me.columnA_id.AutoIncrementStep = -1
+            Me.columnA_id.AllowDBNull = False
+            Me.columnA_id.ReadOnly = True
+            Me.columnF_navn.ReadOnly = True
+            Me.columnF_navn.MaxLength = 50
+            Me.columnE_navn.ReadOnly = True
+            Me.columnE_navn.MaxLength = 50
+            Me.columnKid.AutoIncrement = True
+            Me.columnKid.AutoIncrementSeed = -1
+            Me.columnKid.AutoIncrementStep = -1
+            Me.columnKid.AllowDBNull = False
+            Me.columnKid.ReadOnly = True
+            Me.columnF_Kunde.ReadOnly = True
+            Me.columnF_Kunde.MaxLength = 50
+            Me.columnE_Kunde.ReadOnly = True
+            Me.columnE_Kunde.MaxLength = 50
+            Me.columnProdukt_id.AutoIncrement = True
+            Me.columnProdukt_id.AutoIncrementSeed = -1
+            Me.columnProdukt_id.AutoIncrementStep = -1
+            Me.columnProdukt_id.AllowDBNull = False
+            Me.columnProdukt_id.ReadOnly = True
+            Me.columnProdukt_navn.ReadOnly = True
             Me.columnProdukt_navn.MaxLength = 45
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function NewLagerRapportStavangerRow() As LagerRapportStavangerRow
-            Return CType(Me.NewRow,LagerRapportStavangerRow)
+        Public Function NewVisAktiveLeieRow() As VisAktiveLeieRow
+            Return CType(Me.NewRow,VisAktiveLeieRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New LagerRapportStavangerRow(builder)
+            Return New VisAktiveLeieRow(builder)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(LagerRapportStavangerRow)
+            Return GetType(VisAktiveLeieRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanged(e)
-            If (Not (Me.LagerRapportStavangerRowChangedEvent) Is Nothing) Then
-                RaiseEvent LagerRapportStavangerRowChanged(Me, New LagerRapportStavangerRowChangeEvent(CType(e.Row,LagerRapportStavangerRow), e.Action))
+            If (Not (Me.VisAktiveLeieRowChangedEvent) Is Nothing) Then
+                RaiseEvent VisAktiveLeieRowChanged(Me, New VisAktiveLeieRowChangeEvent(CType(e.Row,VisAktiveLeieRow), e.Action))
             End If
         End Sub
         
@@ -480,8 +554,8 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
-            If (Not (Me.LagerRapportStavangerRowChangingEvent) Is Nothing) Then
-                RaiseEvent LagerRapportStavangerRowChanging(Me, New LagerRapportStavangerRowChangeEvent(CType(e.Row,LagerRapportStavangerRow), e.Action))
+            If (Not (Me.VisAktiveLeieRowChangingEvent) Is Nothing) Then
+                RaiseEvent VisAktiveLeieRowChanging(Me, New VisAktiveLeieRowChangeEvent(CType(e.Row,VisAktiveLeieRow), e.Action))
             End If
         End Sub
         
@@ -489,8 +563,8 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleted(e)
-            If (Not (Me.LagerRapportStavangerRowDeletedEvent) Is Nothing) Then
-                RaiseEvent LagerRapportStavangerRowDeleted(Me, New LagerRapportStavangerRowChangeEvent(CType(e.Row,LagerRapportStavangerRow), e.Action))
+            If (Not (Me.VisAktiveLeieRowDeletedEvent) Is Nothing) Then
+                RaiseEvent VisAktiveLeieRowDeleted(Me, New VisAktiveLeieRowChangeEvent(CType(e.Row,VisAktiveLeieRow), e.Action))
             End If
         End Sub
         
@@ -498,14 +572,14 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
-            If (Not (Me.LagerRapportStavangerRowDeletingEvent) Is Nothing) Then
-                RaiseEvent LagerRapportStavangerRowDeleting(Me, New LagerRapportStavangerRowChangeEvent(CType(e.Row,LagerRapportStavangerRow), e.Action))
+            If (Not (Me.VisAktiveLeieRowDeletingEvent) Is Nothing) Then
+                RaiseEvent VisAktiveLeieRowDeleting(Me, New VisAktiveLeieRowChangeEvent(CType(e.Row,VisAktiveLeieRow), e.Action))
             End If
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub RemoveLagerRapportStavangerRow(ByVal row As LagerRapportStavangerRow)
+        Public Sub RemoveVisAktiveLeieRow(ByVal row As VisAktiveLeieRow)
             Me.Rows.Remove(row)
         End Sub
         
@@ -514,7 +588,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As drift8_2016DataSetLagerRapportStavnager = New drift8_2016DataSetLagerRapportStavnager()
+            Dim ds As drift8_2016dsVisLeieRapportView = New drift8_2016dsVisLeieRapportView()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -532,7 +606,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "LagerRapportStavangerDataTable"
+            attribute2.FixedValue = "VisAktiveLeieDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -579,26 +653,97 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class LagerRapportStavangerRow
+    Partial Public Class VisAktiveLeieRow
         Inherits Global.System.Data.DataRow
         
-        Private tableLagerRapportStavanger As LagerRapportStavangerDataTable
+        Private tableVisAktiveLeie As VisAktiveLeieDataTable
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
-            Me.tableLagerRapportStavanger = CType(Me.Table,LagerRapportStavangerDataTable)
+            Me.tableVisAktiveLeie = CType(Me.Table,VisAktiveLeieDataTable)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Lager_id() As Integer
+        Public Property A_id() As Integer
             Get
-                Return CType(Me(Me.tableLagerRapportStavanger.Lager_idColumn),Integer)
+                Return CType(Me(Me.tableVisAktiveLeie.A_idColumn),Integer)
             End Get
             Set
-                Me(Me.tableLagerRapportStavanger.Lager_idColumn) = value
+                Me(Me.tableVisAktiveLeie.A_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property F_navn() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableVisAktiveLeie.F_navnColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'F_navn' in table 'VisAktiveLeie' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableVisAktiveLeie.F_navnColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property E_navn() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableVisAktiveLeie.E_navnColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'E_navn' in table 'VisAktiveLeie' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableVisAktiveLeie.E_navnColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Kid() As Integer
+            Get
+                Return CType(Me(Me.tableVisAktiveLeie.KidColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableVisAktiveLeie.KidColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property F_Kunde() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableVisAktiveLeie.F_KundeColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'F_Kunde' in table 'VisAktiveLeie' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableVisAktiveLeie.F_KundeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property E_Kunde() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableVisAktiveLeie.E_KundeColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'E_Kunde' in table 'VisAktiveLeie' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableVisAktiveLeie.E_KundeColumn) = value
             End Set
         End Property
         
@@ -606,10 +751,10 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Produkt_id() As Integer
             Get
-                Return CType(Me(Me.tableLagerRapportStavanger.Produkt_idColumn),Integer)
+                Return CType(Me(Me.tableVisAktiveLeie.Produkt_idColumn),Integer)
             End Get
             Set
-                Me(Me.tableLagerRapportStavanger.Produkt_idColumn) = value
+                Me(Me.tableVisAktiveLeie.Produkt_idColumn) = value
             End Set
         End Property
         
@@ -618,53 +763,74 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         Public Property Produkt_navn() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableLagerRapportStavanger.Produkt_navnColumn),String)
+                    Return CType(Me(Me.tableVisAktiveLeie.Produkt_navnColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Produkt_navn' in table 'LagerRapportStavanger' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Produkt_navn' in table 'VisAktiveLeie' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableLagerRapportStavanger.Produkt_navnColumn) = value
+                Me(Me.tableVisAktiveLeie.Produkt_navnColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Antall() As Integer
-            Get
-                Try 
-                    Return CType(Me(Me.tableLagerRapportStavanger.AntallColumn),Integer)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Antall' in table 'LagerRapportStavanger' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableLagerRapportStavanger.AntallColumn) = value
-            End Set
-        End Property
+        Public Function IsF_navnNull() As Boolean
+            Return Me.IsNull(Me.tableVisAktiveLeie.F_navnColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetF_navnNull()
+            Me(Me.tableVisAktiveLeie.F_navnColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsE_navnNull() As Boolean
+            Return Me.IsNull(Me.tableVisAktiveLeie.E_navnColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetE_navnNull()
+            Me(Me.tableVisAktiveLeie.E_navnColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsF_KundeNull() As Boolean
+            Return Me.IsNull(Me.tableVisAktiveLeie.F_KundeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetF_KundeNull()
+            Me(Me.tableVisAktiveLeie.F_KundeColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsE_KundeNull() As Boolean
+            Return Me.IsNull(Me.tableVisAktiveLeie.E_KundeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetE_KundeNull()
+            Me(Me.tableVisAktiveLeie.E_KundeColumn) = Global.System.Convert.DBNull
+        End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsProdukt_navnNull() As Boolean
-            Return Me.IsNull(Me.tableLagerRapportStavanger.Produkt_navnColumn)
+            Return Me.IsNull(Me.tableVisAktiveLeie.Produkt_navnColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetProdukt_navnNull()
-            Me(Me.tableLagerRapportStavanger.Produkt_navnColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsAntallNull() As Boolean
-            Return Me.IsNull(Me.tableLagerRapportStavanger.AntallColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetAntallNull()
-            Me(Me.tableLagerRapportStavanger.AntallColumn) = Global.System.Convert.DBNull
+            Me(Me.tableVisAktiveLeie.Produkt_navnColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -672,16 +838,16 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Class LagerRapportStavangerRowChangeEvent
+    Public Class VisAktiveLeieRowChangeEvent
         Inherits Global.System.EventArgs
         
-        Private eventRow As LagerRapportStavangerRow
+        Private eventRow As VisAktiveLeieRow
         
         Private eventAction As Global.System.Data.DataRowAction
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New(ByVal row As LagerRapportStavangerRow, ByVal action As Global.System.Data.DataRowAction)
+        Public Sub New(ByVal row As VisAktiveLeieRow, ByVal action As Global.System.Data.DataRowAction)
             MyBase.New
             Me.eventRow = row
             Me.eventAction = action
@@ -689,7 +855,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Row() As LagerRapportStavangerRow
+        Public ReadOnly Property Row() As VisAktiveLeieRow
             Get
                 Return Me.eventRow
             End Get
@@ -705,7 +871,7 @@ Partial Public Class drift8_2016DataSetLagerRapportStavnager
     End Class
 End Class
 
-Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
+Namespace drift8_2016dsVisLeieRapportViewTableAdapters
     
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
@@ -716,7 +882,7 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class LagerRapportStavangerTableAdapter
+    Partial Public Class VisAktiveLeieTableAdapter
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.MySql.Data.MySqlClient.MySqlDataAdapter
@@ -833,11 +999,15 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
             Me._adapter = New Global.MySql.Data.MySqlClient.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "LagerRapportStavanger"
-            tableMapping.ColumnMappings.Add("Lager_id", "Lager_id")
+            tableMapping.DataSetTable = "VisAktiveLeie"
+            tableMapping.ColumnMappings.Add("A_id", "A_id")
+            tableMapping.ColumnMappings.Add("F_navn", "F_navn")
+            tableMapping.ColumnMappings.Add("E_navn", "E_navn")
+            tableMapping.ColumnMappings.Add("Kid", "Kid")
+            tableMapping.ColumnMappings.Add("F_Kunde", "F_Kunde")
+            tableMapping.ColumnMappings.Add("E_Kunde", "E_Kunde")
             tableMapping.ColumnMappings.Add("Produkt_id", "Produkt_id")
             tableMapping.ColumnMappings.Add("Produkt_navn", "Produkt_navn")
-            tableMapping.ColumnMappings.Add("Antall", "Antall")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
         
@@ -854,8 +1024,8 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `Lager_id`, `Produkt_id`, `Produkt_navn`, `Antall` FROM `drift8_2016`.`Lag"& _ 
-                "erRapportStavanger`"
+            Me._commandCollection(0).CommandText = "SELECT `A_id`, `F_navn`, `E_navn`, `Kid`, `F_Kunde`, `E_Kunde`, `Produkt_id`, `Pr"& _ 
+                "odukt_navn` FROM `drift8_2016`.`VisAktiveLeie`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -863,22 +1033,27 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As drift8_2016DataSetLagerRapportStavnager.LagerRapportStavangerDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As drift8_2016dsVisLeieRapportView.VisAktiveLeieDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
+            If (Me.ClearBeforeFill = True) Then
                 dataTable.Clear
             End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
+            Try
+                dataTable.AcceptChanges()
+                dataTable.HasErrors.ToString()
+                Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+                Return returnValue
+            Catch ex As Exception
+            End Try
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As drift8_2016DataSetLagerRapportStavnager.LagerRapportStavangerDataTable
+        Public Overloads Overridable Function GetData() As drift8_2016dsVisLeieRapportView.VisAktiveLeieDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As drift8_2016DataSetLagerRapportStavnager.LagerRapportStavangerDataTable = New drift8_2016DataSetLagerRapportStavnager.LagerRapportStavangerDataTable()
+            Dim dataTable As drift8_2016dsVisLeieRapportView.VisAktiveLeieDataTable = New drift8_2016dsVisLeieRapportView.VisAktiveLeieDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -953,7 +1128,7 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateUpdatedRows(ByVal dataSet As drift8_2016DataSetLagerRapportStavnager, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateUpdatedRows(ByVal dataSet As drift8_2016dsVisLeieRapportView, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             Return result
         End Function
@@ -963,7 +1138,7 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateInsertedRows(ByVal dataSet As drift8_2016DataSetLagerRapportStavnager, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateInsertedRows(ByVal dataSet As drift8_2016dsVisLeieRapportView, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             Return result
         End Function
@@ -973,7 +1148,7 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateDeletedRows(ByVal dataSet As drift8_2016DataSetLagerRapportStavnager, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateDeletedRows(ByVal dataSet As drift8_2016dsVisLeieRapportView, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             Return result
         End Function
@@ -1009,7 +1184,7 @@ Namespace drift8_2016DataSetLagerRapportStavnagerTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overridable Function UpdateAll(ByVal dataSet As drift8_2016DataSetLagerRapportStavnager) As Integer
+        Public Overridable Function UpdateAll(ByVal dataSet As drift8_2016dsVisLeieRapportView) As Integer
             If (dataSet Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("dataSet")
             End If

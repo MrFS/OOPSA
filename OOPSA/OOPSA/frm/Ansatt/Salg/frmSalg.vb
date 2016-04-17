@@ -7,7 +7,7 @@ Public Class frmSalg
     Inherits MetroForm
 
 
-    Public sql As New SQL
+    Dim sql As New SQL
 
 
 
@@ -180,5 +180,13 @@ Public Class frmSalg
 
     Private Sub btbAddleie_Click(sender As Object, e As EventArgs) Handles btbAddleie.Click
         frmAddLeie.Show()
+    End Sub
+
+    Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
+
+    End Sub
+
+    Private Sub BtnRegSKL_Click(sender As Object, e As EventArgs) Handles BtnRegSKL.Click
+
     End Sub
 End Class

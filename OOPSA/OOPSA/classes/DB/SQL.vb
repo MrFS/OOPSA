@@ -74,7 +74,7 @@ Public Class SQL
 
     Public Function Return1Row(SQLstring As String, NavnPåKollone As String)
 
-        Dim variabel As String
+        Dim variabel As String = ""
 
         Dim dt As DataTable
         Dim dr As DataRow
@@ -85,7 +85,7 @@ Public Class SQL
 
             dr = dt.Rows(0)
 
-            variabel = dr(NavnPåKollone)
+            variabel = dr(NavnPåKollone).ToString
 
         Catch ex As Exception
 

@@ -447,7 +447,6 @@ Partial Public Class drift8_2016DataSetLageroversiktALLE
             Me.columnAddresse.MaxLength = 45
             Me.columnProdukt_id.AllowDBNull = false
             Me.columnProdukt_id.Unique = true
-            Me.columnProdukt_navn.AllowDBNull = false
             Me.columnProdukt_navn.MaxLength = 45
         End Sub
         
@@ -623,7 +622,11 @@ Partial Public Class drift8_2016DataSetLageroversiktALLE
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Produkt_navn() As String
             Get
-                Return CType(Me(Me.tableLagerRapportALLE.Produkt_navnColumn),String)
+                Try 
+                    Return CType(Me(Me.tableLagerRapportALLE.Produkt_navnColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Produkt_navn' in table 'LagerRapportALLE' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableLagerRapportALLE.Produkt_navnColumn) = value
@@ -655,6 +658,18 @@ Partial Public Class drift8_2016DataSetLageroversiktALLE
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetAddresseNull()
             Me(Me.tableLagerRapportALLE.AddresseColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsProdukt_navnNull() As Boolean
+            Return Me.IsNull(Me.tableLagerRapportALLE.Produkt_navnColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetProdukt_navnNull()
+            Me(Me.tableLagerRapportALLE.Produkt_navnColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

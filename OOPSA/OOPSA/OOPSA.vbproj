@@ -201,6 +201,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reporting\DataSets\drift8_2016dsVisLeieRapportView.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drift8_2016dsVisLeieRapportView.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm\Admin\frmAddKunde.Designer.vb">
       <DependentUpon>frmAddKunde.vb</DependentUpon>
     </Compile>
@@ -343,13 +348,14 @@
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\LagerRapport.rdlc" />
+    <EmbeddedResource Include="Reporting\LeieRapport.rdlc" />
     <EmbeddedResource Include="frm\Ansatt\Lager\frmLagerMetro.resx">
       <DependentUpon>frmLagerMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Ansatt\Salg\frmSalgMetro.resx">
       <DependentUpon>frmSalgMetro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporting\SalgsRapportChart.rdlc" />
     <EmbeddedResource Include="frm\tstFolder\frmTst.resx">
       <DependentUpon>frmTst.vb</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +441,17 @@
     </None>
     <None Include="DataSets\drift8_2016DataSetTrondheimLager.xss">
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\DataSets\drift8_2016dsVisLeieRapportView.xsc">
+      <DependentUpon>drift8_2016dsVisLeieRapportView.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\DataSets\drift8_2016dsVisLeieRapportView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>drift8_2016dsVisLeieRapportView.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reporting\DataSets\drift8_2016dsVisLeieRapportView.xss">
+      <DependentUpon>drift8_2016dsVisLeieRapportView.xsd</DependentUpon>
     </None>
     <None Include="Reporting\DataSets\drift8_2016dsSalgsRapportView.xsc">
       <DependentUpon>drift8_2016dsSalgsRapportView.xsd</DependentUpon>

@@ -577,13 +577,11 @@ Partial Public Class drift8_2016dsSalgsRapportView
             Me.columnProdukt_id.AutoIncrementSeed = -1
             Me.columnProdukt_id.AutoIncrementStep = -1
             Me.columnProdukt_id.AllowDBNull = false
-            Me.columnProdukt_navn.AllowDBNull = false
             Me.columnProdukt_navn.MaxLength = 45
             Me.columnS_id.AutoIncrement = true
             Me.columnS_id.AutoIncrementSeed = -1
             Me.columnS_id.AutoIncrementStep = -1
             Me.columnS_id.AllowDBNull = false
-            Me.columnPris.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -825,7 +823,11 @@ Partial Public Class drift8_2016dsSalgsRapportView
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Produkt_navn() As String
             Get
-                Return CType(Me(Me.tableSalgsRaport.Produkt_navnColumn),String)
+                Try 
+                    Return CType(Me(Me.tableSalgsRaport.Produkt_navnColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Produkt_navn' in table 'SalgsRaport' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableSalgsRaport.Produkt_navnColumn) = value
@@ -862,7 +864,11 @@ Partial Public Class drift8_2016dsSalgsRapportView
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Pris() As Integer
             Get
-                Return CType(Me(Me.tableSalgsRaport.PrisColumn),Integer)
+                Try 
+                    Return CType(Me(Me.tableSalgsRaport.PrisColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Pris' in table 'SalgsRaport' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableSalgsRaport.PrisColumn) = value
@@ -949,6 +955,18 @@ Partial Public Class drift8_2016dsSalgsRapportView
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsProdukt_navnNull() As Boolean
+            Return Me.IsNull(Me.tableSalgsRaport.Produkt_navnColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetProdukt_navnNull()
+            Me(Me.tableSalgsRaport.Produkt_navnColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsAntallNull() As Boolean
             Return Me.IsNull(Me.tableSalgsRaport.AntallColumn)
         End Function
@@ -957,6 +975,18 @@ Partial Public Class drift8_2016dsSalgsRapportView
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetAntallNull()
             Me(Me.tableSalgsRaport.AntallColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsPrisNull() As Boolean
+            Return Me.IsNull(Me.tableSalgsRaport.PrisColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetPrisNull()
+            Me(Me.tableSalgsRaport.PrisColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

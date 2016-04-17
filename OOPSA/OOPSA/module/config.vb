@@ -33,11 +33,14 @@ Module config
 
     Public Sub Initialize()
 
-        Try
-            con.Open()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        If con.State = ConnectionState.Closed Then
+
+            Try
+                con.Open()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 
     Public Sub Logout()
