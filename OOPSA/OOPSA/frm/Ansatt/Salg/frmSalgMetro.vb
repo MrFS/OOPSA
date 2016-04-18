@@ -122,6 +122,8 @@ Public Class frmSalgMetro
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", Combo)
 
 
+
+
         Dim adapter As New MySqlDataAdapter("SELECT Antall From Kjøp WHERE Kunde_Kid = " & kundeid & "", con)
         Dim ds_produkt = New DataSet
         Dim dr_produkt As DataRow
@@ -132,28 +134,34 @@ Public Class frmSalgMetro
             TextBoxExt9.Text = dr_produkt("Antall")
         Next
 
-
-
-
-
-
-
+        Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs WHERE Kunde_Kid = " & kundeid & "", con)
+        Dim ds_produkt1 = New DataSet
+        Dim dr_produkt1 As DataRow
+        Dim dt_produkt1 As DataTable
+        adapter1.Fill(ds_produkt1, "Kjøp")
+        dt_produkt1 = ds_produkt1.Tables(0)
+        For Each dr_produkt1 In dt_produkt1.Rows
+            TextBoxExt9.Text = dr_produkt1("Antall")
+        Next
 
 
         ComboKUNDEVALG.Items.Clear()
 
-        'Dim adapter As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
-        'Dim ds_produkt = New DataSet
-        'Dim dr_produkt As DataRow
-        'Dim dt_produkt As DataTable
-        'adapter.Fill(ds_produkt, "Kjøp")
-        'dt_produkt = ds_produkt.Tables(0)
-        'For Each dr_produkt In dt_produkt.Rows
+        Dim adapter2 As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
+        Dim ds_produkt2 = New DataSet
+        Dim dr_produkt2 As DataRow
+        Dim dt_produkt2 As DataTable
+        adapter2.Fill(ds_produkt2, "Kjøp")
+        dt_produkt2 = ds_produkt2.Tables(0)
+        For Each dr_produkt2 In dt_produkt2.Rows
+            Dim kjøp As String
 
+            kjøp = dr_produkt2("Dato")
+            kjøp += " " & dr_produkt2("Produkt_Produkt_id")
+            kjøp += " " & dr_produkt2("Produkt_navn")
+            ComboKUNDEVALG.Items.Add(kjøp)
 
-
-
-        ' Next
+        Next
 
 
     End Sub
@@ -238,5 +246,25 @@ Public Class frmSalgMetro
 
     Private Sub ButtonAdv3_Click(sender As Object, e As EventArgs) Handles ButtonAdv3.Click
         'OPPDATER KURS
+    End Sub
+
+    Private Sub ButtonAdv4_Click(sender As Object, e As EventArgs) Handles ButtonAdv4.Click
+
+
+        'DOOOOO STUFFFFF
+
+
+        Dim kunde_id As Integer = CInt(TextBoxExt7.Text)
+        Dim Kurs_Kurs_id As Integer
+        Dim Dato As Date
+        Dim antall = CInt(TextBoxExt9.Text)
+
+
+        SQL.sporring("Update Kurs_deltagelse SET Kurs_Kurs_id = " & Kurs_Kurs_id & ", Dato = " & Dato & ", Antall = " & antall & " WHERE Kurs_deltagelse.Kurs_Kurs_id = " & Kurs_Kurs_id & " And Kurs_deltagelse.Kunde_Kid = " & kunde_id & " And Kurs_deltagelse.Dato` = " & Dato & "", "Oppdatert bestilling")
+
+
+
+
+
     End Sub
 End Class
