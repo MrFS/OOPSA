@@ -12,7 +12,7 @@ Public Class SQL
     ''' <param name="sql">SQL setning som string</param>
     ''' <returns>DT as New DataTable, Informasjon fra databasen</returns>
 
-    Public Function sporring(ByVal sql As String) As DataTable
+    Public Function sporring(ByVal sql As String, Optional vellykett As String = "") As DataTable
         Dim dt As New DataTable
 
         If con.State = ConnectionState.Closed Then
@@ -27,6 +27,10 @@ Public Class SQL
             da.SelectCommand = cmd
             da.Fill(dt)
             con.Close()
+            If Not vellykett = "" Then
+                MsgBox(vellykett)
+            End If
+
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "SQL Spørring feilet")
             con.Close()
