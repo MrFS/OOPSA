@@ -55,18 +55,7 @@ Public Class frmLager
 
 
 
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            navnEndreText.Text = (dr("Produkt_navn"))
-            antEndreText.Text = (dr("p_antall"))
-            prisEndreText.Text = (dr("Pris"))
-            lagerEndre.Text = (dr("Lager_id"))
-        Next
+
 
 
 
@@ -77,33 +66,6 @@ Public Class frmLager
     End Sub
 
     Private Sub TabControlAdv1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControlAdv1.SelectedIndexChanged
-        VareEndre.Items.Clear()
-        vareSlett.Items.Clear()
-        LagerLeggTil.Items.Clear()
-        lagerEndre.Items.Clear()
-
-
-        Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Lager", con)
-        Dim ds2 = New DataSet
-        Dim dr2 As DataRow
-        Dim dt2 As DataTable
-        adapter2.Fill(ds2, "Lager")
-        dt2 = ds2.Tables(0)
-        For Each dr2 In dt2.Rows
-            LagerLeggTil.Items.Add(dr2("by"))
-            lagerEndre.Items.Add(dr2("by"))
-        Next
-
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            VareEndre.Items.Add(dr("Produkt_navn"))
-            vareSlett.Items.Add(dr("Produkt_navn"))
-        Next
 
 
 
