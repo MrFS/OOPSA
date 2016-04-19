@@ -20,6 +20,7 @@ Public Class frmAdminMetro
     Inherits MetroForm
     Dim Core As New frmAdminCore
     Dim SQL As New SQL
+
     'usikker på om jeg kan dette, men holder på å klikke av å ikke kunne bruke de i prosedyren jeg vill lenger nede! 
     Dim OppdaterBed, OppdaterPriv As Boolean
 
