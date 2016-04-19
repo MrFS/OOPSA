@@ -8,15 +8,6 @@ Public Class frmLager
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
         ' Dim da = New MySqlCommand()
-        Dim sql As New SQL
-
-        Dim dt2 As DataTable
-        Dim dr2 As DataRow
-        dt2 = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & LagerLeggTil.Text & "'")
-        dr2 = dt2.Rows(0)
-
-
-        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & NavnLeggTil.Text & "', '" & PrisLeggTil.Text & "', '" & AntLeggTil.Text & "', '" & dr2("Lager_id") & "')")
 
 
 
@@ -127,9 +118,10 @@ Public Class frmLager
     End Sub
 
     Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles btnSlett.Click
-        Initialize()
-        Dim sql As New MySqlCommand("DELETE FROM Produkt WHERE Produkt_navn ='" & vareSlett.SelectedItem & "'", con)
-        sql.ExecuteNonQuery()
-        GridDataBoundGrid1.Refresh()
+
+    End Sub
+
+    Private Sub NavnLeggTil_TextChanged(sender As Object, e As EventArgs) Handles NavnLeggTil.TextChanged
+
     End Sub
 End Class

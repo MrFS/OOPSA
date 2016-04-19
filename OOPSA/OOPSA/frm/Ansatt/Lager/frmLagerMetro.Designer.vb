@@ -164,7 +164,7 @@ Partial Class frmLagerMetro
         Me.tbLager.ActiveTabColor = System.Drawing.Color.LightGray
         Me.tbLager.ActiveTabFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
         Me.tbLager.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.tbLager.BeforeTouchSize = New System.Drawing.Size(687, 368)
+        Me.tbLager.BeforeTouchSize = New System.Drawing.Size(1287, 562)
         Me.tbLager.Controls.Add(Me.tbOversikt)
         Me.tbLager.Controls.Add(Me.tbAdd)
         Me.tbLager.Controls.Add(Me.tbEdit)
@@ -175,7 +175,7 @@ Partial Class frmLagerMetro
         Me.tbLager.InactiveTabColor = System.Drawing.Color.Transparent
         Me.tbLager.Location = New System.Drawing.Point(0, 0)
         Me.tbLager.Name = "tbLager"
-        Me.tbLager.Size = New System.Drawing.Size(687, 368)
+        Me.tbLager.Size = New System.Drawing.Size(1287, 562)
         Me.tbLager.TabIndex = 0
         Me.tbLager.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tbLager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
@@ -191,7 +191,7 @@ Partial Class frmLagerMetro
         Me.tbOversikt.Location = New System.Drawing.Point(83, 3)
         Me.tbOversikt.Name = "tbOversikt"
         Me.tbOversikt.ShowCloseButton = True
-        Me.tbOversikt.Size = New System.Drawing.Size(600, 361)
+        Me.tbOversikt.Size = New System.Drawing.Size(1200, 555)
         Me.tbOversikt.TabIndex = 1
         Me.tbOversikt.ThemesEnabled = True
         '
@@ -201,12 +201,12 @@ Partial Class frmLagerMetro
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 40)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(600, 321)
+        Me.Panel1.Size = New System.Drawing.Size(1200, 515)
         Me.Panel1.TabIndex = 1
         '
         'tbLagerOversikt
         '
-        Me.tbLagerOversikt.BeforeTouchSize = New System.Drawing.Size(600, 321)
+        Me.tbLagerOversikt.BeforeTouchSize = New System.Drawing.Size(1200, 515)
         Me.tbLagerOversikt.Controls.Add(Me.TabPageAdv1)
         Me.tbLagerOversikt.Controls.Add(Me.TabPageAdv2)
         Me.tbLagerOversikt.Controls.Add(Me.TabPageAdv3)
@@ -215,7 +215,7 @@ Partial Class frmLagerMetro
         Me.tbLagerOversikt.ItemSize = New System.Drawing.Size(75, 35)
         Me.tbLagerOversikt.Location = New System.Drawing.Point(0, 0)
         Me.tbLagerOversikt.Name = "tbLagerOversikt"
-        Me.tbLagerOversikt.Size = New System.Drawing.Size(600, 321)
+        Me.tbLagerOversikt.Size = New System.Drawing.Size(1200, 515)
         Me.tbLagerOversikt.TabIndex = 0
         Me.tbLagerOversikt.ThemesEnabled = True
         '
@@ -227,7 +227,7 @@ Partial Class frmLagerMetro
         Me.TabPageAdv1.Location = New System.Drawing.Point(3, 40)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(593, 277)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(1193, 471)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Totaloversikt"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -248,21 +248,21 @@ Partial Class frmLagerMetro
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.GridDataBoundGrid2)
-        Me.SplitContainer3.Size = New System.Drawing.Size(593, 277)
-        Me.SplitContainer3.SplitterDistance = 197
+        Me.SplitContainer3.Size = New System.Drawing.Size(1193, 471)
+        Me.SplitContainer3.SplitterDistance = 396
         Me.SplitContainer3.TabIndex = 0
         '
         'ButtonAdv4
         '
         Me.ButtonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv4.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv4.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv4.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv4.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv4.IsBackStageButton = False
         Me.ButtonAdv4.Location = New System.Drawing.Point(0, 141)
         Me.ButtonAdv4.Name = "ButtonAdv4"
-        Me.ButtonAdv4.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv4.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv4.TabIndex = 3
         Me.ButtonAdv4.Text = "ButtonAdv4"
         Me.ButtonAdv4.UseVisualStyle = True
@@ -271,13 +271,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv3.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv3.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv3.IsBackStageButton = False
         Me.ButtonAdv3.Location = New System.Drawing.Point(0, 94)
         Me.ButtonAdv3.Name = "ButtonAdv3"
-        Me.ButtonAdv3.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv3.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv3.TabIndex = 2
         Me.ButtonAdv3.Text = "ButtonAdv3"
         Me.ButtonAdv3.UseVisualStyle = True
@@ -286,13 +286,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv2.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv2.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv2.IsBackStageButton = False
         Me.ButtonAdv2.Location = New System.Drawing.Point(0, 47)
         Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv2.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv2.TabIndex = 1
         Me.ButtonAdv2.Text = "ButtonAdv2"
         Me.ButtonAdv2.UseVisualStyle = True
@@ -301,13 +301,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv1.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv1.IsBackStageButton = False
         Me.ButtonAdv1.Location = New System.Drawing.Point(0, 0)
         Me.ButtonAdv1.Name = "ButtonAdv1"
-        Me.ButtonAdv1.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv1.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv1.TabIndex = 0
         Me.ButtonAdv1.Text = "ButtonAdv1"
         Me.ButtonAdv1.UseVisualStyle = True
@@ -355,7 +355,7 @@ Partial Class frmLagerMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(392, 277)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(793, 471)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 1
@@ -382,7 +382,7 @@ Partial Class frmLagerMetro
         Me.TabPageAdv2.Location = New System.Drawing.Point(3, 40)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(593, 277)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(1193, 471)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "Trondheim"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -402,21 +402,21 @@ Partial Class frmLagerMetro
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.GridDataBoundGrid1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(593, 277)
-        Me.SplitContainer1.SplitterDistance = 197
+        Me.SplitContainer1.Size = New System.Drawing.Size(1193, 471)
+        Me.SplitContainer1.SplitterDistance = 396
         Me.SplitContainer1.TabIndex = 0
         '
         'ButtonAdv7
         '
         Me.ButtonAdv7.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv7.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv7.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv7.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv7.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv7.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv7.IsBackStageButton = False
         Me.ButtonAdv7.Location = New System.Drawing.Point(0, 94)
         Me.ButtonAdv7.Name = "ButtonAdv7"
-        Me.ButtonAdv7.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv7.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv7.TabIndex = 3
         Me.ButtonAdv7.Text = "ButtonAdv7"
         Me.ButtonAdv7.UseVisualStyle = True
@@ -425,13 +425,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv6.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv6.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv6.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv6.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv6.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv6.IsBackStageButton = False
         Me.ButtonAdv6.Location = New System.Drawing.Point(0, 47)
         Me.ButtonAdv6.Name = "ButtonAdv6"
-        Me.ButtonAdv6.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv6.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv6.TabIndex = 2
         Me.ButtonAdv6.Text = "ButtonAdv6"
         Me.ButtonAdv6.UseVisualStyle = True
@@ -440,13 +440,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv5.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv5.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv5.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv5.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv5.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv5.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv5.IsBackStageButton = False
         Me.ButtonAdv5.Location = New System.Drawing.Point(0, 0)
         Me.ButtonAdv5.Name = "ButtonAdv5"
-        Me.ButtonAdv5.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv5.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv5.TabIndex = 1
         Me.ButtonAdv5.Text = "ButtonAdv5"
         Me.ButtonAdv5.UseVisualStyle = True
@@ -494,7 +494,7 @@ Partial Class frmLagerMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(392, 277)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(793, 471)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 0
@@ -521,7 +521,7 @@ Partial Class frmLagerMetro
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 40)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(593, 277)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(1193, 471)
         Me.TabPageAdv3.TabIndex = 3
         Me.TabPageAdv3.Text = "Bryne"
         Me.TabPageAdv3.ThemesEnabled = True
@@ -541,21 +541,21 @@ Partial Class frmLagerMetro
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.GridDataBoundGrid3)
-        Me.SplitContainer2.Size = New System.Drawing.Size(593, 277)
-        Me.SplitContainer2.SplitterDistance = 197
+        Me.SplitContainer2.Size = New System.Drawing.Size(1193, 471)
+        Me.SplitContainer2.SplitterDistance = 396
         Me.SplitContainer2.TabIndex = 0
         '
         'ButtonAdv10
         '
         Me.ButtonAdv10.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv10.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv10.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv10.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv10.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv10.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv10.IsBackStageButton = False
         Me.ButtonAdv10.Location = New System.Drawing.Point(0, 94)
         Me.ButtonAdv10.Name = "ButtonAdv10"
-        Me.ButtonAdv10.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv10.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv10.TabIndex = 3
         Me.ButtonAdv10.Text = "ButtonAdv10"
         Me.ButtonAdv10.UseVisualStyle = True
@@ -564,13 +564,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv9.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv9.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv9.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv9.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv9.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv9.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv9.IsBackStageButton = False
         Me.ButtonAdv9.Location = New System.Drawing.Point(0, 47)
         Me.ButtonAdv9.Name = "ButtonAdv9"
-        Me.ButtonAdv9.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv9.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv9.TabIndex = 2
         Me.ButtonAdv9.Text = "ButtonAdv9"
         Me.ButtonAdv9.UseVisualStyle = True
@@ -579,13 +579,13 @@ Partial Class frmLagerMetro
         '
         Me.ButtonAdv8.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv8.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv8.BeforeTouchSize = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv8.BeforeTouchSize = New System.Drawing.Size(396, 47)
         Me.ButtonAdv8.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonAdv8.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv8.IsBackStageButton = False
         Me.ButtonAdv8.Location = New System.Drawing.Point(0, 0)
         Me.ButtonAdv8.Name = "ButtonAdv8"
-        Me.ButtonAdv8.Size = New System.Drawing.Size(197, 47)
+        Me.ButtonAdv8.Size = New System.Drawing.Size(396, 47)
         Me.ButtonAdv8.TabIndex = 1
         Me.ButtonAdv8.Text = "ButtonAdv8"
         Me.ButtonAdv8.UseVisualStyle = True
@@ -633,7 +633,7 @@ Partial Class frmLagerMetro
         Me.GridDataBoundGrid3.Properties.MarkColHeader = False
         Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(392, 277)
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(793, 471)
         Me.GridDataBoundGrid3.SmartSizeBox = False
         Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid3.TabIndex = 1
@@ -660,7 +660,7 @@ Partial Class frmLagerMetro
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(600, 40)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(1200, 40)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "Lageroversikt"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -684,7 +684,7 @@ Partial Class frmLagerMetro
         Me.tbAdd.Location = New System.Drawing.Point(83, 3)
         Me.tbAdd.Name = "tbAdd"
         Me.tbAdd.ShowCloseButton = True
-        Me.tbAdd.Size = New System.Drawing.Size(600, 361)
+        Me.tbAdd.Size = New System.Drawing.Size(1200, 555)
         Me.tbAdd.TabIndex = 2
         Me.tbAdd.ThemesEnabled = True
         '
@@ -694,7 +694,7 @@ Partial Class frmLagerMetro
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 40)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(600, 321)
+        Me.Panel2.Size = New System.Drawing.Size(1200, 515)
         Me.Panel2.TabIndex = 2
         '
         'SplitContainer4
@@ -719,8 +719,8 @@ Partial Class frmLagerMetro
         'SplitContainer4.Panel2
         '
         Me.SplitContainer4.Panel2.Controls.Add(Me.lstAdded)
-        Me.SplitContainer4.Size = New System.Drawing.Size(600, 321)
-        Me.SplitContainer4.SplitterDistance = 373
+        Me.SplitContainer4.Size = New System.Drawing.Size(1200, 515)
+        Me.SplitContainer4.SplitterDistance = 746
         Me.SplitContainer4.TabIndex = 0
         '
         'btnLeggTil
@@ -832,7 +832,7 @@ Partial Class frmLagerMetro
         Me.lstAdded.ItemHeight = 20
         Me.lstAdded.Location = New System.Drawing.Point(0, 0)
         Me.lstAdded.Name = "lstAdded"
-        Me.lstAdded.Size = New System.Drawing.Size(223, 321)
+        Me.lstAdded.Size = New System.Drawing.Size(450, 515)
         Me.lstAdded.TabIndex = 0
         '
         'ToolStripEx2
@@ -843,7 +843,7 @@ Partial Class frmLagerMetro
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(600, 40)
+        Me.ToolStripEx2.Size = New System.Drawing.Size(1200, 40)
         Me.ToolStripEx2.TabIndex = 1
         Me.ToolStripEx2.Text = "Legg til ny vare"
         Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -867,7 +867,7 @@ Partial Class frmLagerMetro
         Me.tbEdit.Location = New System.Drawing.Point(83, 3)
         Me.tbEdit.Name = "tbEdit"
         Me.tbEdit.ShowCloseButton = True
-        Me.tbEdit.Size = New System.Drawing.Size(600, 361)
+        Me.tbEdit.Size = New System.Drawing.Size(1200, 555)
         Me.tbEdit.TabIndex = 3
         Me.tbEdit.ThemesEnabled = True
         '
@@ -877,7 +877,7 @@ Partial Class frmLagerMetro
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 40)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(600, 321)
+        Me.Panel3.Size = New System.Drawing.Size(1200, 515)
         Me.Panel3.TabIndex = 2
         '
         'SplitContainer5
@@ -907,8 +907,8 @@ Partial Class frmLagerMetro
         'SplitContainer5.Panel2
         '
         Me.SplitContainer5.Panel2.Controls.Add(Me.lstVareEndret)
-        Me.SplitContainer5.Size = New System.Drawing.Size(600, 321)
-        Me.SplitContainer5.SplitterDistance = 449
+        Me.SplitContainer5.Size = New System.Drawing.Size(1200, 515)
+        Me.SplitContainer5.SplitterDistance = 898
         Me.SplitContainer5.TabIndex = 0
         '
         'AutoLabel2
@@ -1068,7 +1068,7 @@ Partial Class frmLagerMetro
         Me.lstVareEndret.ItemHeight = 20
         Me.lstVareEndret.Location = New System.Drawing.Point(0, 0)
         Me.lstVareEndret.Name = "lstVareEndret"
-        Me.lstVareEndret.Size = New System.Drawing.Size(147, 321)
+        Me.lstVareEndret.Size = New System.Drawing.Size(298, 515)
         Me.lstVareEndret.TabIndex = 0
         '
         'ToolStripEx3
@@ -1079,7 +1079,7 @@ Partial Class frmLagerMetro
         Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx3.Name = "ToolStripEx3"
         Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(600, 40)
+        Me.ToolStripEx3.Size = New System.Drawing.Size(1200, 40)
         Me.ToolStripEx3.TabIndex = 1
         Me.ToolStripEx3.Text = "Endre eksisterende varer"
         Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1112,7 +1112,7 @@ Partial Class frmLagerMetro
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
         Me.CaptionFont = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClientSize = New System.Drawing.Size(687, 368)
+        Me.ClientSize = New System.Drawing.Size(1287, 562)
         Me.Controls.Add(Me.tbLager)
         Me.Name = "frmLagerMetro"
         Me.ShowIcon = False
@@ -1244,11 +1244,11 @@ Partial Class frmLagerMetro
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lstVareEndret As ListBox
-    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Private WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
     Private WithEvents LagerRapportALLEBindingSource As BindingSource
     Private WithEvents Drift8_2016DataSetTrondheimLager As drift8_2016DataSetTrondheimLager
     Private WithEvents LagerRapportTrondheimBindingSource As BindingSource
     Private WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
     Private WithEvents LagerRapportStavangerBindingSource As BindingSource
+    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
