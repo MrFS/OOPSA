@@ -44,7 +44,7 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle14 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle15 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle16 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource5 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim GridBaseStyle17 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle18 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle19 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
@@ -61,7 +61,7 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle30 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle31 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle32 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim ReportDataSource5 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource6 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim GridBaseStyle33 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle34 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle35 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
@@ -70,13 +70,12 @@ Partial Class frmAdminMetro
         Dim GridBaseStyle38 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle39 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Dim GridBaseStyle40 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim CaptionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage()
         Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
         Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
-        Me.VisAktiveLeieBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.drift8_2016dsVisLeieRapportView = New OOPSA.drift8_2016dsVisLeieRapportView()
         Me.VisLeieBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SalgsRaportBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.KjøpBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -292,13 +291,17 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.VisAnsattesSalgBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dtSalgReportingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TabPageAdv8 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+        Me.ToolStripEx12 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.ReportViewer6 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.VisAktiveLeieBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.drift8_2016dsVisLeieRapportView = New OOPSA.drift8_2016dsVisLeieRapportView()
         Me.VisAktiveLeieTableAdapter = New OOPSA.drift8_2016dsVisLeieRapportViewTableAdapters.VisAktiveLeieTableAdapter()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VisAktiveLeieBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drift8_2016dsVisLeieRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VisLeieBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -432,6 +435,10 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7.SuspendLayout()
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageAdv8.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        CType(Me.VisAktiveLeieBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drift8_2016dsVisLeieRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -453,16 +460,6 @@ Partial Class frmAdminMetro
         '
         Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
         Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'VisAktiveLeieBindingSource
-        '
-        Me.VisAktiveLeieBindingSource.DataMember = "VisAktiveLeie"
-        Me.VisAktiveLeieBindingSource.DataSource = Me.drift8_2016dsVisLeieRapportView
-        '
-        'drift8_2016dsVisLeieRapportView
-        '
-        Me.drift8_2016dsVisLeieRapportView.DataSetName = "drift8_2016dsVisLeieRapportView"
-        Me.drift8_2016dsVisLeieRapportView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'VisLeieBindingSource
         '
@@ -562,6 +559,7 @@ Partial Class frmAdminMetro
         Me.TabControlAdv4.Controls.Add(Me.reportSalg)
         Me.TabControlAdv4.Controls.Add(Me.reportLager)
         Me.TabControlAdv4.Controls.Add(Me.reportLeie)
+        Me.TabControlAdv4.Controls.Add(Me.TabPageAdv8)
         Me.TabControlAdv4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv4.InactiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv4.Location = New System.Drawing.Point(0, 0)
@@ -1453,6 +1451,7 @@ Partial Class frmAdminMetro
         '
         'StatusStripEx1
         '
+        Me.StatusStripEx1.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -2024,9 +2023,9 @@ Partial Class frmAdminMetro
         'ReportViewer4
         '
         Me.ReportViewer4.Dock = System.Windows.Forms.DockStyle.Fill
-        ReportDataSource4.Name = "dsSalgsRapport"
-        ReportDataSource4.Value = Me.SalgsRaportBindingSource
-        Me.ReportViewer4.LocalReport.DataSources.Add(ReportDataSource4)
+        ReportDataSource5.Name = "dsSalgsRapport"
+        ReportDataSource5.Value = Me.SalgsRaportBindingSource
+        Me.ReportViewer4.LocalReport.DataSources.Add(ReportDataSource5)
         Me.ReportViewer4.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         Me.ReportViewer4.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer4.Name = "ReportViewer4"
@@ -2098,10 +2097,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 35)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 427)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 394)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -2119,7 +2118,7 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.dgvSQLQuery)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 427)
+        Me.SplitContainer1.Size = New System.Drawing.Size(865, 394)
         Me.SplitContainer1.SplitterDistance = 288
         Me.SplitContainer1.TabIndex = 0
         '
@@ -2148,13 +2147,13 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripEx10)
-        Me.SplitContainer2.Size = New System.Drawing.Size(288, 427)
-        Me.SplitContainer2.SplitterDistance = 229
+        Me.SplitContainer2.Size = New System.Drawing.Size(288, 394)
+        Me.SplitContainer2.SplitterDistance = 211
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2166,7 +2165,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2178,7 +2177,7 @@ Partial Class frmAdminMetro
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2190,7 +2189,7 @@ Partial Class frmAdminMetro
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2202,7 +2201,7 @@ Partial Class frmAdminMetro
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(181, 29)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtServer.Location = New System.Drawing.Point(104, 43)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -2281,7 +2280,7 @@ Partial Class frmAdminMetro
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 42)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(288, 152)
+        Me.Panel4.Size = New System.Drawing.Size(288, 137)
         Me.Panel4.TabIndex = 2
         '
         'rtbSQLQuery
@@ -2290,7 +2289,7 @@ Partial Class frmAdminMetro
         Me.rtbSQLQuery.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbSQLQuery.Location = New System.Drawing.Point(0, 0)
         Me.rtbSQLQuery.Name = "rtbSQLQuery"
-        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 152)
+        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 137)
         Me.rtbSQLQuery.TabIndex = 0
         Me.rtbSQLQuery.Text = "SELECT {column_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "FROM {table_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE {condition}"
         '
@@ -2369,7 +2368,7 @@ Partial Class frmAdminMetro
         Me.dgvSQLQuery.Properties.MarkColHeader = False
         Me.dgvSQLQuery.Properties.MarkRowHeader = False
         Me.dgvSQLQuery.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvSQLQuery.Size = New System.Drawing.Size(573, 427)
+        Me.dgvSQLQuery.Size = New System.Drawing.Size(573, 394)
         Me.dgvSQLQuery.SmartSizeBox = False
         Me.dgvSQLQuery.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvSQLQuery.TabIndex = 0
@@ -2550,7 +2549,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid3.Properties.MarkColHeader = False
         Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 427)
         Me.GridDataBoundGrid3.SmartSizeBox = False
         Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid3.TabIndex = 0
@@ -2625,7 +2624,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 427)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 0
@@ -2660,13 +2659,13 @@ Partial Class frmAdminMetro
         'ReportViewer5
         '
         Me.ReportViewer5.Dock = System.Windows.Forms.DockStyle.Fill
-        ReportDataSource5.Name = "LagerRapport"
-        ReportDataSource5.Value = Me.LagerRapportALLEBindingSource
-        Me.ReportViewer5.LocalReport.DataSources.Add(ReportDataSource5)
+        ReportDataSource6.Name = "LagerRapport"
+        ReportDataSource6.Value = Me.LagerRapportALLEBindingSource
+        Me.ReportViewer5.LocalReport.DataSources.Add(ReportDataSource6)
         Me.ReportViewer5.LocalReport.ReportEmbeddedResource = "OOPSA.LagerRapport.rdlc"
         Me.ReportViewer5.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer5.Name = "ReportViewer5"
-        Me.ReportViewer5.Size = New System.Drawing.Size(865, 394)
+        Me.ReportViewer5.Size = New System.Drawing.Size(865, 427)
         Me.ReportViewer5.TabIndex = 1
         '
         'ToolStripEx4
@@ -3164,6 +3163,62 @@ Partial Class frmAdminMetro
         '
         Me.VisAnsattesSalgBindingSource.DataMember = "VisAnsattesSalg"
         '
+        'TabPageAdv8
+        '
+        Me.TabPageAdv8.Controls.Add(Me.Panel12)
+        Me.TabPageAdv8.Controls.Add(Me.ToolStripEx12)
+        Me.TabPageAdv8.Image = Global.OOPSA.My.Resources.Resources.tbSalgChart
+        Me.TabPageAdv8.ImageSize = New System.Drawing.Size(32, 32)
+        Me.TabPageAdv8.Location = New System.Drawing.Point(48, 3)
+        Me.TabPageAdv8.Name = "TabPageAdv8"
+        Me.TabPageAdv8.ShowCloseButton = True
+        Me.TabPageAdv8.Size = New System.Drawing.Size(813, 369)
+        Me.TabPageAdv8.TabIndex = 4
+        Me.TabPageAdv8.ThemesEnabled = True
+        '
+        'ToolStripEx12
+        '
+        Me.ToolStripEx12.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx12.Image = Nothing
+        Me.ToolStripEx12.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripEx12.Name = "ToolStripEx12"
+        Me.ToolStripEx12.Office12Mode = False
+        Me.ToolStripEx12.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx12.TabIndex = 0
+        Me.ToolStripEx12.Text = "Statistikk"
+        Me.ToolStripEx12.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+        '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.ReportViewer6)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(0, 40)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(813, 329)
+        Me.Panel12.TabIndex = 1
+        '
+        'ReportViewer6
+        '
+        Me.ReportViewer6.Dock = System.Windows.Forms.DockStyle.Fill
+        ReportDataSource4.Name = "SalgGrafer"
+        ReportDataSource4.Value = Me.SalgsRaportBindingSource
+        Me.ReportViewer6.LocalReport.DataSources.Add(ReportDataSource4)
+        Me.ReportViewer6.LocalReport.ReportEmbeddedResource = "OOPSA.Report1.rdlc"
+        Me.ReportViewer6.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer6.Name = "ReportViewer6"
+        Me.ReportViewer6.Size = New System.Drawing.Size(813, 329)
+        Me.ReportViewer6.TabIndex = 0
+        '
+        'VisAktiveLeieBindingSource
+        '
+        Me.VisAktiveLeieBindingSource.DataMember = "VisAktiveLeie"
+        Me.VisAktiveLeieBindingSource.DataSource = Me.drift8_2016dsVisLeieRapportView
+        '
+        'drift8_2016dsVisLeieRapportView
+        '
+        Me.drift8_2016dsVisLeieRapportView.DataSetName = "drift8_2016dsVisLeieRapportView"
+        Me.drift8_2016dsVisLeieRapportView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'VisAktiveLeieTableAdapter
         '
         Me.VisAktiveLeieTableAdapter.ClearBeforeFill = True
@@ -3190,8 +3245,6 @@ Partial Class frmAdminMetro
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VisAktiveLeieBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drift8_2016dsVisLeieRapportView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VisLeieBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalgsRaportBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KjøpBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3348,6 +3401,11 @@ Partial Class frmAdminMetro
         Me.TabControlAdv7.ResumeLayout(False)
         CType(Me.VisAnsattesSalgBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtSalgReportingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPageAdv8.ResumeLayout(False)
+        Me.TabPageAdv8.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        CType(Me.VisAktiveLeieBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drift8_2016dsVisLeieRapportView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3561,17 +3619,21 @@ Partial Class frmAdminMetro
     Friend WithEvents dgvSQLQuery As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents ToolStripButton6 As ToolStripButton
     Friend WithEvents ToolStripButton7 As ToolStripButton
-    Private WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ToolStripEx9 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ReportViewer4 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents TabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ReportViewer5 As Microsoft.Reporting.WinForms.ReportViewer
     Private WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
     Private WithEvents LagerRapportALLEBindingSource As BindingSource
-    Private WithEvents TabControlAdv3 As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Private WithEvents VisLeieBindingSource As BindingSource
     Friend WithEvents VisAktiveLeieTableAdapter As drift8_2016dsVisLeieRapportViewTableAdapters.VisAktiveLeieTableAdapter
     Private WithEvents VisAktiveLeieBindingSource As BindingSource
     Friend WithEvents drift8_2016dsVisLeieRapportView As drift8_2016dsVisLeieRapportView
+    Friend WithEvents TabPageAdv8 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents ReportViewer6 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents ToolStripEx12 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TabControlAdv3 As Syncfusion.Windows.Forms.Tools.TabControlAdv
 End Class

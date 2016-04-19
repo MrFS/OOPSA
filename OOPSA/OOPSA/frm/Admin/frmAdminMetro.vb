@@ -24,6 +24,7 @@ Public Class frmAdminMetro
     Dim OppdaterBed, OppdaterPriv As Boolean
 
     Public Sub New()
+        Initialize()
         InitializeComponent()
     End Sub
 
@@ -98,6 +99,7 @@ Public Class frmAdminMetro
         Me.ReportViewer1.RefreshReport()
         Me.ReportViewer2.RefreshReport()
         Me.ReportViewer3.RefreshReport()
+        Me.ReportViewer6.RefreshReport()
     End Sub
 
     Private Sub txtAlignLeft_Click(sender As Object, e As EventArgs) Handles txtAlignLeft.Click
