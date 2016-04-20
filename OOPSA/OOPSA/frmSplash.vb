@@ -36,26 +36,26 @@ Public Class frmSplash
 
             ''List the names of all files in the specified directory
 
-            Dim fileList As String
-            Dim fileName As String
-            fileList = My.Computer.FileSystem.ReadAllText(Environment.CurrentDirectory & "\required.txt")
-            For X = 0 To fileList.Split(vbCrLf).Count - 1
-                fileName = fileList.Split(vbCrLf).ElementAt(X).ToString.Replace(vbCr, "").Replace(vbLf, "")
-                If My.Computer.FileSystem.FileExists(Environment.CurrentDirectory & "\" & fileName) Then
-                    AutoLabel3.Text = fileName
+            'Dim fileList As String
+            'Dim fileName As String
+            'fileList = My.Computer.FileSystem.ReadAllText(Environment.CurrentDirectory & "\required.txt")
+            'For X = 0 To fileList.Split(vbCrLf).Count - 1
+            '    fileName = fileList.Split(vbCrLf).ElementAt(X).ToString.Replace(vbCr, "").Replace(vbLf, "")
+            '    'If My.Computer.FileSystem.FileExists(Environment.CurrentDirectory & "\" & fileName) Then
+            '    '    AutoLabel3.Text = fileName
 
-                    AutoLabel3.Refresh()
-                    Me.Refresh()
+            '    '    AutoLabel3.Refresh()
+            '    '    Me.Refresh()
 
-                    Thread.Sleep(25)
-                Else
-                    tmrSplash.Enabled = 0
-                    MsgBox(fileName & " is not found!" & vbCrLf & "Exiting application and running update!")
-                    Process.Start("chkUpdate.exe")
-                    Environment.Exit(0)
-                End If
+            '    '    Thread.Sleep(25)
+            '    'Else
+            '    '    tmrSplash.Enabled = 0
+            '    '    MsgBox(fileName & " is not found!" & vbCrLf & "Exiting application and running update!")
+            '    '    Process.Start("chkUpdate.exe")
+            '    '    Environment.Exit(0)
+            '    'End If
 
-            Next
+            'Next
 
             'For Each dra In diar1
 

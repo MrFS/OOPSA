@@ -65,11 +65,13 @@ Public Class frmSalgMetro
         Dim produkt() As String = ComboRegSalg.Text.Split(" ")
         Dim lager() As String = ComboSalgLager.Text.Split(" ")
         Dim avanse As Integer = CInt(txtavanse.Text)
-        Dim ansatt_id As Integer = UCore.Getuserid(UCore.currentUsr)
-        Dim kunde_id() As String = cmbKundeID.Text.Split(" ")
+        'Dim ansatt_id As Integer = UCore.Getuserid()
+        Dim ansatt_id As Integer = UCore.UIDProp
+        Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
 
         Try
+            MsgBox(kunde_id(0).ToString)
             SQL.sporring("INSERT INTO `Kjøp`(`S_id`, `dato`, `Avanse`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_Produkt_id`, `Antall`, `Lager_id`) VALUES (NULL,CURDATE()," & avanse & "," & ansatt_id & "," & kunde_id(0) & "," & produkt(0) & "," & antall & "," & lager(0) & ")")
             MsgBox("Salget er registert", MsgBoxStyle.Information, "Salg Registrering")
         Catch ex As Exception
@@ -220,6 +222,11 @@ Public Class frmSalgMetro
         Dim Kurs_id() As String = ComboKurs1.Text.Split(" ")
         Dim antallPersoner As Integer = TextBoxExt3.Text
         Dim dato As Date = dtpKurs.Value
+
+
+        MsgBox(dato.GetDateTimeFormats())
+
+
 
         SQL.sporring("INSERT INTO `drift8_2016`.`Kurs_deltagelse` (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`, `Antall`) VALUES ('" & Kurs_id(0) & "', '" & kid & "', '" & dato & "', '" & antallPersoner & "');")
         MsgBox("Kurset er registrert", MsgBoxStyle.Information, "Registering av kurs")

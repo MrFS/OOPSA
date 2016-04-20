@@ -3,7 +3,7 @@
 Public Class Login
     Public Sub Login(user As String, pass As String)
         Dim SHA As New SHA512
-
+        Dim UCore As New UserCore
         user = My.Forms.frmMetroLogin.txtUsr.Text.Replace("'", "\'")
         pass = My.Forms.frmMetroLogin.txtPw.Text.Replace("'", "\'")
 
@@ -23,6 +23,10 @@ Public Class Login
         If (ds.Tables("Login").Rows.Count > 0) Then
 
             Dim avd As String = ds.Tables("Login").Rows(0).Item(2).ToString
+
+            UCore.crntUsr = user
+
+            UCore.FetchUID()
 
             Select Case avd
                 Case = "dl"

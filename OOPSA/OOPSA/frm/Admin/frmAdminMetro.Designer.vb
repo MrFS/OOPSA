@@ -487,7 +487,7 @@ Partial Class frmAdminMetro
         '
         Me.tbAnsKund.ActiveTabColor = System.Drawing.Color.LightGray
         Me.tbAnsKund.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.tbAnsKund.BeforeTouchSize = New System.Drawing.Size(979, 479)
+        Me.tbAnsKund.BeforeTouchSize = New System.Drawing.Size(1222, 601)
         Me.tbAnsKund.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tbAnsKund.BorderWidth = 2
         Me.tbAnsKund.Controls.Add(Me.tbOverview)
@@ -501,11 +501,11 @@ Partial Class frmAdminMetro
         Me.tbAnsKund.InactiveTabColor = System.Drawing.Color.Transparent
         Me.tbAnsKund.ItemSize = New System.Drawing.Size(104, 48)
         Me.tbAnsKund.Location = New System.Drawing.Point(0, 0)
-        Me.tbAnsKund.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbAnsKund.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.tbAnsKund.Name = "tbAnsKund"
         Me.tbAnsKund.RotateTextWhenVertical = True
         Me.tbAnsKund.ShowToolTips = True
-        Me.tbAnsKund.Size = New System.Drawing.Size(979, 479)
+        Me.tbAnsKund.Size = New System.Drawing.Size(1222, 601)
         Me.tbAnsKund.TabIndex = 0
         Me.tbAnsKund.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tbAnsKund.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
@@ -522,21 +522,22 @@ Partial Class frmAdminMetro
         Me.tbOverview.Margin = New System.Windows.Forms.Padding(2)
         Me.tbOverview.Name = "tbOverview"
         Me.tbOverview.ShowCloseButton = True
-        Me.tbOverview.Size = New System.Drawing.Size(872, 475)
+        Me.tbOverview.Size = New System.Drawing.Size(1115, 597)
         Me.tbOverview.TabIndex = 1
         Me.tbOverview.ThemesEnabled = True
         '
         'TabControlAdv3
         '
         Me.TabControlAdv3.ActiveTabColor = System.Drawing.Color.White
-        Me.TabControlAdv3.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv3.BeforeTouchSize = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv3.Controls.Add(Me.TabPageAdv3)
         Me.TabControlAdv3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv3.InactiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv3.ItemSize = New System.Drawing.Size(102, 48)
-        Me.TabControlAdv3.Location = New System.Drawing.Point(0, 42)
+        Me.TabControlAdv3.Location = New System.Drawing.Point(0, 47)
+        Me.TabControlAdv3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv3.Name = "TabControlAdv3"
-        Me.TabControlAdv3.Size = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv3.Size = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv3.TabIndex = 1
         Me.TabControlAdv3.TabPanelBackColor = System.Drawing.Color.White
         Me.TabControlAdv3.ThemesEnabled = True
@@ -547,9 +548,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv3.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(32, 32)
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 53)
+        Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(865, 376)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(1108, 493)
         Me.TabPageAdv3.TabIndex = 1
         Me.TabPageAdv3.Text = "Rapporter"
         Me.TabPageAdv3.ThemesEnabled = True
@@ -558,16 +560,17 @@ Partial Class frmAdminMetro
         '
         Me.TabControlAdv4.ActiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv4.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv4.BeforeTouchSize = New System.Drawing.Size(865, 376)
+        Me.TabControlAdv4.BeforeTouchSize = New System.Drawing.Size(1108, 493)
         Me.TabControlAdv4.Controls.Add(Me.reportSalg)
         Me.TabControlAdv4.Controls.Add(Me.reportLager)
         Me.TabControlAdv4.Controls.Add(Me.reportLeie)
         Me.TabControlAdv4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv4.InactiveTabColor = System.Drawing.Color.White
         Me.TabControlAdv4.Location = New System.Drawing.Point(0, 0)
+        Me.TabControlAdv4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv4.Name = "TabControlAdv4"
         Me.TabControlAdv4.RotateTextWhenVertical = True
-        Me.TabControlAdv4.Size = New System.Drawing.Size(865, 376)
+        Me.TabControlAdv4.Size = New System.Drawing.Size(1108, 493)
         Me.TabControlAdv4.TabIndex = 0
         Me.TabControlAdv4.TabPanelBackColor = System.Drawing.Color.White
         Me.TabControlAdv4.ThemesEnabled = True
@@ -579,9 +582,10 @@ Partial Class frmAdminMetro
         Me.reportSalg.Image = Global.OOPSA.My.Resources.Resources.tbSalg
         Me.reportSalg.ImageSize = New System.Drawing.Size(32, 32)
         Me.reportSalg.Location = New System.Drawing.Point(48, 3)
+        Me.reportSalg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.reportSalg.Name = "reportSalg"
         Me.reportSalg.ShowCloseButton = True
-        Me.reportSalg.Size = New System.Drawing.Size(813, 369)
+        Me.reportSalg.Size = New System.Drawing.Size(1056, 486)
         Me.reportSalg.TabIndex = 1
         Me.reportSalg.ThemesEnabled = True
         '
@@ -589,9 +593,10 @@ Partial Class frmAdminMetro
         '
         Me.Panel5.Controls.Add(Me.ReportViewer1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 40)
+        Me.Panel5.Location = New System.Drawing.Point(0, 45)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(813, 329)
+        Me.Panel5.Size = New System.Drawing.Size(1056, 441)
         Me.Panel5.TabIndex = 1
         '
         'ReportViewer1
@@ -602,8 +607,9 @@ Partial Class frmAdminMetro
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(813, 329)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1056, 441)
         Me.ReportViewer1.TabIndex = 0
         '
         'ToolStripEx7
@@ -614,7 +620,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx7.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx7.Name = "ToolStripEx7"
         Me.ToolStripEx7.Office12Mode = False
-        Me.ToolStripEx7.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx7.Size = New System.Drawing.Size(1056, 45)
         Me.ToolStripEx7.TabIndex = 0
         Me.ToolStripEx7.Text = "Salgsrapporter"
         Me.ToolStripEx7.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -626,9 +632,10 @@ Partial Class frmAdminMetro
         Me.reportLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
         Me.reportLager.ImageSize = New System.Drawing.Size(32, 32)
         Me.reportLager.Location = New System.Drawing.Point(48, 3)
+        Me.reportLager.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.reportLager.Name = "reportLager"
         Me.reportLager.ShowCloseButton = True
-        Me.reportLager.Size = New System.Drawing.Size(813, 369)
+        Me.reportLager.Size = New System.Drawing.Size(1056, 486)
         Me.reportLager.TabIndex = 2
         Me.reportLager.ThemesEnabled = True
         '
@@ -636,9 +643,10 @@ Partial Class frmAdminMetro
         '
         Me.Panel8.Controls.Add(Me.ReportViewer2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(0, 40)
+        Me.Panel8.Location = New System.Drawing.Point(0, 45)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(813, 329)
+        Me.Panel8.Size = New System.Drawing.Size(1056, 441)
         Me.Panel8.TabIndex = 2
         '
         'ReportViewer2
@@ -649,8 +657,9 @@ Partial Class frmAdminMetro
         Me.ReportViewer2.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer2.LocalReport.ReportEmbeddedResource = "OOPSA.LagerRapport.rdlc"
         Me.ReportViewer2.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer2.Name = "ReportViewer2"
-        Me.ReportViewer2.Size = New System.Drawing.Size(813, 329)
+        Me.ReportViewer2.Size = New System.Drawing.Size(1056, 441)
         Me.ReportViewer2.TabIndex = 0
         '
         'ToolStripEx8
@@ -661,7 +670,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx8.Name = "ToolStripEx8"
         Me.ToolStripEx8.Office12Mode = False
-        Me.ToolStripEx8.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx8.Size = New System.Drawing.Size(1056, 45)
         Me.ToolStripEx8.TabIndex = 1
         Me.ToolStripEx8.Text = "Lagerrapporter"
         Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -673,9 +682,10 @@ Partial Class frmAdminMetro
         Me.reportLeie.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.reportLeie.ImageSize = New System.Drawing.Size(32, 32)
         Me.reportLeie.Location = New System.Drawing.Point(48, 3)
+        Me.reportLeie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.reportLeie.Name = "reportLeie"
         Me.reportLeie.ShowCloseButton = True
-        Me.reportLeie.Size = New System.Drawing.Size(813, 369)
+        Me.reportLeie.Size = New System.Drawing.Size(1056, 486)
         Me.reportLeie.TabIndex = 3
         Me.reportLeie.ThemesEnabled = True
         '
@@ -683,9 +693,10 @@ Partial Class frmAdminMetro
         '
         Me.Panel9.Controls.Add(Me.ReportViewer3)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(0, 40)
+        Me.Panel9.Location = New System.Drawing.Point(0, 45)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(813, 329)
+        Me.Panel9.Size = New System.Drawing.Size(1056, 441)
         Me.Panel9.TabIndex = 2
         '
         'ReportViewer3
@@ -696,8 +707,9 @@ Partial Class frmAdminMetro
         Me.ReportViewer3.LocalReport.DataSources.Add(ReportDataSource3)
         Me.ReportViewer3.LocalReport.ReportEmbeddedResource = "OOPSA.LeieRapport.rdlc"
         Me.ReportViewer3.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer3.Name = "ReportViewer3"
-        Me.ReportViewer3.Size = New System.Drawing.Size(813, 329)
+        Me.ReportViewer3.Size = New System.Drawing.Size(1056, 441)
         Me.ReportViewer3.TabIndex = 0
         '
         'ToolStripEx9
@@ -708,7 +720,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx9.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx9.Name = "ToolStripEx9"
         Me.ToolStripEx9.Office12Mode = False
-        Me.ToolStripEx9.Size = New System.Drawing.Size(813, 40)
+        Me.ToolStripEx9.Size = New System.Drawing.Size(1056, 45)
         Me.ToolStripEx9.TabIndex = 1
         Me.ToolStripEx9.Text = "Utleierapporter"
         Me.ToolStripEx9.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -723,7 +735,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(872, 42)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(1115, 47)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "Oversikt"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -734,19 +746,19 @@ Partial Class frmAdminMetro
         Me.ToolStripDropDownButton1.Image = Global.OOPSA.My.Resources.Resources.loginLeaf
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(73, 24)
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(83, 24)
         Me.ToolStripDropDownButton1.Text = "Forms"
         '
         'FrmLagerToolStripMenuItem
         '
         Me.FrmLagerToolStripMenuItem.Name = "FrmLagerToolStripMenuItem"
-        Me.FrmLagerToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.FrmLagerToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
         Me.FrmLagerToolStripMenuItem.Text = "frmLager"
         '
         'FrmSalgToolStripMenuItem
         '
         Me.FrmSalgToolStripMenuItem.Name = "FrmSalgToolStripMenuItem"
-        Me.FrmSalgToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.FrmSalgToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
         Me.FrmSalgToolStripMenuItem.Text = "frmSalg"
         '
         'ToolStripButton2
@@ -755,7 +767,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton2.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(84, 24)
         Me.ToolStripButton2.Text = "Logg ut"
         '
         'tbPersoner
@@ -765,10 +777,10 @@ Partial Class frmAdminMetro
         Me.tbPersoner.Image = Global.OOPSA.My.Resources.Resources.tbAnsatte
         Me.tbPersoner.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbPersoner.Location = New System.Drawing.Point(105, 2)
-        Me.tbPersoner.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbPersoner.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.tbPersoner.Name = "tbPersoner"
         Me.tbPersoner.ShowCloseButton = True
-        Me.tbPersoner.Size = New System.Drawing.Size(872, 475)
+        Me.tbPersoner.Size = New System.Drawing.Size(1115, 597)
         Me.tbPersoner.TabIndex = 2
         Me.tbPersoner.ThemesEnabled = True
         '
@@ -777,20 +789,22 @@ Partial Class frmAdminMetro
         Me.GradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GradientPanel1.Controls.Add(Me.TabControlAdv5)
         Me.GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GradientPanel1.Location = New System.Drawing.Point(0, 42)
+        Me.GradientPanel1.Location = New System.Drawing.Point(0, 47)
+        Me.GradientPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GradientPanel1.Name = "GradientPanel1"
-        Me.GradientPanel1.Size = New System.Drawing.Size(872, 433)
+        Me.GradientPanel1.Size = New System.Drawing.Size(1115, 550)
         Me.GradientPanel1.TabIndex = 5
         '
         'TabControlAdv5
         '
-        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv5.BeforeTouchSize = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv5.Controls.Add(Me.tbAnsatte)
         Me.TabControlAdv5.Controls.Add(Me.tbKunder)
         Me.TabControlAdv5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv5.Location = New System.Drawing.Point(0, 0)
+        Me.TabControlAdv5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv5.Name = "TabControlAdv5"
-        Me.TabControlAdv5.Size = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv5.Size = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv5.TabIndex = 0
         Me.TabControlAdv5.ThemesEnabled = True
         '
@@ -799,10 +813,11 @@ Partial Class frmAdminMetro
         Me.tbAnsatte.Controls.Add(Me.SplitContainerAdv1)
         Me.tbAnsatte.Image = Nothing
         Me.tbAnsatte.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbAnsatte.Location = New System.Drawing.Point(3, 35)
+        Me.tbAnsatte.Location = New System.Drawing.Point(4, 44)
+        Me.tbAnsatte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbAnsatte.Name = "tbAnsatte"
         Me.tbAnsatte.ShowCloseButton = True
-        Me.tbAnsatte.Size = New System.Drawing.Size(865, 394)
+        Me.tbAnsatte.Size = New System.Drawing.Size(1081, 492)
         Me.tbAnsatte.TabIndex = 1
         Me.tbAnsatte.Text = "Ansatte"
         Me.tbAnsatte.ThemesEnabled = True
@@ -812,6 +827,7 @@ Partial Class frmAdminMetro
         Me.SplitContainerAdv1.BeforeTouchSize = 7
         Me.SplitContainerAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainerAdv1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainerAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainerAdv1.Name = "SplitContainerAdv1"
         '
         'SplitContainerAdv1.Panel1
@@ -819,12 +835,14 @@ Partial Class frmAdminMetro
         Me.SplitContainerAdv1.Panel1.Controls.Add(Me.btnAnsattUpdate)
         Me.SplitContainerAdv1.Panel1.Controls.Add(Me.btnChngPW)
         Me.SplitContainerAdv1.Panel1.Controls.Add(Me.btnAddUsr)
+        Me.SplitContainerAdv1.Panel1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         '
         'SplitContainerAdv1.Panel2
         '
         Me.SplitContainerAdv1.Panel2.Controls.Add(Me.TabControlAdv6)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 394)
-        Me.SplitContainerAdv1.SplitterDistance = 173
+        Me.SplitContainerAdv1.Panel2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(1081, 492)
+        Me.SplitContainerAdv1.SplitterDistance = 216
         Me.SplitContainerAdv1.TabIndex = 4
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
         '
@@ -832,13 +850,14 @@ Partial Class frmAdminMetro
         '
         Me.btnAnsattUpdate.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnAnsattUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAnsattUpdate.BeforeTouchSize = New System.Drawing.Size(173, 60)
+        Me.btnAnsattUpdate.BeforeTouchSize = New System.Drawing.Size(216, 75)
         Me.btnAnsattUpdate.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAnsattUpdate.ForeColor = System.Drawing.Color.White
         Me.btnAnsattUpdate.IsBackStageButton = False
-        Me.btnAnsattUpdate.Location = New System.Drawing.Point(0, 120)
+        Me.btnAnsattUpdate.Location = New System.Drawing.Point(0, 150)
+        Me.btnAnsattUpdate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAnsattUpdate.Name = "btnAnsattUpdate"
-        Me.btnAnsattUpdate.Size = New System.Drawing.Size(173, 60)
+        Me.btnAnsattUpdate.Size = New System.Drawing.Size(216, 75)
         Me.btnAnsattUpdate.TabIndex = 4
         Me.btnAnsattUpdate.Text = "Oppdater Ansatte"
         Me.btnAnsattUpdate.UseVisualStyle = True
@@ -847,13 +866,14 @@ Partial Class frmAdminMetro
         '
         Me.btnChngPW.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnChngPW.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnChngPW.BeforeTouchSize = New System.Drawing.Size(173, 60)
+        Me.btnChngPW.BeforeTouchSize = New System.Drawing.Size(216, 75)
         Me.btnChngPW.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnChngPW.ForeColor = System.Drawing.Color.White
         Me.btnChngPW.IsBackStageButton = False
-        Me.btnChngPW.Location = New System.Drawing.Point(0, 60)
+        Me.btnChngPW.Location = New System.Drawing.Point(0, 75)
+        Me.btnChngPW.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnChngPW.Name = "btnChngPW"
-        Me.btnChngPW.Size = New System.Drawing.Size(173, 60)
+        Me.btnChngPW.Size = New System.Drawing.Size(216, 75)
         Me.btnChngPW.TabIndex = 3
         Me.btnChngPW.Text = "Endre passord " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for ansatt"
         Me.btnChngPW.UseVisualStyle = True
@@ -862,25 +882,27 @@ Partial Class frmAdminMetro
         '
         Me.btnAddUsr.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnAddUsr.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAddUsr.BeforeTouchSize = New System.Drawing.Size(173, 60)
+        Me.btnAddUsr.BeforeTouchSize = New System.Drawing.Size(216, 75)
         Me.btnAddUsr.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAddUsr.ForeColor = System.Drawing.Color.White
         Me.btnAddUsr.IsBackStageButton = False
         Me.btnAddUsr.Location = New System.Drawing.Point(0, 0)
+        Me.btnAddUsr.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddUsr.Name = "btnAddUsr"
-        Me.btnAddUsr.Size = New System.Drawing.Size(173, 60)
+        Me.btnAddUsr.Size = New System.Drawing.Size(216, 75)
         Me.btnAddUsr.TabIndex = 2
         Me.btnAddUsr.Text = "Legg til ansatt"
         Me.btnAddUsr.UseVisualStyle = True
         '
         'TabControlAdv6
         '
-        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(685, 394)
+        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(856, 492)
         Me.TabControlAdv6.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv6.Location = New System.Drawing.Point(0, 0)
+        Me.TabControlAdv6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv6.Name = "TabControlAdv6"
-        Me.TabControlAdv6.Size = New System.Drawing.Size(685, 394)
+        Me.TabControlAdv6.Size = New System.Drawing.Size(856, 492)
         Me.TabControlAdv6.TabIndex = 2
         Me.TabControlAdv6.ThemesEnabled = True
         '
@@ -889,10 +911,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv4.Controls.Add(Me.dgvAnsatte)
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv4.Location = New System.Drawing.Point(4, 44)
+        Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(678, 355)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(848, 444)
         Me.TabPageAdv4.TabIndex = 1
         Me.TabPageAdv4.Text = "Oversikt ansatte"
         Me.TabPageAdv4.ThemesEnabled = True
@@ -933,6 +956,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvAnsatte.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvAnsatte.Location = New System.Drawing.Point(0, 0)
+        Me.dgvAnsatte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvAnsatte.MetroScrollBars = True
         Me.dgvAnsatte.Name = "dgvAnsatte"
         Me.dgvAnsatte.OptimizeInsertRemoveCells = True
@@ -941,7 +965,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.Properties.MarkColHeader = False
         Me.dgvAnsatte.Properties.MarkRowHeader = False
         Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvAnsatte.Size = New System.Drawing.Size(678, 355)
+        Me.dgvAnsatte.Size = New System.Drawing.Size(848, 444)
         Me.dgvAnsatte.SmartSizeBox = False
         Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvAnsatte.TabIndex = 1
@@ -960,10 +984,11 @@ Partial Class frmAdminMetro
         Me.tbKunder.Controls.Add(Me.TabControlAdv1)
         Me.tbKunder.Image = Nothing
         Me.tbKunder.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunder.Location = New System.Drawing.Point(3, 35)
+        Me.tbKunder.Location = New System.Drawing.Point(4, 44)
+        Me.tbKunder.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbKunder.Name = "tbKunder"
         Me.tbKunder.ShowCloseButton = True
-        Me.tbKunder.Size = New System.Drawing.Size(865, 394)
+        Me.tbKunder.Size = New System.Drawing.Size(1081, 492)
         Me.tbKunder.TabIndex = 2
         Me.tbKunder.Text = "Kunder"
         Me.tbKunder.ThemesEnabled = True
@@ -971,14 +996,15 @@ Partial Class frmAdminMetro
         'TabControlAdv1
         '
         Me.TabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 394)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(1081, 492)
         Me.TabControlAdv1.Controls.Add(Me.tbKunderOversikt)
         Me.TabControlAdv1.Controls.Add(Me.tbKundeEpost)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.FocusOnTabClick = False
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControlAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 394)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(1081, 492)
         Me.TabControlAdv1.TabIndex = 0
         Me.TabControlAdv1.ThemesEnabled = True
         '
@@ -987,10 +1013,11 @@ Partial Class frmAdminMetro
         Me.tbKunderOversikt.Controls.Add(Me.SplitContainer3)
         Me.tbKunderOversikt.Image = Nothing
         Me.tbKunderOversikt.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunderOversikt.Location = New System.Drawing.Point(38, 3)
+        Me.tbKunderOversikt.Location = New System.Drawing.Point(48, 4)
+        Me.tbKunderOversikt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbKunderOversikt.Name = "tbKunderOversikt"
         Me.tbKunderOversikt.ShowCloseButton = True
-        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 387)
+        Me.tbKunderOversikt.Size = New System.Drawing.Size(1029, 484)
         Me.tbKunderOversikt.TabIndex = 1
         Me.tbKunderOversikt.Text = "Kunder"
         Me.tbKunderOversikt.ThemesEnabled = True
@@ -999,6 +1026,7 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
@@ -1009,21 +1037,23 @@ Partial Class frmAdminMetro
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.tbKundeOversikt)
-        Me.SplitContainer3.Size = New System.Drawing.Size(823, 387)
-        Me.SplitContainer3.SplitterDistance = 225
+        Me.SplitContainer3.Size = New System.Drawing.Size(1029, 484)
+        Me.SplitContainer3.SplitterDistance = 281
+        Me.SplitContainer3.SplitterWidth = 5
         Me.SplitContainer3.TabIndex = 0
         '
         'btnUpdKunde
         '
         Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(225, 60)
+        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(281, 75)
         Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
         Me.btnUpdKunde.IsBackStageButton = False
-        Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
+        Me.btnUpdKunde.Location = New System.Drawing.Point(0, 75)
+        Me.btnUpdKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnUpdKunde.Name = "btnUpdKunde"
-        Me.btnUpdKunde.Size = New System.Drawing.Size(225, 60)
+        Me.btnUpdKunde.Size = New System.Drawing.Size(281, 75)
         Me.btnUpdKunde.TabIndex = 4
         Me.btnUpdKunde.Text = "Oppdater Kunde"
         Me.btnUpdKunde.UseVisualStyle = True
@@ -1032,13 +1062,14 @@ Partial Class frmAdminMetro
         '
         Me.btnAddKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnAddKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(225, 60)
+        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(281, 75)
         Me.btnAddKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAddKunde.ForeColor = System.Drawing.Color.White
         Me.btnAddKunde.IsBackStageButton = False
         Me.btnAddKunde.Location = New System.Drawing.Point(0, 0)
+        Me.btnAddKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddKunde.Name = "btnAddKunde"
-        Me.btnAddKunde.Size = New System.Drawing.Size(225, 60)
+        Me.btnAddKunde.Size = New System.Drawing.Size(281, 75)
         Me.btnAddKunde.TabIndex = 3
         Me.btnAddKunde.Text = "Legg til ny kunde"
         Me.btnAddKunde.UseVisualStyle = True
@@ -1046,14 +1077,15 @@ Partial Class frmAdminMetro
         'tbKundeOversikt
         '
         Me.tbKundeOversikt.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(594, 387)
+        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(743, 484)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv15)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv16)
         Me.tbKundeOversikt.Controls.Add(Me.TbOppdaterKunde)
         Me.tbKundeOversikt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbKundeOversikt.Location = New System.Drawing.Point(0, 0)
+        Me.tbKundeOversikt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbKundeOversikt.Name = "tbKundeOversikt"
-        Me.tbKundeOversikt.Size = New System.Drawing.Size(594, 387)
+        Me.tbKundeOversikt.Size = New System.Drawing.Size(743, 484)
         Me.tbKundeOversikt.TabIndex = 0
         Me.tbKundeOversikt.ThemesEnabled = True
         '
@@ -1062,10 +1094,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv15.Controls.Add(Me.dgvPrivatKunde)
         Me.TabPageAdv15.Image = Global.OOPSA.My.Resources.Resources.tbKundeBedrift
         Me.TabPageAdv15.ImageSize = New System.Drawing.Size(32, 32)
-        Me.TabPageAdv15.Location = New System.Drawing.Point(46, 3)
+        Me.TabPageAdv15.Location = New System.Drawing.Point(58, 4)
+        Me.TabPageAdv15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv15.Name = "TabPageAdv15"
         Me.TabPageAdv15.ShowCloseButton = True
-        Me.TabPageAdv15.Size = New System.Drawing.Size(544, 380)
+        Me.TabPageAdv15.Size = New System.Drawing.Size(680, 475)
         Me.TabPageAdv15.TabIndex = 1
         Me.TabPageAdv15.ThemesEnabled = True
         '
@@ -1103,6 +1136,7 @@ Partial Class frmAdminMetro
         Me.dgvPrivatKunde.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvPrivatKunde.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvPrivatKunde.Location = New System.Drawing.Point(0, 0)
+        Me.dgvPrivatKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvPrivatKunde.MetroScrollBars = True
         Me.dgvPrivatKunde.Name = "dgvPrivatKunde"
         Me.dgvPrivatKunde.OptimizeInsertRemoveCells = True
@@ -1111,7 +1145,7 @@ Partial Class frmAdminMetro
         Me.dgvPrivatKunde.Properties.MarkColHeader = False
         Me.dgvPrivatKunde.Properties.MarkRowHeader = False
         Me.dgvPrivatKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvPrivatKunde.Size = New System.Drawing.Size(544, 380)
+        Me.dgvPrivatKunde.Size = New System.Drawing.Size(680, 475)
         Me.dgvPrivatKunde.SmartSizeBox = False
         Me.dgvPrivatKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvPrivatKunde.TabIndex = 0
@@ -1125,10 +1159,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv16.Controls.Add(Me.dgvBedriftKunde)
         Me.TabPageAdv16.Image = Global.OOPSA.My.Resources.Resources.tbKundePrivat
         Me.TabPageAdv16.ImageSize = New System.Drawing.Size(32, 32)
-        Me.TabPageAdv16.Location = New System.Drawing.Point(46, 3)
+        Me.TabPageAdv16.Location = New System.Drawing.Point(58, 4)
+        Me.TabPageAdv16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv16.Name = "TabPageAdv16"
         Me.TabPageAdv16.ShowCloseButton = True
-        Me.TabPageAdv16.Size = New System.Drawing.Size(544, 380)
+        Me.TabPageAdv16.Size = New System.Drawing.Size(680, 475)
         Me.TabPageAdv16.TabIndex = 2
         Me.TabPageAdv16.ThemesEnabled = True
         '
@@ -1166,6 +1201,7 @@ Partial Class frmAdminMetro
         Me.dgvBedriftKunde.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvBedriftKunde.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvBedriftKunde.Location = New System.Drawing.Point(0, 0)
+        Me.dgvBedriftKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvBedriftKunde.MetroScrollBars = True
         Me.dgvBedriftKunde.Name = "dgvBedriftKunde"
         Me.dgvBedriftKunde.OptimizeInsertRemoveCells = True
@@ -1174,7 +1210,7 @@ Partial Class frmAdminMetro
         Me.dgvBedriftKunde.Properties.MarkColHeader = False
         Me.dgvBedriftKunde.Properties.MarkRowHeader = False
         Me.dgvBedriftKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvBedriftKunde.Size = New System.Drawing.Size(544, 380)
+        Me.dgvBedriftKunde.Size = New System.Drawing.Size(680, 475)
         Me.dgvBedriftKunde.SmartSizeBox = False
         Me.dgvBedriftKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvBedriftKunde.TabIndex = 0
@@ -1206,36 +1242,40 @@ Partial Class frmAdminMetro
         Me.TbOppdaterKunde.Controls.Add(Me.btnOppdaterPrivKunde)
         Me.TbOppdaterKunde.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.TbOppdaterKunde.ImageSize = New System.Drawing.Size(32, 32)
-        Me.TbOppdaterKunde.Location = New System.Drawing.Point(46, 3)
+        Me.TbOppdaterKunde.Location = New System.Drawing.Point(58, 4)
+        Me.TbOppdaterKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TbOppdaterKunde.Name = "TbOppdaterKunde"
         Me.TbOppdaterKunde.ShowCloseButton = True
-        Me.TbOppdaterKunde.Size = New System.Drawing.Size(544, 380)
+        Me.TbOppdaterKunde.Size = New System.Drawing.Size(680, 475)
         Me.TbOppdaterKunde.TabIndex = 3
         Me.TbOppdaterKunde.TabVisible = False
         Me.TbOppdaterKunde.ThemesEnabled = True
         '
         'txtBedNavn
         '
-        Me.txtBedNavn.Location = New System.Drawing.Point(421, 185)
+        Me.txtBedNavn.Location = New System.Drawing.Point(526, 231)
+        Me.txtBedNavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBedNavn.Name = "txtBedNavn"
-        Me.txtBedNavn.Size = New System.Drawing.Size(100, 29)
+        Me.txtBedNavn.Size = New System.Drawing.Size(124, 34)
         Me.txtBedNavn.TabIndex = 23
         Me.txtBedNavn.Visible = False
         '
         'txtBedAdresse
         '
-        Me.txtBedAdresse.Location = New System.Drawing.Point(421, 137)
+        Me.txtBedAdresse.Location = New System.Drawing.Point(526, 171)
+        Me.txtBedAdresse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBedAdresse.Name = "txtBedAdresse"
-        Me.txtBedAdresse.Size = New System.Drawing.Size(100, 29)
+        Me.txtBedAdresse.Size = New System.Drawing.Size(124, 34)
         Me.txtBedAdresse.TabIndex = 22
         Me.txtBedAdresse.Visible = False
         '
         'chkBedNavn
         '
         Me.chkBedNavn.AutoSize = True
-        Me.chkBedNavn.Location = New System.Drawing.Point(280, 189)
+        Me.chkBedNavn.Location = New System.Drawing.Point(350, 236)
+        Me.chkBedNavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkBedNavn.Name = "chkBedNavn"
-        Me.chkBedNavn.Size = New System.Drawing.Size(116, 25)
+        Me.chkBedNavn.Size = New System.Drawing.Size(142, 32)
         Me.chkBedNavn.TabIndex = 21
         Me.chkBedNavn.Text = "Bedriftsnavn"
         Me.chkBedNavn.UseVisualStyleBackColor = True
@@ -1244,9 +1284,10 @@ Partial Class frmAdminMetro
         'chkAdresse
         '
         Me.chkAdresse.AutoSize = True
-        Me.chkAdresse.Location = New System.Drawing.Point(280, 139)
+        Me.chkAdresse.Location = New System.Drawing.Point(350, 174)
+        Me.chkAdresse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkAdresse.Name = "chkAdresse"
-        Me.chkAdresse.Size = New System.Drawing.Size(84, 25)
+        Me.chkAdresse.Size = New System.Drawing.Size(102, 32)
         Me.chkAdresse.TabIndex = 19
         Me.chkAdresse.Text = "Adresse"
         Me.chkAdresse.UseVisualStyleBackColor = True
@@ -1254,34 +1295,38 @@ Partial Class frmAdminMetro
         '
         'txtPrivAdresse
         '
-        Me.txtPrivAdresse.Location = New System.Drawing.Point(421, 137)
+        Me.txtPrivAdresse.Location = New System.Drawing.Point(526, 171)
+        Me.txtPrivAdresse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPrivAdresse.Name = "txtPrivAdresse"
-        Me.txtPrivAdresse.Size = New System.Drawing.Size(100, 29)
+        Me.txtPrivAdresse.Size = New System.Drawing.Size(124, 34)
         Me.txtPrivAdresse.TabIndex = 18
         Me.txtPrivAdresse.Visible = False
         '
         'txtPostBed
         '
-        Me.txtPostBed.Location = New System.Drawing.Point(144, 283)
+        Me.txtPostBed.Location = New System.Drawing.Point(180, 354)
+        Me.txtPostBed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPostBed.Name = "txtPostBed"
-        Me.txtPostBed.Size = New System.Drawing.Size(116, 29)
+        Me.txtPostBed.Size = New System.Drawing.Size(144, 34)
         Me.txtPostBed.TabIndex = 17
         Me.txtPostBed.Visible = False
         '
         'txtPostPriv
         '
-        Me.txtPostPriv.Location = New System.Drawing.Point(144, 283)
+        Me.txtPostPriv.Location = New System.Drawing.Point(180, 354)
+        Me.txtPostPriv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPostPriv.Name = "txtPostPriv"
-        Me.txtPostPriv.Size = New System.Drawing.Size(116, 29)
+        Me.txtPostPriv.Size = New System.Drawing.Size(144, 34)
         Me.txtPostPriv.TabIndex = 16
         Me.txtPostPriv.Visible = False
         '
         'chkPostNummer
         '
         Me.chkPostNummer.AutoSize = True
-        Me.chkPostNummer.Location = New System.Drawing.Point(16, 285)
+        Me.chkPostNummer.Location = New System.Drawing.Point(20, 356)
+        Me.chkPostNummer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkPostNummer.Name = "chkPostNummer"
-        Me.chkPostNummer.Size = New System.Drawing.Size(122, 25)
+        Me.chkPostNummer.Size = New System.Drawing.Size(149, 32)
         Me.chkPostNummer.TabIndex = 15
         Me.chkPostNummer.Text = "Post nummer"
         Me.chkPostNummer.UseVisualStyleBackColor = True
@@ -1291,12 +1336,13 @@ Partial Class frmAdminMetro
         '
         Me.btnOppdater.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnOppdater.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnOppdater.BeforeTouchSize = New System.Drawing.Size(169, 54)
+        Me.btnOppdater.BeforeTouchSize = New System.Drawing.Size(211, 68)
         Me.btnOppdater.ForeColor = System.Drawing.Color.White
         Me.btnOppdater.IsBackStageButton = False
-        Me.btnOppdater.Location = New System.Drawing.Point(369, 325)
+        Me.btnOppdater.Location = New System.Drawing.Point(461, 406)
+        Me.btnOppdater.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOppdater.Name = "btnOppdater"
-        Me.btnOppdater.Size = New System.Drawing.Size(169, 54)
+        Me.btnOppdater.Size = New System.Drawing.Size(211, 68)
         Me.btnOppdater.TabIndex = 14
         Me.btnOppdater.Text = "Utfør oppdatering"
         Me.btnOppdater.UseVisualStyle = True
@@ -1304,9 +1350,10 @@ Partial Class frmAdminMetro
         'chkEpost
         '
         Me.chkEpost.AutoSize = True
-        Me.chkEpost.Location = New System.Drawing.Point(16, 235)
+        Me.chkEpost.Location = New System.Drawing.Point(20, 294)
+        Me.chkEpost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkEpost.Name = "chkEpost"
-        Me.chkEpost.Size = New System.Drawing.Size(67, 25)
+        Me.chkEpost.Size = New System.Drawing.Size(83, 32)
         Me.chkEpost.TabIndex = 13
         Me.chkEpost.Text = "Epost"
         Me.chkEpost.UseVisualStyleBackColor = True
@@ -1315,9 +1362,10 @@ Partial Class frmAdminMetro
         'chkEtternavn
         '
         Me.chkEtternavn.AutoSize = True
-        Me.chkEtternavn.Location = New System.Drawing.Point(16, 185)
+        Me.chkEtternavn.Location = New System.Drawing.Point(20, 231)
+        Me.chkEtternavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkEtternavn.Name = "chkEtternavn"
-        Me.chkEtternavn.Size = New System.Drawing.Size(95, 25)
+        Me.chkEtternavn.Size = New System.Drawing.Size(117, 32)
         Me.chkEtternavn.TabIndex = 12
         Me.chkEtternavn.Text = "Etternavn"
         Me.chkEtternavn.UseVisualStyleBackColor = True
@@ -1326,9 +1374,10 @@ Partial Class frmAdminMetro
         'chkFornavn
         '
         Me.chkFornavn.AutoSize = True
-        Me.chkFornavn.Location = New System.Drawing.Point(16, 139)
+        Me.chkFornavn.Location = New System.Drawing.Point(20, 174)
+        Me.chkFornavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkFornavn.Name = "chkFornavn"
-        Me.chkFornavn.Size = New System.Drawing.Size(86, 25)
+        Me.chkFornavn.Size = New System.Drawing.Size(105, 32)
         Me.chkFornavn.TabIndex = 11
         Me.chkFornavn.Text = "Fornavn"
         Me.chkFornavn.UseVisualStyleBackColor = True
@@ -1336,42 +1385,47 @@ Partial Class frmAdminMetro
         '
         'txtEpost
         '
-        Me.txtEpost.Location = New System.Drawing.Point(144, 235)
+        Me.txtEpost.Location = New System.Drawing.Point(180, 294)
+        Me.txtEpost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEpost.Name = "txtEpost"
-        Me.txtEpost.Size = New System.Drawing.Size(116, 29)
+        Me.txtEpost.Size = New System.Drawing.Size(144, 34)
         Me.txtEpost.TabIndex = 10
         Me.txtEpost.Visible = False
         '
         'txtEtternavn
         '
-        Me.txtEtternavn.Location = New System.Drawing.Point(144, 185)
+        Me.txtEtternavn.Location = New System.Drawing.Point(180, 231)
+        Me.txtEtternavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEtternavn.Name = "txtEtternavn"
-        Me.txtEtternavn.Size = New System.Drawing.Size(116, 29)
+        Me.txtEtternavn.Size = New System.Drawing.Size(144, 34)
         Me.txtEtternavn.TabIndex = 9
         Me.txtEtternavn.Visible = False
         '
         'txtFornavn
         '
-        Me.txtFornavn.Location = New System.Drawing.Point(144, 139)
+        Me.txtFornavn.Location = New System.Drawing.Point(180, 174)
+        Me.txtFornavn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFornavn.Name = "txtFornavn"
-        Me.txtFornavn.Size = New System.Drawing.Size(116, 29)
+        Me.txtFornavn.Size = New System.Drawing.Size(144, 34)
         Me.txtFornavn.TabIndex = 8
         Me.txtFornavn.Visible = False
         '
         'txtKID
         '
-        Me.txtKID.Location = New System.Drawing.Point(16, 88)
+        Me.txtKID.Location = New System.Drawing.Point(20, 110)
+        Me.txtKID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtKID.Name = "txtKID"
-        Me.txtKID.Size = New System.Drawing.Size(116, 29)
+        Me.txtKID.Size = New System.Drawing.Size(144, 34)
         Me.txtKID.TabIndex = 7
         Me.txtKID.Visible = False
         '
         'lblKID
         '
         Me.lblKID.AutoSize = True
-        Me.lblKID.Location = New System.Drawing.Point(138, 91)
+        Me.lblKID.Location = New System.Drawing.Point(172, 114)
+        Me.lblKID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblKID.Name = "lblKID"
-        Me.lblKID.Size = New System.Drawing.Size(217, 21)
+        Me.lblKID.Size = New System.Drawing.Size(272, 28)
         Me.lblKID.TabIndex = 6
         Me.lblKID.Text = "Skriv inn KID på aktuell kunde"
         Me.lblKID.Visible = False
@@ -1380,12 +1434,13 @@ Partial Class frmAdminMetro
         '
         Me.btnOppdaterBedKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnOppdaterBedKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnOppdaterBedKunde.BeforeTouchSize = New System.Drawing.Size(190, 41)
+        Me.btnOppdaterBedKunde.BeforeTouchSize = New System.Drawing.Size(238, 51)
         Me.btnOppdaterBedKunde.ForeColor = System.Drawing.Color.White
         Me.btnOppdaterBedKunde.IsBackStageButton = False
-        Me.btnOppdaterBedKunde.Location = New System.Drawing.Point(280, 16)
+        Me.btnOppdaterBedKunde.Location = New System.Drawing.Point(350, 20)
+        Me.btnOppdaterBedKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOppdaterBedKunde.Name = "btnOppdaterBedKunde"
-        Me.btnOppdaterBedKunde.Size = New System.Drawing.Size(190, 41)
+        Me.btnOppdaterBedKunde.Size = New System.Drawing.Size(238, 51)
         Me.btnOppdaterBedKunde.TabIndex = 5
         Me.btnOppdaterBedKunde.Text = "Oppdater Bedriftskunde"
         Me.btnOppdaterBedKunde.UseVisualStyle = True
@@ -1394,12 +1449,13 @@ Partial Class frmAdminMetro
         '
         Me.btnOppdaterPrivKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnOppdaterPrivKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnOppdaterPrivKunde.BeforeTouchSize = New System.Drawing.Size(206, 42)
+        Me.btnOppdaterPrivKunde.BeforeTouchSize = New System.Drawing.Size(258, 52)
         Me.btnOppdaterPrivKunde.ForeColor = System.Drawing.Color.White
         Me.btnOppdaterPrivKunde.IsBackStageButton = False
-        Me.btnOppdaterPrivKunde.Location = New System.Drawing.Point(54, 16)
+        Me.btnOppdaterPrivKunde.Location = New System.Drawing.Point(68, 20)
+        Me.btnOppdaterPrivKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOppdaterPrivKunde.Name = "btnOppdaterPrivKunde"
-        Me.btnOppdaterPrivKunde.Size = New System.Drawing.Size(206, 42)
+        Me.btnOppdaterPrivKunde.Size = New System.Drawing.Size(258, 52)
         Me.btnOppdaterPrivKunde.TabIndex = 4
         Me.btnOppdaterPrivKunde.Text = "Oppdater Privatkunde"
         Me.btnOppdaterPrivKunde.UseVisualStyle = True
@@ -1411,10 +1467,11 @@ Partial Class frmAdminMetro
         Me.tbKundeEpost.Controls.Add(Me.ToolStripEx11)
         Me.tbKundeEpost.Image = Nothing
         Me.tbKundeEpost.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKundeEpost.Location = New System.Drawing.Point(38, 3)
+        Me.tbKundeEpost.Location = New System.Drawing.Point(48, 4)
+        Me.tbKundeEpost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbKundeEpost.Name = "tbKundeEpost"
         Me.tbKundeEpost.ShowCloseButton = True
-        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 387)
+        Me.tbKundeEpost.Size = New System.Drawing.Size(1029, 484)
         Me.tbKundeEpost.TabIndex = 2
         Me.tbKundeEpost.Text = "Epost"
         Me.tbKundeEpost.ThemesEnabled = True
@@ -1424,10 +1481,11 @@ Partial Class frmAdminMetro
         Me.Panel6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 42)
+        Me.Panel6.Location = New System.Drawing.Point(0, 47)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel6.Size = New System.Drawing.Size(823, 323)
+        Me.Panel6.Padding = New System.Windows.Forms.Padding(62, 12, 62, 0)
+        Me.Panel6.Size = New System.Drawing.Size(1029, 415)
         Me.Panel6.TabIndex = 3
         '
         'Panel7
@@ -1435,31 +1493,34 @@ Partial Class frmAdminMetro
         Me.Panel7.BackColor = System.Drawing.Color.White
         Me.Panel7.Controls.Add(Me.rtbKundeEpost)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(50, 10)
+        Me.Panel7.Location = New System.Drawing.Point(62, 12)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel7.Size = New System.Drawing.Size(723, 313)
+        Me.Panel7.Padding = New System.Windows.Forms.Padding(12, 12, 12, 0)
+        Me.Panel7.Size = New System.Drawing.Size(905, 403)
         Me.Panel7.TabIndex = 0
         '
         'rtbKundeEpost
         '
         Me.rtbKundeEpost.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtbKundeEpost.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.rtbKundeEpost.Location = New System.Drawing.Point(10, 10)
+        Me.rtbKundeEpost.Location = New System.Drawing.Point(12, 12)
+        Me.rtbKundeEpost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rtbKundeEpost.Name = "rtbKundeEpost"
-        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 303)
+        Me.rtbKundeEpost.Size = New System.Drawing.Size(881, 391)
         Me.rtbKundeEpost.TabIndex = 0
         Me.rtbKundeEpost.Text = ""
         '
         'StatusStripEx1
         '
-        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(1029, 22)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 365)
+        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 462)
         Me.StatusStripEx1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.Name = "StatusStripEx1"
-        Me.StatusStripEx1.Size = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.Padding = New System.Windows.Forms.Padding(1, 0, 18, 0)
+        Me.StatusStripEx1.Size = New System.Drawing.Size(1029, 22)
         Me.StatusStripEx1.TabIndex = 2
         Me.StatusStripEx1.Text = "StatusStripEx1"
         Me.StatusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
@@ -1473,7 +1534,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx11.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx11.Name = "ToolStripEx11"
         Me.ToolStripEx11.Office12Mode = False
-        Me.ToolStripEx11.Size = New System.Drawing.Size(823, 42)
+        Me.ToolStripEx11.Size = New System.Drawing.Size(1029, 47)
         Me.ToolStripEx11.TabIndex = 0
         Me.ToolStripEx11.Text = "Epost"
         Me.ToolStripEx11.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1557,7 +1618,7 @@ Partial Class frmAdminMetro
         Me.btnSendEpostKunde.Image = CType(resources.GetObject("btnSendEpostKunde.Image"), System.Drawing.Image)
         Me.btnSendEpostKunde.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnSendEpostKunde.Name = "btnSendEpostKunde"
-        Me.btnSendEpostKunde.Size = New System.Drawing.Size(89, 24)
+        Me.btnSendEpostKunde.Size = New System.Drawing.Size(107, 24)
         Me.btnSendEpostKunde.Text = "Send Epost"
         '
         'toolstripCMBxKunder
@@ -1566,27 +1627,27 @@ Partial Class frmAdminMetro
         Me.toolstripCMBxKunder.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.toolstripCMBxKunder.MaxLength = 32767
         Me.toolstripCMBxKunder.Name = "toolstripCMBxKunder"
-        Me.toolstripCMBxKunder.Size = New System.Drawing.Size(121, 27)
+        Me.toolstripCMBxKunder.Size = New System.Drawing.Size(151, 27)
         Me.toolstripCMBxKunder.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(49, 24)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(62, 24)
         Me.ToolStripLabel1.Text = "Send til:"
         '
         'ToolStripTxtSubject
         '
         Me.ToolStripTxtSubject.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripTxtSubject.Name = "ToolStripTxtSubject"
-        Me.ToolStripTxtSubject.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTxtSubject.Size = New System.Drawing.Size(249, 27)
         '
         'ToolStripLabel2
         '
         Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(49, 24)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(61, 24)
         Me.ToolStripLabel2.Text = "Subject:"
         '
         'ToolStripSplitButtonEx1
@@ -1594,25 +1655,25 @@ Partial Class frmAdminMetro
         Me.ToolStripSplitButtonEx1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FakturaToolStripMenuItem, Me.NyhetsbrevToolStripMenuItem, Me.VareoversiktToolStripMenuItem})
         Me.ToolStripSplitButtonEx1.Image = CType(resources.GetObject("ToolStripSplitButtonEx1.Image"), System.Drawing.Image)
         Me.ToolStripSplitButtonEx1.Name = "ToolStripSplitButtonEx1"
-        Me.ToolStripSplitButtonEx1.Size = New System.Drawing.Size(106, 24)
+        Me.ToolStripSplitButtonEx1.Size = New System.Drawing.Size(130, 24)
         Me.ToolStripSplitButtonEx1.Text = "Epost maler"
         '
         'FakturaToolStripMenuItem
         '
         Me.FakturaToolStripMenuItem.Name = "FakturaToolStripMenuItem"
-        Me.FakturaToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.FakturaToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
         Me.FakturaToolStripMenuItem.Text = "Faktura"
         '
         'NyhetsbrevToolStripMenuItem
         '
         Me.NyhetsbrevToolStripMenuItem.Name = "NyhetsbrevToolStripMenuItem"
-        Me.NyhetsbrevToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.NyhetsbrevToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
         Me.NyhetsbrevToolStripMenuItem.Text = "Nyhetsbrev"
         '
         'VareoversiktToolStripMenuItem
         '
         Me.VareoversiktToolStripMenuItem.Name = "VareoversiktToolStripMenuItem"
-        Me.VareoversiktToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.VareoversiktToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
         Me.VareoversiktToolStripMenuItem.Text = "Vareoversikt"
         '
         'ToolStripEx2
@@ -1625,7 +1686,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(872, 42)
+        Me.ToolStripEx2.Size = New System.Drawing.Size(1115, 47)
         Me.ToolStripEx2.TabIndex = 4
         Me.ToolStripEx2.Text = "Personaliaoversikt"
         Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1636,7 +1697,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton3.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton3.Text = "Logg ut"
         '
         'tbSalg
@@ -1646,24 +1707,25 @@ Partial Class frmAdminMetro
         Me.tbSalg.Image = Global.OOPSA.My.Resources.Resources.tbSalg
         Me.tbSalg.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbSalg.Location = New System.Drawing.Point(105, 2)
-        Me.tbSalg.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbSalg.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.tbSalg.Name = "tbSalg"
         Me.tbSalg.ShowCloseButton = True
-        Me.tbSalg.Size = New System.Drawing.Size(872, 475)
+        Me.tbSalg.Size = New System.Drawing.Size(1115, 597)
         Me.tbSalg.TabIndex = 3
         Me.tbSalg.ThemesEnabled = True
         '
         'TabControlAdv2
         '
-        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv2.Controls.Add(Me.tbTextEdit)
         Me.TabControlAdv2.Controls.Add(Me.tbUtleieOversikt)
         Me.TabControlAdv2.Controls.Add(Me.tbReporting)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.ItemSize = New System.Drawing.Size(62, 48)
-        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 42)
+        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 47)
+        Me.TabControlAdv2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControlAdv2.Name = "TabControlAdv2"
-        Me.TabControlAdv2.Size = New System.Drawing.Size(872, 433)
+        Me.TabControlAdv2.Size = New System.Drawing.Size(1115, 550)
         Me.TabControlAdv2.TabIndex = 2
         Me.TabControlAdv2.ThemesEnabled = True
         '
@@ -1673,10 +1735,11 @@ Partial Class frmAdminMetro
         Me.tbTextEdit.Controls.Add(Me.ToolStripEx6)
         Me.tbTextEdit.Image = Global.OOPSA.My.Resources.Resources.tbTxtEditor
         Me.tbTextEdit.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbTextEdit.Location = New System.Drawing.Point(3, 53)
+        Me.tbTextEdit.Location = New System.Drawing.Point(4, 66)
+        Me.tbTextEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbTextEdit.Name = "tbTextEdit"
         Me.tbTextEdit.ShowCloseButton = True
-        Me.tbTextEdit.Size = New System.Drawing.Size(865, 376)
+        Me.tbTextEdit.Size = New System.Drawing.Size(1081, 470)
         Me.tbTextEdit.TabIndex = 2
         Me.tbTextEdit.Text = "Teksteditor"
         Me.tbTextEdit.ThemesEnabled = True
@@ -1686,10 +1749,11 @@ Partial Class frmAdminMetro
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 42)
+        Me.Panel1.Location = New System.Drawing.Point(0, 47)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel1.Size = New System.Drawing.Size(865, 334)
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(62, 12, 62, 0)
+        Me.Panel1.Size = New System.Drawing.Size(1081, 423)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
@@ -1698,10 +1762,11 @@ Partial Class frmAdminMetro
         Me.Panel2.Controls.Add(Me.FontListBox1)
         Me.Panel2.Controls.Add(Me.richTextBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(50, 10)
+        Me.Panel2.Location = New System.Drawing.Point(62, 12)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel2.Size = New System.Drawing.Size(765, 324)
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(12, 12, 12, 12)
+        Me.Panel2.Size = New System.Drawing.Size(957, 411)
         Me.Panel2.TabIndex = 0
         '
         'FontListBox1
@@ -1709,7 +1774,8 @@ Partial Class frmAdminMetro
         Me.FontListBox1.FormattingEnabled = True
         Me.FontListBox1.ItemHeight = 15
         Me.FontListBox1.Items.AddRange(New Object() {"! PEPSI !", "Adobe Arabic", "Adobe Caslon Pro", "Adobe Caslon Pro Bold", "Adobe Devanagari", "Adobe Fan Heiti Std B", "Adobe Fangsong Std R", "Adobe Garamond Pro", "Adobe Garamond Pro Bold", "Adobe Gothic Std B", "Adobe Gurmukhi", "Adobe Hebrew", "Adobe Heiti Std R", "Adobe Kaiti Std R", "Adobe Ming Std L", "Adobe Myungjo Std M", "Adobe Naskh Medium", "Adobe Song Std L", "Agency FB", "Algerian", "Andy", "Arial", "Arial Black", "Arial Narrow", "Arial Rounded MT Bold", "Arial Unicode MS", "Atlantic Cruise", "Baskerville Old Face", "Bauhaus 93", "Bell MT", "Berlin Sans FB", "Berlin Sans FB Demi", "Bernard MT Condensed", "Birch Std", "Blackadder ITC", "Blackoak Std", "Bodoni MT", "Bodoni MT Black", "Bodoni MT Condensed", "Bodoni MT Poster Compressed", "Book Antiqua", "Bookman Old Style", "Bookshelf Symbol 7", "Bradley Hand ITC", "Britannic Bold", "Broadway", "Brush Script MT", "Brush Script Std", "Buxton Sketch", "Calibri", "Calibri Light", "Californian FB", "Calisto MT", "Cambria", "Cambria Math", "Candara", "Castellar", "Centaur", "Century", "Century Gothic", "Century Schoolbook", "Chaparral Pro", "Chaparral Pro Light", "Charlemagne Std", "Chiller", "Colonna MT", "Comic Sans MS", "Consolas", "Constantia", "Cooper Black", "Cooper Std Black", "Copperplate Gothic Bold", "Copperplate Gothic Light", "Corbel", "Counter-Strike", "Courier New", "Curlz MT", "DengXian", "DF-GameOver", "Ebrima", "Edwardian Script ITC", "Elephant", "Engravers MT", "Eras Bold ITC", "Eras Demi ITC", "Eras Light ITC", "Eras Medium ITC", "Felix Titling", "Footlight MT Light", "Forte", "Franklin Gothic Book", "Franklin Gothic Demi", "Franklin Gothic Demi Cond", "Franklin Gothic Heavy", "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Freestyle Script", "French Script MT", "Gabriola", "Gadugi", "Garamond", "Georgia", "Giddyup Std", "Gigi", "Gill Sans MT", "Gill Sans MT Condensed", "Gill Sans MT Ext Condensed Bold", "Gill Sans Ultra Bold", "Gill Sans Ultra Bold Condensed", "Gloucester MT Extra Condensed", "Gotham Thin", "Goudy Old Style", "Goudy Stout", "Haettenschweiler", "Harlow Solid Italic", "Harrington", "High Tower Text", "Hobo Std", "Impact", "Imprint MT Shadow", "Informal Roman", "Javanese Text", "Jing Jing", "Jokerman", "Juice ITC", "Kootenay", "Kozuka Gothic Pr6N B", "Kozuka Gothic Pr6N EL", "Kozuka Gothic Pr6N H", "Kozuka Gothic Pr6N L", "Kozuka Gothic Pr6N M", "Kozuka Gothic Pr6N R", "Kozuka Gothic Pro B", "Kozuka Gothic Pro EL", "Kozuka Gothic Pro H", "Kozuka Gothic Pro L", "Kozuka Gothic Pro M", "Kozuka Gothic Pro R", "Kozuka Mincho Pr6N B", "Kozuka Mincho Pr6N EL", "Kozuka Mincho Pr6N H", "Kozuka Mincho Pr6N L", "Kozuka Mincho Pr6N M", "Kozuka Mincho Pr6N R", "Kozuka Mincho Pro B", "Kozuka Mincho Pro EL", "Kozuka Mincho Pro H", "Kozuka Mincho Pro L", "Kozuka Mincho Pro M", "Kozuka Mincho Pro R", "Kristen ITC", "Kunstler Script", "Leelawadee UI", "Leelawadee UI Semilight", "Letter Gothic Std", "Lindsey", "Lithos Pro Regular", "Lucida Bright", "Lucida Calligraphy", "Lucida Console", "Lucida Fax", "Lucida Handwriting", "Lucida Sans", "Lucida Sans Typewriter", "Lucida Sans Unicode", "Magneto", "Maiandra GD", "Malgun Gothic", "Malgun Gothic Semilight", "Marlett", "Matura MT Script Capitals", "Mesquite Std", "Microsoft Himalaya", "Microsoft JhengHei", "Microsoft JhengHei Light", "Microsoft JhengHei UI", "Microsoft JhengHei UI Light", "Microsoft MHei", "Microsoft NeoGothic", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Sans Serif", "Microsoft Tai Le", "Microsoft YaHei", "Microsoft YaHei Light", "Microsoft YaHei UI", "Microsoft YaHei UI Light", "Microsoft Yi Baiti", "MingLiU-ExtB", "MingLiU_HKSCS-ExtB", "Minion Pro", "Minion Pro Cond", "Minion Pro Med", "Minion Pro SmBd", "Miramonte", "Mistral", "Modern No. 20", "Moire", "Moire ExtraBold", "Moire Light", "Mongolian Baiti", "Monotype Corsiva", "Motorwerk", "MS Gothic", "MS Outlook", "MS PGothic", "MS Reference Sans Serif", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MV Boli", "Myanmar Text", "Myriad Arabic", "Myriad Hebrew", "Myriad Pro", "Myriad Pro Cond", "Myriad Pro Light", "News Gothic", "Niagara Engraved", "Niagara Solid", "Nirmala UI", "Nirmala UI Semilight", "NSimSun", "Nueva Std", "Nueva Std Cond", "OCR A Extended", "OCR A Std", "Old English Text MT", "Onyx", "Orator Std", "Palace Script MT", "Paladins", "Paladins 3D", "Paladins Condensed", "Paladins Expanded", "Paladins Gradient", "Paladins Laser", "Paladins Leftalic", "Paladins Outline", "Paladins Semi-Italic", "Paladins Straight", "Paladins Super-Italic", "Palatino Linotype", "Papyrus", "Parchment", "Pericles", "Pericles Light", "Perpetua", "Perpetua Titling MT", "Pescadero", "pixelmix", "Playbill", "PMingLiU-ExtB", "Poor Richard", "Poplar Std", "Prestige Elite Std", "Pristina", "Quartz MS", "Rage Italic", "Raleway", "Ravie", "Rockwell", "Rockwell Condensed", "Rockwell Extra Bold", "Rosewood Std Regular", "Script MT Bold", "Segoe Keycaps", "Segoe Marker", "Segoe MDL2 Assets", "Segoe Print", "Segoe Script", "Segoe UI", "Segoe UI Black", "Segoe UI Emoji", "Segoe UI Historic", "Segoe UI Light", "Segoe UI Mono", "Segoe UI Semibold", "Segoe UI Semilight", "Segoe UI Symbol", "Segoe WP", "Segoe WP Black", "Segoe WP Light", "Segoe WP Semibold", "Segoe WP SemiLight", "Showcard Gothic", "SimSun", "SimSun-ExtB", "Sitka Banner", "Sitka Display", "Sitka Heading", "Sitka Small", "Sitka Subheading", "Sitka Text", "SketchFlow Print", "Snap ITC", "Source Code Pro", "Source Code Pro Black", "Source Code Pro ExtraLight", "Source Code Pro Light", "Source Code Pro Semibold", "Source Sans Pro", "Source Sans Pro Black", "Source Sans Pro ExtraLight", "Source Sans Pro Light", "Source Sans Pro Semibold", "Stencil", "Stencil Std", "Sylfaen", "Symbol", "Tahoma", "Tekton Pro", "Tekton Pro Cond", "Tekton Pro Ext", "Tempus Sans ITC", "Times New Roman", "Trajan Pro", "Trajan Pro 3", "Transatlantic Cruise Demo", "Trebuchet MS", "Tw Cen MT", "Tw Cen MT Condensed", "Tw Cen MT Condensed Extra Bold", "Verdana", "Viner Hand ITC", "Vivaldi", "Vladimir Script", "Wasco Sans", "Webdings", "Wide Latin", "Wingdings", "Wingdings 2", "Wingdings 3", "Yu Gothic", "Yu Gothic Light", "Yu Gothic Medium", "Yu Gothic UI", "Yu Gothic UI Light", "Yu Gothic UI Semibold", "Yu Gothic UI Semilight", "ZWAdobeF"})
-        Me.FontListBox1.Location = New System.Drawing.Point(124, -7)
+        Me.FontListBox1.Location = New System.Drawing.Point(155, -9)
+        Me.FontListBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FontListBox1.MetroColor = System.Drawing.SystemColors.Highlight
         Me.FontListBox1.Name = "FontListBox1"
         MetroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(152, Byte), Integer))
@@ -1725,7 +1791,7 @@ Partial Class frmAdminMetro
         MetroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
         MetroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty
         Me.FontListBox1.ScrollMetroColorTable = MetroColorTable1
-        Me.FontListBox1.Size = New System.Drawing.Size(138, 244)
+        Me.FontListBox1.Size = New System.Drawing.Size(172, 304)
         Me.FontListBox1.TabIndex = 4
         Me.FontListBox1.Visible = False
         '
@@ -1736,10 +1802,10 @@ Partial Class frmAdminMetro
         Me.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.richTextBox1.EnableAutoDragDrop = True
         Me.richTextBox1.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.richTextBox1.Location = New System.Drawing.Point(10, 10)
-        Me.richTextBox1.Margin = New System.Windows.Forms.Padding(50)
+        Me.richTextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.richTextBox1.Margin = New System.Windows.Forms.Padding(62, 62, 62, 62)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(745, 304)
+        Me.richTextBox1.Size = New System.Drawing.Size(933, 387)
         Me.richTextBox1.TabIndex = 2
         Me.richTextBox1.Text = ""
         '
@@ -1753,7 +1819,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx6.Name = "ToolStripEx6"
         Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(865, 42)
+        Me.ToolStripEx6.Size = New System.Drawing.Size(1081, 47)
         Me.ToolStripEx6.TabIndex = 2
         Me.ToolStripEx6.Text = "Teksteditor"
         Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1764,7 +1830,7 @@ Partial Class frmAdminMetro
         Me.NewToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtnewDoc
         Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.NewToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.NewToolStripButton.Text = "&New"
         '
         'OpenToolStripButton
@@ -1773,7 +1839,7 @@ Partial Class frmAdminMetro
         Me.OpenToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtOpen
         Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.OpenToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.OpenToolStripButton.Text = "&Open"
         '
         'SaveToolStripButton
@@ -1782,7 +1848,7 @@ Partial Class frmAdminMetro
         Me.SaveToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtSave
         Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.SaveToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.SaveToolStripButton.Text = "&Save"
         '
         'PrintToolStripButton
@@ -1791,13 +1857,13 @@ Partial Class frmAdminMetro
         Me.PrintToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPrint
         Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripButton.Name = "PrintToolStripButton"
-        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.PrintToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.PrintToolStripButton.Text = "&Print"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 47)
         '
         'CutToolStripButton
         '
@@ -1805,7 +1871,7 @@ Partial Class frmAdminMetro
         Me.CutToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCut
         Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.CutToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.CutToolStripButton.Text = "C&ut"
         '
         'CopyToolStripButton
@@ -1814,7 +1880,7 @@ Partial Class frmAdminMetro
         Me.CopyToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtCopy
         Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.CopyToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.CopyToolStripButton.Text = "&Copy"
         '
         'PasteToolStripButton
@@ -1823,13 +1889,13 @@ Partial Class frmAdminMetro
         Me.PasteToolStripButton.Image = Global.OOPSA.My.Resources.Resources.txtPaste
         Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 24)
+        Me.PasteToolStripButton.Size = New System.Drawing.Size(24, 44)
         Me.PasteToolStripButton.Text = "&Paste"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(6, 47)
         '
         'txtUndo
         '
@@ -1837,7 +1903,7 @@ Partial Class frmAdminMetro
         Me.txtUndo.Image = Global.OOPSA.My.Resources.Resources.txtUndo
         Me.txtUndo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtUndo.Name = "txtUndo"
-        Me.txtUndo.Size = New System.Drawing.Size(24, 24)
+        Me.txtUndo.Size = New System.Drawing.Size(24, 44)
         Me.txtUndo.Text = "ToolStripButton2"
         '
         'txtRedo
@@ -1846,13 +1912,13 @@ Partial Class frmAdminMetro
         Me.txtRedo.Image = Global.OOPSA.My.Resources.Resources.txtRedo
         Me.txtRedo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtRedo.Name = "txtRedo"
-        Me.txtRedo.Size = New System.Drawing.Size(24, 24)
+        Me.txtRedo.Size = New System.Drawing.Size(24, 44)
         Me.txtRedo.Text = "ToolStripButton3"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 47)
         '
         'txtFontCombo
         '
@@ -1860,7 +1926,7 @@ Partial Class frmAdminMetro
         Me.txtFontCombo.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
         Me.txtFontCombo.MaxLength = 32767
         Me.txtFontCombo.Name = "txtFontCombo"
-        Me.txtFontCombo.Size = New System.Drawing.Size(135, 27)
+        Me.txtFontCombo.Size = New System.Drawing.Size(168, 47)
         Me.txtFontCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontCombo.Text = "Arial"
         '
@@ -1870,14 +1936,14 @@ Partial Class frmAdminMetro
         Me.txtFontSizeCombo.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"})
         Me.txtFontSizeCombo.MaxLength = 32767
         Me.txtFontSizeCombo.Name = "txtFontSizeCombo"
-        Me.txtFontSizeCombo.Size = New System.Drawing.Size(45, 27)
+        Me.txtFontSizeCombo.Size = New System.Drawing.Size(56, 47)
         Me.txtFontSizeCombo.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
         Me.txtFontSizeCombo.Text = "8"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 47)
         '
         'txtInsertImg
         '
@@ -1885,7 +1951,7 @@ Partial Class frmAdminMetro
         Me.txtInsertImg.Image = Global.OOPSA.My.Resources.Resources.txtInsert
         Me.txtInsertImg.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtInsertImg.Name = "txtInsertImg"
-        Me.txtInsertImg.Size = New System.Drawing.Size(24, 24)
+        Me.txtInsertImg.Size = New System.Drawing.Size(24, 44)
         Me.txtInsertImg.Text = "txtInsert"
         '
         'ToolStripButton4
@@ -1893,13 +1959,13 @@ Partial Class frmAdminMetro
         Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 24)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 44)
         Me.ToolStripButton4.Text = "ToolStripButton4"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 47)
         '
         'txtAlignLeft
         '
@@ -1907,7 +1973,7 @@ Partial Class frmAdminMetro
         Me.txtAlignLeft.Image = Global.OOPSA.My.Resources.Resources.txtAlignLeft
         Me.txtAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignLeft.Name = "txtAlignLeft"
-        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignLeft.Size = New System.Drawing.Size(24, 44)
         Me.txtAlignLeft.Text = "ToolStripButton5"
         '
         'txtAlignJust
@@ -1916,7 +1982,7 @@ Partial Class frmAdminMetro
         Me.txtAlignJust.Image = Global.OOPSA.My.Resources.Resources.txtAlignJust
         Me.txtAlignJust.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignJust.Name = "txtAlignJust"
-        Me.txtAlignJust.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignJust.Size = New System.Drawing.Size(24, 44)
         Me.txtAlignJust.Text = "ToolStripButton6"
         '
         'txtAlignRight
@@ -1925,7 +1991,7 @@ Partial Class frmAdminMetro
         Me.txtAlignRight.Image = Global.OOPSA.My.Resources.Resources.txtAlignRight
         Me.txtAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.txtAlignRight.Name = "txtAlignRight"
-        Me.txtAlignRight.Size = New System.Drawing.Size(24, 24)
+        Me.txtAlignRight.Size = New System.Drawing.Size(24, 44)
         Me.txtAlignRight.Text = "ToolStripButton7"
         '
         'tbUtleieOversikt
@@ -1934,10 +2000,11 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Controls.Add(Me.GridDataBoundGrid1)
         Me.tbUtleieOversikt.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.tbUtleieOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
+        Me.tbUtleieOversikt.Location = New System.Drawing.Point(4, 66)
+        Me.tbUtleieOversikt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 376)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(1081, 470)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
@@ -1946,13 +2013,14 @@ Partial Class frmAdminMetro
         '
         Me.ButtonLeggTilLeie.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonLeggTilLeie.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonLeggTilLeie.BeforeTouchSize = New System.Drawing.Size(186, 60)
+        Me.ButtonLeggTilLeie.BeforeTouchSize = New System.Drawing.Size(232, 75)
         Me.ButtonLeggTilLeie.Dock = System.Windows.Forms.DockStyle.Top
         Me.ButtonLeggTilLeie.ForeColor = System.Drawing.Color.White
         Me.ButtonLeggTilLeie.IsBackStageButton = False
         Me.ButtonLeggTilLeie.Location = New System.Drawing.Point(0, 0)
+        Me.ButtonLeggTilLeie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonLeggTilLeie.Name = "ButtonLeggTilLeie"
-        Me.ButtonLeggTilLeie.Size = New System.Drawing.Size(186, 60)
+        Me.ButtonLeggTilLeie.Size = New System.Drawing.Size(232, 75)
         Me.ButtonLeggTilLeie.TabIndex = 3
         Me.ButtonLeggTilLeie.Text = "Legg til leie"
         Me.ButtonLeggTilLeie.UseVisualStyle = True
@@ -1990,7 +2058,8 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Right
         Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(186, 0)
+        Me.GridDataBoundGrid1.Location = New System.Drawing.Point(232, 0)
+        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridDataBoundGrid1.MetroScrollBars = True
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
@@ -1999,7 +2068,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 376)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(849, 470)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -2013,10 +2082,11 @@ Partial Class frmAdminMetro
         Me.tbReporting.Controls.Add(Me.ReportViewer4)
         Me.tbReporting.Image = Global.OOPSA.My.Resources.Resources.tbReport
         Me.tbReporting.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbReporting.Location = New System.Drawing.Point(3, 53)
+        Me.tbReporting.Location = New System.Drawing.Point(4, 66)
+        Me.tbReporting.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbReporting.Name = "tbReporting"
         Me.tbReporting.ShowCloseButton = True
-        Me.tbReporting.Size = New System.Drawing.Size(865, 376)
+        Me.tbReporting.Size = New System.Drawing.Size(1081, 470)
         Me.tbReporting.TabIndex = 3
         Me.tbReporting.Text = "Rapporter"
         Me.tbReporting.ThemesEnabled = True
@@ -2029,8 +2099,9 @@ Partial Class frmAdminMetro
         Me.ReportViewer4.LocalReport.DataSources.Add(ReportDataSource4)
         Me.ReportViewer4.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapport.rdlc"
         Me.ReportViewer4.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer4.Name = "ReportViewer4"
-        Me.ReportViewer4.Size = New System.Drawing.Size(865, 376)
+        Me.ReportViewer4.Size = New System.Drawing.Size(1081, 470)
         Me.ReportViewer4.TabIndex = 1
         '
         'ToolStripEx3
@@ -2043,7 +2114,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx3.Name = "ToolStripEx3"
         Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(872, 42)
+        Me.ToolStripEx3.Size = New System.Drawing.Size(1115, 47)
         Me.ToolStripEx3.TabIndex = 1
         Me.ToolStripEx3.Text = "Salg & Utleie"
         Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2054,7 +2125,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton5.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton5.Text = "Logg ut"
         '
         'tbSettings
@@ -2064,9 +2135,10 @@ Partial Class frmAdminMetro
         Me.tbSettings.Image = Global.OOPSA.My.Resources.Resources.tbSettings
         Me.tbSettings.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbSettings.Location = New System.Drawing.Point(105, 2)
+        Me.tbSettings.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbSettings.Name = "tbSettings"
         Me.tbSettings.ShowCloseButton = True
-        Me.tbSettings.Size = New System.Drawing.Size(872, 475)
+        Me.tbSettings.Size = New System.Drawing.Size(1115, 597)
         Me.tbSettings.TabIndex = 5
         Me.tbSettings.ThemesEnabled = True
         '
@@ -2074,21 +2146,23 @@ Partial Class frmAdminMetro
         '
         Me.Panel3.Controls.Add(Me.tabSettings)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 42)
+        Me.Panel3.Location = New System.Drawing.Point(0, 47)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(872, 433)
+        Me.Panel3.Size = New System.Drawing.Size(1115, 550)
         Me.Panel3.TabIndex = 2
         '
         'tabSettings
         '
         Me.tabSettings.ActiveTabColor = System.Drawing.Color.Transparent
-        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.tabSettings.BeforeTouchSize = New System.Drawing.Size(1115, 550)
         Me.tabSettings.Controls.Add(Me.TabPageAdv1)
         Me.tabSettings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabSettings.InactiveTabColor = System.Drawing.Color.Transparent
         Me.tabSettings.Location = New System.Drawing.Point(0, 0)
+        Me.tabSettings.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabSettings.Name = "tabSettings"
-        Me.tabSettings.Size = New System.Drawing.Size(872, 433)
+        Me.tabSettings.Size = New System.Drawing.Size(1115, 550)
         Me.tabSettings.TabIndex = 0
         Me.tabSettings.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.tabSettings.ThemesEnabled = True
@@ -2098,10 +2172,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv1.Controls.Add(Me.SplitContainer1)
         Me.TabPageAdv1.Image = Nothing
         Me.TabPageAdv1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv1.Location = New System.Drawing.Point(3, 2)
+        Me.TabPageAdv1.Location = New System.Drawing.Point(4, 2)
+        Me.TabPageAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv1.Name = "TabPageAdv1"
         Me.TabPageAdv1.ShowCloseButton = True
-        Me.TabPageAdv1.Size = New System.Drawing.Size(865, 427)
+        Me.TabPageAdv1.Size = New System.Drawing.Size(1081, 534)
         Me.TabPageAdv1.TabIndex = 1
         Me.TabPageAdv1.Text = "Database"
         Me.TabPageAdv1.ThemesEnabled = True
@@ -2110,6 +2185,7 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -2119,14 +2195,16 @@ Partial Class frmAdminMetro
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.dgvSQLQuery)
-        Me.SplitContainer1.Size = New System.Drawing.Size(865, 427)
-        Me.SplitContainer1.SplitterDistance = 288
+        Me.SplitContainer1.Size = New System.Drawing.Size(1081, 534)
+        Me.SplitContainer1.SplitterDistance = 359
+        Me.SplitContainer1.SplitterWidth = 5
         Me.SplitContainer1.TabIndex = 0
         '
         'SplitContainer2
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer2.Name = "SplitContainer2"
         Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -2148,107 +2226,118 @@ Partial Class frmAdminMetro
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripEx10)
-        Me.SplitContainer2.Size = New System.Drawing.Size(288, 427)
-        Me.SplitContainer2.SplitterDistance = 229
+        Me.SplitContainer2.Size = New System.Drawing.Size(359, 534)
+        Me.SplitContainer2.SplitterDistance = 286
+        Me.SplitContainer2.SplitterWidth = 5
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
         '
-        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrPassRep.BeforeTouchSize = New System.Drawing.Size(225, 34)
         Me.txtSvrPassRep.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrPassRep.Location = New System.Drawing.Point(104, 184)
+        Me.txtSvrPassRep.Location = New System.Drawing.Point(130, 230)
+        Me.txtSvrPassRep.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSvrPassRep.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrPassRep.Name = "txtSvrPassRep"
-        Me.txtSvrPassRep.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPassRep.Size = New System.Drawing.Size(225, 34)
         Me.txtSvrPassRep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrPassRep.TabIndex = 9
         Me.txtSvrPassRep.Text = "TextBoxExt5"
         '
         'txtSvrPass
         '
-        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrPass.BeforeTouchSize = New System.Drawing.Size(225, 34)
         Me.txtSvrPass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrPass.Location = New System.Drawing.Point(104, 149)
+        Me.txtSvrPass.Location = New System.Drawing.Point(130, 186)
+        Me.txtSvrPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSvrPass.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrPass.Name = "txtSvrPass"
-        Me.txtSvrPass.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrPass.Size = New System.Drawing.Size(225, 34)
         Me.txtSvrPass.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrPass.TabIndex = 8
         Me.txtSvrPass.Text = "TextBoxExt4"
         '
         'TxtSvrUser
         '
-        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.TxtSvrUser.BeforeTouchSize = New System.Drawing.Size(225, 34)
         Me.TxtSvrUser.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TxtSvrUser.Location = New System.Drawing.Point(104, 114)
+        Me.TxtSvrUser.Location = New System.Drawing.Point(130, 142)
+        Me.TxtSvrUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TxtSvrUser.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TxtSvrUser.Name = "TxtSvrUser"
-        Me.TxtSvrUser.Size = New System.Drawing.Size(181, 29)
+        Me.TxtSvrUser.Size = New System.Drawing.Size(225, 34)
         Me.TxtSvrUser.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TxtSvrUser.TabIndex = 7
         Me.TxtSvrUser.Text = "TextBoxExt3"
         '
         'txtSvrDB
         '
-        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtSvrDB.BeforeTouchSize = New System.Drawing.Size(225, 34)
         Me.txtSvrDB.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtSvrDB.Location = New System.Drawing.Point(104, 79)
+        Me.txtSvrDB.Location = New System.Drawing.Point(130, 99)
+        Me.txtSvrDB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSvrDB.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSvrDB.Name = "txtSvrDB"
-        Me.txtSvrDB.Size = New System.Drawing.Size(181, 29)
+        Me.txtSvrDB.Size = New System.Drawing.Size(225, 34)
         Me.txtSvrDB.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtSvrDB.TabIndex = 6
         Me.txtSvrDB.Text = "TextBoxExt2"
         '
         'txtServer
         '
-        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(116, 23)
+        Me.txtServer.BeforeTouchSize = New System.Drawing.Size(225, 34)
         Me.txtServer.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtServer.Location = New System.Drawing.Point(104, 43)
+        Me.txtServer.Location = New System.Drawing.Point(130, 54)
+        Me.txtServer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtServer.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtServer.Name = "txtServer"
-        Me.txtServer.Size = New System.Drawing.Size(181, 29)
+        Me.txtServer.Size = New System.Drawing.Size(225, 34)
         Me.txtServer.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtServer.TabIndex = 0
         Me.txtServer.Text = "TextBoxExt1"
         '
         'lblSvrPassRep
         '
-        Me.lblSvrPassRep.Location = New System.Drawing.Point(3, 187)
+        Me.lblSvrPassRep.Location = New System.Drawing.Point(4, 234)
+        Me.lblSvrPassRep.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSvrPassRep.Name = "lblSvrPassRep"
-        Me.lblSvrPassRep.Size = New System.Drawing.Size(95, 21)
+        Me.lblSvrPassRep.Size = New System.Drawing.Size(117, 28)
         Me.lblSvrPassRep.TabIndex = 5
         Me.lblSvrPassRep.Text = "Repeat Pass:"
         '
         'lblSvrPass
         '
-        Me.lblSvrPass.Location = New System.Drawing.Point(3, 152)
+        Me.lblSvrPass.Location = New System.Drawing.Point(4, 190)
+        Me.lblSvrPass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSvrPass.Name = "lblSvrPass"
-        Me.lblSvrPass.Size = New System.Drawing.Size(79, 21)
+        Me.lblSvrPass.Size = New System.Drawing.Size(97, 28)
         Me.lblSvrPass.TabIndex = 4
         Me.lblSvrPass.Text = "Password:"
         '
         'lblSvrUser
         '
-        Me.lblSvrUser.Location = New System.Drawing.Point(3, 117)
+        Me.lblSvrUser.Location = New System.Drawing.Point(4, 146)
+        Me.lblSvrUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSvrUser.Name = "lblSvrUser"
-        Me.lblSvrUser.Size = New System.Drawing.Size(84, 21)
+        Me.lblSvrUser.Size = New System.Drawing.Size(103, 28)
         Me.lblSvrUser.TabIndex = 3
         Me.lblSvrUser.Text = "Username:"
         '
         'lblDB
         '
-        Me.lblDB.Location = New System.Drawing.Point(3, 82)
+        Me.lblDB.Location = New System.Drawing.Point(4, 102)
+        Me.lblDB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDB.Name = "lblDB"
-        Me.lblDB.Size = New System.Drawing.Size(77, 21)
+        Me.lblDB.Size = New System.Drawing.Size(97, 28)
         Me.lblDB.TabIndex = 2
         Me.lblDB.Text = "Database:"
         '
         'lblServer
         '
-        Me.lblServer.Location = New System.Drawing.Point(3, 46)
+        Me.lblServer.Location = New System.Drawing.Point(4, 58)
+        Me.lblServer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblServer.Name = "lblServer"
-        Me.lblServer.Size = New System.Drawing.Size(58, 21)
+        Me.lblServer.Size = New System.Drawing.Size(71, 28)
         Me.lblServer.TabIndex = 1
         Me.lblServer.Text = "Server:"
         '
@@ -2261,7 +2350,7 @@ Partial Class frmAdminMetro
         Me.toolstripDBInfo.Location = New System.Drawing.Point(0, 0)
         Me.toolstripDBInfo.Name = "toolstripDBInfo"
         Me.toolstripDBInfo.Office12Mode = False
-        Me.toolstripDBInfo.Size = New System.Drawing.Size(288, 42)
+        Me.toolstripDBInfo.Size = New System.Drawing.Size(359, 47)
         Me.toolstripDBInfo.TabIndex = 0
         Me.toolstripDBInfo.Text = "Database Information"
         Me.toolstripDBInfo.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2272,16 +2361,17 @@ Partial Class frmAdminMetro
         Me.tsBtnDBInfo.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
         Me.tsBtnDBInfo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsBtnDBInfo.Name = "tsBtnDBInfo"
-        Me.tsBtnDBInfo.Size = New System.Drawing.Size(189, 24)
+        Me.tsBtnDBInfo.Size = New System.Drawing.Size(232, 24)
         Me.tsBtnDBInfo.Text = "Change Database Information"
         '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.rtbSQLQuery)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 42)
+        Me.Panel4.Location = New System.Drawing.Point(0, 47)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(288, 152)
+        Me.Panel4.Size = New System.Drawing.Size(359, 196)
         Me.Panel4.TabIndex = 2
         '
         'rtbSQLQuery
@@ -2289,8 +2379,9 @@ Partial Class frmAdminMetro
         Me.rtbSQLQuery.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtbSQLQuery.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbSQLQuery.Location = New System.Drawing.Point(0, 0)
+        Me.rtbSQLQuery.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rtbSQLQuery.Name = "rtbSQLQuery"
-        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 152)
+        Me.rtbSQLQuery.Size = New System.Drawing.Size(359, 196)
         Me.rtbSQLQuery.TabIndex = 0
         Me.rtbSQLQuery.Text = "SELECT {column_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "FROM {table_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE {condition}"
         '
@@ -2303,7 +2394,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx10.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx10.Name = "ToolStripEx10"
         Me.ToolStripEx10.Office12Mode = False
-        Me.ToolStripEx10.Size = New System.Drawing.Size(288, 42)
+        Me.ToolStripEx10.Size = New System.Drawing.Size(359, 47)
         Me.ToolStripEx10.TabIndex = 1
         Me.ToolStripEx10.Text = "SQL Query Builder"
         Me.ToolStripEx10.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2313,14 +2404,14 @@ Partial Class frmAdminMetro
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.icoDatabase
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(71, 24)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 24)
         Me.ToolStripButton1.Text = "Execute"
         '
         'ToolStripLabel3
         '
         Me.ToolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(88, 24)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(113, 24)
         Me.ToolStripLabel3.Text = "ToolStripLabel3"
         '
         'dgvSQLQuery
@@ -2361,6 +2452,7 @@ Partial Class frmAdminMetro
         Me.dgvSQLQuery.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvSQLQuery.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvSQLQuery.Location = New System.Drawing.Point(0, 0)
+        Me.dgvSQLQuery.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSQLQuery.MetroScrollBars = True
         Me.dgvSQLQuery.Name = "dgvSQLQuery"
         Me.dgvSQLQuery.OptimizeInsertRemoveCells = True
@@ -2369,7 +2461,7 @@ Partial Class frmAdminMetro
         Me.dgvSQLQuery.Properties.MarkColHeader = False
         Me.dgvSQLQuery.Properties.MarkRowHeader = False
         Me.dgvSQLQuery.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvSQLQuery.Size = New System.Drawing.Size(573, 427)
+        Me.dgvSQLQuery.Size = New System.Drawing.Size(717, 534)
         Me.dgvSQLQuery.SmartSizeBox = False
         Me.dgvSQLQuery.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvSQLQuery.TabIndex = 0
@@ -2388,7 +2480,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx5.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx5.Name = "ToolStripEx5"
         Me.ToolStripEx5.Office12Mode = False
-        Me.ToolStripEx5.Size = New System.Drawing.Size(872, 42)
+        Me.ToolStripEx5.Size = New System.Drawing.Size(1115, 47)
         Me.ToolStripEx5.TabIndex = 1
         Me.ToolStripEx5.Text = "Oversikt"
         Me.ToolStripEx5.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2399,7 +2491,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton6.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton6.Text = "Logg ut"
         '
         'tbLager
@@ -2409,23 +2501,25 @@ Partial Class frmAdminMetro
         Me.tbLager.Image = Global.OOPSA.My.Resources.Resources.tbLager
         Me.tbLager.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbLager.Location = New System.Drawing.Point(105, 2)
+        Me.tbLager.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbLager.Name = "tbLager"
         Me.tbLager.ShowCloseButton = True
-        Me.tbLager.Size = New System.Drawing.Size(872, 475)
+        Me.tbLager.Size = New System.Drawing.Size(1115, 597)
         Me.tbLager.TabIndex = 4
         Me.tbLager.ThemesEnabled = True
         '
         'TabLager
         '
-        Me.TabLager.BeforeTouchSize = New System.Drawing.Size(872, 433)
+        Me.TabLager.BeforeTouchSize = New System.Drawing.Size(1115, 550)
         Me.TabLager.Controls.Add(Me.TabPageAdv5)
         Me.TabLager.Controls.Add(Me.TabPageAdv6)
         Me.TabLager.Controls.Add(Me.TabPageAdv7)
         Me.TabLager.Controls.Add(Me.TabPageAdv2)
         Me.TabLager.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabLager.Location = New System.Drawing.Point(0, 42)
+        Me.TabLager.Location = New System.Drawing.Point(0, 47)
+        Me.TabLager.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabLager.Name = "TabLager"
-        Me.TabLager.Size = New System.Drawing.Size(872, 433)
+        Me.TabLager.Size = New System.Drawing.Size(1115, 550)
         Me.TabLager.TabIndex = 2
         Me.TabLager.ThemesEnabled = True
         '
@@ -2434,10 +2528,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv5.Controls.Add(Me.GridDataBoundGrid4)
         Me.TabPageAdv5.Image = Nothing
         Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(4, 44)
+        Me.TabPageAdv5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv5.Name = "TabPageAdv5"
         Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv5.Size = New System.Drawing.Size(1081, 492)
         Me.TabPageAdv5.TabIndex = 1
         Me.TabPageAdv5.Text = "Alle Lager"
         Me.TabPageAdv5.ThemesEnabled = True
@@ -2477,6 +2572,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid4.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid4.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid4.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridDataBoundGrid4.MetroScrollBars = True
         Me.GridDataBoundGrid4.Name = "GridDataBoundGrid4"
         Me.GridDataBoundGrid4.OptimizeInsertRemoveCells = True
@@ -2485,7 +2581,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid4.Properties.MarkColHeader = False
         Me.GridDataBoundGrid4.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid4.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid4.Size = New System.Drawing.Size(1081, 492)
         Me.GridDataBoundGrid4.SmartSizeBox = False
         Me.GridDataBoundGrid4.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid4.TabIndex = 0
@@ -2499,10 +2595,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv6.Controls.Add(Me.GridDataBoundGrid3)
         Me.TabPageAdv6.Image = Nothing
         Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv6.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(4, 44)
+        Me.TabPageAdv6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv6.Name = "TabPageAdv6"
         Me.TabPageAdv6.ShowCloseButton = True
-        Me.TabPageAdv6.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv6.Size = New System.Drawing.Size(1081, 492)
         Me.TabPageAdv6.TabIndex = 2
         Me.TabPageAdv6.Text = "Trondheim" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TabPageAdv6.ThemesEnabled = True
@@ -2542,6 +2639,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridDataBoundGrid3.MetroScrollBars = True
         Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
         Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
@@ -2550,7 +2648,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid3.Properties.MarkColHeader = False
         Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(1081, 492)
         Me.GridDataBoundGrid3.SmartSizeBox = False
         Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid3.TabIndex = 0
@@ -2574,10 +2672,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid2)
         Me.TabPageAdv7.Image = Nothing
         Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv7.Location = New System.Drawing.Point(4, 44)
+        Me.TabPageAdv7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv7.Name = "TabPageAdv7"
         Me.TabPageAdv7.ShowCloseButton = True
-        Me.TabPageAdv7.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv7.Size = New System.Drawing.Size(1081, 492)
         Me.TabPageAdv7.TabIndex = 3
         Me.TabPageAdv7.Text = "Stavanger"
         Me.TabPageAdv7.ThemesEnabled = True
@@ -2617,6 +2716,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid2.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid2.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid2.Location = New System.Drawing.Point(0, 0)
+        Me.GridDataBoundGrid2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridDataBoundGrid2.MetroScrollBars = True
         Me.GridDataBoundGrid2.Name = "GridDataBoundGrid2"
         Me.GridDataBoundGrid2.OptimizeInsertRemoveCells = True
@@ -2625,7 +2725,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(865, 394)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(1081, 492)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 0
@@ -2649,10 +2749,11 @@ Partial Class frmAdminMetro
         Me.TabPageAdv2.Controls.Add(Me.ReportViewer5)
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(4, 44)
+        Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(865, 394)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(1081, 492)
         Me.TabPageAdv2.TabIndex = 4
         Me.TabPageAdv2.Text = "Rapport"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -2665,8 +2766,9 @@ Partial Class frmAdminMetro
         Me.ReportViewer5.LocalReport.DataSources.Add(ReportDataSource5)
         Me.ReportViewer5.LocalReport.ReportEmbeddedResource = "OOPSA.LagerRapport.rdlc"
         Me.ReportViewer5.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer5.Name = "ReportViewer5"
-        Me.ReportViewer5.Size = New System.Drawing.Size(865, 394)
+        Me.ReportViewer5.Size = New System.Drawing.Size(1081, 492)
         Me.ReportViewer5.TabIndex = 1
         '
         'ToolStripEx4
@@ -2679,7 +2781,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx4.Name = "ToolStripEx4"
         Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(872, 42)
+        Me.ToolStripEx4.Size = New System.Drawing.Size(1115, 47)
         Me.ToolStripEx4.TabIndex = 1
         Me.ToolStripEx4.Text = "Lageroversikt"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2690,7 +2792,7 @@ Partial Class frmAdminMetro
         Me.ToolStripButton7.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(72, 24)
+        Me.ToolStripButton7.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton7.Text = "Logg ut"
         '
         'Drift82016DataSetBindingSource
@@ -2708,7 +2810,7 @@ Partial Class frmAdminMetro
         Me.StatusStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.StatusStripLabel1.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
         Me.StatusStripLabel1.Name = "StatusStripLabel1"
-        Me.StatusStripLabel1.Size = New System.Drawing.Size(87, 15)
+        Me.StatusStripLabel1.Size = New System.Drawing.Size(109, 20)
         Me.StatusStripLabel1.Text = "Email Progress:"
         '
         'StatusStripProgressBar1
@@ -2723,7 +2825,7 @@ Partial Class frmAdminMetro
         '
         Me.StatusStripLabel2.Margin = New System.Windows.Forms.Padding(0, 4, 0, 2)
         Me.StatusStripLabel2.Name = "StatusStripLabel2"
-        Me.StatusStripLabel2.Size = New System.Drawing.Size(97, 15)
+        Me.StatusStripLabel2.Size = New System.Drawing.Size(124, 20)
         Me.StatusStripLabel2.Text = "StatusStripLabel2"
         '
         'Timer1
@@ -3112,7 +3214,7 @@ Partial Class frmAdminMetro
         Me.Panel10.Location = New System.Drawing.Point(0, 0)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel10.Size = New System.Drawing.Size(200, 78)
+        Me.Panel10.Size = New System.Drawing.Size(200, 74)
         Me.Panel10.TabIndex = 3
         '
         'Panel11
@@ -3123,7 +3225,7 @@ Partial Class frmAdminMetro
         Me.Panel11.Location = New System.Drawing.Point(50, 10)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel11.Size = New System.Drawing.Size(100, 68)
+        Me.Panel11.Size = New System.Drawing.Size(100, 64)
         Me.Panel11.TabIndex = 0
         '
         'RichTextBox2
@@ -3132,21 +3234,21 @@ Partial Class frmAdminMetro
         Me.RichTextBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox2.Location = New System.Drawing.Point(10, 10)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(80, 58)
+        Me.RichTextBox2.Size = New System.Drawing.Size(80, 54)
         Me.RichTextBox2.TabIndex = 0
         Me.RichTextBox2.Text = ""
         '
         'StatusStripEx2
         '
         Me.StatusStripEx2.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.StatusStripEx2.BeforeTouchSize = New System.Drawing.Size(200, 22)
+        Me.StatusStripEx2.BeforeTouchSize = New System.Drawing.Size(200, 26)
         Me.StatusStripEx2.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStripEx2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StatusStripLabel1, Me.StatusStripProgressBar1, Me.StatusStripLabel2})
-        Me.StatusStripEx2.Location = New System.Drawing.Point(0, 78)
+        Me.StatusStripEx2.Location = New System.Drawing.Point(0, 74)
         Me.StatusStripEx2.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx2.Name = "StatusStripEx2"
-        Me.StatusStripEx2.Size = New System.Drawing.Size(200, 22)
+        Me.StatusStripEx2.Size = New System.Drawing.Size(200, 26)
         Me.StatusStripEx2.TabIndex = 2
         Me.StatusStripEx2.Text = "StatusStripEx1"
         Me.StatusStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
@@ -3170,7 +3272,7 @@ Partial Class frmAdminMetro
         '
         'frmAdminMetro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
@@ -3179,10 +3281,10 @@ Partial Class frmAdminMetro
         CaptionImage1.Name = "capDagligLeder"
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
-        Me.ClientSize = New System.Drawing.Size(979, 479)
+        Me.ClientSize = New System.Drawing.Size(1222, 601)
         Me.Controls.Add(Me.tbAnsKund)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
+        Me.Margin = New System.Windows.Forms.Padding(8, 9, 8, 9)
         Me.Name = "frmAdminMetro"
         Me.ShowIcon = False
         Me.Text = "Daglig Leder | OOPSA - BADR08"
@@ -3573,5 +3675,5 @@ Partial Class frmAdminMetro
     Friend WithEvents VisAktiveLeieTableAdapter As drift8_2016dsVisLeieRapportViewTableAdapters.VisAktiveLeieTableAdapter
     Private WithEvents VisAktiveLeieBindingSource As BindingSource
     Friend WithEvents drift8_2016dsVisLeieRapportView As drift8_2016dsVisLeieRapportView
-    Friend WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents reportSalg As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class

@@ -23,22 +23,22 @@ Partial Class frmSalgMetro
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim GridBaseStyle1 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle2 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle3 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle4 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle5 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle6 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle7 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle8 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle9 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle10 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle11 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle12 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle13 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle14 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle15 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
-        Dim GridBaseStyle16 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle21 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle22 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle23 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle24 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle25 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle26 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle27 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle28 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle29 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle30 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle31 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle32 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle17 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle18 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle19 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
+        Dim GridBaseStyle20 As Syncfusion.Windows.Forms.Grid.GridBaseStyle = New Syncfusion.Windows.Forms.Grid.GridBaseStyle()
         Me.SalgsRaportBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.drift8_2016dsSalgsRapportView = New OOPSA.drift8_2016dsSalgsRapportView()
         Me.TabControlAdv1 = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
@@ -84,8 +84,6 @@ Partial Class frmSalgMetro
         Me.ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBoxExt5 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv6 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -133,6 +131,7 @@ Partial Class frmSalgMetro
         Me.Label17 = New System.Windows.Forms.Label()
         Me.TextBoxExt11 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.dtpEndre = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         Me.ComboKUNDEVALG = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.ButtonAdv5 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.ButtonAdv4 = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -157,7 +156,6 @@ Partial Class frmSalgMetro
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
-        Me.dtpEndre = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -200,7 +198,6 @@ Partial Class frmSalgMetro
         CType(Me.dtpKurs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboKurs1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv6.SuspendLayout()
         CType(Me.ComboLager, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboProdukt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,6 +235,7 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboKUNDEVALG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboDropDown5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,7 +244,6 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx4.SuspendLayout()
         Me.ToolStripEx5.SuspendLayout()
-        CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -328,31 +325,31 @@ Partial Class frmSalgMetro
         '
         Me.GridDataBoundGrid3.AllowDragSelectedCols = True
         Me.GridDataBoundGrid3.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle1.Name = "Column Header"
-        GridBaseStyle1.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle1.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle1.StyleInfo.Enabled = False
-        GridBaseStyle1.StyleInfo.Font.Bold = True
-        GridBaseStyle1.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle2.Name = "Header"
-        GridBaseStyle2.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle2.StyleInfo.CellType = "Header"
-        GridBaseStyle2.StyleInfo.Font.Bold = True
-        GridBaseStyle2.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle2.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle3.Name = "Standard"
-        GridBaseStyle3.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle3.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle3.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle4.Name = "Row Header"
-        GridBaseStyle4.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle4.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle4.StyleInfo.Enabled = True
-        GridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid3.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle1, GridBaseStyle2, GridBaseStyle3, GridBaseStyle4})
+        GridBaseStyle21.Name = "Column Header"
+        GridBaseStyle21.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle21.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle21.StyleInfo.Enabled = False
+        GridBaseStyle21.StyleInfo.Font.Bold = True
+        GridBaseStyle21.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle22.Name = "Header"
+        GridBaseStyle22.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle22.StyleInfo.CellType = "Header"
+        GridBaseStyle22.StyleInfo.Font.Bold = True
+        GridBaseStyle22.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle22.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle23.Name = "Standard"
+        GridBaseStyle23.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle23.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle23.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle24.Name = "Row Header"
+        GridBaseStyle24.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle24.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle24.StyleInfo.Enabled = True
+        GridBaseStyle24.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid3.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle21, GridBaseStyle22, GridBaseStyle23, GridBaseStyle24})
         Me.GridDataBoundGrid3.DataSource = Me.LagerRapportALLEBindingSource
         Me.GridDataBoundGrid3.DefaultRowHeight = 20
         Me.GridDataBoundGrid3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -405,31 +402,31 @@ Partial Class frmSalgMetro
         '
         Me.GridDataBoundGrid1.AllowDragSelectedCols = True
         Me.GridDataBoundGrid1.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle5.Name = "Column Header"
-        GridBaseStyle5.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle5.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle5.StyleInfo.Enabled = False
-        GridBaseStyle5.StyleInfo.Font.Bold = True
-        GridBaseStyle5.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle6.Name = "Header"
-        GridBaseStyle6.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle6.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle6.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle6.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle6.StyleInfo.CellType = "Header"
-        GridBaseStyle6.StyleInfo.Font.Bold = True
-        GridBaseStyle6.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle6.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle7.Name = "Standard"
-        GridBaseStyle7.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle7.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle7.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle8.Name = "Row Header"
-        GridBaseStyle8.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle8.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle8.StyleInfo.Enabled = True
-        GridBaseStyle8.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle5, GridBaseStyle6, GridBaseStyle7, GridBaseStyle8})
+        GridBaseStyle25.Name = "Column Header"
+        GridBaseStyle25.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle25.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle25.StyleInfo.Enabled = False
+        GridBaseStyle25.StyleInfo.Font.Bold = True
+        GridBaseStyle25.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle26.Name = "Header"
+        GridBaseStyle26.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle26.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle26.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle26.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle26.StyleInfo.CellType = "Header"
+        GridBaseStyle26.StyleInfo.Font.Bold = True
+        GridBaseStyle26.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle26.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle27.Name = "Standard"
+        GridBaseStyle27.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle27.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle27.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle28.Name = "Row Header"
+        GridBaseStyle28.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle28.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle28.StyleInfo.Enabled = True
+        GridBaseStyle28.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid1.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle25, GridBaseStyle26, GridBaseStyle27, GridBaseStyle28})
         Me.GridDataBoundGrid1.DataSource = Me.LagerRapportTrondheimBindingSource
         Me.GridDataBoundGrid1.DefaultRowHeight = 20
         Me.GridDataBoundGrid1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -482,31 +479,31 @@ Partial Class frmSalgMetro
         '
         Me.GridDataBoundGrid2.AllowDragSelectedCols = True
         Me.GridDataBoundGrid2.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle9.Name = "Column Header"
-        GridBaseStyle9.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle9.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle9.StyleInfo.Enabled = False
-        GridBaseStyle9.StyleInfo.Font.Bold = True
-        GridBaseStyle9.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle10.Name = "Header"
-        GridBaseStyle10.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle10.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle10.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle10.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle10.StyleInfo.CellType = "Header"
-        GridBaseStyle10.StyleInfo.Font.Bold = True
-        GridBaseStyle10.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle10.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle11.Name = "Standard"
-        GridBaseStyle11.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle11.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle11.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle12.Name = "Row Header"
-        GridBaseStyle12.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle12.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle12.StyleInfo.Enabled = True
-        GridBaseStyle12.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle9, GridBaseStyle10, GridBaseStyle11, GridBaseStyle12})
+        GridBaseStyle29.Name = "Column Header"
+        GridBaseStyle29.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle29.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle29.StyleInfo.Enabled = False
+        GridBaseStyle29.StyleInfo.Font.Bold = True
+        GridBaseStyle29.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle30.Name = "Header"
+        GridBaseStyle30.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle30.StyleInfo.CellType = "Header"
+        GridBaseStyle30.StyleInfo.Font.Bold = True
+        GridBaseStyle30.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle30.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle31.Name = "Standard"
+        GridBaseStyle31.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle31.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle31.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle32.Name = "Row Header"
+        GridBaseStyle32.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle32.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle32.StyleInfo.Enabled = True
+        GridBaseStyle32.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.GridDataBoundGrid2.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle29, GridBaseStyle30, GridBaseStyle31, GridBaseStyle32})
         Me.GridDataBoundGrid2.DataSource = Me.LagerRapportStavangerBindingSource
         Me.GridDataBoundGrid2.DefaultRowHeight = 20
         Me.GridDataBoundGrid2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -856,8 +853,6 @@ Partial Class frmSalgMetro
         Me.TabPageAdv5.Controls.Add(Me.ToolStripEx7)
         Me.TabPageAdv5.Controls.Add(Me.ButtonAdv2)
         Me.TabPageAdv5.Controls.Add(Me.TextBoxExt3)
-        Me.TabPageAdv5.Controls.Add(Me.Label5)
-        Me.TabPageAdv5.Controls.Add(Me.TextBoxExt5)
         Me.TabPageAdv5.Controls.Add(Me.Label3)
         Me.TabPageAdv5.Controls.Add(Me.Label2)
         Me.TabPageAdv5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -878,6 +873,7 @@ Partial Class frmSalgMetro
         Me.dtpKurs.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.dtpKurs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.dtpKurs.CalendarSize = New System.Drawing.Size(189, 176)
+        Me.dtpKurs.Culture = New System.Globalization.CultureInfo("en-DM")
         Me.dtpKurs.DropDownImage = Nothing
         Me.dtpKurs.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.dtpKurs.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
@@ -895,12 +891,12 @@ Partial Class frmSalgMetro
         'ComboKurs1
         '
         Me.ComboKurs1.BackColor = System.Drawing.Color.White
-        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(212, 33)
         Me.ComboKurs1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboKurs1.Location = New System.Drawing.Point(194, 74)
         Me.ComboKurs1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboKurs1.Name = "ComboKurs1"
-        Me.ComboKurs1.Size = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.Size = New System.Drawing.Size(212, 33)
         Me.ComboKurs1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKurs1.TabIndex = 26
         Me.ComboKurs1.Text = "ComboBoxAdv1"
@@ -925,7 +921,7 @@ Partial Class frmSalgMetro
         Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(202, 50)
         Me.ButtonAdv2.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(194, 372)
+        Me.ButtonAdv2.Location = New System.Drawing.Point(194, 315)
         Me.ButtonAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv2.Name = "ButtonAdv2"
         Me.ButtonAdv2.Size = New System.Drawing.Size(202, 50)
@@ -945,30 +941,6 @@ Partial Class frmSalgMetro
         Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt3.TabIndex = 3
         Me.TextBoxExt3.Text = "TextBoxExt3"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(32, 276)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 28)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Kursholder :"
-        '
-        'TextBoxExt5
-        '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(198, 32)
-        Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(194, 271)
-        Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt5.Name = "TextBoxExt5"
-        Me.TextBoxExt5.ReadOnly = True
-        Me.TextBoxExt5.Size = New System.Drawing.Size(202, 34)
-        Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt5.TabIndex = 5
-        Me.TextBoxExt5.Text = "TextBoxExt5"
         '
         'Label3
         '
@@ -1172,7 +1144,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton1.Text = "Logg ut"
         '
         'tbBookTime
@@ -1319,31 +1291,31 @@ Partial Class frmSalgMetro
         '
         Me.dgvKurs.AllowDragSelectedCols = True
         Me.dgvKurs.AlphaBlendSelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(222, Byte), Integer))
-        GridBaseStyle13.Name = "Column Header"
-        GridBaseStyle13.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle13.StyleInfo.CellType = "ColumnHeaderCell"
-        GridBaseStyle13.StyleInfo.Enabled = False
-        GridBaseStyle13.StyleInfo.Font.Bold = True
-        GridBaseStyle13.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
-        GridBaseStyle14.Name = "Header"
-        GridBaseStyle14.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
-        GridBaseStyle14.StyleInfo.CellType = "Header"
-        GridBaseStyle14.StyleInfo.Font.Bold = True
-        GridBaseStyle14.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
-        GridBaseStyle14.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
-        GridBaseStyle15.Name = "Standard"
-        GridBaseStyle15.StyleInfo.CheckBoxOptions.CheckedValue = "True"
-        GridBaseStyle15.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
-        GridBaseStyle15.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
-        GridBaseStyle16.Name = "Row Header"
-        GridBaseStyle16.StyleInfo.BaseStyle = "Header"
-        GridBaseStyle16.StyleInfo.CellType = "RowHeaderCell"
-        GridBaseStyle16.StyleInfo.Enabled = True
-        GridBaseStyle16.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
-        Me.dgvKurs.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle13, GridBaseStyle14, GridBaseStyle15, GridBaseStyle16})
+        GridBaseStyle17.Name = "Column Header"
+        GridBaseStyle17.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle17.StyleInfo.CellType = "ColumnHeaderCell"
+        GridBaseStyle17.StyleInfo.Enabled = False
+        GridBaseStyle17.StyleInfo.Font.Bold = True
+        GridBaseStyle17.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center
+        GridBaseStyle18.Name = "Header"
+        GridBaseStyle18.StyleInfo.Borders.Bottom = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Left = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Right = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.Borders.Top = New Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None)
+        GridBaseStyle18.StyleInfo.CellType = "Header"
+        GridBaseStyle18.StyleInfo.Font.Bold = True
+        GridBaseStyle18.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Control)
+        GridBaseStyle18.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle
+        GridBaseStyle19.Name = "Standard"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.CheckedValue = "True"
+        GridBaseStyle19.StyleInfo.CheckBoxOptions.UncheckedValue = "False"
+        GridBaseStyle19.StyleInfo.Interior = New Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window)
+        GridBaseStyle20.Name = "Row Header"
+        GridBaseStyle20.StyleInfo.BaseStyle = "Header"
+        GridBaseStyle20.StyleInfo.CellType = "RowHeaderCell"
+        GridBaseStyle20.StyleInfo.Enabled = True
+        GridBaseStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left
+        Me.dgvKurs.BaseStylesMap.AddRange(New Syncfusion.Windows.Forms.Grid.GridBaseStyle() {GridBaseStyle17, GridBaseStyle18, GridBaseStyle19, GridBaseStyle20})
         Me.dgvKurs.DataSource = Me.KursBindingSource
         Me.dgvKurs.DefaultRowHeight = 20
         Me.dgvKurs.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1398,7 +1370,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton3.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton3.Text = "Logg ut"
         '
         'tbEndreBestilling
@@ -1654,6 +1626,26 @@ Partial Class frmSalgMetro
         Me.Label14.TabIndex = 32
         Me.Label14.Text = "Nåværende bestilling"
         '
+        'dtpEndre
+        '
+        Me.dtpEndre.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
+        Me.dtpEndre.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.dtpEndre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.dtpEndre.CalendarSize = New System.Drawing.Size(189, 176)
+        Me.dtpEndre.DropDownImage = Nothing
+        Me.dtpEndre.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpEndre.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpEndre.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.dtpEndre.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpEndre.Location = New System.Drawing.Point(33, 410)
+        Me.dtpEndre.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.dtpEndre.MinValue = New Date(CType(0, Long))
+        Me.dtpEndre.Name = "dtpEndre"
+        Me.dtpEndre.Size = New System.Drawing.Size(246, 28)
+        Me.dtpEndre.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.dtpEndre.TabIndex = 38
+        Me.dtpEndre.Value = New Date(2016, 4, 18, 16, 1, 16, 280)
+        '
         'ComboKUNDEVALG
         '
         Me.ComboKUNDEVALG.BackColor = System.Drawing.Color.White
@@ -1855,7 +1847,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton4.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton4.Text = "Logg ut"
         '
         'ToolStripEx5
@@ -1899,28 +1891,6 @@ Partial Class frmSalgMetro
         'LagerRapportStavangerTableAdapter
         '
         Me.LagerRapportStavangerTableAdapter.ClearBeforeFill = True
-        '
-        'dtpEndre
-        '
-        Me.dtpEndre.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
-        Me.dtpEndre.BorderColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.dtpEndre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.dtpEndre.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpEndre.CalendarSize = New System.Drawing.Size(189, 176)
-        Me.dtpEndre.DropDownImage = Nothing
-        Me.dtpEndre.DropDownNormalColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.dtpEndre.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.dtpEndre.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
-        Me.dtpEndre.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpEndre.IsNullDate = True
-        Me.dtpEndre.Location = New System.Drawing.Point(33, 410)
-        Me.dtpEndre.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.dtpEndre.MinValue = New Date(CType(0, Long))
-        Me.dtpEndre.Name = "dtpEndre"
-        Me.dtpEndre.Size = New System.Drawing.Size(246, 28)
-        Me.dtpEndre.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.dtpEndre.TabIndex = 38
-        Me.dtpEndre.Value = New Date(2016, 4, 18, 16, 1, 16, 280)
         '
         'frmSalgMetro
         '
@@ -1983,7 +1953,6 @@ Partial Class frmSalgMetro
         CType(Me.dtpKurs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboKurs1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv6.ResumeLayout(False)
         Me.TabPageAdv6.PerformLayout()
         CType(Me.ComboLager, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2030,6 +1999,7 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboKUNDEVALG, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboDropDown5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2040,7 +2010,6 @@ Partial Class frmSalgMetro
         Me.ToolStripEx4.PerformLayout()
         Me.ToolStripEx5.ResumeLayout(False)
         Me.ToolStripEx5.PerformLayout()
-        CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2080,8 +2049,6 @@ Partial Class frmSalgMetro
     Friend WithEvents ToolStripEx7 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBoxExt5 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TabPageAdv6 As Syncfusion.Windows.Forms.Tools.TabPageAdv
