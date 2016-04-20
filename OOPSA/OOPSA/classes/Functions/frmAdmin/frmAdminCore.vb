@@ -90,4 +90,13 @@ Public Class frmAdminCore
         SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL," & Leie_fra & "," & Leie_til & "," & Ansatt_id & "," & kunde_id & "," & produkt_id & "," & lager_id & ")")
     End Sub
 
+    ''blir ikke brukt til noe, får ikke til å referere i admin metro.
+    'Public Sub OppdaterKunde(DbKid As String, KID As String, TabellNavn As String, TuppelNavn As String, tuppelNyverdi As String)
+
+    '    Dim cmd As New MySqlCommand("UPDATE " & TabellNavn & " SET " & TuppelNavn & "=@" & tuppelNyverdi & " WHERE " & DbKid & "=@" & KID, con)
+    '    cmd.Parameters.AddWithValue("@" & tuppelNyverdi, tuppelNyverdi)
+    '    cmd.Parameters.AddWithValue("@" & KID, CInt(KID))
+
+    '    cmd.ExecuteNonQuery()
+    'End Sub
 End Class

@@ -348,6 +348,7 @@
     <EmbeddedResource Include="frm\Admin\frmUsrChngPW.resx">
       <DependentUpon>frmUsrChngPW.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm\Admin\Report1.rdlc" />
     <EmbeddedResource Include="Reporting\LagerRapport.rdlc" />
     <EmbeddedResource Include="Reporting\LeieRapport.rdlc" />
     <EmbeddedResource Include="frm\Ansatt\Lager\frmLagerMetro.resx">
