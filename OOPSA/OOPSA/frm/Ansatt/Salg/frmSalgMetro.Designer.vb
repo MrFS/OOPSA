@@ -104,8 +104,15 @@ Partial Class frmSalgMetro
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer6 = New System.Windows.Forms.SplitContainer()
-        Me.cmbKundeID = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
-        Me.ComboKurs = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.AutoLabel10 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel9 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.AutoLabel8 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.Txt = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.IntegerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+        Me.AutoLabel7 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+        Me.ComboInstruktor = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.ComboAvdeling = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.ButtonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.AutoLabel5 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.AutoLabel6 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
@@ -132,6 +139,11 @@ Partial Class frmSalgMetro
         Me.Label17 = New System.Windows.Forms.Label()
         Me.TextBoxExt11 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkEndreSalg = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
+        Me.chkEndreLeie = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
+        Me.Combo = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.Comboendrepro = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.Comboslgodt = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.dtpEndre = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         Me.ComboKUNDEVALG = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.ButtonAdv5 = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -154,11 +166,6 @@ Partial Class frmSalgMetro
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
-        Me.Comboslgodt = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
-        Me.Comboendrepro = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
-        Me.Combo = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
-        Me.chkEndreLeie = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
-        Me.chkEndreSalg = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -216,8 +223,11 @@ Partial Class frmSalgMetro
         Me.SplitContainer6.Panel1.SuspendLayout()
         Me.SplitContainer6.Panel2.SuspendLayout()
         Me.SplitContainer6.SuspendLayout()
-        CType(Me.cmbKundeID, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Txt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IntegerTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboInstruktor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComboAvdeling, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvKurs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KursBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -237,17 +247,17 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.chkEndreSalg, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.chkEndreLeie, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Combo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Comboendrepro, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Comboslgodt, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboKUNDEVALG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx4.SuspendLayout()
         Me.ToolStripEx5.SuspendLayout()
-        CType(Me.Comboslgodt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Comboendrepro, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Combo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chkEndreLeie, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chkEndreSalg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -1147,7 +1157,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton1.Text = "Logg ut"
         '
         'tbBookTime
@@ -1189,7 +1199,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.dgvKurs)
         Me.SplitContainer2.Size = New System.Drawing.Size(974, 513)
-        Me.SplitContainer2.SplitterDistance = 276
+        Me.SplitContainer2.SplitterDistance = 319
         Me.SplitContainer2.SplitterWidth = 5
         Me.SplitContainer2.TabIndex = 1
         '
@@ -1203,8 +1213,15 @@ Partial Class frmSalgMetro
         '
         'SplitContainer6.Panel1
         '
-        Me.SplitContainer6.Panel1.Controls.Add(Me.cmbKundeID)
-        Me.SplitContainer6.Panel1.Controls.Add(Me.ComboKurs)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.TextBoxExt1)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel10)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel9)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel8)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.Txt)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.IntegerTextBox1)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel7)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.ComboInstruktor)
+        Me.SplitContainer6.Panel1.Controls.Add(Me.ComboAvdeling)
         Me.SplitContainer6.Panel1.Controls.Add(Me.ButtonAdv1)
         Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel5)
         Me.SplitContainer6.Panel1.Controls.Add(Me.AutoLabel6)
@@ -1212,34 +1229,109 @@ Partial Class frmSalgMetro
         'SplitContainer6.Panel2
         '
         Me.SplitContainer6.Panel2.Controls.Add(Me.ButtonAdv3)
-        Me.SplitContainer6.Size = New System.Drawing.Size(276, 513)
-        Me.SplitContainer6.SplitterDistance = 233
+        Me.SplitContainer6.Size = New System.Drawing.Size(319, 513)
+        Me.SplitContainer6.SplitterDistance = 390
         Me.SplitContainer6.SplitterWidth = 5
         Me.SplitContainer6.TabIndex = 0
         '
-        'cmbKundeID
+        'TextBoxExt1
         '
-        Me.cmbKundeID.BackColor = System.Drawing.Color.White
-        Me.cmbKundeID.BeforeTouchSize = New System.Drawing.Size(209, 33)
-        Me.cmbKundeID.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbKundeID.Location = New System.Drawing.Point(31, 118)
-        Me.cmbKundeID.Name = "cmbKundeID"
-        Me.cmbKundeID.Size = New System.Drawing.Size(209, 33)
-        Me.cmbKundeID.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.cmbKundeID.TabIndex = 19
-        Me.cmbKundeID.Text = "ComboBoxAdv1"
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt1.Location = New System.Drawing.Point(172, 57)
+        Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt1.Multiline = True
+        Me.TextBoxExt1.Name = "TextBoxExt1"
+        Me.TextBoxExt1.Size = New System.Drawing.Size(126, 106)
+        Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.TextBoxExt1.TabIndex = 27
+        Me.TextBoxExt1.Text = "Beskrivelse:"
         '
-        'ComboKurs
+        'AutoLabel10
         '
-        Me.ComboKurs.BackColor = System.Drawing.Color.White
-        Me.ComboKurs.BeforeTouchSize = New System.Drawing.Size(209, 33)
-        Me.ComboKurs.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboKurs.Location = New System.Drawing.Point(31, 48)
-        Me.ComboKurs.Name = "ComboKurs"
-        Me.ComboKurs.Size = New System.Drawing.Size(209, 33)
-        Me.ComboKurs.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.ComboKurs.TabIndex = 18
-        Me.ComboKurs.Text = "ComboBoxAdv1"
+        Me.AutoLabel10.Location = New System.Drawing.Point(172, 27)
+        Me.AutoLabel10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel10.Name = "AutoLabel10"
+        Me.AutoLabel10.Size = New System.Drawing.Size(108, 25)
+        Me.AutoLabel10.TabIndex = 26
+        Me.AutoLabel10.Text = "Beskrivelse:"
+        '
+        'AutoLabel9
+        '
+        Me.AutoLabel9.Location = New System.Drawing.Point(20, 29)
+        Me.AutoLabel9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel9.Name = "AutoLabel9"
+        Me.AutoLabel9.Size = New System.Drawing.Size(60, 25)
+        Me.AutoLabel9.TabIndex = 25
+        Me.AutoLabel9.Text = "Navn:"
+        '
+        'AutoLabel8
+        '
+        Me.AutoLabel8.Location = New System.Drawing.Point(20, 103)
+        Me.AutoLabel8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel8.Name = "AutoLabel8"
+        Me.AutoLabel8.Size = New System.Drawing.Size(80, 25)
+        Me.AutoLabel8.TabIndex = 24
+        Me.AutoLabel8.Text = "Pris per:"
+        '
+        'Txt
+        '
+        Me.Txt.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.Txt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Txt.Location = New System.Drawing.Point(31, 57)
+        Me.Txt.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.Txt.Name = "Txt"
+        Me.Txt.Size = New System.Drawing.Size(126, 32)
+        Me.Txt.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.Txt.TabIndex = 23
+        Me.Txt.Text = "TextBoxExt1"
+        '
+        'IntegerTextBox1
+        '
+        Me.IntegerTextBox1.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.IntegerTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.IntegerTextBox1.IntegerValue = CType(1, Long)
+        Me.IntegerTextBox1.Location = New System.Drawing.Point(31, 131)
+        Me.IntegerTextBox1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.IntegerTextBox1.Name = "IntegerTextBox1"
+        Me.IntegerTextBox1.NullString = ""
+        Me.IntegerTextBox1.Size = New System.Drawing.Size(126, 32)
+        Me.IntegerTextBox1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.IntegerTextBox1.TabIndex = 21
+        Me.IntegerTextBox1.Text = "1"
+        '
+        'AutoLabel7
+        '
+        Me.AutoLabel7.Location = New System.Drawing.Point(20, 175)
+        Me.AutoLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel7.Name = "AutoLabel7"
+        Me.AutoLabel7.Size = New System.Drawing.Size(0, 25)
+        Me.AutoLabel7.TabIndex = 20
+        '
+        'ComboInstruktor
+        '
+        Me.ComboInstruktor.BackColor = System.Drawing.Color.White
+        Me.ComboInstruktor.BeforeTouchSize = New System.Drawing.Size(209, 33)
+        Me.ComboInstruktor.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboInstruktor.Location = New System.Drawing.Point(29, 275)
+        Me.ComboInstruktor.Name = "ComboInstruktor"
+        Me.ComboInstruktor.Size = New System.Drawing.Size(209, 33)
+        Me.ComboInstruktor.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.ComboInstruktor.TabIndex = 19
+        Me.ComboInstruktor.Text = "ComboBoxAdv1"
+        '
+        'ComboAvdeling
+        '
+        Me.ComboAvdeling.BackColor = System.Drawing.Color.White
+        Me.ComboAvdeling.BeforeTouchSize = New System.Drawing.Size(209, 33)
+        Me.ComboAvdeling.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboAvdeling.Location = New System.Drawing.Point(29, 205)
+        Me.ComboAvdeling.Name = "ComboAvdeling"
+        Me.ComboAvdeling.Size = New System.Drawing.Size(209, 33)
+        Me.ComboAvdeling.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.ComboAvdeling.TabIndex = 18
+        Me.ComboAvdeling.Text = "ComboBoxAdv1"
         '
         'ButtonAdv1
         '
@@ -1248,44 +1340,44 @@ Partial Class frmSalgMetro
         Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(134, 45)
         Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv1.IsBackStageButton = False
-        Me.ButtonAdv1.Location = New System.Drawing.Point(106, 162)
+        Me.ButtonAdv1.Location = New System.Drawing.Point(29, 331)
         Me.ButtonAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv1.Name = "ButtonAdv1"
         Me.ButtonAdv1.Size = New System.Drawing.Size(134, 45)
         Me.ButtonAdv1.TabIndex = 15
-        Me.ButtonAdv1.Text = "Bestill "
+        Me.ButtonAdv1.Text = "Legg til Kurs"
         Me.ButtonAdv1.UseVisualStyle = True
         '
         'AutoLabel5
         '
-        Me.AutoLabel5.Location = New System.Drawing.Point(20, 90)
+        Me.AutoLabel5.Location = New System.Drawing.Point(20, 247)
         Me.AutoLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.AutoLabel5.Name = "AutoLabel5"
-        Me.AutoLabel5.Size = New System.Drawing.Size(66, 25)
+        Me.AutoLabel5.Size = New System.Drawing.Size(135, 25)
         Me.AutoLabel5.TabIndex = 14
-        Me.AutoLabel5.Text = "Kunde"
+        Me.AutoLabel5.Text = "Velg instruktør"
         '
         'AutoLabel6
         '
-        Me.AutoLabel6.Location = New System.Drawing.Point(20, 20)
+        Me.AutoLabel6.Location = New System.Drawing.Point(23, 178)
         Me.AutoLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.AutoLabel6.Name = "AutoLabel6"
-        Me.AutoLabel6.Size = New System.Drawing.Size(95, 25)
+        Me.AutoLabel6.Size = New System.Drawing.Size(130, 25)
         Me.AutoLabel6.TabIndex = 13
-        Me.AutoLabel6.Text = "Velg Kurs:"
+        Me.AutoLabel6.Text = "Velg avdeling:"
         '
         'ButtonAdv3
         '
         Me.ButtonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(276, 85)
-        Me.ButtonAdv3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(319, 85)
+        Me.ButtonAdv3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ButtonAdv3.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv3.IsBackStageButton = False
-        Me.ButtonAdv3.Location = New System.Drawing.Point(0, 0)
+        Me.ButtonAdv3.Location = New System.Drawing.Point(0, 33)
         Me.ButtonAdv3.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv3.Name = "ButtonAdv3"
-        Me.ButtonAdv3.Size = New System.Drawing.Size(276, 85)
+        Me.ButtonAdv3.Size = New System.Drawing.Size(319, 85)
         Me.ButtonAdv3.TabIndex = 4
         Me.ButtonAdv3.Text = "Oppdater kurs"
         Me.ButtonAdv3.UseVisualStyle = True
@@ -1334,7 +1426,7 @@ Partial Class frmSalgMetro
         Me.dgvKurs.Properties.MarkColHeader = False
         Me.dgvKurs.Properties.MarkRowHeader = False
         Me.dgvKurs.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvKurs.Size = New System.Drawing.Size(693, 513)
+        Me.dgvKurs.Size = New System.Drawing.Size(650, 513)
         Me.dgvKurs.SmartSizeBox = False
         Me.dgvKurs.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvKurs.TabIndex = 0
@@ -1631,6 +1723,70 @@ Partial Class frmSalgMetro
         Me.Label14.TabIndex = 32
         Me.Label14.Text = "Nåværende bestilling"
         '
+        'chkEndreSalg
+        '
+        Me.chkEndreSalg.BeforeTouchSize = New System.Drawing.Size(150, 38)
+        Me.chkEndreSalg.DrawFocusRectangle = False
+        Me.chkEndreSalg.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
+        Me.chkEndreSalg.Location = New System.Drawing.Point(378, 65)
+        Me.chkEndreSalg.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.chkEndreSalg.Name = "chkEndreSalg"
+        Me.chkEndreSalg.Size = New System.Drawing.Size(150, 38)
+        Me.chkEndreSalg.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
+        Me.chkEndreSalg.TabIndex = 43
+        Me.chkEndreSalg.Text = "Endre salg"
+        Me.chkEndreSalg.ThemesEnabled = False
+        '
+        'chkEndreLeie
+        '
+        Me.chkEndreLeie.BeforeTouchSize = New System.Drawing.Size(150, 33)
+        Me.chkEndreLeie.DrawFocusRectangle = False
+        Me.chkEndreLeie.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
+        Me.chkEndreLeie.Location = New System.Drawing.Point(378, 112)
+        Me.chkEndreLeie.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.chkEndreLeie.Name = "chkEndreLeie"
+        Me.chkEndreLeie.Size = New System.Drawing.Size(150, 33)
+        Me.chkEndreLeie.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
+        Me.chkEndreLeie.TabIndex = 42
+        Me.chkEndreLeie.Text = "Endre leie"
+        Me.chkEndreLeie.ThemesEnabled = False
+        '
+        'Combo
+        '
+        Me.Combo.BackColor = System.Drawing.Color.White
+        Me.Combo.BeforeTouchSize = New System.Drawing.Size(198, 33)
+        Me.Combo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Combo.Location = New System.Drawing.Point(67, 281)
+        Me.Combo.Name = "Combo"
+        Me.Combo.Size = New System.Drawing.Size(198, 33)
+        Me.Combo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.Combo.TabIndex = 41
+        Me.Combo.Text = "ComboBoxAdv1"
+        '
+        'Comboendrepro
+        '
+        Me.Comboendrepro.BackColor = System.Drawing.Color.White
+        Me.Comboendrepro.BeforeTouchSize = New System.Drawing.Size(228, 33)
+        Me.Comboendrepro.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Comboendrepro.Location = New System.Drawing.Point(315, 205)
+        Me.Comboendrepro.Name = "Comboendrepro"
+        Me.Comboendrepro.Size = New System.Drawing.Size(228, 33)
+        Me.Comboendrepro.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.Comboendrepro.TabIndex = 40
+        Me.Comboendrepro.Text = "ComboBoxAdv1"
+        '
+        'Comboslgodt
+        '
+        Me.Comboslgodt.BackColor = System.Drawing.Color.White
+        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(198, 33)
+        Me.Comboslgodt.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Comboslgodt.Location = New System.Drawing.Point(67, 205)
+        Me.Comboslgodt.Name = "Comboslgodt"
+        Me.Comboslgodt.Size = New System.Drawing.Size(198, 33)
+        Me.Comboslgodt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.Comboslgodt.TabIndex = 39
+        Me.Comboslgodt.Text = "ComboBoxAdv1"
+        '
         'dtpEndre
         '
         Me.dtpEndre.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
@@ -1819,7 +1975,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton4.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 44)
         Me.ToolStripButton4.Text = "Logg ut"
         '
         'ToolStripEx5
@@ -1841,7 +1997,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton5.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(84, 17)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(84, 37)
         Me.ToolStripButton5.Text = "Logg ut"
         '
         'KursTableAdapter
@@ -1863,70 +2019,6 @@ Partial Class frmSalgMetro
         'LagerRapportStavangerTableAdapter
         '
         Me.LagerRapportStavangerTableAdapter.ClearBeforeFill = True
-        '
-        'Comboslgodt
-        '
-        Me.Comboslgodt.BackColor = System.Drawing.Color.White
-        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(198, 33)
-        Me.Comboslgodt.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Comboslgodt.Location = New System.Drawing.Point(67, 205)
-        Me.Comboslgodt.Name = "Comboslgodt"
-        Me.Comboslgodt.Size = New System.Drawing.Size(198, 33)
-        Me.Comboslgodt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.Comboslgodt.TabIndex = 39
-        Me.Comboslgodt.Text = "ComboBoxAdv1"
-        '
-        'Comboendrepro
-        '
-        Me.Comboendrepro.BackColor = System.Drawing.Color.White
-        Me.Comboendrepro.BeforeTouchSize = New System.Drawing.Size(228, 33)
-        Me.Comboendrepro.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Comboendrepro.Location = New System.Drawing.Point(315, 205)
-        Me.Comboendrepro.Name = "Comboendrepro"
-        Me.Comboendrepro.Size = New System.Drawing.Size(228, 33)
-        Me.Comboendrepro.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.Comboendrepro.TabIndex = 40
-        Me.Comboendrepro.Text = "ComboBoxAdv1"
-        '
-        'Combo
-        '
-        Me.Combo.BackColor = System.Drawing.Color.White
-        Me.Combo.BeforeTouchSize = New System.Drawing.Size(198, 33)
-        Me.Combo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Combo.Location = New System.Drawing.Point(67, 281)
-        Me.Combo.Name = "Combo"
-        Me.Combo.Size = New System.Drawing.Size(198, 33)
-        Me.Combo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
-        Me.Combo.TabIndex = 41
-        Me.Combo.Text = "ComboBoxAdv1"
-        '
-        'chkEndreLeie
-        '
-        Me.chkEndreLeie.BeforeTouchSize = New System.Drawing.Size(150, 33)
-        Me.chkEndreLeie.DrawFocusRectangle = False
-        Me.chkEndreLeie.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
-        Me.chkEndreLeie.Location = New System.Drawing.Point(378, 112)
-        Me.chkEndreLeie.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.chkEndreLeie.Name = "chkEndreLeie"
-        Me.chkEndreLeie.Size = New System.Drawing.Size(150, 33)
-        Me.chkEndreLeie.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
-        Me.chkEndreLeie.TabIndex = 42
-        Me.chkEndreLeie.Text = "Endre leie"
-        Me.chkEndreLeie.ThemesEnabled = False
-        '
-        'chkEndreSalg
-        '
-        Me.chkEndreSalg.BeforeTouchSize = New System.Drawing.Size(150, 38)
-        Me.chkEndreSalg.DrawFocusRectangle = False
-        Me.chkEndreSalg.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
-        Me.chkEndreSalg.Location = New System.Drawing.Point(378, 65)
-        Me.chkEndreSalg.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.chkEndreSalg.Name = "chkEndreSalg"
-        Me.chkEndreSalg.Size = New System.Drawing.Size(150, 38)
-        Me.chkEndreSalg.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
-        Me.chkEndreSalg.TabIndex = 43
-        Me.chkEndreSalg.Text = "Endre salg"
-        Me.chkEndreSalg.ThemesEnabled = False
         '
         'frmSalgMetro
         '
@@ -2008,8 +2100,11 @@ Partial Class frmSalgMetro
         Me.SplitContainer6.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer6.ResumeLayout(False)
-        CType(Me.cmbKundeID, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComboKurs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Txt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IntegerTextBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboInstruktor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComboAvdeling, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvKurs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KursBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2034,6 +2129,11 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.chkEndreSalg, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.chkEndreLeie, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Combo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Comboendrepro, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Comboslgodt, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtpEndre, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboKUNDEVALG, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2042,11 +2142,6 @@ Partial Class frmSalgMetro
         Me.ToolStripEx4.PerformLayout()
         Me.ToolStripEx5.ResumeLayout(False)
         Me.ToolStripEx5.PerformLayout()
-        CType(Me.Comboslgodt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Comboendrepro, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Combo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chkEndreLeie, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chkEndreSalg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2160,8 +2255,8 @@ Partial Class frmSalgMetro
     Friend WithEvents ComboRegSalg As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
     Friend WithEvents ComboProdukt As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
     Friend WithEvents ComboLager As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
-    Friend WithEvents ComboKurs As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
-    Friend WithEvents cmbKundeID As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents ComboAvdeling As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents ComboInstruktor As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
     Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents dtpEndre As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
     Friend WithEvents Label1 As Label
@@ -2171,4 +2266,11 @@ Partial Class frmSalgMetro
     Friend WithEvents Comboslgodt As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
     Friend WithEvents chkEndreSalg As Syncfusion.Windows.Forms.Tools.CheckBoxAdv
     Friend WithEvents chkEndreLeie As Syncfusion.Windows.Forms.Tools.CheckBoxAdv
+    Friend WithEvents AutoLabel10 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel9 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents AutoLabel8 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents Txt As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents IntegerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+    Friend WithEvents AutoLabel7 As Syncfusion.Windows.Forms.Tools.AutoLabel
+    Friend WithEvents TextBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
 End Class

@@ -8,12 +8,18 @@ Public Class frmSalgMetro
     Dim SQL As New SQL
 
     Public Sub New()
+        Initialize()
         InitializeComponent()
     End Sub
 
     Private Sub frmSalgMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Initialize()
+        Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
+        Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
+        Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
+        dgvKurs.DataSource = SQL.bindingsource("SELECT * FROM Kurs")
+
+        KursTableAdapter.Fill(Drift8_2016DataSet.Kurs)
 
         Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
 
@@ -35,12 +41,33 @@ Public Class frmSalgMetro
             ComboKunde1.Items.Add(navn)
         Next
 
-        LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs)
+        Dim adapter1 As New MySqlDataAdapter("SELECT * FROM Ansatt", con)
+        Dim ds_kunde1 = New DataSet
+        Dim dr_kunde1 As DataRow
+        Dim dt_kunde1 As DataTable
+
+        adapter1.Fill(ds_kunde1, "Ansatt")
+        dt_kunde1 = ds_kunde1.Tables(0)
+        For Each dr_kunde1 In dt_kunde1.Rows
+            Dim Anavn As String
+
+            Anavn = dr_kunde1("A_id").ToString
+            Anavn += " " & dr_kunde1("F_navn").ToString
+            Anavn += " " & dr_kunde1("E_navn").ToString
+
+            ComboInstruktor.Items.Add(Anavn)
+        Next
+
+
+
+
+        LeggTildataCOMBOBOX("SELECT * FROM Avdeling", "Avdeling", "id_Avdeling", "city", ComboAvdeling)
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs1)
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboRegSalg)
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboProdukt)
         LeggTildataCOMBOBOX("SELECT * FROM Lager", "Lager", "Lager_id", "by", ComboSalgLager)
         LeggTildataCOMBOBOX("SELECT * FROM Lager", "Lager", "Lager_id", "by", ComboLager)
+
 
         Me.dgvKurs.Refresh()
     End Sub
@@ -67,7 +94,6 @@ Public Class frmSalgMetro
         Dim produkt() As String = ComboRegSalg.Text.Split(" ")
         Dim lager() As String = ComboSalgLager.Text.Split(" ")
         Dim avanse As Integer = CInt(txtavanse.Text)
-        'Dim ansatt_id As Integer = UCore.Getuserid()
         Dim ansatt_id As Integer = UCore.UIDProp
         Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
@@ -84,39 +110,18 @@ Public Class frmSalgMetro
 
     Private Sub ButtonAdv1_Click(sender As Object, e As EventArgs) Handles ButtonAdv1.Click
 
-        'Noe galt med spørringen ellers bør alt virke
+        Dim navn As String = Txt.Text
+        Dim pris_per As Integer = CInt(IntegerTextBox1.Text)
+        Dim beskrivelse As String = TextBoxExt1.Text
+        Dim instrukor() As String = ComboInstruktor.Text.Split(" ")
+        Dim avdeling() As String = ComboAvdeling.Text.Split(" ")
 
 
-        Dim sqlstring As String
+        SQL.sporring("INSERT INTO `drift8_2016`.`Kurs` (`Kurs_id`, `Navn`, `Beskrivelse`, `Pris_per`, `ekstern_Ansatt_id`, `Avdeling_id`) VALUES (NULL, '" & navn & "', '" & beskrivelse & "', '" & pris_per & "', '" & instrukor(0) & "', '" & avdeling(0) & "');")
 
-        Dim Kundenavn As String = ComboKunde1.Text
-        Dim KursNavn As String = ComboKurs.Text
 
-        Dim kundeF() As String
-        kundeF = Kundenavn.Split(" ")
-
-        Try
-
-            Kundenavn = Kundenavn(1) & " " & Kundenavn(2)
-            Dim Kid As Integer = CInt(Kundenavn(0).ToString)
-
-            MsgBox(Kid)
-
-            sqlstring = "SELECT Kurs_id FROM Kurs WHERE Navn = " & KursNavn & " AND NOW() < Tid_avholdt"
-            Dim Kurs_id As Integer = SQL.Return1Row(sqlstring, "Kurs_id")
-
-            MsgBox(Kurs_id)
-
-            sqlstring = "SELECT Tid_avholdt FROM Kurs WHERE Kurs_id=" & Kurs_id & ""
-            Dim Tid As String = SQL.Return1Row(sqlstring, "Tid_avholdt")
-
-            MsgBox(Tid)
-
-            SQL.sporring("INSERT INTO Kurs_deltagelse (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`) VALUES (" & Kurs_id & ", " & Kid & ", " & Tid & ");")
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        dgvKurs.DataSource = SQL.bindingsource("SELECT * FROM Kurs")
+        dgvKurs.Refresh()
 
     End Sub
 
@@ -199,11 +204,6 @@ Public Class frmSalgMetro
         Dim kundeID As String = TextBoxExt7.Text
 
 
-
-        MsgBox(dato)
-        MsgBox(PID)
-        MsgBox(kundeID)
-
         ' Dim sqlstreng As String = "SELECT Antall FROM Kjøp WHERE Kunde_Kid = " & kundeID & " AND Produkt_Produkt_id = " & PID & " AND dato = '" & dato & "'  "
         'Dim antall As Integer = sql.Return1Row(sqlstreng, "Antall")
 
@@ -248,13 +248,6 @@ Public Class frmSalgMetro
         Dim dato As String = dtpKurs.Value.ToString
 
 
-
-        MsgBox(dato.ToString)
-
-
-
-
-
         SQL.sporring("INSERT INTO `drift8_2016`.`Kurs_deltagelse` (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`, `Antall`) VALUES ('" & Kurs_id(0) & "', '" & kid & "', '" & dato & "', '" & antallPersoner & "');")
         MsgBox("Kurset er registrert", MsgBoxStyle.Information, "Registering av kurs")
 
@@ -280,13 +273,12 @@ Public Class frmSalgMetro
 
     Private Sub ButtonAdv3_Click(sender As Object, e As EventArgs) Handles ButtonAdv3.Click
 
-
+        KursTableAdapter.Update(Drift8_2016DataSet.Kurs)
 
         'OPPDATER KURS
     End Sub
 
     Private Sub ButtonAdv4_Click(sender As Object, e As EventArgs) Handles ButtonAdv4.Click
-
 
         'DOOOOO STUFFFFF
 
@@ -306,10 +298,6 @@ Public Class frmSalgMetro
 
 
         End If
-
-
-
-
 
 
     End Sub

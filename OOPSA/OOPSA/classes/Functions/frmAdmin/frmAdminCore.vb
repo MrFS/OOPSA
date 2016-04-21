@@ -24,10 +24,7 @@ Public Class frmAdminCore
 
     Public Sub visLeie()
 
-        Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
-                                       FROM Leie
-        Left OUTER JOIN Produkt
-                                       ON Leie.Produkt_id=Produkt.Produkt_id"
+        Dim sqlstring As String = "SELECT * FROM `VisLeie`"
 
         My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.bindingsource(sqlstring)
 
