@@ -24,22 +24,22 @@ Public Class frmAdminCore
 
     Public Sub visLeie()
 
-        '    Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
-        '                               FROM Leie
-        '                               LEFT OUTER JOIN Produkt
-        '                               ON Leie.Produkt_id=Produkt.Produkt_id"
+        Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
+                                       FROM Leie
+        Left OUTER JOIN Produkt
+                                       ON Leie.Produkt_id=Produkt.Produkt_id"
 
-        '    My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.bindingsource(sqlstring)
+        My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.bindingsource(sqlstring)
 
-        '    With My.Forms.frmAdminMetro.GridDataBoundGrid1
-        '        .Binder.InternalColumns(0).HeaderText = "Leie ID"
-        '        .Binder.InternalColumns(1).HeaderText = "Fra"
-        '        .Binder.InternalColumns(2).HeaderText = "Til"
-        '        .Binder.InternalColumns(3).HeaderText = "Utleier ID"
-        '        .Binder.InternalColumns(4).HeaderText = "Kunde ID"
-        '        .Binder.InternalColumns(5).HeaderText = "Produkt Navn"
-        '        .Binder.InternalColumns(6).HeaderText = "Produkt ID"
-        '    End With
+        With My.Forms.frmAdminMetro.GridDataBoundGrid1
+            .Binder.InternalColumns(0).HeaderText = "Leie ID"
+            .Binder.InternalColumns(1).HeaderText = "Fra"
+            .Binder.InternalColumns(2).HeaderText = "Til"
+            .Binder.InternalColumns(3).HeaderText = "Utleier ID"
+            .Binder.InternalColumns(4).HeaderText = "Kunde ID"
+            .Binder.InternalColumns(5).HeaderText = "Produkt Navn"
+            .Binder.InternalColumns(6).HeaderText = "Produkt ID"
+        End With
 
     End Sub
 
