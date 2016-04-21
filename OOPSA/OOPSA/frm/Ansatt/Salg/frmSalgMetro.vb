@@ -88,6 +88,8 @@ Public Class frmSalgMetro
 
     End Sub
 
+    Dim totall As Integer
+
     Private Sub btnRegSalg_Click(sender As Object, e As EventArgs) Handles btnRegSalg.Click
         Dim UCore As New UserCore
 
@@ -97,14 +99,32 @@ Public Class frmSalgMetro
         Dim ansatt_id As Integer = UCore.UIDProp
         Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
+        Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = 1", "Pris")
+        Dim PrismAvanse As Integer = (((avanse / 100) * PrisPer) + PrisPer) * antall
+
+
+
+
 
         Try
-            MsgBox(kunde_id(0).ToString)
             SQL.sporring("INSERT INTO `Kjøp`(`S_id`, `dato`, `Avanse`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_Produkt_id`, `Antall`, `Lager_id`) VALUES (NULL,CURDATE()," & avanse & "," & ansatt_id & "," & kunde_id(0) & "," & produkt(0) & "," & antall & "," & lager(0) & ")")
             MsgBox("Salget er registert", MsgBoxStyle.Information, "Salg Registrering")
+            lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & " Antall: " & antall & " Avannse: " & avanse)
+
+            totall += PrismAvanse
+
+            lblTotPris.Text = "Total pris " & totall
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
+
+
+
+
+
+
 
     End Sub
 
@@ -240,21 +260,29 @@ Public Class frmSalgMetro
     End Sub
 
     Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
+        'Registrer Kurs
 
         Dim kunde() As String = ComboKunde1.Text.Split(" ")
         Dim kid As Integer = kunde(0)
         Dim Kurs_id() As String = ComboKurs1.Text.Split(" ")
         Dim antallPersoner As Integer = TextBoxExt3.Text
         Dim dato As String = dtpKurs.Value.ToString
+        Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris_per FROM Kurs WHERE Kurs_id = " & Kurs_id(0) & "", "Pris_per")
+        Dim pristot As Integer = PrisPer * antallPersoner
 
 
         SQL.sporring("INSERT INTO `drift8_2016`.`Kurs_deltagelse` (`Kurs_Kurs_id`, `Kunde_Kid`, `Dato`, `Antall`) VALUES ('" & Kurs_id(0) & "', '" & kid & "', '" & dato & "', '" & antallPersoner & "');")
         MsgBox("Kurset er registrert", MsgBoxStyle.Information, "Registering av kurs")
+        lstSalgIDag.Items.Add("Kurs navn: " & Kurs_id(1) & vbCrLf & "Antall personer: " & antallPersoner & vbCrLf & "Dato:" & dato)
 
+
+        totall += pristot
+        lblTotPris.Text = "Total pris " & totall
 
     End Sub
 
     Private Sub btbAddleie_Click(sender As Object, e As EventArgs) Handles btbAddleie.Click
+        'LEIE
         Dim UCore As New UserCore
 
         Dim produkt() As String = ComboProdukt.Text.Split(" ")
@@ -263,17 +291,24 @@ Public Class frmSalgMetro
         Dim fra As Date = dtpFra.Value
         Dim til As Date = dtpTil.Value
         Dim lager() As String = ComboLager.Text.Split(" ")
+        Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = 1", "Pris")
+
 
 
 
         SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "');", "Leiet er registrert")
 
 
+
+        lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & "Fra: " & fra & vbCrLf & "Til: " & til)
+
+        totall += PrisPer
+        lblTotPris.Text = "Total pris " & totall
     End Sub
 
     Private Sub ButtonAdv3_Click(sender As Object, e As EventArgs) Handles ButtonAdv3.Click
 
-        KursTableAdapter.Update(Drift8_2016DataSet.Kurs)
+        Me.KursTableAdapter.Update(Drift8_2016DataSet.Kurs)
 
         'OPPDATER KURS
     End Sub
@@ -326,6 +361,14 @@ Public Class frmSalgMetro
 
         TextBoxExt9.Hide()
         Comboendrepro.Hide()
+
+    End Sub
+
+    Private Sub checkboxKunde_endret(sender As Object, e As EventArgs) Handles ComboKunde1.DropDownCloseOnClick
+
+        lstSalgIDag.Items.Clear()
+        totall = 0
+        lblTotPris.Text = "Totall pris: " & totall
 
     End Sub
 End Class
