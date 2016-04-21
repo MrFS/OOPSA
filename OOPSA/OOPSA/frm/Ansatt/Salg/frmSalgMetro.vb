@@ -38,7 +38,9 @@ Public Class frmSalgMetro
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs)
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs1)
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboRegSalg)
+        LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboProdukt)
         LeggTildataCOMBOBOX("SELECT * FROM Lager", "Lager", "Lager_id", "by", ComboSalgLager)
+        LeggTildataCOMBOBOX("SELECT * FROM Lager", "Lager", "Lager_id", "by", ComboLager)
 
         Me.dgvKurs.Refresh()
     End Sub
@@ -120,7 +122,11 @@ Public Class frmSalgMetro
 
     Private Sub btnSokBestilling_Click(sender As Object, e As EventArgs) Handles btnSokBestilling.Click
         Dim kundeid As Integer = CInt(TextBoxExt7.Text)
-        LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboDropDown3)
+
+        ComboKUNDEVALG.Items.Clear()
+
+
+        LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", Comboendrepro)
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", Combo)
 
 
@@ -136,18 +142,18 @@ Public Class frmSalgMetro
             TextBoxExt9.Text = dr_produkt("Antall")
         Next
 
-        Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs WHERE Kunde_Kid = " & kundeid & "", con)
+        Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs_deltagelse WHERE Kunde_Kid = " & kundeid & "", con)
         Dim ds_produkt1 = New DataSet
         Dim dr_produkt1 As DataRow
         Dim dt_produkt1 As DataTable
-        adapter1.Fill(ds_produkt1, "Kjøp")
+        adapter1.Fill(ds_produkt1, "Kurs")
         dt_produkt1 = ds_produkt1.Tables(0)
         For Each dr_produkt1 In dt_produkt1.Rows
             TextBoxExt9.Text = dr_produkt1("Antall")
         Next
 
 
-        ComboKUNDEVALG.Items.Clear()
+
 
         Dim adapter2 As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
         Dim ds_produkt2 = New DataSet
@@ -162,8 +168,26 @@ Public Class frmSalgMetro
             kjøp += " " & dr_produkt2("Produkt_Produkt_id")
             kjøp += " " & dr_produkt2("Produkt_navn")
             ComboKUNDEVALG.Items.Add(kjøp)
-
         Next
+
+
+        Dim adapter3 As New MySqlDataAdapter("SELECT Kurs_Kurs_id, Antall, Dato FROM Kurs_deltagelse WHERE Kunde_Kid = '" & kundeid & "' ", con)
+        Dim ds_produkt22 = New DataSet
+        Dim dr_produkt22 As DataRow
+        Dim dt_produkt22 As DataTable
+        adapter3.Fill(ds_produkt22, "Kjøp")
+        dt_produkt22 = ds_produkt22.Tables(0)
+        For Each dr_produkt22 In dt_produkt22.Rows
+            Dim leie As String
+
+            leie = dr_produkt22("Dato")
+            leie += " " & dr_produkt22("Kurs_Kurs_id")
+            leie += " " & dr_produkt22("Antall")
+            ComboKUNDEVALG.Items.Add(leie)
+        Next
+
+
+
 
 
     End Sub
@@ -221,10 +245,13 @@ Public Class frmSalgMetro
         Dim kid As Integer = kunde(0)
         Dim Kurs_id() As String = ComboKurs1.Text.Split(" ")
         Dim antallPersoner As Integer = TextBoxExt3.Text
-        Dim dato As Date = dtpKurs.Value
+        Dim dato As String = dtpKurs.Value.ToString
 
 
-        MsgBox(dato.GetDateTimeFormats())
+
+        MsgBox(dato.ToString)
+
+
 
 
 
@@ -239,7 +266,7 @@ Public Class frmSalgMetro
 
         Dim produkt() As String = ComboProdukt.Text.Split(" ")
         Dim kunde() As String = ComboKunde1.Text.Split(" ")
-        Dim ansattid = UCore.Getuserid(UCore.currentUsr)
+        Dim ansattid = UCore.UIDProp
         Dim fra As Date = dtpFra.Value
         Dim til As Date = dtpTil.Value
         Dim lager() As String = ComboLager.Text.Split(" ")
@@ -252,6 +279,9 @@ Public Class frmSalgMetro
     End Sub
 
     Private Sub ButtonAdv3_Click(sender As Object, e As EventArgs) Handles ButtonAdv3.Click
+
+
+
         'OPPDATER KURS
     End Sub
 
@@ -265,13 +295,49 @@ Public Class frmSalgMetro
         Dim Kurs_Kurs_id As Integer
         Dim Dato As Date
         Dim antall = CInt(TextBoxExt9.Text)
+        Dim Velgsalg As String = Comboslgodt.Text
+
+        If chkEndreSalg.Checked = True Then
+            SQL.sporring("Update Kurs_deltagelse SET Kurs_Kurs_id = " & Kurs_Kurs_id & ", Dato = " & Dato & ", Antall = " & antall & " WHERE Kurs_deltagelse.Kurs_Kurs_id = " & Kurs_Kurs_id & " And Kurs_deltagelse.Kunde_Kid = " & kunde_id & " And Kurs_deltagelse.Dato` = " & Dato & "", "Oppdatert bestilling")
+
+        ElseIf chkEndreLeie.Checked = True Then
+
+            SQL.sporring("")
 
 
-        SQL.sporring("Update Kurs_deltagelse SET Kurs_Kurs_id = " & Kurs_Kurs_id & ", Dato = " & Dato & ", Antall = " & antall & " WHERE Kurs_deltagelse.Kurs_Kurs_id = " & Kurs_Kurs_id & " And Kurs_deltagelse.Kunde_Kid = " & kunde_id & " And Kurs_deltagelse.Dato` = " & Dato & "", "Oppdatert bestilling")
+        End If
 
 
 
 
+
+
+    End Sub
+
+    Private Sub chkEndreSalg_CheckStateChanged(sender As Object, e As EventArgs) Handles chkEndreSalg.CheckStateChanged
+
+        chkEndreLeie.Checked = False
+
+        TextBoxExt9.Show()
+        Comboendrepro.Show()
+
+
+        Combo.Hide()
+        TextBoxExt10.Hide()
+        dtpEndre.Hide()
+
+    End Sub
+
+    Private Sub chkEndreLeie_CheckStateChanged(sender As Object, e As EventArgs) Handles chkEndreLeie.CheckStateChanged
+
+        chkEndreSalg.Checked = False
+
+        Combo.Show()
+        TextBoxExt10.Show()
+        dtpEndre.Show()
+
+        TextBoxExt9.Hide()
+        Comboendrepro.Hide()
 
     End Sub
 End Class
