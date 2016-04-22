@@ -35,27 +35,27 @@ Partial Class frmAddUsrMetro
         Me.lblTlf = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblAdress = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.lblDepartment = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-        Me.TextBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt2 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt4 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt5 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt6 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt7 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt8 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-        Me.TextBoxExt9 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtFornavn = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtEtternavn = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtBrukernavn = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtPassord = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtGjentaPassord = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtEpost = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.txtAdresse = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.dtpBirth = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
-        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtTlf = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+        Me.cmbAvdeling = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        CType(Me.txtFornavn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtEtternavn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtBrukernavn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPassord, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGjentaPassord, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtEpost, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtAdresse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTlf, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbAvdeling, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblUsername
@@ -153,122 +153,96 @@ Partial Class frmAddUsrMetro
         Me.lblDepartment.TabIndex = 10
         Me.lblDepartment.Text = "Avdeling:"
         '
-        'TextBoxExt1
+        'txtFornavn
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt1.Location = New System.Drawing.Point(14, 65)
-        Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt1.Name = "TextBoxExt1"
-        Me.TextBoxExt1.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt1.TabIndex = 11
-        Me.TextBoxExt1.Text = "TextBoxExt1"
+        Me.txtFornavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtFornavn.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtFornavn.Location = New System.Drawing.Point(14, 65)
+        Me.txtFornavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtFornavn.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtFornavn.Name = "txtFornavn"
+        Me.txtFornavn.Size = New System.Drawing.Size(116, 25)
+        Me.txtFornavn.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtFornavn.TabIndex = 11
+        Me.txtFornavn.Text = "TextBoxExt1"
         '
-        'TextBoxExt2
+        'txtEtternavn
         '
-        Me.TextBoxExt2.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt2.Location = New System.Drawing.Point(136, 65)
-        Me.TextBoxExt2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt2.Name = "TextBoxExt2"
-        Me.TextBoxExt2.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt2.TabIndex = 12
-        Me.TextBoxExt2.Text = "TextBoxExt2"
+        Me.txtEtternavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtEtternavn.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEtternavn.Location = New System.Drawing.Point(136, 65)
+        Me.txtEtternavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtEtternavn.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtEtternavn.Name = "txtEtternavn"
+        Me.txtEtternavn.Size = New System.Drawing.Size(116, 25)
+        Me.txtEtternavn.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtEtternavn.TabIndex = 12
+        Me.txtEtternavn.Text = "TextBoxExt2"
         '
-        'TextBoxExt3
+        'txtBrukernavn
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(14, 115)
-        Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt3.TabIndex = 13
-        Me.TextBoxExt3.Text = "TextBoxExt3"
+        Me.txtBrukernavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtBrukernavn.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtBrukernavn.Location = New System.Drawing.Point(14, 115)
+        Me.txtBrukernavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtBrukernavn.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtBrukernavn.Name = "txtBrukernavn"
+        Me.txtBrukernavn.Size = New System.Drawing.Size(116, 25)
+        Me.txtBrukernavn.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtBrukernavn.TabIndex = 13
+        Me.txtBrukernavn.Text = "TextBoxExt3"
         '
-        'TextBoxExt4
+        'txtPassord
         '
-        Me.TextBoxExt4.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt4.Location = New System.Drawing.Point(136, 115)
-        Me.TextBoxExt4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt4.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt4.Name = "TextBoxExt4"
-        Me.TextBoxExt4.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt4.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt4.TabIndex = 14
-        Me.TextBoxExt4.Text = "TextBoxExt4"
+        Me.txtPassord.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtPassord.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPassord.Location = New System.Drawing.Point(136, 115)
+        Me.txtPassord.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtPassord.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtPassord.Name = "txtPassord"
+        Me.txtPassord.Size = New System.Drawing.Size(116, 25)
+        Me.txtPassord.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtPassord.TabIndex = 14
+        Me.txtPassord.Text = "TextBoxExt4"
         '
-        'TextBoxExt5
+        'txtGjentaPassord
         '
-        Me.TextBoxExt5.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt5.Location = New System.Drawing.Point(258, 115)
-        Me.TextBoxExt5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt5.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt5.Name = "TextBoxExt5"
-        Me.TextBoxExt5.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt5.TabIndex = 15
-        Me.TextBoxExt5.Text = "TextBoxExt5"
+        Me.txtGjentaPassord.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtGjentaPassord.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtGjentaPassord.Location = New System.Drawing.Point(258, 115)
+        Me.txtGjentaPassord.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtGjentaPassord.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtGjentaPassord.Name = "txtGjentaPassord"
+        Me.txtGjentaPassord.Size = New System.Drawing.Size(116, 25)
+        Me.txtGjentaPassord.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtGjentaPassord.TabIndex = 15
+        Me.txtGjentaPassord.Text = "TextBoxExt5"
         '
-        'TextBoxExt6
+        'txtEpost
         '
-        Me.TextBoxExt6.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt6.Location = New System.Drawing.Point(14, 165)
-        Me.TextBoxExt6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt6.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt6.Name = "TextBoxExt6"
-        Me.TextBoxExt6.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt6.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt6.TabIndex = 16
-        Me.TextBoxExt6.Text = "TextBoxExt6"
+        Me.txtEpost.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtEpost.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEpost.Location = New System.Drawing.Point(14, 165)
+        Me.txtEpost.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtEpost.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtEpost.Name = "txtEpost"
+        Me.txtEpost.Size = New System.Drawing.Size(116, 25)
+        Me.txtEpost.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtEpost.TabIndex = 16
+        Me.txtEpost.Text = "TextBoxExt6"
         '
-        'TextBoxExt7
+        'txtAdresse
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(136, 165)
-        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(238, 25)
-        Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt7.TabIndex = 17
-        Me.TextBoxExt7.Text = "TextBoxExt7"
-        '
-        'TextBoxExt8
-        '
-        Me.TextBoxExt8.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt8.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt8.Location = New System.Drawing.Point(14, 215)
-        Me.TextBoxExt8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt8.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt8.Name = "TextBoxExt8"
-        Me.TextBoxExt8.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt8.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt8.TabIndex = 18
-        Me.TextBoxExt8.Text = "TextBoxExt8"
-        '
-        'TextBoxExt9
-        '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(254, 23)
-        Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt9.Location = New System.Drawing.Point(136, 215)
-        Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt9.Name = "TextBoxExt9"
-        Me.TextBoxExt9.Size = New System.Drawing.Size(116, 25)
-        Me.TextBoxExt9.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt9.TabIndex = 19
-        Me.TextBoxExt9.Text = "TextBoxExt9"
+        Me.txtAdresse.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtAdresse.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtAdresse.Location = New System.Drawing.Point(136, 165)
+        Me.txtAdresse.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtAdresse.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtAdresse.Name = "txtAdresse"
+        Me.txtAdresse.Size = New System.Drawing.Size(238, 25)
+        Me.txtAdresse.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtAdresse.TabIndex = 17
+        Me.txtAdresse.Text = "TextBoxExt7"
         '
         'AutoLabel1
         '
@@ -302,6 +276,33 @@ Partial Class frmAddUsrMetro
         Me.dtpBirth.TabIndex = 22
         Me.dtpBirth.Value = New Date(2016, 3, 10, 12, 36, 8, 262)
         '
+        'txtTlf
+        '
+        Me.txtTlf.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.txtTlf.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtTlf.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtTlf.IntegerValue = CType(1, Long)
+        Me.txtTlf.Location = New System.Drawing.Point(14, 214)
+        Me.txtTlf.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtTlf.Name = "txtTlf"
+        Me.txtTlf.NullString = ""
+        Me.txtTlf.Size = New System.Drawing.Size(116, 25)
+        Me.txtTlf.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtTlf.TabIndex = 23
+        Me.txtTlf.Text = "1"
+        '
+        'cmbAvdeling
+        '
+        Me.cmbAvdeling.BackColor = System.Drawing.Color.White
+        Me.cmbAvdeling.BeforeTouchSize = New System.Drawing.Size(116, 25)
+        Me.cmbAvdeling.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbAvdeling.Location = New System.Drawing.Point(136, 214)
+        Me.cmbAvdeling.Name = "cmbAvdeling"
+        Me.cmbAvdeling.Size = New System.Drawing.Size(116, 25)
+        Me.cmbAvdeling.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+        Me.cmbAvdeling.TabIndex = 24
+        Me.cmbAvdeling.Text = "ComboBoxAdv1"
+        '
         'frmAddUsrMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -314,17 +315,17 @@ Partial Class frmAddUsrMetro
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
         Me.ClientSize = New System.Drawing.Size(384, 252)
+        Me.Controls.Add(Me.cmbAvdeling)
+        Me.Controls.Add(Me.txtTlf)
         Me.Controls.Add(Me.dtpBirth)
         Me.Controls.Add(Me.AutoLabel1)
-        Me.Controls.Add(Me.TextBoxExt9)
-        Me.Controls.Add(Me.TextBoxExt8)
-        Me.Controls.Add(Me.TextBoxExt7)
-        Me.Controls.Add(Me.TextBoxExt6)
-        Me.Controls.Add(Me.TextBoxExt5)
-        Me.Controls.Add(Me.TextBoxExt4)
-        Me.Controls.Add(Me.TextBoxExt3)
-        Me.Controls.Add(Me.TextBoxExt2)
-        Me.Controls.Add(Me.TextBoxExt1)
+        Me.Controls.Add(Me.txtAdresse)
+        Me.Controls.Add(Me.txtEpost)
+        Me.Controls.Add(Me.txtGjentaPassord)
+        Me.Controls.Add(Me.txtPassord)
+        Me.Controls.Add(Me.txtBrukernavn)
+        Me.Controls.Add(Me.txtEtternavn)
+        Me.Controls.Add(Me.txtFornavn)
         Me.Controls.Add(Me.lblDepartment)
         Me.Controls.Add(Me.lblAdress)
         Me.Controls.Add(Me.lblTlf)
@@ -341,16 +342,16 @@ Partial Class frmAddUsrMetro
         Me.Name = "frmAddUsrMetro"
         Me.ShowIcon = False
         Me.Text = "Legg Til Ny Ansatt"
-        CType(Me.TextBoxExt1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtFornavn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtEtternavn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtBrukernavn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtPassord, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtGjentaPassord, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtEpost, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtAdresse, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtTlf, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbAvdeling, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,15 +368,15 @@ Partial Class frmAddUsrMetro
     Friend WithEvents lblTlf As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents lblAdress As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents lblDepartment As Syncfusion.Windows.Forms.Tools.AutoLabel
-    Friend WithEvents TextBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt2 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt4 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt5 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt6 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt7 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt8 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Friend WithEvents TextBoxExt9 As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtFornavn As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtEtternavn As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtBrukernavn As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtPassord As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtGjentaPassord As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtEpost As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents txtAdresse As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
     Friend WithEvents dtpBirth As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
+    Friend WithEvents txtTlf As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+    Friend WithEvents cmbAvdeling As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
 End Class

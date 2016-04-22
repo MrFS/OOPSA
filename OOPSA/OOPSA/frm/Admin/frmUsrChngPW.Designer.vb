@@ -35,10 +35,13 @@ Partial Class frmUsrChngPW
         Me.txtRepNewPw = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.chkViewPW = New System.Windows.Forms.CheckBox()
         Me.btnChangePW = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.txtMail = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+        Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         CType(Me.cmbAnsatte, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtOldPw, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtNewPw, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtRepNewPw, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtMail, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'chsEmpl
@@ -56,7 +59,7 @@ Partial Class frmUsrChngPW
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(340, 40)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(424, 40)
         Me.ToolStripEx1.TabIndex = 1
         Me.ToolStripEx1.Text = "Endre passord for dine ansatte"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -64,18 +67,18 @@ Partial Class frmUsrChngPW
         'cmbAnsatte
         '
         Me.cmbAnsatte.BackColor = System.Drawing.Color.White
-        Me.cmbAnsatte.BeforeTouchSize = New System.Drawing.Size(230, 29)
+        Me.cmbAnsatte.BeforeTouchSize = New System.Drawing.Size(305, 29)
         Me.cmbAnsatte.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbAnsatte.Location = New System.Drawing.Point(107, 40)
         Me.cmbAnsatte.Name = "cmbAnsatte"
-        Me.cmbAnsatte.Size = New System.Drawing.Size(230, 29)
+        Me.cmbAnsatte.Size = New System.Drawing.Size(305, 29)
         Me.cmbAnsatte.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.cmbAnsatte.TabIndex = 2
         Me.cmbAnsatte.Text = "Dine ansatte"
         '
         'lblOldPW
         '
-        Me.lblOldPW.Location = New System.Drawing.Point(12, 83)
+        Me.lblOldPW.Location = New System.Drawing.Point(12, 118)
         Me.lblOldPW.Name = "lblOldPW"
         Me.lblOldPW.Size = New System.Drawing.Size(135, 21)
         Me.lblOldPW.TabIndex = 3
@@ -83,7 +86,7 @@ Partial Class frmUsrChngPW
         '
         'AutoLabel2
         '
-        Me.AutoLabel2.Location = New System.Drawing.Point(12, 118)
+        Me.AutoLabel2.Location = New System.Drawing.Point(12, 153)
         Me.AutoLabel2.Name = "AutoLabel2"
         Me.AutoLabel2.Size = New System.Drawing.Size(101, 21)
         Me.AutoLabel2.TabIndex = 4
@@ -91,7 +94,7 @@ Partial Class frmUsrChngPW
         '
         'AutoLabel3
         '
-        Me.AutoLabel3.Location = New System.Drawing.Point(12, 153)
+        Me.AutoLabel3.Location = New System.Drawing.Point(12, 188)
         Me.AutoLabel3.Name = "AutoLabel3"
         Me.AutoLabel3.Size = New System.Drawing.Size(150, 21)
         Me.AutoLabel3.TabIndex = 5
@@ -99,36 +102,36 @@ Partial Class frmUsrChngPW
         '
         'txtOldPw
         '
-        Me.txtOldPw.BeforeTouchSize = New System.Drawing.Size(151, 29)
+        Me.txtOldPw.BeforeTouchSize = New System.Drawing.Size(226, 29)
         Me.txtOldPw.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtOldPw.Location = New System.Drawing.Point(186, 75)
+        Me.txtOldPw.Location = New System.Drawing.Point(186, 110)
         Me.txtOldPw.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtOldPw.Name = "txtOldPw"
-        Me.txtOldPw.Size = New System.Drawing.Size(151, 29)
+        Me.txtOldPw.Size = New System.Drawing.Size(226, 29)
         Me.txtOldPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtOldPw.TabIndex = 6
         Me.txtOldPw.Text = "TextBoxExt1"
         '
         'txtNewPw
         '
-        Me.txtNewPw.BeforeTouchSize = New System.Drawing.Size(151, 29)
+        Me.txtNewPw.BeforeTouchSize = New System.Drawing.Size(226, 29)
         Me.txtNewPw.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtNewPw.Location = New System.Drawing.Point(186, 110)
+        Me.txtNewPw.Location = New System.Drawing.Point(186, 145)
         Me.txtNewPw.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtNewPw.Name = "txtNewPw"
-        Me.txtNewPw.Size = New System.Drawing.Size(151, 29)
+        Me.txtNewPw.Size = New System.Drawing.Size(226, 29)
         Me.txtNewPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtNewPw.TabIndex = 7
         Me.txtNewPw.Text = "TextBoxExt2"
         '
         'txtRepNewPw
         '
-        Me.txtRepNewPw.BeforeTouchSize = New System.Drawing.Size(151, 29)
+        Me.txtRepNewPw.BeforeTouchSize = New System.Drawing.Size(226, 29)
         Me.txtRepNewPw.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtRepNewPw.Location = New System.Drawing.Point(186, 145)
+        Me.txtRepNewPw.Location = New System.Drawing.Point(186, 180)
         Me.txtRepNewPw.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtRepNewPw.Name = "txtRepNewPw"
-        Me.txtRepNewPw.Size = New System.Drawing.Size(151, 29)
+        Me.txtRepNewPw.Size = New System.Drawing.Size(226, 29)
         Me.txtRepNewPw.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtRepNewPw.TabIndex = 8
         Me.txtRepNewPw.Text = "TextBoxExt3"
@@ -136,7 +139,7 @@ Partial Class frmUsrChngPW
         'chkViewPW
         '
         Me.chkViewPW.AutoSize = True
-        Me.chkViewPW.Location = New System.Drawing.Point(186, 180)
+        Me.chkViewPW.Location = New System.Drawing.Point(12, 217)
         Me.chkViewPW.Name = "chkViewPW"
         Me.chkViewPW.Size = New System.Drawing.Size(133, 25)
         Me.chkViewPW.TabIndex = 9
@@ -150,11 +153,31 @@ Partial Class frmUsrChngPW
         Me.btnChangePW.BeforeTouchSize = New System.Drawing.Size(151, 42)
         Me.btnChangePW.ForeColor = System.Drawing.Color.White
         Me.btnChangePW.IsBackStageButton = False
-        Me.btnChangePW.Location = New System.Drawing.Point(186, 211)
+        Me.btnChangePW.Location = New System.Drawing.Point(261, 217)
         Me.btnChangePW.Name = "btnChangePW"
         Me.btnChangePW.Size = New System.Drawing.Size(151, 42)
         Me.btnChangePW.TabIndex = 10
         Me.btnChangePW.Text = "Endre Passord"
+        '
+        'txtMail
+        '
+        Me.txtMail.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtMail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtMail.Location = New System.Drawing.Point(186, 75)
+        Me.txtMail.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(226, 29)
+        Me.txtMail.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtMail.TabIndex = 12
+        Me.txtMail.Text = "TextBoxExt1"
+        '
+        'AutoLabel1
+        '
+        Me.AutoLabel1.Location = New System.Drawing.Point(12, 83)
+        Me.AutoLabel1.Name = "AutoLabel1"
+        Me.AutoLabel1.Size = New System.Drawing.Size(123, 21)
+        Me.AutoLabel1.TabIndex = 11
+        Me.AutoLabel1.Text = "Registrert Epost:"
         '
         'frmUsrChngPW
         '
@@ -167,7 +190,9 @@ Partial Class frmUsrChngPW
         CaptionImage1.Name = "CaptionImage1"
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
-        Me.ClientSize = New System.Drawing.Size(340, 257)
+        Me.ClientSize = New System.Drawing.Size(424, 269)
+        Me.Controls.Add(Me.txtMail)
+        Me.Controls.Add(Me.AutoLabel1)
         Me.Controls.Add(Me.btnChangePW)
         Me.Controls.Add(Me.chkViewPW)
         Me.Controls.Add(Me.txtRepNewPw)
@@ -193,6 +218,7 @@ Partial Class frmUsrChngPW
         CType(Me.txtOldPw, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtNewPw, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtRepNewPw, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtMail, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,4 +235,6 @@ Partial Class frmUsrChngPW
     Friend WithEvents txtRepNewPw As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents chkViewPW As CheckBox
     Friend WithEvents btnChangePW As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents txtMail As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Friend WithEvents AutoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
 End Class

@@ -74,6 +74,25 @@ Public Class frmAdminMetro
         Core.visLeie()
 
 
+
+        Dim dr_kunde As DataRow
+        Dim dt_kunde As DataTable = SQL.sporring("SELECT * FROM Kunde")
+
+        'adapter.Fill(ds_kunde, "Kunde")
+        'dt_kunde = ds_kunde.Tables(0)
+
+        For Each dr_kunde In dt_kunde.Rows
+            Dim navn As String
+
+            navn = dr_kunde("Kid").ToString
+            navn += " " & dr_kunde("F_navn").ToString
+            navn += " " & dr_kunde("E_navn").ToString
+
+            toolstripCMBxKunder.Items.Add(navn)
+
+        Next
+
+
         'Legg dt her i en class
 
         '-------------------------------------
@@ -443,6 +462,14 @@ Public Class frmAdminMetro
 
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
         Logout()
+    End Sub
+
+    Private Sub btnChngPW_Click_1(sender As Object, e As EventArgs) Handles btnChngPW.Click
+        frmUsrChngPW.Show()
+    End Sub
+
+    Private Sub btnAddUsr_Click_1(sender As Object, e As EventArgs) Handles btnAddUsr.Click
+        frmAddUsrMetro.Show()
     End Sub
 
     Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click

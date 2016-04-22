@@ -63,6 +63,8 @@ Public Class frmAdminCore
                          adresse As String,
                          avdeling As Integer)
 
+        Dim SHA As New SHA512
+
         SQL.sporring("INSERT INTO logginn")
         SQL.sporring("INSERT INTO Ansatt")
 
