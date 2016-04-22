@@ -24,28 +24,51 @@ Public Class UserCore
         End Set
     End Property
 
+    Public UID As Integer
+    Public Property UIDProp() As String
+        Get
+            Return UID
+        End Get
+        Set(ByVal value As String)
+            UID = value
+        End Set
+    End Property
 
-    Public Function Getuserid(Username As String)
-
-        Dim Brukerid As Integer
-        Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = " & Username & "")
+    Public Sub FetchUID()
+        Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = '" & crntUsr & "'")
         Dim sql As New SQL
 
-        'Dim dataadapter As New MySqlDataAdapter()
-        'Dim cmd As New MySqlCommand(sqlstring, con)  'Takk takk FS
+        Dim dt As New DataTable
+
+        Dim i As Integer
+
+        Try
+
+            dt = sql.sporring(sqlstring)
+
+            i = CInt(dt.Rows(0).Item(0).ToString)
+
+            UID = i
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Public Function Getuserid()
+
+        Dim Brukerid As Integer
+        'Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = " & currentUsr & "")
+        Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = '" & crntUsr & "'")
+        Dim sql As New SQL
+
+        Try
+            Brukerid = sql.Return1Row(sqlstring, "idLoggin")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
 
-        'dataadapter.SelectCommand = cmd
 
-        'Dim dbdataset As New DataTable
-        'Dim bsource As New BindingSource
-        'Dim SDA As New MySqlDataAdapter
-
-        'SDA.SelectCommand = cmd
-        'SDA.Fill(dbdataset)
-        'bsource.DataSource = dbdataset 'Takk takk FS
-
-        Brukerid = sql.bindingsource(sqlstring)
 
         Return Brukerid
 

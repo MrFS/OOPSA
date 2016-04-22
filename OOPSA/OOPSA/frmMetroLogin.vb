@@ -27,6 +27,8 @@ Public Class frmMetroLogin
         Select Case e.KeyCode
             Case Keys.F12
                 frmConsole.Show()
+            Case Keys.Enter
+                Login.Login(txtUsr.Text, txtPw.Text)
         End Select
     End Sub
 

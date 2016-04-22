@@ -24,10 +24,7 @@ Public Class frmAdminCore
 
     Public Sub visLeie()
 
-        Dim sqlstring As String = "SELECT Leie_id, fra, til, Ansatt_A_id, Kunde_Kid, Produkt_navn, Produkt.Produkt_id
-                                   FROM Leie
-                                   LEFT OUTER JOIN Produkt
-                                   ON Leie.Produkt_id=Produkt.Produkt_id"
+        Dim sqlstring As String = "SELECT * FROM `VisLeie`"
 
         My.Forms.frmAdminMetro.GridDataBoundGrid1.DataSource = SQL.bindingsource(sqlstring)
 
@@ -90,4 +87,13 @@ Public Class frmAdminCore
         SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL," & Leie_fra & "," & Leie_til & "," & Ansatt_id & "," & kunde_id & "," & produkt_id & "," & lager_id & ")")
     End Sub
 
+    ''blir ikke brukt til noe, får ikke til å referere i admin metro.
+    'Public Sub OppdaterKunde(DbKid As String, KID As String, TabellNavn As String, TuppelNavn As String, tuppelNyverdi As String)
+
+    '    Dim cmd As New MySqlCommand("UPDATE " & TabellNavn & " SET " & TuppelNavn & "=@" & tuppelNyverdi & " WHERE " & DbKid & "=@" & KID, con)
+    '    cmd.Parameters.AddWithValue("@" & tuppelNyverdi, tuppelNyverdi)
+    '    cmd.Parameters.AddWithValue("@" & KID, CInt(KID))
+
+    '    cmd.ExecuteNonQuery()
+    'End Sub
 End Class
