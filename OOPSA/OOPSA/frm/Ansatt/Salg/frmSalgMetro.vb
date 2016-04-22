@@ -92,36 +92,41 @@ Public Class frmSalgMetro
 
     Private Sub btnRegSalg_Click(sender As Object, e As EventArgs) Handles btnRegSalg.Click
         Dim UCore As New UserCore
-
         Dim produkt() As String = ComboRegSalg.Text.Split(" ")
         Dim lager() As String = ComboSalgLager.Text.Split(" ")
         Dim avanse As Integer = CInt(txtavanse.Text)
         Dim ansatt_id As Integer = UCore.UIDProp
         Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
-        Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = 1", "Pris")
+        Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = " & produkt(0) & "", "Pris")
         Dim PrismAvanse As Integer = (((avanse / 100) * PrisPer) + PrisPer) * antall
 
+        Dim lagerbeholdning As Integer = SQL.Return1Row("SELECT Antall FROM Lagerbeholdning WHERE Lager_id = " & lager(0) & " AND Produkt_id = " & produkt(0) & "", "Antall")
 
 
 
 
-        Try
-            SQL.sporring("INSERT INTO `Kjøp`(`S_id`, `dato`, `Avanse`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_Produkt_id`, `Antall`, `Lager_id`) VALUES (NULL,CURDATE()," & avanse & "," & ansatt_id & "," & kunde_id(0) & "," & produkt(0) & "," & antall & "," & lager(0) & ")")
-            MsgBox("Salget er registert", MsgBoxStyle.Information, "Salg Registrering")
-            lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & " Antall: " & antall & " Avannse: " & avanse)
 
-            totall += PrismAvanse
+        If lagerbeholdning >= antall Then
 
-            lblTotPris.Text = "Total pris " & totall
+            Try
+                SQL.sporring("INSERT INTO `Kjøp`(`S_id`, `dato`, `Avanse`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_Produkt_id`, `Antall`, `Lager_id`) VALUES (NULL,CURDATE()," & avanse & "," & ansatt_id & "," & kunde_id(0) & "," & produkt(0) & "," & antall & "," & lager(0) & ")")
+                SQL.sporring("UPDATE Lagerbeholdning SET Antall = " & (lagerbeholdning - antall) & " WHERE Lager_id = " & lager(0) & " AND Produkt_id = " & produkt(0) & "")
+                MsgBox("Salget er registert", MsgBoxStyle.Information, "Salg Registrering")
+                lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & " Antall: " & antall & " Avannse: " & avanse)
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+                totall += PrismAvanse
+
+                lblTotPris.Text = "Total pris " & totall
+
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
 
 
-
-
+        Else
+            MsgBox("Det er ikke mer igjen av " & produkt(1), MsgBoxStyle.Critical, "Ikke flere på lager")
+        End If
 
 
 
@@ -148,7 +153,17 @@ Public Class frmSalgMetro
     Private Sub btnSokBestilling_Click(sender As Object, e As EventArgs) Handles btnSokBestilling.Click
         Dim kundeid As Integer = CInt(TextBoxExt7.Text)
 
+
+        'Refresh
         ComboKUNDEVALG.Items.Clear()
+        Combo.Items.Clear()
+        Comboendrepro.Items.Clear()
+        TextBoxExt9.Clear()
+        TextBoxExt10.Clear()
+
+
+
+
 
 
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", Comboendrepro)
@@ -156,26 +171,26 @@ Public Class frmSalgMetro
 
 
 
+        'FINNER ANTALL Trenger ny funksjon
+        'Dim adapter As New MySqlDataAdapter("SELECT Antall From Kjøp WHERE Kunde_Kid = " & kundeid & "", con)
+        'Dim ds_produkt = New DataSet
+        'Dim dr_produkt As DataRow
+        'Dim dt_produkt As DataTable
+        'adapter.Fill(ds_produkt, "Kjøp")
+        'dt_produkt = ds_produkt.Tables(0)
+        'For Each dr_produkt In dt_produkt.Rows
+        '    TextBoxExt9.Text = dr_produkt("Antall")
+        'Next
 
-        Dim adapter As New MySqlDataAdapter("SELECT Antall From Kjøp WHERE Kunde_Kid = " & kundeid & "", con)
-        Dim ds_produkt = New DataSet
-        Dim dr_produkt As DataRow
-        Dim dt_produkt As DataTable
-        adapter.Fill(ds_produkt, "Kjøp")
-        dt_produkt = ds_produkt.Tables(0)
-        For Each dr_produkt In dt_produkt.Rows
-            TextBoxExt9.Text = dr_produkt("Antall")
-        Next
-
-        Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs_deltagelse WHERE Kunde_Kid = " & kundeid & "", con)
-        Dim ds_produkt1 = New DataSet
-        Dim dr_produkt1 As DataRow
-        Dim dt_produkt1 As DataTable
-        adapter1.Fill(ds_produkt1, "Kurs")
-        dt_produkt1 = ds_produkt1.Tables(0)
-        For Each dr_produkt1 In dt_produkt1.Rows
-            TextBoxExt9.Text = dr_produkt1("Antall")
-        Next
+        'Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs_deltagelse WHERE Kunde_Kid = " & kundeid & "", con)
+        'Dim ds_produkt1 = New DataSet
+        'Dim dr_produkt1 As DataRow
+        'Dim dt_produkt1 As DataTable
+        'adapter1.Fill(ds_produkt1, "Kurs")
+        'dt_produkt1 = ds_produkt1.Tables(0)
+        'For Each dr_produkt1 In dt_produkt1.Rows
+        '    TextBoxExt10.Text = dr_produkt1("Antall")
+        'Next
 
 
 
@@ -210,9 +225,6 @@ Public Class frmSalgMetro
             leie += " " & dr_produkt22("Antall")
             ComboKUNDEVALG.Items.Add(leie)
         Next
-
-
-
 
 
     End Sub
@@ -292,18 +304,23 @@ Public Class frmSalgMetro
         Dim til As Date = dtpTil.Value
         Dim lager() As String = ComboLager.Text.Split(" ")
         Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = 1", "Pris")
+        Dim antall As Integer = IntegerTextBox2.Text
+        Dim lagerbeholdning As Integer = SQL.Return1Row("SELECT Antall FROM Lagerbeholdning WHERE Lager_id = " & lager(0) & " AND Produkt_id = " & produkt(0) & "", "Antall")
+
+
+        If lagerbeholdning >= antall Then
+
+            SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "');", "Leiet er registrert")
+            lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & "Fra: " & fra & vbCrLf & "Til: " & til)
+            totall += PrisPer
+            lblTotPris.Text = "Total pris " & totall
+        Else
+            MsgBox("Det er ikke mer igjen av " & produkt(1), MsgBoxStyle.Critical, "Ikke flere på lager")
+
+        End If
 
 
 
-
-        SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "');", "Leiet er registrert")
-
-
-
-        lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & "Fra: " & fra & vbCrLf & "Til: " & til)
-
-        totall += PrisPer
-        lblTotPris.Text = "Total pris " & totall
     End Sub
 
     Private Sub ButtonAdv3_Click(sender As Object, e As EventArgs) Handles ButtonAdv3.Click
