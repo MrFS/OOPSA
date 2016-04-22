@@ -11,6 +11,9 @@ Public Class frmLagerMetro
     Dim dt As DataTable
     Dim dr As DataRow
 
+    Dim dt3 As DataTable
+    Dim dr3 As DataRow
+
     Public Sub New()
         Initialize()
         ' This call is required by the designer.
@@ -26,6 +29,82 @@ Public Class frmLagerMetro
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE' table. You can move, or remove it, as needed.
         Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
+
+
+        oppdater() ' Fyller comboboxene
+
+    End Sub
+
+
+
+    Private Sub btnLeggTil_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
+
+        dt2 = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & LagerLeggTil.Text & "'")
+        dr2 = dt2.Rows(0)
+
+        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & NavnLeggTil.Text & "', '" & PrisLeggTil.Text & "', '" & AntLeggTil.Text & "', '" & dr2("Lager_id") & "')")
+
+        oppdater()
+
+    End Sub
+
+    Private Sub EndreKnapp_Click(sender As Object, e As EventArgs) Handles EndreKnapp.Click
+
+        dt = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & lagerEndre.Text & "'")
+        dr = dt.Rows(0)
+
+        sql.sporring("UPDATE Produkt SET Produkt_navn = '" & navnEndreText.Text & "', Pris = '" & prisEndreText.Text & "', p_antall = '" & antEndreText.Text & "', Lager_id = '" & dr("Lager_id") & "' WHERE Produkt_navn='" & VareEndre.Text & "'")
+
+        oppdater()
+
+    End Sub
+
+    Private Sub btnSlett_Click(sender As Object, e As EventArgs) Handles btnSlett.Click
+        sql.sporring("DELETE FROM Produkt WHERE Produkt_navn ='" & vareSlett.SelectedItem & "'")
+
+        GridDataBoundGrid1.Refresh()
+
+        oppdater()
+
+    End Sub
+
+    Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
+
+        'dt3 = sql.sporring("SELECT Produkt_navn, p_antall, Pris, Lager_id FROM Produkt WHERE Produkt_navn = '" & VareEndre.Text & "'")
+        'dr3 = dt3.Rows(0)
+        'Try
+
+        '    navnEndreText = (dr3("Produkt_navn"))
+        '    antEndreText = (dr3("p_antall"))
+        '    prisEndreText = (dr3("Pris"))
+        '    lagerEndre = (dr3("Lager_id"))
+
+        'Catch ex As Exception
+        '    MsgBox(dr3.ToString)
+        'End Try
+
+
+        Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt", con)
+        Dim ds3 = New DataSet
+        Dim dr3 As DataRow
+        Dim dt3 As DataTable
+        adapter3.Fill(ds3, "Produkt")
+        dt3 = ds3.Tables(0)
+        For Each dr3 In dt3.Rows
+            navnEndreText.Text = (dr3("Produkt_navn"))
+            antEndreText.Text = (dr3("p_antall"))
+            prisEndreText.Text = (dr3("Pris"))
+            lagerEndre.Text = (dr3("Lager_id"))
+        Next
+
+
+
+
+
+    End Sub
+
+    Private Sub oppdater()
+
 
         VareEndre.Items.Clear()
         vareSlett.Items.Clear()
@@ -58,49 +137,7 @@ Public Class frmLagerMetro
 
     End Sub
 
-
-
-    Private Sub btnLeggTil_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
-
-        dt2 = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & LagerLeggTil.Text & "'")
-        dr2 = dt2.Rows(0)
-
-        sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & NavnLeggTil.Text & "', '" & PrisLeggTil.Text & "', '" & AntLeggTil.Text & "', '" & dr2("Lager_id") & "')")
-
-    End Sub
-
-    Private Sub EndreKnapp_Click(sender As Object, e As EventArgs) Handles EndreKnapp.Click
-
-        dt = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & lagerEndre.Text & "'")
-        dr = dt.Rows(0)
-
-        sql.sporring("UPDATE Produkt SET Produkt_navn = '" & navnEndreText.Text & "', Pris = '" & prisEndreText.Text & "', p_antall = '" & antEndreText.Text & "', Lager_id = '" & dr("Lager_id") & "' WHERE Produkt_navn='" & VareEndre.Text & "'")
-
-    End Sub
-
-    Private Sub btnSlett_Click(sender As Object, e As EventArgs) Handles btnSlett.Click
-        sql.sporring("DELETE FROM Produkt WHERE Produkt_navn ='" & vareSlett.SelectedItem & "'")
-
-        GridDataBoundGrid1.Refresh()
-
-    End Sub
-
-    Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            navnEndreText.Text = (dr("Produkt_navn"))
-            antEndreText.Text = (dr("p_antall"))
-            prisEndreText.Text = (dr("Pris"))
-            lagerEndre.Text = (dr("Lager_id"))
-        Next
-    End Sub
-
-    Private Sub AntLeggTil_TextChanged(sender As Object, e As EventArgs) Handles AntLeggTil.TextChanged
+    Private Sub SplitContainer4_Panel1_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer4.Panel1.Paint
 
     End Sub
 End Class
