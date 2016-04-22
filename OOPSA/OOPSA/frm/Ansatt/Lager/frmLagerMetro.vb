@@ -11,6 +11,9 @@ Public Class frmLagerMetro
     Dim dt As DataTable
     Dim dr As DataRow
 
+    Dim dt3 As DataTable
+    Dim dr3 As DataRow
+
     Public Sub New()
         Initialize()
         ' This call is required by the designer.
@@ -67,28 +70,36 @@ Public Class frmLagerMetro
 
     Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
 
-        navnEndreText.Clear()
-        antEndreText.Clear()
-        prisEndreText.Clear()
+        'dt3 = sql.sporring("SELECT Produkt_navn, p_antall, Pris, Lager_id FROM Produkt WHERE Produkt_navn = '" & VareEndre.Text & "'")
+        'dr3 = dt3.Rows(0)
+        'Try
+
+        '    navnEndreText = (dr3("Produkt_navn"))
+        '    antEndreText = (dr3("p_antall"))
+        '    prisEndreText = (dr3("Pris"))
+        '    lagerEndre = (dr3("Lager_id"))
+
+        'Catch ex As Exception
+        '    MsgBox(dr3.ToString)
+        'End Try
 
 
-
-
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
-        Dim ds = New DataSet
-        Dim dr As DataRow
-        Dim dt As DataTable
-        adapter.Fill(ds, "Produkt")
-        dt = ds.Tables(0)
-        For Each dr In dt.Rows
-            navnEndreText.Text = (dr("Produkt_navn"))
-            antEndreText.Text = (dr("p_antall"))
-            prisEndreText.Text = (dr("Pris"))
-            lagerEndre.Text = (dr("Lager_id"))
+        Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt", con)
+        Dim ds3 = New DataSet
+        Dim dr3 As DataRow
+        Dim dt3 As DataTable
+        adapter3.Fill(ds3, "Produkt")
+        dt3 = ds3.Tables(0)
+        For Each dr3 In dt3.Rows
+            navnEndreText.Text = (dr3("Produkt_navn"))
+            antEndreText.Text = (dr3("p_antall"))
+            prisEndreText.Text = (dr3("Pris"))
+            lagerEndre.Text = (dr3("Lager_id"))
         Next
-    End Sub
 
-    Private Sub AntLeggTil_TextChanged(sender As Object, e As EventArgs) Handles AntLeggTil.TextChanged
+
+
+
 
     End Sub
 
@@ -123,6 +134,10 @@ Public Class frmLagerMetro
             vareSlett.Items.Add(dr("Produkt_navn"))
         Next
 
+
+    End Sub
+
+    Private Sub SplitContainer4_Panel1_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer4.Panel1.Paint
 
     End Sub
 End Class
