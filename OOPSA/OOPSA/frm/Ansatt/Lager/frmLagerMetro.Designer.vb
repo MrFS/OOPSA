@@ -1250,5 +1250,5 @@ Partial Class frmLagerMetro
     Private WithEvents LagerRapportTrondheimBindingSource As BindingSource
     Private WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
     Private WithEvents LagerRapportStavangerBindingSource As BindingSource
-    Friend WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
