@@ -28,7 +28,7 @@ Public Class frmLagerMetro
         Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
 
 
-        oppdater()
+        oppdater() ' Fyller comboboxene
 
     End Sub
 
@@ -66,6 +66,14 @@ Public Class frmLagerMetro
     End Sub
 
     Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
+
+        navnEndreText.Clear()
+        antEndreText.Clear()
+        prisEndreText.Clear()
+
+
+
+
         Dim adapter As New MySqlDataAdapter("SELECT * FROM Produkt", con)
         Dim ds = New DataSet
         Dim dr As DataRow
