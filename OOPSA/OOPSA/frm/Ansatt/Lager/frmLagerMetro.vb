@@ -11,6 +11,9 @@ Public Class frmLagerMetro
     Dim dt As DataTable
     Dim dr As DataRow
 
+    Dim dt4 As DataTable
+    Dim dr4 As DataRow
+
 
 
     Public Sub New()
@@ -70,18 +73,26 @@ Public Class frmLagerMetro
 
     Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
 
+
+
         Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt WHERE Produkt_navn = '" & VareEndre.Text & "' ", con)
         Dim ds3 = New DataSet
         Dim dr3 As DataRow
         Dim dt3 As DataTable
         adapter3.Fill(ds3, "Produkt")
         dt3 = ds3.Tables(0)
+
         For Each dr3 In dt3.Rows
             navnEndreText.Text = (dr3("Produkt_navn"))
             antEndreText.Text = (dr3("p_antall"))
             prisEndreText.Text = (dr3("Pris"))
-            lagerEndre.Text = (dr3("Lager_id"))
         Next
+
+        dt4 = sql.sporring("SELECT `by` FROM Lager WHERE Lager_id = '" & dr3("Lager_id") & "' ")
+        dr4 = dt4.Rows(0)
+        lagerEndre.Text = (dr4("by"))
+
+
 
     End Sub
 
