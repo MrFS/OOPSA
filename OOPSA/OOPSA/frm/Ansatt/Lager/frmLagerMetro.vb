@@ -11,8 +11,7 @@ Public Class frmLagerMetro
     Dim dt As DataTable
     Dim dr As DataRow
 
-    Dim dt3 As DataTable
-    Dim dr3 As DataRow
+
 
     Public Sub New()
         Initialize()
@@ -30,12 +29,9 @@ Public Class frmLagerMetro
         'TODO: This line of code loads data into the 'Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE' table. You can move, or remove it, as needed.
         Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
 
-
         oppdater() ' Fyller comboboxene
 
     End Sub
-
-
 
     Private Sub btnLeggTil_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
 
@@ -55,6 +51,10 @@ Public Class frmLagerMetro
 
         sql.sporring("UPDATE Produkt SET Produkt_navn = '" & navnEndreText.Text & "', Pris = '" & prisEndreText.Text & "', p_antall = '" & antEndreText.Text & "', Lager_id = '" & dr("Lager_id") & "' WHERE Produkt_navn='" & VareEndre.Text & "'")
 
+        antEndreText.Clear()
+        navnEndreText.Clear()
+        prisEndreText.Clear()
+
         oppdater()
 
     End Sub
@@ -70,21 +70,7 @@ Public Class frmLagerMetro
 
     Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
 
-        'dt3 = sql.sporring("SELECT Produkt_navn, p_antall, Pris, Lager_id FROM Produkt WHERE Produkt_navn = '" & VareEndre.Text & "'")
-        'dr3 = dt3.Rows(0)
-        'Try
-
-        '    navnEndreText = (dr3("Produkt_navn"))
-        '    antEndreText = (dr3("p_antall"))
-        '    prisEndreText = (dr3("Pris"))
-        '    lagerEndre = (dr3("Lager_id"))
-
-        'Catch ex As Exception
-        '    MsgBox(dr3.ToString)
-        'End Try
-
-
-        Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt", con)
+        Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt WHERE Produkt_navn = '" & VareEndre.Text & "' ", con)
         Dim ds3 = New DataSet
         Dim dr3 As DataRow
         Dim dt3 As DataTable
@@ -97,20 +83,9 @@ Public Class frmLagerMetro
             lagerEndre.Text = (dr3("Lager_id"))
         Next
 
-
-
-
-
     End Sub
 
     Private Sub oppdater()
-
-
-        VareEndre.Items.Clear()
-        vareSlett.Items.Clear()
-        LagerLeggTil.Items.Clear()
-        lagerEndre.Items.Clear()
-
 
         Dim adapter2 As New MySqlDataAdapter("SELECT * FROM Lager", con)
         Dim ds2 = New DataSet
@@ -133,7 +108,6 @@ Public Class frmLagerMetro
             VareEndre.Items.Add(dr("Produkt_navn"))
             vareSlett.Items.Add(dr("Produkt_navn"))
         Next
-
 
     End Sub
 

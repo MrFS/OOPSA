@@ -68,6 +68,7 @@ Partial Class frmLagerMetro
         Me.tbAdd = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SplitContainer4 = New System.Windows.Forms.SplitContainer()
+        Me.PrisLeggTil = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.AntLeggTil = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.btnLeggTil = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.AutoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
@@ -80,9 +81,12 @@ Partial Class frmLagerMetro
         Me.lstAdded = New System.Windows.Forms.ListBox()
         Me.ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.tbEdit = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.SplitContainer5 = New System.Windows.Forms.SplitContainer()
+        Me.prisEndreText = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+        Me.antEndreText = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         Me.vareSlett = New System.Windows.Forms.ComboBox()
         Me.btnSlett = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -101,11 +105,7 @@ Partial Class frmLagerMetro
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
-        Me.PrisLeggTil = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.antEndreText = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
-        Me.prisEndreText = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
@@ -144,6 +144,7 @@ Partial Class frmLagerMetro
         Me.SplitContainer4.Panel1.SuspendLayout()
         Me.SplitContainer4.Panel2.SuspendLayout()
         Me.SplitContainer4.SuspendLayout()
+        CType(Me.PrisLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AntLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NavnLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx2.SuspendLayout()
@@ -153,11 +154,10 @@ Partial Class frmLagerMetro
         Me.SplitContainer5.Panel1.SuspendLayout()
         Me.SplitContainer5.Panel2.SuspendLayout()
         Me.SplitContainer5.SuspendLayout()
+        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx3.SuspendLayout()
-        CType(Me.PrisLeggTil, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -716,6 +716,21 @@ Partial Class frmLagerMetro
         Me.SplitContainer4.SplitterDistance = 746
         Me.SplitContainer4.TabIndex = 0
         '
+        'PrisLeggTil
+        '
+        Me.PrisLeggTil.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.PrisLeggTil.BeforeTouchSize = New System.Drawing.Size(147, 27)
+        Me.PrisLeggTil.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PrisLeggTil.IntegerValue = CType(0, Long)
+        Me.PrisLeggTil.Location = New System.Drawing.Point(101, 110)
+        Me.PrisLeggTil.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.PrisLeggTil.Name = "PrisLeggTil"
+        Me.PrisLeggTil.NullString = ""
+        Me.PrisLeggTil.Size = New System.Drawing.Size(100, 27)
+        Me.PrisLeggTil.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.PrisLeggTil.TabIndex = 49
+        Me.PrisLeggTil.Text = "0"
+        '
         'AntLeggTil
         '
         Me.AntLeggTil.BackGroundColor = System.Drawing.SystemColors.Window
@@ -843,6 +858,15 @@ Partial Class frmLagerMetro
         Me.ToolStripButton1.Size = New System.Drawing.Size(68, 22)
         Me.ToolStripButton1.Text = "Logg ut"
         '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton4.Text = "ToolStripButton4"
+        '
         'tbEdit
         '
         Me.tbEdit.Controls.Add(Me.Panel3)
@@ -896,6 +920,36 @@ Partial Class frmLagerMetro
         Me.SplitContainer5.Size = New System.Drawing.Size(1200, 515)
         Me.SplitContainer5.SplitterDistance = 898
         Me.SplitContainer5.TabIndex = 0
+        '
+        'prisEndreText
+        '
+        Me.prisEndreText.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.prisEndreText.BeforeTouchSize = New System.Drawing.Size(147, 27)
+        Me.prisEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.prisEndreText.IntegerValue = CType(0, Long)
+        Me.prisEndreText.Location = New System.Drawing.Point(139, 139)
+        Me.prisEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.prisEndreText.Name = "prisEndreText"
+        Me.prisEndreText.NullString = ""
+        Me.prisEndreText.Size = New System.Drawing.Size(147, 27)
+        Me.prisEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.prisEndreText.TabIndex = 34
+        Me.prisEndreText.Text = "0"
+        '
+        'antEndreText
+        '
+        Me.antEndreText.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.antEndreText.BeforeTouchSize = New System.Drawing.Size(147, 27)
+        Me.antEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.antEndreText.IntegerValue = CType(0, Long)
+        Me.antEndreText.Location = New System.Drawing.Point(139, 73)
+        Me.antEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.antEndreText.Name = "antEndreText"
+        Me.antEndreText.NullString = ""
+        Me.antEndreText.Size = New System.Drawing.Size(147, 27)
+        Me.antEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.antEndreText.TabIndex = 33
+        Me.antEndreText.Text = "0"
         '
         'AutoLabel2
         '
@@ -1065,64 +1119,10 @@ Partial Class frmLagerMetro
         '
         Me.LagerRapportStavangerTableAdapter.ClearBeforeFill = True
         '
-        'PrisLeggTil
-        '
-        Me.PrisLeggTil.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.PrisLeggTil.BeforeTouchSize = New System.Drawing.Size(147, 27)
-        Me.PrisLeggTil.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.PrisLeggTil.IntegerValue = CType(0, Long)
-        Me.PrisLeggTil.Location = New System.Drawing.Point(101, 110)
-        Me.PrisLeggTil.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.PrisLeggTil.Name = "PrisLeggTil"
-        Me.PrisLeggTil.NullString = ""
-        Me.PrisLeggTil.Size = New System.Drawing.Size(100, 27)
-        Me.PrisLeggTil.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.PrisLeggTil.TabIndex = 49
-        Me.PrisLeggTil.Text = "0"
-        '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
-        '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton4.Text = "ToolStripButton4"
-        '
-        'antEndreText
-        '
-        Me.antEndreText.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.antEndreText.BeforeTouchSize = New System.Drawing.Size(147, 27)
-        Me.antEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.antEndreText.IntegerValue = CType(0, Long)
-        Me.antEndreText.Location = New System.Drawing.Point(139, 73)
-        Me.antEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.antEndreText.Name = "antEndreText"
-        Me.antEndreText.NullString = ""
-        Me.antEndreText.Size = New System.Drawing.Size(147, 27)
-        Me.antEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.antEndreText.TabIndex = 33
-        Me.antEndreText.Text = "0"
-        '
-        'prisEndreText
-        '
-        Me.prisEndreText.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.prisEndreText.BeforeTouchSize = New System.Drawing.Size(147, 27)
-        Me.prisEndreText.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.prisEndreText.IntegerValue = CType(0, Long)
-        Me.prisEndreText.Location = New System.Drawing.Point(139, 139)
-        Me.prisEndreText.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.prisEndreText.Name = "prisEndreText"
-        Me.prisEndreText.NullString = ""
-        Me.prisEndreText.Size = New System.Drawing.Size(147, 27)
-        Me.prisEndreText.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.prisEndreText.TabIndex = 34
-        Me.prisEndreText.Text = "0"
         '
         'LagerRapportALLEBindingSource
         '
@@ -1189,6 +1189,7 @@ Partial Class frmLagerMetro
         Me.SplitContainer4.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer4.ResumeLayout(False)
+        CType(Me.PrisLeggTil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AntLeggTil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NavnLeggTil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStripEx2.ResumeLayout(False)
@@ -1201,12 +1202,11 @@ Partial Class frmLagerMetro
         Me.SplitContainer5.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer5.ResumeLayout(False)
+        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStripEx3.ResumeLayout(False)
         Me.ToolStripEx3.PerformLayout()
-        CType(Me.PrisLeggTil, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.prisEndreText, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -1274,16 +1274,16 @@ Partial Class frmLagerMetro
     Friend WithEvents Label3 As Label
     Friend WithEvents lstVareEndret As ListBox
     Private WithEvents Drift8_2016DataSetLageroversiktALLE As drift8_2016DataSetLageroversiktALLE
-    Private WithEvents LagerRapportALLEBindingSource As BindingSource
     Private WithEvents Drift8_2016DataSetTrondheimLager As drift8_2016DataSetTrondheimLager
     Private WithEvents LagerRapportTrondheimBindingSource As BindingSource
     Private WithEvents Drift8_2016DataSetLagerRapportStavnager As drift8_2016DataSetLagerRapportStavnager
     Private WithEvents LagerRapportStavangerBindingSource As BindingSource
-    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents AntLeggTil As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Friend WithEvents PrisLeggTil As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents antEndreText As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents prisEndreText As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+    Friend WithEvents LagerRapportALLEBindingSource As BindingSource
+    Friend WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
