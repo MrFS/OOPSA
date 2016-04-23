@@ -30,9 +30,30 @@ Public Class UserCore
             Return UID
         End Get
         Set(ByVal value As String)
-            UID = value
+            UID = setUID(value)
         End Set
     End Property
+
+    Public Function setUID(ByVal user As String) As Integer
+        Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = '" & crntUsr & "'")
+        Dim sql As New SQL
+
+        Dim dt As New DataTable
+
+        Dim i As Integer
+
+        Try
+
+            dt = sql.sporring(sqlstring)
+
+            i = CInt(dt.Rows(0).Item(0).ToString)
+
+            UID = i
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        Return UID
+    End Function
 
     Public Sub FetchUID()
         Dim sqlstring As String = ("SELECT idLoggin from Loggin where Brukernavn = '" & crntUsr & "'")

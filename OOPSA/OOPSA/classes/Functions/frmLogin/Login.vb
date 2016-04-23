@@ -28,6 +28,8 @@ Public Class Login
 
             UCore.FetchUID()
 
+            MsgBox("Din bruker ID:" & UCore.UIDProp)
+
             Select Case avd
                 Case = "dl"
                     frmAdminMetro.Show()

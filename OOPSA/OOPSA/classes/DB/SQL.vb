@@ -83,19 +83,14 @@ Public Class SQL
         Dim dt As DataTable
         Dim dr As DataRow
 
-        'Try
+
 
         dt = sporring(SQLstring)
 
         dr = dt.Rows(0)
-        'variabel = dt.Rows(0).ToString
+
         variabel = dr(NavnPaKollone).ToString
-        MsgBox(variabel)
-        'Catch ex As Exception
 
-        'MsgBox(ex.Message)
-
-        'End Try
 
         Return variabel
 
