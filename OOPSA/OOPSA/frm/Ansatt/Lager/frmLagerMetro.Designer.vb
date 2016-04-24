@@ -42,26 +42,16 @@ Partial Class frmLagerMetro
         Me.tbLagerOversikt = New Syncfusion.Windows.Forms.Tools.TabControlAdv()
         Me.TabPageAdv1 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
-        Me.ButtonAdv4 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv3 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.GridDataBoundGrid2 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.ButtonAdv7 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv6 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv5 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.GridDataBoundGrid1 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.LagerRapportTrondheimBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetTrondheimLager = New OOPSA.drift8_2016DataSetTrondheimLager()
         Me.TabPageAdv3 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
-        Me.ButtonAdv10 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv9 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.ButtonAdv8 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.GridDataBoundGrid3 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
         Me.LagerRapportStavangerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Drift8_2016DataSetLagerRapportStavnager = New OOPSA.drift8_2016DataSetLagerRapportStavnager()
@@ -117,7 +107,6 @@ Partial Class frmLagerMetro
         Me.tbLagerOversikt.SuspendLayout()
         Me.TabPageAdv1.SuspendLayout()
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,7 +114,6 @@ Partial Class frmLagerMetro
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv2.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         CType(Me.GridDataBoundGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -133,7 +121,6 @@ Partial Class frmLagerMetro
         CType(Me.Drift8_2016DataSetTrondheimLager, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv3.SuspendLayout()
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer2.Panel1.SuspendLayout()
         Me.SplitContainer2.Panel2.SuspendLayout()
         Me.SplitContainer2.SuspendLayout()
         CType(Me.GridDataBoundGrid3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,79 +228,12 @@ Partial Class frmLagerMetro
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
-        'SplitContainer3.Panel1
-        '
-        Me.SplitContainer3.Panel1.Controls.Add(Me.ButtonAdv4)
-        Me.SplitContainer3.Panel1.Controls.Add(Me.ButtonAdv3)
-        Me.SplitContainer3.Panel1.Controls.Add(Me.ButtonAdv2)
-        Me.SplitContainer3.Panel1.Controls.Add(Me.ButtonAdv1)
-        '
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.GridDataBoundGrid2)
         Me.SplitContainer3.Size = New System.Drawing.Size(1193, 471)
         Me.SplitContainer3.SplitterDistance = 396
         Me.SplitContainer3.TabIndex = 0
-        '
-        'ButtonAdv4
-        '
-        Me.ButtonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv4.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv4.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv4.IsBackStageButton = False
-        Me.ButtonAdv4.Location = New System.Drawing.Point(0, 141)
-        Me.ButtonAdv4.Name = "ButtonAdv4"
-        Me.ButtonAdv4.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv4.TabIndex = 3
-        Me.ButtonAdv4.Text = "ButtonAdv4"
-        Me.ButtonAdv4.UseVisualStyle = True
-        '
-        'ButtonAdv3
-        '
-        Me.ButtonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv3.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv3.IsBackStageButton = False
-        Me.ButtonAdv3.Location = New System.Drawing.Point(0, 94)
-        Me.ButtonAdv3.Name = "ButtonAdv3"
-        Me.ButtonAdv3.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv3.TabIndex = 2
-        Me.ButtonAdv3.Text = "ButtonAdv3"
-        Me.ButtonAdv3.UseVisualStyle = True
-        '
-        'ButtonAdv2
-        '
-        Me.ButtonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv2.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(0, 47)
-        Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv2.TabIndex = 1
-        Me.ButtonAdv2.Text = "ButtonAdv2"
-        Me.ButtonAdv2.UseVisualStyle = True
-        '
-        'ButtonAdv1
-        '
-        Me.ButtonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv1.IsBackStageButton = False
-        Me.ButtonAdv1.Location = New System.Drawing.Point(0, 0)
-        Me.ButtonAdv1.Name = "ButtonAdv1"
-        Me.ButtonAdv1.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv1.TabIndex = 0
-        Me.ButtonAdv1.Text = "ButtonAdv1"
-        Me.ButtonAdv1.UseVisualStyle = True
         '
         'GridDataBoundGrid2
         '
@@ -396,63 +316,12 @@ Partial Class frmLagerMetro
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
-        'SplitContainer1.Panel1
-        '
-        Me.SplitContainer1.Panel1.Controls.Add(Me.ButtonAdv7)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.ButtonAdv6)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.ButtonAdv5)
-        '
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.GridDataBoundGrid1)
         Me.SplitContainer1.Size = New System.Drawing.Size(1193, 471)
         Me.SplitContainer1.SplitterDistance = 396
         Me.SplitContainer1.TabIndex = 0
-        '
-        'ButtonAdv7
-        '
-        Me.ButtonAdv7.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv7.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv7.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv7.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv7.IsBackStageButton = False
-        Me.ButtonAdv7.Location = New System.Drawing.Point(0, 94)
-        Me.ButtonAdv7.Name = "ButtonAdv7"
-        Me.ButtonAdv7.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv7.TabIndex = 3
-        Me.ButtonAdv7.Text = "ButtonAdv7"
-        Me.ButtonAdv7.UseVisualStyle = True
-        '
-        'ButtonAdv6
-        '
-        Me.ButtonAdv6.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv6.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv6.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv6.IsBackStageButton = False
-        Me.ButtonAdv6.Location = New System.Drawing.Point(0, 47)
-        Me.ButtonAdv6.Name = "ButtonAdv6"
-        Me.ButtonAdv6.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv6.TabIndex = 2
-        Me.ButtonAdv6.Text = "ButtonAdv6"
-        Me.ButtonAdv6.UseVisualStyle = True
-        '
-        'ButtonAdv5
-        '
-        Me.ButtonAdv5.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv5.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv5.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv5.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv5.IsBackStageButton = False
-        Me.ButtonAdv5.Location = New System.Drawing.Point(0, 0)
-        Me.ButtonAdv5.Name = "ButtonAdv5"
-        Me.ButtonAdv5.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv5.TabIndex = 1
-        Me.ButtonAdv5.Text = "ButtonAdv5"
-        Me.ButtonAdv5.UseVisualStyle = True
         '
         'GridDataBoundGrid1
         '
@@ -535,63 +404,12 @@ Partial Class frmLagerMetro
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer2.Name = "SplitContainer2"
         '
-        'SplitContainer2.Panel1
-        '
-        Me.SplitContainer2.Panel1.Controls.Add(Me.ButtonAdv10)
-        Me.SplitContainer2.Panel1.Controls.Add(Me.ButtonAdv9)
-        Me.SplitContainer2.Panel1.Controls.Add(Me.ButtonAdv8)
-        '
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.GridDataBoundGrid3)
         Me.SplitContainer2.Size = New System.Drawing.Size(1193, 471)
         Me.SplitContainer2.SplitterDistance = 396
         Me.SplitContainer2.TabIndex = 0
-        '
-        'ButtonAdv10
-        '
-        Me.ButtonAdv10.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv10.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv10.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv10.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv10.IsBackStageButton = False
-        Me.ButtonAdv10.Location = New System.Drawing.Point(0, 94)
-        Me.ButtonAdv10.Name = "ButtonAdv10"
-        Me.ButtonAdv10.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv10.TabIndex = 3
-        Me.ButtonAdv10.Text = "ButtonAdv10"
-        Me.ButtonAdv10.UseVisualStyle = True
-        '
-        'ButtonAdv9
-        '
-        Me.ButtonAdv9.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv9.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv9.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv9.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv9.IsBackStageButton = False
-        Me.ButtonAdv9.Location = New System.Drawing.Point(0, 47)
-        Me.ButtonAdv9.Name = "ButtonAdv9"
-        Me.ButtonAdv9.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv9.TabIndex = 2
-        Me.ButtonAdv9.Text = "ButtonAdv9"
-        Me.ButtonAdv9.UseVisualStyle = True
-        '
-        'ButtonAdv8
-        '
-        Me.ButtonAdv8.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-        Me.ButtonAdv8.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv8.BeforeTouchSize = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ButtonAdv8.ForeColor = System.Drawing.Color.White
-        Me.ButtonAdv8.IsBackStageButton = False
-        Me.ButtonAdv8.Location = New System.Drawing.Point(0, 0)
-        Me.ButtonAdv8.Name = "ButtonAdv8"
-        Me.ButtonAdv8.Size = New System.Drawing.Size(396, 47)
-        Me.ButtonAdv8.TabIndex = 1
-        Me.ButtonAdv8.Text = "ButtonAdv8"
-        Me.ButtonAdv8.UseVisualStyle = True
         '
         'GridDataBoundGrid3
         '
@@ -1158,7 +976,6 @@ Partial Class frmLagerMetro
         CType(Me.tbLagerOversikt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbLagerOversikt.ResumeLayout(False)
         Me.TabPageAdv1.ResumeLayout(False)
-        Me.SplitContainer3.Panel1.ResumeLayout(False)
         Me.SplitContainer3.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer3.ResumeLayout(False)
@@ -1166,7 +983,6 @@ Partial Class frmLagerMetro
         CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv2.ResumeLayout(False)
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
@@ -1174,7 +990,6 @@ Partial Class frmLagerMetro
         CType(Me.LagerRapportTrondheimBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Drift8_2016DataSetTrondheimLager, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv3.ResumeLayout(False)
-        Me.SplitContainer2.Panel1.ResumeLayout(False)
         Me.SplitContainer2.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer2.ResumeLayout(False)
@@ -1226,22 +1041,12 @@ Partial Class frmLagerMetro
     Friend WithEvents tbLagerOversikt As Syncfusion.Windows.Forms.Tools.TabControlAdv
     Friend WithEvents TabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents SplitContainer3 As SplitContainer
-    Friend WithEvents ButtonAdv4 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv3 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents GridDataBoundGrid2 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents TabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents ButtonAdv7 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv6 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv5 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents GridDataBoundGrid1 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents TabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents SplitContainer2 As SplitContainer
-    Friend WithEvents ButtonAdv10 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv9 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents ButtonAdv8 As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents GridDataBoundGrid3 As Syncfusion.Windows.Forms.Grid.GridDataBoundGrid
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
