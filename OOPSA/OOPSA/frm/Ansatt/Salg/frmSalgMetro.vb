@@ -95,7 +95,7 @@ Public Class frmSalgMetro
         Dim produkt() As String = ComboRegSalg.Text.Split(" ")
         Dim lager() As String = ComboSalgLager.Text.Split(" ")
         Dim avanse As Integer = CInt(txtavanse.Text)
-        Dim ansatt_id As Integer = UCore.UIDProp
+        Dim ansatt_id As Integer = UCore.UID
         Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
         Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = " & produkt(0) & "", "Pris")
@@ -299,7 +299,7 @@ Public Class frmSalgMetro
 
         Dim produkt() As String = ComboProdukt.Text.Split(" ")
         Dim kunde() As String = ComboKunde1.Text.Split(" ")
-        Dim ansattid = UCore.UIDProp
+        Dim ansattid = UCore.UID
         Dim fra As Date = dtpFra.Value
         Dim til As Date = dtpTil.Value
         Dim lager() As String = ComboLager.Text.Split(" ")
@@ -309,7 +309,7 @@ Public Class frmSalgMetro
 
 
         If lagerbeholdning >= antall Then
-
+            SQL.sporring("UPDATE Lagerbeholdning SET Antall = " & (lagerbeholdning - antall) & " WHERE Lager_id = " & lager(0) & " AND Produkt_id = " & produkt(0) & "")
             SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "');", "Leiet er registrert")
             lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & "Fra: " & fra & vbCrLf & "Til: " & til)
             totall += PrisPer
@@ -333,6 +333,11 @@ Public Class frmSalgMetro
     Private Sub ButtonAdv4_Click(sender As Object, e As EventArgs) Handles ButtonAdv4.Click
 
         'DOOOOO STUFFFFF
+        Dim tabbbble() As String = ComboKUNDEVALG.Text.Split(" ")
+        Dim Dato_ogrinal As Date = tabbbble(0)
+        Dim p_id_orinal As Integer = tabbbble(1)
+
+
 
 
         Dim kunde_id As Integer = CInt(TextBoxExt7.Text)
@@ -340,13 +345,17 @@ Public Class frmSalgMetro
         Dim Dato As Date
         Dim antall = CInt(TextBoxExt9.Text)
         Dim Velgsalg As String = Comboslgodt.Text
+        Dim produkt_id() As String = Comboendrepro.Text.Split(" ")
+
+
+
 
         If chkEndreSalg.Checked = True Then
             SQL.sporring("Update Kurs_deltagelse SET Kurs_Kurs_id = " & Kurs_Kurs_id & ", Dato = " & Dato & ", Antall = " & antall & " WHERE Kurs_deltagelse.Kurs_Kurs_id = " & Kurs_Kurs_id & " And Kurs_deltagelse.Kunde_Kid = " & kunde_id & " And Kurs_deltagelse.Dato` = " & Dato & "", "Oppdatert bestilling")
 
         ElseIf chkEndreLeie.Checked = True Then
 
-            SQL.sporring("")
+            SQL.sporring("UPDATE `drift8_2016`.`Kjøp` SET `dato` = '" & Dato & "', `Produkt_Produkt_id` = '" & produkt_id(0) & "', `Antall` = '" & antall & "', WHERE `Kjøp`.`dato` = '" & Dato_ogrinal & "' AND `Kjøp`.`Kunde_Kid` = '" & kunde_id & "' AND `Kjøp`.`Produkt_Produkt_id` = '" & p_id_orinal & "';")
 
 
         End If
