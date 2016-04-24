@@ -10,6 +10,9 @@ Public Class frmLagerMetro
     Dim dt As DataTable 'For å sende inn lager_id utifra navn
     Dim dr As DataRow 'For å sende inn lager_id utifra navn
 
+    Dim dt3 As DataTable
+    Dim dr3 As DataRow
+
     Dim dt4 As DataTable ' For å hente inn by navn utifra Lager_id
     Dim dr4 As DataRow ' For å hente inn by navn utifra Lager_id
 
@@ -64,12 +67,8 @@ Public Class frmLagerMetro
 
     Private Sub VareEndre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VareEndre.SelectedIndexChanged
 
-        Dim adapter3 As New MySqlDataAdapter("SELECT * From Produkt WHERE Produkt_navn = '" & VareEndre.Text & "' ", con) ' Fills textboxes with information the product is in the database with, uses the name of the product to fetch all the information needed.
-        Dim ds3 = New DataSet
-        Dim dr3 As DataRow
-        Dim dt3 As DataTable
-        adapter3.Fill(ds3, "Produkt")
-        dt3 = ds3.Tables(0)
+        Dim dt3 = sql.sporring("SELECT * From Produkt WHERE Produkt_navn = '" & VareEndre.Text & "' ")
+        Dim dr3 = dt3.Rows(0)
 
         For Each dr3 In dt3.Rows
             navnEndreText.Text = (dr3("Produkt_navn"))
