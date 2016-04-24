@@ -133,4 +133,8 @@ Public Class frmMetroLogin
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         frmForgotPass.Show()
     End Sub
+
+    Private Sub frmMetroLogin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Environment.Exit(0)
+    End Sub
 End Class

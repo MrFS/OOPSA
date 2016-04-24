@@ -4,7 +4,7 @@ Imports MySql.Data.MySqlClient
 Public Class frmSalgMetro
     Inherits MetroForm
 
-    Dim Core As New formAnsattCore
+    Dim Core As New frmAnsattCore
     Dim SQL As New SQL
 
     Public Sub New()
@@ -95,7 +95,7 @@ Public Class frmSalgMetro
         Dim produkt() As String = ComboRegSalg.Text.Split(" ")
         Dim lager() As String = ComboSalgLager.Text.Split(" ")
         Dim avanse As Integer = CInt(txtavanse.Text)
-        Dim ansatt_id As Integer = UCore.UID
+        Dim ansatt_id As Integer = UCore.UIDProp
         Dim kunde_id() As String = ComboKunde1.Text.Split(" ")
         Dim antall As Integer = CInt(Produktantall.Text)
         Dim PrisPer As Integer = SQL.Return1Row("SELECT Pris FROM Produkt WHERE Produkt_id = " & produkt(0) & "", "Pris")

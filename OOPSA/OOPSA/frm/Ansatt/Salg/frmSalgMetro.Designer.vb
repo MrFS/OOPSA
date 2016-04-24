@@ -278,7 +278,7 @@ Partial Class frmSalgMetro
         '
         Me.TabControlAdv1.ActiveTabColor = System.Drawing.Color.LightGray
         Me.TabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(1067, 567)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(854, 451)
         Me.TabControlAdv1.Controls.Add(Me.tbOversikt)
         Me.TabControlAdv1.Controls.Add(Me.tbRegistrerSalg)
         Me.TabControlAdv1.Controls.Add(Me.tbBookTime)
@@ -289,9 +289,8 @@ Partial Class frmSalgMetro
         Me.TabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.AboveText
         Me.TabControlAdv1.InactiveTabColor = System.Drawing.Color.Transparent
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControlAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(1067, 567)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(854, 451)
         Me.TabControlAdv1.TabIndex = 0
         Me.TabControlAdv1.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.TabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
@@ -303,25 +302,23 @@ Partial Class frmSalgMetro
         Me.tbOversikt.Controls.Add(Me.ToolStripEx1)
         Me.tbOversikt.Image = Global.OOPSA.My.Resources.Resources.tbOverview
         Me.tbOversikt.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbOversikt.Location = New System.Drawing.Point(89, 3)
-        Me.tbOversikt.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbOversikt.Location = New System.Drawing.Point(83, 3)
         Me.tbOversikt.Name = "tbOversikt"
         Me.tbOversikt.ShowCloseButton = True
-        Me.tbOversikt.Size = New System.Drawing.Size(974, 560)
+        Me.tbOversikt.Size = New System.Drawing.Size(767, 444)
         Me.tbOversikt.TabIndex = 1
         Me.tbOversikt.ThemesEnabled = True
         '
         'TabControlAdv2
         '
-        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(974, 513)
+        Me.TabControlAdv2.BeforeTouchSize = New System.Drawing.Size(767, 402)
         Me.TabControlAdv2.Controls.Add(Me.TabPageAdv7)
         Me.TabControlAdv2.Controls.Add(Me.TabPageAdv2)
         Me.TabControlAdv2.Controls.Add(Me.TabPageAdv3)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 47)
-        Me.TabControlAdv2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControlAdv2.Location = New System.Drawing.Point(0, 42)
         Me.TabControlAdv2.Name = "TabControlAdv2"
-        Me.TabControlAdv2.Size = New System.Drawing.Size(974, 513)
+        Me.TabControlAdv2.Size = New System.Drawing.Size(767, 402)
         Me.TabControlAdv2.TabIndex = 1
         Me.TabControlAdv2.ThemesEnabled = True
         '
@@ -330,11 +327,10 @@ Partial Class frmSalgMetro
         Me.TabPageAdv7.Controls.Add(Me.GridDataBoundGrid3)
         Me.TabPageAdv7.Image = Nothing
         Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv7.Location = New System.Drawing.Point(3, 34)
         Me.TabPageAdv7.Name = "TabPageAdv7"
         Me.TabPageAdv7.ShowCloseButton = True
-        Me.TabPageAdv7.Size = New System.Drawing.Size(967, 470)
+        Me.TabPageAdv7.Size = New System.Drawing.Size(760, 364)
         Me.TabPageAdv7.TabIndex = 4
         Me.TabPageAdv7.Text = "Lageroversikt"
         Me.TabPageAdv7.ThemesEnabled = True
@@ -374,7 +370,6 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid3.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid3.MetroScrollBars = True
         Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
         Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
@@ -383,7 +378,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid3.Properties.MarkColHeader = False
         Me.GridDataBoundGrid3.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid3.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(967, 470)
+        Me.GridDataBoundGrid3.Size = New System.Drawing.Size(760, 364)
         Me.GridDataBoundGrid3.SmartSizeBox = False
         Me.GridDataBoundGrid3.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid3.TabIndex = 1
@@ -407,11 +402,10 @@ Partial Class frmSalgMetro
         Me.TabPageAdv2.Controls.Add(Me.GridDataBoundGrid1)
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv2.Location = New System.Drawing.Point(3, 34)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
-        Me.TabPageAdv2.Size = New System.Drawing.Size(967, 470)
+        Me.TabPageAdv2.Size = New System.Drawing.Size(760, 364)
         Me.TabPageAdv2.TabIndex = 2
         Me.TabPageAdv2.Text = "Trondheim"
         Me.TabPageAdv2.ThemesEnabled = True
@@ -451,7 +445,6 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid1.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid1.MetroScrollBars = True
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
@@ -460,7 +453,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(967, 470)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(760, 364)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 0
@@ -484,11 +477,10 @@ Partial Class frmSalgMetro
         Me.TabPageAdv3.Controls.Add(Me.GridDataBoundGrid2)
         Me.TabPageAdv3.Image = Nothing
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv3.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv3.Location = New System.Drawing.Point(3, 34)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
-        Me.TabPageAdv3.Size = New System.Drawing.Size(967, 470)
+        Me.TabPageAdv3.Size = New System.Drawing.Size(760, 364)
         Me.TabPageAdv3.TabIndex = 3
         Me.TabPageAdv3.Text = "Bryne"
         Me.TabPageAdv3.ThemesEnabled = True
@@ -528,7 +520,6 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid2.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid2.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid2.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid2.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid2.MetroScrollBars = True
         Me.GridDataBoundGrid2.Name = "GridDataBoundGrid2"
         Me.GridDataBoundGrid2.OptimizeInsertRemoveCells = True
@@ -537,7 +528,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid2.Properties.MarkColHeader = False
         Me.GridDataBoundGrid2.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid2.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(967, 470)
+        Me.GridDataBoundGrid2.Size = New System.Drawing.Size(760, 364)
         Me.GridDataBoundGrid2.SmartSizeBox = False
         Me.GridDataBoundGrid2.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid2.TabIndex = 1
@@ -565,7 +556,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(974, 47)
+        Me.ToolStripEx1.Size = New System.Drawing.Size(767, 42)
         Me.ToolStripEx1.TabIndex = 0
         Me.ToolStripEx1.Text = "Salgsoversikt"
         Me.ToolStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -576,7 +567,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton2.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(84, 24)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(72, 24)
         Me.ToolStripButton2.Text = "Logg ut"
         '
         'tbRegistrerSalg
@@ -585,11 +576,10 @@ Partial Class frmSalgMetro
         Me.tbRegistrerSalg.Controls.Add(Me.ToolStripEx2)
         Me.tbRegistrerSalg.Image = Global.OOPSA.My.Resources.Resources.tbRegistrerSalg
         Me.tbRegistrerSalg.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbRegistrerSalg.Location = New System.Drawing.Point(89, 3)
-        Me.tbRegistrerSalg.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbRegistrerSalg.Location = New System.Drawing.Point(83, 3)
         Me.tbRegistrerSalg.Name = "tbRegistrerSalg"
         Me.tbRegistrerSalg.ShowCloseButton = True
-        Me.tbRegistrerSalg.Size = New System.Drawing.Size(974, 560)
+        Me.tbRegistrerSalg.Size = New System.Drawing.Size(767, 444)
         Me.tbRegistrerSalg.TabIndex = 2
         Me.tbRegistrerSalg.ThemesEnabled = True
         '
@@ -597,17 +587,15 @@ Partial Class frmSalgMetro
         '
         Me.Panel1.Controls.Add(Me.SplitContainer1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 47)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel1.Location = New System.Drawing.Point(0, 42)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(974, 513)
+        Me.Panel1.Size = New System.Drawing.Size(767, 402)
         Me.Panel1.TabIndex = 2
         '
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -617,16 +605,14 @@ Partial Class frmSalgMetro
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.Leie)
-        Me.SplitContainer1.Size = New System.Drawing.Size(974, 513)
-        Me.SplitContainer1.SplitterDistance = 324
-        Me.SplitContainer1.SplitterWidth = 5
+        Me.SplitContainer1.Size = New System.Drawing.Size(767, 402)
+        Me.SplitContainer1.SplitterDistance = 255
         Me.SplitContainer1.TabIndex = 0
         '
         'SplitContainer5
         '
         Me.SplitContainer5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer5.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer5.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer5.Name = "SplitContainer5"
         Me.SplitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -640,29 +626,28 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer5.Panel2.Controls.Add(Me.lblTotPris)
         Me.SplitContainer5.Panel2.Controls.Add(Me.lstSalgIDag)
-        Me.SplitContainer5.Size = New System.Drawing.Size(324, 513)
-        Me.SplitContainer5.SplitterDistance = 181
-        Me.SplitContainer5.SplitterWidth = 5
+        Me.SplitContainer5.Size = New System.Drawing.Size(255, 402)
+        Me.SplitContainer5.SplitterDistance = 141
         Me.SplitContainer5.TabIndex = 0
         '
         'ComboKunde1
         '
         Me.ComboKunde1.BackColor = System.Drawing.Color.White
-        Me.ComboKunde1.BeforeTouchSize = New System.Drawing.Size(181, 19)
+        Me.ComboKunde1.BeforeTouchSize = New System.Drawing.Size(145, 28)
         Me.ComboKunde1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboKunde1.Location = New System.Drawing.Point(35, 129)
+        Me.ComboKunde1.Location = New System.Drawing.Point(28, 103)
+        Me.ComboKunde1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboKunde1.Name = "ComboKunde1"
-        Me.ComboKunde1.Size = New System.Drawing.Size(181, 19)
+        Me.ComboKunde1.Size = New System.Drawing.Size(145, 28)
         Me.ComboKunde1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKunde1.TabIndex = 6
         Me.ComboKunde1.Text = "ComboBoxAdv1"
         '
         'AutoLabel1
         '
-        Me.AutoLabel1.Location = New System.Drawing.Point(35, 93)
-        Me.AutoLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel1.Location = New System.Drawing.Point(28, 74)
         Me.AutoLabel1.Name = "AutoLabel1"
-        Me.AutoLabel1.Size = New System.Drawing.Size(181, 25)
+        Me.AutoLabel1.Size = New System.Drawing.Size(140, 20)
         Me.AutoLabel1.TabIndex = 4
         Me.AutoLabel1.Text = "Velg kundenummer:"
         '
@@ -670,23 +655,23 @@ Partial Class frmSalgMetro
         '
         Me.btnNyKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnNyKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnNyKunde.BeforeTouchSize = New System.Drawing.Size(324, 85)
+        Me.btnNyKunde.BeforeTouchSize = New System.Drawing.Size(255, 68)
         Me.btnNyKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnNyKunde.ForeColor = System.Drawing.Color.White
         Me.btnNyKunde.IsBackStageButton = False
         Me.btnNyKunde.Location = New System.Drawing.Point(0, 0)
-        Me.btnNyKunde.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNyKunde.Name = "btnNyKunde"
-        Me.btnNyKunde.Size = New System.Drawing.Size(324, 85)
+        Me.btnNyKunde.Size = New System.Drawing.Size(255, 68)
         Me.btnNyKunde.TabIndex = 3
         Me.btnNyKunde.Text = "Registrere ny kunde?"
         Me.btnNyKunde.UseVisualStyle = True
         '
         'lblTotPris
         '
-        Me.lblTotPris.Location = New System.Drawing.Point(3, 283)
+        Me.lblTotPris.Location = New System.Drawing.Point(2, 226)
+        Me.lblTotPris.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotPris.Name = "lblTotPris"
-        Me.lblTotPris.Size = New System.Drawing.Size(97, 25)
+        Me.lblTotPris.Size = New System.Drawing.Size(76, 20)
         Me.lblTotPris.TabIndex = 3
         Me.lblTotPris.Text = "Total Pris: "
         '
@@ -695,18 +680,17 @@ Partial Class frmSalgMetro
         Me.lstSalgIDag.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.lstSalgIDag.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lstSalgIDag.FormattingEnabled = True
-        Me.lstSalgIDag.ItemHeight = 25
+        Me.lstSalgIDag.ItemHeight = 20
         Me.lstSalgIDag.Location = New System.Drawing.Point(0, 0)
-        Me.lstSalgIDag.Margin = New System.Windows.Forms.Padding(4)
         Me.lstSalgIDag.Name = "lstSalgIDag"
-        Me.lstSalgIDag.Size = New System.Drawing.Size(324, 327)
+        Me.lstSalgIDag.Size = New System.Drawing.Size(255, 257)
         Me.lstSalgIDag.TabIndex = 0
         '
         'Leie
         '
         Me.Leie.ActiveTabColor = System.Drawing.Color.LightGray
         Me.Leie.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.Leie.BeforeTouchSize = New System.Drawing.Size(645, 513)
+        Me.Leie.BeforeTouchSize = New System.Drawing.Size(508, 402)
         Me.Leie.Controls.Add(Me.TabPageAdv4)
         Me.Leie.Controls.Add(Me.TabPageAdv5)
         Me.Leie.Controls.Add(Me.TabPageAdv6)
@@ -715,10 +699,9 @@ Partial Class frmSalgMetro
         Me.Leie.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.BelowText
         Me.Leie.InactiveTabColor = System.Drawing.Color.Transparent
         Me.Leie.Location = New System.Drawing.Point(0, 0)
-        Me.Leie.Margin = New System.Windows.Forms.Padding(4)
         Me.Leie.Name = "Leie"
         Me.Leie.RotateTextWhenVertical = True
-        Me.Leie.Size = New System.Drawing.Size(645, 513)
+        Me.Leie.Size = New System.Drawing.Size(508, 402)
         Me.Leie.TabIndex = 17
         Me.Leie.TabPanelBackColor = System.Drawing.Color.Transparent
         Me.Leie.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
@@ -739,11 +722,10 @@ Partial Class frmSalgMetro
         Me.TabPageAdv4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(62, 3)
-        Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv4.Location = New System.Drawing.Point(52, 3)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(579, 506)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(452, 395)
         Me.TabPageAdv4.TabIndex = 1
         Me.TabPageAdv4.Text = "Salg:"
         Me.TabPageAdv4.ThemesEnabled = True
@@ -751,11 +733,12 @@ Partial Class frmSalgMetro
         'ComboSalgLager
         '
         Me.ComboSalgLager.BackColor = System.Drawing.Color.White
-        Me.ComboSalgLager.BeforeTouchSize = New System.Drawing.Size(205, 19)
+        Me.ComboSalgLager.BeforeTouchSize = New System.Drawing.Size(164, 29)
         Me.ComboSalgLager.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboSalgLager.Location = New System.Drawing.Point(215, 121)
+        Me.ComboSalgLager.Location = New System.Drawing.Point(172, 97)
+        Me.ComboSalgLager.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboSalgLager.Name = "ComboSalgLager"
-        Me.ComboSalgLager.Size = New System.Drawing.Size(205, 19)
+        Me.ComboSalgLager.Size = New System.Drawing.Size(164, 29)
         Me.ComboSalgLager.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboSalgLager.TabIndex = 26
         Me.ComboSalgLager.Text = "Lager"
@@ -763,11 +746,12 @@ Partial Class frmSalgMetro
         'ComboRegSalg
         '
         Me.ComboRegSalg.BackColor = System.Drawing.Color.White
-        Me.ComboRegSalg.BeforeTouchSize = New System.Drawing.Size(205, 19)
+        Me.ComboRegSalg.BeforeTouchSize = New System.Drawing.Size(164, 29)
         Me.ComboRegSalg.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboRegSalg.Location = New System.Drawing.Point(215, 77)
+        Me.ComboRegSalg.Location = New System.Drawing.Point(172, 62)
+        Me.ComboRegSalg.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboRegSalg.Name = "ComboRegSalg"
-        Me.ComboRegSalg.Size = New System.Drawing.Size(205, 19)
+        Me.ComboRegSalg.Size = New System.Drawing.Size(164, 29)
         Me.ComboRegSalg.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboRegSalg.TabIndex = 25
         Me.ComboRegSalg.Text = "Produkt"
@@ -780,7 +764,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx6.Name = "ToolStripEx6"
         Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(579, 45)
+        Me.ToolStripEx6.Size = New System.Drawing.Size(452, 40)
         Me.ToolStripEx6.TabIndex = 24
         Me.ToolStripEx6.Text = "Nytt Salg"
         Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -788,15 +772,14 @@ Partial Class frmSalgMetro
         'Produktantall
         '
         Me.Produktantall.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.Produktantall.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.Produktantall.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.Produktantall.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Produktantall.IntegerValue = CType(1, Long)
-        Me.Produktantall.Location = New System.Drawing.Point(215, 164)
-        Me.Produktantall.Margin = New System.Windows.Forms.Padding(4)
+        Me.Produktantall.Location = New System.Drawing.Point(172, 131)
         Me.Produktantall.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.Produktantall.Name = "Produktantall"
         Me.Produktantall.NullString = ""
-        Me.Produktantall.Size = New System.Drawing.Size(205, 34)
+        Me.Produktantall.Size = New System.Drawing.Size(165, 29)
         Me.Produktantall.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.Produktantall.TabIndex = 23
         Me.Produktantall.Text = "1"
@@ -805,15 +788,14 @@ Partial Class frmSalgMetro
         'txtavanse
         '
         Me.txtavanse.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.txtavanse.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.txtavanse.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.txtavanse.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtavanse.IntegerValue = CType(1, Long)
-        Me.txtavanse.Location = New System.Drawing.Point(215, 208)
-        Me.txtavanse.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtavanse.Location = New System.Drawing.Point(172, 166)
         Me.txtavanse.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtavanse.Name = "txtavanse"
         Me.txtavanse.NullString = ""
-        Me.txtavanse.Size = New System.Drawing.Size(205, 34)
+        Me.txtavanse.Size = New System.Drawing.Size(165, 29)
         Me.txtavanse.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtavanse.TabIndex = 22
         Me.txtavanse.Text = "1"
@@ -821,20 +803,18 @@ Partial Class frmSalgMetro
         '
         'AutoLabel3
         '
-        Me.AutoLabel3.Location = New System.Drawing.Point(38, 218)
-        Me.AutoLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel3.Location = New System.Drawing.Point(30, 174)
         Me.AutoLabel3.Name = "AutoLabel3"
-        Me.AutoLabel3.Size = New System.Drawing.Size(143, 28)
+        Me.AutoLabel3.Size = New System.Drawing.Size(113, 21)
         Me.AutoLabel3.TabIndex = 21
         Me.AutoLabel3.Text = "Avanse (0-100):"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(32, 125)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Location = New System.Drawing.Point(26, 100)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(64, 28)
+        Me.Label22.Size = New System.Drawing.Size(52, 21)
         Me.Label22.TabIndex = 18
         Me.Label22.Text = "Lager:"
         '
@@ -842,13 +822,12 @@ Partial Class frmSalgMetro
         '
         Me.btnRegSalg.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnRegSalg.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnRegSalg.BeforeTouchSize = New System.Drawing.Size(202, 50)
+        Me.btnRegSalg.BeforeTouchSize = New System.Drawing.Size(162, 40)
         Me.btnRegSalg.ForeColor = System.Drawing.Color.White
         Me.btnRegSalg.IsBackStageButton = False
-        Me.btnRegSalg.Location = New System.Drawing.Point(249, 412)
-        Me.btnRegSalg.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRegSalg.Location = New System.Drawing.Point(199, 330)
         Me.btnRegSalg.Name = "btnRegSalg"
-        Me.btnRegSalg.Size = New System.Drawing.Size(202, 50)
+        Me.btnRegSalg.Size = New System.Drawing.Size(162, 40)
         Me.btnRegSalg.TabIndex = 16
         Me.btnRegSalg.Text = "Registrer Salg"
         Me.btnRegSalg.UseVisualStyle = True
@@ -856,20 +835,18 @@ Partial Class frmSalgMetro
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(32, 81)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(26, 65)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(87, 28)
+        Me.Label9.Size = New System.Drawing.Size(72, 21)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Produkt :"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(32, 169)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(26, 135)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(137, 28)
+        Me.Label10.Size = New System.Drawing.Size(114, 21)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Produkt antall :"
         '
@@ -886,11 +863,10 @@ Partial Class frmSalgMetro
         Me.TabPageAdv5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv5.Image = Nothing
         Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(62, 3)
-        Me.TabPageAdv5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(52, 3)
         Me.TabPageAdv5.Name = "TabPageAdv5"
         Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(579, 506)
+        Me.TabPageAdv5.Size = New System.Drawing.Size(452, 395)
         Me.TabPageAdv5.TabIndex = 2
         Me.TabPageAdv5.Text = "Kurs"
         Me.TabPageAdv5.ThemesEnabled = True
@@ -898,10 +874,9 @@ Partial Class frmSalgMetro
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(38, 183)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(30, 146)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 28)
+        Me.Label1.Size = New System.Drawing.Size(47, 21)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Dato:"
         '
@@ -909,20 +884,20 @@ Partial Class frmSalgMetro
         '
         Me.dtpKurs.CustomFormat = "yyyy-MM-dd h:mm:ss"
         Me.dtpKurs.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpKurs.Location = New System.Drawing.Point(194, 177)
+        Me.dtpKurs.Location = New System.Drawing.Point(155, 142)
+        Me.dtpKurs.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtpKurs.Name = "dtpKurs"
-        Me.dtpKurs.Size = New System.Drawing.Size(212, 34)
+        Me.dtpKurs.Size = New System.Drawing.Size(170, 29)
         Me.dtpKurs.TabIndex = 27
         '
         'ComboKurs1
         '
         Me.ComboKurs1.BackColor = System.Drawing.Color.White
-        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(170, 19)
         Me.ComboKurs1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboKurs1.Location = New System.Drawing.Point(194, 74)
-        Me.ComboKurs1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboKurs1.Location = New System.Drawing.Point(155, 59)
         Me.ComboKurs1.Name = "ComboKurs1"
-        Me.ComboKurs1.Size = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.Size = New System.Drawing.Size(170, 19)
         Me.ComboKurs1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKurs1.TabIndex = 26
         Me.ComboKurs1.Text = "ComboBoxAdv1"
@@ -935,7 +910,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx7.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx7.Name = "ToolStripEx7"
         Me.ToolStripEx7.Office12Mode = False
-        Me.ToolStripEx7.Size = New System.Drawing.Size(579, 45)
+        Me.ToolStripEx7.Size = New System.Drawing.Size(452, 40)
         Me.ToolStripEx7.TabIndex = 25
         Me.ToolStripEx7.Text = "Nytt Kurs"
         Me.ToolStripEx7.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -944,26 +919,24 @@ Partial Class frmSalgMetro
         '
         Me.ButtonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv2.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(202, 50)
+        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(162, 40)
         Me.ButtonAdv2.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(194, 315)
-        Me.ButtonAdv2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv2.Location = New System.Drawing.Point(155, 252)
         Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(202, 50)
+        Me.ButtonAdv2.Size = New System.Drawing.Size(162, 40)
         Me.ButtonAdv2.TabIndex = 17
         Me.ButtonAdv2.Text = "Registrer Salg"
         Me.ButtonAdv2.UseVisualStyle = True
         '
         'TextBoxExt3
         '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(194, 115)
-        Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(155, 92)
         Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(202, 34)
+        Me.TextBoxExt3.Size = New System.Drawing.Size(162, 29)
         Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt3.TabIndex = 3
         Me.TextBoxExt3.Text = "TextBoxExt3"
@@ -971,20 +944,18 @@ Partial Class frmSalgMetro
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 120)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(26, 96)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(149, 28)
+        Me.Label3.Size = New System.Drawing.Size(122, 21)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Antall personer :"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 76)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(26, 61)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 28)
+        Me.Label2.Size = New System.Drawing.Size(48, 21)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Kurs :"
         '
@@ -1005,35 +976,35 @@ Partial Class frmSalgMetro
         Me.TabPageAdv6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv6.Image = Nothing
         Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv6.Location = New System.Drawing.Point(62, 3)
-        Me.TabPageAdv6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(52, 3)
         Me.TabPageAdv6.Name = "TabPageAdv6"
         Me.TabPageAdv6.ShowCloseButton = True
-        Me.TabPageAdv6.Size = New System.Drawing.Size(579, 506)
+        Me.TabPageAdv6.Size = New System.Drawing.Size(452, 395)
         Me.TabPageAdv6.TabIndex = 3
         Me.TabPageAdv6.Text = "Leie"
         Me.TabPageAdv6.ThemesEnabled = True
         '
         'AutoLabel11
         '
-        Me.AutoLabel11.Location = New System.Drawing.Point(338, 69)
+        Me.AutoLabel11.Location = New System.Drawing.Point(270, 55)
         Me.AutoLabel11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AutoLabel11.Name = "AutoLabel11"
-        Me.AutoLabel11.Size = New System.Drawing.Size(64, 28)
+        Me.AutoLabel11.Size = New System.Drawing.Size(54, 21)
         Me.AutoLabel11.TabIndex = 52
         Me.AutoLabel11.Text = "Antall:"
         '
         'IntegerTextBox2
         '
         Me.IntegerTextBox2.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.IntegerTextBox2.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.IntegerTextBox2.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.IntegerTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.IntegerTextBox2.IntegerValue = CType(2, Long)
-        Me.IntegerTextBox2.Location = New System.Drawing.Point(347, 100)
+        Me.IntegerTextBox2.Location = New System.Drawing.Point(278, 80)
+        Me.IntegerTextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.IntegerTextBox2.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.IntegerTextBox2.Name = "IntegerTextBox2"
         Me.IntegerTextBox2.NullString = ""
-        Me.IntegerTextBox2.Size = New System.Drawing.Size(55, 34)
+        Me.IntegerTextBox2.Size = New System.Drawing.Size(45, 29)
         Me.IntegerTextBox2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.IntegerTextBox2.TabIndex = 51
         Me.IntegerTextBox2.Text = "2"
@@ -1041,11 +1012,12 @@ Partial Class frmSalgMetro
         'ComboLager
         '
         Me.ComboLager.BackColor = System.Drawing.Color.White
-        Me.ComboLager.BeforeTouchSize = New System.Drawing.Size(165, 19)
+        Me.ComboLager.BeforeTouchSize = New System.Drawing.Size(132, 19)
         Me.ComboLager.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboLager.Location = New System.Drawing.Point(40, 235)
+        Me.ComboLager.Location = New System.Drawing.Point(32, 188)
+        Me.ComboLager.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboLager.Name = "ComboLager"
-        Me.ComboLager.Size = New System.Drawing.Size(165, 19)
+        Me.ComboLager.Size = New System.Drawing.Size(132, 19)
         Me.ComboLager.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboLager.TabIndex = 50
         Me.ComboLager.Text = "ComboBoxAdv1"
@@ -1053,48 +1025,49 @@ Partial Class frmSalgMetro
         'ComboProdukt
         '
         Me.ComboProdukt.BackColor = System.Drawing.Color.White
-        Me.ComboProdukt.BeforeTouchSize = New System.Drawing.Size(270, 19)
+        Me.ComboProdukt.BeforeTouchSize = New System.Drawing.Size(216, 19)
         Me.ComboProdukt.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboProdukt.Location = New System.Drawing.Point(42, 100)
+        Me.ComboProdukt.Location = New System.Drawing.Point(34, 80)
+        Me.ComboProdukt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboProdukt.Name = "ComboProdukt"
-        Me.ComboProdukt.Size = New System.Drawing.Size(270, 19)
+        Me.ComboProdukt.Size = New System.Drawing.Size(216, 19)
         Me.ComboProdukt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboProdukt.TabIndex = 48
         Me.ComboProdukt.Text = "ComboBoxAdv1"
         '
         'AutoLabel2
         '
-        Me.AutoLabel2.Location = New System.Drawing.Point(26, 204)
+        Me.AutoLabel2.Location = New System.Drawing.Point(21, 163)
         Me.AutoLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AutoLabel2.Name = "AutoLabel2"
-        Me.AutoLabel2.Size = New System.Drawing.Size(100, 28)
+        Me.AutoLabel2.Size = New System.Drawing.Size(83, 21)
         Me.AutoLabel2.TabIndex = 44
         Me.AutoLabel2.Text = "Velg lager:"
         '
         'AutoLabel4
         '
-        Me.AutoLabel4.Location = New System.Drawing.Point(26, 69)
+        Me.AutoLabel4.Location = New System.Drawing.Point(21, 55)
         Me.AutoLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AutoLabel4.Name = "AutoLabel4"
-        Me.AutoLabel4.Size = New System.Drawing.Size(123, 28)
+        Me.AutoLabel4.Size = New System.Drawing.Size(102, 21)
         Me.AutoLabel4.TabIndex = 42
         Me.AutoLabel4.Text = "Velg produkt:"
         '
         'lblTil
         '
-        Me.lblTil.Location = New System.Drawing.Point(171, 144)
+        Me.lblTil.Location = New System.Drawing.Point(137, 115)
         Me.lblTil.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTil.Name = "lblTil"
-        Me.lblTil.Size = New System.Drawing.Size(34, 28)
+        Me.lblTil.Size = New System.Drawing.Size(30, 21)
         Me.lblTil.TabIndex = 41
         Me.lblTil.Text = "Til:"
         '
         'lblfra
         '
-        Me.lblfra.Location = New System.Drawing.Point(26, 144)
+        Me.lblfra.Location = New System.Drawing.Point(21, 115)
         Me.lblfra.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfra.Name = "lblfra"
-        Me.lblfra.Size = New System.Drawing.Size(43, 28)
+        Me.lblfra.Size = New System.Drawing.Size(35, 21)
         Me.lblfra.TabIndex = 40
         Me.lblfra.Text = "Fra:"
         '
@@ -1112,13 +1085,13 @@ Partial Class frmSalgMetro
         Me.dtpFra.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.dtpFra.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpFra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFra.Location = New System.Drawing.Point(42, 172)
+        Me.dtpFra.Location = New System.Drawing.Point(34, 138)
         Me.dtpFra.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpFra.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.dtpFra.MinValue = New Date(CType(0, Long))
         Me.dtpFra.Name = "dtpFra"
         Me.dtpFra.ShowCheckBox = False
-        Me.dtpFra.Size = New System.Drawing.Size(127, 26)
+        Me.dtpFra.Size = New System.Drawing.Size(102, 21)
         Me.dtpFra.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.dtpFra.TabIndex = 39
         Me.dtpFra.Value = New Date(2016, 3, 10, 12, 36, 8, 262)
@@ -1137,13 +1110,13 @@ Partial Class frmSalgMetro
         Me.dtpTil.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.dtpTil.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpTil.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTil.Location = New System.Drawing.Point(189, 172)
+        Me.dtpTil.Location = New System.Drawing.Point(151, 138)
         Me.dtpTil.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpTil.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.dtpTil.MinValue = New Date(CType(0, Long))
         Me.dtpTil.Name = "dtpTil"
         Me.dtpTil.ShowCheckBox = False
-        Me.dtpTil.Size = New System.Drawing.Size(123, 26)
+        Me.dtpTil.Size = New System.Drawing.Size(99, 21)
         Me.dtpTil.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.dtpTil.TabIndex = 38
         Me.dtpTil.Value = New Date(2016, 3, 10, 12, 36, 8, 262)
@@ -1156,7 +1129,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx8.Name = "ToolStripEx8"
         Me.ToolStripEx8.Office12Mode = False
-        Me.ToolStripEx8.Size = New System.Drawing.Size(579, 45)
+        Me.ToolStripEx8.Size = New System.Drawing.Size(452, 40)
         Me.ToolStripEx8.TabIndex = 25
         Me.ToolStripEx8.Text = "Ny Leie"
         Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1165,13 +1138,12 @@ Partial Class frmSalgMetro
         '
         Me.btbAddleie.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btbAddleie.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btbAddleie.BeforeTouchSize = New System.Drawing.Size(175, 64)
+        Me.btbAddleie.BeforeTouchSize = New System.Drawing.Size(140, 51)
         Me.btbAddleie.ForeColor = System.Drawing.Color.White
         Me.btbAddleie.IsBackStageButton = False
-        Me.btbAddleie.Location = New System.Drawing.Point(260, 232)
-        Me.btbAddleie.Margin = New System.Windows.Forms.Padding(4)
+        Me.btbAddleie.Location = New System.Drawing.Point(208, 186)
         Me.btbAddleie.Name = "btbAddleie"
-        Me.btbAddleie.Size = New System.Drawing.Size(175, 64)
+        Me.btbAddleie.Size = New System.Drawing.Size(140, 51)
         Me.btbAddleie.TabIndex = 0
         Me.btbAddleie.Text = "Legg til leie"
         Me.btbAddleie.UseVisualStyle = True
@@ -1185,7 +1157,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(974, 47)
+        Me.ToolStripEx2.Size = New System.Drawing.Size(767, 42)
         Me.ToolStripEx2.TabIndex = 1
         Me.ToolStripEx2.Text = "Registrer nytt salg"
         Me.ToolStripEx2.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1196,7 +1168,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(72, 24)
         Me.ToolStripButton1.Text = "Logg ut"
         '
         'tbBookTime
@@ -1205,11 +1177,10 @@ Partial Class frmSalgMetro
         Me.tbBookTime.Controls.Add(Me.ToolStripEx3)
         Me.tbBookTime.Image = Global.OOPSA.My.Resources.Resources.tbBookTime
         Me.tbBookTime.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbBookTime.Location = New System.Drawing.Point(89, 3)
-        Me.tbBookTime.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbBookTime.Location = New System.Drawing.Point(83, 3)
         Me.tbBookTime.Name = "tbBookTime"
         Me.tbBookTime.ShowCloseButton = True
-        Me.tbBookTime.Size = New System.Drawing.Size(974, 560)
+        Me.tbBookTime.Size = New System.Drawing.Size(767, 444)
         Me.tbBookTime.TabIndex = 3
         Me.tbBookTime.ThemesEnabled = True
         '
@@ -1217,17 +1188,15 @@ Partial Class frmSalgMetro
         '
         Me.Panel2.Controls.Add(Me.SplitContainer2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 47)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 42)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(974, 513)
+        Me.Panel2.Size = New System.Drawing.Size(767, 402)
         Me.Panel2.TabIndex = 3
         '
         'SplitContainer2
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer2.Name = "SplitContainer2"
         '
         'SplitContainer2.Panel1
@@ -1237,16 +1206,14 @@ Partial Class frmSalgMetro
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.dgvKurs)
-        Me.SplitContainer2.Size = New System.Drawing.Size(974, 513)
-        Me.SplitContainer2.SplitterDistance = 319
-        Me.SplitContainer2.SplitterWidth = 5
+        Me.SplitContainer2.Size = New System.Drawing.Size(767, 402)
+        Me.SplitContainer2.SplitterDistance = 251
         Me.SplitContainer2.TabIndex = 1
         '
         'SplitContainer6
         '
         Me.SplitContainer6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer6.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer6.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer6.Name = "SplitContainer6"
         Me.SplitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -1268,59 +1235,57 @@ Partial Class frmSalgMetro
         'SplitContainer6.Panel2
         '
         Me.SplitContainer6.Panel2.Controls.Add(Me.ButtonAdv3)
-        Me.SplitContainer6.Size = New System.Drawing.Size(319, 513)
-        Me.SplitContainer6.SplitterDistance = 390
-        Me.SplitContainer6.SplitterWidth = 5
+        Me.SplitContainer6.Size = New System.Drawing.Size(251, 402)
+        Me.SplitContainer6.SplitterDistance = 305
         Me.SplitContainer6.TabIndex = 0
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt1.Location = New System.Drawing.Point(172, 57)
+        Me.TextBoxExt1.Location = New System.Drawing.Point(138, 46)
+        Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt1.Multiline = True
         Me.TextBoxExt1.Name = "TextBoxExt1"
-        Me.TextBoxExt1.Size = New System.Drawing.Size(126, 106)
+        Me.TextBoxExt1.Size = New System.Drawing.Size(102, 86)
         Me.TextBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt1.TabIndex = 27
         Me.TextBoxExt1.Text = "Beskrivelse:"
         '
         'AutoLabel10
         '
-        Me.AutoLabel10.Location = New System.Drawing.Point(172, 27)
-        Me.AutoLabel10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel10.Location = New System.Drawing.Point(138, 22)
         Me.AutoLabel10.Name = "AutoLabel10"
-        Me.AutoLabel10.Size = New System.Drawing.Size(108, 25)
+        Me.AutoLabel10.Size = New System.Drawing.Size(84, 20)
         Me.AutoLabel10.TabIndex = 26
         Me.AutoLabel10.Text = "Beskrivelse:"
         '
         'AutoLabel9
         '
-        Me.AutoLabel9.Location = New System.Drawing.Point(20, 29)
-        Me.AutoLabel9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel9.Location = New System.Drawing.Point(16, 23)
         Me.AutoLabel9.Name = "AutoLabel9"
-        Me.AutoLabel9.Size = New System.Drawing.Size(60, 25)
+        Me.AutoLabel9.Size = New System.Drawing.Size(46, 20)
         Me.AutoLabel9.TabIndex = 25
         Me.AutoLabel9.Text = "Navn:"
         '
         'AutoLabel8
         '
-        Me.AutoLabel8.Location = New System.Drawing.Point(20, 103)
-        Me.AutoLabel8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel8.Location = New System.Drawing.Point(16, 82)
         Me.AutoLabel8.Name = "AutoLabel8"
-        Me.AutoLabel8.Size = New System.Drawing.Size(80, 25)
+        Me.AutoLabel8.Size = New System.Drawing.Size(61, 20)
         Me.AutoLabel8.TabIndex = 24
         Me.AutoLabel8.Text = "Pris per:"
         '
         'Txt
         '
-        Me.Txt.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.Txt.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.Txt.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txt.Location = New System.Drawing.Point(31, 57)
+        Me.Txt.Location = New System.Drawing.Point(25, 46)
+        Me.Txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Txt.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.Txt.Name = "Txt"
-        Me.Txt.Size = New System.Drawing.Size(126, 32)
+        Me.Txt.Size = New System.Drawing.Size(102, 27)
         Me.Txt.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.Txt.TabIndex = 23
         Me.Txt.Text = "TextBoxExt1"
@@ -1328,34 +1293,35 @@ Partial Class frmSalgMetro
         'IntegerTextBox1
         '
         Me.IntegerTextBox1.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.IntegerTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.IntegerTextBox1.IntegerValue = CType(1, Long)
-        Me.IntegerTextBox1.Location = New System.Drawing.Point(31, 131)
+        Me.IntegerTextBox1.Location = New System.Drawing.Point(25, 105)
+        Me.IntegerTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.IntegerTextBox1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.IntegerTextBox1.Name = "IntegerTextBox1"
         Me.IntegerTextBox1.NullString = ""
-        Me.IntegerTextBox1.Size = New System.Drawing.Size(126, 32)
+        Me.IntegerTextBox1.Size = New System.Drawing.Size(102, 27)
         Me.IntegerTextBox1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.IntegerTextBox1.TabIndex = 21
         Me.IntegerTextBox1.Text = "1"
         '
         'AutoLabel7
         '
-        Me.AutoLabel7.Location = New System.Drawing.Point(20, 175)
-        Me.AutoLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel7.Location = New System.Drawing.Point(16, 140)
         Me.AutoLabel7.Name = "AutoLabel7"
-        Me.AutoLabel7.Size = New System.Drawing.Size(0, 25)
+        Me.AutoLabel7.Size = New System.Drawing.Size(0, 20)
         Me.AutoLabel7.TabIndex = 20
         '
         'ComboInstruktor
         '
         Me.ComboInstruktor.BackColor = System.Drawing.Color.White
-        Me.ComboInstruktor.BeforeTouchSize = New System.Drawing.Size(209, 19)
+        Me.ComboInstruktor.BeforeTouchSize = New System.Drawing.Size(168, 19)
         Me.ComboInstruktor.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboInstruktor.Location = New System.Drawing.Point(29, 275)
+        Me.ComboInstruktor.Location = New System.Drawing.Point(23, 220)
+        Me.ComboInstruktor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboInstruktor.Name = "ComboInstruktor"
-        Me.ComboInstruktor.Size = New System.Drawing.Size(209, 19)
+        Me.ComboInstruktor.Size = New System.Drawing.Size(168, 19)
         Me.ComboInstruktor.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboInstruktor.TabIndex = 19
         Me.ComboInstruktor.Text = "ComboBoxAdv1"
@@ -1363,11 +1329,12 @@ Partial Class frmSalgMetro
         'ComboAvdeling
         '
         Me.ComboAvdeling.BackColor = System.Drawing.Color.White
-        Me.ComboAvdeling.BeforeTouchSize = New System.Drawing.Size(209, 19)
+        Me.ComboAvdeling.BeforeTouchSize = New System.Drawing.Size(168, 19)
         Me.ComboAvdeling.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboAvdeling.Location = New System.Drawing.Point(29, 205)
+        Me.ComboAvdeling.Location = New System.Drawing.Point(23, 164)
+        Me.ComboAvdeling.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboAvdeling.Name = "ComboAvdeling"
-        Me.ComboAvdeling.Size = New System.Drawing.Size(209, 19)
+        Me.ComboAvdeling.Size = New System.Drawing.Size(168, 19)
         Me.ComboAvdeling.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboAvdeling.TabIndex = 18
         Me.ComboAvdeling.Text = "ComboBoxAdv1"
@@ -1376,32 +1343,29 @@ Partial Class frmSalgMetro
         '
         Me.ButtonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(134, 45)
+        Me.ButtonAdv1.BeforeTouchSize = New System.Drawing.Size(107, 36)
         Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv1.IsBackStageButton = False
-        Me.ButtonAdv1.Location = New System.Drawing.Point(29, 331)
-        Me.ButtonAdv1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv1.Location = New System.Drawing.Point(23, 265)
         Me.ButtonAdv1.Name = "ButtonAdv1"
-        Me.ButtonAdv1.Size = New System.Drawing.Size(134, 45)
+        Me.ButtonAdv1.Size = New System.Drawing.Size(107, 36)
         Me.ButtonAdv1.TabIndex = 15
         Me.ButtonAdv1.Text = "Legg til Kurs"
         Me.ButtonAdv1.UseVisualStyle = True
         '
         'AutoLabel5
         '
-        Me.AutoLabel5.Location = New System.Drawing.Point(20, 247)
-        Me.AutoLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel5.Location = New System.Drawing.Point(16, 198)
         Me.AutoLabel5.Name = "AutoLabel5"
-        Me.AutoLabel5.Size = New System.Drawing.Size(135, 25)
+        Me.AutoLabel5.Size = New System.Drawing.Size(104, 20)
         Me.AutoLabel5.TabIndex = 14
         Me.AutoLabel5.Text = "Velg instruktør"
         '
         'AutoLabel6
         '
-        Me.AutoLabel6.Location = New System.Drawing.Point(23, 178)
-        Me.AutoLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AutoLabel6.Location = New System.Drawing.Point(18, 142)
         Me.AutoLabel6.Name = "AutoLabel6"
-        Me.AutoLabel6.Size = New System.Drawing.Size(130, 25)
+        Me.AutoLabel6.Size = New System.Drawing.Size(102, 20)
         Me.AutoLabel6.TabIndex = 13
         Me.AutoLabel6.Text = "Velg avdeling:"
         '
@@ -1409,14 +1373,13 @@ Partial Class frmSalgMetro
         '
         Me.ButtonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(319, 85)
+        Me.ButtonAdv3.BeforeTouchSize = New System.Drawing.Size(251, 68)
         Me.ButtonAdv3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ButtonAdv3.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv3.IsBackStageButton = False
-        Me.ButtonAdv3.Location = New System.Drawing.Point(0, 33)
-        Me.ButtonAdv3.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv3.Location = New System.Drawing.Point(0, 25)
         Me.ButtonAdv3.Name = "ButtonAdv3"
-        Me.ButtonAdv3.Size = New System.Drawing.Size(319, 85)
+        Me.ButtonAdv3.Size = New System.Drawing.Size(251, 68)
         Me.ButtonAdv3.TabIndex = 4
         Me.ButtonAdv3.Text = "Oppdater kurs"
         Me.ButtonAdv3.UseVisualStyle = True
@@ -1456,7 +1419,6 @@ Partial Class frmSalgMetro
         Me.dgvKurs.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvKurs.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvKurs.Location = New System.Drawing.Point(0, 0)
-        Me.dgvKurs.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvKurs.MetroScrollBars = True
         Me.dgvKurs.Name = "dgvKurs"
         Me.dgvKurs.OptimizeInsertRemoveCells = True
@@ -1465,7 +1427,7 @@ Partial Class frmSalgMetro
         Me.dgvKurs.Properties.MarkColHeader = False
         Me.dgvKurs.Properties.MarkRowHeader = False
         Me.dgvKurs.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvKurs.Size = New System.Drawing.Size(650, 513)
+        Me.dgvKurs.Size = New System.Drawing.Size(512, 402)
         Me.dgvKurs.SmartSizeBox = False
         Me.dgvKurs.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvKurs.TabIndex = 0
@@ -1493,7 +1455,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx3.Name = "ToolStripEx3"
         Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(974, 47)
+        Me.ToolStripEx3.Size = New System.Drawing.Size(767, 42)
         Me.ToolStripEx3.TabIndex = 1
         Me.ToolStripEx3.Text = "Legg til nytt kurs"
         Me.ToolStripEx3.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1504,7 +1466,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton3.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(72, 39)
         Me.ToolStripButton3.Text = "Logg ut"
         '
         'tbEndreBestilling
@@ -1514,19 +1476,17 @@ Partial Class frmSalgMetro
         Me.tbEndreBestilling.Controls.Add(Me.ToolStripEx4)
         Me.tbEndreBestilling.Image = Global.OOPSA.My.Resources.Resources.tbEndreBestilling
         Me.tbEndreBestilling.ImageSize = New System.Drawing.Size(48, 48)
-        Me.tbEndreBestilling.Location = New System.Drawing.Point(89, 3)
-        Me.tbEndreBestilling.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbEndreBestilling.Location = New System.Drawing.Point(83, 3)
         Me.tbEndreBestilling.Name = "tbEndreBestilling"
         Me.tbEndreBestilling.ShowCloseButton = True
-        Me.tbEndreBestilling.Size = New System.Drawing.Size(974, 560)
+        Me.tbEndreBestilling.Size = New System.Drawing.Size(767, 444)
         Me.tbEndreBestilling.TabIndex = 4
         Me.tbEndreBestilling.ThemesEnabled = True
         '
         'SplitContainer3
         '
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer3.Location = New System.Drawing.Point(0, 47)
-        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4)
+        Me.SplitContainer3.Location = New System.Drawing.Point(0, 42)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
@@ -1552,16 +1512,14 @@ Partial Class frmSalgMetro
         Me.SplitContainer3.Panel2.Controls.Add(Me.Label12)
         Me.SplitContainer3.Panel2.Controls.Add(Me.TextBoxExt10)
         Me.SplitContainer3.Panel2.Controls.Add(Me.Label11)
-        Me.SplitContainer3.Size = New System.Drawing.Size(974, 513)
-        Me.SplitContainer3.SplitterDistance = 361
-        Me.SplitContainer3.SplitterWidth = 5
+        Me.SplitContainer3.Size = New System.Drawing.Size(767, 402)
+        Me.SplitContainer3.SplitterDistance = 284
         Me.SplitContainer3.TabIndex = 4
         '
         'SplitContainer7
         '
         Me.SplitContainer7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer7.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer7.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer7.Name = "SplitContainer7"
         Me.SplitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -1584,22 +1542,20 @@ Partial Class frmSalgMetro
         Me.SplitContainer7.Panel2.Controls.Add(Me.Label17)
         Me.SplitContainer7.Panel2.Controls.Add(Me.TextBoxExt11)
         Me.SplitContainer7.Panel2.Controls.Add(Me.Label14)
-        Me.SplitContainer7.Size = New System.Drawing.Size(361, 513)
-        Me.SplitContainer7.SplitterDistance = 172
-        Me.SplitContainer7.SplitterWidth = 5
+        Me.SplitContainer7.Size = New System.Drawing.Size(284, 402)
+        Me.SplitContainer7.SplitterDistance = 134
         Me.SplitContainer7.TabIndex = 0
         '
         'btnSokBestilling
         '
         Me.btnSokBestilling.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnSokBestilling.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnSokBestilling.BeforeTouchSize = New System.Drawing.Size(128, 42)
+        Me.btnSokBestilling.BeforeTouchSize = New System.Drawing.Size(102, 34)
         Me.btnSokBestilling.ForeColor = System.Drawing.Color.White
         Me.btnSokBestilling.IsBackStageButton = False
-        Me.btnSokBestilling.Location = New System.Drawing.Point(132, 95)
-        Me.btnSokBestilling.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSokBestilling.Location = New System.Drawing.Point(106, 76)
         Me.btnSokBestilling.Name = "btnSokBestilling"
-        Me.btnSokBestilling.Size = New System.Drawing.Size(128, 42)
+        Me.btnSokBestilling.Size = New System.Drawing.Size(102, 34)
         Me.btnSokBestilling.TabIndex = 11
         Me.btnSokBestilling.Text = "Se bestilling"
         Me.btnSokBestilling.UseVisualStyle = True
@@ -1607,22 +1563,20 @@ Partial Class frmSalgMetro
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(16, 25)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(13, 20)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 25)
+        Me.Label7.Size = New System.Drawing.Size(71, 20)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Kundenr :"
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt7.Location = New System.Drawing.Point(40, 54)
-        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt7.Location = New System.Drawing.Point(32, 43)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.Name = "TextBoxExt7"
-        Me.TextBoxExt7.Size = New System.Drawing.Size(219, 32)
+        Me.TextBoxExt7.Size = New System.Drawing.Size(176, 27)
         Me.TextBoxExt7.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt7.TabIndex = 9
         Me.TextBoxExt7.Text = "TextBoxExt7"
@@ -1631,23 +1585,21 @@ Partial Class frmSalgMetro
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(10, 228)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Location = New System.Drawing.Point(8, 182)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(113, 25)
+        Me.Label21.Size = New System.Drawing.Size(87, 20)
         Me.Label21.TabIndex = 42
         Me.Label21.Text = "Kursholder :"
         '
         'TextBoxExt15
         '
-        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt15.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt15.Location = New System.Drawing.Point(190, 219)
-        Me.TextBoxExt15.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt15.Location = New System.Drawing.Point(152, 175)
         Me.TextBoxExt15.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt15.Name = "TextBoxExt15"
         Me.TextBoxExt15.ReadOnly = True
-        Me.TextBoxExt15.Size = New System.Drawing.Size(144, 32)
+        Me.TextBoxExt15.Size = New System.Drawing.Size(116, 27)
         Me.TextBoxExt15.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt15.TabIndex = 41
         Me.TextBoxExt15.Text = "TextBoxExt15"
@@ -1656,23 +1608,21 @@ Partial Class frmSalgMetro
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(10, 186)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(8, 149)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(165, 25)
+        Me.Label20.Size = New System.Drawing.Size(130, 20)
         Me.Label20.TabIndex = 40
         Me.Label20.Text = "Antall av produkt :"
         '
         'TextBoxExt14
         '
-        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt14.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt14.Location = New System.Drawing.Point(190, 178)
-        Me.TextBoxExt14.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt14.Location = New System.Drawing.Point(152, 142)
         Me.TextBoxExt14.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt14.Name = "TextBoxExt14"
         Me.TextBoxExt14.ReadOnly = True
-        Me.TextBoxExt14.Size = New System.Drawing.Size(144, 32)
+        Me.TextBoxExt14.Size = New System.Drawing.Size(116, 27)
         Me.TextBoxExt14.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt14.TabIndex = 39
         Me.TextBoxExt14.Text = "TextBoxExt14"
@@ -1681,23 +1631,21 @@ Partial Class frmSalgMetro
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(10, 104)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(8, 83)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(155, 25)
+        Me.Label19.Size = New System.Drawing.Size(121, 20)
         Me.Label19.TabIndex = 38
         Me.Label19.Text = "Antall personer  :"
         '
         'TextBoxExt13
         '
-        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt13.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt13.Location = New System.Drawing.Point(190, 95)
-        Me.TextBoxExt13.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt13.Location = New System.Drawing.Point(152, 76)
         Me.TextBoxExt13.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt13.Name = "TextBoxExt13"
         Me.TextBoxExt13.ReadOnly = True
-        Me.TextBoxExt13.Size = New System.Drawing.Size(144, 32)
+        Me.TextBoxExt13.Size = New System.Drawing.Size(116, 27)
         Me.TextBoxExt13.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt13.TabIndex = 37
         Me.TextBoxExt13.Text = "TextBoxExt13"
@@ -1706,23 +1654,21 @@ Partial Class frmSalgMetro
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(10, 145)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(8, 116)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(87, 25)
+        Me.Label18.Size = New System.Drawing.Size(67, 20)
         Me.Label18.TabIndex = 36
         Me.Label18.Text = "Produkt :"
         '
         'TextBoxExt12
         '
-        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt12.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt12.Location = New System.Drawing.Point(190, 136)
-        Me.TextBoxExt12.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt12.Location = New System.Drawing.Point(152, 109)
         Me.TextBoxExt12.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt12.Name = "TextBoxExt12"
         Me.TextBoxExt12.ReadOnly = True
-        Me.TextBoxExt12.Size = New System.Drawing.Size(144, 32)
+        Me.TextBoxExt12.Size = New System.Drawing.Size(116, 27)
         Me.TextBoxExt12.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt12.TabIndex = 35
         Me.TextBoxExt12.Text = "TextBoxExt12"
@@ -1731,23 +1677,21 @@ Partial Class frmSalgMetro
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(10, 62)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(8, 50)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(58, 25)
+        Me.Label17.Size = New System.Drawing.Size(44, 20)
         Me.Label17.TabIndex = 34
         Me.Label17.Text = "Kurs :"
         '
         'TextBoxExt11
         '
-        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt11.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt11.Location = New System.Drawing.Point(190, 54)
-        Me.TextBoxExt11.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt11.Location = New System.Drawing.Point(152, 43)
         Me.TextBoxExt11.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt11.Name = "TextBoxExt11"
         Me.TextBoxExt11.ReadOnly = True
-        Me.TextBoxExt11.Size = New System.Drawing.Size(144, 32)
+        Me.TextBoxExt11.Size = New System.Drawing.Size(116, 27)
         Me.TextBoxExt11.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt11.TabIndex = 33
         Me.TextBoxExt11.Text = "TextBoxExt11"
@@ -1755,22 +1699,22 @@ Partial Class frmSalgMetro
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(10, 14)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(8, 11)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(192, 25)
+        Me.Label14.Size = New System.Drawing.Size(150, 20)
         Me.Label14.TabIndex = 32
         Me.Label14.Text = "Nåværende bestilling"
         '
         'chkEndreSalg
         '
-        Me.chkEndreSalg.BeforeTouchSize = New System.Drawing.Size(150, 38)
+        Me.chkEndreSalg.BeforeTouchSize = New System.Drawing.Size(120, 30)
         Me.chkEndreSalg.DrawFocusRectangle = False
         Me.chkEndreSalg.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
-        Me.chkEndreSalg.Location = New System.Drawing.Point(378, 65)
+        Me.chkEndreSalg.Location = New System.Drawing.Point(302, 52)
+        Me.chkEndreSalg.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chkEndreSalg.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.chkEndreSalg.Name = "chkEndreSalg"
-        Me.chkEndreSalg.Size = New System.Drawing.Size(150, 38)
+        Me.chkEndreSalg.Size = New System.Drawing.Size(120, 30)
         Me.chkEndreSalg.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
         Me.chkEndreSalg.TabIndex = 43
         Me.chkEndreSalg.Text = "Endre salg"
@@ -1778,13 +1722,14 @@ Partial Class frmSalgMetro
         '
         'chkEndreLeie
         '
-        Me.chkEndreLeie.BeforeTouchSize = New System.Drawing.Size(150, 33)
+        Me.chkEndreLeie.BeforeTouchSize = New System.Drawing.Size(120, 26)
         Me.chkEndreLeie.DrawFocusRectangle = False
         Me.chkEndreLeie.ImageCheckBoxSize = New System.Drawing.Size(16, 16)
-        Me.chkEndreLeie.Location = New System.Drawing.Point(378, 112)
+        Me.chkEndreLeie.Location = New System.Drawing.Point(302, 90)
+        Me.chkEndreLeie.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chkEndreLeie.MetroColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.chkEndreLeie.Name = "chkEndreLeie"
-        Me.chkEndreLeie.Size = New System.Drawing.Size(150, 33)
+        Me.chkEndreLeie.Size = New System.Drawing.Size(120, 26)
         Me.chkEndreLeie.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Metro
         Me.chkEndreLeie.TabIndex = 42
         Me.chkEndreLeie.Text = "Endre leie"
@@ -1793,11 +1738,12 @@ Partial Class frmSalgMetro
         'Combo
         '
         Me.Combo.BackColor = System.Drawing.Color.White
-        Me.Combo.BeforeTouchSize = New System.Drawing.Size(198, 19)
+        Me.Combo.BeforeTouchSize = New System.Drawing.Size(159, 19)
         Me.Combo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Combo.Location = New System.Drawing.Point(67, 281)
+        Me.Combo.Location = New System.Drawing.Point(54, 225)
+        Me.Combo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Combo.Name = "Combo"
-        Me.Combo.Size = New System.Drawing.Size(198, 19)
+        Me.Combo.Size = New System.Drawing.Size(159, 19)
         Me.Combo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.Combo.TabIndex = 41
         Me.Combo.Text = "ComboBoxAdv1"
@@ -1805,11 +1751,12 @@ Partial Class frmSalgMetro
         'Comboendrepro
         '
         Me.Comboendrepro.BackColor = System.Drawing.Color.White
-        Me.Comboendrepro.BeforeTouchSize = New System.Drawing.Size(228, 19)
+        Me.Comboendrepro.BeforeTouchSize = New System.Drawing.Size(183, 19)
         Me.Comboendrepro.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Comboendrepro.Location = New System.Drawing.Point(315, 205)
+        Me.Comboendrepro.Location = New System.Drawing.Point(252, 164)
+        Me.Comboendrepro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Comboendrepro.Name = "Comboendrepro"
-        Me.Comboendrepro.Size = New System.Drawing.Size(228, 19)
+        Me.Comboendrepro.Size = New System.Drawing.Size(183, 19)
         Me.Comboendrepro.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.Comboendrepro.TabIndex = 40
         Me.Comboendrepro.Text = "ComboBoxAdv1"
@@ -1817,11 +1764,12 @@ Partial Class frmSalgMetro
         'Comboslgodt
         '
         Me.Comboslgodt.BackColor = System.Drawing.Color.White
-        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(198, 19)
+        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(159, 19)
         Me.Comboslgodt.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Comboslgodt.Location = New System.Drawing.Point(67, 205)
+        Me.Comboslgodt.Location = New System.Drawing.Point(54, 164)
+        Me.Comboslgodt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Comboslgodt.Name = "Comboslgodt"
-        Me.Comboslgodt.Size = New System.Drawing.Size(198, 19)
+        Me.Comboslgodt.Size = New System.Drawing.Size(159, 19)
         Me.Comboslgodt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.Comboslgodt.TabIndex = 39
         Me.Comboslgodt.Text = "ComboBoxAdv1"
@@ -1837,11 +1785,12 @@ Partial Class frmSalgMetro
         Me.dtpEndre.DropDownPressedColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.dtpEndre.DropDownSelectedColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.dtpEndre.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpEndre.Location = New System.Drawing.Point(33, 410)
+        Me.dtpEndre.Location = New System.Drawing.Point(26, 328)
+        Me.dtpEndre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtpEndre.MetroColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.dtpEndre.MinValue = New Date(CType(0, Long))
         Me.dtpEndre.Name = "dtpEndre"
-        Me.dtpEndre.Size = New System.Drawing.Size(246, 28)
+        Me.dtpEndre.Size = New System.Drawing.Size(197, 23)
         Me.dtpEndre.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.dtpEndre.TabIndex = 38
         Me.dtpEndre.Value = New Date(2016, 4, 18, 16, 1, 16, 280)
@@ -1849,12 +1798,11 @@ Partial Class frmSalgMetro
         'ComboKUNDEVALG
         '
         Me.ComboKUNDEVALG.BackColor = System.Drawing.Color.White
-        Me.ComboKUNDEVALG.BeforeTouchSize = New System.Drawing.Size(268, 19)
+        Me.ComboKUNDEVALG.BeforeTouchSize = New System.Drawing.Size(215, 19)
         Me.ComboKUNDEVALG.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboKUNDEVALG.Location = New System.Drawing.Point(44, 116)
-        Me.ComboKUNDEVALG.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboKUNDEVALG.Location = New System.Drawing.Point(35, 93)
         Me.ComboKUNDEVALG.Name = "ComboKUNDEVALG"
-        Me.ComboKUNDEVALG.Size = New System.Drawing.Size(268, 19)
+        Me.ComboKUNDEVALG.Size = New System.Drawing.Size(215, 19)
         Me.ComboKUNDEVALG.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKUNDEVALG.TabIndex = 37
         Me.ComboKUNDEVALG.Text = "ComboBoxAdv1"
@@ -1863,13 +1811,12 @@ Partial Class frmSalgMetro
         '
         Me.ButtonAdv5.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv5.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv5.BeforeTouchSize = New System.Drawing.Size(228, 44)
+        Me.ButtonAdv5.BeforeTouchSize = New System.Drawing.Size(182, 35)
         Me.ButtonAdv5.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv5.IsBackStageButton = False
-        Me.ButtonAdv5.Location = New System.Drawing.Point(315, 394)
-        Me.ButtonAdv5.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv5.Location = New System.Drawing.Point(252, 315)
         Me.ButtonAdv5.Name = "ButtonAdv5"
-        Me.ButtonAdv5.Size = New System.Drawing.Size(228, 44)
+        Me.ButtonAdv5.Size = New System.Drawing.Size(182, 35)
         Me.ButtonAdv5.TabIndex = 36
         Me.ButtonAdv5.Text = "Slett følgende bestilling"
         Me.ButtonAdv5.UseVisualStyle = True
@@ -1878,13 +1825,12 @@ Partial Class frmSalgMetro
         '
         Me.ButtonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.ButtonAdv4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.ButtonAdv4.BeforeTouchSize = New System.Drawing.Size(228, 44)
+        Me.ButtonAdv4.BeforeTouchSize = New System.Drawing.Size(182, 35)
         Me.ButtonAdv4.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv4.IsBackStageButton = False
-        Me.ButtonAdv4.Location = New System.Drawing.Point(315, 343)
-        Me.ButtonAdv4.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonAdv4.Location = New System.Drawing.Point(252, 274)
         Me.ButtonAdv4.Name = "ButtonAdv4"
-        Me.ButtonAdv4.Size = New System.Drawing.Size(228, 44)
+        Me.ButtonAdv4.Size = New System.Drawing.Size(182, 35)
         Me.ButtonAdv4.TabIndex = 35
         Me.ButtonAdv4.Text = "Oppdater"
         Me.ButtonAdv4.UseVisualStyle = True
@@ -1897,7 +1843,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx9.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx9.Name = "ToolStripEx9"
         Me.ToolStripEx9.Office12Mode = False
-        Me.ToolStripEx9.Size = New System.Drawing.Size(608, 45)
+        Me.ToolStripEx9.Size = New System.Drawing.Size(479, 40)
         Me.ToolStripEx9.TabIndex = 34
         Me.ToolStripEx9.Text = "Endre eksisterende bestilling"
         Me.ToolStripEx9.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1906,22 +1852,20 @@ Partial Class frmSalgMetro
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(267, 250)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Location = New System.Drawing.Point(214, 200)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(217, 25)
+        Me.Label16.Size = New System.Drawing.Size(170, 20)
         Me.Label16.TabIndex = 33
         Me.Label16.Text = "Endre antall av produkt :"
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt9.Location = New System.Drawing.Point(315, 279)
-        Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt9.Location = New System.Drawing.Point(252, 223)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt9.Name = "TextBoxExt9"
-        Me.TextBoxExt9.Size = New System.Drawing.Size(226, 32)
+        Me.TextBoxExt9.Size = New System.Drawing.Size(182, 27)
         Me.TextBoxExt9.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt9.TabIndex = 32
         Me.TextBoxExt9.Text = "1"
@@ -1931,10 +1875,9 @@ Partial Class frmSalgMetro
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(38, 176)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Location = New System.Drawing.Point(30, 141)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(92, 25)
+        Me.Label15.Size = New System.Drawing.Size(72, 20)
         Me.Label15.TabIndex = 30
         Me.Label15.Text = "Velg salg:"
         '
@@ -1942,10 +1885,9 @@ Partial Class frmSalgMetro
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(267, 176)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(214, 141)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(141, 25)
+        Me.Label13.Size = New System.Drawing.Size(110, 20)
         Me.Label13.TabIndex = 27
         Me.Label13.Text = "Endre produkt :"
         '
@@ -1953,22 +1895,20 @@ Partial Class frmSalgMetro
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(38, 324)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(30, 259)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(207, 25)
+        Me.Label12.Size = New System.Drawing.Size(163, 20)
         Me.Label12.TabIndex = 26
         Me.Label12.Text = "Endre antall deltagere :"
         '
         'TextBoxExt10
         '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(159, 27)
         Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt10.Location = New System.Drawing.Point(67, 353)
-        Me.TextBoxExt10.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxExt10.Location = New System.Drawing.Point(54, 282)
         Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt10.Name = "TextBoxExt10"
-        Me.TextBoxExt10.Size = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt10.Size = New System.Drawing.Size(159, 27)
         Me.TextBoxExt10.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.TextBoxExt10.TabIndex = 25
         Me.TextBoxExt10.Text = "1"
@@ -1978,20 +1918,18 @@ Partial Class frmSalgMetro
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(38, 250)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(30, 200)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(110, 25)
+        Me.Label11.Size = New System.Drawing.Size(84, 20)
         Me.Label11.TabIndex = 24
         Me.Label11.Text = "Endre kurs :"
         '
         'Panel3
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 47)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Location = New System.Drawing.Point(0, 42)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(974, 513)
+        Me.Panel3.Size = New System.Drawing.Size(767, 402)
         Me.Panel3.TabIndex = 3
         '
         'ToolStripEx4
@@ -2003,7 +1941,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx4.Name = "ToolStripEx4"
         Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(974, 47)
+        Me.ToolStripEx4.Size = New System.Drawing.Size(767, 42)
         Me.ToolStripEx4.TabIndex = 1
         Me.ToolStripEx4.Text = "Endre bestilling"
         Me.ToolStripEx4.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -2014,7 +1952,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton4.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(72, 39)
         Me.ToolStripButton4.Text = "Logg ut"
         '
         'ToolStripEx5
@@ -2036,7 +1974,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton5.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(84, 37)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(72, 37)
         Me.ToolStripButton5.Text = "Logg ut"
         '
         'KursTableAdapter
@@ -2061,14 +1999,13 @@ Partial Class frmSalgMetro
         '
         'frmSalgMetro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
         Me.CaptionFont = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClientSize = New System.Drawing.Size(1067, 567)
+        Me.ClientSize = New System.Drawing.Size(854, 451)
         Me.Controls.Add(Me.TabControlAdv1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmSalgMetro"
         Me.ShowIcon = False
         Me.Text = "Salg - TurCare AS"

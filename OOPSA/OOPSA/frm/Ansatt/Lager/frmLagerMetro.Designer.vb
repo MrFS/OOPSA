@@ -47,6 +47,8 @@ Partial Class frmLagerMetro
         Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.ButtonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.GridDataBoundGrid2 = New Syncfusion.Windows.Forms.Grid.GridDataBoundGrid()
+        Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
         Me.TabPageAdv2 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.ButtonAdv7 = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -106,8 +108,6 @@ Partial Class frmLagerMetro
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.LagerRapportALLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Drift8_2016DataSetLageroversiktALLE = New OOPSA.drift8_2016DataSetLageroversiktALLE()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
         CType(Me.tbLager, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbLager.SuspendLayout()
@@ -121,6 +121,8 @@ Partial Class frmLagerMetro
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv2.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -158,8 +160,6 @@ Partial Class frmLagerMetro
         CType(Me.antEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx3.SuspendLayout()
-        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbLager
@@ -366,6 +366,16 @@ Partial Class frmLagerMetro
         Me.GridDataBoundGrid2.ThemesEnabled = True
         Me.GridDataBoundGrid2.UseListChangedEvent = True
         Me.GridDataBoundGrid2.UseRightToLeftCompatibleTextBox = True
+        '
+        'LagerRapportALLEBindingSource
+        '
+        Me.LagerRapportALLEBindingSource.DataMember = "LagerRapportALLE"
+        Me.LagerRapportALLEBindingSource.DataSource = Me.Drift8_2016DataSetLageroversiktALLE
+        '
+        'Drift8_2016DataSetLageroversiktALLE
+        '
+        Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
+        Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TabPageAdv2
         '
@@ -1124,16 +1134,6 @@ Partial Class frmLagerMetro
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'LagerRapportALLEBindingSource
-        '
-        Me.LagerRapportALLEBindingSource.DataMember = "LagerRapportALLE"
-        Me.LagerRapportALLEBindingSource.DataSource = Me.Drift8_2016DataSetLageroversiktALLE
-        '
-        'Drift8_2016DataSetLageroversiktALLE
-        '
-        Me.Drift8_2016DataSetLageroversiktALLE.DataSetName = "drift8_2016DataSetLageroversiktALLE"
-        Me.Drift8_2016DataSetLageroversiktALLE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'LagerRapportALLETableAdapter
         '
         Me.LagerRapportALLETableAdapter.ClearBeforeFill = True
@@ -1163,6 +1163,8 @@ Partial Class frmLagerMetro
         CType(Me.SplitContainer3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer3.ResumeLayout(False)
         CType(Me.GridDataBoundGrid2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv2.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
@@ -1207,8 +1209,6 @@ Partial Class frmLagerMetro
         CType(Me.navnEndreText, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStripEx3.ResumeLayout(False)
         Me.ToolStripEx3.PerformLayout()
-        CType(Me.LagerRapportALLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Drift8_2016DataSetLageroversiktALLE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1284,6 +1284,6 @@ Partial Class frmLagerMetro
     Friend WithEvents antEndreText As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents prisEndreText As Syncfusion.Windows.Forms.Tools.IntegerTextBox
-    Friend WithEvents LagerRapportALLEBindingSource As BindingSource
-    Friend WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Private WithEvents LagerRapportALLEBindingSource As BindingSource
+    Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
 End Class
