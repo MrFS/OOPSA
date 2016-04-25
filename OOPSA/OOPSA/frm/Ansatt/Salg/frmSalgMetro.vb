@@ -14,53 +14,18 @@ Public Class frmSalgMetro
 
     Private Sub frmSalgMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Fyller rapportene med info
         Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
         Me.LagerRapportStavangerTableAdapter.Fill(Me.Drift8_2016DataSetLagerRapportStavnager.LagerRapportStavanger)
         Me.LagerRapportTrondheimTableAdapter.Fill(Me.Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim)
         dgvKurs.DataSource = SQL.bindingsource("SELECT * FROM Kurs")
-
         KursTableAdapter.Fill(Drift8_2016DataSet.Kurs)
-
         Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
 
-        Dim adapter As New MySqlDataAdapter("SELECT * FROM Kunde", con)
+        'Fylller aller nødvendige comboboxer med string varial hentet fra sql spørringen
 
-        Dim ds_kunde = New DataSet
-        Dim dr_kunde As DataRow
-        Dim dt_kunde As DataTable
-
-        adapter.Fill(ds_kunde, "Kunde")
-        dt_kunde = ds_kunde.Tables(0)
-        For Each dr_kunde In dt_kunde.Rows
-            Dim navn As String
-
-            navn = dr_kunde("Kid").ToString
-            navn += " " & dr_kunde("F_navn").ToString
-            navn += " " & dr_kunde("E_navn").ToString
-
-            ComboKunde1.Items.Add(navn)
-        Next
-
-        Dim adapter1 As New MySqlDataAdapter("SELECT * FROM Ansatt", con)
-        Dim ds_kunde1 = New DataSet
-        Dim dr_kunde1 As DataRow
-        Dim dt_kunde1 As DataTable
-
-        adapter1.Fill(ds_kunde1, "Ansatt")
-        dt_kunde1 = ds_kunde1.Tables(0)
-        For Each dr_kunde1 In dt_kunde1.Rows
-            Dim Anavn As String
-
-            Anavn = dr_kunde1("A_id").ToString
-            Anavn += " " & dr_kunde1("F_navn").ToString
-            Anavn += " " & dr_kunde1("E_navn").ToString
-
-            ComboInstruktor.Items.Add(Anavn)
-        Next
-
-
-
-
+        leggTildataCOMBOBOX3X("SELECT * FROM Kunde", "Kunde", "Kid", "F_navn", "E_navn", ComboKunde1)
+        leggTildataCOMBOBOX3X("SELECT * FROM Ansatt", "Ansatt", "A_id", "F_navn", "E_navn", ComboInstruktor)
         LeggTildataCOMBOBOX("SELECT * FROM Avdeling", "Avdeling", "id_Avdeling", "city", ComboAvdeling)
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", ComboKurs1)
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", ComboRegSalg)
@@ -87,6 +52,32 @@ Public Class frmSalgMetro
         Next
 
     End Sub
+
+
+
+    Public Sub leggTildataCOMBOBOX3X(SQLstring As String, Tabell As String, Rad1 As String, Rad2 As String, Rad3 As String, Combo As Syncfusion.Windows.Forms.Tools.ComboBoxAdv)
+
+
+        Dim adapter As New MySqlDataAdapter(SQLstring, con)
+        Dim ds_kunde = New DataSet
+        Dim dr_kunde As DataRow
+        Dim dt_kunde As DataTable
+
+        adapter.Fill(ds_kunde, Tabell)
+        dt_kunde = ds_kunde.Tables(0)
+        For Each dr_kunde In dt_kunde.Rows
+            Dim samling As String
+            samling = dr_kunde(Rad1).ToString
+            samling += " " & dr_kunde(Rad2).ToString
+            samling += " " & dr_kunde(Rad3).ToString
+            ComboKunde1.Items.Add(samling)
+        Next
+
+
+    End Sub
+
+
+
 
     Dim totall As Integer
 
@@ -162,69 +153,10 @@ Public Class frmSalgMetro
         TextBoxExt10.Clear()
 
 
-
-
-
-
         LeggTildataCOMBOBOX("SELECT * FROM Produkt", "Produkt", "Produkt_id", "Produkt_navn", Comboendrepro)
         LeggTildataCOMBOBOX("SELECT * FROM Kurs", "Kurs", "Kurs_id", "Navn", Combo)
-
-
-
-        'FINNER ANTALL Trenger ny funksjon
-        'Dim adapter As New MySqlDataAdapter("SELECT Antall From Kjøp WHERE Kunde_Kid = " & kundeid & "", con)
-        'Dim ds_produkt = New DataSet
-        'Dim dr_produkt As DataRow
-        'Dim dt_produkt As DataTable
-        'adapter.Fill(ds_produkt, "Kjøp")
-        'dt_produkt = ds_produkt.Tables(0)
-        'For Each dr_produkt In dt_produkt.Rows
-        '    TextBoxExt9.Text = dr_produkt("Antall")
-        'Next
-
-        'Dim adapter1 As New MySqlDataAdapter("SELECT Antall from Kurs_deltagelse WHERE Kunde_Kid = " & kundeid & "", con)
-        'Dim ds_produkt1 = New DataSet
-        'Dim dr_produkt1 As DataRow
-        'Dim dt_produkt1 As DataTable
-        'adapter1.Fill(ds_produkt1, "Kurs")
-        'dt_produkt1 = ds_produkt1.Tables(0)
-        'For Each dr_produkt1 In dt_produkt1.Rows
-        '    TextBoxExt10.Text = dr_produkt1("Antall")
-        'Next
-
-
-
-
-        Dim adapter2 As New MySqlDataAdapter("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", con)
-        Dim ds_produkt2 = New DataSet
-        Dim dr_produkt2 As DataRow
-        Dim dt_produkt2 As DataTable
-        adapter2.Fill(ds_produkt2, "Kjøp")
-        dt_produkt2 = ds_produkt2.Tables(0)
-        For Each dr_produkt2 In dt_produkt2.Rows
-            Dim kjøp As String
-
-            kjøp = dr_produkt2("Dato")
-            kjøp += " " & dr_produkt2("Produkt_Produkt_id")
-            kjøp += " " & dr_produkt2("Produkt_navn")
-            ComboKUNDEVALG.Items.Add(kjøp)
-        Next
-
-
-        Dim adapter3 As New MySqlDataAdapter("SELECT Kurs_Kurs_id, Antall, Dato FROM Kurs_deltagelse WHERE Kunde_Kid = '" & kundeid & "' ", con)
-        Dim ds_produkt22 = New DataSet
-        Dim dr_produkt22 As DataRow
-        Dim dt_produkt22 As DataTable
-        adapter3.Fill(ds_produkt22, "Kjøp")
-        dt_produkt22 = ds_produkt22.Tables(0)
-        For Each dr_produkt22 In dt_produkt22.Rows
-            Dim leie As String
-
-            leie = dr_produkt22("Dato")
-            leie += " " & dr_produkt22("Kurs_Kurs_id")
-            leie += " " & dr_produkt22("Antall")
-            ComboKUNDEVALG.Items.Add(leie)
-        Next
+        leggTildataCOMBOBOX3X("SELECT Dato, Kjøp.Produkt_Produkt_id, Produkt_navn FROM Kjøp INNER JOIN Produkt ON Kjøp.Produkt_Produkt_id=Produkt.Produkt_id WHERE kunde_Kid = " & kundeid & "", "Kjøp", "Dato", "Produkt_Produkt_id", "Produkt_navn", ComboKUNDEVALG)
+        leggTildataCOMBOBOX3X("SELECT Kurs_Kurs_id, Antall, Dato FROM Kurs_deltagelse WHERE Kunde_Kid = '" & kundeid & "' ", "Kjøp", "Dato", "Kurs_Kurs_id", "Antall", ComboKUNDEVALG)
 
 
     End Sub
@@ -234,14 +166,6 @@ Public Class frmSalgMetro
         Dim dato As String = Salgsinfo(0)
         Dim PID As String = Salgsinfo(1)
         Dim kundeID As String = TextBoxExt7.Text
-
-
-        ' Dim sqlstreng As String = "SELECT Antall FROM Kjøp WHERE Kunde_Kid = " & kundeID & " AND Produkt_Produkt_id = " & PID & " AND dato = '" & dato & "'  "
-        'Dim antall As Integer = sql.Return1Row(sqlstreng, "Antall")
-
-        '  MsgBox(antall)
-
-        'Noe galt med spørring???
 
         Try
             SQL.sporring("DELETE FROM Kjøp WHERE Produkt_Produkt_id = " & PID & " AND Kunde_Kid = " & kundeID & " AND  dato = '" & dato & "'")
@@ -310,16 +234,14 @@ Public Class frmSalgMetro
 
         If lagerbeholdning >= antall Then
             SQL.sporring("UPDATE Lagerbeholdning SET Antall = " & (lagerbeholdning - antall) & " WHERE Lager_id = " & lager(0) & " AND Produkt_id = " & produkt(0) & "")
-            SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "');", "Leiet er registrert")
+            SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`, `Antall`) VALUES (NULL, '" & fra & "', '" & til & "', '" & ansattid & "', '" & kunde(0) & "', '" & produkt(0) & "', '" & lager(0) & "', '" & antall & "' );", "Leiet er registrert")
             lstSalgIDag.Items.Add("Produkt navn: " & produkt(1) & vbCrLf & "Fra: " & fra & vbCrLf & "Til: " & til)
-            totall += PrisPer
+            totall += PrisPer * antall
             lblTotPris.Text = "Total pris " & totall
         Else
             MsgBox("Det er ikke mer igjen av " & produkt(1), MsgBoxStyle.Critical, "Ikke flere på lager")
 
         End If
-
-
 
     End Sub
 
