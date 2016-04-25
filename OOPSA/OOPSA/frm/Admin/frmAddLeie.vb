@@ -74,15 +74,16 @@ Public Class frmAddLeie
 
         Dim navn() As String = ComboKunde.Text.Split(" ")
         Dim Lager() As String = ComboLager.Text.Split(" ")
+        Dim produkt() As String = ComboProdukt.Text.Split(" ")
 
-        Dim Produkt1 As Integer = CInt(ComboProdukt.Text)
+        Dim Produkt1 As Integer = CInt(produkt(0))
         Dim kunde1 As Integer = navn(0)
         Dim fra1 As Date = dtpFra.Value
         Dim til1 As Date = dtpTil.Value
         Dim lager1 As Integer = Lager(0)
+        Dim antall As Integer = IntegerTextBox1.Text
 
-
-        Core.regLeie(Produkt1, til1, fra1, kunde1, lager1)
+        Core.regLeie(Produkt1, til1, fra1, kunde1, lager1, antall)
 
 
         Me.Close()

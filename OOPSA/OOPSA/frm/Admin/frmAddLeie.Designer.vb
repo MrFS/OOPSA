@@ -34,8 +34,11 @@ Partial Class frmAddLeie
         Me.ComboProdukt = New System.Windows.Forms.ComboBox()
         Me.ComboKunde = New System.Windows.Forms.ComboBox()
         Me.ComboLager = New System.Windows.Forms.ComboBox()
+        Me.IntegerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+        Me.AutoLabel3 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         CType(Me.dtpTil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpFra, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IntegerTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dtpTil
@@ -165,6 +168,29 @@ Partial Class frmAddLeie
         Me.ComboLager.Size = New System.Drawing.Size(121, 24)
         Me.ComboLager.TabIndex = 37
         '
+        'IntegerTextBox1
+        '
+        Me.IntegerTextBox1.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(60, 22)
+        Me.IntegerTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.IntegerTextBox1.IntegerValue = CType(1, Long)
+        Me.IntegerTextBox1.Location = New System.Drawing.Point(380, 129)
+        Me.IntegerTextBox1.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.IntegerTextBox1.Name = "IntegerTextBox1"
+        Me.IntegerTextBox1.NullString = ""
+        Me.IntegerTextBox1.Size = New System.Drawing.Size(60, 22)
+        Me.IntegerTextBox1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.IntegerTextBox1.TabIndex = 38
+        Me.IntegerTextBox1.Text = "1"
+        '
+        'AutoLabel3
+        '
+        Me.AutoLabel3.Location = New System.Drawing.Point(380, 109)
+        Me.AutoLabel3.Name = "AutoLabel3"
+        Me.AutoLabel3.Size = New System.Drawing.Size(47, 17)
+        Me.AutoLabel3.TabIndex = 39
+        Me.AutoLabel3.Text = "Antall:"
+        '
         'frmAddLeie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -172,6 +198,8 @@ Partial Class frmAddLeie
         Me.CaptionBarColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.CaptionBarHeight = 48
         Me.ClientSize = New System.Drawing.Size(558, 266)
+        Me.Controls.Add(Me.AutoLabel3)
+        Me.Controls.Add(Me.IntegerTextBox1)
         Me.Controls.Add(Me.ComboLager)
         Me.Controls.Add(Me.ComboKunde)
         Me.Controls.Add(Me.ComboProdukt)
@@ -189,6 +217,7 @@ Partial Class frmAddLeie
         Me.Text = "Legg til Leie"
         CType(Me.dtpTil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtpFra, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IntegerTextBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -205,4 +234,6 @@ Partial Class frmAddLeie
     Friend WithEvents ComboProdukt As ComboBox
     Friend WithEvents ComboKunde As ComboBox
     Friend WithEvents ComboLager As ComboBox
+    Friend WithEvents IntegerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+    Friend WithEvents AutoLabel3 As Syncfusion.Windows.Forms.Tools.AutoLabel
 End Class

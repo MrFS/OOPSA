@@ -85,7 +85,6 @@ Partial Class frmSalgMetro
         Me.ComboKurs1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
         Me.ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageAdv6 = New Syncfusion.Windows.Forms.Tools.TabPageAdv()
@@ -169,6 +168,7 @@ Partial Class frmSalgMetro
         Me.LagerRapportTrondheimTableAdapter = New OOPSA.drift8_2016DataSetTrondheimLagerTableAdapters.LagerRapportTrondheimTableAdapter()
         Me.LagerRapportStavangerTableAdapter = New OOPSA.drift8_2016DataSetLagerRapportStavnagerTableAdapters.LagerRapportStavangerTableAdapter()
         Me.LagerRapportALLETableAdapter = New OOPSA.drift8_2016DataSetLageroversiktALLETableAdapters.LagerRapportALLETableAdapter()
+        Me.TextBoxExt3 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         CType(Me.SalgsRaportBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.drift8_2016dsSalgsRapportView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,7 +209,6 @@ Partial Class frmSalgMetro
         CType(Me.txtavanse, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv5.SuspendLayout()
         CType(Me.ComboKurs1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageAdv6.SuspendLayout()
         CType(Me.IntegerTextBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboLager, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -262,6 +261,7 @@ Partial Class frmSalgMetro
         CType(Me.TextBoxExt10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStripEx4.SuspendLayout()
         Me.ToolStripEx5.SuspendLayout()
+        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SalgsRaportBindingSource
@@ -289,7 +289,7 @@ Partial Class frmSalgMetro
         Me.TabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.AboveText
         Me.TabControlAdv1.InactiveTabColor = System.Drawing.Color.Transparent
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControlAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControlAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControlAdv1.Name = "TabControlAdv1"
         Me.TabControlAdv1.Size = New System.Drawing.Size(1066, 565)
         Me.TabControlAdv1.TabIndex = 0
@@ -304,7 +304,7 @@ Partial Class frmSalgMetro
         Me.tbOversikt.Image = Global.OOPSA.My.Resources.Resources.tbOverview
         Me.tbOversikt.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbOversikt.Location = New System.Drawing.Point(89, 3)
-        Me.tbOversikt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbOversikt.Margin = New System.Windows.Forms.Padding(4)
         Me.tbOversikt.Name = "tbOversikt"
         Me.tbOversikt.ShowCloseButton = True
         Me.tbOversikt.Size = New System.Drawing.Size(973, 558)
@@ -319,7 +319,7 @@ Partial Class frmSalgMetro
         Me.TabControlAdv2.Controls.Add(Me.TabPageAdv3)
         Me.TabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv2.Location = New System.Drawing.Point(0, 47)
-        Me.TabControlAdv2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControlAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControlAdv2.Name = "TabControlAdv2"
         Me.TabControlAdv2.Size = New System.Drawing.Size(973, 511)
         Me.TabControlAdv2.TabIndex = 1
@@ -331,7 +331,7 @@ Partial Class frmSalgMetro
         Me.TabPageAdv7.Image = Nothing
         Me.TabPageAdv7.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv7.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv7.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv7.Name = "TabPageAdv7"
         Me.TabPageAdv7.ShowCloseButton = True
         Me.TabPageAdv7.Size = New System.Drawing.Size(966, 468)
@@ -374,7 +374,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid3.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid3.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid3.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GridDataBoundGrid3.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid3.MetroScrollBars = True
         Me.GridDataBoundGrid3.Name = "GridDataBoundGrid3"
         Me.GridDataBoundGrid3.OptimizeInsertRemoveCells = True
@@ -408,7 +408,7 @@ Partial Class frmSalgMetro
         Me.TabPageAdv2.Image = Nothing
         Me.TabPageAdv2.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv2.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv2.Name = "TabPageAdv2"
         Me.TabPageAdv2.ShowCloseButton = True
         Me.TabPageAdv2.Size = New System.Drawing.Size(966, 468)
@@ -451,7 +451,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid1.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GridDataBoundGrid1.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid1.MetroScrollBars = True
         Me.GridDataBoundGrid1.Name = "GridDataBoundGrid1"
         Me.GridDataBoundGrid1.OptimizeInsertRemoveCells = True
@@ -485,7 +485,7 @@ Partial Class frmSalgMetro
         Me.TabPageAdv3.Image = Nothing
         Me.TabPageAdv3.ImageSize = New System.Drawing.Size(16, 16)
         Me.TabPageAdv3.Location = New System.Drawing.Point(3, 39)
-        Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv3.Name = "TabPageAdv3"
         Me.TabPageAdv3.ShowCloseButton = True
         Me.TabPageAdv3.Size = New System.Drawing.Size(966, 468)
@@ -528,7 +528,7 @@ Partial Class frmSalgMetro
         Me.GridDataBoundGrid2.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.GridDataBoundGrid2.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.GridDataBoundGrid2.Location = New System.Drawing.Point(0, 0)
-        Me.GridDataBoundGrid2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GridDataBoundGrid2.Margin = New System.Windows.Forms.Padding(4)
         Me.GridDataBoundGrid2.MetroScrollBars = True
         Me.GridDataBoundGrid2.Name = "GridDataBoundGrid2"
         Me.GridDataBoundGrid2.OptimizeInsertRemoveCells = True
@@ -586,7 +586,7 @@ Partial Class frmSalgMetro
         Me.tbRegistrerSalg.Image = Global.OOPSA.My.Resources.Resources.tbRegistrerSalg
         Me.tbRegistrerSalg.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbRegistrerSalg.Location = New System.Drawing.Point(89, 3)
-        Me.tbRegistrerSalg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbRegistrerSalg.Margin = New System.Windows.Forms.Padding(4)
         Me.tbRegistrerSalg.Name = "tbRegistrerSalg"
         Me.tbRegistrerSalg.ShowCloseButton = True
         Me.tbRegistrerSalg.Size = New System.Drawing.Size(973, 558)
@@ -598,7 +598,7 @@ Partial Class frmSalgMetro
         Me.Panel1.Controls.Add(Me.SplitContainer1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 47)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(973, 511)
         Me.Panel1.TabIndex = 2
@@ -607,7 +607,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -626,7 +626,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer5.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer5.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer5.Name = "SplitContainer5"
         Me.SplitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -648,12 +648,12 @@ Partial Class frmSalgMetro
         'ComboKunde1
         '
         Me.ComboKunde1.BackColor = System.Drawing.Color.White
-        Me.ComboKunde1.BeforeTouchSize = New System.Drawing.Size(181, 19)
+        Me.ComboKunde1.BeforeTouchSize = New System.Drawing.Size(181, 33)
         Me.ComboKunde1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboKunde1.Location = New System.Drawing.Point(35, 129)
         Me.ComboKunde1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboKunde1.Name = "ComboKunde1"
-        Me.ComboKunde1.Size = New System.Drawing.Size(181, 19)
+        Me.ComboKunde1.Size = New System.Drawing.Size(181, 33)
         Me.ComboKunde1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKunde1.TabIndex = 6
         Me.ComboKunde1.Text = "ComboBoxAdv1"
@@ -676,7 +676,7 @@ Partial Class frmSalgMetro
         Me.btnNyKunde.ForeColor = System.Drawing.Color.White
         Me.btnNyKunde.IsBackStageButton = False
         Me.btnNyKunde.Location = New System.Drawing.Point(0, 0)
-        Me.btnNyKunde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnNyKunde.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNyKunde.Name = "btnNyKunde"
         Me.btnNyKunde.Size = New System.Drawing.Size(323, 85)
         Me.btnNyKunde.TabIndex = 3
@@ -699,7 +699,7 @@ Partial Class frmSalgMetro
         Me.lstSalgIDag.FormattingEnabled = True
         Me.lstSalgIDag.ItemHeight = 25
         Me.lstSalgIDag.Location = New System.Drawing.Point(0, 0)
-        Me.lstSalgIDag.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lstSalgIDag.Margin = New System.Windows.Forms.Padding(4)
         Me.lstSalgIDag.Name = "lstSalgIDag"
         Me.lstSalgIDag.Size = New System.Drawing.Size(323, 327)
         Me.lstSalgIDag.TabIndex = 0
@@ -717,7 +717,7 @@ Partial Class frmSalgMetro
         Me.Leie.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.BelowText
         Me.Leie.InactiveTabColor = System.Drawing.Color.Transparent
         Me.Leie.Location = New System.Drawing.Point(0, 0)
-        Me.Leie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Leie.Margin = New System.Windows.Forms.Padding(4)
         Me.Leie.Name = "Leie"
         Me.Leie.RotateTextWhenVertical = True
         Me.Leie.Size = New System.Drawing.Size(645, 511)
@@ -741,11 +741,11 @@ Partial Class frmSalgMetro
         Me.TabPageAdv4.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(65, 4)
-        Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv4.Location = New System.Drawing.Point(62, 3)
+        Me.TabPageAdv4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(565, 494)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(579, 504)
         Me.TabPageAdv4.TabIndex = 1
         Me.TabPageAdv4.Text = "Salg:"
         Me.TabPageAdv4.ThemesEnabled = True
@@ -784,7 +784,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx6.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx6.Name = "ToolStripEx6"
         Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(565, 45)
+        Me.ToolStripEx6.Size = New System.Drawing.Size(579, 45)
         Me.ToolStripEx6.TabIndex = 24
         Me.ToolStripEx6.Text = "Nytt Salg"
         Me.ToolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -792,11 +792,11 @@ Partial Class frmSalgMetro
         'Produktantall
         '
         Me.Produktantall.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.Produktantall.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.Produktantall.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.Produktantall.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Produktantall.IntegerValue = CType(1, Long)
         Me.Produktantall.Location = New System.Drawing.Point(215, 164)
-        Me.Produktantall.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Produktantall.Margin = New System.Windows.Forms.Padding(4)
         Me.Produktantall.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.Produktantall.Name = "Produktantall"
         Me.Produktantall.NullString = ""
@@ -809,11 +809,11 @@ Partial Class frmSalgMetro
         'txtavanse
         '
         Me.txtavanse.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.txtavanse.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.txtavanse.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.txtavanse.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtavanse.IntegerValue = CType(1, Long)
         Me.txtavanse.Location = New System.Drawing.Point(215, 208)
-        Me.txtavanse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtavanse.Margin = New System.Windows.Forms.Padding(4)
         Me.txtavanse.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtavanse.Name = "txtavanse"
         Me.txtavanse.NullString = ""
@@ -850,7 +850,7 @@ Partial Class frmSalgMetro
         Me.btnRegSalg.ForeColor = System.Drawing.Color.White
         Me.btnRegSalg.IsBackStageButton = False
         Me.btnRegSalg.Location = New System.Drawing.Point(249, 412)
-        Me.btnRegSalg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRegSalg.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRegSalg.Name = "btnRegSalg"
         Me.btnRegSalg.Size = New System.Drawing.Size(202, 50)
         Me.btnRegSalg.TabIndex = 16
@@ -879,22 +879,22 @@ Partial Class frmSalgMetro
         '
         'TabPageAdv5
         '
+        Me.TabPageAdv5.Controls.Add(Me.TextBoxExt3)
         Me.TabPageAdv5.Controls.Add(Me.Label1)
         Me.TabPageAdv5.Controls.Add(Me.dtpKurs)
         Me.TabPageAdv5.Controls.Add(Me.ComboKurs1)
         Me.TabPageAdv5.Controls.Add(Me.ToolStripEx7)
         Me.TabPageAdv5.Controls.Add(Me.ButtonAdv2)
-        Me.TabPageAdv5.Controls.Add(Me.TextBoxExt3)
         Me.TabPageAdv5.Controls.Add(Me.Label3)
         Me.TabPageAdv5.Controls.Add(Me.Label2)
         Me.TabPageAdv5.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv5.Image = Nothing
         Me.TabPageAdv5.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv5.Location = New System.Drawing.Point(65, 4)
-        Me.TabPageAdv5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv5.Location = New System.Drawing.Point(62, 3)
+        Me.TabPageAdv5.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv5.Name = "TabPageAdv5"
         Me.TabPageAdv5.ShowCloseButton = True
-        Me.TabPageAdv5.Size = New System.Drawing.Size(565, 494)
+        Me.TabPageAdv5.Size = New System.Drawing.Size(579, 504)
         Me.TabPageAdv5.TabIndex = 2
         Me.TabPageAdv5.Text = "Kurs"
         Me.TabPageAdv5.ThemesEnabled = True
@@ -922,12 +922,12 @@ Partial Class frmSalgMetro
         'ComboKurs1
         '
         Me.ComboKurs1.BackColor = System.Drawing.Color.White
-        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.BeforeTouchSize = New System.Drawing.Size(212, 33)
         Me.ComboKurs1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboKurs1.Location = New System.Drawing.Point(194, 74)
-        Me.ComboKurs1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboKurs1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboKurs1.Name = "ComboKurs1"
-        Me.ComboKurs1.Size = New System.Drawing.Size(212, 19)
+        Me.ComboKurs1.Size = New System.Drawing.Size(212, 33)
         Me.ComboKurs1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKurs1.TabIndex = 26
         Me.ComboKurs1.Text = "ComboBoxAdv1"
@@ -940,7 +940,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx7.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx7.Name = "ToolStripEx7"
         Me.ToolStripEx7.Office12Mode = False
-        Me.ToolStripEx7.Size = New System.Drawing.Size(565, 45)
+        Me.ToolStripEx7.Size = New System.Drawing.Size(579, 45)
         Me.ToolStripEx7.TabIndex = 25
         Me.ToolStripEx7.Text = "Nytt Kurs"
         Me.ToolStripEx7.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -953,25 +953,12 @@ Partial Class frmSalgMetro
         Me.ButtonAdv2.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv2.IsBackStageButton = False
         Me.ButtonAdv2.Location = New System.Drawing.Point(194, 315)
-        Me.ButtonAdv2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdv2.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv2.Name = "ButtonAdv2"
         Me.ButtonAdv2.Size = New System.Drawing.Size(202, 50)
         Me.ButtonAdv2.TabIndex = 17
         Me.ButtonAdv2.Text = "Registrer Salg"
         Me.ButtonAdv2.UseVisualStyle = True
-        '
-        'TextBoxExt3
-        '
-        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(198, 32)
-        Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBoxExt3.Location = New System.Drawing.Point(194, 115)
-        Me.TextBoxExt3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.TextBoxExt3.Name = "TextBoxExt3"
-        Me.TextBoxExt3.Size = New System.Drawing.Size(202, 34)
-        Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
-        Me.TextBoxExt3.TabIndex = 3
-        Me.TextBoxExt3.Text = "TextBoxExt3"
         '
         'Label3
         '
@@ -1010,11 +997,11 @@ Partial Class frmSalgMetro
         Me.TabPageAdv6.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageAdv6.Image = Nothing
         Me.TabPageAdv6.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv6.Location = New System.Drawing.Point(65, 4)
-        Me.TabPageAdv6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPageAdv6.Location = New System.Drawing.Point(62, 3)
+        Me.TabPageAdv6.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPageAdv6.Name = "TabPageAdv6"
         Me.TabPageAdv6.ShowCloseButton = True
-        Me.TabPageAdv6.Size = New System.Drawing.Size(565, 494)
+        Me.TabPageAdv6.Size = New System.Drawing.Size(579, 504)
         Me.TabPageAdv6.TabIndex = 3
         Me.TabPageAdv6.Text = "Leie"
         Me.TabPageAdv6.ThemesEnabled = True
@@ -1031,7 +1018,7 @@ Partial Class frmSalgMetro
         'IntegerTextBox2
         '
         Me.IntegerTextBox2.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.IntegerTextBox2.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.IntegerTextBox2.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.IntegerTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.IntegerTextBox2.IntegerValue = CType(2, Long)
         Me.IntegerTextBox2.Location = New System.Drawing.Point(348, 100)
@@ -1164,7 +1151,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx8.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx8.Name = "ToolStripEx8"
         Me.ToolStripEx8.Office12Mode = False
-        Me.ToolStripEx8.Size = New System.Drawing.Size(565, 45)
+        Me.ToolStripEx8.Size = New System.Drawing.Size(579, 45)
         Me.ToolStripEx8.TabIndex = 25
         Me.ToolStripEx8.Text = "Ny Leie"
         Me.ToolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1177,7 +1164,7 @@ Partial Class frmSalgMetro
         Me.btbAddleie.ForeColor = System.Drawing.Color.White
         Me.btbAddleie.IsBackStageButton = False
         Me.btbAddleie.Location = New System.Drawing.Point(260, 232)
-        Me.btbAddleie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btbAddleie.Margin = New System.Windows.Forms.Padding(4)
         Me.btbAddleie.Name = "btbAddleie"
         Me.btbAddleie.Size = New System.Drawing.Size(175, 64)
         Me.btbAddleie.TabIndex = 0
@@ -1204,7 +1191,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton1.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(84, 24)
         Me.ToolStripButton1.Text = "Logg ut"
         '
         'tbBookTime
@@ -1214,7 +1201,7 @@ Partial Class frmSalgMetro
         Me.tbBookTime.Image = Global.OOPSA.My.Resources.Resources.tbBookTime
         Me.tbBookTime.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbBookTime.Location = New System.Drawing.Point(89, 3)
-        Me.tbBookTime.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbBookTime.Margin = New System.Windows.Forms.Padding(4)
         Me.tbBookTime.Name = "tbBookTime"
         Me.tbBookTime.ShowCloseButton = True
         Me.tbBookTime.Size = New System.Drawing.Size(973, 558)
@@ -1226,7 +1213,7 @@ Partial Class frmSalgMetro
         Me.Panel2.Controls.Add(Me.SplitContainer2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 47)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(973, 511)
         Me.Panel2.TabIndex = 3
@@ -1235,7 +1222,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer2.Name = "SplitContainer2"
         '
         'SplitContainer2.Panel1
@@ -1254,7 +1241,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer6.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer6.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer6.Name = "SplitContainer6"
         Me.SplitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -1283,7 +1270,7 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt1
         '
-        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt1.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt1.Location = New System.Drawing.Point(172, 58)
         Me.TextBoxExt1.Margin = New System.Windows.Forms.Padding(2)
@@ -1324,7 +1311,7 @@ Partial Class frmSalgMetro
         '
         'Txt
         '
-        Me.Txt.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.Txt.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.Txt.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Txt.Location = New System.Drawing.Point(31, 58)
         Me.Txt.Margin = New System.Windows.Forms.Padding(2)
@@ -1338,7 +1325,7 @@ Partial Class frmSalgMetro
         'IntegerTextBox1
         '
         Me.IntegerTextBox1.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.IntegerTextBox1.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.IntegerTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.IntegerTextBox1.IntegerValue = CType(1, Long)
         Me.IntegerTextBox1.Location = New System.Drawing.Point(31, 131)
@@ -1362,12 +1349,12 @@ Partial Class frmSalgMetro
         'ComboInstruktor
         '
         Me.ComboInstruktor.BackColor = System.Drawing.Color.White
-        Me.ComboInstruktor.BeforeTouchSize = New System.Drawing.Size(210, 19)
+        Me.ComboInstruktor.BeforeTouchSize = New System.Drawing.Size(210, 33)
         Me.ComboInstruktor.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboInstruktor.Location = New System.Drawing.Point(29, 275)
         Me.ComboInstruktor.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboInstruktor.Name = "ComboInstruktor"
-        Me.ComboInstruktor.Size = New System.Drawing.Size(210, 19)
+        Me.ComboInstruktor.Size = New System.Drawing.Size(210, 33)
         Me.ComboInstruktor.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboInstruktor.TabIndex = 19
         Me.ComboInstruktor.Text = "ComboBoxAdv1"
@@ -1375,12 +1362,12 @@ Partial Class frmSalgMetro
         'ComboAvdeling
         '
         Me.ComboAvdeling.BackColor = System.Drawing.Color.White
-        Me.ComboAvdeling.BeforeTouchSize = New System.Drawing.Size(210, 19)
+        Me.ComboAvdeling.BeforeTouchSize = New System.Drawing.Size(210, 33)
         Me.ComboAvdeling.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboAvdeling.Location = New System.Drawing.Point(29, 205)
         Me.ComboAvdeling.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboAvdeling.Name = "ComboAvdeling"
-        Me.ComboAvdeling.Size = New System.Drawing.Size(210, 19)
+        Me.ComboAvdeling.Size = New System.Drawing.Size(210, 33)
         Me.ComboAvdeling.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboAvdeling.TabIndex = 18
         Me.ComboAvdeling.Text = "ComboBoxAdv1"
@@ -1393,7 +1380,7 @@ Partial Class frmSalgMetro
         Me.ButtonAdv1.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv1.IsBackStageButton = False
         Me.ButtonAdv1.Location = New System.Drawing.Point(29, 331)
-        Me.ButtonAdv1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdv1.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv1.Name = "ButtonAdv1"
         Me.ButtonAdv1.Size = New System.Drawing.Size(134, 45)
         Me.ButtonAdv1.TabIndex = 15
@@ -1427,7 +1414,7 @@ Partial Class frmSalgMetro
         Me.ButtonAdv3.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv3.IsBackStageButton = False
         Me.ButtonAdv3.Location = New System.Drawing.Point(0, 34)
-        Me.ButtonAdv3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdv3.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv3.Name = "ButtonAdv3"
         Me.ButtonAdv3.Size = New System.Drawing.Size(318, 85)
         Me.ButtonAdv3.TabIndex = 4
@@ -1469,7 +1456,7 @@ Partial Class frmSalgMetro
         Me.dgvKurs.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
         Me.dgvKurs.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro
         Me.dgvKurs.Location = New System.Drawing.Point(0, 0)
-        Me.dgvKurs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvKurs.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvKurs.MetroScrollBars = True
         Me.dgvKurs.Name = "dgvKurs"
         Me.dgvKurs.OptimizeInsertRemoveCells = True
@@ -1517,7 +1504,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton3.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(84, 24)
         Me.ToolStripButton3.Text = "Logg ut"
         '
         'tbEndreBestilling
@@ -1528,7 +1515,7 @@ Partial Class frmSalgMetro
         Me.tbEndreBestilling.Image = Global.OOPSA.My.Resources.Resources.tbEndreBestilling
         Me.tbEndreBestilling.ImageSize = New System.Drawing.Size(48, 48)
         Me.tbEndreBestilling.Location = New System.Drawing.Point(89, 3)
-        Me.tbEndreBestilling.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbEndreBestilling.Margin = New System.Windows.Forms.Padding(4)
         Me.tbEndreBestilling.Name = "tbEndreBestilling"
         Me.tbEndreBestilling.ShowCloseButton = True
         Me.tbEndreBestilling.Size = New System.Drawing.Size(973, 558)
@@ -1539,7 +1526,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 47)
-        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
@@ -1574,7 +1561,7 @@ Partial Class frmSalgMetro
         '
         Me.SplitContainer7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer7.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer7.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer7.Name = "SplitContainer7"
         Me.SplitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -1610,7 +1597,7 @@ Partial Class frmSalgMetro
         Me.btnSokBestilling.ForeColor = System.Drawing.Color.White
         Me.btnSokBestilling.IsBackStageButton = False
         Me.btnSokBestilling.Location = New System.Drawing.Point(132, 95)
-        Me.btnSokBestilling.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSokBestilling.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSokBestilling.Name = "btnSokBestilling"
         Me.btnSokBestilling.Size = New System.Drawing.Size(128, 42)
         Me.btnSokBestilling.TabIndex = 11
@@ -1629,10 +1616,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt7
         '
-        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt7.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt7.Location = New System.Drawing.Point(40, 54)
-        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt7.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt7.Name = "TextBoxExt7"
         Me.TextBoxExt7.Size = New System.Drawing.Size(219, 32)
@@ -1653,10 +1640,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt15
         '
-        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt15.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt15.Location = New System.Drawing.Point(190, 219)
-        Me.TextBoxExt15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt15.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt15.Name = "TextBoxExt15"
         Me.TextBoxExt15.ReadOnly = True
@@ -1678,10 +1665,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt14
         '
-        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt14.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt14.Location = New System.Drawing.Point(190, 178)
-        Me.TextBoxExt14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt14.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt14.Name = "TextBoxExt14"
         Me.TextBoxExt14.ReadOnly = True
@@ -1703,10 +1690,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt13
         '
-        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt13.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt13.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt13.Location = New System.Drawing.Point(190, 95)
-        Me.TextBoxExt13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt13.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt13.Name = "TextBoxExt13"
         Me.TextBoxExt13.ReadOnly = True
@@ -1728,10 +1715,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt12
         '
-        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt12.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt12.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt12.Location = New System.Drawing.Point(190, 136)
-        Me.TextBoxExt12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt12.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt12.Name = "TextBoxExt12"
         Me.TextBoxExt12.ReadOnly = True
@@ -1753,10 +1740,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt11
         '
-        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt11.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt11.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt11.Location = New System.Drawing.Point(190, 54)
-        Me.TextBoxExt11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt11.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt11.Name = "TextBoxExt11"
         Me.TextBoxExt11.ReadOnly = True
@@ -1808,12 +1795,12 @@ Partial Class frmSalgMetro
         'Combo
         '
         Me.Combo.BackColor = System.Drawing.Color.White
-        Me.Combo.BeforeTouchSize = New System.Drawing.Size(198, 19)
+        Me.Combo.BeforeTouchSize = New System.Drawing.Size(198, 33)
         Me.Combo.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Combo.Location = New System.Drawing.Point(68, 281)
         Me.Combo.Margin = New System.Windows.Forms.Padding(2)
         Me.Combo.Name = "Combo"
-        Me.Combo.Size = New System.Drawing.Size(198, 19)
+        Me.Combo.Size = New System.Drawing.Size(198, 33)
         Me.Combo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.Combo.TabIndex = 41
         Me.Combo.Text = "ComboBoxAdv1"
@@ -1834,12 +1821,12 @@ Partial Class frmSalgMetro
         'Comboslgodt
         '
         Me.Comboslgodt.BackColor = System.Drawing.Color.White
-        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(198, 19)
+        Me.Comboslgodt.BeforeTouchSize = New System.Drawing.Size(198, 33)
         Me.Comboslgodt.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Comboslgodt.Location = New System.Drawing.Point(68, 205)
         Me.Comboslgodt.Margin = New System.Windows.Forms.Padding(2)
         Me.Comboslgodt.Name = "Comboslgodt"
-        Me.Comboslgodt.Size = New System.Drawing.Size(198, 19)
+        Me.Comboslgodt.Size = New System.Drawing.Size(198, 33)
         Me.Comboslgodt.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.Comboslgodt.TabIndex = 39
         Me.Comboslgodt.Text = "ComboBoxAdv1"
@@ -1868,12 +1855,12 @@ Partial Class frmSalgMetro
         'ComboKUNDEVALG
         '
         Me.ComboKUNDEVALG.BackColor = System.Drawing.Color.White
-        Me.ComboKUNDEVALG.BeforeTouchSize = New System.Drawing.Size(268, 19)
+        Me.ComboKUNDEVALG.BeforeTouchSize = New System.Drawing.Size(268, 33)
         Me.ComboKUNDEVALG.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboKUNDEVALG.Location = New System.Drawing.Point(44, 116)
-        Me.ComboKUNDEVALG.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboKUNDEVALG.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboKUNDEVALG.Name = "ComboKUNDEVALG"
-        Me.ComboKUNDEVALG.Size = New System.Drawing.Size(268, 19)
+        Me.ComboKUNDEVALG.Size = New System.Drawing.Size(268, 33)
         Me.ComboKUNDEVALG.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
         Me.ComboKUNDEVALG.TabIndex = 37
         Me.ComboKUNDEVALG.Text = "ComboBoxAdv1"
@@ -1886,7 +1873,7 @@ Partial Class frmSalgMetro
         Me.ButtonAdv5.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv5.IsBackStageButton = False
         Me.ButtonAdv5.Location = New System.Drawing.Point(315, 394)
-        Me.ButtonAdv5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdv5.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv5.Name = "ButtonAdv5"
         Me.ButtonAdv5.Size = New System.Drawing.Size(228, 44)
         Me.ButtonAdv5.TabIndex = 36
@@ -1901,7 +1888,7 @@ Partial Class frmSalgMetro
         Me.ButtonAdv4.ForeColor = System.Drawing.Color.White
         Me.ButtonAdv4.IsBackStageButton = False
         Me.ButtonAdv4.Location = New System.Drawing.Point(315, 342)
-        Me.ButtonAdv4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdv4.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdv4.Name = "ButtonAdv4"
         Me.ButtonAdv4.Size = New System.Drawing.Size(228, 44)
         Me.ButtonAdv4.TabIndex = 35
@@ -1934,10 +1921,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt9
         '
-        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt9.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt9.Location = New System.Drawing.Point(315, 279)
-        Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt9.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt9.Name = "TextBoxExt9"
         Me.TextBoxExt9.Size = New System.Drawing.Size(226, 32)
@@ -1981,10 +1968,10 @@ Partial Class frmSalgMetro
         '
         'TextBoxExt10
         '
-        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(198, 32)
+        Me.TextBoxExt10.BeforeTouchSize = New System.Drawing.Size(82, 34)
         Me.TextBoxExt10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxExt10.Location = New System.Drawing.Point(68, 352)
-        Me.TextBoxExt10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxExt10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxExt10.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.TextBoxExt10.Name = "TextBoxExt10"
         Me.TextBoxExt10.Size = New System.Drawing.Size(198, 32)
@@ -2008,7 +1995,7 @@ Partial Class frmSalgMetro
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 47)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(973, 511)
         Me.Panel3.TabIndex = 3
@@ -2033,7 +2020,7 @@ Partial Class frmSalgMetro
         Me.ToolStripButton4.Image = Global.OOPSA.My.Resources.Resources.tbLogout
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 44)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(84, 24)
         Me.ToolStripButton4.Text = "Logg ut"
         '
         'ToolStripEx5
@@ -2078,6 +2065,21 @@ Partial Class frmSalgMetro
         '
         Me.LagerRapportALLETableAdapter.ClearBeforeFill = True
         '
+        'TextBoxExt3
+        '
+        Me.TextBoxExt3.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.TextBoxExt3.BeforeTouchSize = New System.Drawing.Size(82, 34)
+        Me.TextBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBoxExt3.IntegerValue = CType(3, Long)
+        Me.TextBoxExt3.Location = New System.Drawing.Point(194, 125)
+        Me.TextBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.TextBoxExt3.Name = "TextBoxExt3"
+        Me.TextBoxExt3.NullString = ""
+        Me.TextBoxExt3.Size = New System.Drawing.Size(82, 34)
+        Me.TextBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.TextBoxExt3.TabIndex = 29
+        Me.TextBoxExt3.Text = "3"
+        '
         'frmSalgMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
@@ -2087,7 +2089,7 @@ Partial Class frmSalgMetro
         Me.CaptionFont = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientSize = New System.Drawing.Size(1066, 565)
         Me.Controls.Add(Me.TabControlAdv1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmSalgMetro"
         Me.ShowIcon = False
         Me.Text = "Salg - TurCare AS"
@@ -2138,7 +2140,6 @@ Partial Class frmSalgMetro
         Me.TabPageAdv5.ResumeLayout(False)
         Me.TabPageAdv5.PerformLayout()
         CType(Me.ComboKurs1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageAdv6.ResumeLayout(False)
         Me.TabPageAdv6.PerformLayout()
         CType(Me.IntegerTextBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2202,6 +2203,7 @@ Partial Class frmSalgMetro
         Me.ToolStripEx4.PerformLayout()
         Me.ToolStripEx5.ResumeLayout(False)
         Me.ToolStripEx5.PerformLayout()
+        CType(Me.TextBoxExt3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2240,7 +2242,6 @@ Partial Class frmSalgMetro
     Friend WithEvents TabPageAdv5 As Syncfusion.Windows.Forms.Tools.TabPageAdv
     Friend WithEvents ToolStripEx7 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.TextBoxExt
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TabPageAdv6 As Syncfusion.Windows.Forms.Tools.TabPageAdv
@@ -2336,4 +2337,5 @@ Partial Class frmSalgMetro
     Friend WithEvents IntegerTextBox2 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Private WithEvents LagerRapportALLEBindingSource As BindingSource
     Private WithEvents tbOversikt As Syncfusion.Windows.Forms.Tools.TabPageAdv
+    Friend WithEvents TextBoxExt3 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
 End Class

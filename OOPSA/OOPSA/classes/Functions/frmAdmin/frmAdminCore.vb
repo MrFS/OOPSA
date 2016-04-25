@@ -71,31 +71,25 @@ Public Class frmAdminCore
     End Sub
 
 
-    Public Sub regLeie(Produkt As Integer, Til As Date, Fra As Date, Kunde_nr As Integer, Lager As Integer)
+    Public Sub regLeie(Produkt As Integer, Til As Date, Fra As Date, Kunde_nr As Integer, Lager As Integer, antall As Integer)
 
 
         Dim core As New UserCore
-
-        Dim Leie_fra As Date = Fra
-        Dim Leie_til As Date = Til
-        Dim brukernavn As String = core.currentUsr
-        Dim Ansatt_id As Integer = core.Getuserid(brukernavn)
-        Dim kunde_id As Integer = Kunde_nr
-        Dim produkt_id As Integer = Produkt
-        Dim lager_id As Integer = Lager
+        Dim Ansatt_id As Integer = core.UID
+        Dim lagerbeholdning As Integer = SQL.Return1Row("SELECT Antall FROM Lagerbeholdning WHERE Lager_id = " & Lager & " AND Produkt_id = " & Produkt & "", "Antall")
 
 
+        If lagerbeholdning >= antall Then
+            SQL.sporring("UPDATE Lagerbeholdning SET Antall = " & (lagerbeholdning - antall) & " WHERE Lager_id = " & Lager & " AND Produkt_id = " & Produkt & "")
+            SQL.sporring("INSERT INTO `drift8_2016`.`Leie` (`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`, `Antall`) VALUES (NULL, '" & Fra & "', '" & Til & "', '" & Ansatt_id & "', '" & Kunde_nr & "', '" & Produkt & "', '" & Lager & "', '" & antall & "' );", "Leiet er registrert")
 
-        SQL.sporring("INSERT INTO Leie(`Leie_id`, `Fra`, `Til`, `Ansatt_A_id`, `Kunde_Kid`, `Produkt_id`, `Lager_id`) VALUES (NULL," & Leie_fra & "," & Leie_til & "," & Ansatt_id & "," & kunde_id & "," & produkt_id & "," & lager_id & ")")
+        Else
+            MsgBox("Det er ikke mer igjen av " & Produkt, MsgBoxStyle.Critical, "Ikke flere på lager")
+
+        End If
+
+
+
     End Sub
 
-    ''blir ikke brukt til noe, får ikke til å referere i admin metro.
-    'Public Sub OppdaterKunde(DbKid As String, KID As String, TabellNavn As String, TuppelNavn As String, tuppelNyverdi As String)
-
-    '    Dim cmd As New MySqlCommand("UPDATE " & TabellNavn & " SET " & TuppelNavn & "=@" & tuppelNyverdi & " WHERE " & DbKid & "=@" & KID, con)
-    '    cmd.Parameters.AddWithValue("@" & tuppelNyverdi, tuppelNyverdi)
-    '    cmd.Parameters.AddWithValue("@" & KID, CInt(KID))
-
-    '    cmd.ExecuteNonQuery()
-    'End Sub
 End Class
