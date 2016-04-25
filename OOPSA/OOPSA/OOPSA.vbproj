@@ -169,7 +169,7 @@
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="classes\DB\DBConnect.vb" />
     <Compile Include="classes\Functions\email.vb" />
-    <Compile Include="classes\Functions\frmAnsatt\formAnsattCore.vb" />
+    <Compile Include="classes\Functions\frmAnsatt\frmAnsattCore.vb" />
     <Compile Include="classes\Functions\frmAdmin\frmAdminCore.vb" />
     <Compile Include="classes\Functions\frmForgotPass\frmForgotPassCore.vb" />
     <Compile Include="classes\Functions\frmLogin\Login.vb" />

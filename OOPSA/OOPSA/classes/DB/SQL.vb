@@ -21,6 +21,9 @@ Public Class SQL
 
         End If
 
+        sql.Replace("'", "\'")
+
+
         Try
             Dim cmd As New MySqlCommand(sql, con)
             Dim da As New MySqlDataAdapter
