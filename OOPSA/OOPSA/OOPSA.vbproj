@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\MrFS\Documents\GitHub\OOPSA\OOPSA\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,9 +24,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -66,6 +67,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>OOPSA.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37C34EA0CC1E350EEFA82BB6229B240E6125CBFC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OOPSA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -259,18 +272,6 @@
     <Compile Include="frm\Ansatt\Salg\frmSalg.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm\Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm\Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm\Admin\frmAddUsrMetro.Designer.vb">
       <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
     </Compile>
@@ -286,13 +287,6 @@
     <Compile Include="classes\DB\SQL.vb" />
     <Compile Include="classes\Functions\Gen.vb" />
     <Compile Include="classes\Tools\Tools.vb" />
-    <Compile Include="frm\frmMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm\frmMain.Designer.vb">
-      <DependentUpon>frmMain.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmMetroLogin.Designer.vb">
       <DependentUpon>frmMetroLogin.vb</DependentUpon>
     </Compile>
@@ -366,20 +360,11 @@
     <EmbeddedResource Include="frm\Ansatt\Salg\frmSalg.resx">
       <DependentUpon>frmSalg.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm\Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmAddUsrMetro.resx">
       <DependentUpon>frmAddUsrMetro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm\Admin\frmAdminMetro.resx">
       <DependentUpon>frmAdminMetro.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm\frmMain.resx">
-      <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMetroLogin.resx">
       <DependentUpon>frmMetroLogin.vb</DependentUpon>
@@ -443,6 +428,7 @@
     <None Include="DataSets\drift8_2016DataSetTrondheimLager.xss">
       <DependentUpon>drift8_2016DataSetTrondheimLager.xsd</DependentUpon>
     </None>
+    <None Include="OOPSA_TemporaryKey.pfx" />
     <None Include="Reporting\DataSets\drift8_2016dsVisLeieRapportView.xsc">
       <DependentUpon>drift8_2016dsVisLeieRapportView.xsd</DependentUpon>
     </None>

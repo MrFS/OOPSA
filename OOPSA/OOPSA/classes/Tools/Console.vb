@@ -41,11 +41,11 @@ Public Class Console
             Case "clear"
                 Clear()
 
-            Case "frm1"
-                My.Forms.Form1.Show()
+            Case "salg"
+                My.Forms.frmSalgMetro.Show()
 
-            Case "frm2"
-                My.Forms.Form2.Show()
+            Case "lager"
+                My.Forms.frmLagerMetro.Show()
 
             Case "metrologin"
                 My.Forms.frmMetroLogin.Show()

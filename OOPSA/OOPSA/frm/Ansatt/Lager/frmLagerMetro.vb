@@ -38,10 +38,19 @@ Public Class frmLagerMetro
 
     Private Sub btnLeggTil_Click(sender As Object, e As EventArgs) Handles btnLeggTil.Click
 
+        Dim dtID As DataTable
+
         dt = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & LagerLeggTil.Text & "'") ' Selects ID of the storage city
         dr = dt.Rows(0)
 
         sql.sporring("INSERT INTO Produkt(Produkt_navn, Pris, p_antall, Lager_id) VALUES('" & NavnLeggTil.Text & "', '" & PrisLeggTil.Text & "', '" & AntLeggTil.Text & "', '" & dr("Lager_id") & "')") ' Sql query for adding new product uses city instead of id with the query above
+
+        dtID = sql.sporring("SELECT `Produkt_id` FROM Produkt WHERE Produkt_navn = '" & NavnLeggTil.Text & "'")
+
+        MsgBox(dtID.Rows(0).Item(0).ToString)
+
+        sql.sporring("INSERT INTO `Lagerbeholdning`(`Lager_id`, `Produkt_id`, `Antall`) VALUES ('" & dr("Lager_id") & "','" & CInt(dtID.Rows(0).Item(0).ToString) & "','" & AntLeggTil.Text & "')")
+
 
         Core.oppdater()
 
@@ -49,10 +58,16 @@ Public Class frmLagerMetro
 
     Private Sub EndreKnapp_Click(sender As Object, e As EventArgs) Handles EndreKnapp.Click
 
+        Dim dtID As DataTable
+
         dt = sql.sporring("SELECT Lager_id FROM `Lager` WHERE `by` = '" & lagerEndre.Text & "'") ' Selects the ID of the storage city
         dr = dt.Rows(0)
 
         sql.sporring("UPDATE Produkt SET Produkt_navn = '" & navnEndreText.Text & "', Pris = '" & prisEndreText.Text & "', p_antall = '" & antEndreText.Text & "', Lager_id = '" & dr("Lager_id") & "' WHERE Produkt_navn='" & VareEndre.Text & "'") 'Changes product and uses the name with the previous query so user does not have to use numbers
+
+        dtID = sql.sporring("SELECT `Produkt_id` FROM Produkt WHERE Produkt_navn = '" & NavnLeggTil.Text & "'")
+
+        sql.sporring("UPDATE Lagerbeholdning SET ")
 
         Core.oppdater()
 

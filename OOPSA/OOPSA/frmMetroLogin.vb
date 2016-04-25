@@ -109,19 +109,6 @@ Public Class frmMetroLogin
 
         lblNewVersion.Text = ("New version: " & vReader.ReadToEnd)
 
-        'MsgBox(major & minor & build & revision)
-
-        'MsgBox(Application.ProductVersion)
-
-        Dim test As String = "aaa"
-
-        SHA.ToHashSHA512 = test
-
-        test = SHA.ToHashSHA512
-
-        txtUsr.Text = test
-
-
     End Sub
 
     ''' <summary>

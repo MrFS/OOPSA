@@ -853,10 +853,10 @@ Partial Class frmAdminMetro
         Me.tbAnsatte.Controls.Add(Me.SplitContainerAdv1)
         Me.tbAnsatte.Image = Nothing
         Me.tbAnsatte.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbAnsatte.Location = New System.Drawing.Point(3, 35)
+        Me.tbAnsatte.Location = New System.Drawing.Point(3, 2)
         Me.tbAnsatte.Name = "tbAnsatte"
         Me.tbAnsatte.ShowCloseButton = True
-        Me.tbAnsatte.Size = New System.Drawing.Size(865, 394)
+        Me.tbAnsatte.Size = New System.Drawing.Size(865, 427)
         Me.tbAnsatte.TabIndex = 1
         Me.tbAnsatte.Text = "Ansatte"
         Me.tbAnsatte.ThemesEnabled = True
@@ -877,7 +877,7 @@ Partial Class frmAdminMetro
         'SplitContainerAdv1.Panel2
         '
         Me.SplitContainerAdv1.Panel2.Controls.Add(Me.TabControlAdv6)
-        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 394)
+        Me.SplitContainerAdv1.Size = New System.Drawing.Size(865, 427)
         Me.SplitContainerAdv1.SplitterDistance = 173
         Me.SplitContainerAdv1.TabIndex = 4
         Me.SplitContainerAdv1.Text = "SplitContainerAdv1"
@@ -929,12 +929,12 @@ Partial Class frmAdminMetro
         '
         'TabControlAdv6
         '
-        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(685, 394)
+        Me.TabControlAdv6.BeforeTouchSize = New System.Drawing.Size(685, 427)
         Me.TabControlAdv6.Controls.Add(Me.TabPageAdv4)
         Me.TabControlAdv6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv6.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv6.Name = "TabControlAdv6"
-        Me.TabControlAdv6.Size = New System.Drawing.Size(685, 394)
+        Me.TabControlAdv6.Size = New System.Drawing.Size(685, 427)
         Me.TabControlAdv6.TabIndex = 2
         Me.TabControlAdv6.ThemesEnabled = True
         '
@@ -943,10 +943,10 @@ Partial Class frmAdminMetro
         Me.TabPageAdv4.Controls.Add(Me.dgvAnsatte)
         Me.TabPageAdv4.Image = Nothing
         Me.TabPageAdv4.ImageSize = New System.Drawing.Size(16, 16)
-        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 35)
+        Me.TabPageAdv4.Location = New System.Drawing.Point(3, 2)
         Me.TabPageAdv4.Name = "TabPageAdv4"
         Me.TabPageAdv4.ShowCloseButton = True
-        Me.TabPageAdv4.Size = New System.Drawing.Size(678, 355)
+        Me.TabPageAdv4.Size = New System.Drawing.Size(678, 421)
         Me.TabPageAdv4.TabIndex = 1
         Me.TabPageAdv4.Text = "Oversikt ansatte"
         Me.TabPageAdv4.ThemesEnabled = True
@@ -995,7 +995,7 @@ Partial Class frmAdminMetro
         Me.dgvAnsatte.Properties.MarkColHeader = False
         Me.dgvAnsatte.Properties.MarkRowHeader = False
         Me.dgvAnsatte.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvAnsatte.Size = New System.Drawing.Size(678, 355)
+        Me.dgvAnsatte.Size = New System.Drawing.Size(678, 421)
         Me.dgvAnsatte.SmartSizeBox = False
         Me.dgvAnsatte.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvAnsatte.TabIndex = 1
@@ -1014,10 +1014,10 @@ Partial Class frmAdminMetro
         Me.tbKunder.Controls.Add(Me.TabControlAdv1)
         Me.tbKunder.Image = Nothing
         Me.tbKunder.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunder.Location = New System.Drawing.Point(3, 35)
+        Me.tbKunder.Location = New System.Drawing.Point(3, 2)
         Me.tbKunder.Name = "tbKunder"
         Me.tbKunder.ShowCloseButton = True
-        Me.tbKunder.Size = New System.Drawing.Size(865, 394)
+        Me.tbKunder.Size = New System.Drawing.Size(865, 427)
         Me.tbKunder.TabIndex = 2
         Me.tbKunder.Text = "Kunder"
         Me.tbKunder.ThemesEnabled = True
@@ -1025,14 +1025,14 @@ Partial Class frmAdminMetro
         'TabControlAdv1
         '
         Me.TabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 394)
+        Me.TabControlAdv1.BeforeTouchSize = New System.Drawing.Size(865, 427)
         Me.TabControlAdv1.Controls.Add(Me.tbKunderOversikt)
         Me.TabControlAdv1.Controls.Add(Me.tbKundeEpost)
         Me.TabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlAdv1.FocusOnTabClick = False
         Me.TabControlAdv1.Location = New System.Drawing.Point(0, 0)
         Me.TabControlAdv1.Name = "TabControlAdv1"
-        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 394)
+        Me.TabControlAdv1.Size = New System.Drawing.Size(865, 427)
         Me.TabControlAdv1.TabIndex = 0
         Me.TabControlAdv1.ThemesEnabled = True
         '
@@ -1041,10 +1041,10 @@ Partial Class frmAdminMetro
         Me.tbKunderOversikt.Controls.Add(Me.SplitContainer3)
         Me.tbKunderOversikt.Image = Nothing
         Me.tbKunderOversikt.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKunderOversikt.Location = New System.Drawing.Point(38, 3)
+        Me.tbKunderOversikt.Location = New System.Drawing.Point(2, 3)
         Me.tbKunderOversikt.Name = "tbKunderOversikt"
         Me.tbKunderOversikt.ShowCloseButton = True
-        Me.tbKunderOversikt.Size = New System.Drawing.Size(823, 387)
+        Me.tbKunderOversikt.Size = New System.Drawing.Size(859, 420)
         Me.tbKunderOversikt.TabIndex = 1
         Me.tbKunderOversikt.Text = "Kunder"
         Me.tbKunderOversikt.ThemesEnabled = True
@@ -1063,21 +1063,21 @@ Partial Class frmAdminMetro
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.tbKundeOversikt)
-        Me.SplitContainer3.Size = New System.Drawing.Size(823, 387)
-        Me.SplitContainer3.SplitterDistance = 225
+        Me.SplitContainer3.Size = New System.Drawing.Size(859, 420)
+        Me.SplitContainer3.SplitterDistance = 234
         Me.SplitContainer3.TabIndex = 0
         '
         'btnUpdKunde
         '
         Me.btnUpdKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnUpdKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(225, 60)
+        Me.btnUpdKunde.BeforeTouchSize = New System.Drawing.Size(234, 60)
         Me.btnUpdKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnUpdKunde.ForeColor = System.Drawing.Color.White
         Me.btnUpdKunde.IsBackStageButton = False
         Me.btnUpdKunde.Location = New System.Drawing.Point(0, 60)
         Me.btnUpdKunde.Name = "btnUpdKunde"
-        Me.btnUpdKunde.Size = New System.Drawing.Size(225, 60)
+        Me.btnUpdKunde.Size = New System.Drawing.Size(234, 60)
         Me.btnUpdKunde.TabIndex = 4
         Me.btnUpdKunde.Text = "Oppdater Kunde"
         Me.btnUpdKunde.UseVisualStyle = True
@@ -1086,13 +1086,13 @@ Partial Class frmAdminMetro
         '
         Me.btnAddKunde.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
         Me.btnAddKunde.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(225, 60)
+        Me.btnAddKunde.BeforeTouchSize = New System.Drawing.Size(234, 60)
         Me.btnAddKunde.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAddKunde.ForeColor = System.Drawing.Color.White
         Me.btnAddKunde.IsBackStageButton = False
         Me.btnAddKunde.Location = New System.Drawing.Point(0, 0)
         Me.btnAddKunde.Name = "btnAddKunde"
-        Me.btnAddKunde.Size = New System.Drawing.Size(225, 60)
+        Me.btnAddKunde.Size = New System.Drawing.Size(234, 60)
         Me.btnAddKunde.TabIndex = 3
         Me.btnAddKunde.Text = "Legg til ny kunde"
         Me.btnAddKunde.UseVisualStyle = True
@@ -1100,14 +1100,14 @@ Partial Class frmAdminMetro
         'tbKundeOversikt
         '
         Me.tbKundeOversikt.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(594, 387)
+        Me.tbKundeOversikt.BeforeTouchSize = New System.Drawing.Size(621, 420)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv15)
         Me.tbKundeOversikt.Controls.Add(Me.TabPageAdv16)
         Me.tbKundeOversikt.Controls.Add(Me.TbOppdaterKunde)
         Me.tbKundeOversikt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbKundeOversikt.Location = New System.Drawing.Point(0, 0)
         Me.tbKundeOversikt.Name = "tbKundeOversikt"
-        Me.tbKundeOversikt.Size = New System.Drawing.Size(594, 387)
+        Me.tbKundeOversikt.Size = New System.Drawing.Size(621, 420)
         Me.tbKundeOversikt.TabIndex = 0
         Me.tbKundeOversikt.ThemesEnabled = True
         '
@@ -1119,7 +1119,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv15.Location = New System.Drawing.Point(46, 3)
         Me.TabPageAdv15.Name = "TabPageAdv15"
         Me.TabPageAdv15.ShowCloseButton = True
-        Me.TabPageAdv15.Size = New System.Drawing.Size(544, 380)
+        Me.TabPageAdv15.Size = New System.Drawing.Size(571, 413)
         Me.TabPageAdv15.TabIndex = 1
         Me.TabPageAdv15.ThemesEnabled = True
         '
@@ -1165,7 +1165,7 @@ Partial Class frmAdminMetro
         Me.dgvPrivatKunde.Properties.MarkColHeader = False
         Me.dgvPrivatKunde.Properties.MarkRowHeader = False
         Me.dgvPrivatKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvPrivatKunde.Size = New System.Drawing.Size(544, 380)
+        Me.dgvPrivatKunde.Size = New System.Drawing.Size(571, 413)
         Me.dgvPrivatKunde.SmartSizeBox = False
         Me.dgvPrivatKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvPrivatKunde.TabIndex = 0
@@ -1182,7 +1182,7 @@ Partial Class frmAdminMetro
         Me.TabPageAdv16.Location = New System.Drawing.Point(46, 3)
         Me.TabPageAdv16.Name = "TabPageAdv16"
         Me.TabPageAdv16.ShowCloseButton = True
-        Me.TabPageAdv16.Size = New System.Drawing.Size(544, 380)
+        Me.TabPageAdv16.Size = New System.Drawing.Size(571, 413)
         Me.TabPageAdv16.TabIndex = 2
         Me.TabPageAdv16.ThemesEnabled = True
         '
@@ -1228,7 +1228,7 @@ Partial Class frmAdminMetro
         Me.dgvBedriftKunde.Properties.MarkColHeader = False
         Me.dgvBedriftKunde.Properties.MarkRowHeader = False
         Me.dgvBedriftKunde.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.dgvBedriftKunde.Size = New System.Drawing.Size(544, 380)
+        Me.dgvBedriftKunde.Size = New System.Drawing.Size(571, 413)
         Me.dgvBedriftKunde.SmartSizeBox = False
         Me.dgvBedriftKunde.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.dgvBedriftKunde.TabIndex = 0
@@ -1263,7 +1263,7 @@ Partial Class frmAdminMetro
         Me.TbOppdaterKunde.Location = New System.Drawing.Point(46, 3)
         Me.TbOppdaterKunde.Name = "TbOppdaterKunde"
         Me.TbOppdaterKunde.ShowCloseButton = True
-        Me.TbOppdaterKunde.Size = New System.Drawing.Size(544, 380)
+        Me.TbOppdaterKunde.Size = New System.Drawing.Size(571, 413)
         Me.TbOppdaterKunde.TabIndex = 3
         Me.TbOppdaterKunde.TabVisible = False
         Me.TbOppdaterKunde.ThemesEnabled = True
@@ -1465,10 +1465,10 @@ Partial Class frmAdminMetro
         Me.tbKundeEpost.Controls.Add(Me.ToolStripEx11)
         Me.tbKundeEpost.Image = Nothing
         Me.tbKundeEpost.ImageSize = New System.Drawing.Size(16, 16)
-        Me.tbKundeEpost.Location = New System.Drawing.Point(38, 3)
+        Me.tbKundeEpost.Location = New System.Drawing.Point(2, 3)
         Me.tbKundeEpost.Name = "tbKundeEpost"
         Me.tbKundeEpost.ShowCloseButton = True
-        Me.tbKundeEpost.Size = New System.Drawing.Size(823, 387)
+        Me.tbKundeEpost.Size = New System.Drawing.Size(859, 420)
         Me.tbKundeEpost.TabIndex = 2
         Me.tbKundeEpost.Text = "Epost"
         Me.tbKundeEpost.ThemesEnabled = True
@@ -1481,7 +1481,7 @@ Partial Class frmAdminMetro
         Me.Panel6.Location = New System.Drawing.Point(0, 42)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Padding = New System.Windows.Forms.Padding(50, 10, 50, 0)
-        Me.Panel6.Size = New System.Drawing.Size(823, 323)
+        Me.Panel6.Size = New System.Drawing.Size(859, 356)
         Me.Panel6.TabIndex = 3
         '
         'Panel7
@@ -1492,7 +1492,7 @@ Partial Class frmAdminMetro
         Me.Panel7.Location = New System.Drawing.Point(50, 10)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Padding = New System.Windows.Forms.Padding(10, 10, 10, 0)
-        Me.Panel7.Size = New System.Drawing.Size(723, 313)
+        Me.Panel7.Size = New System.Drawing.Size(759, 346)
         Me.Panel7.TabIndex = 0
         '
         'rtbKundeEpost
@@ -1501,20 +1501,20 @@ Partial Class frmAdminMetro
         Me.rtbKundeEpost.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbKundeEpost.Location = New System.Drawing.Point(10, 10)
         Me.rtbKundeEpost.Name = "rtbKundeEpost"
-        Me.rtbKundeEpost.Size = New System.Drawing.Size(703, 303)
+        Me.rtbKundeEpost.Size = New System.Drawing.Size(739, 336)
         Me.rtbKundeEpost.TabIndex = 0
         Me.rtbKundeEpost.Text = ""
         '
         'StatusStripEx1
         '
         Me.StatusStripEx1.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.BeforeTouchSize = New System.Drawing.Size(859, 22)
         Me.StatusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
         Me.StatusStripEx1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 365)
+        Me.StatusStripEx1.Location = New System.Drawing.Point(0, 398)
         Me.StatusStripEx1.MetroColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.StatusStripEx1.Name = "StatusStripEx1"
-        Me.StatusStripEx1.Size = New System.Drawing.Size(823, 22)
+        Me.StatusStripEx1.Size = New System.Drawing.Size(859, 22)
         Me.StatusStripEx1.TabIndex = 2
         Me.StatusStripEx1.Text = "StatusStripEx1"
         Me.StatusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Metro
@@ -1528,7 +1528,7 @@ Partial Class frmAdminMetro
         Me.ToolStripEx11.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripEx11.Name = "ToolStripEx11"
         Me.ToolStripEx11.Office12Mode = False
-        Me.ToolStripEx11.Size = New System.Drawing.Size(823, 42)
+        Me.ToolStripEx11.Size = New System.Drawing.Size(859, 42)
         Me.ToolStripEx11.TabIndex = 0
         Me.ToolStripEx11.Text = "Epost"
         Me.ToolStripEx11.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
@@ -1989,10 +1989,10 @@ Partial Class frmAdminMetro
         Me.tbUtleieOversikt.Controls.Add(Me.GridDataBoundGrid1)
         Me.tbUtleieOversikt.Image = Global.OOPSA.My.Resources.Resources.tbRent
         Me.tbUtleieOversikt.ImageSize = New System.Drawing.Size(32, 32)
-        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 2)
+        Me.tbUtleieOversikt.Location = New System.Drawing.Point(3, 53)
         Me.tbUtleieOversikt.Name = "tbUtleieOversikt"
         Me.tbUtleieOversikt.ShowCloseButton = True
-        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 427)
+        Me.tbUtleieOversikt.Size = New System.Drawing.Size(865, 376)
         Me.tbUtleieOversikt.TabIndex = 4
         Me.tbUtleieOversikt.Text = "Utleie"
         Me.tbUtleieOversikt.ThemesEnabled = True
@@ -2054,7 +2054,7 @@ Partial Class frmAdminMetro
         Me.GridDataBoundGrid1.Properties.MarkColHeader = False
         Me.GridDataBoundGrid1.Properties.MarkRowHeader = False
         Me.GridDataBoundGrid1.ShowCurrentCellBorderBehavior = Syncfusion.Windows.Forms.Grid.GridShowCurrentCellBorder.GrayWhenLostFocus
-        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 427)
+        Me.GridDataBoundGrid1.Size = New System.Drawing.Size(679, 376)
         Me.GridDataBoundGrid1.SmartSizeBox = False
         Me.GridDataBoundGrid1.SortBehavior = Syncfusion.Windows.Forms.Grid.GridSortBehavior.DoubleClick
         Me.GridDataBoundGrid1.TabIndex = 2
@@ -2204,7 +2204,7 @@ Partial Class frmAdminMetro
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel4)
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripEx10)
         Me.SplitContainer2.Size = New System.Drawing.Size(288, 427)
-        Me.SplitContainer2.SplitterDistance = 227
+        Me.SplitContainer2.SplitterDistance = 226
         Me.SplitContainer2.TabIndex = 0
         '
         'txtSvrPassRep
@@ -2336,7 +2336,7 @@ Partial Class frmAdminMetro
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 42)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(288, 154)
+        Me.Panel4.Size = New System.Drawing.Size(288, 155)
         Me.Panel4.TabIndex = 2
         '
         'rtbSQLQuery
@@ -2345,7 +2345,7 @@ Partial Class frmAdminMetro
         Me.rtbSQLQuery.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbSQLQuery.Location = New System.Drawing.Point(0, 0)
         Me.rtbSQLQuery.Name = "rtbSQLQuery"
-        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 154)
+        Me.rtbSQLQuery.Size = New System.Drawing.Size(288, 155)
         Me.rtbSQLQuery.TabIndex = 0
         Me.rtbSQLQuery.Text = "SELECT {column_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "FROM {table_name}" & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE {condition}"
         '
