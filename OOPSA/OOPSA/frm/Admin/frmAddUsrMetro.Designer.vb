@@ -46,6 +46,8 @@ Partial Class frmAddUsrMetro
         Me.dtpBirth = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
         Me.txtTlf = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
         Me.cmbAvdeling = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        Me.txtIntPostNr = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+        Me.AutoLabel2 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
         CType(Me.txtFornavn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtEtternavn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtBrukernavn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +58,7 @@ Partial Class frmAddUsrMetro
         CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtTlf, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbAvdeling, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtIntPostNr, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblUsername
@@ -155,7 +158,7 @@ Partial Class frmAddUsrMetro
         '
         'txtFornavn
         '
-        Me.txtFornavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtFornavn.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtFornavn.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtFornavn.Location = New System.Drawing.Point(14, 65)
         Me.txtFornavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -168,7 +171,7 @@ Partial Class frmAddUsrMetro
         '
         'txtEtternavn
         '
-        Me.txtEtternavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtEtternavn.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtEtternavn.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtEtternavn.Location = New System.Drawing.Point(136, 65)
         Me.txtEtternavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -181,7 +184,7 @@ Partial Class frmAddUsrMetro
         '
         'txtBrukernavn
         '
-        Me.txtBrukernavn.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtBrukernavn.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtBrukernavn.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtBrukernavn.Location = New System.Drawing.Point(14, 115)
         Me.txtBrukernavn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -194,7 +197,7 @@ Partial Class frmAddUsrMetro
         '
         'txtPassord
         '
-        Me.txtPassord.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtPassord.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtPassord.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtPassord.Location = New System.Drawing.Point(136, 115)
         Me.txtPassord.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -207,7 +210,7 @@ Partial Class frmAddUsrMetro
         '
         'txtGjentaPassord
         '
-        Me.txtGjentaPassord.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtGjentaPassord.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtGjentaPassord.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtGjentaPassord.Location = New System.Drawing.Point(258, 115)
         Me.txtGjentaPassord.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -220,7 +223,7 @@ Partial Class frmAddUsrMetro
         '
         'txtEpost
         '
-        Me.txtEpost.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtEpost.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtEpost.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtEpost.Location = New System.Drawing.Point(14, 165)
         Me.txtEpost.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -233,13 +236,13 @@ Partial Class frmAddUsrMetro
         '
         'txtAdresse
         '
-        Me.txtAdresse.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtAdresse.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtAdresse.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtAdresse.Location = New System.Drawing.Point(136, 165)
         Me.txtAdresse.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtAdresse.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtAdresse.Name = "txtAdresse"
-        Me.txtAdresse.Size = New System.Drawing.Size(238, 25)
+        Me.txtAdresse.Size = New System.Drawing.Size(143, 25)
         Me.txtAdresse.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
         Me.txtAdresse.TabIndex = 17
         Me.txtAdresse.Text = "TextBoxExt7"
@@ -279,7 +282,7 @@ Partial Class frmAddUsrMetro
         'txtTlf
         '
         Me.txtTlf.BackGroundColor = System.Drawing.SystemColors.Window
-        Me.txtTlf.BeforeTouchSize = New System.Drawing.Size(226, 29)
+        Me.txtTlf.BeforeTouchSize = New System.Drawing.Size(89, 25)
         Me.txtTlf.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtTlf.IntegerValue = CType(1, Long)
         Me.txtTlf.Location = New System.Drawing.Point(14, 214)
@@ -303,6 +306,29 @@ Partial Class frmAddUsrMetro
         Me.cmbAvdeling.TabIndex = 24
         Me.cmbAvdeling.Text = "ComboBoxAdv1"
         '
+        'txtIntPostNr
+        '
+        Me.txtIntPostNr.BackGroundColor = System.Drawing.SystemColors.Window
+        Me.txtIntPostNr.BeforeTouchSize = New System.Drawing.Size(89, 25)
+        Me.txtIntPostNr.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtIntPostNr.IntegerValue = CType(1, Long)
+        Me.txtIntPostNr.Location = New System.Drawing.Point(285, 165)
+        Me.txtIntPostNr.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.txtIntPostNr.Name = "txtIntPostNr"
+        Me.txtIntPostNr.NullString = ""
+        Me.txtIntPostNr.Size = New System.Drawing.Size(89, 25)
+        Me.txtIntPostNr.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.[Default]
+        Me.txtIntPostNr.TabIndex = 25
+        Me.txtIntPostNr.Text = "1"
+        '
+        'AutoLabel2
+        '
+        Me.AutoLabel2.Location = New System.Drawing.Point(280, 144)
+        Me.AutoLabel2.Name = "AutoLabel2"
+        Me.AutoLabel2.Size = New System.Drawing.Size(82, 17)
+        Me.AutoLabel2.TabIndex = 26
+        Me.AutoLabel2.Text = "Postnummer:"
+        '
         'frmAddUsrMetro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
@@ -315,6 +341,8 @@ Partial Class frmAddUsrMetro
         CaptionImage1.Size = New System.Drawing.Size(48, 48)
         Me.CaptionImages.Add(CaptionImage1)
         Me.ClientSize = New System.Drawing.Size(384, 252)
+        Me.Controls.Add(Me.AutoLabel2)
+        Me.Controls.Add(Me.txtIntPostNr)
         Me.Controls.Add(Me.cmbAvdeling)
         Me.Controls.Add(Me.txtTlf)
         Me.Controls.Add(Me.dtpBirth)
@@ -352,6 +380,7 @@ Partial Class frmAddUsrMetro
         CType(Me.dtpBirth, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtTlf, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbAvdeling, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtIntPostNr, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -379,4 +408,6 @@ Partial Class frmAddUsrMetro
     Friend WithEvents dtpBirth As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
     Friend WithEvents txtTlf As Syncfusion.Windows.Forms.Tools.IntegerTextBox
     Friend WithEvents cmbAvdeling As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+    Friend WithEvents txtIntPostNr As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+    Friend WithEvents AutoLabel2 As Syncfusion.Windows.Forms.Tools.AutoLabel
 End Class

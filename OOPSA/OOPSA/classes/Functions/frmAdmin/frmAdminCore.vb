@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Text.RegularExpressions
 Imports OOPSA.SQL
 
 
@@ -61,13 +62,26 @@ Public Class frmAdminCore
                          epost As String,
                          tlf As Integer,
                          adresse As String,
-                         avdeling As Integer)
+                         postnr As Integer,
+                         avdeling As String)
 
         Dim SHA As New SHA512
 
-        SQL.sporring("INSERT INTO logginn")
-        SQL.sporring("INSERT INTO Ansatt")
+        Dim navn As String = fornavn & " " & etternavn
 
+        SHA.ToHashSHA512 = pass
+        pass = SHA.ToHashSHA512
+
+        Try
+
+            SQL.sporring("INSERT INTO `Loggin`(`Brukernavn`, `Passord`, `avd`, `mail`, `navn`) VALUES ('" & bruker & "','" & pass & "','" & avdeling & "','" & epost & "','" & navn & "')")
+            SQL.sporring("INSERT INTO `Ansatt`(`F_navn`, `E_navn`, `bursdag`, `e_postt`, `tlf`, `Adresse`, `Post`, `Avdeling_id_Avdeling`) VALUES ('" & fornavn & "','" & etternavn & "','" & bursdag & "','" & epost & "','" & tlf & "','" & adresse & "','" & postnr & "','1')")
+
+            MsgBox("Registrering av ny ansatt (" & navn & ") var vellykket!")
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
 
@@ -91,5 +105,17 @@ Public Class frmAdminCore
 
 
     End Sub
+
+    Function GyldigEpost(ByVal email As String) As Boolean
+
+        Dim pattern As String = "^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"
+        Dim emailAddressMatch As Match = Regex.Match(email, pattern)
+        If emailAddressMatch.Success Then
+            GyldigEpost = True
+        Else
+            GyldigEpost = False
+        End If
+
+    End Function
 
 End Class

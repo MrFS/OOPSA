@@ -1,4 +1,5 @@
 ﻿Imports Syncfusion.Windows.Forms
+Imports System.Text.RegularExpressions
 
 Public Class frmAddUsrMetro
     Inherits MetroForm
@@ -6,9 +7,21 @@ Public Class frmAddUsrMetro
     Dim Core As New frmAdminCore
     Dim SQL As New SQL
 
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
+        Initialize()
+
+    End Sub
     Private Sub btnFinish_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
 
-        If txtPassord.Text = txtGjentaPassord.Text AndAlso InStr("@", txtEpost.Text) Then
+
+
+        If txtPassord.Text = txtGjentaPassord.Text AndAlso Core.GyldigEpost(txtEpost.Text) Then
 
             Core.regAnsatt(txtBrukernavn.Text,
                            txtPassord.Text,
@@ -17,6 +30,7 @@ Public Class frmAddUsrMetro
                            dtpBirth.Value.ToShortDateString,
                            txtEpost.Text, txtTlf.Text,
                            txtAdresse.Text,
+                           txtIntPostNr.Text,
                            cmbAvdeling.Text)
 
 
@@ -27,12 +41,4 @@ Public Class frmAddUsrMetro
         End If
     End Sub
 
-    Private Sub frmAddUsrMetro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim dt As DataTable = SQL.sporring("SELECT avd FROM Loggin")
-        Dim dr As DataRow
-
-        For Each dr In dt.Rows
-            cmbAvdeling.Items.Add(dr("avd"))
-        Next
-    End Sub
 End Class

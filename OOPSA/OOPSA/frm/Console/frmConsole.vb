@@ -12,12 +12,29 @@ Public Class frmConsole
 
     Dim prev As String
 
-    Private Sub frmConsole_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
         Initialize()
+
+    End Sub
+
+    Private Sub frmConsole_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         tmConsole.Start()
 
         Console.GetDir(My.Application.Info.DirectoryPath)
+
+        Dim i As Integer
+        w = New IO.StreamWriter("reguiredfull.txt")
+        For i = 0 To lstDir.Items.Count - 1
+            w.WriteLine(lstDir.Items.Item(i))
+        Next
+        w.Close()
     End Sub
 
     Private Sub frmConsole_Close(sender As Object, e As EventArgs) Handles MyBase.Closing

@@ -3,7 +3,6 @@
 Imports System
 Imports System.Windows
 
-
 Imports Syncfusion
 Imports Syncfusion.PivotAnalysis
 Imports Syncfusion.PivotAnalysis.Base
@@ -21,12 +20,15 @@ Public Class frmAdminMetro
     Dim Core As New frmAdminCore
     Dim SQL As New SQL
 
-    'usikker på om jeg kan dette, men holder på å klikke av å ikke kunne bruke de i prosedyren jeg vill lenger nede! 
+    'usikker på om jeg kan dette, men holder på å klikke av å ikke kunne bruke de i prosedyren jeg vill lenger nede!
     Dim OppdaterBed, OppdaterPriv As Boolean
 
     Public Sub New()
-        Initialize()
+
         InitializeComponent()
+
+        Initialize()
+
     End Sub
 
     ''' <summary>
@@ -51,7 +53,6 @@ Public Class frmAdminMetro
         'OppdaterBed = False
         OppdaterPriv = False
 
-
         Me.SalgsRaportTableAdapter.Fill(Me.drift8_2016dsSalgsRapportView.SalgsRaport)
         Me.LagerRapportALLETableAdapter.Fill(Me.Drift8_2016DataSetLageroversiktALLE.LagerRapportALLE)
         'TODO: This line of code loads data into the 'Drift8_2016DataSetTrondheimLager.LagerRapportTrondheim' table. You can move, or remove it, as needed.
@@ -69,11 +70,8 @@ Public Class frmAdminMetro
         dgvBedriftKunde.DataSource = SQL.bindingsource("SELECT * FROM `BedriftKunde`")
         dgvPrivatKunde.DataSource = SQL.bindingsource("SELECT * FROM `PrivatKunde`")
 
-
         Core.VisAnsatt()
         Core.visLeie()
-
-
 
         Dim dr_kunde As DataRow
         Dim dt_kunde As DataTable = SQL.sporring("SELECT * FROM Kunde")
@@ -92,7 +90,6 @@ Public Class frmAdminMetro
 
         Next
 
-
         'Legg dt her i en class
 
         '-------------------------------------
@@ -109,7 +106,6 @@ Public Class frmAdminMetro
         txtSvrPassRep.Enabled = 0
 
         txtSvrPassRep.Visible = 0
-
 
         For Each var As Object In Me.FontListBox1.Items
             txtFontCombo.Items.Add(var)
@@ -178,8 +174,6 @@ Public Class frmAdminMetro
 
         Dim imgformat As Forms.DataFormats.Format = Forms.DataFormats.GetFormat(Forms.DataFormats.Bitmap)
 
-
-
         If Me.richTextBox1.CanPaste(imgformat) Then
             richTextBox1.Paste(imgformat)
         Else
@@ -194,7 +188,7 @@ Public Class frmAdminMetro
 
             If MsgBoxResult.Ok Then
                 Dim sfd As New SaveFileDialog
-                sfd.Filter = "Penis Files (*.kuk) |*.kuk"
+                sfd.Filter = "Sorry Files (*.sry) |*.sry"
 
                 If sfd.ShowDialog = Windows.Forms.DialogResult.OK Then
                     richTextBox1.SaveFile(sfd.FileName)
@@ -204,14 +198,9 @@ Public Class frmAdminMetro
                 richTextBox1.Clear()
             End If
 
-
-
-
         Else
 
             richTextBox1.Clear()
-
-
 
         End If
     End Sub
@@ -284,15 +273,12 @@ Public Class frmAdminMetro
         ReportViewer1.Reset()
         ReportViewer1.LocalReport.ReportEmbeddedResource = "OOPSA.SalgsRapportChart.rdlc"
 
-
         ReportViewer1.RefreshReport()
     End Sub
 
     Private Sub btnSendEpostKunde_Click(sender As Object, e As EventArgs) Handles btnSendEpostKunde.Click
 
         Dim Send As New email
-
-
 
         'Dim t As New Threading.Thread(AddressOf MySub)
         't.IsBackground = True
@@ -349,7 +335,6 @@ Public Class frmAdminMetro
         cmd.ExecuteNonQuery()
     End Sub
 
-
     Private Sub btnOppdater_Click(sender As Object, e As EventArgs) Handles btnOppdater.Click
 
         Dim onsketKid As String = txtKID.Text
@@ -395,7 +380,7 @@ Public Class frmAdminMetro
         OppdaterBed = False
         lblKID.Visible = True
         txtKID.Visible = True
-
+        btnOppdater.Visible = True
 
         txtPrivAdresse.Visible = True
         txtPostPriv.Visible = True
@@ -412,7 +397,6 @@ Public Class frmAdminMetro
         txtEpost.Visible = True
         txtEtternavn.Visible = True
 
-
         txtBedAdresse.Visible = False
         txtBedNavn.Visible = False
         txtPostBed.Visible = False
@@ -425,6 +409,7 @@ Public Class frmAdminMetro
         OppdaterPriv = False
         lblKID.Visible = True
         txtKID.Visible = True
+        btnOppdater.Visible = 1
 
         txtBedAdresse.Visible = True
         txtBedAdresse.Visible = True
@@ -433,7 +418,6 @@ Public Class frmAdminMetro
         txtEpost.Visible = True
         txtEtternavn.Visible = True
         txtFornavn.Visible = True
-
 
         chkBedNavn.Visible = True
         chkAdresse.Visible = True
@@ -472,10 +456,22 @@ Public Class frmAdminMetro
         frmAddUsrMetro.Show()
     End Sub
 
-    Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click
+    Private Sub ButtonAdv6_Click(sender As Object, e As EventArgs) Handles btnUpdKunde.Click
         tbKundeOversikt.SelectedTab = TbOppdaterKunde
         TbOppdaterKunde.Show()
     End Sub
 
+    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
+        Logout()
+    End Sub
+
+    Private Sub ToolStripButton7_Click(sender As Object, e As EventArgs) Handles ToolStripButton7.Click
+        Logout()
+    End Sub
+
+    Private Sub btnUpdKunde_Click(sender As Object, e As EventArgs) Handles btnUpdList.Click
+        dgvBedriftKunde.DataSource = SQL.bindingsource("SELECT * FROM `BedriftKunde`")
+        dgvPrivatKunde.DataSource = SQL.bindingsource("SELECT * FROM `PrivatKunde`")
+    End Sub
 
 End Class

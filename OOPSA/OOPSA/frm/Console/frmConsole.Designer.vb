@@ -72,15 +72,12 @@ Partial Class frmConsole
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.lstRecent = New System.Windows.Forms.ListBox()
         Me.tmConsole = New System.Windows.Forms.Timer(Me.components)
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.ctrlList = New System.Windows.Forms.TreeView()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -339,7 +336,6 @@ Partial Class frmConsole
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.ItemSize = New System.Drawing.Size(68, 30)
         Me.TabControl1.Location = New System.Drawing.Point(0, 25)
@@ -445,24 +441,6 @@ Partial Class frmConsole
         '
         Me.tmConsole.Interval = 500
         '
-        'TabPage4
-        '
-        Me.TabPage4.Controls.Add(Me.ctrlList)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(936, 396)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "TabPage4"
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'ctrlList
-        '
-        Me.ctrlList.Location = New System.Drawing.Point(84, 66)
-        Me.ctrlList.Name = "ctrlList"
-        Me.ctrlList.Size = New System.Drawing.Size(598, 202)
-        Me.ctrlList.TabIndex = 0
-        '
         'frmConsole
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -486,7 +464,6 @@ Partial Class frmConsole
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -540,6 +517,4 @@ Partial Class frmConsole
     Friend WithEvents ToolStripServerLoad As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripConnected As ToolStripButton
-    Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents ctrlList As TreeView
 End Class

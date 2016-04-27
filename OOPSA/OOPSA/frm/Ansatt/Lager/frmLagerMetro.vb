@@ -65,9 +65,9 @@ Public Class frmLagerMetro
 
         sql.sporring("UPDATE Produkt SET Produkt_navn = '" & navnEndreText.Text & "', Pris = '" & prisEndreText.Text & "', p_antall = '" & antEndreText.Text & "', Lager_id = '" & dr("Lager_id") & "' WHERE Produkt_navn='" & VareEndre.Text & "'") 'Changes product and uses the name with the previous query so user does not have to use numbers
 
-        dtID = sql.sporring("SELECT `Produkt_id` FROM Produkt WHERE Produkt_navn = '" & NavnLeggTil.Text & "'")
+        dtID = sql.sporring("SELECT `Produkt_id` FROM Produkt WHERE Produkt_navn = '" & navnEndreText.Text & "'")
 
-        sql.sporring("UPDATE Lagerbeholdning SET ")
+        sql.sporring("UPDATE `Lagerbeholdning` SET `Lager_id`='" & dr("Lager_id") & "',`Antall`= '" & antEndreText.Text & "' WHERE `Produkt_id`= '" & CInt(dtID.Rows(0).Item(0).ToString) & "'")
 
         Core.oppdater()
 
